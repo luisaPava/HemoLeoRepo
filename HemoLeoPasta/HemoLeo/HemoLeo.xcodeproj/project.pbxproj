@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2BA188801D355A2C007F1CEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA1887F1D355A2C007F1CEB /* AppDelegate.swift */; };
+		2BA188821D355A2C007F1CEB /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA188811D355A2C007F1CEB /* RootViewController.swift */; };
+		2BA188841D355A2C007F1CEB /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA188831D355A2C007F1CEB /* DataViewController.swift */; };
+		2BA188861D355A2C007F1CEB /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA188851D355A2C007F1CEB /* ModelController.swift */; };
+		2BA188891D355A2C007F1CEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BA188871D355A2C007F1CEB /* Main.storyboard */; };
+		2BA1888B1D355A2C007F1CEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BA1888A1D355A2C007F1CEB /* Assets.xcassets */; };
+		2BA1888E1D355A2C007F1CEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BA1888C1D355A2C007F1CEB /* LaunchScreen.storyboard */; };
+		2BA188A21D355CBD007F1CEB /* CarePlanStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA188A11D355CBD007F1CEB /* CarePlanStoreManager.swift */; };
+		2BA188B61D355CFF007F1CEB /* CareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA188B31D355CD5007F1CEB /* CareKit.framework */; };
+		2BA188B71D355CFF007F1CEB /* CareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA188B31D355CD5007F1CEB /* CareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2BA188BC1D355D96007F1CEB /* Actitvity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA188BB1D355D96007F1CEB /* Actitvity.swift */; };
+		2BA188BE1D355EEF007F1CEB /* Vagetables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA188BD1D355EEF007F1CEB /* Vagetables.swift */; };
+		2BA188C01D3560C3007F1CEB /* Fruits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA188BF1D3560C3007F1CEB /* Fruits.swift */; };
+		2BA188C21D3567A5007F1CEB /* Water.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA188C11D3567A5007F1CEB /* Water.swift */; };
+		2BA188C41D35681E007F1CEB /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA188C31D35681E007F1CEB /* Exercise.swift */; };
+		2BA188C61D35696A007F1CEB /* Shot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA188C51D35696A007F1CEB /* Shot.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2BA188B21D355CD5007F1CEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BA188A31D355CCD007F1CEB /* CareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8605A5BA1C4F04EC00DD65FF;
+			remoteInfo = CareKit;
+		};
+		2BA188B41D355CD5007F1CEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BA188A31D355CCD007F1CEB /* CareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8605A5C41C4F04EC00DD65FF;
+			remoteInfo = CareKitTests;
+		};
+		2BA188B81D355CFF007F1CEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BA188A31D355CCD007F1CEB /* CareKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8605A5B91C4F04EC00DD65FF;
+			remoteInfo = CareKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2BA188BA1D355CFF007F1CEB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2BA188B71D355CFF007F1CEB /* CareKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2BA1887C1D355A2C007F1CEB /* HemoLeo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HemoLeo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BA1887F1D355A2C007F1CEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2BA188811D355A2C007F1CEB /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		2BA188831D355A2C007F1CEB /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		2BA188851D355A2C007F1CEB /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
+		2BA188881D355A2C007F1CEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2BA1888A1D355A2C007F1CEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2BA1888D1D355A2C007F1CEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2BA1888F1D355A2C007F1CEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BA188A11D355CBD007F1CEB /* CarePlanStoreManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarePlanStoreManager.swift; sourceTree = "<group>"; };
+		2BA188A31D355CCD007F1CEB /* CareKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CareKit.xcodeproj; path = ../carekit/CareKit.xcodeproj; sourceTree = "<group>"; };
+		2BA188BB1D355D96007F1CEB /* Actitvity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Actitvity.swift; sourceTree = "<group>"; };
+		2BA188BD1D355EEF007F1CEB /* Vagetables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vagetables.swift; sourceTree = "<group>"; };
+		2BA188BF1D3560C3007F1CEB /* Fruits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fruits.swift; sourceTree = "<group>"; };
+		2BA188C11D3567A5007F1CEB /* Water.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Water.swift; sourceTree = "<group>"; };
+		2BA188C31D35681E007F1CEB /* Exercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		2BA188C51D35696A007F1CEB /* Shot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shot.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2BA188791D355A2C007F1CEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BA188B61D355CFF007F1CEB /* CareKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2BA188731D355A2C007F1CEB = {
+			isa = PBXGroup;
+			children = (
+				2BA188A31D355CCD007F1CEB /* CareKit.xcodeproj */,
+				2BA1887E1D355A2C007F1CEB /* HemoLeo */,
+				2BA1887D1D355A2C007F1CEB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2BA1887D1D355A2C007F1CEB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BA1887C1D355A2C007F1CEB /* HemoLeo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2BA1887E1D355A2C007F1CEB /* HemoLeo */ = {
+			isa = PBXGroup;
+			children = (
+				2BA188961D355B4A007F1CEB /* HemoLeo */,
+			);
+			path = HemoLeo;
+			sourceTree = "<group>";
+		};
+		2BA188961D355B4A007F1CEB /* HemoLeo */ = {
+			isa = PBXGroup;
+			children = (
+				2BA1889E1D355C5F007F1CEB /* Global */,
+				2BA1889C1D355C17007F1CEB /* CareKit */,
+				2BA1889B1D355C09007F1CEB /* Others */,
+				2BA1889A1D355BFB007F1CEB /* Storyboards */,
+				2BA188991D355BCC007F1CEB /* Controllers */,
+				2BA188971D355BAA007F1CEB /* Assets */,
+				2BA188981D355BB8007F1CEB /* View */,
+			);
+			name = HemoLeo;
+			sourceTree = "<group>";
+		};
+		2BA188971D355BAA007F1CEB /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2BA1888A1D355A2C007F1CEB /* Assets.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		2BA188981D355BB8007F1CEB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		2BA188991D355BCC007F1CEB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2BA188811D355A2C007F1CEB /* RootViewController.swift */,
+				2BA188831D355A2C007F1CEB /* DataViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		2BA1889A1D355BFB007F1CEB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2BA188871D355A2C007F1CEB /* Main.storyboard */,
+				2BA1888C1D355A2C007F1CEB /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		2BA1889B1D355C09007F1CEB /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				2BA1887F1D355A2C007F1CEB /* AppDelegate.swift */,
+				2BA1888F1D355A2C007F1CEB /* Info.plist */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		2BA1889C1D355C17007F1CEB /* CareKit */ = {
+			isa = PBXGroup;
+			children = (
+				2BA188A01D355C7F007F1CEB /* Activities */,
+				2BA1889F1D355C78007F1CEB /* Symptoms */,
+				2BA188A11D355CBD007F1CEB /* CarePlanStoreManager.swift */,
+			);
+			name = CareKit;
+			sourceTree = "<group>";
+		};
+		2BA1889E1D355C5F007F1CEB /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				2BA188851D355A2C007F1CEB /* ModelController.swift */,
+			);
+			name = Global;
+			sourceTree = "<group>";
+		};
+		2BA1889F1D355C78007F1CEB /* Symptoms */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Symptoms;
+			sourceTree = "<group>";
+		};
+		2BA188A01D355C7F007F1CEB /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				2BA188BB1D355D96007F1CEB /* Actitvity.swift */,
+				2BA188BD1D355EEF007F1CEB /* Vagetables.swift */,
+				2BA188BF1D3560C3007F1CEB /* Fruits.swift */,
+				2BA188C31D35681E007F1CEB /* Exercise.swift */,
+				2BA188C51D35696A007F1CEB /* Shot.swift */,
+				2BA188C11D3567A5007F1CEB /* Water.swift */,
+			);
+			name = Activities;
+			sourceTree = "<group>";
+		};
+		2BA188AD1D355CD5007F1CEB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BA188B31D355CD5007F1CEB /* CareKit.framework */,
+				2BA188B51D355CD5007F1CEB /* CareKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2BA1887B1D355A2C007F1CEB /* HemoLeo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BA188921D355A2C007F1CEB /* Build configuration list for PBXNativeTarget "HemoLeo" */;
+			buildPhases = (
+				2BA188781D355A2C007F1CEB /* Sources */,
+				2BA188791D355A2C007F1CEB /* Frameworks */,
+				2BA1887A1D355A2C007F1CEB /* Resources */,
+				2BA188BA1D355CFF007F1CEB /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BA188B91D355CFF007F1CEB /* PBXTargetDependency */,
+			);
+			name = HemoLeo;
+			productName = HemoLeo;
+			productReference = 2BA1887C1D355A2C007F1CEB /* HemoLeo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2BA188741D355A2C007F1CEB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Bepid;
+				TargetAttributes = {
+					2BA1887B1D355A2C007F1CEB = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 2BA188771D355A2C007F1CEB /* Build configuration list for PBXProject "HemoLeo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2BA188731D355A2C007F1CEB;
+			productRefGroup = 2BA1887D1D355A2C007F1CEB /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2BA188AD1D355CD5007F1CEB /* Products */;
+					ProjectRef = 2BA188A31D355CCD007F1CEB /* CareKit.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				2BA1887B1D355A2C007F1CEB /* HemoLeo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2BA188B31D355CD5007F1CEB /* CareKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CareKit.framework;
+			remoteRef = 2BA188B21D355CD5007F1CEB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2BA188B51D355CD5007F1CEB /* CareKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CareKitTests.xctest;
+			remoteRef = 2BA188B41D355CD5007F1CEB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2BA1887A1D355A2C007F1CEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BA1888E1D355A2C007F1CEB /* LaunchScreen.storyboard in Resources */,
+				2BA1888B1D355A2C007F1CEB /* Assets.xcassets in Resources */,
+				2BA188891D355A2C007F1CEB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2BA188781D355A2C007F1CEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BA188821D355A2C007F1CEB /* RootViewController.swift in Sources */,
+				2BA188A21D355CBD007F1CEB /* CarePlanStoreManager.swift in Sources */,
+				2BA188861D355A2C007F1CEB /* ModelController.swift in Sources */,
+				2BA188841D355A2C007F1CEB /* DataViewController.swift in Sources */,
+				2BA188C21D3567A5007F1CEB /* Water.swift in Sources */,
+				2BA188C41D35681E007F1CEB /* Exercise.swift in Sources */,
+				2BA188C01D3560C3007F1CEB /* Fruits.swift in Sources */,
+				2BA188C61D35696A007F1CEB /* Shot.swift in Sources */,
+				2BA188801D355A2C007F1CEB /* AppDelegate.swift in Sources */,
+				2BA188BC1D355D96007F1CEB /* Actitvity.swift in Sources */,
+				2BA188BE1D355EEF007F1CEB /* Vagetables.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2BA188B91D355CFF007F1CEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CareKit;
+			targetProxy = 2BA188B81D355CFF007F1CEB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2BA188871D355A2C007F1CEB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BA188881D355A2C007F1CEB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2BA1888C1D355A2C007F1CEB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BA1888D1D355A2C007F1CEB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2BA188901D355A2C007F1CEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2BA188911D355A2C007F1CEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2BA188931D355A2C007F1CEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HemoLeo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Luisa.HemoLeo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2BA188941D355A2C007F1CEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HemoLeo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Luisa.HemoLeo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2BA188771D355A2C007F1CEB /* Build configuration list for PBXProject "HemoLeo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BA188901D355A2C007F1CEB /* Debug */,
+				2BA188911D355A2C007F1CEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BA188921D355A2C007F1CEB /* Build configuration list for PBXNativeTarget "HemoLeo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BA188931D355A2C007F1CEB /* Debug */,
+				2BA188941D355A2C007F1CEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2BA188741D355A2C007F1CEB /* Project object */;
+}
