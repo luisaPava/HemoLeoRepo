@@ -39,7 +39,6 @@ class Water: Activity {
             userInfo: nil
         )
         
-        activity.imageName = "water"
         
         return activity
     }

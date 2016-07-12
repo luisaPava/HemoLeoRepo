@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B0211291D35736D00AFFB17 /* CareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B0211261D35735800AFFB17 /* CareKit.framework */; };
+		2B02112A1D35736D00AFFB17 /* CareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B0211261D35735800AFFB17 /* CareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2BA188801D355A2C007F1CEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA1887F1D355A2C007F1CEB /* AppDelegate.swift */; };
 		2BA188821D355A2C007F1CEB /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA188811D355A2C007F1CEB /* RootViewController.swift */; };
 		2BA188841D355A2C007F1CEB /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA188831D355A2C007F1CEB /* DataViewController.swift */; };
@@ -15,8 +17,6 @@
 		2BA1888B1D355A2C007F1CEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BA1888A1D355A2C007F1CEB /* Assets.xcassets */; };
 		2BA1888E1D355A2C007F1CEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BA1888C1D355A2C007F1CEB /* LaunchScreen.storyboard */; };
 		2BA188A21D355CBD007F1CEB /* CarePlanStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA188A11D355CBD007F1CEB /* CarePlanStoreManager.swift */; };
-		2BA188B61D355CFF007F1CEB /* CareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA188B31D355CD5007F1CEB /* CareKit.framework */; };
-		2BA188B71D355CFF007F1CEB /* CareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA188B31D355CD5007F1CEB /* CareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2BA188BC1D355D96007F1CEB /* Actitvity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA188BB1D355D96007F1CEB /* Actitvity.swift */; };
 		2BA188BE1D355EEF007F1CEB /* Vagetables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA188BD1D355EEF007F1CEB /* Vagetables.swift */; };
 		2BA188C01D3560C3007F1CEB /* Fruits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA188BF1D3560C3007F1CEB /* Fruits.swift */; };
@@ -26,23 +26,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2BA188B21D355CD5007F1CEB /* PBXContainerItemProxy */ = {
+		2B0211251D35735800AFFB17 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2BA188A31D355CCD007F1CEB /* CareKit.xcodeproj */;
+			containerPortal = 2B02111F1D35735800AFFB17 /* CareKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 8605A5BA1C4F04EC00DD65FF;
 			remoteInfo = CareKit;
 		};
-		2BA188B41D355CD5007F1CEB /* PBXContainerItemProxy */ = {
+		2B0211271D35735800AFFB17 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2BA188A31D355CCD007F1CEB /* CareKit.xcodeproj */;
+			containerPortal = 2B02111F1D35735800AFFB17 /* CareKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 8605A5C41C4F04EC00DD65FF;
 			remoteInfo = CareKitTests;
 		};
-		2BA188B81D355CFF007F1CEB /* PBXContainerItemProxy */ = {
+		2B02112B1D35736D00AFFB17 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2BA188A31D355CCD007F1CEB /* CareKit.xcodeproj */;
+			containerPortal = 2B02111F1D35735800AFFB17 /* CareKit.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 8605A5B91C4F04EC00DD65FF;
 			remoteInfo = CareKit;
@@ -56,7 +56,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2BA188B71D355CFF007F1CEB /* CareKit.framework in Embed Frameworks */,
+				2B02112A1D35736D00AFFB17 /* CareKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -64,6 +64,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2B02111F1D35735800AFFB17 /* CareKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CareKit.xcodeproj; path = ../CareKitRoot/CareKit.xcodeproj; sourceTree = "<group>"; };
 		2BA1887C1D355A2C007F1CEB /* HemoLeo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HemoLeo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BA1887F1D355A2C007F1CEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BA188811D355A2C007F1CEB /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -74,7 +75,6 @@
 		2BA1888D1D355A2C007F1CEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BA1888F1D355A2C007F1CEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BA188A11D355CBD007F1CEB /* CarePlanStoreManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarePlanStoreManager.swift; sourceTree = "<group>"; };
-		2BA188A31D355CCD007F1CEB /* CareKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CareKit.xcodeproj; path = ../carekit/CareKit.xcodeproj; sourceTree = "<group>"; };
 		2BA188BB1D355D96007F1CEB /* Actitvity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Actitvity.swift; sourceTree = "<group>"; };
 		2BA188BD1D355EEF007F1CEB /* Vagetables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vagetables.swift; sourceTree = "<group>"; };
 		2BA188BF1D3560C3007F1CEB /* Fruits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fruits.swift; sourceTree = "<group>"; };
@@ -88,17 +88,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BA188B61D355CFF007F1CEB /* CareKit.framework in Frameworks */,
+				2B0211291D35736D00AFFB17 /* CareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B0211201D35735800AFFB17 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B0211261D35735800AFFB17 /* CareKit.framework */,
+				2B0211281D35735800AFFB17 /* CareKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		2BA188731D355A2C007F1CEB = {
 			isa = PBXGroup;
 			children = (
-				2BA188A31D355CCD007F1CEB /* CareKit.xcodeproj */,
+				2B02111F1D35735800AFFB17 /* CareKit.xcodeproj */,
 				2BA1887E1D355A2C007F1CEB /* HemoLeo */,
 				2BA1887D1D355A2C007F1CEB /* Products */,
 			);
@@ -214,15 +223,6 @@
 			name = Activities;
 			sourceTree = "<group>";
 		};
-		2BA188AD1D355CD5007F1CEB /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				2BA188B31D355CD5007F1CEB /* CareKit.framework */,
-				2BA188B51D355CD5007F1CEB /* CareKitTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -238,7 +238,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				2BA188B91D355CFF007F1CEB /* PBXTargetDependency */,
+				2B02112C1D35736D00AFFB17 /* PBXTargetDependency */,
 			);
 			name = HemoLeo;
 			productName = HemoLeo;
@@ -273,8 +273,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 2BA188AD1D355CD5007F1CEB /* Products */;
-					ProjectRef = 2BA188A31D355CCD007F1CEB /* CareKit.xcodeproj */;
+					ProductGroup = 2B0211201D35735800AFFB17 /* Products */;
+					ProjectRef = 2B02111F1D35735800AFFB17 /* CareKit.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -285,18 +285,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		2BA188B31D355CD5007F1CEB /* CareKit.framework */ = {
+		2B0211261D35735800AFFB17 /* CareKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = CareKit.framework;
-			remoteRef = 2BA188B21D355CD5007F1CEB /* PBXContainerItemProxy */;
+			remoteRef = 2B0211251D35735800AFFB17 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		2BA188B51D355CD5007F1CEB /* CareKitTests.xctest */ = {
+		2B0211281D35735800AFFB17 /* CareKitTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = CareKitTests.xctest;
-			remoteRef = 2BA188B41D355CD5007F1CEB /* PBXContainerItemProxy */;
+			remoteRef = 2B0211271D35735800AFFB17 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -336,10 +336,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2BA188B91D355CFF007F1CEB /* PBXTargetDependency */ = {
+		2B02112C1D35736D00AFFB17 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CareKit;
-			targetProxy = 2BA188B81D355CFF007F1CEB /* PBXContainerItemProxy */;
+			targetProxy = 2B02112B1D35736D00AFFB17 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
