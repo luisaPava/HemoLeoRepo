@@ -36,9 +36,12 @@
 static const CGFloat ButtonSize = 30.0;
 
 @implementation OCKCareCardButton {
-    CAShapeLayer *_circleLayer;
+/* Original
+   CAShapeLayer *_circleLayer;
+ */
 }
 
+/*Original
 - (void)drawRect:(CGRect)rect {
     if (!_circleLayer) {
         _circleLayer = [CAShapeLayer layer];
@@ -54,6 +57,7 @@ static const CGFloat ButtonSize = 30.0;
         UIRectFill(_circleLayer.frame);
     }
 }
+ */
 
 - (void)setHighlighted:(BOOL)highlighted {
     [self updateFillColorForSelection:highlighted];
@@ -66,7 +70,14 @@ static const CGFloat ButtonSize = 30.0;
 }
 
 - (void)updateFillColorForSelection:(BOOL)selection {
-    _circleLayer.fillColor = (selection) ? self.tintColor.CGColor : [UIColor whiteColor].CGColor;
+//Original
+//    _circleLayer.fillColor = (selection) ? self.tintColor.CGColor : [UIColor whiteColor].CGColor;
+    
+    if (selection) {
+        [self setImage: [UIImage imageNamed: self.imagNameSelected] forState:UIControlStateSelected];
+    } else {
+        [self setImage: [UIImage imageNamed: self.imagNameNormal] forState:UIControlStateNormal];
+    }
 }
 
 @end

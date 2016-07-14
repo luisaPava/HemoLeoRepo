@@ -481,12 +481,21 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    //Get the selected activity
+    OCKCarePlanActivity *selectedActivity = _events[indexPath.row].firstObject.activity;
+    
     static NSString *CellIdentifier = @"CareCardCell";
     OCKCareCardTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (!cell) {
         cell = [[OCKCareCardTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
                                                reuseIdentifier:CellIdentifier];
     }
+    
+    //Change the icon
+    NSString *string = selectedActivity.title;
+    cell.imageNameSelected = [NSString stringWithFormat:@"%@Selected.png", string];
+    cell.imageNameNormal = [NSString stringWithFormat:@"%@Normal.png", string];
+    
     cell.interventionEvents = _events[indexPath.row];
     cell.delegate = self;
     cell.showEdgeIndicator = self.showEdgeIndicators;

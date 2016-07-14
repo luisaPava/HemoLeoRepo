@@ -101,6 +101,10 @@ static const CGFloat ButtonViewSize = 40.0;
         frequencyButton.selected = (event.state == OCKCarePlanEventStateCompleted);
         frequencyButton.translatesAutoresizingMaskIntoConstraints = NO;
         
+        //Change the icon
+        frequencyButton.imagNameNormal = self.imageNameNormal;
+        frequencyButton.imagNameSelected = self.imageNameSelected;
+        
         [frequencyButton addTarget:self
                             action:@selector(toggleFrequencyButton:)
                   forControlEvents:UIControlEventTouchUpInside];

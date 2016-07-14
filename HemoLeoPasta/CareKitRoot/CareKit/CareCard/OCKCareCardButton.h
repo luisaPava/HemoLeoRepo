@@ -34,4 +34,9 @@
 
 @interface OCKCareCardButton : UIButton
 
+//Images
+@property (nonatomic, nullable) NSString *imagNameNormal;
+
+@property (nonatomic, nullable) NSString *imagNameSelected;
+
 @end

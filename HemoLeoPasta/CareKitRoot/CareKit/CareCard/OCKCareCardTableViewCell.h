@@ -52,6 +52,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, weak) id<OCKCareCardCellDelegate> delegate;
 
+//Images
+@property (nonatomic) NSString *imageNameSelected;
+
+@property (nonatomic) NSString *imageNameNormal;
+
 @end
 
 
