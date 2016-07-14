@@ -20,6 +20,8 @@ class CarePlanStoreManager: NSObject, OCKCarePlanStoreDelegate{
     
     // MARK: - Initialization
     private override init() {
+        print(#function)
+        
         // Set the file URL fore CareKit's store
         let applicationSupportPath = NSSearchPathForDirectoriesInDomains(.ApplicationSupportDirectory, .UserDomainMask, true).first
         let persistenceDirectoryURL = NSURL(fileURLWithPath: applicationSupportPath!)
@@ -35,6 +37,8 @@ class CarePlanStoreManager: NSObject, OCKCarePlanStoreDelegate{
         
         // Register this object as the store's delegate to be notified of any changes.
         store.delegate = self
+        
+        print("init2")
     }
 }
 

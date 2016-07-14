@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, UIPopoverPresentationControllerDelegate {
     
     let viewTransitionDelegate = TransitionDelegate()
 
@@ -40,11 +40,24 @@ class MainViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "mainToCare" {
-            let vc = segue.destinationViewController as! CareCardViewController
-            vc.transitioningDelegate = viewTransitionDelegate
-            vc.modalPresentationStyle = .Custom
+            let popOverVC = segue.destinationViewController as! CareCardViewController
+            
+            popOverVC.popoverPresentationController?.delegate = self
+            popOverVC.popoverPresentationController?.sourceRect = CGRect(x: 500, y: -100, width: 0, height: 0)
         }
     }
+    
+    func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle {
+        return UIModalPresentationStyle.None
+    }
+    
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        if segue.identifier == "mainToCare" {
+//            let vc = segue.destinationViewController as! CareCardViewController
+//            vc.transitioningDelegate = viewTransitionDelegate
+//            vc.modalPresentationStyle = .Custom
+//        }
+//    }
     
 //    func swipeGesture() {
 //        performSegueWithIdentifier("mainToCanvas", sender: self)

@@ -159,8 +159,6 @@ class Canvas: UIViewController {
         settingsViewController.green = green
         settingsViewController.blue = blue
     }
-
-
 }
 
 extension Canvas: SettingsViewControllerDelegate {

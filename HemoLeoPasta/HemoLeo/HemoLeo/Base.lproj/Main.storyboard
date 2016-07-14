@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uUq-gs-TkJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="SQc-XE-Gic">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -22,7 +22,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SCZ-zH-Kj6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-288" y="-1479"/>
+            <point key="canvasLocation" x="520" y="-803"/>
         </scene>
         <!--Story2 View Controller-->
         <scene sceneID="bDs-ma-6nQ">
@@ -35,12 +35,21 @@
                     <view key="view" contentMode="scaleToFill" id="zar-oI-P5G">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0MA-50-bPA">
+                                <rect key="frame" x="83" y="540" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="uUq-gs-TkJ" kind="show" id="rhZ-Ri-hD0"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="br7-4p-6wd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="396" y="-1468"/>
+            <point key="canvasLocation" x="1240" y="-803"/>
         </scene>
         <!--Page View Ccontroller-->
         <scene sceneID="kf3-zL-yxt">
@@ -48,7 +57,7 @@
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="SQc-XE-Gic" customClass="PageViewCcontroller" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aNF-zz-w9M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-280" y="-711"/>
+            <point key="canvasLocation" x="520" y="-1526"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="CBo-oo-oxk">
@@ -66,7 +75,9 @@
                                 <rect key="frame" x="277" y="506" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="7m9-Mb-eAu" kind="presentation" identifier="mainToCare" id="54l-29-C1U"/>
+                                    <segue destination="7m9-Mb-eAu" kind="popoverPresentation" identifier="mainToCare" popoverAnchorView="iKS-Tm-HQK" id="54l-29-C1U">
+                                        <popoverArrowDirection key="popoverArrowDirection"/>
+                                    </segue>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QtU-KO-qOW">
@@ -79,10 +90,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="dG4-0d-tYl"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Aw-op-AJz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-280" y="-32"/>
+            <point key="canvasLocation" x="520" y="-32"/>
         </scene>
         <!--Canvas-->
         <scene sceneID="5fx-eo-Pu6">
@@ -255,7 +267,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cTA-Ty-S8a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="428" y="-32"/>
+            <point key="canvasLocation" x="1240" y="-32"/>
         </scene>
         <!--Setting View Controller-->
         <scene sceneID="Jpy-51-xjQ">
@@ -459,7 +471,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZOd-Zn-YKI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1121" y="-32"/>
+            <point key="canvasLocation" x="1933" y="-32"/>
         </scene>
         <!--Care Card View Controller-->
         <scene sceneID="MxI-xp-R8I">
@@ -470,7 +482,7 @@
                         <viewControllerLayoutGuide type="bottom" id="5Pa-3Y-4Lr"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ZgQ-l9-bZ8">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgP-t5-VfV">
@@ -483,10 +495,13 @@
                         </subviews>
                         <color key="backgroundColor" red="0.090196078430000007" green="0.66274509800000003" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="414" height="736"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="736"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fod-Nj-ePL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-280" y="709"/>
+            <point key="canvasLocation" x="520" y="745"/>
         </scene>
     </scenes>
     <resources>

@@ -76,16 +76,15 @@ extension PageViewCcontroller: UIPageViewControllerDataSource {
         
         let previousIndex = viewControllerIndex - 1
         
-        //User is in the first page page and swiped to the left, go to the last page
         guard previousIndex >= 0 else {
-            return orderedViewControllers.last
+            return nil
         }
         
         guard orderedViewControllers.count > previousIndex else {
             return nil
         }
         
-        return nil
+        return orderedViewControllers[previousIndex]
     }
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
@@ -96,16 +95,15 @@ extension PageViewCcontroller: UIPageViewControllerDataSource {
         let nextIndex = viewControllerIndex + 1
         let viewControllersCount = orderedViewControllers.count
         
-        //User is in the last page page and swiped to the right, go to the first page
         guard viewControllersCount != nextIndex else {
-            return orderedViewControllers.first
+            return nil
         }
         
         guard viewControllersCount > nextIndex else {
             return nil
         }
         
-        return nil
+        return orderedViewControllers[nextIndex]
     }
     
     func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int {
