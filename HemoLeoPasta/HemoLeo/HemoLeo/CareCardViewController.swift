@@ -7,13 +7,18 @@
 //
 
 import UIKit
+import CareKit
 
-class CareCardViewController: UIViewController {
+class CareCardViewController: OCKCareCardViewController {
+    
+
+    private let storeManager: CarePlanStoreManager = CarePlanStoreManager.sharedCarePlanStoreManager
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        addTylenolActivity()
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,5 +39,24 @@ class CareCardViewController: UIViewController {
     @IBAction func cancel(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    
+    func addTylenolActivity() {
+        var tylenolActivity : OCKCarePlanActivity!
+        
+        let startdate = NSDateComponents(year: 2016, month: 01, day: 01)
+        
+        let schedule = OCKCareSchedule.weeklyScheduleWithStartDate(startdate, occurrencesOnEachDay: [1,0,2,0,2,0,1])
+        
+        tylenolActivity = OCKCarePlanActivity.interventionWithIdentifier("tylenol", groupIdentifier: "medicamentos", title: "Tylenol", text: "750mg", tintColor: UIColor.blueColor(), instructions: "bla bla bla", imageURL: nil, schedule: schedule, userInfo: nil)
+        
+        storeManager.store.addActivity(tylenolActivity) { (success, error) in
+            if error != nil {
+                print("Erro ao adicionar atividade do tylenol")
+            }
+        }
+        
+    }
+
 
 }

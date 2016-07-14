@@ -122,6 +122,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		2B7997F41D37DD2B00D0996D /* StoryTelling */ = {
+			isa = PBXGroup;
+			children = (
+				2B7997ED1D37CD8F00D0996D /* StoryOneViewController.swift */,
+				2B7997F11D37CD9F00D0996D /* Story2ViewController.swift */,
+			);
+			name = StoryTelling;
+			sourceTree = "<group>";
+		};
 		2BA188731D355A2C007F1CEB = {
 			isa = PBXGroup;
 			children = (
@@ -179,9 +188,8 @@
 		2BA188991D355BCC007F1CEB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2B7997F41D37DD2B00D0996D /* StoryTelling */,
 				4E2B29BF1D36CD0E00EED2B4 /* MainViewController.swift */,
-				2B7997ED1D37CD8F00D0996D /* StoryOneViewController.swift */,
-				2B7997F11D37CD9F00D0996D /* Story2ViewController.swift */,
 				EBBD25AD1D3731BE00786155 /* SettingViewController.swift */,
 				4E2B29C11D36CD7600EED2B4 /* Canvas.swift */,
 				4E2B29C31D36CDC400EED2B4 /* CareCardViewController.swift */,
