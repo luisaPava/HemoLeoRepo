@@ -29,6 +29,7 @@
 		4E2B29C21D36CD7600EED2B4 /* Canvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B29C11D36CD7600EED2B4 /* Canvas.swift */; };
 		4E2B29C41D36CDC400EED2B4 /* CareCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B29C31D36CDC400EED2B4 /* CareCardViewController.swift */; };
 		4E2B29C81D37057A00EED2B4 /* PageViewCcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B29C71D37057A00EED2B4 /* PageViewCcontroller.swift */; };
+		EBBD25AE1D3731BE00786155 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBD25AD1D3731BE00786155 /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		4E2B29C11D36CD7600EED2B4 /* Canvas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Canvas.swift; sourceTree = "<group>"; };
 		4E2B29C31D36CDC400EED2B4 /* CareCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CareCardViewController.swift; sourceTree = "<group>"; };
 		4E2B29C71D37057A00EED2B4 /* PageViewCcontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewCcontroller.swift; sourceTree = "<group>"; };
+		EBBD25AD1D3731BE00786155 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				4E2B29BF1D36CD0E00EED2B4 /* MainViewController.swift */,
+				EBBD25AD1D3731BE00786155 /* SettingViewController.swift */,
 				4E2B29C11D36CD7600EED2B4 /* Canvas.swift */,
 				4E2B29C31D36CDC400EED2B4 /* CareCardViewController.swift */,
 				4E2B29C71D37057A00EED2B4 /* PageViewCcontroller.swift */,
@@ -358,6 +361,7 @@
 				4E2B29B81D36CC5300EED2B4 /* SlideInDismissalAnimator.swift in Sources */,
 				4E2B29B71D36CC5300EED2B4 /* SlideInPresentationAnimator.swift in Sources */,
 				2BA188C21D3567A5007F1CEB /* Water.swift in Sources */,
+				EBBD25AE1D3731BE00786155 /* SettingViewController.swift in Sources */,
 				2BA188C41D35681E007F1CEB /* Exercise.swift in Sources */,
 				2BA188C01D3560C3007F1CEB /* Fruits.swift in Sources */,
 				4E2B29BE1D36CC6300EED2B4 /* TransitionDismissalAnimator.swift in Sources */,
