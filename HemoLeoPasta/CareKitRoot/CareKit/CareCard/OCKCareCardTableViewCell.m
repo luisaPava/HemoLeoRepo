@@ -98,12 +98,13 @@ static const CGFloat ButtonViewSize = 40.0;
     for (OCKCarePlanEvent *event in self.interventionEvents) {
         OCKCareCardButton *frequencyButton = [[OCKCareCardButton alloc] initWithFrame:CGRectZero];
         frequencyButton.tintColor = self.tintColor;
-        frequencyButton.selected = (event.state == OCKCarePlanEventStateCompleted);
-        frequencyButton.translatesAutoresizingMaskIntoConstraints = NO;
-        
         //Change the icon
         frequencyButton.imagNameNormal = self.imageNameNormal;
         frequencyButton.imagNameSelected = self.imageNameSelected;
+
+        frequencyButton.selected = (event.state == OCKCarePlanEventStateCompleted);
+        frequencyButton.translatesAutoresizingMaskIntoConstraints = NO;
+//        NSLog(frequencyButton.imagNameNormal);
         
         [frequencyButton addTarget:self
                             action:@selector(toggleFrequencyButton:)

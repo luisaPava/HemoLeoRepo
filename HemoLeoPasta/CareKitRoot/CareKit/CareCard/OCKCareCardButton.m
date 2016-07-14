@@ -33,7 +33,7 @@
 #import <QuartzCore/QuartzCore.h>
 
 
-static const CGFloat ButtonSize = 30.0;
+//static const CGFloat ButtonSize = 30.0;
 
 @implementation OCKCareCardButton {
 /* Original
@@ -75,6 +75,8 @@ static const CGFloat ButtonSize = 30.0;
     
     if (selection) {
         [self setImage: [UIImage imageNamed: self.imagNameSelected] forState:UIControlStateSelected];
+        NSLog(self.imagNameNormal);
+        NSLog(@"CareCardButton");
     } else {
         [self setImage: [UIImage imageNamed: self.imagNameNormal] forState:UIControlStateNormal];
     }

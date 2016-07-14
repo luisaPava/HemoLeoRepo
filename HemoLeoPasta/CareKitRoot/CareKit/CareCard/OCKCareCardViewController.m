@@ -493,8 +493,11 @@
     
     //Change the icon
     NSString *string = selectedActivity.title;
-    cell.imageNameSelected = [NSString stringWithFormat:@"%@Selected.png", string];
-    cell.imageNameNormal = [NSString stringWithFormat:@"%@Normal.png", string];
+    
+    cell.imageNameSelected = [NSString stringWithFormat:@"%@Selected", string];
+    cell.imageNameNormal = [NSString stringWithFormat:@"%@Normal", string];
+//    NSLog(cell.imageNameNormal);
+    NSLog(@"CareCard");
     
     cell.interventionEvents = _events[indexPath.row];
     cell.delegate = self;
