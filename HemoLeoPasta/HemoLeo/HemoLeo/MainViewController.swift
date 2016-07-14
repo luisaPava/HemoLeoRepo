@@ -14,6 +14,10 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        let swipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(MainViewController.swipeGesture))
+//        self.view.userInteractionEnabled = true
+//        self.view.addGestureRecognizer(swipeGestureRecognizer)
 
         // Do any additional setup after loading the view.
     }
@@ -39,9 +43,10 @@ class MainViewController: UIViewController {
             let vc = segue.destinationViewController as! CareCardViewController
             vc.transitioningDelegate = viewTransitionDelegate
             vc.modalPresentationStyle = .Custom
-            
         }
     }
-
-
+    
+//    func swipeGesture() {
+//        performSegueWithIdentifier("mainToCanvas", sender: self)
+//    }
 }
