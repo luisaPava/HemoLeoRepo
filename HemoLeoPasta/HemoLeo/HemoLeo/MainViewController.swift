@@ -11,6 +11,8 @@ import UIKit
 class MainViewController: UIViewController, UIPopoverPresentationControllerDelegate {
     
     let viewTransitionDelegate = TransitionDelegate()
+    
+    var background: String = "Default"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +22,8 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
 //        self.view.addGestureRecognizer(swipeGestureRecognizer)
 
         // Do any additional setup after loading the view.
+        
+        view.backgroundColor = UIColor(patternImage: UIImage(named: background)!)
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,23 +31,14 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    // MARK: -Popover view
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "mainToCare" {
             let popOverVC = segue.destinationViewController as! CareCardViewController
             
             popOverVC.popoverPresentationController?.delegate = self
-            popOverVC.popoverPresentationController?.sourceRect = CGRect(x: 500, y: -100, width: 0, height: 0)
+            popOverVC.popoverPresentationController?.sourceRect = CGRect(x: -150, y: -100, width: 0, height: 0)
         }
     }
     
@@ -51,15 +46,5 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
         return UIModalPresentationStyle.None
     }
     
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        if segue.identifier == "mainToCare" {
-//            let vc = segue.destinationViewController as! CareCardViewController
-//            vc.transitioningDelegate = viewTransitionDelegate
-//            vc.modalPresentationStyle = .Custom
-//        }
-//    }
-    
-//    func swipeGesture() {
-//        performSegueWithIdentifier("mainToCanvas", sender: self)
-//    }
+
 }

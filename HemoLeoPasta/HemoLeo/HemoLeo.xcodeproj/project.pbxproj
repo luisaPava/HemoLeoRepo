@@ -11,6 +11,10 @@
 		2B02112A1D35736D00AFFB17 /* CareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B0211261D35735800AFFB17 /* CareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2B7997EE1D37CD8F00D0996D /* StoryOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7997ED1D37CD8F00D0996D /* StoryOneViewController.swift */; };
 		2B7997F21D37CD9F00D0996D /* Story2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7997F11D37CD9F00D0996D /* Story2ViewController.swift */; };
+		2B87D5E91D38247000F29678 /* AddActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B87D5E81D38247000F29678 /* AddActivityViewController.swift */; };
+		2B87D5EB1D3825DB00F29678 /* AddedActivitiesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B87D5EA1D3825DB00F29678 /* AddedActivitiesData.swift */; };
+		2B87D5ED1D38261300F29678 /* ToAddedActivitiesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B87D5EC1D38261300F29678 /* ToAddedActivitiesData.swift */; };
+		2B87D5F21D382F0100F29678 /* AddCustomActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B87D5F11D382F0100F29678 /* AddCustomActivityViewController.swift */; };
 		2BA188801D355A2C007F1CEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA1887F1D355A2C007F1CEB /* AppDelegate.swift */; };
 		2BA188891D355A2C007F1CEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BA188871D355A2C007F1CEB /* Main.storyboard */; };
 		2BA1888B1D355A2C007F1CEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BA1888A1D355A2C007F1CEB /* Assets.xcassets */; };
@@ -76,6 +80,10 @@
 		2B02111F1D35735800AFFB17 /* CareKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CareKit.xcodeproj; path = ../CareKitRoot/CareKit.xcodeproj; sourceTree = "<group>"; };
 		2B7997ED1D37CD8F00D0996D /* StoryOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryOneViewController.swift; sourceTree = "<group>"; };
 		2B7997F11D37CD9F00D0996D /* Story2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story2ViewController.swift; sourceTree = "<group>"; };
+		2B87D5E81D38247000F29678 /* AddActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddActivityViewController.swift; sourceTree = "<group>"; };
+		2B87D5EA1D3825DB00F29678 /* AddedActivitiesData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddedActivitiesData.swift; sourceTree = "<group>"; };
+		2B87D5EC1D38261300F29678 /* ToAddedActivitiesData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToAddedActivitiesData.swift; sourceTree = "<group>"; };
+		2B87D5F11D382F0100F29678 /* AddCustomActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCustomActivityViewController.swift; sourceTree = "<group>"; };
 		2BA1887C1D355A2C007F1CEB /* HemoLeo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HemoLeo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BA1887F1D355A2C007F1CEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BA188881D355A2C007F1CEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -192,6 +200,8 @@
 				4E2B29BF1D36CD0E00EED2B4 /* MainViewController.swift */,
 				EBBD25AD1D3731BE00786155 /* SettingViewController.swift */,
 				4E2B29C11D36CD7600EED2B4 /* Canvas.swift */,
+				2B87D5E81D38247000F29678 /* AddActivityViewController.swift */,
+				2B87D5F11D382F0100F29678 /* AddCustomActivityViewController.swift */,
 				4E2B29C31D36CDC400EED2B4 /* CareCardViewController.swift */,
 				4E2B29C71D37057A00EED2B4 /* PageViewCcontroller.swift */,
 			);
@@ -250,6 +260,8 @@
 				2BA188C31D35681E007F1CEB /* Exercise.swift */,
 				2BA188C51D35696A007F1CEB /* Shot.swift */,
 				2BA188C11D3567A5007F1CEB /* Water.swift */,
+				2B87D5EA1D3825DB00F29678 /* AddedActivitiesData.swift */,
+				2B87D5EC1D38261300F29678 /* ToAddedActivitiesData.swift */,
 			);
 			name = Activities;
 			sourceTree = "<group>";
@@ -370,6 +382,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B87D5F21D382F0100F29678 /* AddCustomActivityViewController.swift in Sources */,
 				2BA188A21D355CBD007F1CEB /* CarePlanStoreManager.swift in Sources */,
 				4E2B29C81D37057A00EED2B4 /* PageViewCcontroller.swift in Sources */,
 				4E2B29B81D36CC5300EED2B4 /* SlideInDismissalAnimator.swift in Sources */,
@@ -388,8 +401,11 @@
 				2B7997F21D37CD9F00D0996D /* Story2ViewController.swift in Sources */,
 				2BA188801D355A2C007F1CEB /* AppDelegate.swift in Sources */,
 				4E2B29BD1D36CC6300EED2B4 /* TransitionPresentationAnimator.swift in Sources */,
+				2B87D5E91D38247000F29678 /* AddActivityViewController.swift in Sources */,
 				2BA188BC1D355D96007F1CEB /* Actitvity.swift in Sources */,
 				2BA188BE1D355EEF007F1CEB /* Vagetables.swift in Sources */,
+				2B87D5ED1D38261300F29678 /* ToAddedActivitiesData.swift in Sources */,
+				2B87D5EB1D3825DB00F29678 /* AddedActivitiesData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

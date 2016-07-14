@@ -75,8 +75,6 @@
     
     if (selection) {
         [self setImage: [UIImage imageNamed: self.imagNameSelected] forState:UIControlStateSelected];
-        NSLog(self.imagNameNormal);
-        NSLog(@"CareCardButton");
     } else {
         [self setImage: [UIImage imageNamed: self.imagNameNormal] forState:UIControlStateNormal];
     }

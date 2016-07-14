@@ -67,8 +67,8 @@ class CareCardViewController: UINavigationController /*OCKCareCardViewController
         button.addTarget(self, action: #selector(self.cancelBtn), forControlEvents: UIControlEvents.TouchUpInside)
         viewController.view.addSubview(button)
         
-//        viewController.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add Activity", style: .Plain, target: self, action: #selector(pushAddActivityController))
-//        viewController.navigationItem.rightBarButtonItem?.tintColor = Colors.Red.color
+        viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Add Activity", style: .Plain, target: self, action: #selector(pushAddActivityController))
+        viewController.navigationItem.leftBarButtonItem?.tintColor = UIColor.redColor()
 
         return viewController
     }
@@ -76,5 +76,15 @@ class CareCardViewController: UINavigationController /*OCKCareCardViewController
     func cancelBtn() {
         print("Btn")
         self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    // MARK: - User interaction functions
+    
+    // Instantiates the AddActivityTableViewController from Main.storyboard
+    // and asks navigationController to show it.
+    func pushAddActivityController() {
+        guard let addActivityTableVC = self.storyboard?.instantiateViewControllerWithIdentifier("AddActivityVC") else { return }
+        
+        self.presentViewController(addActivityTableVC, animated: true, completion: nil)
     }
 }
