@@ -63,6 +63,7 @@ class Canvas: UIViewController {
         UIGraphicsEndImageContext()
         
         let activity = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+        activity.popoverPresentationController?.sourceView = self.view
         presentViewController(activity, animated: true, completion: nil)
 
     }

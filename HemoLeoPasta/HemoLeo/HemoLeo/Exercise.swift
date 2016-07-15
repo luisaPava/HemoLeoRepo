@@ -22,7 +22,7 @@ class Exercise: Activity {
         let schedule = OCKCareSchedule.weeklyScheduleWithStartDate(startDate, occurrencesOnEachDay: occurrences)
         
         // Set information for the activity
-        let title = NSLocalizedString("Exercício", comment: "")
+        let title = NSLocalizedString("Exercicio", comment: "")
         let summary = NSLocalizedString("Leve", comment: "")
         let instructions = NSLocalizedString("Natação, caminhada ou andar de bicicleta", comment: "")
         

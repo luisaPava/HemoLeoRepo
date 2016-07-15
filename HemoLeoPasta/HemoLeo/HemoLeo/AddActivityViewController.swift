@@ -89,11 +89,11 @@ extension AddActivityViewController {
             if let activity = activity {
                 self.storeManager.store.removeActivity(activity) { (success, error) in
                     if (error != nil) {
-                        print("An error occurred when adding a new Activity: \(error?.localizedDescription)")
+                        print("An error occurred when removing the Activity: \(error?.debugDescription)")
                     }
                 }
                 
-                //                sender.tintColor = UIColor.redColor()
+//                sender.tintColor = UIColor.redColor()
                 
                 self.activities[key] = false
                 
@@ -137,7 +137,7 @@ extension AddActivityViewController {
             if let activity = activity {
                 self.storeManager.store.addActivity(activity) { (success, error) in
                     if (error != nil) {
-                        print("An error occurred when adding a new Activity: \(error?.localizedDescription)")
+                        print("An error occurred when adding a new Activity: \(error?.debugDescription)")
                     }
                 }
                 
@@ -168,8 +168,6 @@ extension AddActivityViewController {
             print("Failed to save 'added' activities...")
         }
     }
-    
-    
     
     func saveToAddActivitiesData() {
         let isSuccessfullSave = NSKeyedArchiver.archiveRootObject(activities, toFile: ToAddActivitiesData.ArchiveURL.path!)

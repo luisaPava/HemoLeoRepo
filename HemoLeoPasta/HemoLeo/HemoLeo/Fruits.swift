@@ -10,7 +10,7 @@ import CareKit
 
 class Fruits: Activity {
     
-    let activityType: ActivityType = .Vegetables
+    let activityType: ActivityType = .Fruits
     var occurrences: [Int] = [Int]()
     var extraInfo: String = String()
     var icon: UIImage? = UIImage(named: "fuits")

@@ -22,7 +22,7 @@ class Water: Activity {
         let schedule = OCKCareSchedule.weeklyScheduleWithStartDate(startDate, occurrencesOnEachDay: occurrences)
         
         // Set information for the activity
-        let title = NSLocalizedString("Água", comment: "")
+        let title = NSLocalizedString("Agua", comment: "")
         let summary = NSLocalizedString("400ml", comment: "")
         let instructions = NSLocalizedString("É muito importante beber bastante água, com um total de 2L", comment: "")
         

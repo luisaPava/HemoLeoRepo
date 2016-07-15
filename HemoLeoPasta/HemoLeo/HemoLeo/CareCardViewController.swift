@@ -35,37 +35,14 @@ class CareCardViewController: UINavigationController /*OCKCareCardViewController
         dismissViewControllerAnimated(true, completion: nil)
     }
     
-    
-    func addTylenolActivity() {
-        var tylenolActivity : OCKCarePlanActivity!
-        let startdate = NSDateComponents(year: 2016, month: 01, day: 01)
-        let schedule = OCKCareSchedule.weeklyScheduleWithStartDate(startdate, occurrencesOnEachDay: [1,0,2,0,2,0,1])
-        
-        tylenolActivity = OCKCarePlanActivity.interventionWithIdentifier("tylenol", groupIdentifier: "medicamentos", title: "Tylenol", text: "750mg", tintColor: UIColor.blueColor(), instructions: "bla bla bla", imageURL: nil, schedule: schedule, userInfo: nil)
-        
-        
-        storeManager.store.addActivity(tylenolActivity) { (success, error) in
-            if error != nil {
-                print("Erro ao adicionar atividade do tylenol")
-            }
-        }
-    }
-    
     private func createCareCardVC() -> OCKCareCardViewController {
         let viewController = OCKCareCardViewController(carePlanStore: storeManager.store)
         
-        viewController.maskImage = UIImage(named: "bloodDrop")
-        viewController.smallMaskImage = UIImage(named: "bloodDrop")
         viewController.showEdgeIndicators = true
         
         // Setup controller's title and tab bar icon
-        viewController.title = "Pet's Care Card"
-        viewController.tabBarItem = UITabBarItem(title: "Pet's Card", image: UIImage(named: "carecard"), selectedImage: UIImage(named: "carecard-fill"))
-        
-        let button = UIButton(frame: CGRect(x: 100, y: 400, width: 300, height: 100))
-        button.setTitle("Cancel", forState: .Normal)
-        button.addTarget(self, action: #selector(self.cancelBtn), forControlEvents: UIControlEvents.TouchUpInside)
-        viewController.view.addSubview(button)
+        viewController.title = "Cuidados"
+        viewController.tabBarItem = UITabBarItem(title: "Cuidados", image: UIImage(named: "carecard"), selectedImage: UIImage(named: "carecard-fill"))
         
         viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Add Activity", style: .Plain, target: self, action: #selector(pushAddActivityController))
         viewController.navigationItem.leftBarButtonItem?.tintColor = UIColor.redColor()
@@ -73,10 +50,6 @@ class CareCardViewController: UINavigationController /*OCKCareCardViewController
         return viewController
     }
     
-    func cancelBtn() {
-        print("Btn")
-        self.dismissViewControllerAnimated(true, completion: nil)
-    }
     
     // MARK: - User interaction functions
     

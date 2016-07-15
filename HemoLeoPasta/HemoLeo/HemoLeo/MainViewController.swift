@@ -31,11 +31,17 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
         // Dispose of any resources that can be recreated.
     }
     
-    // MARK: -Popover view
+    // MARK: - Popover view
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "mainToCare" {
             let popOverVC = segue.destinationViewController as! CareCardViewController
+            
+            popOverVC.popoverPresentationController?.delegate = self
+            popOverVC.popoverPresentationController?.sourceRect = CGRect(x: -150, y: -100, width: 0, height: 0)
+            
+        } else if segue.identifier == "mainToSymptoms" {
+            let popOverVC = segue.destinationViewController as! SymptomCardViewController
             
             popOverVC.popoverPresentationController?.delegate = self
             popOverVC.popoverPresentationController?.sourceRect = CGRect(x: -150, y: -100, width: 0, height: 0)
@@ -45,6 +51,4 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
     func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle {
         return UIModalPresentationStyle.None
     }
-    
-
 }
