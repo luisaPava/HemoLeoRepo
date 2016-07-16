@@ -37,6 +37,11 @@
 		4E2B29C81D37057A00EED2B4 /* PageViewCcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B29C71D37057A00EED2B4 /* PageViewCcontroller.swift */; };
 		4E2B29CE1D395AF800EED2B4 /* SymptomCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B29CD1D395AF800EED2B4 /* SymptomCardViewController.swift */; };
 		4E2B29D41D39629E00EED2B4 /* AddSymptomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B29D31D39629E00EED2B4 /* AddSymptomViewController.swift */; };
+		4E2B2DE71D3A987500EED2B4 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E2B2DE41D3A984D00EED2B4 /* ResearchKit.framework */; };
+		4E2B2DE81D3A987500EED2B4 /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4E2B2DE41D3A984D00EED2B4 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4E2B2DEF1D3AA7F900EED2B4 /* Assessment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B2DEE1D3AA7F900EED2B4 /* Assessment.swift */; };
+		4E2B2DF31D3ABEEB00EED2B4 /* AssessmentsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B2DF21D3ABEEB00EED2B4 /* AssessmentsManager.swift */; };
+		4E2B2DF51D3AD12A00EED2B4 /* Pain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B2DF41D3AD12A00EED2B4 /* Pain.swift */; };
 		EBBD25AE1D3731BE00786155 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBD25AD1D3731BE00786155 /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +67,27 @@
 			remoteGlobalIDString = 8605A5B91C4F04EC00DD65FF;
 			remoteInfo = CareKit;
 		};
+		4E2B2DE31D3A984D00EED2B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E2B2DDB1D3A984D00EED2B4 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B183A5951A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
+		4E2B2DE51D3A984D00EED2B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E2B2DDB1D3A984D00EED2B4 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
+			remoteInfo = ResearchKitTests;
+		};
+		4E2B2DE91D3A987500EED2B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E2B2DDB1D3A984D00EED2B4 /* ResearchKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B183A4731A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -71,6 +97,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				4E2B2DE81D3A987500EED2B4 /* ResearchKit.framework in Embed Frameworks */,
 				2B02112A1D35736D00AFFB17 /* CareKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -110,6 +137,10 @@
 		4E2B29C71D37057A00EED2B4 /* PageViewCcontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewCcontroller.swift; sourceTree = "<group>"; };
 		4E2B29CD1D395AF800EED2B4 /* SymptomCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymptomCardViewController.swift; sourceTree = "<group>"; };
 		4E2B29D31D39629E00EED2B4 /* AddSymptomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSymptomViewController.swift; sourceTree = "<group>"; };
+		4E2B2DDB1D3A984D00EED2B4 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = ../ResearchKit/ResearchKit.xcodeproj; sourceTree = "<group>"; };
+		4E2B2DEE1D3AA7F900EED2B4 /* Assessment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assessment.swift; sourceTree = "<group>"; };
+		4E2B2DF21D3ABEEB00EED2B4 /* AssessmentsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssessmentsManager.swift; sourceTree = "<group>"; };
+		4E2B2DF41D3AD12A00EED2B4 /* Pain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pain.swift; sourceTree = "<group>"; };
 		EBBD25AD1D3731BE00786155 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +149,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E2B2DE71D3A987500EED2B4 /* ResearchKit.framework in Frameworks */,
 				2B0211291D35736D00AFFB17 /* CareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,6 +178,7 @@
 		2BA188731D355A2C007F1CEB = {
 			isa = PBXGroup;
 			children = (
+				4E2B2DDB1D3A984D00EED2B4 /* ResearchKit.xcodeproj */,
 				2B02111F1D35735800AFFB17 /* CareKit.xcodeproj */,
 				2BA1887E1D355A2C007F1CEB /* HemoLeo */,
 				2BA1887D1D355A2C007F1CEB /* Products */,
@@ -235,6 +268,7 @@
 		2BA1889C1D355C17007F1CEB /* CareKit */ = {
 			isa = PBXGroup;
 			children = (
+				4E2B2DEB1D3AA71300EED2B4 /* Assessments */,
 				2BA188A01D355C7F007F1CEB /* Activities */,
 				2BA1889F1D355C78007F1CEB /* Symptoms */,
 				2BA188A11D355CBD007F1CEB /* CarePlanStoreManager.swift */,
@@ -292,6 +326,25 @@
 			name = "Slide in Trasinitions";
 			sourceTree = "<group>";
 		};
+		4E2B2DDC1D3A984D00EED2B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E2B2DE41D3A984D00EED2B4 /* ResearchKit.framework */,
+				4E2B2DE61D3A984D00EED2B4 /* ResearchKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4E2B2DEB1D3AA71300EED2B4 /* Assessments */ = {
+			isa = PBXGroup;
+			children = (
+				4E2B2DF21D3ABEEB00EED2B4 /* AssessmentsManager.swift */,
+				4E2B2DEE1D3AA7F900EED2B4 /* Assessment.swift */,
+				4E2B2DF41D3AD12A00EED2B4 /* Pain.swift */,
+			);
+			name = Assessments;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -308,6 +361,7 @@
 			);
 			dependencies = (
 				2B02112C1D35736D00AFFB17 /* PBXTargetDependency */,
+				4E2B2DEA1D3A987500EED2B4 /* PBXTargetDependency */,
 			);
 			name = HemoLeo;
 			productName = HemoLeo;
@@ -345,6 +399,10 @@
 					ProductGroup = 2B0211201D35735800AFFB17 /* Products */;
 					ProjectRef = 2B02111F1D35735800AFFB17 /* CareKit.xcodeproj */;
 				},
+				{
+					ProductGroup = 4E2B2DDC1D3A984D00EED2B4 /* Products */;
+					ProjectRef = 4E2B2DDB1D3A984D00EED2B4 /* ResearchKit.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -366,6 +424,20 @@
 			fileType = wrapper.cfbundle;
 			path = CareKitTests.xctest;
 			remoteRef = 2B0211271D35735800AFFB17 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4E2B2DE41D3A984D00EED2B4 /* ResearchKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ResearchKit.framework;
+			remoteRef = 4E2B2DE31D3A984D00EED2B4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4E2B2DE61D3A984D00EED2B4 /* ResearchKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ResearchKitTests.xctest;
+			remoteRef = 4E2B2DE51D3A984D00EED2B4 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -400,18 +472,21 @@
 				2BA188C01D3560C3007F1CEB /* Fruits.swift in Sources */,
 				4E2B29BE1D36CC6300EED2B4 /* TransitionDismissalAnimator.swift in Sources */,
 				4E2B29C01D36CD0E00EED2B4 /* MainViewController.swift in Sources */,
+				4E2B2DEF1D3AA7F900EED2B4 /* Assessment.swift in Sources */,
 				4E2B29C21D36CD7600EED2B4 /* Canvas.swift in Sources */,
 				2BA188C61D35696A007F1CEB /* Shot.swift in Sources */,
 				4E2B29BC1D36CC6300EED2B4 /* TransitionDelegate.swift in Sources */,
 				4E2B29CE1D395AF800EED2B4 /* SymptomCardViewController.swift in Sources */,
 				4E2B29C41D36CDC400EED2B4 /* CareCardViewController.swift in Sources */,
 				2B7997F21D37CD9F00D0996D /* Story2ViewController.swift in Sources */,
+				4E2B2DF31D3ABEEB00EED2B4 /* AssessmentsManager.swift in Sources */,
 				2BA188801D355A2C007F1CEB /* AppDelegate.swift in Sources */,
 				4E2B29BD1D36CC6300EED2B4 /* TransitionPresentationAnimator.swift in Sources */,
 				4E2B29D41D39629E00EED2B4 /* AddSymptomViewController.swift in Sources */,
 				2B87D5E91D38247000F29678 /* AddActivityViewController.swift in Sources */,
 				2BA188BC1D355D96007F1CEB /* Actitvity.swift in Sources */,
 				2BA188BE1D355EEF007F1CEB /* Vagetables.swift in Sources */,
+				4E2B2DF51D3AD12A00EED2B4 /* Pain.swift in Sources */,
 				2B87D5ED1D38261300F29678 /* ToAddedActivitiesData.swift in Sources */,
 				2B87D5EB1D3825DB00F29678 /* AddedActivitiesData.swift in Sources */,
 			);
@@ -424,6 +499,11 @@
 			isa = PBXTargetDependency;
 			name = CareKit;
 			targetProxy = 2B02112B1D35736D00AFFB17 /* PBXContainerItemProxy */;
+		};
+		4E2B2DEA1D3A987500EED2B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ResearchKit;
+			targetProxy = 4E2B2DE91D3A987500EED2B4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -534,6 +614,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = HemoLeo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Luisa.HemoLeo;
@@ -546,6 +628,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = HemoLeo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Luisa.HemoLeo;

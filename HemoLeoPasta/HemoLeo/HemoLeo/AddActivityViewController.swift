@@ -26,11 +26,11 @@ class AddActivityViewController: UIViewController {
         // Loads default Activities if it's the app's first launch
         let defaults = NSUserDefaults.standardUserDefaults()
         
-        if !defaults.boolForKey("loadedDefaultData") {
+        if !defaults.boolForKey("loadedDefaultCareCardData") {
             print("Loading default Activities...")
             NSUserDefaults.standardUserDefaults().setBool(false, forKey: "firstLaunch")
             loadDefaultActivities()
-            defaults.setBool(true, forKey: "loadedDefaultData")
+            defaults.setBool(true, forKey: "loadedDefaultCareCardData")
         } else {
             self.activities = loadToAddActivitiesData()!
         }
@@ -181,10 +181,7 @@ extension AddActivityViewController {
         let activitiesToLoad = 5
         
         for _ in 0..<activitiesToLoad {
-            print(#function)
             self.activities.append(false)
-            print(#function)
-
         }
         
         saveToAddActivitiesData()

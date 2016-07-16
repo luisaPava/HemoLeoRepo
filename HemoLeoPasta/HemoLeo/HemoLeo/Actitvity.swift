@@ -8,7 +8,7 @@
 
 import CareKit
 
-protocol Activity: class {
+protocol Activity {
     var activityType: ActivityType { get }
     
     func carePlanActivity() -> OCKCarePlanActivity

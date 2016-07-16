@@ -496,8 +496,6 @@
     
     cell.imageNameSelected = [NSString stringWithFormat:@"%@Selected", string];
     cell.imageNameNormal = [NSString stringWithFormat:@"%@Normal", string];
-//    NSLog(cell.imageNameNormal);
-    NSLog(@"CareCard");
     
     cell.interventionEvents = _events[indexPath.row];
     cell.delegate = self;
