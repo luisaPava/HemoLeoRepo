@@ -5,10 +5,6 @@
 //  Created by Gabriel Oliveira on 16/07/16.
 //  Copyright © 2016 Bepid. All rights reserved.
 //
-
-import Foundation
-
-
 import Foundation
 import CareKit
 import ResearchKit
@@ -64,7 +60,7 @@ class Pain: Assessment {
         //Second step: How bad is your pain?
         let painLevelAnswerFormat = ORKScaleAnswerFormat(
             maximumValue: 10,
-            minimumValue: 1,
+            minimumValue: 0,
             defaultValue: -1,
             step: 1,
             vertical: false,

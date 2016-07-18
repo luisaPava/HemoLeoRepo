@@ -33,7 +33,7 @@ extension Assessment {
 //                return OCKCarePlanEventResult(valueString: answer.stringValue, unitString: "out of 10", userInfo: nil)
 //            }
 //        }
-        
+
         // Determine what type of result should be saved.
         if let scaleResult = stepResult as? ORKScaleQuestionResult, answer = scaleResult.scaleAnswer {
             return OCKCarePlanEventResult(valueString: answer.stringValue, unitString: "out of 10", userInfo: nil)
@@ -43,6 +43,10 @@ extension Assessment {
             
         } else if let scaleResult = stepResult as? ORKBooleanQuestionResult, answer = scaleResult.booleanAnswer {
             return OCKCarePlanEventResult(valueString: answer.stringValue, unitString: "out of 10", userInfo: nil)
+            
+        } else if let textResult = stepResult as? ORKChoiceQuestionResult, answer = textResult.choiceAnswers {
+            print(answer.first!.stringValue)
+            return OCKCarePlanEventResult(valueString: answer.first!.stringValue, unitString: "", userInfo: nil)
         }
         
         fatalError("Unexpected task result type")

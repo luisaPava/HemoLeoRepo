@@ -42,6 +42,8 @@
 		4E2B2DEF1D3AA7F900EED2B4 /* Assessment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B2DEE1D3AA7F900EED2B4 /* Assessment.swift */; };
 		4E2B2DF31D3ABEEB00EED2B4 /* AssessmentsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B2DF21D3ABEEB00EED2B4 /* AssessmentsManager.swift */; };
 		4E2B2DF51D3AD12A00EED2B4 /* Pain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B2DF41D3AD12A00EED2B4 /* Pain.swift */; };
+		4EA969411D3D622400DBF2AD /* Bleeding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA969401D3D622400DBF2AD /* Bleeding.swift */; };
+		4EA969471D3D681000DBF2AD /* Bruising.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA969461D3D681000DBF2AD /* Bruising.swift */; };
 		EBBD25AE1D3731BE00786155 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBD25AD1D3731BE00786155 /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -141,6 +143,8 @@
 		4E2B2DEE1D3AA7F900EED2B4 /* Assessment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assessment.swift; sourceTree = "<group>"; };
 		4E2B2DF21D3ABEEB00EED2B4 /* AssessmentsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssessmentsManager.swift; sourceTree = "<group>"; };
 		4E2B2DF41D3AD12A00EED2B4 /* Pain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pain.swift; sourceTree = "<group>"; };
+		4EA969401D3D622400DBF2AD /* Bleeding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bleeding.swift; sourceTree = "<group>"; };
+		4EA969461D3D681000DBF2AD /* Bruising.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bruising.swift; sourceTree = "<group>"; };
 		EBBD25AD1D3731BE00786155 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -341,6 +345,8 @@
 				4E2B2DF21D3ABEEB00EED2B4 /* AssessmentsManager.swift */,
 				4E2B2DEE1D3AA7F900EED2B4 /* Assessment.swift */,
 				4E2B2DF41D3AD12A00EED2B4 /* Pain.swift */,
+				4EA969461D3D681000DBF2AD /* Bruising.swift */,
+				4EA969401D3D622400DBF2AD /* Bleeding.swift */,
 			);
 			name = Assessments;
 			sourceTree = "<group>";
@@ -465,12 +471,14 @@
 				4E2B29C81D37057A00EED2B4 /* PageViewCcontroller.swift in Sources */,
 				4E2B29B81D36CC5300EED2B4 /* SlideInDismissalAnimator.swift in Sources */,
 				4E2B29B71D36CC5300EED2B4 /* SlideInPresentationAnimator.swift in Sources */,
+				4EA969471D3D681000DBF2AD /* Bruising.swift in Sources */,
 				2B7997EE1D37CD8F00D0996D /* StoryOneViewController.swift in Sources */,
 				2BA188C21D3567A5007F1CEB /* Water.swift in Sources */,
 				EBBD25AE1D3731BE00786155 /* SettingViewController.swift in Sources */,
 				2BA188C41D35681E007F1CEB /* Exercise.swift in Sources */,
 				2BA188C01D3560C3007F1CEB /* Fruits.swift in Sources */,
 				4E2B29BE1D36CC6300EED2B4 /* TransitionDismissalAnimator.swift in Sources */,
+				4EA969411D3D622400DBF2AD /* Bleeding.swift in Sources */,
 				4E2B29C01D36CD0E00EED2B4 /* MainViewController.swift in Sources */,
 				4E2B2DEF1D3AA7F900EED2B4 /* Assessment.swift in Sources */,
 				4E2B29C21D36CD7600EED2B4 /* Canvas.swift in Sources */,
