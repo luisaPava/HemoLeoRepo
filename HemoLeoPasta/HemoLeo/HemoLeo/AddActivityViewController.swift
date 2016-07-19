@@ -51,7 +51,7 @@ class AddActivityViewController: UIViewController {
 extension AddActivityViewController {
     
     @IBAction func addActivityAction(sender: AnyObject) {
-        //        let button = sender as UIButton
+//        let button = sender as! UIButton
         let key = sender.tag!
         var activity: OCKCarePlanActivity? = nil
         

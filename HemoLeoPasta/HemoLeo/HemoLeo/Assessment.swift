@@ -45,8 +45,8 @@ extension Assessment {
             return OCKCarePlanEventResult(valueString: answer.stringValue, unitString: "out of 10", userInfo: nil)
             
         } else if let textResult = stepResult as? ORKChoiceQuestionResult, answer = textResult.choiceAnswers {
-            print(answer.first!.stringValue)
-            return OCKCarePlanEventResult(valueString: answer.first!.stringValue, unitString: "", userInfo: nil)
+//            print(answer.first!.stringValue)
+            return OCKCarePlanEventResult(valueString: answer.first as! String, unitString: "", userInfo: nil)
         }
         
         fatalError("Unexpected task result type")

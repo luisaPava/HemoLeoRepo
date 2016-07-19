@@ -58,18 +58,12 @@ extension SymptomCardViewController: OCKSymptomTrackerViewControllerDelegate {
     func symptomTrackerViewController(viewController: OCKSymptomTrackerViewController, didSelectRowWithAssessmentEvent assessmentEvent: OCKCarePlanEvent) {
         
         // Lookup the assessment the row represents.
-        guard let activityType = ActivityType(rawValue: assessmentEvent.activity.identifier) else {
-            print("Deu ruim1")
-            return }
-        guard let sampleAssessment = assessmentManager!.activityWithType(activityType) else {
-            print("Deu ruim2")
-            return }
+        guard let activityType = ActivityType(rawValue: assessmentEvent.activity.identifier) else { return }
+        guard let sampleAssessment = assessmentManager!.activityWithType(activityType) else { return }
     
         guard assessmentEvent.state == .Initial ||
             assessmentEvent.state == .NotCompleted ||
-            (assessmentEvent.state == .Completed && assessmentEvent.activity.resultResettable) else {
-                print("Deu ruim3")
-                return }
+            (assessmentEvent.state == .Completed && assessmentEvent.activity.resultResettable) else { return }
         
         // Show an `ORKTaskViewController` for the assessment's task.
         let taskViewController = ORKTaskViewController(task: sampleAssessment.task(), taskRunUUID: nil)
