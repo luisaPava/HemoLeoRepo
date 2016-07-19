@@ -1,27 +1,29 @@
 //
-//  Shot.swift
+//  Fisiotherapy.swift
 //  HemoLeo
 //
-//  Created by Luisa Mello on 7/12/16.
+//  Created by Luisa Mello on 7/19/16.
 //  Copyright © 2016 Bepid. All rights reserved.
 //
 
 import CareKit
 
-class Shot: Activity {
-    let activityType: ActivityType = .Shot
+class Fisiotherapy: Activity {
+    let activityType: ActivityType = .Fisiotherapy
     static var occurrences: [Int] = [Int]()
     var extraInfo: String = String()
     var icon: UIImage? = UIImage(named: "shot")
     
     func carePlanActivity() -> OCKCarePlanActivity {
         
+        print(Fisiotherapy.occurrences.count)
+        
         // Setup the weekly schedule for the activity
         let startDate = NSDateComponents(year: 2016, month: 1, day: 1)
-        let schedule = OCKCareSchedule.weeklyScheduleWithStartDate(startDate, occurrencesOnEachDay: Shot.occurrences)
+        let schedule = OCKCareSchedule.weeklyScheduleWithStartDate(startDate, occurrencesOnEachDay: Fisiotherapy.occurrences)
         
         // Set information for the activity
-        let title = NSLocalizedString("Aplicação", comment: "")
+        let title = NSLocalizedString("Fisioterapia", comment: "")
         let summary = NSLocalizedString("", comment: "")
         let instructions = NSLocalizedString("", comment: "")
         
@@ -43,7 +45,7 @@ class Shot: Activity {
     
     func carePlanActivityCustom(customOccurencies: [Int]) -> OCKCarePlanActivity {
         
-        Shot.occurrences = customOccurencies
+        Fisiotherapy.occurrences = customOccurencies
         
         return carePlanActivity()
     }

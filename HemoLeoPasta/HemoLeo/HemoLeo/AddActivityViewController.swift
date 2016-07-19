@@ -13,7 +13,11 @@ class AddActivityViewController: UIViewController {
     
     private let storeManager: CarePlanStoreManager = CarePlanStoreManager.sharedCarePlanStoreManager
     
+    private let codingManager: NSCodingManager = NSCodingManager.sharedNSCodingManager
+    
     private var activities: Array<Bool> = []
+    
+    private var senderActivity: Int!
     
         
     override func viewDidLoad() {
@@ -32,7 +36,7 @@ class AddActivityViewController: UIViewController {
             loadDefaultActivities()
             defaults.setBool(true, forKey: "loadedDefaultCareCardData")
         } else {
-            self.activities = loadToAddActivitiesData()!
+            self.activities = codingManager.loadToAddActivitiesData()!
         }
         
     }
@@ -69,14 +73,13 @@ extension AddActivityViewController {
             case 3:
                 activity = Exercise().carePlanActivity()
                 
-                
-            // case "Shot":
-                //                activity = Shot().carePlanActivity()
-                
-//            case "Fisiotherapy":
-//                activity = Fisiotherapy().carePlanActivity()
-                
             case 4:
+                activity = Fisiotherapy().carePlanActivity()
+                
+            case 5:
+                activity = Shot().carePlanActivity()
+                
+            case 6:
                 activity = nil
                 
                 guard let addCustomActivityTableVC = self.storyboard?.instantiateViewControllerWithIdentifier("AddCustomActivityVC") else { return }
@@ -98,10 +101,10 @@ extension AddActivityViewController {
                 self.activities[key] = false
                 
                 // Saves the 'added' activity to 'activities' coding and array.
-                self.saveToAddActivitiesData()
+                self.codingManager.saveToAddActivitiesData(activities)
                 
                 // Removes the selected 'added' activity from its coding and array.
-                self.saveAddedActivitiesData()
+                self.codingManager.saveAddedActivitiesData(activities)
             }
             
         } else {
@@ -116,15 +119,18 @@ extension AddActivityViewController {
                 activity = Water().carePlanActivity()
                 
             case 3:
-                activity = Exercise().carePlanActivity()
-                
-//            case "Shot":
-//                activity = Shot().carePlanActivity()
-//                
-//            case "Fisiotherapy":
-//                activity = Fisiotherapy().carePlanActivity()
+                senderActivity = 3
+                performSegueWithIdentifier("activitiesToOccurencies", sender: self)
                 
             case 4:
+                senderActivity = 4
+                performSegueWithIdentifier("activitiesToOccurencies", sender: self)
+                
+            case 5:
+                senderActivity = 5
+                performSegueWithIdentifier("activitiesToOccurencies", sender: self)
+                
+            case 6:
                 activity = nil
                 
                 guard let addCustomActivityTableVC = self.storyboard?.instantiateViewControllerWithIdentifier("AddCustomActivityVC") else { return }
@@ -144,49 +150,43 @@ extension AddActivityViewController {
                 self.activities[key] = true
                 
                 // Saves the 'to add' activity to 'addedActivities' coding and array.
-                self.saveAddedActivitiesData()
+                self.codingManager.saveAddedActivitiesData(activities)
                 
                 // Removes the selected 'to add' activity from its coding and array.
-                self.saveToAddActivitiesData()
+                self.codingManager.saveToAddActivitiesData(activities)
             }
         }
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+            
+            
+        if segue.identifier == "activitiesToOccurencies" {
+            
+            if let destinationVC = segue.destinationViewController as? OccurenciesViewController {
+            
+                destinationVC.activity = senderActivity
+                
+            }
+                
+        }
+
+        
+    }
+    
+    
     // MARK: NSCoding
-    func loadAddedActivitiesData() -> [Bool]? {
-        return NSKeyedUnarchiver.unarchiveObjectWithFile(AddedActivitiesData.ArchiveURL.path!) as? [Bool]
-    }
-    
-    func loadToAddActivitiesData() -> [Bool]? {
-        return NSKeyedUnarchiver.unarchiveObjectWithFile(ToAddActivitiesData.ArchiveURL.path!) as? [Bool]
-    }
-    
-    func saveAddedActivitiesData() {
-        let isSuccessfullSave = NSKeyedArchiver.archiveRootObject(activities, toFile: AddedActivitiesData.ArchiveURL.path!)
-        
-        if !isSuccessfullSave {
-            print("Failed to save 'added' activities...")
-        }
-    }
-    
-    func saveToAddActivitiesData() {
-        let isSuccessfullSave = NSKeyedArchiver.archiveRootObject(activities, toFile: ToAddActivitiesData.ArchiveURL.path!)
-        
-        if !isSuccessfullSave {
-            print("Failed to save 'to add' activities...")
-        }
-    }
+
     
     func loadDefaultActivities() {
-        let activitiesToLoad = 5
+        let activitiesToLoad = 7
         
         for _ in 0..<activitiesToLoad {
             self.activities.append(false)
         }
         
-        saveToAddActivitiesData()
+        codingManager.saveToAddActivitiesData(activities)
     }
-    
     
 }
 

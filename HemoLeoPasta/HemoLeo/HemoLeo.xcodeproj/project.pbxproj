@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		2B0211291D35736D00AFFB17 /* CareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B0211261D35735800AFFB17 /* CareKit.framework */; };
 		2B02112A1D35736D00AFFB17 /* CareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B0211261D35735800AFFB17 /* CareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2B1A21481D3E6E64007F1B68 /* Fisiotherapy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A21471D3E6E64007F1B68 /* Fisiotherapy.swift */; };
+		2B1A214E1D3E71E2007F1B68 /* OccurenciesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A214D1D3E71E2007F1B68 /* OccurenciesViewController.swift */; };
+		2B1A21521D3E7BA3007F1B68 /* NSCodingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A21511D3E7BA3007F1B68 /* NSCodingManager.swift */; };
 		2B7997EE1D37CD8F00D0996D /* StoryOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7997ED1D37CD8F00D0996D /* StoryOneViewController.swift */; };
 		2B7997F21D37CD9F00D0996D /* Story2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7997F11D37CD9F00D0996D /* Story2ViewController.swift */; };
 		2B87D5E91D38247000F29678 /* AddActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B87D5E81D38247000F29678 /* AddActivityViewController.swift */; };
@@ -36,7 +39,6 @@
 		4E2B29C41D36CDC400EED2B4 /* CareCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B29C31D36CDC400EED2B4 /* CareCardViewController.swift */; };
 		4E2B29C81D37057A00EED2B4 /* PageViewCcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B29C71D37057A00EED2B4 /* PageViewCcontroller.swift */; };
 		4E2B29CE1D395AF800EED2B4 /* SymptomCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B29CD1D395AF800EED2B4 /* SymptomCardViewController.swift */; };
-		4E2B29D41D39629E00EED2B4 /* AddSymptomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B29D31D39629E00EED2B4 /* AddSymptomViewController.swift */; };
 		4E2B2DE71D3A987500EED2B4 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E2B2DE41D3A984D00EED2B4 /* ResearchKit.framework */; };
 		4E2B2DE81D3A987500EED2B4 /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4E2B2DE41D3A984D00EED2B4 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4E2B2DEF1D3AA7F900EED2B4 /* Assessment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B2DEE1D3AA7F900EED2B4 /* Assessment.swift */; };
@@ -109,6 +111,9 @@
 
 /* Begin PBXFileReference section */
 		2B02111F1D35735800AFFB17 /* CareKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CareKit.xcodeproj; path = ../CareKitRoot/CareKit.xcodeproj; sourceTree = "<group>"; };
+		2B1A21471D3E6E64007F1B68 /* Fisiotherapy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fisiotherapy.swift; sourceTree = "<group>"; };
+		2B1A214D1D3E71E2007F1B68 /* OccurenciesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OccurenciesViewController.swift; sourceTree = "<group>"; };
+		2B1A21511D3E7BA3007F1B68 /* NSCodingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSCodingManager.swift; sourceTree = "<group>"; };
 		2B7997ED1D37CD8F00D0996D /* StoryOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryOneViewController.swift; sourceTree = "<group>"; };
 		2B7997F11D37CD9F00D0996D /* Story2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story2ViewController.swift; sourceTree = "<group>"; };
 		2B87D5E81D38247000F29678 /* AddActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddActivityViewController.swift; sourceTree = "<group>"; };
@@ -138,7 +143,6 @@
 		4E2B29C31D36CDC400EED2B4 /* CareCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CareCardViewController.swift; sourceTree = "<group>"; };
 		4E2B29C71D37057A00EED2B4 /* PageViewCcontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewCcontroller.swift; sourceTree = "<group>"; };
 		4E2B29CD1D395AF800EED2B4 /* SymptomCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymptomCardViewController.swift; sourceTree = "<group>"; };
-		4E2B29D31D39629E00EED2B4 /* AddSymptomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSymptomViewController.swift; sourceTree = "<group>"; };
 		4E2B2DDB1D3A984D00EED2B4 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = ../ResearchKit/ResearchKit.xcodeproj; sourceTree = "<group>"; };
 		4E2B2DEE1D3AA7F900EED2B4 /* Assessment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assessment.swift; sourceTree = "<group>"; };
 		4E2B2DF21D3ABEEB00EED2B4 /* AssessmentsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssessmentsManager.swift; sourceTree = "<group>"; };
@@ -168,6 +172,23 @@
 				2B0211281D35735800AFFB17 /* CareKitTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		2B1A214F1D3E75D6007F1B68 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		2B1A21501D3E7B70007F1B68 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				4E2B2DF21D3ABEEB00EED2B4 /* AssessmentsManager.swift */,
+				2BA188A11D355CBD007F1CEB /* CarePlanStoreManager.swift */,
+				2B1A21511D3E7BA3007F1B68 /* NSCodingManager.swift */,
+			);
+			name = Managers;
 			sourceTree = "<group>";
 		};
 		2B7997F41D37DD2B00D0996D /* StoryTelling */ = {
@@ -208,6 +229,8 @@
 		2BA188961D355B4A007F1CEB /* HemoLeo */ = {
 			isa = PBXGroup;
 			children = (
+				2B1A21501D3E7B70007F1B68 /* Managers */,
+				2B1A214F1D3E75D6007F1B68 /* Scenes */,
 				2BA1889E1D355C5F007F1CEB /* Global */,
 				2BA1889C1D355C17007F1CEB /* CareKit */,
 				2BA1889B1D355C09007F1CEB /* Others */,
@@ -241,8 +264,8 @@
 				4E2B29BF1D36CD0E00EED2B4 /* MainViewController.swift */,
 				EBBD25AD1D3731BE00786155 /* SettingViewController.swift */,
 				4E2B29C11D36CD7600EED2B4 /* Canvas.swift */,
+				2B1A214D1D3E71E2007F1B68 /* OccurenciesViewController.swift */,
 				4E2B29CD1D395AF800EED2B4 /* SymptomCardViewController.swift */,
-				4E2B29D31D39629E00EED2B4 /* AddSymptomViewController.swift */,
 				2B87D5E81D38247000F29678 /* AddActivityViewController.swift */,
 				2B87D5F11D382F0100F29678 /* AddCustomActivityViewController.swift */,
 				4E2B29C31D36CDC400EED2B4 /* CareCardViewController.swift */,
@@ -274,8 +297,6 @@
 			children = (
 				4E2B2DEB1D3AA71300EED2B4 /* Assessments */,
 				2BA188A01D355C7F007F1CEB /* Activities */,
-				2BA1889F1D355C78007F1CEB /* Symptoms */,
-				2BA188A11D355CBD007F1CEB /* CarePlanStoreManager.swift */,
 			);
 			name = CareKit;
 			sourceTree = "<group>";
@@ -288,13 +309,6 @@
 			name = Global;
 			sourceTree = "<group>";
 		};
-		2BA1889F1D355C78007F1CEB /* Symptoms */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Symptoms;
-			sourceTree = "<group>";
-		};
 		2BA188A01D355C7F007F1CEB /* Activities */ = {
 			isa = PBXGroup;
 			children = (
@@ -303,6 +317,7 @@
 				2BA188BF1D3560C3007F1CEB /* Fruits.swift */,
 				2BA188C31D35681E007F1CEB /* Exercise.swift */,
 				2BA188C51D35696A007F1CEB /* Shot.swift */,
+				2B1A21471D3E6E64007F1B68 /* Fisiotherapy.swift */,
 				2BA188C11D3567A5007F1CEB /* Water.swift */,
 				2B87D5EA1D3825DB00F29678 /* AddedActivitiesData.swift */,
 				2B87D5EC1D38261300F29678 /* ToAddedActivitiesData.swift */,
@@ -342,7 +357,6 @@
 		4E2B2DEB1D3AA71300EED2B4 /* Assessments */ = {
 			isa = PBXGroup;
 			children = (
-				4E2B2DF21D3ABEEB00EED2B4 /* AssessmentsManager.swift */,
 				4E2B2DEE1D3AA7F900EED2B4 /* Assessment.swift */,
 				4E2B2DF41D3AD12A00EED2B4 /* Pain.swift */,
 				4EA969461D3D681000DBF2AD /* Bruising.swift */,
@@ -470,6 +484,7 @@
 				2BA188A21D355CBD007F1CEB /* CarePlanStoreManager.swift in Sources */,
 				4E2B29C81D37057A00EED2B4 /* PageViewCcontroller.swift in Sources */,
 				4E2B29B81D36CC5300EED2B4 /* SlideInDismissalAnimator.swift in Sources */,
+				2B1A21481D3E6E64007F1B68 /* Fisiotherapy.swift in Sources */,
 				4E2B29B71D36CC5300EED2B4 /* SlideInPresentationAnimator.swift in Sources */,
 				4EA969471D3D681000DBF2AD /* Bruising.swift in Sources */,
 				2B7997EE1D37CD8F00D0996D /* StoryOneViewController.swift in Sources */,
@@ -477,6 +492,7 @@
 				EBBD25AE1D3731BE00786155 /* SettingViewController.swift in Sources */,
 				2BA188C41D35681E007F1CEB /* Exercise.swift in Sources */,
 				2BA188C01D3560C3007F1CEB /* Fruits.swift in Sources */,
+				2B1A21521D3E7BA3007F1B68 /* NSCodingManager.swift in Sources */,
 				4E2B29BE1D36CC6300EED2B4 /* TransitionDismissalAnimator.swift in Sources */,
 				4EA969411D3D622400DBF2AD /* Bleeding.swift in Sources */,
 				4E2B29C01D36CD0E00EED2B4 /* MainViewController.swift in Sources */,
@@ -490,9 +506,9 @@
 				4E2B2DF31D3ABEEB00EED2B4 /* AssessmentsManager.swift in Sources */,
 				2BA188801D355A2C007F1CEB /* AppDelegate.swift in Sources */,
 				4E2B29BD1D36CC6300EED2B4 /* TransitionPresentationAnimator.swift in Sources */,
-				4E2B29D41D39629E00EED2B4 /* AddSymptomViewController.swift in Sources */,
 				2B87D5E91D38247000F29678 /* AddActivityViewController.swift in Sources */,
 				2BA188BC1D355D96007F1CEB /* Actitvity.swift in Sources */,
+				2B1A214E1D3E71E2007F1B68 /* OccurenciesViewController.swift in Sources */,
 				2BA188BE1D355EEF007F1CEB /* Vagetables.swift in Sources */,
 				4E2B2DF51D3AD12A00EED2B4 /* Pain.swift in Sources */,
 				2B87D5ED1D38261300F29678 /* ToAddedActivitiesData.swift in Sources */,
