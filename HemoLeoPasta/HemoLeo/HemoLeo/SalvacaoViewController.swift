@@ -9,20 +9,21 @@
 import UIKit
 import SpriteKit
 
-class MainViewController: UIViewController, UIPopoverPresentationControllerDelegate {
+class SalvacaoViewController: UIViewController, UIPopoverPresentationControllerDelegate {
     
     let viewTransitionDelegate = TransitionDelegate()
     
+    
     @IBOutlet weak var careCardButton: UIButton!
     var background: String = "Default"
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        let swipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(MainViewController.swipeGesture))
-//        self.view.userInteractionEnabled = true
-//        self.view.addGestureRecognizer(swipeGestureRecognizer)
-
+        //        let swipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(MainViewController.swipeGesture))
+        //        self.view.userInteractionEnabled = true
+        //        self.view.addGestureRecognizer(swipeGestureRecognizer)
+        
         // Do any additional setup after loading the view.
         
         //view.backgroundColor = UIColor(patternImage: UIImage(named: background)!)
@@ -40,7 +41,7 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
         }
         
         //careCardButton.layer.zPosition = 1
-
+        
     }
     
     override func loadView() {
@@ -58,11 +59,11 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
             return .All
         }
     }
-
+    
     override func prefersStatusBarHidden() -> Bool {
         return true
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -76,6 +77,7 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
             
             popOverVC.popoverPresentationController?.delegate = self
             popOverVC.popoverPresentationController?.sourceRect = CGRect(x: -150, y: -100, width: 0, height: 0)
+            popOverVC.popoverPresentationController?.sourceView = 
             
         } else if segue.identifier == "mainToSymptoms" {
             let popOverVC = segue.destinationViewController as! SymptomCardViewController

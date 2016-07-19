@@ -46,6 +46,10 @@
 		4E2B2DF51D3AD12A00EED2B4 /* Pain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B2DF41D3AD12A00EED2B4 /* Pain.swift */; };
 		4EA969411D3D622400DBF2AD /* Bleeding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA969401D3D622400DBF2AD /* Bleeding.swift */; };
 		4EA969471D3D681000DBF2AD /* Bruising.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA969461D3D681000DBF2AD /* Bruising.swift */; };
+		777711071D3E9AAC0066A0E2 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 777711061D3E9AAC0066A0E2 /* SpriteKit.framework */; };
+		7777110D1D3E9BD00066A0E2 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7777110C1D3E9BD00066A0E2 /* GameScene.swift */; };
+		7777110F1D3E9C110066A0E2 /* LeoImages.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 7777110E1D3E9C110066A0E2 /* LeoImages.atlas */; };
+		777711131D3EA9940066A0E2 /* SalvacaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777711121D3EA9940066A0E2 /* SalvacaoViewController.swift */; };
 		EBBD25AE1D3731BE00786155 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBD25AD1D3731BE00786155 /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -149,6 +153,10 @@
 		4E2B2DF41D3AD12A00EED2B4 /* Pain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pain.swift; sourceTree = "<group>"; };
 		4EA969401D3D622400DBF2AD /* Bleeding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bleeding.swift; sourceTree = "<group>"; };
 		4EA969461D3D681000DBF2AD /* Bruising.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bruising.swift; sourceTree = "<group>"; };
+		777711061D3E9AAC0066A0E2 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		7777110C1D3E9BD00066A0E2 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		7777110E1D3E9C110066A0E2 /* LeoImages.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = LeoImages.atlas; sourceTree = "<group>"; };
+		777711121D3EA9940066A0E2 /* SalvacaoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalvacaoViewController.swift; sourceTree = "<group>"; };
 		EBBD25AD1D3731BE00786155 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -157,6 +165,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				777711071D3E9AAC0066A0E2 /* SpriteKit.framework in Frameworks */,
 				4E2B2DE71D3A987500EED2B4 /* ResearchKit.framework in Frameworks */,
 				2B0211291D35736D00AFFB17 /* CareKit.framework in Frameworks */,
 			);
@@ -177,6 +186,7 @@
 		2B1A214F1D3E75D6007F1B68 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				7777110C1D3E9BD00066A0E2 /* GameScene.swift */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -203,6 +213,7 @@
 		2BA188731D355A2C007F1CEB = {
 			isa = PBXGroup;
 			children = (
+				777711061D3E9AAC0066A0E2 /* SpriteKit.framework */,
 				4E2B2DDB1D3A984D00EED2B4 /* ResearchKit.xcodeproj */,
 				2B02111F1D35735800AFFB17 /* CareKit.xcodeproj */,
 				2BA1887E1D355A2C007F1CEB /* HemoLeo */,
@@ -245,6 +256,7 @@
 		2BA188971D355BAA007F1CEB /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				7777110E1D3E9C110066A0E2 /* LeoImages.atlas */,
 				2BA1888A1D355A2C007F1CEB /* Assets.xcassets */,
 			);
 			name = Assets;
@@ -264,6 +276,7 @@
 				4E2B29BF1D36CD0E00EED2B4 /* MainViewController.swift */,
 				EBBD25AD1D3731BE00786155 /* SettingViewController.swift */,
 				4E2B29C11D36CD7600EED2B4 /* Canvas.swift */,
+				777711121D3EA9940066A0E2 /* SalvacaoViewController.swift */,
 				2B1A214D1D3E71E2007F1B68 /* OccurenciesViewController.swift */,
 				4E2B29CD1D395AF800EED2B4 /* SymptomCardViewController.swift */,
 				2B87D5E81D38247000F29678 /* AddActivityViewController.swift */,
@@ -467,6 +480,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7777110F1D3E9C110066A0E2 /* LeoImages.atlas in Resources */,
 				2BA1888E1D355A2C007F1CEB /* LaunchScreen.storyboard in Resources */,
 				2BA1888B1D355A2C007F1CEB /* Assets.xcassets in Resources */,
 				2BA188891D355A2C007F1CEB /* Main.storyboard in Resources */,
@@ -496,6 +510,7 @@
 				4E2B29BE1D36CC6300EED2B4 /* TransitionDismissalAnimator.swift in Sources */,
 				4EA969411D3D622400DBF2AD /* Bleeding.swift in Sources */,
 				4E2B29C01D36CD0E00EED2B4 /* MainViewController.swift in Sources */,
+				777711131D3EA9940066A0E2 /* SalvacaoViewController.swift in Sources */,
 				4E2B2DEF1D3AA7F900EED2B4 /* Assessment.swift in Sources */,
 				4E2B29C21D36CD7600EED2B4 /* Canvas.swift in Sources */,
 				2BA188C61D35696A007F1CEB /* Shot.swift in Sources */,
@@ -508,6 +523,7 @@
 				4E2B29BD1D36CC6300EED2B4 /* TransitionPresentationAnimator.swift in Sources */,
 				2B87D5E91D38247000F29678 /* AddActivityViewController.swift in Sources */,
 				2BA188BC1D355D96007F1CEB /* Actitvity.swift in Sources */,
+				7777110D1D3E9BD00066A0E2 /* GameScene.swift in Sources */,
 				2B1A214E1D3E71E2007F1B68 /* OccurenciesViewController.swift in Sources */,
 				2BA188BE1D355EEF007F1CEB /* Vagetables.swift in Sources */,
 				4E2B2DF51D3AD12A00EED2B4 /* Pain.swift in Sources */,
