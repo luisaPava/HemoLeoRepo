@@ -8,26 +8,21 @@
 
 import SpriteKit
 
-var lion: SKSpriteNode!
-var lion2: SKSpriteNode!
-var lionMovingFrames: [SKTexture]!
-let careCardButton = SKSpriteNode(imageNamed: "Health")
+
 
 class GameScene: SKScene {
+    var lion: SKSpriteNode!
+    var lion2: SKSpriteNode!
+    var lionMovingFrames: [SKTexture]!
+    
     override func didMoveToView(view: SKView) {
-        
-        
-        careCardButton.position = CGPointMake(100, 100)
-        careCardButton.size = CGSizeMake(70, 70)
-        addChild(careCardButton)
-        
         /* Setup your scene here */
-        backgroundColor = UIColor.clearColor()
+//        backgroundColor = UIColor.clearColor()
         
-//        let bgImage = SKSpriteNode(imageNamed: "Default")
-//        bgImage.position = CGPointMake(self.size.width/2, self.size.height/2)
-//        bgImage.zPosition = -10
-//        addChild(bgImage)
+        let bgImage = SKSpriteNode(imageNamed: "Default")
+        bgImage.position = CGPointMake(self.size.width/2, self.size.height/2)
+        bgImage.zPosition = -10
+        addChild(bgImage)
         
         
         let lionAnimatedAtlas = SKTextureAtlas(named: "LeoImages")
@@ -71,8 +66,8 @@ class GameScene: SKScene {
             resize: false,
             restore: true), count: 1)) {
                 print("Petting ended")
-                lion.hidden = false
-                lion2.hidden = true
+                self.lion.hidden = false
+                self.lion2.hidden = true
         }
     }
     
@@ -103,13 +98,7 @@ class GameScene: SKScene {
                 addChild(lion2)
                 cuddleLeo()
             }
-        } else if touchedNode == careCardButton {
-            let currentViewController: UIViewController = UIApplication.sharedApplication().keyWindow!.rootViewController!
-            currentViewController.performSegueWithIdentifier("mainToCare", sender: self)
         }
-        
-        
-        
     }
     
     
@@ -117,4 +106,10 @@ class GameScene: SKScene {
         /* Called before each frame is rendered */
     }
     
+}
+
+extension GameScene: UIPopoverPresentationControllerDelegate {
+    func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle {
+        return UIModalPresentationStyle.None
+    }
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cVJ-Xd-QkC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uUq-gs-TkJ">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -59,30 +59,6 @@
             </objects>
             <point key="canvasLocation" x="520" y="-1526"/>
         </scene>
-        <!--Salvacao View Controller-->
-        <scene sceneID="NEq-Ue-KIC">
-            <objects>
-                <viewController id="cVJ-Xd-QkC" customClass="SalvacaoViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="9GP-ub-WYv"/>
-                        <viewControllerLayoutGuide type="bottom" id="yLP-NB-k30"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="4RL-Bl-jf2">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jOP-bX-tJz">
-                                <rect key="frame" x="393" y="103" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="htG-b4-yWF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-172" y="-39"/>
-        </scene>
         <!--Main View Controller-->
         <scene sceneID="CBo-oo-oxk">
             <objects>
@@ -95,37 +71,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Wh-Xk-lJU">
-                                <rect key="frame" x="488" y="48" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEL-WE-NQp">
-                                <rect key="frame" x="420" y="48" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="xtU-Y7-TNH" kind="popoverPresentation" identifier="mainToSymptoms" popoverAnchorView="fEL-WE-NQp" id="bv9-Iq-KpX">
-                                        <popoverArrowDirection key="popoverArrowDirection"/>
-                                    </segue>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BX7-Tq-TCQ">
-                                <rect key="frame" x="58" y="48" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="DsG-hq-x4v" kind="show" id="ZcA-8l-bJe"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6qm-kT-h7Y">
-                                <rect key="frame" x="271" y="218" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEL-WE-NQp">
+                                <rect key="frame" x="238" y="265" width="124" height="70"/>
+                                <state key="normal" title="Button" image="Badges"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fEL-WE-NQp" firstAttribute="centerY" secondItem="6pC-mc-sck" secondAttribute="centerY" id="Lsx-oB-su9"/>
+                            <constraint firstItem="fEL-WE-NQp" firstAttribute="centerX" secondItem="6pC-mc-sck" secondAttribute="centerX" id="Ppf-S1-hR6"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="fEL-WE-NQp"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="dG4-0d-tYl"/>
-                    <connections>
-                        <outlet property="careCardButton" destination="7Wh-Xk-lJU" id="vBM-us-Pqh"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Aw-op-AJz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -511,7 +473,7 @@
         <!--Symptom Card View Controller-->
         <scene sceneID="Hiw-WY-5q9">
             <objects>
-                <viewController id="xtU-Y7-TNH" customClass="SymptomCardViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SymptomCard" id="xtU-Y7-TNH" customClass="SymptomCardViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jgy-Oy-viq"/>
                         <viewControllerLayoutGuide type="bottom" id="IX9-7b-p5e"/>
@@ -531,7 +493,7 @@
         <!--Care Card View Controller-->
         <scene sceneID="MxI-xp-R8I">
             <objects>
-                <viewController id="7m9-Mb-eAu" customClass="CareCardViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CareCard" id="7m9-Mb-eAu" customClass="CareCardViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KUx-e9-veC"/>
                         <viewControllerLayoutGuide type="bottom" id="5Pa-3Y-4Lr"/>
@@ -540,7 +502,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgP-t5-VfV">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgP-t5-VfV">
                                 <rect key="frame" x="277" y="521" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -549,6 +511,11 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.090196078430000007" green="0.66274509800000003" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="bgP-t5-VfV"/>
+                            </mask>
+                        </variation>
                     </view>
                     <value key="contentSizeForViewInPopover" type="size" width="414" height="736"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -869,6 +836,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Badges" width="70" height="70"/>
         <image name="BebidaNotSelected" width="111" height="111"/>
         <image name="Black" width="51" height="51"/>
         <image name="Borracha" width="56" height="56"/>

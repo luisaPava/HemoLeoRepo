@@ -10,15 +10,18 @@ import CareKit
 
 class Shot: Activity {
     let activityType: ActivityType = .Shot
-    static var occurrences: [Int] = [Int]()
+    var occurrences: [Int] = [Int]()
     var extraInfo: String = String()
     var icon: UIImage? = UIImage(named: "shot")
     
     func carePlanActivity() -> OCKCarePlanActivity {
+        if occurrences.isEmpty {
+            occurrences = [1, 1, 1, 1, 1, 1, 1]
+        }
         
         // Setup the weekly schedule for the activity
         let startDate = NSDateComponents(year: 2016, month: 1, day: 1)
-        let schedule = OCKCareSchedule.weeklyScheduleWithStartDate(startDate, occurrencesOnEachDay: Shot.occurrences)
+        let schedule = OCKCareSchedule.weeklyScheduleWithStartDate(startDate, occurrencesOnEachDay: occurrences)
         
         // Set information for the activity
         let title = NSLocalizedString("Aplicação", comment: "")
@@ -43,7 +46,7 @@ class Shot: Activity {
     
     func carePlanActivityCustom(customOccurencies: [Int]) -> OCKCarePlanActivity {
         
-        Shot.occurrences = customOccurencies
+        occurrences = customOccurencies
         
         return carePlanActivity()
     }
