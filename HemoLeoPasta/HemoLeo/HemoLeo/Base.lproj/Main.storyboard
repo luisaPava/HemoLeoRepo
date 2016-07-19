@@ -565,60 +565,16 @@
                         <viewControllerLayoutGuide type="bottom" id="ptn-9C-c9p"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="vGK-f1-s8h">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2lZ-TZ-KSR">
-                                <rect key="frame" x="409" y="96" width="30" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="7CH-Jb-B64"/>
-                                    <constraint firstAttribute="height" constant="70" id="Kd2-Rs-TZJ"/>
-                                </constraints>
-                                <state key="normal" title="Fru"/>
-                                <connections>
-                                    <action selector="addActivityAction:" destination="Cfu-op-DX6" eventType="touchUpInside" id="ZFt-Xt-KzX"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvC-ZM-hs9">
-                                <rect key="frame" x="177" y="199" width="30" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="Aq7-52-7cl"/>
-                                    <constraint firstAttribute="height" constant="70" id="GqE-96-104"/>
-                                </constraints>
-                                <state key="normal" title="Wat"/>
-                                <connections>
-                                    <action selector="addActivityAction:" destination="Cfu-op-DX6" eventType="touchUpInside" id="yS2-ho-68R"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XjB-w8-JBw">
-                                <rect key="frame" x="409" y="199" width="30" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="QjE-Qn-LIY"/>
-                                    <constraint firstAttribute="width" constant="70" id="g0K-rf-TFD"/>
-                                </constraints>
-                                <state key="normal" title="Ex"/>
-                                <connections>
-                                    <action selector="addActivityAction:" destination="Cfu-op-DX6" eventType="touchUpInside" id="Uiz-A7-qQB"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kv9-uR-624">
-                                <rect key="frame" x="165" y="304" width="54" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="MUd-T8-Fx9"/>
-                                    <constraint firstAttribute="width" constant="70" id="Y4z-G0-gsd"/>
-                                </constraints>
-                                <state key="normal" title="Custom"/>
-                                <connections>
-                                    <action selector="addActivityAction:" destination="Cfu-op-DX6" eventType="touchUpInside" id="w4K-Pm-0Lf"/>
-                                </connections>
-                            </button>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T1d-4J-di6">
-                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="jxb-jL-XrF"/>
                                 </constraints>
                                 <items>
-                                    <navigationItem title="Title" id="7WL-ob-M4B">
+                                    <navigationItem title="Atividades" id="7WL-ob-M4B">
                                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="BEc-0L-6b9">
                                             <connections>
                                                 <action selector="cancelBarButton:" destination="Cfu-op-DX6" id="2iM-Ts-fBO"/>
@@ -627,29 +583,180 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LG4-Lo-lzC">
-                                <rect key="frame" x="177" y="96" width="30" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="C5M-X6-YIy">
+                                <rect key="frame" x="62" y="94" width="290" height="110"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LG4-Lo-lzC">
+                                        <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="110" id="QTG-v2-v7Y"/>
+                                            <constraint firstAttribute="width" constant="110" id="eGE-sV-lga"/>
+                                        </constraints>
+                                        <state key="normal" image="ComidaNotSelected"/>
+                                        <connections>
+                                            <action selector="addActivityAction:" destination="Cfu-op-DX6" eventType="touchUpInside" id="ZTx-2m-cIA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2lZ-TZ-KSR">
+                                        <rect key="frame" x="180" y="0.0" width="110" height="110"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="110" id="7CH-Jb-B64"/>
+                                            <constraint firstAttribute="height" constant="110" id="Kd2-Rs-TZJ"/>
+                                        </constraints>
+                                        <state key="normal" image="FruitsNotSelected"/>
+                                        <connections>
+                                            <action selector="addActivityAction:" destination="Cfu-op-DX6" eventType="touchUpInside" id="ZFt-Xt-KzX"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="QTG-v2-v7Y"/>
-                                    <constraint firstAttribute="width" constant="70" id="eGE-sV-lga"/>
+                                    <constraint firstAttribute="height" constant="110" id="36e-a4-yYk"/>
+                                    <constraint firstAttribute="width" constant="290" id="TX7-B7-Och"/>
                                 </constraints>
-                                <state key="normal" title="Veg"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="3R4-be-U7H">
+                                <rect key="frame" x="62" y="374" width="290" height="110"/>
+                                <subviews>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UtG-Cw-oKf">
+                                        <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="110" id="08z-Kk-Wvf"/>
+                                            <constraint firstAttribute="height" constant="110" id="QLt-Uc-Sqz"/>
+                                        </constraints>
+                                        <state key="normal" image="physical_therapyNotSelected"/>
+                                        <connections>
+                                            <action selector="addActivityAction:" destination="Cfu-op-DX6" eventType="touchUpInside" id="jYx-Jz-2Yu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8HE-DR-gCT">
+                                        <rect key="frame" x="180" y="0.0" width="110" height="110"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="110" id="0gu-H7-7eZ"/>
+                                            <constraint firstAttribute="height" constant="110" id="i3R-3w-hgQ"/>
+                                        </constraints>
+                                        <state key="normal" image="ShotNotSelected"/>
+                                        <connections>
+                                            <action selector="addActivityAction:" destination="Cfu-op-DX6" eventType="touchUpInside" id="pUr-WO-BT3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="Z8R-LE-AKO"/>
+                                    <constraint firstAttribute="width" constant="290" id="sXU-Ft-snD"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="FKj-E2-LpM">
+                                <rect key="frame" x="62" y="234" width="290" height="110"/>
+                                <subviews>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvC-ZM-hs9">
+                                        <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="110" id="Aq7-52-7cl"/>
+                                            <constraint firstAttribute="height" constant="110" id="GqE-96-104"/>
+                                        </constraints>
+                                        <state key="normal" image="BebidaNotSelected"/>
+                                        <connections>
+                                            <action selector="addActivityAction:" destination="Cfu-op-DX6" eventType="touchUpInside" id="yS2-ho-68R"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XjB-w8-JBw">
+                                        <rect key="frame" x="180" y="0.0" width="110" height="110"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="110" id="QjE-Qn-LIY"/>
+                                            <constraint firstAttribute="width" constant="110" id="g0K-rf-TFD"/>
+                                        </constraints>
+                                        <state key="normal" image="swimmingNotSelected"/>
+                                        <connections>
+                                            <action selector="addActivityAction:" destination="Cfu-op-DX6" eventType="touchUpInside" id="Uiz-A7-qQB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="PMu-mG-z46"/>
+                                    <constraint firstAttribute="width" constant="290" id="UCJ-qJ-vlE"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kv9-uR-624">
+                                <rect key="frame" x="62" y="514" width="110" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="MUd-T8-Fx9"/>
+                                    <constraint firstAttribute="width" constant="110" id="Y4z-G0-gsd"/>
+                                </constraints>
+                                <state key="normal" image="CustomNotSelected"/>
                                 <connections>
-                                    <action selector="addActivityAction:" destination="Cfu-op-DX6" eventType="touchUpInside" id="ZTx-2m-cIA"/>
+                                    <action selector="addActivityAction:" destination="Cfu-op-DX6" eventType="touchUpInside" id="w4K-Pm-0Lf"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="3R4-be-U7H" firstAttribute="top" secondItem="FKj-E2-LpM" secondAttribute="bottom" constant="30" id="9M0-dL-THY"/>
+                            <constraint firstItem="FKj-E2-LpM" firstAttribute="centerX" secondItem="vGK-f1-s8h" secondAttribute="centerX" id="Bp7-pz-T9s"/>
                             <constraint firstItem="T1d-4J-di6" firstAttribute="leading" secondItem="vGK-f1-s8h" secondAttribute="leadingMargin" constant="-20" id="FZx-fD-GrY"/>
+                            <constraint firstItem="C5M-X6-YIy" firstAttribute="centerX" secondItem="vGK-f1-s8h" secondAttribute="centerX" id="KfJ-pR-9KF"/>
+                            <constraint firstItem="3R4-be-U7H" firstAttribute="centerX" secondItem="vGK-f1-s8h" secondAttribute="centerX" id="Qvz-2K-ZcZ"/>
+                            <constraint firstItem="FKj-E2-LpM" firstAttribute="top" secondItem="C5M-X6-YIy" secondAttribute="bottom" constant="30" id="YLb-RK-JfR"/>
                             <constraint firstAttribute="trailingMargin" secondItem="T1d-4J-di6" secondAttribute="trailing" constant="-20" id="Zrl-kZ-9Kh"/>
+                            <constraint firstItem="Kv9-uR-624" firstAttribute="leading" secondItem="3R4-be-U7H" secondAttribute="leading" id="aEb-MY-Obn"/>
                             <constraint firstItem="T1d-4J-di6" firstAttribute="top" secondItem="pcU-9B-Hnw" secondAttribute="bottom" id="j0b-hH-ewV"/>
+                            <constraint firstItem="Kv9-uR-624" firstAttribute="top" secondItem="3R4-be-U7H" secondAttribute="bottom" constant="30" id="n4K-UF-orl"/>
+                            <constraint firstItem="C5M-X6-YIy" firstAttribute="top" secondItem="T1d-4J-di6" secondAttribute="bottom" constant="30" id="unQ-Sp-oXM"/>
                         </constraints>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="736"/>
+                    <connections>
+                        <segue destination="UwC-e4-M0J" kind="presentation" identifier="activitiesToOccurencies" id="roM-1W-47t"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mly-eQ-TsA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1304" y="767"/>
+            <point key="canvasLocation" x="1304" y="718"/>
+        </scene>
+        <!--Occurencies View Controller-->
+        <scene sceneID="wpT-qM-5y6">
+            <objects>
+                <viewController id="UwC-e4-M0J" customClass="OccurenciesViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YqD-VA-e4X"/>
+                        <viewControllerLayoutGuide type="bottom" id="elP-nn-92w"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="z0x-8x-NgJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="7" translatesAutoresizingMaskIntoConstraints="NO" id="IX0-VX-vif">
+                                <rect key="frame" x="232" y="275" width="94" height="29"/>
+                                <connections>
+                                    <action selector="valueChanged:" destination="UwC-e4-M0J" eventType="valueChanged" id="e9q-e3-jas"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r96-E4-Cfc">
+                                <rect key="frame" x="123" y="279" width="34" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68c-Fj-MTA">
+                                <rect key="frame" x="186" y="609" width="43" height="30"/>
+                                <state key="normal" title="Salvar"/>
+                                <connections>
+                                    <action selector="save:" destination="UwC-e4-M0J" eventType="touchUpInside" id="62C-Yl-tyD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="736"/>
+                    <connections>
+                        <outlet property="stepper" destination="IX0-VX-vif" id="SjB-4k-Tqc"/>
+                        <outlet property="valueLabel" destination="r96-E4-Cfc" id="zpa-TM-TfT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bHd-ch-X2v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1946" y="718"/>
         </scene>
         <!--Add Custom Activity View Controller-->
         <scene sceneID="KWp-v0-vgt">
@@ -677,7 +784,7 @@
                                     <constraint firstAttribute="height" constant="44" id="xrP-bu-sK8"/>
                                 </constraints>
                                 <items>
-                                    <navigationItem title="Title" id="shh-hs-tjE">
+                                    <navigationItem title="Atividade Personalizada" id="shh-hs-tjE">
                                         <barButtonItem key="leftBarButtonItem" title="Voltar" id="4YB-2R-FhN">
                                             <connections>
                                                 <action selector="backToAddActivities:" destination="od5-IO-opm" id="VC0-zg-pkL"/>
@@ -756,100 +863,31 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0pC-OQ-eJO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2018" y="767"/>
-        </scene>
-        <!--Add Symptom View Controller-->
-        <scene sceneID="xzM-tA-lEh">
-            <objects>
-                <viewController storyboardIdentifier="AddSymptomVC" id="ake-9K-hms" customClass="AddSymptomViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Ya7-kK-LV7"/>
-                        <viewControllerLayoutGuide type="bottom" id="xey-HY-IDd"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Ybx-6g-5yn">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UeR-aP-mWf">
-                                <rect key="frame" x="409" y="96" width="30" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="QRN-sP-yOu"/>
-                                    <constraint firstAttribute="width" constant="70" id="g2D-5y-Pbu"/>
-                                </constraints>
-                                <state key="normal" title="Fru"/>
-                            </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvY-AX-f9l">
-                                <rect key="frame" x="177" y="199" width="30" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="5x0-4z-pfS"/>
-                                    <constraint firstAttribute="height" constant="70" id="kRc-26-Qy2"/>
-                                </constraints>
-                                <state key="normal" title="Wat"/>
-                            </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4W-hX-ebm">
-                                <rect key="frame" x="409" y="199" width="30" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="UFB-D0-jk4"/>
-                                    <constraint firstAttribute="height" constant="70" id="ge1-U8-H2A"/>
-                                </constraints>
-                                <state key="normal" title="Ex"/>
-                            </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ua-ok-3SR">
-                                <rect key="frame" x="165" y="304" width="54" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="Df2-ng-P37"/>
-                                    <constraint firstAttribute="width" constant="70" id="rPD-Nc-zWM"/>
-                                </constraints>
-                                <state key="normal" title="Custom"/>
-                            </button>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qYZ-3L-gMH">
-                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="ghe-e5-1PE"/>
-                                </constraints>
-                                <items>
-                                    <navigationItem title="Title" id="P23-Xy-Zi7">
-                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Y1y-6A-I9M"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wi0-Iz-aWv">
-                                <rect key="frame" x="177" y="96" width="30" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="eoW-Eg-gOO"/>
-                                    <constraint firstAttribute="width" constant="70" id="zuC-2d-QlF"/>
-                                </constraints>
-                                <state key="normal" title="Veg"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="qYZ-3L-gMH" secondAttribute="trailing" constant="-20" id="FBL-VA-Fgs"/>
-                            <constraint firstItem="qYZ-3L-gMH" firstAttribute="top" secondItem="Ya7-kK-LV7" secondAttribute="bottom" id="fXy-JW-PGy"/>
-                            <constraint firstItem="qYZ-3L-gMH" firstAttribute="leading" secondItem="Ybx-6g-5yn" secondAttribute="leadingMargin" constant="-20" id="sFs-Iu-cgb"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Sr5-bT-eF2" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1304" y="1454"/>
+            <point key="canvasLocation" x="2034" y="1479"/>
         </scene>
     </scenes>
     <resources>
+        <image name="BebidaNotSelected" width="111" height="111"/>
         <image name="Black" width="51" height="51"/>
         <image name="Borracha" width="56" height="56"/>
         <image name="Brown" width="51" height="51"/>
+        <image name="ComidaNotSelected" width="110" height="110"/>
+        <image name="CustomNotSelected" width="110" height="110"/>
         <image name="DarkBlue" width="51" height="51"/>
         <image name="DarkGreen" width="51" height="51"/>
+        <image name="FruitsNotSelected" width="110" height="110"/>
         <image name="Health" width="70" height="70"/>
         <image name="LightBlue" width="51" height="51"/>
         <image name="LightGray" width="51" height="51"/>
         <image name="LightGreen" width="51" height="51"/>
         <image name="Orange" width="51" height="51"/>
         <image name="Red" width="52" height="52"/>
+        <image name="ShotNotSelected" width="110" height="110"/>
         <image name="Yellos" width="51" height="51"/>
+        <image name="physical_therapyNotSelected" width="110" height="110"/>
         <image name="reset" width="46" height="45"/>
         <image name="settingss" width="48" height="48"/>
         <image name="share" width="30" height="30"/>
+        <image name="swimmingNotSelected" width="110" height="110"/>
     </resources>
 </document>

@@ -10,16 +10,15 @@ import CareKit
 
 class Exercise: Activity {
     let activityType: ActivityType = .Exercise
-    var occurrences: [Int] = [Int]()
+    static var occurrences: [Int] = [Int]()
     var extraInfo: String = String()
     var icon: UIImage? = UIImage(named: "exercise")
     
     func carePlanActivity() -> OCKCarePlanActivity {
-        occurrences = [1, 1, 1, 1, 1, 1, 1]
         
         // Setup the weekly schedule for the activity
         let startDate = NSDateComponents(year: 2016, month: 1, day: 1)
-        let schedule = OCKCareSchedule.weeklyScheduleWithStartDate(startDate, occurrencesOnEachDay: occurrences)
+        let schedule = OCKCareSchedule.weeklyScheduleWithStartDate(startDate, occurrencesOnEachDay: Exercise.occurrences)
         
         // Set information for the activity
         let title = NSLocalizedString("Exercicio", comment: "")
@@ -40,5 +39,12 @@ class Exercise: Activity {
         )
                 
         return activity
+    }
+    
+    func carePlanActivityCustom(customOccurencies: [Int]) -> OCKCarePlanActivity {
+        
+        Exercise.occurrences = customOccurencies
+        
+        return carePlanActivity()
     }
 }
