@@ -10,34 +10,41 @@ import UIKit
 import CareKit
 
 class OccurenciesViewController: UIViewController {
-    
+    var tableView: UITableView!
     var activity: Int!
-    
     var activities: Array<Bool> = []
-    
     var instanceOfActivity: OCKCarePlanActivity!
+    var button: UIButton!
+    var arrayDias: Array<String>!
     
     private let codingManager: NSCodingManager = NSCodingManager.sharedNSCodingManager
-    
     private let storeManager: CarePlanStoreManager = CarePlanStoreManager.sharedCarePlanStoreManager
-
-
 
     @IBOutlet weak var stepper: UIStepper!
     @IBOutlet weak var valueLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
-        
-    
-        
         activities = codingManager.loadToAddActivitiesData()!
-
         
+        arrayDias = ["     Segunda-feira", "     Terça-feira", "     Quarta-feira", "     Quinta-feira", "     Sexta-feira", "     Sábado", "     Domingo"]
+        
+        print(self.view.frame.width)
+        
+        tableView = UITableView(frame: CGRectMake(0, 100, 400, 340), style: .Plain)
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.registerNib(UINib(nibName: "CustomActivityCell", bundle: nil), forCellReuseIdentifier: "CustomActivityCell")
+//        tableView.separatorStyle = .None
+//        tableView.contentInset = UIEdgeInsetsMake(-36, 0, -36, -36)
+        tableView.clipsToBounds = true
+
         stepper.wraps = true
         stepper.autorepeat = true
         stepper.maximumValue = 7
+        
+        self.view.addSubview(tableView)
         
     }
 
@@ -45,17 +52,6 @@ class OccurenciesViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
     @IBAction func valueChanged(sender: AnyObject) {
         
@@ -95,11 +91,35 @@ class OccurenciesViewController: UIViewController {
             
             // Removes the selected 'to add' activity from its coding and array.
             self.codingManager.saveToAddActivitiesData(activities)
+            print(button)
+            button.selected = true
         }
         
         dismissViewControllerAnimated(true, completion: nil)
         
     }
-    
+}
 
+//MARK: - Table View Delegate
+extension OccurenciesViewController: UITableViewDelegate {
+//    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+//        <#code#>
+//    }
+
+}
+
+//MARK: - Table View Data Source
+extension OccurenciesViewController: UITableViewDataSource {
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("CustomActivityCell", forIndexPath: indexPath) as! CustomActivityCell
+        cell.labelNome.text = arrayDias[indexPath.row]
+        print(indexPath.row)
+        
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return arrayDias.count
+        
+    }
 }

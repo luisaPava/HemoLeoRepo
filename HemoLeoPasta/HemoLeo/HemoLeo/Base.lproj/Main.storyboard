@@ -88,6 +88,9 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="dG4-0d-tYl"/>
+                    <connections>
+                        <segue destination="DsG-hq-x4v" kind="show" identifier="mainToCanvas" id="xtU-hp-v3G"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Aw-op-AJz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -470,10 +473,33 @@
             </objects>
             <point key="canvasLocation" x="1933" y="-32"/>
         </scene>
+        <!--Survey View Controller-->
+        <scene sceneID="s8G-Jt-sJZ">
+            <objects>
+                <viewController storyboardIdentifier="survey" id="osk-FB-Tce" customClass="SurveyViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AXO-33-kx5"/>
+                        <viewControllerLayoutGuide type="bottom" id="KOa-WY-agA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gcd-wi-Zz8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="414" height="736"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="736"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EYU-jz-ig8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-610" y="551"/>
+        </scene>
         <!--Symptom Card View Controller-->
         <scene sceneID="Hiw-WY-5q9">
             <objects>
-                <viewController storyboardIdentifier="SymptomCard" id="xtU-Y7-TNH" customClass="SymptomCardViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SymptomCard" modalPresentationStyle="overCurrentContext" id="xtU-Y7-TNH" customClass="SymptomCardViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jgy-Oy-viq"/>
                         <viewControllerLayoutGuide type="bottom" id="IX9-7b-p5e"/>
@@ -481,14 +507,24 @@
                     <view key="view" contentMode="scaleToFill" id="Vd0-al-bTS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9DZ-62-vmF">
+                                <rect key="frame" x="184" y="267" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="414" height="736"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="414" height="736"/>
+                    <connections>
+                        <segue destination="osk-FB-Tce" kind="presentation" identifier="symptomToSurvey" animates="NO" modalPresentationStyle="overCurrentContext" id="wq6-b2-rya"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZXp-0g-tKg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="65" y="835"/>
+            <point key="canvasLocation" x="-53" y="551"/>
         </scene>
         <!--Care Card View Controller-->
         <scene sceneID="MxI-xp-R8I">
@@ -520,6 +556,9 @@
                     <value key="contentSizeForViewInPopover" type="size" width="414" height="736"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="414" height="736"/>
+                    <connections>
+                        <segue destination="Cfu-op-DX6" kind="presentation" identifier="cardToAdd" modalPresentationStyle="overCurrentContext" modalTransitionStyle="coverVertical" id="y3M-Yn-mU5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fod-Nj-ePL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -537,21 +576,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T1d-4J-di6">
-                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="jxb-jL-XrF"/>
-                                </constraints>
-                                <items>
-                                    <navigationItem title="Atividades" id="7WL-ob-M4B">
-                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="BEc-0L-6b9">
-                                            <connections>
-                                                <action selector="cancelBarButton:" destination="Cfu-op-DX6" id="2iM-Ts-fBO"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="C5M-X6-YIy">
                                 <rect key="frame" x="62" y="94" width="290" height="110"/>
                                 <subviews>
@@ -562,6 +586,7 @@
                                             <constraint firstAttribute="width" constant="110" id="eGE-sV-lga"/>
                                         </constraints>
                                         <state key="normal" image="ComidaNotSelected"/>
+                                        <state key="selected" image="Comida highlighted"/>
                                         <connections>
                                             <action selector="addActivityAction:" destination="Cfu-op-DX6" eventType="touchUpInside" id="ZTx-2m-cIA"/>
                                         </connections>
@@ -573,6 +598,7 @@
                                             <constraint firstAttribute="height" constant="110" id="Kd2-Rs-TZJ"/>
                                         </constraints>
                                         <state key="normal" image="FruitsNotSelected"/>
+                                        <state key="selected" image="FrutasHIghlighted"/>
                                         <connections>
                                             <action selector="addActivityAction:" destination="Cfu-op-DX6" eventType="touchUpInside" id="ZFt-Xt-KzX"/>
                                         </connections>
@@ -593,6 +619,8 @@
                                             <constraint firstAttribute="height" constant="110" id="QLt-Uc-Sqz"/>
                                         </constraints>
                                         <state key="normal" image="physical_therapyNotSelected"/>
+                                        <state key="selected" image="physical_therapyHIghlighted"/>
+                                        <state key="highlighted" image="physical_therapyHIghlighted"/>
                                         <connections>
                                             <action selector="addActivityAction:" destination="Cfu-op-DX6" eventType="touchUpInside" id="jYx-Jz-2Yu"/>
                                         </connections>
@@ -604,6 +632,7 @@
                                             <constraint firstAttribute="height" constant="110" id="i3R-3w-hgQ"/>
                                         </constraints>
                                         <state key="normal" image="ShotNotSelected"/>
+                                        <state key="selected" image="Shot hightlighted"/>
                                         <connections>
                                             <action selector="addActivityAction:" destination="Cfu-op-DX6" eventType="touchUpInside" id="pUr-WO-BT3"/>
                                         </connections>
@@ -624,6 +653,7 @@
                                             <constraint firstAttribute="height" constant="110" id="GqE-96-104"/>
                                         </constraints>
                                         <state key="normal" image="BebidaNotSelected"/>
+                                        <state key="selected" image="Bebidahighlighted"/>
                                         <connections>
                                             <action selector="addActivityAction:" destination="Cfu-op-DX6" eventType="touchUpInside" id="yS2-ho-68R"/>
                                         </connections>
@@ -635,6 +665,7 @@
                                             <constraint firstAttribute="width" constant="110" id="g0K-rf-TFD"/>
                                         </constraints>
                                         <state key="normal" image="swimmingNotSelected"/>
+                                        <state key="selected" image="swimmingHIghlighted"/>
                                         <connections>
                                             <action selector="addActivityAction:" destination="Cfu-op-DX6" eventType="touchUpInside" id="Uiz-A7-qQB"/>
                                         </connections>
@@ -652,10 +683,26 @@
                                     <constraint firstAttribute="width" constant="110" id="Y4z-G0-gsd"/>
                                 </constraints>
                                 <state key="normal" image="CustomNotSelected"/>
+                                <state key="selected" image="Custom highlighted"/>
                                 <connections>
                                     <action selector="addActivityAction:" destination="Cfu-op-DX6" eventType="touchUpInside" id="w4K-Pm-0Lf"/>
                                 </connections>
                             </button>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T1d-4J-di6">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="jxb-jL-XrF"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Atividades" id="7WL-ob-M4B">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="BEc-0L-6b9">
+                                            <connections>
+                                                <segue destination="ZXX-2p-Ihh" kind="unwind" unwindAction="unwindToMainViewController:" id="dmF-PR-oCP"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -675,10 +722,18 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="414" height="736"/>
                     <connections>
-                        <segue destination="UwC-e4-M0J" kind="presentation" identifier="activitiesToOccurencies" id="roM-1W-47t"/>
+                        <outlet property="customBtn" destination="Kv9-uR-624" id="uhM-ZU-L3J"/>
+                        <outlet property="exerciseBtn" destination="XjB-w8-JBw" id="e78-6v-Ce4"/>
+                        <outlet property="fisiotherapyBtn" destination="UtG-Cw-oKf" id="8m4-l6-Gwq"/>
+                        <outlet property="fruitsBtn" destination="2lZ-TZ-KSR" id="Uvv-XO-pSd"/>
+                        <outlet property="shotBtn" destination="8HE-DR-gCT" id="B31-YI-Lw9"/>
+                        <outlet property="vegetableBtn" destination="LG4-Lo-lzC" id="Em9-cY-ZJs"/>
+                        <outlet property="waterBtn" destination="gvC-ZM-hs9" id="B8T-eU-Ovg"/>
+                        <segue destination="UwC-e4-M0J" kind="presentation" identifier="activitiesToOccurencies" modalPresentationStyle="overCurrentContext" id="roM-1W-47t"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mly-eQ-TsA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ZXX-2p-Ihh" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1304" y="718"/>
         </scene>
@@ -838,25 +893,32 @@
     <resources>
         <image name="Badges" width="70" height="70"/>
         <image name="BebidaNotSelected" width="111" height="111"/>
+        <image name="Bebidahighlighted" width="111" height="111"/>
         <image name="Black" width="51" height="51"/>
         <image name="Borracha" width="56" height="56"/>
         <image name="Brown" width="51" height="51"/>
+        <image name="Comida highlighted" width="110" height="110"/>
         <image name="ComidaNotSelected" width="110" height="110"/>
+        <image name="Custom highlighted" width="110" height="110"/>
         <image name="CustomNotSelected" width="110" height="110"/>
         <image name="DarkBlue" width="51" height="51"/>
         <image name="DarkGreen" width="51" height="51"/>
         <image name="FruitsNotSelected" width="110" height="110"/>
+        <image name="FrutasHIghlighted" width="110" height="110"/>
         <image name="LightBlue" width="51" height="51"/>
         <image name="LightGray" width="51" height="51"/>
         <image name="LightGreen" width="51" height="51"/>
         <image name="Orange" width="51" height="51"/>
         <image name="Red" width="52" height="52"/>
+        <image name="Shot hightlighted" width="110" height="110"/>
         <image name="ShotNotSelected" width="110" height="110"/>
         <image name="Yellos" width="51" height="51"/>
+        <image name="physical_therapyHIghlighted" width="110" height="110"/>
         <image name="physical_therapyNotSelected" width="110" height="110"/>
         <image name="reset" width="46" height="45"/>
         <image name="settingss" width="48" height="48"/>
         <image name="share" width="30" height="30"/>
+        <image name="swimmingHIghlighted" width="110" height="110"/>
         <image name="swimmingNotSelected" width="110" height="110"/>
     </resources>
 </document>

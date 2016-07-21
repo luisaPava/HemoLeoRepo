@@ -29,11 +29,9 @@
 		2BA188C21D3567A5007F1CEB /* Water.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA188C11D3567A5007F1CEB /* Water.swift */; };
 		2BA188C41D35681E007F1CEB /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA188C31D35681E007F1CEB /* Exercise.swift */; };
 		2BA188C61D35696A007F1CEB /* Shot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA188C51D35696A007F1CEB /* Shot.swift */; };
-		4E2B29B71D36CC5300EED2B4 /* SlideInPresentationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B29B51D36CC5300EED2B4 /* SlideInPresentationAnimator.swift */; };
-		4E2B29B81D36CC5300EED2B4 /* SlideInDismissalAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B29B61D36CC5300EED2B4 /* SlideInDismissalAnimator.swift */; };
+		4E132CB81D41242A004CBC6F /* CustomActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E132CB61D41242A004CBC6F /* CustomActivityCell.swift */; };
+		4E132CB91D41242A004CBC6F /* CustomActivityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E132CB71D41242A004CBC6F /* CustomActivityCell.xib */; };
 		4E2B29BC1D36CC6300EED2B4 /* TransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B29B91D36CC6300EED2B4 /* TransitionDelegate.swift */; };
-		4E2B29BD1D36CC6300EED2B4 /* TransitionPresentationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B29BA1D36CC6300EED2B4 /* TransitionPresentationAnimator.swift */; };
-		4E2B29BE1D36CC6300EED2B4 /* TransitionDismissalAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B29BB1D36CC6300EED2B4 /* TransitionDismissalAnimator.swift */; };
 		4E2B29C01D36CD0E00EED2B4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B29BF1D36CD0E00EED2B4 /* MainViewController.swift */; };
 		4E2B29C21D36CD7600EED2B4 /* Canvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B29C11D36CD7600EED2B4 /* Canvas.swift */; };
 		4E2B29C41D36CDC400EED2B4 /* CareCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B29C31D36CDC400EED2B4 /* CareCardViewController.swift */; };
@@ -44,6 +42,8 @@
 		4E2B2DEF1D3AA7F900EED2B4 /* Assessment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B2DEE1D3AA7F900EED2B4 /* Assessment.swift */; };
 		4E2B2DF31D3ABEEB00EED2B4 /* AssessmentsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B2DF21D3ABEEB00EED2B4 /* AssessmentsManager.swift */; };
 		4E2B2DF51D3AD12A00EED2B4 /* Pain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B2DF41D3AD12A00EED2B4 /* Pain.swift */; };
+		4E3CE02B1D3FDF0F00E4F422 /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3CE02A1D3FDF0F00E4F422 /* SurveyViewController.swift */; };
+		4E3CE03C1D400FFF00E4F422 /* ButtonAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3CE03B1D400FFF00E4F422 /* ButtonAnimation.swift */; };
 		4EA969411D3D622400DBF2AD /* Bleeding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA969401D3D622400DBF2AD /* Bleeding.swift */; };
 		4EA969471D3D681000DBF2AD /* Bruising.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA969461D3D681000DBF2AD /* Bruising.swift */; };
 		777711071D3E9AAC0066A0E2 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 777711061D3E9AAC0066A0E2 /* SpriteKit.framework */; };
@@ -136,11 +136,9 @@
 		2BA188C11D3567A5007F1CEB /* Water.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Water.swift; sourceTree = "<group>"; };
 		2BA188C31D35681E007F1CEB /* Exercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		2BA188C51D35696A007F1CEB /* Shot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shot.swift; sourceTree = "<group>"; };
-		4E2B29B51D36CC5300EED2B4 /* SlideInPresentationAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideInPresentationAnimator.swift; sourceTree = "<group>"; };
-		4E2B29B61D36CC5300EED2B4 /* SlideInDismissalAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideInDismissalAnimator.swift; sourceTree = "<group>"; };
+		4E132CB61D41242A004CBC6F /* CustomActivityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomActivityCell.swift; sourceTree = "<group>"; };
+		4E132CB71D41242A004CBC6F /* CustomActivityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomActivityCell.xib; sourceTree = "<group>"; };
 		4E2B29B91D36CC6300EED2B4 /* TransitionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionDelegate.swift; sourceTree = "<group>"; };
-		4E2B29BA1D36CC6300EED2B4 /* TransitionPresentationAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionPresentationAnimator.swift; sourceTree = "<group>"; };
-		4E2B29BB1D36CC6300EED2B4 /* TransitionDismissalAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionDismissalAnimator.swift; sourceTree = "<group>"; };
 		4E2B29BF1D36CD0E00EED2B4 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4E2B29C11D36CD7600EED2B4 /* Canvas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Canvas.swift; sourceTree = "<group>"; };
 		4E2B29C31D36CDC400EED2B4 /* CareCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CareCardViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +148,8 @@
 		4E2B2DEE1D3AA7F900EED2B4 /* Assessment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assessment.swift; sourceTree = "<group>"; };
 		4E2B2DF21D3ABEEB00EED2B4 /* AssessmentsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssessmentsManager.swift; sourceTree = "<group>"; };
 		4E2B2DF41D3AD12A00EED2B4 /* Pain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pain.swift; sourceTree = "<group>"; };
+		4E3CE02A1D3FDF0F00E4F422 /* SurveyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
+		4E3CE03B1D400FFF00E4F422 /* ButtonAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonAnimation.swift; sourceTree = "<group>"; };
 		4EA969401D3D622400DBF2AD /* Bleeding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bleeding.swift; sourceTree = "<group>"; };
 		4EA969461D3D681000DBF2AD /* Bruising.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bruising.swift; sourceTree = "<group>"; };
 		777711061D3E9AAC0066A0E2 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
@@ -238,6 +238,8 @@
 		2BA188961D355B4A007F1CEB /* HemoLeo */ = {
 			isa = PBXGroup;
 			children = (
+				4E132CB11D4123CA004CBC6F /* TabelView */,
+				4E3CE03A1D400FEF00E4F422 /* Animação */,
 				2B1A21501D3E7B70007F1B68 /* Managers */,
 				2B1A214F1D3E75D6007F1B68 /* Scenes */,
 				2BA1889E1D355C5F007F1CEB /* Global */,
@@ -276,6 +278,7 @@
 				4E2B29C11D36CD7600EED2B4 /* Canvas.swift */,
 				2B1A214D1D3E71E2007F1B68 /* OccurenciesViewController.swift */,
 				4E2B29CD1D395AF800EED2B4 /* SymptomCardViewController.swift */,
+				4E3CE02A1D3FDF0F00E4F422 /* SurveyViewController.swift */,
 				2B87D5E81D38247000F29678 /* AddActivityViewController.swift */,
 				2B87D5F11D382F0100F29678 /* AddCustomActivityViewController.swift */,
 				4E2B29C31D36CDC400EED2B4 /* CareCardViewController.swift */,
@@ -314,7 +317,7 @@
 		2BA1889E1D355C5F007F1CEB /* Global */ = {
 			isa = PBXGroup;
 			children = (
-				4E2B29B31D36CC2200EED2B4 /* ViewController Transitions */,
+				4E2B29B91D36CC6300EED2B4 /* TransitionDelegate.swift */,
 			);
 			name = Global;
 			sourceTree = "<group>";
@@ -335,24 +338,13 @@
 			name = Activities;
 			sourceTree = "<group>";
 		};
-		4E2B29B31D36CC2200EED2B4 /* ViewController Transitions */ = {
+		4E132CB11D4123CA004CBC6F /* TabelView */ = {
 			isa = PBXGroup;
 			children = (
-				4E2B29B41D36CC3800EED2B4 /* Slide in Trasinitions */,
-				4E2B29B91D36CC6300EED2B4 /* TransitionDelegate.swift */,
-				4E2B29BA1D36CC6300EED2B4 /* TransitionPresentationAnimator.swift */,
-				4E2B29BB1D36CC6300EED2B4 /* TransitionDismissalAnimator.swift */,
+				4E132CB61D41242A004CBC6F /* CustomActivityCell.swift */,
+				4E132CB71D41242A004CBC6F /* CustomActivityCell.xib */,
 			);
-			name = "ViewController Transitions";
-			sourceTree = "<group>";
-		};
-		4E2B29B41D36CC3800EED2B4 /* Slide in Trasinitions */ = {
-			isa = PBXGroup;
-			children = (
-				4E2B29B51D36CC5300EED2B4 /* SlideInPresentationAnimator.swift */,
-				4E2B29B61D36CC5300EED2B4 /* SlideInDismissalAnimator.swift */,
-			);
-			name = "Slide in Trasinitions";
+			name = TabelView;
 			sourceTree = "<group>";
 		};
 		4E2B2DDC1D3A984D00EED2B4 /* Products */ = {
@@ -373,6 +365,14 @@
 				4EA969401D3D622400DBF2AD /* Bleeding.swift */,
 			);
 			name = Assessments;
+			sourceTree = "<group>";
+		};
+		4E3CE03A1D400FEF00E4F422 /* Animação */ = {
+			isa = PBXGroup;
+			children = (
+				4E3CE03B1D400FFF00E4F422 /* ButtonAnimation.swift */,
+			);
+			name = "Animação";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -410,6 +410,7 @@
 				TargetAttributes = {
 					2BA1887B1D355A2C007F1CEB = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = BUK6UDW987;
 					};
 				};
 			};
@@ -481,6 +482,7 @@
 				2BA1888E1D355A2C007F1CEB /* LaunchScreen.storyboard in Resources */,
 				2BA1888B1D355A2C007F1CEB /* Assets.xcassets in Resources */,
 				2BA188891D355A2C007F1CEB /* Main.storyboard in Resources */,
+				4E132CB91D41242A004CBC6F /* CustomActivityCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,19 +496,18 @@
 				2B87D5F21D382F0100F29678 /* AddCustomActivityViewController.swift in Sources */,
 				2BA188A21D355CBD007F1CEB /* CarePlanStoreManager.swift in Sources */,
 				4E2B29C81D37057A00EED2B4 /* PageViewCcontroller.swift in Sources */,
-				4E2B29B81D36CC5300EED2B4 /* SlideInDismissalAnimator.swift in Sources */,
 				2B1A21481D3E6E64007F1B68 /* Fisiotherapy.swift in Sources */,
-				4E2B29B71D36CC5300EED2B4 /* SlideInPresentationAnimator.swift in Sources */,
 				4EA969471D3D681000DBF2AD /* Bruising.swift in Sources */,
+				4E3CE03C1D400FFF00E4F422 /* ButtonAnimation.swift in Sources */,
 				2B7997EE1D37CD8F00D0996D /* StoryOneViewController.swift in Sources */,
 				2BA188C21D3567A5007F1CEB /* Water.swift in Sources */,
 				EBBD25AE1D3731BE00786155 /* SettingViewController.swift in Sources */,
 				2BA188C41D35681E007F1CEB /* Exercise.swift in Sources */,
 				2BA188C01D3560C3007F1CEB /* Fruits.swift in Sources */,
 				2B1A21521D3E7BA3007F1B68 /* NSCodingManager.swift in Sources */,
-				4E2B29BE1D36CC6300EED2B4 /* TransitionDismissalAnimator.swift in Sources */,
 				4EA969411D3D622400DBF2AD /* Bleeding.swift in Sources */,
 				4E2B29C01D36CD0E00EED2B4 /* MainViewController.swift in Sources */,
+				4E3CE02B1D3FDF0F00E4F422 /* SurveyViewController.swift in Sources */,
 				4E2B2DEF1D3AA7F900EED2B4 /* Assessment.swift in Sources */,
 				4E2B29C21D36CD7600EED2B4 /* Canvas.swift in Sources */,
 				2BA188C61D35696A007F1CEB /* Shot.swift in Sources */,
@@ -516,8 +517,8 @@
 				2B7997F21D37CD9F00D0996D /* Story2ViewController.swift in Sources */,
 				4E2B2DF31D3ABEEB00EED2B4 /* AssessmentsManager.swift in Sources */,
 				2BA188801D355A2C007F1CEB /* AppDelegate.swift in Sources */,
-				4E2B29BD1D36CC6300EED2B4 /* TransitionPresentationAnimator.swift in Sources */,
 				2B87D5E91D38247000F29678 /* AddActivityViewController.swift in Sources */,
+				4E132CB81D41242A004CBC6F /* CustomActivityCell.swift in Sources */,
 				2BA188BC1D355D96007F1CEB /* Actitvity.swift in Sources */,
 				7777110D1D3E9BD00066A0E2 /* GameScene.swift in Sources */,
 				2B1A214E1D3E71E2007F1B68 /* OccurenciesViewController.swift in Sources */,
@@ -651,11 +652,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = HemoLeo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Luisa.HemoLeo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
@@ -665,11 +668,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = HemoLeo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Luisa.HemoLeo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;

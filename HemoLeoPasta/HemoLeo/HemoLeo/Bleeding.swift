@@ -47,10 +47,10 @@ class Bleeding: Assessment {
         //First step: Where is your bleeding?
         let bleedingQuestionStepTitle = "Onde é o seu sangramento?"
         let textChoices = [
-            ORKTextChoice(text: "Nariz", value: 0),
-            ORKTextChoice(text: "Boca", value: 1),
-            ORKTextChoice(text: "Olhos", value: 2),
-            ORKTextChoice(text: "Outro", value: 3)
+            ORKTextChoice(text: "Nariz", value: "nariz"),
+            ORKTextChoice(text: "Boca", value: "boca"),
+            ORKTextChoice(text: "Olhos", value: "olhos"),
+            ORKTextChoice(text: "Outro", value: "outro")
         ]
         
         let bleedingAnswerFormat: ORKTextChoiceAnswerFormat = ORKAnswerFormat.choiceAnswerFormatWithStyle(.SingleChoice, textChoices: textChoices)

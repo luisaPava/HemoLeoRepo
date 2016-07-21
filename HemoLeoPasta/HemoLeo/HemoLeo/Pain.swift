@@ -47,14 +47,16 @@ class Pain: Assessment {
         //First step: Where is your pain?
         let painQuestionStepTitle = "Onde é a sua dor?"
         let textChoices = [
-            ORKTextChoice(text: "Joelho", value: 0),
-            ORKTextChoice(text: "Ombro", value: 1),
-            ORKTextChoice(text: "Cotovelo", value: 2),
-            ORKTextChoice(text: "Não tive dor", value: 3)
+            ORKTextChoice(text: "Joelho", value: "joelho"),
+            ORKTextChoice(text: "Ombro", value: "ombro"),
+            ORKTextChoice(text: "Cotovelo", value: "cotovelo"),
+            ORKTextChoice(text: "Não tive dor", value: "não tive dor")
         ]
         
         let painAnswerFormat: ORKTextChoiceAnswerFormat = ORKAnswerFormat.choiceAnswerFormatWithStyle(.SingleChoice, textChoices: textChoices)
         let painQuestionStep = ORKQuestionStep(identifier: "PainQuestionStep", title: painQuestionStepTitle, answer: painAnswerFormat)
+        
+        
         steps += [painQuestionStep]
         
         //Second step: How bad is your pain?
@@ -68,6 +70,7 @@ class Pain: Assessment {
             minimumValueDescription: "Nah"
         )
         
+        
         let painLevelQuestionStepTitle = "Qual o nível da dor?"
         let painLevelQuestionStep = ORKQuestionStep(identifier: "PainLevelQuestionStep", title: painLevelQuestionStepTitle, answer: painLevelAnswerFormat)
         
@@ -75,6 +78,7 @@ class Pain: Assessment {
         
         //Create ordered task
         let task = ORKOrderedTask(identifier: activityType.rawValue, steps: steps)
+        
         
         return task
         

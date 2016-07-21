@@ -10,22 +10,34 @@ import UIKit
 import CareKit
 
 class AddActivityViewController: UIViewController {
-    
-    private let storeManager: CarePlanStoreManager = CarePlanStoreManager.sharedCarePlanStoreManager
-    
-    private let codingManager: NSCodingManager = NSCodingManager.sharedNSCodingManager
+    @IBOutlet weak var vegetableBtn: UIButton!
+    @IBOutlet weak var fruitsBtn: UIButton!
+    @IBOutlet weak var waterBtn: UIButton!
+    @IBOutlet weak var exerciseBtn: UIButton!
+    @IBOutlet weak var fisiotherapyBtn: UIButton!
+    @IBOutlet weak var shotBtn: UIButton!
+    @IBOutlet weak var customBtn: UIButton!
     
     private var activities: Array<Bool> = []
-    
     private var senderActivity: Int!
+    private var buttons: Array<UIButton> = []
+    private var selectedButton: UIButton!
     
-        
+    //MARK: - Managers
+    private let storeManager: CarePlanStoreManager = CarePlanStoreManager.sharedCarePlanStoreManager
+    private let codingManager: NSCodingManager = NSCodingManager.sharedNSCodingManager
+    private let transitionManager = TransitionDelegate()
+    
+    //MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
-        
         self.navigationController?.navigationBar.translucent = false
+        
+        self.transitioningDelegate = transitionManager
+        
+        //Set an array of buttons
+        buttons += [vegetableBtn, fruitsBtn, waterBtn, exerciseBtn, fisiotherapyBtn, shotBtn, customBtn]
         
         // Loads default Activities if it's the app's first launch
         let defaults = NSUserDefaults.standardUserDefaults()
@@ -39,6 +51,9 @@ class AddActivityViewController: UIViewController {
             self.activities = codingManager.loadToAddActivitiesData()!
         }
         
+        //Set the buttons state
+        setButtons()
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -46,17 +61,18 @@ class AddActivityViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func cancelBarButton(sender: UIBarButtonItem) {
-        self.dismissViewControllerAnimated(true, completion: nil)
-    }
+//    @IBAction func unwindToMainViewController (sender: UIStoryboardSegue) {
+//        // bug? exit segue doesn't dismiss so we do it manually...
+//        self.dismissViewControllerAnimated(true, completion: nil)
+//    }
     
 }
 
+//MARK: - Extension
 extension AddActivityViewController {
     
-    @IBAction func addActivityAction(sender: AnyObject) {
-//        let button = sender as! UIButton
-        let key = sender.tag!
+    @IBAction func addActivityAction(sender: UIButton) {
+        let key = sender.tag
         var activity: OCKCarePlanActivity? = nil
         
         if (activities[key] == true) {
@@ -79,11 +95,11 @@ extension AddActivityViewController {
             case 5:
                 activity = Shot().carePlanActivity()
                 
-            case 6:
-                activity = nil
-                
-                guard let addCustomActivityTableVC = self.storyboard?.instantiateViewControllerWithIdentifier("AddCustomActivityVC") else { return }
-                self.presentViewController(addCustomActivityTableVC, animated: true, completion: nil)
+//            case 6:
+//                activity = nil
+//                
+//                guard let addCustomActivityTableVC = self.storyboard?.instantiateViewControllerWithIdentifier("AddCustomActivityVC") else { return }
+//                self.presentViewController(addCustomActivityTableVC, animated: true, completion: nil)
                 
             default:
                 break
@@ -96,9 +112,8 @@ extension AddActivityViewController {
                     }
                 }
                 
-//                sender.tintColor = UIColor.redColor()
-                
                 self.activities[key] = false
+                sender.selected = false
                 
                 // Saves the 'added' activity to 'activities' coding and array.
                 self.codingManager.saveToAddActivitiesData(activities)
@@ -130,11 +145,11 @@ extension AddActivityViewController {
                 senderActivity = 5
                 performSegueWithIdentifier("activitiesToOccurencies", sender: self)
                 
-            case 6:
-                activity = nil
-                
-                guard let addCustomActivityTableVC = self.storyboard?.instantiateViewControllerWithIdentifier("AddCustomActivityVC") else { return }
-                self.presentViewController(addCustomActivityTableVC, animated: true, completion: nil)
+//            case 6:
+//                activity = nil
+//                
+//                guard let addCustomActivityTableVC = self.storyboard?.instantiateViewControllerWithIdentifier("AddCustomActivityVC") else { return }
+//                self.presentViewController(addCustomActivityTableVC, animated: true, completion: nil)
                 
             default:
                 break
@@ -147,6 +162,7 @@ extension AddActivityViewController {
                     }
                 }
                 
+                sender.selected = true
                 self.activities[key] = true
                 
                 // Saves the 'to add' activity to 'addedActivities' coding and array.
@@ -156,30 +172,24 @@ extension AddActivityViewController {
                 self.codingManager.saveToAddActivitiesData(activities)
             }
         }
+        
+        selectedButton = sender
+        print(selectedButton)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-            
-            
         if segue.identifier == "activitiesToOccurencies" {
-            
             if let destinationVC = segue.destinationViewController as? OccurenciesViewController {
-            
                 destinationVC.activity = senderActivity
+                destinationVC.button = selectedButton
                 
             }
-                
         }
-
-        
     }
     
-    
-    // MARK: NSCoding
-
-    
+    // MARK: - NSCoding
     func loadDefaultActivities() {
-        let activitiesToLoad = 7
+        let activitiesToLoad = 6
         
         for _ in 0..<activitiesToLoad {
             self.activities.append(false)
@@ -188,5 +198,11 @@ extension AddActivityViewController {
         codingManager.saveToAddActivitiesData(activities)
     }
     
+    //MARK: - Other methods
+    func setButtons() {
+        for i in 0..<activities.count {
+            buttons[i].selected = activities[i]
+        }
+    }
 }
 

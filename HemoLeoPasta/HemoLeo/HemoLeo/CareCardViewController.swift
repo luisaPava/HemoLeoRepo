@@ -9,15 +9,14 @@
 import UIKit
 import CareKit
 
-class CareCardViewController: UINavigationController /*OCKCareCardViewController*/ {
+class CareCardViewController: UINavigationController {
+    
     private let storeManager: CarePlanStoreManager = CarePlanStoreManager.sharedCarePlanStoreManager
+    
+    private var viewController: UIViewController! = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        
-//        addTylenolActivity()
         
     }
 
@@ -27,8 +26,10 @@ class CareCardViewController: UINavigationController /*OCKCareCardViewController
     }
     
     override func viewWillAppear(animated: Bool) {
-//        self.presentViewController(createCareCardVC(), animated: true, completion: nil)
-        self.pushViewController(createCareCardVC(), animated: false)
+        
+        viewController = createCareCardVC()
+        self.pushViewController(viewController, animated: false)
+        
     }
     
     @IBAction func cancel(sender: AnyObject) {
@@ -44,10 +45,15 @@ class CareCardViewController: UINavigationController /*OCKCareCardViewController
         viewController.title = "Cuidados"
         viewController.tabBarItem = UITabBarItem(title: "Cuidados", image: UIImage(named: "carecard"), selectedImage: UIImage(named: "carecard-fill"))
         
-        viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Add Activity", style: .Plain, target: self, action: #selector(pushAddActivityController))
+        viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "+", style: .Plain, target: self, action: #selector(pushAddActivityController))
         viewController.navigationItem.leftBarButtonItem?.tintColor = UIColor.redColor()
 
         return viewController
+    }
+    
+    @IBAction func unwindToMainViewController (sender: UIStoryboardSegue) {
+        // bug? exit segue doesn't dismiss so we do it manually...
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     
@@ -56,8 +62,33 @@ class CareCardViewController: UINavigationController /*OCKCareCardViewController
     // Instantiates the AddActivityTableViewController from Main.storyboard
     // and asks navigationController to show it.
     func pushAddActivityController() {
-        guard let addActivityTableVC = self.storyboard?.instantiateViewControllerWithIdentifier("AddActivityVC") else { return }
+//        guard let addActivityTableVC = self.storyboard?.instantiateViewControllerWithIdentifier("AddActivityVC") else { return }
+//        
+//        self.presentViewController(addActivityTableVC, animated: true, completion: nil)
         
-        self.presentViewController(addActivityTableVC, animated: true, completion: nil)
+//        let modal = self.storyboard?.instantiateViewControllerWithIdentifier("AddActivityVC") as! AddActivityViewController
+//        popoverViewController.modalPresentationStyle = .Popover
+//        
+//        let popoverPresentationViewController = popoverViewController.popoverPresentationController
+//        
+//        let view = self.viewController.navigationItem.leftBarButtonItem?.valueForKey("view") as? UIView
+//        
+//        popoverPresentationViewController?.permittedArrowDirections = UIPopoverArrowDirection.Up
+//        popoverPresentationViewController?.delegate = self
+//        popoverPresentationViewController?.sourceView = view
+//        popoverPresentationViewController?.sourceRect = CGRectMake(view!.frame.width / 2, view!.frame.height, 0, 0)
+        
+        
+        
+//        presentViewController(popoverViewController, animated: true, completion: nil)
+        
+        self.performSegueWithIdentifier("cardToAdd", sender: self)
+    }
+}
+
+//MARK: - UIPopoverPresentationControllerDelegate
+extension CareCardViewController: UIPopoverPresentationControllerDelegate {
+    func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle {
+        return UIModalPresentationStyle.None
     }
 }
