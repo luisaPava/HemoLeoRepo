@@ -13,7 +13,10 @@ class PageViewCcontroller: UIPageViewController {
     // Set an array with the view controllers to be shown
     private(set) lazy var orderedViewControllers: [UIViewController] = {
         return [self.getViewController("story1"),
-                self.getViewController("story2")]
+                self.getViewController("story2"),
+                self.getViewController("story3"),
+            self.getViewController("story4") ,
+            self.getViewController("story5")]
     }()
 
     //MARK: - Life Cycle

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uUq-gs-TkJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="SQc-XE-Gic">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -18,17 +18,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p9S-JB-4A3" customClass="BWGradientView" customModule="HemoLeo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.48627450980392156" green="0.85882352941176465" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="roundness">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                             <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="0dZ-U8-kFd" customClass="StorytellingView" customModule="HemoLeo" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="0dZ-U8-kFd" secondAttribute="trailing" id="YDE-IV-s5J"/>
-                            <constraint firstItem="0dZ-U8-kFd" firstAttribute="top" secondItem="kJr-hh-eJ7" secondAttribute="bottom" id="hso-gX-Mme"/>
-                            <constraint firstItem="c24-mg-6bQ" firstAttribute="top" secondItem="0dZ-U8-kFd" secondAttribute="bottom" id="pbg-Fr-GHI"/>
-                            <constraint firstItem="0dZ-U8-kFd" firstAttribute="leading" secondItem="fXy-yT-zS4" secondAttribute="leading" id="sOR-OC-uAj"/>
+                            <constraint firstItem="c24-mg-6bQ" firstAttribute="top" secondItem="0dZ-U8-kFd" secondAttribute="bottom" id="3dP-na-b3o"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0dZ-U8-kFd" secondAttribute="trailing" constant="-20" id="9Kg-BH-XPB"/>
+                            <constraint firstItem="p9S-JB-4A3" firstAttribute="leading" secondItem="fXy-yT-zS4" secondAttribute="leadingMargin" constant="-20" id="F8Z-rc-xyL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="p9S-JB-4A3" secondAttribute="trailing" constant="-20" id="O0E-ZL-X88"/>
+                            <constraint firstItem="0dZ-U8-kFd" firstAttribute="top" secondItem="fXy-yT-zS4" secondAttribute="topMargin" id="lEw-eJ-Tqd"/>
+                            <constraint firstItem="c24-mg-6bQ" firstAttribute="top" secondItem="p9S-JB-4A3" secondAttribute="bottom" id="mcB-JE-CIN"/>
+                            <constraint firstItem="p9S-JB-4A3" firstAttribute="top" secondItem="kJr-hh-eJ7" secondAttribute="bottom" constant="-20" id="sZF-U0-3XQ"/>
+                            <constraint firstItem="0dZ-U8-kFd" firstAttribute="leading" secondItem="fXy-yT-zS4" secondAttribute="leadingMargin" constant="-20" id="xYL-Yp-FJe"/>
                         </constraints>
                     </view>
                     <connections>
@@ -37,7 +56,59 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SCZ-zH-Kj6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="520" y="-803"/>
+            <point key="canvasLocation" x="1229" y="-1526"/>
+        </scene>
+        <!--Story4 View Controller-->
+        <scene sceneID="tOH-rK-Wfs">
+            <objects>
+                <viewController storyboardIdentifier="story4" id="uHS-Ht-MV0" customClass="Story4ViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MVT-gH-EDY"/>
+                        <viewControllerLayoutGuide type="bottom" id="oQN-AA-4LD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mT2-uK-ZdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1jj-hZ-PIa" customClass="BWGradientView" customModule="HemoLeo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.48627450979999998" green="0.85882352939999995" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="roundness">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JDG-bT-reb" customClass="Storytelling4View" customModule="HemoLeo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oQN-AA-4LD" firstAttribute="top" secondItem="1jj-hZ-PIa" secondAttribute="bottom" id="7Lz-pf-xz2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JDG-bT-reb" secondAttribute="trailing" constant="-20" id="aDK-SJ-lJV"/>
+                            <constraint firstItem="JDG-bT-reb" firstAttribute="leading" secondItem="mT2-uK-ZdC" secondAttribute="leadingMargin" constant="-20" id="aDP-Ko-AEk"/>
+                            <constraint firstItem="1jj-hZ-PIa" firstAttribute="top" secondItem="mT2-uK-ZdC" secondAttribute="top" id="n3Q-nl-VOk"/>
+                            <constraint firstItem="JDG-bT-reb" firstAttribute="top" secondItem="MVT-gH-EDY" secondAttribute="bottom" id="rzo-N8-rhP"/>
+                            <constraint firstItem="oQN-AA-4LD" firstAttribute="top" secondItem="JDG-bT-reb" secondAttribute="bottom" id="vgK-4m-vKr"/>
+                            <constraint firstAttribute="trailing" secondItem="1jj-hZ-PIa" secondAttribute="trailing" id="yaR-iE-LhT"/>
+                            <constraint firstItem="1jj-hZ-PIa" firstAttribute="leading" secondItem="mT2-uK-ZdC" secondAttribute="leading" id="zMB-bM-pC0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="storyView" destination="JDG-bT-reb" id="vq6-VV-2J8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZXo-vz-kvj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1246" y="-797"/>
         </scene>
         <!--Story2 View Controller-->
         <scene sceneID="bDs-ma-6nQ">
@@ -51,28 +122,170 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0MA-50-bPA">
-                                <rect key="frame" x="83" y="540" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="uUq-gs-TkJ" kind="show" id="rhZ-Ri-hD0"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r2y-x3-feY" customClass="BWGradientView" customModule="HemoLeo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.48627450979999998" green="0.85882352939999995" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="roundness">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="ugM-3h-f9m" customClass="Storytelling2View" customModule="HemoLeo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ugM-3h-f9m" firstAttribute="leading" secondItem="zar-oI-P5G" secondAttribute="leadingMargin" constant="-20" id="805-Ho-YO2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ugM-3h-f9m" secondAttribute="trailing" constant="-20" id="9vu-Ci-PSJ"/>
+                            <constraint firstItem="iq9-yc-tZ0" firstAttribute="top" secondItem="ugM-3h-f9m" secondAttribute="bottom" id="AhV-wl-byh"/>
+                            <constraint firstItem="ugM-3h-f9m" firstAttribute="top" secondItem="zar-oI-P5G" secondAttribute="topMargin" id="UYd-sS-Bfm"/>
+                            <constraint firstItem="r2y-x3-feY" firstAttribute="top" secondItem="zar-oI-P5G" secondAttribute="top" id="X4e-1b-RwI"/>
+                            <constraint firstItem="iq9-yc-tZ0" firstAttribute="top" secondItem="r2y-x3-feY" secondAttribute="bottom" id="aa7-IQ-m1g"/>
+                            <constraint firstItem="r2y-x3-feY" firstAttribute="leading" secondItem="zar-oI-P5G" secondAttribute="leading" id="dVn-zS-2Uy"/>
+                            <constraint firstAttribute="trailing" secondItem="r2y-x3-feY" secondAttribute="trailing" id="p4H-ro-BVj"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="storyView" destination="ugM-3h-f9m" id="2Y2-Qj-P0V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="br7-4p-6wd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1240" y="-803"/>
+            <point key="canvasLocation" x="2028" y="-1526"/>
+        </scene>
+        <!--Story5 View Controller-->
+        <scene sceneID="zwQ-qT-65k">
+            <objects>
+                <viewController storyboardIdentifier="story5" id="aug-r5-dhI" customClass="Story5ViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TLU-Vr-bZt"/>
+                        <viewControllerLayoutGuide type="bottom" id="E1v-uc-wSj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iqR-gD-U9B">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C85-cO-fm7" customClass="BWGradientView" customModule="HemoLeo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.48627450979999998" green="0.85882352939999995" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="roundness">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8qm-TA-Yzj" customClass="Storytelling5View" customModule="HemoLeo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U5Q-7h-kyL">
+                                <rect key="frame" x="541" y="570" width="33" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="CuT-5c-WDM"/>
+                                    <constraint firstAttribute="height" constant="30" id="I8k-2G-KyU"/>
+                                </constraints>
+                                <state key="normal" title="Main"/>
+                                <connections>
+                                    <segue destination="uUq-gs-TkJ" kind="show" id="QyY-ll-FNN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="C85-cO-fm7" firstAttribute="top" secondItem="iqR-gD-U9B" secondAttribute="topMargin" id="183-or-G0b"/>
+                            <constraint firstItem="E1v-uc-wSj" firstAttribute="top" secondItem="U5Q-7h-kyL" secondAttribute="bottom" id="881-bH-tdX"/>
+                            <constraint firstAttribute="trailing" secondItem="8qm-TA-Yzj" secondAttribute="trailing" id="KuX-xy-dPG"/>
+                            <constraint firstItem="C85-cO-fm7" firstAttribute="leading" secondItem="iqR-gD-U9B" secondAttribute="leadingMargin" constant="-20" id="Nal-z4-Mur"/>
+                            <constraint firstItem="E1v-uc-wSj" firstAttribute="top" secondItem="8qm-TA-Yzj" secondAttribute="bottom" id="VdC-Wt-KXo"/>
+                            <constraint firstItem="E1v-uc-wSj" firstAttribute="top" secondItem="C85-cO-fm7" secondAttribute="bottom" id="Yps-BV-KrE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="U5Q-7h-kyL" secondAttribute="trailing" id="coY-31-ybA"/>
+                            <constraint firstItem="8qm-TA-Yzj" firstAttribute="leading" secondItem="iqR-gD-U9B" secondAttribute="leading" id="ggI-81-quV"/>
+                            <constraint firstItem="8qm-TA-Yzj" firstAttribute="top" secondItem="TLU-Vr-bZt" secondAttribute="bottom" id="kcx-2p-Tg4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="C85-cO-fm7" secondAttribute="trailing" constant="-20" id="sHk-qj-Ab3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="storyView" destination="8qm-TA-Yzj" id="pBW-rm-VDr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rbd-PR-4fv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2018" y="-825"/>
         </scene>
         <!--Page View Ccontroller-->
         <scene sceneID="kf3-zL-yxt">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="SQc-XE-Gic" customClass="PageViewCcontroller" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="none" id="SQc-XE-Gic" customClass="PageViewCcontroller" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aNF-zz-w9M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="520" y="-1526"/>
+        </scene>
+        <!--Story3 View Controller-->
+        <scene sceneID="HjC-6o-Ky8">
+            <objects>
+                <viewController storyboardIdentifier="story3" id="QDa-SF-kx5" customClass="Story3ViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9Qo-kl-aJ2"/>
+                        <viewControllerLayoutGuide type="bottom" id="tnc-xi-Duj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8rc-FV-tsp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="86G-Lq-2rQ" customClass="BWGradientView" customModule="HemoLeo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.48627450979999998" green="0.85882352939999995" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="roundness">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jz0-sN-eGr" customClass="Storytelling3View" customModule="HemoLeo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="86G-Lq-2rQ" firstAttribute="leading" secondItem="8rc-FV-tsp" secondAttribute="leading" id="4Xj-ET-dJx"/>
+                            <constraint firstItem="tnc-xi-Duj" firstAttribute="top" secondItem="jz0-sN-eGr" secondAttribute="bottom" id="LMz-pZ-Eke"/>
+                            <constraint firstItem="jz0-sN-eGr" firstAttribute="top" secondItem="8rc-FV-tsp" secondAttribute="topMargin" id="PTM-DT-8kk"/>
+                            <constraint firstItem="tnc-xi-Duj" firstAttribute="top" secondItem="86G-Lq-2rQ" secondAttribute="bottom" id="YIu-aY-Er8"/>
+                            <constraint firstAttribute="trailing" secondItem="86G-Lq-2rQ" secondAttribute="trailing" id="gCj-r8-Qy9"/>
+                            <constraint firstItem="jz0-sN-eGr" firstAttribute="leading" secondItem="8rc-FV-tsp" secondAttribute="leadingMargin" constant="-20" id="qPs-12-O4O"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jz0-sN-eGr" secondAttribute="trailing" constant="-20" id="uom-oR-wXx"/>
+                            <constraint firstItem="86G-Lq-2rQ" firstAttribute="top" secondItem="8rc-FV-tsp" secondAttribute="top" id="yK1-WF-ggn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="storyView" destination="jz0-sN-eGr" id="1e8-fc-O0C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x4w-Kq-n2c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="502" y="-797"/>
         </scene>
         <!--Select Theme View Controller-->
         <scene sceneID="JXc-Xb-y01">
@@ -177,6 +390,12 @@
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="561" id="bpm-7q-JCx"/>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="700" id="faR-sG-NyF"/>
                                                     </constraints>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="bpm-7q-JCx"/>
+                                                            <exclude reference="faR-sG-NyF"/>
+                                                        </mask>
+                                                    </variation>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -222,7 +441,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q0w-ed-pn7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-226" y="-264"/>
+            <point key="canvasLocation" x="-222" y="-186"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="CBo-oo-oxk">
@@ -660,7 +879,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EYU-jz-ig8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-610" y="551"/>
+            <point key="canvasLocation" x="-590" y="675"/>
         </scene>
         <!--Symptom Card View Controller-->
         <scene sceneID="Hiw-WY-5q9">
@@ -690,7 +909,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZXp-0g-tKg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-53" y="551"/>
+            <point key="canvasLocation" x="-56" y="675"/>
         </scene>
         <!--Care Card View Controller-->
         <scene sceneID="MxI-xp-R8I">

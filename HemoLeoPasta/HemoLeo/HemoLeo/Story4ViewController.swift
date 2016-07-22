@@ -1,16 +1,16 @@
 //
-//  Story2ViewController.swift
+//  Story4ViewController.swift
 //  HemoLeo
 //
-//  Created by Luisa Mello on 7/14/16.
+//  Created by Luisa Mello on 7/22/16.
 //  Copyright © 2016 Bepid. All rights reserved.
 //
 
 import UIKit
 
-class Story2ViewController: UIViewController {
+class Story4ViewController: UIViewController {
 
-    @IBOutlet weak var storyView: Storytelling2View!
+    @IBOutlet weak var storyView: Storytelling4View!
     
     var timer = NSTimer()
     
@@ -32,7 +32,7 @@ class Story2ViewController: UIViewController {
     
     func animation () {
         
-        storyView.addStory2Animation()
+        storyView.addStory4Animation()
         
         
     }

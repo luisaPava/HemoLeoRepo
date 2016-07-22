@@ -66,20 +66,6 @@ class StorytellingView : UIView {
 		self.addSubview(__scaling__)
 		viewsByName["__scaling__"] = __scaling__
 
-		let bG = UIImageView()
-		bG.bounds = CGRect(x:0, y:0, width:1024.0, height:768.0)
-		var imgBG: UIImage!
-		if let imagePath = bundle.pathForResource("BG.png", ofType:nil) {
-			imgBG = UIImage(contentsOfFile:imagePath)
-		}else {
-			print("** Warning: Could not create image from 'BG.png'. Please make sure that it is added to the project directly (not in a folder reference).")
-		}
-		bG.image = imgBG
-		bG.contentMode = .Center
-		bG.layer.position = CGPoint(x:512.000, y:384.000)
-		__scaling__.addSubview(bG)
-		viewsByName["BG"] = bG
-
 		let fala1 = UIImageView()
 		fala1.bounds = CGRect(x:0, y:0, width:803.0, height:119.0)
 		var imgFala1: UIImage!
@@ -253,25 +239,45 @@ class StorytellingView : UIView {
 		leoDoCorpoRotationAnimation.removedOnCompletion = removedOnCompletion
 		self.viewsByName["Leo do corpo"]?.layer.addAnimation(leoDoCorpoRotationAnimation, forKey:"story1_Rotation")
 
-		let fala1MaskTranslationXAnimation = CAKeyframeAnimation(keyPath: "transform.translation.x")
-		fala1MaskTranslationXAnimation.duration = 4.050
-		fala1MaskTranslationXAnimation.values = [0.000 as Float, 0.000 as Float, 1140.000 as Float, 1140.000 as Float]
-		fala1MaskTranslationXAnimation.keyTimes = [0.000 as Float, 0.099 as Float, 0.296 as Float, 1.000 as Float]
-		fala1MaskTranslationXAnimation.timingFunctions = [linearTiming, linearTiming, linearTiming]
-		fala1MaskTranslationXAnimation.beginTime = beginTime
-		fala1MaskTranslationXAnimation.fillMode = fillMode
-		fala1MaskTranslationXAnimation.removedOnCompletion = removedOnCompletion
-		self.viewsByName["Fala1_mask"]?.layer.addAnimation(fala1MaskTranslationXAnimation, forKey:"story1_TranslationX")
+		let handScaleXAnimation = CAKeyframeAnimation(keyPath: "transform.scale.x")
+		handScaleXAnimation.duration = 4.050
+		handScaleXAnimation.values = [0.000 as Float, 0.000 as Float, 1.000 as Float, 1.000 as Float]
+		handScaleXAnimation.keyTimes = [0.000 as Float, 0.617 as Float, 0.679 as Float, 1.000 as Float]
+		handScaleXAnimation.timingFunctions = [linearTiming, linearTiming, linearTiming]
+		handScaleXAnimation.beginTime = beginTime
+		handScaleXAnimation.fillMode = fillMode
+		handScaleXAnimation.removedOnCompletion = removedOnCompletion
+		self.viewsByName["hand"]?.layer.addAnimation(handScaleXAnimation, forKey:"story1_ScaleX")
 
-		let fala1MaskTranslationYAnimation = CAKeyframeAnimation(keyPath: "transform.translation.y")
-		fala1MaskTranslationYAnimation.duration = 4.050
-		fala1MaskTranslationYAnimation.values = [0.000 as Float, 0.000 as Float, 0.000 as Float]
-		fala1MaskTranslationYAnimation.keyTimes = [0.000 as Float, 0.099 as Float, 1.000 as Float]
-		fala1MaskTranslationYAnimation.timingFunctions = [linearTiming, linearTiming]
-		fala1MaskTranslationYAnimation.beginTime = beginTime
-		fala1MaskTranslationYAnimation.fillMode = fillMode
-		fala1MaskTranslationYAnimation.removedOnCompletion = removedOnCompletion
-		self.viewsByName["Fala1_mask"]?.layer.addAnimation(fala1MaskTranslationYAnimation, forKey:"story1_TranslationY")
+		let handScaleYAnimation = CAKeyframeAnimation(keyPath: "transform.scale.y")
+		handScaleYAnimation.duration = 4.050
+		handScaleYAnimation.values = [0.000 as Float, 0.000 as Float, 1.000 as Float, 1.000 as Float]
+		handScaleYAnimation.keyTimes = [0.000 as Float, 0.617 as Float, 0.679 as Float, 1.000 as Float]
+		handScaleYAnimation.timingFunctions = [linearTiming, linearTiming, linearTiming]
+		handScaleYAnimation.beginTime = beginTime
+		handScaleYAnimation.fillMode = fillMode
+		handScaleYAnimation.removedOnCompletion = removedOnCompletion
+		self.viewsByName["hand"]?.layer.addAnimation(handScaleYAnimation, forKey:"story1_ScaleY")
+
+		let handTranslationXAnimation = CAKeyframeAnimation(keyPath: "transform.translation.x")
+		handTranslationXAnimation.duration = 4.050
+		handTranslationXAnimation.values = [0.000 as Float, 0.000 as Float, -70.000 as Float, -70.000 as Float]
+		handTranslationXAnimation.keyTimes = [0.000 as Float, 0.704 as Float, 0.765 as Float, 1.000 as Float]
+		handTranslationXAnimation.timingFunctions = [linearTiming, linearTiming, linearTiming]
+		handTranslationXAnimation.beginTime = beginTime
+		handTranslationXAnimation.fillMode = fillMode
+		handTranslationXAnimation.removedOnCompletion = removedOnCompletion
+		self.viewsByName["hand"]?.layer.addAnimation(handTranslationXAnimation, forKey:"story1_TranslationX")
+
+		let handTranslationYAnimation = CAKeyframeAnimation(keyPath: "transform.translation.y")
+		handTranslationYAnimation.duration = 4.050
+		handTranslationYAnimation.values = [0.000 as Float, 0.000 as Float, 0.000 as Float]
+		handTranslationYAnimation.keyTimes = [0.000 as Float, 0.704 as Float, 1.000 as Float]
+		handTranslationYAnimation.timingFunctions = [linearTiming, linearTiming]
+		handTranslationYAnimation.beginTime = beginTime
+		handTranslationYAnimation.fillMode = fillMode
+		handTranslationYAnimation.removedOnCompletion = removedOnCompletion
+		self.viewsByName["hand"]?.layer.addAnimation(handTranslationYAnimation, forKey:"story1_TranslationY")
 
 		let movementMaskTranslationXAnimation = CAKeyframeAnimation(keyPath: "transform.translation.x")
 		movementMaskTranslationXAnimation.duration = 4.050
@@ -313,60 +319,40 @@ class StorytellingView : UIView {
 		leoFalandoScaleYAnimation.removedOnCompletion = removedOnCompletion
 		self.viewsByName["Leo falando"]?.layer.addAnimation(leoFalandoScaleYAnimation, forKey:"story1_ScaleY")
 
-		let handScaleXAnimation = CAKeyframeAnimation(keyPath: "transform.scale.x")
-		handScaleXAnimation.duration = 4.050
-		handScaleXAnimation.values = [0.000 as Float, 0.000 as Float, 1.000 as Float, 1.000 as Float]
-		handScaleXAnimation.keyTimes = [0.000 as Float, 0.617 as Float, 0.679 as Float, 1.000 as Float]
-		handScaleXAnimation.timingFunctions = [linearTiming, linearTiming, linearTiming]
-		handScaleXAnimation.beginTime = beginTime
-		handScaleXAnimation.fillMode = fillMode
-		handScaleXAnimation.removedOnCompletion = removedOnCompletion
-		self.viewsByName["hand"]?.layer.addAnimation(handScaleXAnimation, forKey:"story1_ScaleX")
+		let fala1MaskTranslationXAnimation = CAKeyframeAnimation(keyPath: "transform.translation.x")
+		fala1MaskTranslationXAnimation.duration = 4.050
+		fala1MaskTranslationXAnimation.values = [0.000 as Float, 0.000 as Float, 1140.000 as Float, 1140.000 as Float]
+		fala1MaskTranslationXAnimation.keyTimes = [0.000 as Float, 0.099 as Float, 0.296 as Float, 1.000 as Float]
+		fala1MaskTranslationXAnimation.timingFunctions = [linearTiming, linearTiming, linearTiming]
+		fala1MaskTranslationXAnimation.beginTime = beginTime
+		fala1MaskTranslationXAnimation.fillMode = fillMode
+		fala1MaskTranslationXAnimation.removedOnCompletion = removedOnCompletion
+		self.viewsByName["Fala1_mask"]?.layer.addAnimation(fala1MaskTranslationXAnimation, forKey:"story1_TranslationX")
 
-		let handScaleYAnimation = CAKeyframeAnimation(keyPath: "transform.scale.y")
-		handScaleYAnimation.duration = 4.050
-		handScaleYAnimation.values = [0.000 as Float, 0.000 as Float, 1.000 as Float, 1.000 as Float]
-		handScaleYAnimation.keyTimes = [0.000 as Float, 0.617 as Float, 0.679 as Float, 1.000 as Float]
-		handScaleYAnimation.timingFunctions = [linearTiming, linearTiming, linearTiming]
-		handScaleYAnimation.beginTime = beginTime
-		handScaleYAnimation.fillMode = fillMode
-		handScaleYAnimation.removedOnCompletion = removedOnCompletion
-		self.viewsByName["hand"]?.layer.addAnimation(handScaleYAnimation, forKey:"story1_ScaleY")
-
-		let handTranslationXAnimation = CAKeyframeAnimation(keyPath: "transform.translation.x")
-		handTranslationXAnimation.duration = 4.050
-		handTranslationXAnimation.values = [0.000 as Float, 0.000 as Float, -70.000 as Float, -70.000 as Float]
-		handTranslationXAnimation.keyTimes = [0.000 as Float, 0.704 as Float, 0.765 as Float, 1.000 as Float]
-		handTranslationXAnimation.timingFunctions = [linearTiming, linearTiming, linearTiming]
-		handTranslationXAnimation.beginTime = beginTime
-		handTranslationXAnimation.fillMode = fillMode
-		handTranslationXAnimation.removedOnCompletion = removedOnCompletion
-		self.viewsByName["hand"]?.layer.addAnimation(handTranslationXAnimation, forKey:"story1_TranslationX")
-
-		let handTranslationYAnimation = CAKeyframeAnimation(keyPath: "transform.translation.y")
-		handTranslationYAnimation.duration = 4.050
-		handTranslationYAnimation.values = [0.000 as Float, 0.000 as Float, 0.000 as Float]
-		handTranslationYAnimation.keyTimes = [0.000 as Float, 0.704 as Float, 1.000 as Float]
-		handTranslationYAnimation.timingFunctions = [linearTiming, linearTiming]
-		handTranslationYAnimation.beginTime = beginTime
-		handTranslationYAnimation.fillMode = fillMode
-		handTranslationYAnimation.removedOnCompletion = removedOnCompletion
-		self.viewsByName["hand"]?.layer.addAnimation(handTranslationYAnimation, forKey:"story1_TranslationY")
+		let fala1MaskTranslationYAnimation = CAKeyframeAnimation(keyPath: "transform.translation.y")
+		fala1MaskTranslationYAnimation.duration = 4.050
+		fala1MaskTranslationYAnimation.values = [0.000 as Float, 0.000 as Float, 0.000 as Float]
+		fala1MaskTranslationYAnimation.keyTimes = [0.000 as Float, 0.099 as Float, 1.000 as Float]
+		fala1MaskTranslationYAnimation.timingFunctions = [linearTiming, linearTiming]
+		fala1MaskTranslationYAnimation.beginTime = beginTime
+		fala1MaskTranslationYAnimation.fillMode = fillMode
+		fala1MaskTranslationYAnimation.removedOnCompletion = removedOnCompletion
+		self.viewsByName["Fala1_mask"]?.layer.addAnimation(fala1MaskTranslationYAnimation, forKey:"story1_TranslationY")
 	}
 
 	func removeStory1Animation() {
 		self.layer.removeAnimationForKey("Story1")
 		self.viewsByName["Leo do corpo"]?.layer.removeAnimationForKey("story1_Rotation")
-		self.viewsByName["Fala1_mask"]?.layer.removeAnimationForKey("story1_TranslationX")
-		self.viewsByName["Fala1_mask"]?.layer.removeAnimationForKey("story1_TranslationY")
-		self.viewsByName["Movement_mask"]?.layer.removeAnimationForKey("story1_TranslationX")
-		self.viewsByName["Movement_mask"]?.layer.removeAnimationForKey("story1_TranslationY")
-		self.viewsByName["Leo falando"]?.layer.removeAnimationForKey("story1_ScaleX")
-		self.viewsByName["Leo falando"]?.layer.removeAnimationForKey("story1_ScaleY")
 		self.viewsByName["hand"]?.layer.removeAnimationForKey("story1_ScaleX")
 		self.viewsByName["hand"]?.layer.removeAnimationForKey("story1_ScaleY")
 		self.viewsByName["hand"]?.layer.removeAnimationForKey("story1_TranslationX")
 		self.viewsByName["hand"]?.layer.removeAnimationForKey("story1_TranslationY")
+		self.viewsByName["Movement_mask"]?.layer.removeAnimationForKey("story1_TranslationX")
+		self.viewsByName["Movement_mask"]?.layer.removeAnimationForKey("story1_TranslationY")
+		self.viewsByName["Leo falando"]?.layer.removeAnimationForKey("story1_ScaleX")
+		self.viewsByName["Leo falando"]?.layer.removeAnimationForKey("story1_ScaleY")
+		self.viewsByName["Fala1_mask"]?.layer.removeAnimationForKey("story1_TranslationX")
+		self.viewsByName["Fala1_mask"]?.layer.removeAnimationForKey("story1_TranslationY")
 	}
 
 	override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
