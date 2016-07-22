@@ -49,6 +49,25 @@
 		777711071D3E9AAC0066A0E2 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 777711061D3E9AAC0066A0E2 /* SpriteKit.framework */; };
 		7777110D1D3E9BD00066A0E2 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7777110C1D3E9BD00066A0E2 /* GameScene.swift */; };
 		7777110F1D3E9C110066A0E2 /* LeoImages.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 7777110E1D3E9C110066A0E2 /* LeoImages.atlas */; };
+		EB6F10FB1D41C4550056606B /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = EB6F10E91D41C4550056606B /* arrow.png */; };
+		EB6F10FC1D41C4550056606B /* arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB6F10EA1D41C4550056606B /* arrow@2x.png */; };
+		EB6F10FD1D41C4550056606B /* BG.png in Resources */ = {isa = PBXBuildFile; fileRef = EB6F10EB1D41C4550056606B /* BG.png */; };
+		EB6F10FE1D41C4550056606B /* BG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB6F10EC1D41C4550056606B /* BG@2x.png */; };
+		EB6F10FF1D41C4550056606B /* Corpo.png in Resources */ = {isa = PBXBuildFile; fileRef = EB6F10ED1D41C4550056606B /* Corpo.png */; };
+		EB6F11001D41C4550056606B /* Corpo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB6F10EE1D41C4550056606B /* Corpo@2x.png */; };
+		EB6F11011D41C4550056606B /* Fala1.png in Resources */ = {isa = PBXBuildFile; fileRef = EB6F10EF1D41C4550056606B /* Fala1.png */; };
+		EB6F11021D41C4550056606B /* Fala1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB6F10F01D41C4550056606B /* Fala1@2x.png */; };
+		EB6F11031D41C4550056606B /* gradient1.png in Resources */ = {isa = PBXBuildFile; fileRef = EB6F10F11D41C4550056606B /* gradient1.png */; };
+		EB6F11041D41C4550056606B /* gradient1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB6F10F21D41C4550056606B /* gradient1@2x.png */; };
+		EB6F11051D41C4550056606B /* gradient2.png in Resources */ = {isa = PBXBuildFile; fileRef = EB6F10F31D41C4550056606B /* gradient2.png */; };
+		EB6F11061D41C4550056606B /* gradient2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB6F10F41D41C4550056606B /* gradient2@2x.png */; };
+		EB6F11071D41C4550056606B /* hand.png in Resources */ = {isa = PBXBuildFile; fileRef = EB6F10F51D41C4550056606B /* hand.png */; };
+		EB6F11081D41C4550056606B /* hand@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB6F10F61D41C4550056606B /* hand@2x.png */; };
+		EB6F11091D41C4550056606B /* Leo do corpo.png in Resources */ = {isa = PBXBuildFile; fileRef = EB6F10F71D41C4550056606B /* Leo do corpo.png */; };
+		EB6F110A1D41C4550056606B /* Leo do corpo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB6F10F81D41C4550056606B /* Leo do corpo@2x.png */; };
+		EB6F110B1D41C4550056606B /* Leo falando.png in Resources */ = {isa = PBXBuildFile; fileRef = EB6F10F91D41C4550056606B /* Leo falando.png */; };
+		EB6F110C1D41C4550056606B /* Leo falando@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB6F10FA1D41C4550056606B /* Leo falando@2x.png */; };
+		EB6F110E1D41C45E0056606B /* StorytellingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6F110D1D41C45E0056606B /* StorytellingView.swift */; };
 		EBBD25AE1D3731BE00786155 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBD25AD1D3731BE00786155 /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -155,6 +174,25 @@
 		777711061D3E9AAC0066A0E2 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		7777110C1D3E9BD00066A0E2 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		7777110E1D3E9C110066A0E2 /* LeoImages.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = LeoImages.atlas; sourceTree = "<group>"; };
+		EB6F10E91D41C4550056606B /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		EB6F10EA1D41C4550056606B /* arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow@2x.png"; sourceTree = "<group>"; };
+		EB6F10EB1D41C4550056606B /* BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BG.png; sourceTree = "<group>"; };
+		EB6F10EC1D41C4550056606B /* BG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BG@2x.png"; sourceTree = "<group>"; };
+		EB6F10ED1D41C4550056606B /* Corpo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Corpo.png; sourceTree = "<group>"; };
+		EB6F10EE1D41C4550056606B /* Corpo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Corpo@2x.png"; sourceTree = "<group>"; };
+		EB6F10EF1D41C4550056606B /* Fala1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fala1.png; sourceTree = "<group>"; };
+		EB6F10F01D41C4550056606B /* Fala1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Fala1@2x.png"; sourceTree = "<group>"; };
+		EB6F10F11D41C4550056606B /* gradient1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gradient1.png; sourceTree = "<group>"; };
+		EB6F10F21D41C4550056606B /* gradient1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gradient1@2x.png"; sourceTree = "<group>"; };
+		EB6F10F31D41C4550056606B /* gradient2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gradient2.png; sourceTree = "<group>"; };
+		EB6F10F41D41C4550056606B /* gradient2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gradient2@2x.png"; sourceTree = "<group>"; };
+		EB6F10F51D41C4550056606B /* hand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hand.png; sourceTree = "<group>"; };
+		EB6F10F61D41C4550056606B /* hand@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hand@2x.png"; sourceTree = "<group>"; };
+		EB6F10F71D41C4550056606B /* Leo do corpo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Leo do corpo.png"; sourceTree = "<group>"; };
+		EB6F10F81D41C4550056606B /* Leo do corpo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Leo do corpo@2x.png"; sourceTree = "<group>"; };
+		EB6F10F91D41C4550056606B /* Leo falando.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Leo falando.png"; sourceTree = "<group>"; };
+		EB6F10FA1D41C4550056606B /* Leo falando@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Leo falando@2x.png"; sourceTree = "<group>"; };
+		EB6F110D1D41C45E0056606B /* StorytellingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorytellingView.swift; sourceTree = "<group>"; };
 		EBBD25AD1D3731BE00786155 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -238,6 +276,7 @@
 		2BA188961D355B4A007F1CEB /* HemoLeo */ = {
 			isa = PBXGroup;
 			children = (
+				EB6F10E21D41C4170056606B /* AnimaçõesCoreAnimator */,
 				4E132CB11D4123CA004CBC6F /* TabelView */,
 				4E3CE03A1D400FEF00E4F422 /* Animação */,
 				2B1A21501D3E7B70007F1B68 /* Managers */,
@@ -375,6 +414,48 @@
 			name = "Animação";
 			sourceTree = "<group>";
 		};
+		EB6F10E21D41C4170056606B /* AnimaçõesCoreAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				EB6F10E71D41C4310056606B /* Story1 */,
+			);
+			name = "AnimaçõesCoreAnimator";
+			sourceTree = "<group>";
+		};
+		EB6F10E71D41C4310056606B /* Story1 */ = {
+			isa = PBXGroup;
+			children = (
+				EB6F110D1D41C45E0056606B /* StorytellingView.swift */,
+				EB6F10E81D41C4430056606B /* Images */,
+			);
+			name = Story1;
+			sourceTree = "<group>";
+		};
+		EB6F10E81D41C4430056606B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EB6F10E91D41C4550056606B /* arrow.png */,
+				EB6F10EA1D41C4550056606B /* arrow@2x.png */,
+				EB6F10EB1D41C4550056606B /* BG.png */,
+				EB6F10EC1D41C4550056606B /* BG@2x.png */,
+				EB6F10ED1D41C4550056606B /* Corpo.png */,
+				EB6F10EE1D41C4550056606B /* Corpo@2x.png */,
+				EB6F10EF1D41C4550056606B /* Fala1.png */,
+				EB6F10F01D41C4550056606B /* Fala1@2x.png */,
+				EB6F10F11D41C4550056606B /* gradient1.png */,
+				EB6F10F21D41C4550056606B /* gradient1@2x.png */,
+				EB6F10F31D41C4550056606B /* gradient2.png */,
+				EB6F10F41D41C4550056606B /* gradient2@2x.png */,
+				EB6F10F51D41C4550056606B /* hand.png */,
+				EB6F10F61D41C4550056606B /* hand@2x.png */,
+				EB6F10F71D41C4550056606B /* Leo do corpo.png */,
+				EB6F10F81D41C4550056606B /* Leo do corpo@2x.png */,
+				EB6F10F91D41C4550056606B /* Leo falando.png */,
+				EB6F10FA1D41C4550056606B /* Leo falando@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -478,11 +559,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB6F11051D41C4550056606B /* gradient2.png in Resources */,
 				7777110F1D3E9C110066A0E2 /* LeoImages.atlas in Resources */,
+				EB6F11081D41C4550056606B /* hand@2x.png in Resources */,
+				EB6F11071D41C4550056606B /* hand.png in Resources */,
+				EB6F110A1D41C4550056606B /* Leo do corpo@2x.png in Resources */,
+				EB6F110C1D41C4550056606B /* Leo falando@2x.png in Resources */,
+				EB6F11021D41C4550056606B /* Fala1@2x.png in Resources */,
+				EB6F11011D41C4550056606B /* Fala1.png in Resources */,
+				EB6F11041D41C4550056606B /* gradient1@2x.png in Resources */,
+				EB6F10FB1D41C4550056606B /* arrow.png in Resources */,
+				EB6F10FD1D41C4550056606B /* BG.png in Resources */,
 				2BA1888E1D355A2C007F1CEB /* LaunchScreen.storyboard in Resources */,
+				EB6F10FC1D41C4550056606B /* arrow@2x.png in Resources */,
+				EB6F11061D41C4550056606B /* gradient2@2x.png in Resources */,
+				EB6F11031D41C4550056606B /* gradient1.png in Resources */,
+				EB6F11091D41C4550056606B /* Leo do corpo.png in Resources */,
+				EB6F11001D41C4550056606B /* Corpo@2x.png in Resources */,
+				EB6F10FF1D41C4550056606B /* Corpo.png in Resources */,
+				EB6F10FE1D41C4550056606B /* BG@2x.png in Resources */,
 				2BA1888B1D355A2C007F1CEB /* Assets.xcassets in Resources */,
 				2BA188891D355A2C007F1CEB /* Main.storyboard in Resources */,
 				4E132CB91D41242A004CBC6F /* CustomActivityCell.xib in Resources */,
+				EB6F110B1D41C4550056606B /* Leo falando.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,6 +616,7 @@
 				2B7997F21D37CD9F00D0996D /* Story2ViewController.swift in Sources */,
 				4E2B2DF31D3ABEEB00EED2B4 /* AssessmentsManager.swift in Sources */,
 				2BA188801D355A2C007F1CEB /* AppDelegate.swift in Sources */,
+				EB6F110E1D41C45E0056606B /* StorytellingView.swift in Sources */,
 				2B87D5E91D38247000F29678 /* AddActivityViewController.swift in Sources */,
 				4E132CB81D41242A004CBC6F /* CustomActivityCell.swift in Sources */,
 				2BA188BC1D355D96007F1CEB /* Actitvity.swift in Sources */,

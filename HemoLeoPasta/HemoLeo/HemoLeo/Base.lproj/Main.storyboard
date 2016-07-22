@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uUq-gs-TkJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZVs-D7-kep">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -17,8 +17,23 @@
                     <view key="view" contentMode="scaleToFill" id="fXy-yT-zS4">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="0dZ-U8-kFd" customClass="StorytellingView" customModule="HemoLeo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="0dZ-U8-kFd" secondAttribute="trailing" id="YDE-IV-s5J"/>
+                            <constraint firstItem="0dZ-U8-kFd" firstAttribute="top" secondItem="kJr-hh-eJ7" secondAttribute="bottom" id="hso-gX-Mme"/>
+                            <constraint firstItem="c24-mg-6bQ" firstAttribute="top" secondItem="0dZ-U8-kFd" secondAttribute="bottom" id="pbg-Fr-GHI"/>
+                            <constraint firstItem="0dZ-U8-kFd" firstAttribute="leading" secondItem="fXy-yT-zS4" secondAttribute="leading" id="sOR-OC-uAj"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="storyView" destination="0dZ-U8-kFd" id="6Rv-H8-fAU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SCZ-zH-Kj6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

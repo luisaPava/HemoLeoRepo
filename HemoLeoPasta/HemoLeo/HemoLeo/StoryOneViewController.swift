@@ -9,11 +9,24 @@
 import UIKit
 
 class StoryOneViewController: UIViewController {
+    
+    var timer = NSTimer()
 
+    @IBOutlet weak var storyView: StorytellingView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        timer = NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: #selector(animation), userInfo: nil, repeats: false)
 
         // Do any additional setup after loading the view.
+        animation()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(true)
+        
+        timer = NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: #selector(animation), userInfo: nil, repeats: false)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,6 +34,12 @@ class StoryOneViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func animation () {
+        
+        storyView.addStory1Animation()
+
+        
+    }
 
     /*
     // MARK: - Navigation
