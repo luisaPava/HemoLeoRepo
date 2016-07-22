@@ -376,7 +376,7 @@ class StorytellingView : UIView {
 		}
 	}
 
-	func removeAllAnimations() {
+	override func removeAllAnimations() {
 		for subview in viewsByName.values {
 			subview.layer.removeAllAnimations()
 		}

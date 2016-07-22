@@ -49,6 +49,10 @@
 		777711071D3E9AAC0066A0E2 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 777711061D3E9AAC0066A0E2 /* SpriteKit.framework */; };
 		7777110D1D3E9BD00066A0E2 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7777110C1D3E9BD00066A0E2 /* GameScene.swift */; };
 		7777110F1D3E9C110066A0E2 /* LeoImages.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 7777110E1D3E9C110066A0E2 /* LeoImages.atlas */; };
+		77E89D111D4252AA00FDA59B /* ThemesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E89D101D4252AA00FDA59B /* ThemesViewController.swift */; };
+		77E89D171D4252EA00FDA59B /* ThemesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E89D161D4252EA00FDA59B /* ThemesCollectionViewCell.swift */; };
+		77E89D191D4253CD00FDA59B /* SelectThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E89D181D4253CD00FDA59B /* SelectThemeViewController.swift */; };
+		77E89D1B1D42542900FDA59B /* UIAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E89D1A1D42542900FDA59B /* UIAnimation.swift */; };
 		EB6F10FB1D41C4550056606B /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = EB6F10E91D41C4550056606B /* arrow.png */; };
 		EB6F10FC1D41C4550056606B /* arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB6F10EA1D41C4550056606B /* arrow@2x.png */; };
 		EB6F10FD1D41C4550056606B /* BG.png in Resources */ = {isa = PBXBuildFile; fileRef = EB6F10EB1D41C4550056606B /* BG.png */; };
@@ -174,6 +178,10 @@
 		777711061D3E9AAC0066A0E2 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		7777110C1D3E9BD00066A0E2 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		7777110E1D3E9C110066A0E2 /* LeoImages.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = LeoImages.atlas; sourceTree = "<group>"; };
+		77E89D101D4252AA00FDA59B /* ThemesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemesViewController.swift; sourceTree = "<group>"; };
+		77E89D161D4252EA00FDA59B /* ThemesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemesCollectionViewCell.swift; sourceTree = "<group>"; };
+		77E89D181D4253CD00FDA59B /* SelectThemeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectThemeViewController.swift; sourceTree = "<group>"; };
+		77E89D1A1D42542900FDA59B /* UIAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAnimation.swift; sourceTree = "<group>"; };
 		EB6F10E91D41C4550056606B /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
 		EB6F10EA1D41C4550056606B /* arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow@2x.png"; sourceTree = "<group>"; };
 		EB6F10EB1D41C4550056606B /* BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BG.png; sourceTree = "<group>"; };
@@ -316,12 +324,16 @@
 				EBBD25AD1D3731BE00786155 /* SettingViewController.swift */,
 				4E2B29C11D36CD7600EED2B4 /* Canvas.swift */,
 				2B1A214D1D3E71E2007F1B68 /* OccurenciesViewController.swift */,
+				77E89D101D4252AA00FDA59B /* ThemesViewController.swift */,
+				77E89D161D4252EA00FDA59B /* ThemesCollectionViewCell.swift */,
+				77E89D181D4253CD00FDA59B /* SelectThemeViewController.swift */,
 				4E2B29CD1D395AF800EED2B4 /* SymptomCardViewController.swift */,
 				4E3CE02A1D3FDF0F00E4F422 /* SurveyViewController.swift */,
 				2B87D5E81D38247000F29678 /* AddActivityViewController.swift */,
 				2B87D5F11D382F0100F29678 /* AddCustomActivityViewController.swift */,
 				4E2B29C31D36CDC400EED2B4 /* CareCardViewController.swift */,
 				4E2B29C71D37057A00EED2B4 /* PageViewCcontroller.swift */,
+				77E89D1A1D42542900FDA59B /* UIAnimation.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -598,10 +610,12 @@
 				2B1A21481D3E6E64007F1B68 /* Fisiotherapy.swift in Sources */,
 				4EA969471D3D681000DBF2AD /* Bruising.swift in Sources */,
 				4E3CE03C1D400FFF00E4F422 /* ButtonAnimation.swift in Sources */,
+				77E89D1B1D42542900FDA59B /* UIAnimation.swift in Sources */,
 				2B7997EE1D37CD8F00D0996D /* StoryOneViewController.swift in Sources */,
 				2BA188C21D3567A5007F1CEB /* Water.swift in Sources */,
 				EBBD25AE1D3731BE00786155 /* SettingViewController.swift in Sources */,
 				2BA188C41D35681E007F1CEB /* Exercise.swift in Sources */,
+				77E89D171D4252EA00FDA59B /* ThemesCollectionViewCell.swift in Sources */,
 				2BA188C01D3560C3007F1CEB /* Fruits.swift in Sources */,
 				2B1A21521D3E7BA3007F1B68 /* NSCodingManager.swift in Sources */,
 				4EA969411D3D622400DBF2AD /* Bleeding.swift in Sources */,
@@ -616,6 +630,7 @@
 				2B7997F21D37CD9F00D0996D /* Story2ViewController.swift in Sources */,
 				4E2B2DF31D3ABEEB00EED2B4 /* AssessmentsManager.swift in Sources */,
 				2BA188801D355A2C007F1CEB /* AppDelegate.swift in Sources */,
+				77E89D191D4253CD00FDA59B /* SelectThemeViewController.swift in Sources */,
 				EB6F110E1D41C45E0056606B /* StorytellingView.swift in Sources */,
 				2B87D5E91D38247000F29678 /* AddActivityViewController.swift in Sources */,
 				4E132CB81D41242A004CBC6F /* CustomActivityCell.swift in Sources */,
@@ -626,6 +641,7 @@
 				4E2B2DF51D3AD12A00EED2B4 /* Pain.swift in Sources */,
 				2B87D5ED1D38261300F29678 /* ToAddedActivitiesData.swift in Sources */,
 				2B87D5EB1D3825DB00F29678 /* AddedActivitiesData.swift in Sources */,
+				77E89D111D4252AA00FDA59B /* ThemesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
