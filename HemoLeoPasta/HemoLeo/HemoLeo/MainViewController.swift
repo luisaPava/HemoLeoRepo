@@ -14,6 +14,9 @@ class MainViewController: UIViewController {
     var careCardButton: UIButton!
     var symptomCardButton: UIButton!
     var canvasButton: UIButton!
+    var themesButton: UIButton!
+    
+    let defaults = NSUserDefaults.standardUserDefaults()
     
     var background: String = "Default"
 
@@ -27,6 +30,8 @@ class MainViewController: UIViewController {
         skView.ignoresSiblingOrder = true
         scene.scaleMode = .ResizeFill
         skView.presentScene(scene)
+        
+        defaults.setObject("Default", forKey: "Background")
         
         func prefersStatusBarHidden() -> Bool {
             return true
@@ -68,6 +73,18 @@ class MainViewController: UIViewController {
         canvasButton.setImage(UIImage(named: "Canvas"), forState: .Normal)
         
         self.view.addSubview(canvasButton)
+        
+        //Button to Themes
+        themesButton = UIButton(frame: CGRect(x: 130, y: 30, width: 70, height: 70))
+        themesButton.backgroundColor = UIColor.whiteColor()
+        themesButton.addTarget(self, action: #selector(themesButtonAction), forControlEvents: .TouchUpInside)
+        themesButton.layer.cornerRadius = 35
+        themesButton.layer.masksToBounds = true
+        themesButton.layer.zPosition = 1000
+        themesButton.setImage(UIImage(named: "Botao Temas"), forState: .Normal)
+        
+        self.view.addSubview(themesButton)
+
         
     }
     
@@ -135,6 +152,12 @@ class MainViewController: UIViewController {
         ButtonAnimation.addButtonPressAnimationToView(canvasButton)
         performSegueWithIdentifier("mainToCanvas", sender: self)
     }
+    
+    func themesButtonAction() {
+        ButtonAnimation.addButtonPressAnimationToView(themesButton)
+        performSegueWithIdentifier("mainToThemes", sender: self)
+    }
+    
 }
 
 //MARK: - UIPopoverPresentationControllerDelegate
