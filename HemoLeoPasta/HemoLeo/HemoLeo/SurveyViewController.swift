@@ -14,6 +14,7 @@ class SurveyViewController: ORKTaskViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.layoutIfNeeded()
+        self.delegate = SymptomCardViewController()
 
         // Do any additional setup after loading the view.
     }

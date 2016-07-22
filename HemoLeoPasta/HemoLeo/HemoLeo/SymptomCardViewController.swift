@@ -138,7 +138,7 @@ extension SymptomCardViewController: ORKTaskViewControllerDelegate {
     func taskViewController(taskViewController: ORKTaskViewController, stepViewControllerWillAppear stepViewController: ORKStepViewController) {
         stepViewController.skipButtonTitle = "Pular"
         stepViewController.continueButtonTitle = "Próximo"
-        stepViewController.automaticallyAdjustsScrollViewInsets = false
+//        stepViewController.automaticallyAdjustsScrollViewInsets = false
         
 //        stepViewController.preferredContentSize = CGSizeMake(414, 736)
 //        stepViewController.view.ins

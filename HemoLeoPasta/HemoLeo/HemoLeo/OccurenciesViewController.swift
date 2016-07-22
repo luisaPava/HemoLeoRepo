@@ -16,6 +16,8 @@ class OccurenciesViewController: UIViewController {
     var instanceOfActivity: OCKCarePlanActivity!
     var button: UIButton!
     var arrayDias: Array<String>!
+    var cellDescriptor: Array<cells>! = nil
+    var visibleCell: Array<cells>! = nil
     
     private let codingManager: NSCodingManager = NSCodingManager.sharedNSCodingManager
     private let storeManager: CarePlanStoreManager = CarePlanStoreManager.sharedCarePlanStoreManager
@@ -27,17 +29,31 @@ class OccurenciesViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         activities = codingManager.loadToAddActivitiesData()!
+
+        let cellSlider = cells(additionalRows: 0, cellIdentifier: "idCellSlider", isExpandable: false, isExpanded: false, isVisible: false, primaryTitle: "", secondaryTitle: "", value: "")
         
-        arrayDias = ["     Segunda-feira", "     Terça-feira", "     Quarta-feira", "     Quinta-feira", "     Sexta-feira", "     Sábado", "     Domingo"]
+        cellDescriptor.append(cells(additionalRows: 1, cellIdentifier: "idCellNormal", isExpandable: true, isExpanded: false, isVisible: true, primaryTitle: "     Segunda-feira", secondaryTitle: "", value: ""))
+        cellDescriptor.append(cellSlider)
+        cellDescriptor.append(cells(additionalRows: 1, cellIdentifier: "idCellNormal", isExpandable: true, isExpanded: false, isVisible: true, primaryTitle: "     Terça-feira", secondaryTitle: "", value: ""))
+        cellDescriptor.append(cellSlider)
+        cellDescriptor.append(cells(additionalRows: 1, cellIdentifier: "idCellNormal", isExpandable: true, isExpanded: false, isVisible: true, primaryTitle: "     Quarta-feira", secondaryTitle: "", value: ""))
+        cellDescriptor.append(cellSlider)
+        cellDescriptor.append(cells(additionalRows: 1, cellIdentifier: "idCellNormal", isExpandable: true, isExpanded: false, isVisible: true, primaryTitle: "     Quinta-feira", secondaryTitle: "", value: ""))
+        cellDescriptor.append(cellSlider)
+        cellDescriptor.append(cells(additionalRows: 1, cellIdentifier: "idCellNormal", isExpandable: true, isExpanded: false, isVisible: true, primaryTitle: "     Sexta-feira", secondaryTitle: "", value: ""))
+        cellDescriptor.append(cellSlider)
+        cellDescriptor.append(cells(additionalRows: 1, cellIdentifier: "idCellNormal", isExpandable: true, isExpanded: false, isVisible: true, primaryTitle: "     Sábado", secondaryTitle: "", value: ""))
+        cellDescriptor.append(cellSlider)
+        cellDescriptor.append(cells(additionalRows: 1, cellIdentifier: "idCellNormal", isExpandable: true, isExpanded: false, isVisible: true, primaryTitle: "     Domingo", secondaryTitle: "", value: ""))
+        cellDescriptor.append(cellSlider)
         
         print(self.view.frame.width)
         
         tableView = UITableView(frame: CGRectMake(0, 100, 400, 340), style: .Plain)
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.registerNib(UINib(nibName: "CustomActivityCell", bundle: nil), forCellReuseIdentifier: "CustomActivityCell")
-//        tableView.separatorStyle = .None
-//        tableView.contentInset = UIEdgeInsetsMake(-36, 0, -36, -36)
+        tableView.registerNib(UINib(nibName: "CustomActivityCell", bundle: nil), forCellReuseIdentifier: "idCellNormal")
+        tableView.registerNib(UINib(nibName: "SliderCell", bundle: nil), forCellReuseIdentifier: "idCellSlider")
         tableView.clipsToBounds = true
 
         stepper.wraps = true
@@ -45,6 +61,8 @@ class OccurenciesViewController: UIViewController {
         stepper.maximumValue = 7
         
         self.view.addSubview(tableView)
+        
+        getVisibleCells()
         
     }
 
@@ -98,6 +116,14 @@ class OccurenciesViewController: UIViewController {
         dismissViewControllerAnimated(true, completion: nil)
         
     }
+    
+    func getVisibleCells() {
+        for cell in cellDescriptor {
+            if cell.isVisible {
+                visibleCell.append(cell)
+            }
+        }
+    }
 }
 
 //MARK: - Table View Delegate
@@ -111,15 +137,23 @@ extension OccurenciesViewController: UITableViewDelegate {
 //MARK: - Table View Data Source
 extension OccurenciesViewController: UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("CustomActivityCell", forIndexPath: indexPath) as! CustomActivityCell
-        cell.labelNome.text = arrayDias[indexPath.row]
-        print(indexPath.row)
+        var cell: CustomActivityCell
+        
+        if (indexPath.row % 2) == 0 {
+            cell = tableView.dequeueReusableCellWithIdentifier("idCellNormal", forIndexPath: indexPath) as! CustomActivityCell
+            
+            cell.labelNome.text = arrayDias[indexPath.row / 2]
+        } else {
+            cell = tableView.dequeueReusableCellWithIdentifier("idCellSlider", forIndexPath: indexPath) as! CustomActivityCell
+            
+            cell.slExperienceLevel.value = 0.0
+        }
         
         return cell
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return arrayDias.count
+        return visibleCell.count
         
     }
 }

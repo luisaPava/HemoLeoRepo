@@ -31,6 +31,8 @@
 		2BA188C61D35696A007F1CEB /* Shot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA188C51D35696A007F1CEB /* Shot.swift */; };
 		4E132CB81D41242A004CBC6F /* CustomActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E132CB61D41242A004CBC6F /* CustomActivityCell.swift */; };
 		4E132CB91D41242A004CBC6F /* CustomActivityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E132CB71D41242A004CBC6F /* CustomActivityCell.xib */; };
+		4E132CE01D4263B9004CBC6F /* SliderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E132CDF1D4263B9004CBC6F /* SliderCell.xib */; };
+		4E132CE61D427DA1004CBC6F /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E132CE51D427DA1004CBC6F /* Cells.swift */; };
 		4E2B29BC1D36CC6300EED2B4 /* TransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B29B91D36CC6300EED2B4 /* TransitionDelegate.swift */; };
 		4E2B29C01D36CD0E00EED2B4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B29BF1D36CD0E00EED2B4 /* MainViewController.swift */; };
 		4E2B29C21D36CD7600EED2B4 /* Canvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B29C11D36CD7600EED2B4 /* Canvas.swift */; };
@@ -157,6 +159,8 @@
 		2BA188C51D35696A007F1CEB /* Shot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shot.swift; sourceTree = "<group>"; };
 		4E132CB61D41242A004CBC6F /* CustomActivityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomActivityCell.swift; sourceTree = "<group>"; };
 		4E132CB71D41242A004CBC6F /* CustomActivityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomActivityCell.xib; sourceTree = "<group>"; };
+		4E132CDF1D4263B9004CBC6F /* SliderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SliderCell.xib; sourceTree = "<group>"; };
+		4E132CE51D427DA1004CBC6F /* Cells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
 		4E2B29B91D36CC6300EED2B4 /* TransitionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionDelegate.swift; sourceTree = "<group>"; };
 		4E2B29BF1D36CD0E00EED2B4 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4E2B29C11D36CD7600EED2B4 /* Canvas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Canvas.swift; sourceTree = "<group>"; };
@@ -381,6 +385,8 @@
 			isa = PBXGroup;
 			children = (
 				4E132CB61D41242A004CBC6F /* CustomActivityCell.swift */,
+				4E132CE51D427DA1004CBC6F /* Cells.swift */,
+				4E132CDF1D4263B9004CBC6F /* SliderCell.xib */,
 				4E132CB71D41242A004CBC6F /* CustomActivityCell.xib */,
 			);
 			name = TabelView;
@@ -577,6 +583,7 @@
 				EB6F11091D41C4550056606B /* Leo do corpo.png in Resources */,
 				EB6F11001D41C4550056606B /* Corpo@2x.png in Resources */,
 				EB6F10FF1D41C4550056606B /* Corpo.png in Resources */,
+				4E132CE01D4263B9004CBC6F /* SliderCell.xib in Resources */,
 				EB6F10FE1D41C4550056606B /* BG@2x.png in Resources */,
 				2BA1888B1D355A2C007F1CEB /* Assets.xcassets in Resources */,
 				2BA188891D355A2C007F1CEB /* Main.storyboard in Resources */,
@@ -621,6 +628,7 @@
 				4E132CB81D41242A004CBC6F /* CustomActivityCell.swift in Sources */,
 				2BA188BC1D355D96007F1CEB /* Actitvity.swift in Sources */,
 				7777110D1D3E9BD00066A0E2 /* GameScene.swift in Sources */,
+				4E132CE61D427DA1004CBC6F /* Cells.swift in Sources */,
 				2B1A214E1D3E71E2007F1B68 /* OccurenciesViewController.swift in Sources */,
 				2BA188BE1D355EEF007F1CEB /* Vagetables.swift in Sources */,
 				4E2B2DF51D3AD12A00EED2B4 /* Pain.swift in Sources */,
