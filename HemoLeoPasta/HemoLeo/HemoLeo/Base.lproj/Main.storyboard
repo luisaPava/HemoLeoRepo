@@ -481,7 +481,7 @@
                         <viewControllerLayoutGuide type="top" id="AXO-33-kx5"/>
                         <viewControllerLayoutGuide type="bottom" id="KOa-WY-agA"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="gcd-wi-Zz8">
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleAspectFill" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="414" verticalHuggingPriority="736" horizontalCompressionResistancePriority="414" verticalCompressionResistancePriority="736" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="736" id="gcd-wi-Zz8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -562,7 +562,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fod-Nj-ePL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="548" y="835"/>
+            <point key="canvasLocation" x="711" y="718"/>
         </scene>
         <!--Add Activity View Controller-->
         <scene sceneID="Fxj-Zd-2bx">
