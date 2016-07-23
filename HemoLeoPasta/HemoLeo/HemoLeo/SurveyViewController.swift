@@ -25,7 +25,7 @@ class SurveyViewController: ORKTaskViewController {
     }
     
     override func viewDidLayoutSubviews() {
-        self.view.frame = CGRectMake(-100, -50, 600, 700)
+        self.view.frame = CGRectMake(-90, -50, 600, 700)
         self.view.autoresizesSubviews = false
     }
 }

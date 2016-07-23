@@ -16,8 +16,8 @@ class OccurenciesViewController: UIViewController {
     var instanceOfActivity: OCKCarePlanActivity!
     var button: UIButton!
     var arrayDias: Array<String>!
-    var cellDescriptor: Array<cells>! = nil
-    var visibleCell: Array<cells>! = nil
+    var cellDescriptor: Array<cells>! = []
+    var visibleCell: Array<cells>! = []
     
     private let codingManager: NSCodingManager = NSCodingManager.sharedNSCodingManager
     private let storeManager: CarePlanStoreManager = CarePlanStoreManager.sharedCarePlanStoreManager
@@ -32,19 +32,20 @@ class OccurenciesViewController: UIViewController {
 
         let cellSlider = cells(additionalRows: 0, cellIdentifier: "idCellSlider", isExpandable: false, isExpanded: false, isVisible: false, primaryTitle: "", secondaryTitle: "", value: "")
         
-        cellDescriptor.append(cells(additionalRows: 1, cellIdentifier: "idCellNormal", isExpandable: true, isExpanded: false, isVisible: true, primaryTitle: "     Segunda-feira", secondaryTitle: "", value: ""))
+        
+        cellDescriptor.append(cells(additionalRows: 1, cellIdentifier: "idCellNormal", isExpandable: true, isExpanded: true, isVisible: true, primaryTitle: "     Segunda-feira", secondaryTitle: "", value: ""))
         cellDescriptor.append(cellSlider)
-        cellDescriptor.append(cells(additionalRows: 1, cellIdentifier: "idCellNormal", isExpandable: true, isExpanded: false, isVisible: true, primaryTitle: "     Terça-feira", secondaryTitle: "", value: ""))
+        cellDescriptor.append(cells(additionalRows: 1, cellIdentifier: "idCellNormal", isExpandable: true, isExpanded: true, isVisible: true, primaryTitle: "     Terça-feira", secondaryTitle: "", value: ""))
         cellDescriptor.append(cellSlider)
-        cellDescriptor.append(cells(additionalRows: 1, cellIdentifier: "idCellNormal", isExpandable: true, isExpanded: false, isVisible: true, primaryTitle: "     Quarta-feira", secondaryTitle: "", value: ""))
+        cellDescriptor.append(cells(additionalRows: 1, cellIdentifier: "idCellNormal", isExpandable: true, isExpanded: true, isVisible: true, primaryTitle: "     Quarta-feira", secondaryTitle: "", value: ""))
         cellDescriptor.append(cellSlider)
-        cellDescriptor.append(cells(additionalRows: 1, cellIdentifier: "idCellNormal", isExpandable: true, isExpanded: false, isVisible: true, primaryTitle: "     Quinta-feira", secondaryTitle: "", value: ""))
+        cellDescriptor.append(cells(additionalRows: 1, cellIdentifier: "idCellNormal", isExpandable: true, isExpanded: true, isVisible: true, primaryTitle: "     Quinta-feira", secondaryTitle: "", value: ""))
         cellDescriptor.append(cellSlider)
-        cellDescriptor.append(cells(additionalRows: 1, cellIdentifier: "idCellNormal", isExpandable: true, isExpanded: false, isVisible: true, primaryTitle: "     Sexta-feira", secondaryTitle: "", value: ""))
+        cellDescriptor.append(cells(additionalRows: 1, cellIdentifier: "idCellNormal", isExpandable: true, isExpanded: true, isVisible: true, primaryTitle: "     Sexta-feira", secondaryTitle: "", value: ""))
         cellDescriptor.append(cellSlider)
-        cellDescriptor.append(cells(additionalRows: 1, cellIdentifier: "idCellNormal", isExpandable: true, isExpanded: false, isVisible: true, primaryTitle: "     Sábado", secondaryTitle: "", value: ""))
+        cellDescriptor.append(cells(additionalRows: 1, cellIdentifier: "idCellNormal", isExpandable: true, isExpanded: true, isVisible: true, primaryTitle: "     Sábado", secondaryTitle: "", value: ""))
         cellDescriptor.append(cellSlider)
-        cellDescriptor.append(cells(additionalRows: 1, cellIdentifier: "idCellNormal", isExpandable: true, isExpanded: false, isVisible: true, primaryTitle: "     Domingo", secondaryTitle: "", value: ""))
+        cellDescriptor.append(cells(additionalRows: 1, cellIdentifier: "idCellNormal", isExpandable: true, isExpanded: true, isVisible: true, primaryTitle: "     Domingo", secondaryTitle: "", value: ""))
         cellDescriptor.append(cellSlider)
         
         print(self.view.frame.width)
@@ -118,6 +119,9 @@ class OccurenciesViewController: UIViewController {
     }
     
     func getVisibleCells() {
+        visibleCell.removeAll()
+        print(visibleCell)
+        
         for cell in cellDescriptor {
             if cell.isVisible {
                 visibleCell.append(cell)
@@ -128,10 +132,23 @@ class OccurenciesViewController: UIViewController {
 
 //MARK: - Table View Delegate
 extension OccurenciesViewController: UITableViewDelegate {
-//    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//        <#code#>
-//    }
-
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        print(indexPath.row)
+        if visibleCell[indexPath.row].isExpandable {
+            if !cellDescriptor[indexPath.row + 1].isExpanded {
+                cellDescriptor[indexPath.row + 1].isVisible = true
+                cellDescriptor[indexPath.row + 1].isExpanded = true
+                getVisibleCells()
+                tableView.reloadData()
+                
+            } else if cellDescriptor[indexPath.row + 1].isExpanded {
+                cellDescriptor[indexPath.row + 1].isVisible = false
+                cellDescriptor[indexPath.row + 1].isExpanded = false
+                getVisibleCells()
+                tableView.reloadData()
+            }
+        }
+    }
 }
 
 //MARK: - Table View Data Source
@@ -139,14 +156,23 @@ extension OccurenciesViewController: UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell: CustomActivityCell
         
-        if (indexPath.row % 2) == 0 {
+//        if (indexPath.row % 2) == 0 {
+//            cell = tableView.dequeueReusableCellWithIdentifier("idCellNormal", forIndexPath: indexPath) as! CustomActivityCell
+//            
+//            cell.labelNome.text = arrayDias[indexPath.row / 2]
+//        } else {
+//            cell = tableView.dequeueReusableCellWithIdentifier("idCellSlider", forIndexPath: indexPath) as! CustomActivityCell
+//            
+//            cell.slExperienceLevel.value = 0.0
+//        }
+        
+        if visibleCell[indexPath.row].cellIdentifier == "idCellNormal" {
             cell = tableView.dequeueReusableCellWithIdentifier("idCellNormal", forIndexPath: indexPath) as! CustomActivityCell
             
-            cell.labelNome.text = arrayDias[indexPath.row / 2]
+            cell.labelNome.text = visibleCell[indexPath.row].primaryTitle
+            
         } else {
             cell = tableView.dequeueReusableCellWithIdentifier("idCellSlider", forIndexPath: indexPath) as! CustomActivityCell
-            
-            cell.slExperienceLevel.value = 0.0
         }
         
         return cell
