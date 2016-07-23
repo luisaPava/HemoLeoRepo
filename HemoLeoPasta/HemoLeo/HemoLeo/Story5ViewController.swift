@@ -1,18 +1,18 @@
 //
-//  Story2ViewController.swift
+//  Story5ViewController.swift
 //  HemoLeo
 //
-//  Created by Luisa Mello on 7/14/16.
+//  Created by Luisa Mello on 7/22/16.
 //  Copyright © 2016 Bepid. All rights reserved.
 //
 
 import UIKit
 
-class Story2ViewController: UIViewController {
-
-    @IBOutlet weak var storyView: Storytelling2View!
+class Story5ViewController: UIViewController {
     
     var timer = NSTimer()
+
+    @IBOutlet weak var storyView: Storytelling5View!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +32,7 @@ class Story2ViewController: UIViewController {
     
     func animation () {
         
-        storyView.addStory2Animation()
+        storyView.addStory4Animation()
         
         
     }
