@@ -35,14 +35,14 @@ class SelectThemeViewController: UIViewController {
         
         self.dismissViewControllerAnimated(false) {
             presentingViewController.dismissViewControllerAnimated(false, completion: nil)
-                }
+        }
         
     }
     
     @IBAction func applyButtonPressed(sender: AnyObject) {
         //previousVC.view.backgroundColor = UIColor.blueColor()
         let defaults = NSUserDefaults.standardUserDefaults()
-        if let bg = defaults.stringForKey("STRING"){ // <=============== CONSERTAR
+        if let bg = defaults.stringForKey("STRING") { // <=============== CONSERTAR
             if (bg == "Default") {
                 defaults.setObject("Default", forKey: "Background")
             }
@@ -68,7 +68,6 @@ class SelectThemeViewController: UIViewController {
         self.dismissViewControllerAnimated(false) {
             presentingViewController.dismissViewControllerAnimated(false, completion: nil)
                     
-                }
+        }
     }
-    
 }

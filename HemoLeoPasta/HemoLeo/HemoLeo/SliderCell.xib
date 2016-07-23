@@ -18,7 +18,7 @@
                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="iTM-zM-hVy">
                         <rect key="frame" x="6" y="7" width="308" height="31"/>
                         <connections>
-                            <action selector="handleSliderValueChange:" destination="VXL-Lj-Fu0" eventType="valueChanged" id="1uC-oL-Iz8"/>
+                            <action selector="sliderAction:" destination="VXL-Lj-Fu0" eventType="valueChanged" id="KoM-ab-F4z"/>
                         </connections>
                     </slider>
                 </subviews>

@@ -8,12 +8,20 @@
 
 import UIKit
 
+protocol CustomCellDelegate {
+    func sliderDidChangeValue(newSliderValue: String)
+}
+
 class CustomActivityCell: UITableViewCell {
     @IBOutlet weak var check: UIImageView!
     @IBOutlet weak var labelNome: UILabel!
     @IBOutlet weak var ocurrencesLabel: UILabel!
     @IBOutlet weak var roundImage: UIImageView!
     @IBOutlet weak var slExperienceLevel: UISlider!
+    
+    var delegate: CustomCellDelegate!
+    
+    var value: Int?
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -33,4 +41,10 @@ class CustomActivityCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    @IBAction func sliderAction(sender: UISlider) {
+        if delegate != nil {
+            delegate.sliderDidChangeValue("\(Int(sender.value))")
+            
+        }
+    }
 }

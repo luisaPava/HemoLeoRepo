@@ -48,7 +48,7 @@ class ThemesViewController: UIViewController, UICollectionViewDelegate, UICollec
         
         self.dismissViewControllerAnimated(false) {
             presentingViewController.dismissViewControllerAnimated(false, completion: nil)
-            }
+        }
     }
     
     

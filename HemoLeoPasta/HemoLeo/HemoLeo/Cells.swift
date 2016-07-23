@@ -8,7 +8,11 @@
 
 import Foundation
 
-struct cells {
+func ==(l: cells, r: cells) -> Bool {
+    return l.primaryTitle == r.primaryTitle
+}
+
+struct cells: Equatable {
     var additionalRows: Int
     var cellIdentifier: String
     var isExpandable: Bool
@@ -17,6 +21,9 @@ struct cells {
     var primaryTitle: String
     var secondaryTitle: String
     var value: String
+    var buttonHidden = true
+    
+    
     
     init(additionalRows: Int, cellIdentifier: String, isExpandable: Bool, isExpanded: Bool, isVisible: Bool, primaryTitle: String, secondaryTitle: String, value: String) {
         self.additionalRows = additionalRows
