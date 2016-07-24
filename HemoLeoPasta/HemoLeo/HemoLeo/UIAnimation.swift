@@ -317,7 +317,7 @@ class UIAnimation : NSObject{
         let f = (anim.data["force"] as! NSValue).CGPointValue()
         let e = anim.data["eachTime"] as! NSTimeInterval
         var actions = [UIAnimation]()
-        for i in 0 ..< q {
+        for _ in 0 ..< q {
             let a = CGFloat(arc4random()) / CGFloat(UINT32_MAX) * CGFloat(2*M_PI)
             actions.append(UIAnimation.moveTo(CGPointMake(view.center.x+cos(a)*f.x,view.center.y+sin(a)*f.y), duration: e))
         }

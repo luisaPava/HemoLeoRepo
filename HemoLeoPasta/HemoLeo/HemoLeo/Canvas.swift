@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Canvas: UIViewController {
+class Canvas: UIViewController, UIPopoverPresentationControllerDelegate {
     
     var lastPoint = CGPoint.zero
     var red: CGFloat = 0.0
@@ -153,6 +153,9 @@ class Canvas: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let settingsViewController = segue.destinationViewController as! SettingViewController
+        
+        settingsViewController.popoverPresentationController?.delegate = self
+        settingsViewController.popoverPresentationController?.sourceRect = CGRect(x: 30, y: 70, width: 0, height: 0)
         settingsViewController.delegate = self
         settingsViewController.brush = brushWidth
         settingsViewController.opacity = opacity
@@ -160,6 +163,23 @@ class Canvas: UIViewController {
         settingsViewController.green = green
         settingsViewController.blue = blue
     }
+    
+
+    @IBAction func backToMain(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+        
+    
+    
+    func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle {
+        return UIModalPresentationStyle.None
+    }
+    @IBOutlet weak var settings: UIButton!
+    @IBAction func toSettings(sender: AnyObject) {
+        
+        performSegueWithIdentifier("canvasToSettings", sender: self)
+    }
+    
 }
 
 extension Canvas: SettingsViewControllerDelegate {

@@ -24,8 +24,7 @@ class OccurenciesViewController: UIViewController {
     private let codingManager: NSCodingManager = NSCodingManager.sharedNSCodingManager
     private let storeManager: CarePlanStoreManager = CarePlanStoreManager.sharedCarePlanStoreManager
 
-    @IBOutlet weak var stepper: UIStepper!
-    @IBOutlet weak var valueLabel: UILabel!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,9 +56,6 @@ class OccurenciesViewController: UIViewController {
         tableView.registerNib(UINib(nibName: "SliderCell", bundle: nil), forCellReuseIdentifier: "idCellSlider")
         tableView.clipsToBounds = true
 
-        stepper.wraps = true
-        stepper.autorepeat = true
-        stepper.maximumValue = 7
         
         self.view.addSubview(tableView)
         
@@ -71,11 +67,7 @@ class OccurenciesViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    @IBAction func valueChanged(sender: AnyObject) {
-        
-        valueLabel.text = Int(stepper.value).description
-        
-    }
+
     
     @IBAction func save(sender: AnyObject) {
         
