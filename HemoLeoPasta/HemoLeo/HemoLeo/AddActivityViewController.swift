@@ -44,7 +44,6 @@ class AddActivityViewController: UIViewController {
         
         if !defaults.boolForKey("loadedDefaultCareCardData") {
             print("Loading default Activities...")
-            NSUserDefaults.standardUserDefaults().setBool(false, forKey: "firstLaunch")
             loadDefaultActivities()
             defaults.setBool(true, forKey: "loadedDefaultCareCardData")
         } else {
