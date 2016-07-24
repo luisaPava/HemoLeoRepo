@@ -44,13 +44,17 @@ class ThemesViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     @IBAction func backButtonPressed(sender: AnyObject) {
        print("botao back dos temas pressed")
-        let presentingViewController: UIViewController! = self.presentingViewController
-        
-        self.dismissViewControllerAnimated(false) {
-            presentingViewController.dismissViewControllerAnimated(false, completion: nil)
-        }
+//        let presentingViewController: UIViewController! = self.presentingViewController
+//        
+//        self.dismissViewControllerAnimated(false) {
+//            presentingViewController.dismissViewControllerAnimated(false, completion: nil)
+//        }
+
     }
     
+    @IBAction func back(sender: AnyObject) {
+                dismissViewControllerAnimated(true, completion: nil)
+    }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         print(themes.count)
