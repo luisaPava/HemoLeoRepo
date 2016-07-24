@@ -45,16 +45,55 @@ class Bleeding: Assessment {
         //Create questions and answer formats
         
         //First step: Where is your bleeding?
-        let bleedingQuestionStepTitle = "Onde é o seu sangramento?"
-        let textChoices = [
-            ORKTextChoice(text: "Nariz", value: "nariz"),
-            ORKTextChoice(text: "Boca", value: "boca"),
-            ORKTextChoice(text: "Olhos", value: "olhos"),
-            ORKTextChoice(text: "Outro", value: "outro")
-        ]
+//        let bleedingQuestionStepTitle = "Onde é o seu sangramento?"
+//        let textChoices = [
+//            ORKTextChoice(text: "Nariz", value: "nariz"),
+//            ORKTextChoice(text: "Boca", value: "boca"),
+//            ORKTextChoice(text: "Olhos", value: "olhos"),
+//            ORKTextChoice(text: "Outro", value: "outro")
+//        ]
+//        
+//        let bleedingAnswerFormat: ORKTextChoiceAnswerFormat = ORKAnswerFormat.choiceAnswerFormatWithStyle(.SingleChoice, textChoices: textChoices)
+//        let bleedingQuestionStep = ORKQuestionStep(identifier: "BleedingQuestionStep", title: bleedingQuestionStepTitle, answer: bleedingAnswerFormat)
+//        steps += [bleedingQuestionStep]
         
-        let bleedingAnswerFormat: ORKTextChoiceAnswerFormat = ORKAnswerFormat.choiceAnswerFormatWithStyle(.SingleChoice, textChoices: textChoices)
-        let bleedingQuestionStep = ORKQuestionStep(identifier: "BleedingQuestionStep", title: bleedingQuestionStepTitle, answer: bleedingAnswerFormat)
+        let bleedingQuestionStepTitle = "Onde é o seu sangramento?"
+        
+        let imageChoices = [
+            ORKImageChoice(
+                normalImage: UIImage(named: "Boca gray")!,
+                selectedImage: UIImage(named: "Boca highlighted")!,
+                text: "", value: "Boca"
+            ),
+            ORKImageChoice(
+                normalImage: UIImage(named: "Garganta gray"),
+                selectedImage: UIImage(named: "Garganta highlighted"),
+                text: "", value: "Garganta"
+            ),
+            ORKImageChoice(
+                normalImage: UIImage(named: "Gastro gray"),
+                selectedImage: UIImage(named: "Gastro highlighted"),
+                text: "", value: "Gastro"
+            ),
+            ORKImageChoice(
+                normalImage: UIImage(named: "Nariz gray"),
+                selectedImage: UIImage(named: "Nariz highlighted"),
+                text: "", value: "Nariz"
+            ),
+            ORKImageChoice(
+                normalImage: UIImage(named: "Olho gray"),
+                selectedImage: UIImage(named: "Olho highlighted"),
+                text: "", value: "Olho"
+            ),
+            ORKImageChoice(
+                normalImage: UIImage(named: "Urinario gray"),
+                selectedImage: UIImage(named: "Urinario highlighted"),
+                text: "", value: "Urinario"
+            )]
+        
+        let bleedingAnswerFormat: ORKImageChoiceAnswerFormat = ORKAnswerFormat.choiceAnswerFormatWithImageChoices(imageChoices)
+        let bleedingQuestionStep = ORKQuestionStep(identifier: "ImageChoiceQuestionStep", title: bleedingQuestionStepTitle, answer: bleedingAnswerFormat)
+        
         steps += [bleedingQuestionStep]
         
         //Second step: How bad is your bleeding?

@@ -58,6 +58,45 @@ class Bruising: Assessment {
         let bruisingQuestionStep = ORKQuestionStep(identifier: "BruisingQuestionStep", title: bruisingQuestionStepTitle, answer: bruisingAnswerFormat)
         steps += [bruisingQuestionStep]
         
+//        let painQuestionStepTitle = "Onde é a sua dor?"
+//        
+//        let imageChoices = [
+//            ORKImageChoice(
+//                normalImage: UIImage(named: "Virilha gray")!,
+//                selectedImage: UIImage(named: "Virilha highlighted")!,
+//                text: "", value: "Virilha"
+//            ),
+//            ORKImageChoice(
+//                normalImage: UIImage(named: "Tornozelo gray"),
+//                selectedImage: UIImage(named: "Tornozelo highlighted"),
+//                text: "", value: "Tornozelo"
+//            ),
+//            ORKImageChoice(
+//                normalImage: UIImage(named: "Ombro gray"),
+//                selectedImage: UIImage(named: "Ombro highlighted"),
+//                text: "", value: "Ombro"
+//            ),
+//            ORKImageChoice(
+//                normalImage: UIImage(named: "Cotovelo gray"),
+//                selectedImage: UIImage(named: "Cotovelo highlighted"),
+//                text: "", value: "Cotovelo"
+//            ),
+//            ORKImageChoice(
+//                normalImage: UIImage(named: "Joelho gray"),
+//                selectedImage: UIImage(named: "Joelho highlighted"),
+//                text: "", value: "Joelho"
+//            ),
+//            ORKImageChoice(
+//                normalImage: UIImage(named: "Punho gray"),
+//                selectedImage: UIImage(named: "Punho highlighted"),
+//                text: "", value: "Punho"
+//            )]
+//        
+//        let painAnswerFormat: ORKImageChoiceAnswerFormat = ORKAnswerFormat.choiceAnswerFormatWithImageChoices(imageChoices)
+//        let painQuestionStep = ORKQuestionStep(identifier: "ImageChoiceQuestionStep", title: painQuestionStepTitle, answer: painAnswerFormat)
+//        
+//        steps += [painQuestionStep]
+        
         //Second step: How bad is your bruise?
         let bruisingLevelAnswerFormat = ORKScaleAnswerFormat(
             maximumValue: 10,

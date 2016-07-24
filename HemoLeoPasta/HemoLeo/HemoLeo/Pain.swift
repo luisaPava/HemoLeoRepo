@@ -45,17 +45,56 @@ class Pain: Assessment {
         //Create questions and answer formats
         
         //First step: Where is your pain?
+//        let painQuestionStepTitle = "Onde é a sua dor?"
+//        let textChoices = [
+//            ORKTextChoice(text: "Joelho", value: "joelho"),
+//            ORKTextChoice(text: "Ombro", value: "ombro"),
+//            ORKTextChoice(text: "Cotovelo", value: "cotovelo"),
+//            ORKTextChoice(text: "Não tive dor", value: "não tive dor")
+//        ]
+//        
+//        let painAnswerFormat: ORKTextChoiceAnswerFormat = ORKAnswerFormat.choiceAnswerFormatWithStyle(.SingleChoice, textChoices: textChoices)
+//        let painQuestionStep = ORKQuestionStep(identifier: "PainQuestionStep", title: painQuestionStepTitle, answer: painAnswerFormat)
+//        
+//        
+//        steps += [painQuestionStep]
+        
         let painQuestionStepTitle = "Onde é a sua dor?"
-        let textChoices = [
-            ORKTextChoice(text: "Joelho", value: "joelho"),
-            ORKTextChoice(text: "Ombro", value: "ombro"),
-            ORKTextChoice(text: "Cotovelo", value: "cotovelo"),
-            ORKTextChoice(text: "Não tive dor", value: "não tive dor")
-        ]
         
-        let painAnswerFormat: ORKTextChoiceAnswerFormat = ORKAnswerFormat.choiceAnswerFormatWithStyle(.SingleChoice, textChoices: textChoices)
-        let painQuestionStep = ORKQuestionStep(identifier: "PainQuestionStep", title: painQuestionStepTitle, answer: painAnswerFormat)
+        let imageChoices = [
+            ORKImageChoice(
+                normalImage: UIImage(named: "Virilha gray")!,
+                selectedImage: UIImage(named: "Virilha highlighted")!,
+                text: "", value: "Virilha"
+        ),
+            ORKImageChoice(
+                normalImage: UIImage(named: "Tornozelo gray"),
+                selectedImage: UIImage(named: "Tornozelo highlighted"),
+                text: "", value: "Tornozelo"
+        ),
+            ORKImageChoice(
+                normalImage: UIImage(named: "Ombro gray"),
+                selectedImage: UIImage(named: "Ombro highlighted"),
+                text: "", value: "Ombro"
+        ),
+            ORKImageChoice(
+                normalImage: UIImage(named: "Cotovelo gray"),
+                selectedImage: UIImage(named: "Cotovelo highlighted"),
+                text: "", value: "Cotovelo"
+        ),
+            ORKImageChoice(
+                normalImage: UIImage(named: "Joelho gray"),
+                selectedImage: UIImage(named: "Joelho highlighted"),
+                text: "", value: "Joelho"
+        ),
+            ORKImageChoice(
+                normalImage: UIImage(named: "Punho gray"),
+                selectedImage: UIImage(named: "Punho highlighted"),
+                text: "", value: "Punho"
+        )]
         
+        let painAnswerFormat: ORKImageChoiceAnswerFormat = ORKAnswerFormat.choiceAnswerFormatWithImageChoices(imageChoices)
+        let painQuestionStep = ORKQuestionStep(identifier: "ImageChoiceQuestionStep", title: painQuestionStepTitle, answer: painAnswerFormat)
         
         steps += [painQuestionStep]
         
