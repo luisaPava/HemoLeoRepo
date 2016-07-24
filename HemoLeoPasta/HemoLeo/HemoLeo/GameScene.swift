@@ -14,12 +14,21 @@ class GameScene: SKScene {
     var lion: SKSpriteNode!
     var lion2: SKSpriteNode!
     var lionMovingFrames: [SKTexture]!
+    let defaults = NSUserDefaults.standardUserDefaults()
+    var bgImage: SKSpriteNode!
     
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
 //        backgroundColor = UIColor.clearColor()
         
-        let bgImage = SKSpriteNode(imageNamed: "Default")
+        if let image = defaults.stringForKey("background") {
+            bgImage = SKSpriteNode(imageNamed: image)
+            
+        } else {
+            bgImage = SKSpriteNode(imageNamed: "Default")
+            
+        }
+        
         bgImage.position = CGPointMake(self.size.width/2, self.size.height/2)
         bgImage.zPosition = -10
         addChild(bgImage)
@@ -46,6 +55,16 @@ class GameScene: SKScene {
         
         
         moveLionLeo()
+    }
+    
+    override func willMoveFromView(view: SKView) {
+        if let image = defaults.stringForKey("background") {
+            bgImage = SKSpriteNode(imageNamed: image)
+            
+        } else {
+            bgImage = SKSpriteNode(imageNamed: "Default")
+            
+        }
     }
     
     func moveLionLeo() {

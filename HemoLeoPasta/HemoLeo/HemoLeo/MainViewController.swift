@@ -31,7 +31,7 @@ class MainViewController: UIViewController {
         scene.scaleMode = .ResizeFill
         skView.presentScene(scene)
         
-        defaults.setObject("Default", forKey: "Background")
+//        defaults.setObject("Default", forKey: "Background")
         
         func prefersStatusBarHidden() -> Bool {
             return true
@@ -86,6 +86,16 @@ class MainViewController: UIViewController {
         self.view.addSubview(themesButton)
 
         
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        let scene = GameScene(size: view.bounds.size)
+        let skView = view as! SKView
+        skView.showsFPS = false
+        skView.showsNodeCount = false
+        skView.ignoresSiblingOrder = true
+        scene.scaleMode = .ResizeFill
+        skView.presentScene(scene)
     }
     
     override func loadView() {

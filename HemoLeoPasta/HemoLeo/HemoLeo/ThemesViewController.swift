@@ -12,7 +12,7 @@ class ThemesViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    //let themes = ["Normal", "Castelo", "Cidade" , "Espaco", "Neve", "Praia"]
+    let themesNames = ["Default", "Castelo", "Cidade" , "Espaco", "Neve", "Praia"]
     let themes: [UIImage] = [UIImage(named: "Default")!, UIImage(named: "Castelo")!, UIImage(named: "Cidade")!, UIImage(named: "Espaco")!, UIImage(named: "Neve")!, UIImage(named: "Praia")!]
     
     var index: Int!
@@ -102,14 +102,14 @@ class ThemesViewController: UIViewController, UICollectionViewDelegate, UICollec
         
     }
     
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        if (segue.identifier == "toSelectTheme") {
-//            let vc = segue.destinationViewController as! SelectThemeViewController
-//            //vc.imageToSend = image.image!
-//            //vc.previousVC = self
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "toSelectTheme") {
+            let vc = segue.destinationViewController as! SelectThemeViewController
+            vc.imageToSend = themesNames[index]
+            //vc.previousVC = self
 //            vc.previousVC = MainViewController()
-//        }
-//    }
+        }
+    }
     
     
 }
