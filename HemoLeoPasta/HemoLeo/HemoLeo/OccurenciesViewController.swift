@@ -52,6 +52,7 @@ class OccurenciesViewController: UIViewController {
         tableView = UITableView(frame: CGRectMake(0, 100, 400, 340), style: .Plain)
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.rowHeight = 70
         tableView.registerNib(UINib(nibName: "CustomActivityCell", bundle: nil), forCellReuseIdentifier: "idCellNormal")
         tableView.registerNib(UINib(nibName: "SliderCell", bundle: nil), forCellReuseIdentifier: "idCellSlider")
         tableView.clipsToBounds = true
@@ -102,7 +103,7 @@ class OccurenciesViewController: UIViewController {
             // Removes the selected 'to add' activity from its coding and array.
             self.codingManager.saveToAddActivitiesData(activities)
 //            print(button)
-//            button.selected = true
+            button.selected = true
         }
         
         dismissViewControllerAnimated(true, completion: nil)
@@ -121,7 +122,7 @@ extension OccurenciesViewController: UITableViewDelegate {
 //            var expansionCell = cellDescriptor[indexCellDescriptor + 1]
             
             if !cellDescriptor[indexCellDescriptor + 1].isExpanded {
-                visibleCell[indexPath.row].buttonHidden = false
+                cellDescriptor[indexCellDescriptor].buttonHidden = false
                 cellDescriptor[indexCellDescriptor + 1].isVisible = true
                 cellDescriptor[indexCellDescriptor + 1].isExpanded = true
                 getVisibleCells()
@@ -165,17 +166,6 @@ extension OccurenciesViewController: UITableViewDataSource {
         let cellName = visibleCell[indexPath.row].primaryTitle
         let indexCellDescriptor = getIndexDescriptor(cellName)
         
-        
-//        if (indexPath.row % 2) == 0 {
-//            cell = tableView.dequeueReusableCellWithIdentifier("idCellNormal", forIndexPath: indexPath) as! CustomActivityCell
-//            
-//            cell.labelNome.text = arrayDias[indexPath.row / 2]
-//        } else {
-//            cell = tableView.dequeueReusableCellWithIdentifier("idCellSlider", forIndexPath: indexPath) as! CustomActivityCell
-//            
-//            cell.slExperienceLevel.value = 0.0
-//        }
-        
         if visibleCell[indexPath.row].cellIdentifier == "idCellNormal" {
             cell = tableView.dequeueReusableCellWithIdentifier("idCellNormal", forIndexPath: indexPath) as! CustomActivityCell
             
@@ -187,14 +177,7 @@ extension OccurenciesViewController: UITableViewDataSource {
         } else {
             currentCell = visibleCell[indexPath.row - 1].primaryTitle
             cell = tableView.dequeueReusableCellWithIdentifier("idCellSlider", forIndexPath: indexPath) as! CustomActivityCell
-            
-//            if let value = Float(visibleCell[indexPath.row - 1].value) {
-//                cell.slExperienceLevel.value = value
-//                cellDescriptor[indexCellDescriptor + 1].value = "\(value)"
-//            } else {
-//                cell.slExperienceLevel.value = 0
-//                cellDescriptor[indexCellDescriptor + 1].value = "0"
-//            }
+
         }
         
         cell.delegate = self
@@ -219,9 +202,10 @@ extension OccurenciesViewController: CustomCellDelegate {
         tableView.reloadData()
     }
     
+    //Get the correct index of the days array
     func getIndexOccurences(day: String) -> Int {
         switch day {
-            case "Domigo":
+            case "Domingo":
                 return 0
             
             case "Segunda-feira":

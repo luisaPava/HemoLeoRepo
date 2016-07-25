@@ -16,7 +16,6 @@ class AddActivityViewController: UIViewController {
     @IBOutlet weak var exerciseBtn: UIButton!
     @IBOutlet weak var fisiotherapyBtn: UIButton!
     @IBOutlet weak var shotBtn: UIButton!
-    @IBOutlet weak var customBtn: UIButton!
     
     private var activities: Array<Bool> = []
     private var senderActivity: Int!
@@ -37,7 +36,7 @@ class AddActivityViewController: UIViewController {
         self.transitioningDelegate = transitionManager
         
         //Set an array of buttons
-        buttons += [vegetableBtn, fruitsBtn, waterBtn, exerciseBtn, fisiotherapyBtn, shotBtn, customBtn]
+        buttons += [vegetableBtn, fruitsBtn, waterBtn, exerciseBtn, fisiotherapyBtn, shotBtn]
         
         // Loads default Activities if it's the app's first launch
         let defaults = NSUserDefaults.standardUserDefaults()
@@ -73,6 +72,7 @@ extension AddActivityViewController {
     @IBAction func addActivityAction(sender: UIButton) {
         let key = sender.tag
         var activity: OCKCarePlanActivity? = nil
+        selectedButton = sender
         
         if (activities[key] == true) {
             switch key {
@@ -93,12 +93,6 @@ extension AddActivityViewController {
                 
             case 5:
                 activity = Shot().carePlanActivity()
-                
-//            case 6:
-//                activity = nil
-//                
-//                guard let addCustomActivityTableVC = self.storyboard?.instantiateViewControllerWithIdentifier("AddCustomActivityVC") else { return }
-//                self.presentViewController(addCustomActivityTableVC, animated: true, completion: nil)
                 
             default:
                 break
@@ -144,12 +138,6 @@ extension AddActivityViewController {
                 senderActivity = 5
                 performSegueWithIdentifier("activitiesToOccurencies", sender: self)
                 
-//            case 6:
-//                activity = nil
-//                
-//                guard let addCustomActivityTableVC = self.storyboard?.instantiateViewControllerWithIdentifier("AddCustomActivityVC") else { return }
-//                self.presentViewController(addCustomActivityTableVC, animated: true, completion: nil)
-                
             default:
                 break
             }
@@ -172,7 +160,7 @@ extension AddActivityViewController {
             }
         }
         
-        selectedButton = sender
+        
         print(selectedButton)
     }
     

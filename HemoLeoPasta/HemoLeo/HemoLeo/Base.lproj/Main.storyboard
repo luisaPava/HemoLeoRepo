@@ -285,7 +285,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x4w-Kq-n2c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="502" y="-797"/>
+            <point key="canvasLocation" x="520" y="-861"/>
         </scene>
         <!--Select Theme View Controller-->
         <scene sceneID="JXc-Xb-y01">
@@ -483,7 +483,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Aw-op-AJz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="520" y="-32"/>
+            <point key="canvasLocation" x="520" y="-49"/>
         </scene>
         <!--Canvas-->
         <scene sceneID="5fx-eo-Pu6">
@@ -852,6 +852,27 @@
             </objects>
             <point key="canvasLocation" x="-56" y="675"/>
         </scene>
+        <!--Insight View Controller-->
+        <scene sceneID="bSM-cD-ayG">
+            <objects>
+                <viewController storyboardIdentifier="InsightCard" id="p2Z-BE-5dI" customClass="InsightViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="G9D-9D-Xrt"/>
+                        <viewControllerLayoutGuide type="bottom" id="p70-aO-gBY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WUS-pD-lbc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="414" height="736"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="736"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9ap-QN-d4B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="36" y="1544"/>
+        </scene>
         <!--Care Card View Controller-->
         <scene sceneID="MxI-xp-R8I">
             <objects>
@@ -888,7 +909,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fod-Nj-ePL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="631" y="1002"/>
+            <point key="canvasLocation" x="630" y="1014"/>
         </scene>
         <!--Add Activity View Controller-->
         <scene sceneID="Fxj-Zd-2bx">
@@ -1182,7 +1203,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0pC-OQ-eJO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2034" y="1479"/>
+            <point key="canvasLocation" x="2000" y="1779"/>
         </scene>
     </scenes>
     <resources>

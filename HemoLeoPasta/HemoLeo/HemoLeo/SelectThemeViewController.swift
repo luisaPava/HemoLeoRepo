@@ -11,18 +11,15 @@ import UIKit
 class SelectThemeViewController: UIViewController {
     
     @IBOutlet weak var fullscreenImage: UIImageView!
-    
     @IBOutlet weak var backButton: UIButton!
-    
     @IBOutlet weak var applyButton: UIButton!
-    
+
     var imageToSend = ""
-    //var previousVC = UIViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //self.fullscreenImage.image = self.imageToSend
+        self.fullscreenImage.image = UIImage(named: imageToSend)
         
     }
     
@@ -31,16 +28,12 @@ class SelectThemeViewController: UIViewController {
     }
     
     @IBAction func backButtonPressed(sender: AnyObject) {
-        let presentingViewController: UIViewController! = self.presentingViewController
         
-        self.dismissViewControllerAnimated(false) {
-            presentingViewController.dismissViewControllerAnimated(false, completion: nil)
-        }
+        self.dismissViewControllerAnimated(false, completion: nil)
         
     }
     
     @IBAction func applyButtonPressed(sender: AnyObject) {
-        //previousVC.view.backgroundColor = UIColor.blueColor()
         let defaults = NSUserDefaults.standardUserDefaults()
         defaults.setObject(imageToSend, forKey: "background")
         
