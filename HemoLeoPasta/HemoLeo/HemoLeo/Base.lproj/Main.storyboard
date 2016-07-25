@@ -300,7 +300,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8NL-Aw-424">
-                                <rect key="frame" x="20" y="0.0" width="560" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JoL-4N-QSQ">
                                 <rect key="frame" x="35" y="35" width="65" height="65"/>
@@ -328,12 +328,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="8NL-Aw-424" secondAttribute="trailing" constant="20" id="1RT-xW-3AV"/>
-                            <constraint firstItem="8NL-Aw-424" firstAttribute="leading" secondItem="Xbr-jA-YjQ" secondAttribute="leading" constant="20" id="KTd-El-A56"/>
+                            <constraint firstItem="8NL-Aw-424" firstAttribute="leading" secondItem="Xbr-jA-YjQ" secondAttribute="leading" id="KTd-El-A56"/>
                             <constraint firstItem="8NL-Aw-424" firstAttribute="centerX" secondItem="Xbr-jA-YjQ" secondAttribute="centerX" id="OTi-83-buu"/>
                             <constraint firstItem="8NL-Aw-424" firstAttribute="top" secondItem="Xbr-jA-YjQ" secondAttribute="topMargin" id="WqK-EP-IXJ"/>
                             <constraint firstItem="8NL-Aw-424" firstAttribute="centerY" secondItem="Xbr-jA-YjQ" secondAttribute="centerY" id="ZRf-bZ-2xT"/>
                             <constraint firstItem="Dit-4T-NML" firstAttribute="top" secondItem="8NL-Aw-424" secondAttribute="bottom" id="Zzh-pO-D73"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="8NL-Aw-424" secondAttribute="trailing" id="fbz-4b-6P5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8NL-Aw-424" secondAttribute="trailing" constant="-20" id="fbz-4b-6P5"/>
                             <constraint firstItem="8NL-Aw-424" firstAttribute="leading" secondItem="Xbr-jA-YjQ" secondAttribute="leadingMargin" id="gjR-8q-DRr"/>
                             <constraint firstItem="OXk-zT-hX6" firstAttribute="trailing" secondItem="Xbr-jA-YjQ" secondAttribute="trailingMargin" constant="15" id="hzJ-mD-YwB"/>
                             <constraint firstItem="JoL-4N-QSQ" firstAttribute="leading" secondItem="Xbr-jA-YjQ" secondAttribute="leadingMargin" constant="15" id="lJf-TV-UUu"/>
@@ -342,6 +342,16 @@
                             <constraint firstItem="OXk-zT-hX6" firstAttribute="top" secondItem="GqK-UO-od5" secondAttribute="bottom" constant="8" id="otK-49-RO9"/>
                             <constraint firstItem="JoL-4N-QSQ" firstAttribute="top" secondItem="GqK-UO-od5" secondAttribute="bottom" constant="15" id="veu-R0-TzM"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="1RT-xW-3AV"/>
+                                <exclude reference="OTi-83-buu"/>
+                                <exclude reference="WqK-EP-IXJ"/>
+                                <exclude reference="ZRf-bZ-2xT"/>
+                                <exclude reference="gjR-8q-DRr"/>
+                                <exclude reference="Zzh-pO-D73"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="applyButton" destination="OXk-zT-hX6" id="BaV-r5-hw7"/>
@@ -1081,15 +1091,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68c-Fj-MTA">
-                                <rect key="frame" x="186" y="609" width="43" height="30"/>
-                                <state key="normal" title="Salvar"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68c-Fj-MTA">
+                                <rect key="frame" x="40" y="676" width="334" height="30"/>
+                                <color key="backgroundColor" red="0.42745098039215684" green="0.84313725490196079" blue="0.31764705882352939" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6af-O5-uSl"/>
+                                </constraints>
+                                <state key="normal" title="Salvar">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="save:" destination="UwC-e4-M0J" eventType="touchUpInside" id="62C-Yl-tyD"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quantas vezes você faz essa atividade por dia?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOz-9h-RXO">
+                                <rect key="frame" x="27" y="50" width="361" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="PDK-5J-rmb"/>
+                                    <constraint firstAttribute="width" constant="361" id="uYp-DV-Uzg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sOz-9h-RXO" firstAttribute="top" secondItem="YqD-VA-e4X" secondAttribute="bottom" constant="30" id="3io-Qf-CLa"/>
+                            <constraint firstItem="sOz-9h-RXO" firstAttribute="centerX" secondItem="z0x-8x-NgJ" secondAttribute="centerX" id="5Df-8u-3ZZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="68c-Fj-MTA" secondAttribute="trailing" constant="20" id="7T3-gj-rWh"/>
+                            <constraint firstItem="68c-Fj-MTA" firstAttribute="leading" secondItem="z0x-8x-NgJ" secondAttribute="leadingMargin" constant="20" id="Ugt-Gy-RjG"/>
+                            <constraint firstItem="elP-nn-92w" firstAttribute="top" secondItem="68c-Fj-MTA" secondAttribute="bottom" constant="30" id="wvS-MU-zWZ"/>
+                        </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="414" height="736"/>

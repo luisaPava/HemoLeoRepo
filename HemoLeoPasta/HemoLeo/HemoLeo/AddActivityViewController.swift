@@ -25,7 +25,7 @@ class AddActivityViewController: UIViewController {
     //MARK: - Managers
     private let storeManager: CarePlanStoreManager = CarePlanStoreManager.sharedCarePlanStoreManager
     private let codingManager: NSCodingManager = NSCodingManager.sharedNSCodingManager
-    private let transitionManager = TransitionDelegate()
+//    private let transitionManager = TransitionDelegate()
     
     //MARK: - Life Cycle
     override func viewDidLoad() {
@@ -33,7 +33,7 @@ class AddActivityViewController: UIViewController {
         
         self.navigationController?.navigationBar.translucent = false
         
-        self.transitioningDelegate = transitionManager
+//        self.transitioningDelegate = transitionManager
         
         //Set an array of buttons
         buttons += [vegetableBtn, fruitsBtn, waterBtn, exerciseBtn, fisiotherapyBtn, shotBtn]
