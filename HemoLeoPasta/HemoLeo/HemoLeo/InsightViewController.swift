@@ -11,11 +11,19 @@ import CareKit
 
 class InsightViewController: UINavigationController {
     private let storeManager: CarePlanStoreManager = CarePlanStoreManager.sharedCarePlanStoreManager
+    private static var insightsViewController: OCKInsightsViewController! = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        storeManager.delegate = self
+        print("Insight")
+        if InsightViewController.insightsViewController == nil {
+            InsightViewController.insightsViewController = createInsightsViewController()
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,12 +32,17 @@ class InsightViewController: UINavigationController {
     }
     
     override func viewWillAppear(animated: Bool) {
-        self.pushViewController(createInsightsViewController(), animated: false)
+        if InsightViewController.insightsViewController == nil {
+            InsightViewController.insightsViewController = createInsightsViewController()
+            
+        }
+        
+        self.pushViewController(InsightViewController.insightsViewController, animated: false)
     }
     
     private func createInsightsViewController() -> OCKInsightsViewController {
         // Create an `OCKInsightsViewController` with sample data.
-        let headerTitle = NSLocalizedString("Weekly Charts", comment: "")
+        let headerTitle = NSLocalizedString("Gráficos Semanais", comment: "")
         let viewController = OCKInsightsViewController(insightItems: storeManager.insights, headerTitle: headerTitle, headerSubtitle: "")
         
         // Setup the controller's title and tab bar item
@@ -37,5 +50,14 @@ class InsightViewController: UINavigationController {
         viewController.tabBarItem = UITabBarItem(title: viewController.title, image: UIImage(named:"insights"), selectedImage: UIImage(named: "insights-filled"))
         
         return viewController
+    }
+}
+
+extension InsightViewController: CarePlanStoreManagerDelegate {
+    
+    /// Called when the `CarePlanStoreManager`'s insights are updated.
+    func carePlanStoreManager(manager: CarePlanStoreManager, didUpdateInsights insights: [OCKInsightItem]) {
+        // Update the insights view controller with the new insights.
+        InsightViewController.insightsViewController.items = insights
     }
 }

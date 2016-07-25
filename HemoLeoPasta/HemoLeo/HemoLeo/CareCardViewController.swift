@@ -41,11 +41,15 @@ class CareCardViewController: UINavigationController {
         
         viewController.showEdgeIndicators = true
         
+//        viewController.
+        
         // Setup controller's title and tab bar icon
         viewController.title = "Cuidados"
         viewController.tabBarItem = UITabBarItem(title: "Cuidados", image: UIImage(named: "carecard"), selectedImage: UIImage(named: "carecard-fill"))
         
-        viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "+", style: .Plain, target: self, action: #selector(pushAddActivityController))
+        viewController.navigationItem.rightBarButtonItem?.title = "Hoje"
+        
+        viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Nova", style: .Done, target: self, action: #selector(pushAddActivityController))
         viewController.navigationItem.leftBarButtonItem?.tintColor = UIColor.redColor()
 
         return viewController
@@ -62,26 +66,6 @@ class CareCardViewController: UINavigationController {
     // Instantiates the AddActivityTableViewController from Main.storyboard
     // and asks navigationController to show it.
     func pushAddActivityController() {
-//        guard let addActivityTableVC = self.storyboard?.instantiateViewControllerWithIdentifier("AddActivityVC") else { return }
-//        
-//        self.presentViewController(addActivityTableVC, animated: true, completion: nil)
-        
-//        let modal = self.storyboard?.instantiateViewControllerWithIdentifier("AddActivityVC") as! AddActivityViewController
-//        popoverViewController.modalPresentationStyle = .Popover
-//        
-//        let popoverPresentationViewController = popoverViewController.popoverPresentationController
-//        
-//        let view = self.viewController.navigationItem.leftBarButtonItem?.valueForKey("view") as? UIView
-//        
-//        popoverPresentationViewController?.permittedArrowDirections = UIPopoverArrowDirection.Up
-//        popoverPresentationViewController?.delegate = self
-//        popoverPresentationViewController?.sourceView = view
-//        popoverPresentationViewController?.sourceRect = CGRectMake(view!.frame.width / 2, view!.frame.height, 0, 0)
-        
-        
-        
-//        presentViewController(popoverViewController, animated: true, completion: nil)
-        
         self.performSegueWithIdentifier("cardToAdd", sender: self)
     }
 }
@@ -92,3 +76,7 @@ extension CareCardViewController: UIPopoverPresentationControllerDelegate {
         return UIModalPresentationStyle.None
     }
 }
+
+//extension CareCardViewController: OCKCareCardViewControllerDelegate {
+//    careca
+//}

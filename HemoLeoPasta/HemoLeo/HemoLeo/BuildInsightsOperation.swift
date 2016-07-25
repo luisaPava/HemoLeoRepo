@@ -43,6 +43,8 @@ class BuildInsightsOperation: NSOperation {
     // MARK: NSOperation
     
     override func main() {
+        insights = []
+        
         // Do nothing if the operation has been cancelled.
         guard !cancelled else { return }
         
@@ -61,6 +63,7 @@ class BuildInsightsOperation: NSOperation {
         if !newInsights.isEmpty {
             insights = newInsights
         }
+
     }
     
     // MARK: Convenience
@@ -105,7 +108,7 @@ class BuildInsightsOperation: NSOperation {
         percentageFormatter.numberStyle = .PercentStyle
         let formattedAdherence = percentageFormatter.stringFromNumber(medicationAdherence)!
 
-        let insight = OCKMessageItem(title: "Medication Adherence", text: "Your medication adherence was \(formattedAdherence) last week.", tintColor: UIColor.redColor(), messageType: .Tip)
+        let insight = OCKMessageItem(title: "Aderência Médica", text: "Sua aderência médica foi \(formattedAdherence) na última semana.", tintColor: UIColor.redColor(), messageType: .Tip)
         
         return insight
     }
@@ -177,16 +180,16 @@ class BuildInsightsOperation: NSOperation {
         }
 
         // Create a `OCKBarSeries` for each set of data.
-        let painBarSeries = OCKBarSeries(title: "Pain", values: painValues, valueLabels: painLabels, tintColor: UIColor.blueColor())
-        let medicationBarSeries = OCKBarSeries(title: "Medication Adherence", values: medicationValues, valueLabels: medicationLabels, tintColor: UIColor.blueColor())
+        let painBarSeries = OCKBarSeries(title: "Dor", values: painValues, valueLabels: painLabels, tintColor: UIColor(red: 40 / 255, green: 157 / 255, blue: 234 / 255, alpha: 1))
+        let medicationBarSeries = OCKBarSeries(title: "Aderência Médica", values: medicationValues, valueLabels: medicationLabels, tintColor: UIColor.blueColor())
 
         /*
             Add the series to a chart, specifing the scale to use for the chart
             rather than having CareKit scale the bars to fit.
         */
-        let chart = OCKBarChart(title: "Back Pain",
+        let chart = OCKBarChart(title: "Dores",
                                 text: nil,
-                                tintColor: UIColor.blueColor(),
+                                tintColor: UIColor(red: 40 / 255, green: 157 / 255, blue: 234 / 255, alpha: 1),
                                 axisTitles: axisTitles,
                                 axisSubtitles: axisSubtitles,
                                 dataSeries: [painBarSeries, medicationBarSeries],

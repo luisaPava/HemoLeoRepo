@@ -49,7 +49,7 @@ class OccurenciesViewController: UIViewController {
         cellDescriptor.append(cells(additionalRows: 1, cellIdentifier: "idCellNormal", isExpandable: true, isExpanded: true, isVisible: true, primaryTitle: "Domingo", secondaryTitle: "", value: ""))
         cellDescriptor.append(cellSlider)
         
-        tableView = UITableView(frame: CGRectMake(0, 100, 400, 340), style: .Plain)
+        tableView = UITableView(frame: CGRectMake(0, 100, 400, 450), style: .Plain)
         tableView.delegate = self
         tableView.dataSource = self
         tableView.rowHeight = 70
