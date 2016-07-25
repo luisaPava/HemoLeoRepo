@@ -105,8 +105,8 @@ class Pain: Assessment {
             defaultValue: -1,
             step: 1,
             vertical: false,
-            maximumValueDescription: "Estou morrendo!",
-            minimumValueDescription: "Nah"
+            maximumValueDescription: ":(",
+            minimumValueDescription: ":)"
         )
         
         

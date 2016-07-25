@@ -103,8 +103,8 @@ class Bleeding: Assessment {
             defaultValue: -1,
             step: 1,
             vertical: false,
-            maximumValueDescription: "Bleeding to death",
-            minimumValueDescription: "Cool"
+            maximumValueDescription: ":(",
+            minimumValueDescription: ":)"
         )
         
         let bleedingLevelQuestionStepTitle = "Qual o nível do seu sangramento?"
