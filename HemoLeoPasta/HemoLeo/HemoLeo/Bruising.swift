@@ -48,10 +48,10 @@ class Bruising: Assessment {
         //First step: Where is your bruise?
         let bruisingQuestionStepTitle = "Onde é o seu hematoma?"
         let textChoices = [
-            ORKTextChoice(text: "Joelho", value: "joelho"),
-            ORKTextChoice(text: "Ombro", value: "ombro"),
-            ORKTextChoice(text: "Cotovelo", value: "cotovelo"),
-            ORKTextChoice(text: "Não tive hematoma", value: "não tive hematomas")
+            ORKTextChoice(text: "Joelho", value: "Joelho"),
+            ORKTextChoice(text: "Ombro", value: "Ombro"),
+            ORKTextChoice(text: "Cotovelo", value: "Cotovelo"),
+            ORKTextChoice(text: "Não tive hematoma", value: "Não tive hematomas")
         ]
         
         let bruisingAnswerFormat: ORKTextChoiceAnswerFormat = ORKAnswerFormat.choiceAnswerFormatWithStyle(.SingleChoice, textChoices: textChoices)
@@ -104,8 +104,8 @@ class Bruising: Assessment {
             defaultValue: -1,
             step: 1,
             vertical: false,
-            maximumValueDescription: "Estou morrendo!",
-            minimumValueDescription: "Nah"
+            maximumValueDescription: "Grande",
+            minimumValueDescription: "Pequeno"
         )
         
         let bruisingLevelQuestionStepTitle = "Qual o tamanho do hematoma?"
