@@ -313,8 +313,8 @@
                                     <action selector="backButtonPressed:" destination="Bbv-1w-PVr" eventType="touchUpInside" id="4PH-KM-MQV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXk-zT-hX6">
-                                <rect key="frame" x="530" y="28" width="65" height="63"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXk-zT-hX6">
+                                <rect key="frame" x="515" y="35" width="65" height="63"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="63" id="nPJ-jY-OPy"/>
                                     <constraint firstAttribute="width" constant="65" id="sLB-OW-xyU"/>
@@ -328,6 +328,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="8NL-Aw-424" secondAttribute="trailing" constant="20" id="1RT-xW-3AV"/>
+                            <constraint firstItem="OXk-zT-hX6" firstAttribute="trailing" secondItem="Xbr-jA-YjQ" secondAttribute="trailingMargin" constant="-15" id="E6d-Lp-iGJ"/>
                             <constraint firstItem="8NL-Aw-424" firstAttribute="leading" secondItem="Xbr-jA-YjQ" secondAttribute="leading" id="KTd-El-A56"/>
                             <constraint firstItem="8NL-Aw-424" firstAttribute="centerX" secondItem="Xbr-jA-YjQ" secondAttribute="centerX" id="OTi-83-buu"/>
                             <constraint firstItem="8NL-Aw-424" firstAttribute="top" secondItem="Xbr-jA-YjQ" secondAttribute="topMargin" id="WqK-EP-IXJ"/>
@@ -335,11 +336,10 @@
                             <constraint firstItem="Dit-4T-NML" firstAttribute="top" secondItem="8NL-Aw-424" secondAttribute="bottom" id="Zzh-pO-D73"/>
                             <constraint firstAttribute="trailingMargin" secondItem="8NL-Aw-424" secondAttribute="trailing" constant="-20" id="fbz-4b-6P5"/>
                             <constraint firstItem="8NL-Aw-424" firstAttribute="leading" secondItem="Xbr-jA-YjQ" secondAttribute="leadingMargin" id="gjR-8q-DRr"/>
-                            <constraint firstItem="OXk-zT-hX6" firstAttribute="trailing" secondItem="Xbr-jA-YjQ" secondAttribute="trailingMargin" constant="15" id="hzJ-mD-YwB"/>
                             <constraint firstItem="JoL-4N-QSQ" firstAttribute="leading" secondItem="Xbr-jA-YjQ" secondAttribute="leadingMargin" constant="15" id="lJf-TV-UUu"/>
                             <constraint firstItem="8NL-Aw-424" firstAttribute="top" secondItem="Xbr-jA-YjQ" secondAttribute="top" id="nQt-zd-n6U"/>
                             <constraint firstItem="Dit-4T-NML" firstAttribute="top" secondItem="8NL-Aw-424" secondAttribute="bottom" id="oao-SU-Djn"/>
-                            <constraint firstItem="OXk-zT-hX6" firstAttribute="top" secondItem="GqK-UO-od5" secondAttribute="bottom" constant="8" id="otK-49-RO9"/>
+                            <constraint firstItem="OXk-zT-hX6" firstAttribute="top" secondItem="GqK-UO-od5" secondAttribute="bottom" constant="15" id="otK-49-RO9"/>
                             <constraint firstItem="JoL-4N-QSQ" firstAttribute="top" secondItem="GqK-UO-od5" secondAttribute="bottom" constant="15" id="veu-R0-TzM"/>
                         </constraints>
                         <variation key="default">
@@ -603,7 +603,7 @@
                                             <constraint firstAttribute="width" constant="56" id="Cae-xs-1iS"/>
                                             <constraint firstAttribute="height" constant="56" id="i49-Le-Lbs"/>
                                         </constraints>
-                                        <state key="normal" image="Borracha"/>
+                                        <state key="normal" image="borracha-1"/>
                                         <connections>
                                             <action selector="pencilPressed:" destination="DsG-hq-x4v" eventType="touchUpInside" id="dOb-Rj-vN3"/>
                                         </connections>
@@ -1250,7 +1250,6 @@
         <image name="BebidaNotSelected" width="111" height="111"/>
         <image name="Bebidahighlighted" width="111" height="111"/>
         <image name="Black" width="51" height="51"/>
-        <image name="Borracha" width="56" height="56"/>
         <image name="Brown" width="51" height="51"/>
         <image name="Comida highlighted" width="110" height="110"/>
         <image name="ComidaNotSelected" width="110" height="110"/>
@@ -1269,6 +1268,7 @@
         <image name="ShotNotSelected" width="110" height="110"/>
         <image name="Yellos" width="51" height="51"/>
         <image name="back" width="100" height="100"/>
+        <image name="borracha-1" width="64" height="46"/>
         <image name="check" width="102" height="102"/>
         <image name="physical_therapyHIghlighted" width="110" height="110"/>
         <image name="physical_therapyNotSelected" width="110" height="110"/>
