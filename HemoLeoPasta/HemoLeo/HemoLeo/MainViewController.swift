@@ -32,8 +32,6 @@ class MainViewController: UIViewController {
         scene.scaleMode = .ResizeFill
         skView.presentScene(scene)
         
-//        defaults.setObject("Default", forKey: "Background")
-        
         func prefersStatusBarHidden() -> Bool {
             return true
         }
@@ -101,6 +99,7 @@ class MainViewController: UIViewController {
     }
     
     override func viewWillAppear(animated: Bool) {
+        print(#function)
         let scene = GameScene(size: view.bounds.size)
         let skView = view as! SKView
         skView.showsFPS = false

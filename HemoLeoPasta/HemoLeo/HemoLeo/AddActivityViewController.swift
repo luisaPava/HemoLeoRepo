@@ -42,7 +42,6 @@ class AddActivityViewController: UIViewController {
         let defaults = NSUserDefaults.standardUserDefaults()
         
         if !defaults.boolForKey("loadedDefaultCareCardData") {
-            print("Loading default Activities...")
             loadDefaultActivities()
             defaults.setBool(true, forKey: "loadedDefaultCareCardData")
         } else {
@@ -58,12 +57,6 @@ class AddActivityViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-//    @IBAction func unwindToMainViewController (sender: UIStoryboardSegue) {
-//        // bug? exit segue doesn't dismiss so we do it manually...
-//        self.dismissViewControllerAnimated(true, completion: nil)
-//    }
-    
 }
 
 //MARK: - Extension
@@ -159,9 +152,6 @@ extension AddActivityViewController {
                 self.codingManager.saveToAddActivitiesData(activities)
             }
         }
-        
-        
-        print(selectedButton)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

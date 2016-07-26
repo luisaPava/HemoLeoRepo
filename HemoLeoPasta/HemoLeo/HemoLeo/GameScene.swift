@@ -122,7 +122,10 @@ class GameScene: SKScene {
     
     
     override func update(currentTime: CFTimeInterval) {
-        /* Called before each frame is rendered */
+        if defaults.boolForKey("badgeSmart") && !defaults.boolForKey("smartAlreadyShown") && defaults.boolForKey("isGameScene") {
+            print("Badge Complete")
+            defaults.setBool(true, forKey: "smartAlreadyShown")
+        }
     }
     
 }

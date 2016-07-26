@@ -76,7 +76,3 @@ extension CareCardViewController: UIPopoverPresentationControllerDelegate {
         return UIModalPresentationStyle.None
     }
 }
-
-//extension CareCardViewController: OCKCareCardViewControllerDelegate {
-//    careca
-//}
