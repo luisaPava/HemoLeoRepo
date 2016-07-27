@@ -56,6 +56,7 @@ class Bruising: Assessment {
         
         let bruisingAnswerFormat: ORKTextChoiceAnswerFormat = ORKAnswerFormat.choiceAnswerFormatWithStyle(.SingleChoice, textChoices: textChoices)
         let bruisingQuestionStep = ORKQuestionStep(identifier: "BruisingQuestionStep", title: bruisingQuestionStepTitle, answer: bruisingAnswerFormat)
+        bruisingQuestionStep.optional = false
         steps += [bruisingQuestionStep]
         
 //        let painQuestionStepTitle = "Onde é a sua dor?"
@@ -110,6 +111,7 @@ class Bruising: Assessment {
         
         let bruisingLevelQuestionStepTitle = "Qual o tamanho do hematoma?"
         let bruisingLevelQuestionStep = ORKQuestionStep(identifier: "BruisingLevelQuestionStep", title: bruisingLevelQuestionStepTitle, answer: bruisingLevelAnswerFormat)
+        bruisingLevelQuestionStep.optional = false
         
         steps += [bruisingLevelQuestionStep]
         

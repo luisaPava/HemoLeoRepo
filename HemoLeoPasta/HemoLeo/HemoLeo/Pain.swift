@@ -95,6 +95,7 @@ class Pain: Assessment {
         
         let painAnswerFormat: ORKImageChoiceAnswerFormat = ORKAnswerFormat.choiceAnswerFormatWithImageChoices(imageChoices)
         let painQuestionStep = ORKQuestionStep(identifier: "ImageChoiceQuestionStep", title: painQuestionStepTitle, answer: painAnswerFormat)
+        painQuestionStep.optional = false
         
         steps += [painQuestionStep]
         
@@ -112,6 +113,7 @@ class Pain: Assessment {
         
         let painLevelQuestionStepTitle = "Qual o nível da dor?"
         let painLevelQuestionStep = ORKQuestionStep(identifier: "PainLevelQuestionStep", title: painLevelQuestionStepTitle, answer: painLevelAnswerFormat)
+        painLevelQuestionStep.optional = false
         
         steps += [painLevelQuestionStep]
         
