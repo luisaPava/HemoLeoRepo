@@ -60,7 +60,7 @@ class InsightsBuilder {
          */
         
         let medicationEventsOperation = QueryActivityEventsOperation(store: carePlanStore,
-                                                                     activityIdentifier: ActivityType.Vegetables.rawValue,
+                                                                     activityIdentifier: ActivityType.Fisiotherapy.rawValue,
                                                                      startDate: queryDateRange.start,
                                                                      endDate: queryDateRange.end)
 

@@ -176,7 +176,7 @@
 /* Default placeholders to request answers in a questionnaire. */
 "PLACEHOLDER_TEXT_OR_NUMBER" = "Tap to answer";
 "NULL_ANSWER" = "Select an answer";
-"PLACEHOLDER_IMAGE_CHOICES" = "Tap to select";
+"PLACEHOLDER_IMAGE_CHOICES" = "Toque para selcecionar";
 "PLACEHOLDER_LONG_TEXT" = "Tap to write";
 
 /* Button titles */

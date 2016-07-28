@@ -45,20 +45,6 @@ class Pain: Assessment {
         //Create questions and answer formats
         
         //First step: Where is your pain?
-//        let painQuestionStepTitle = "Onde é a sua dor?"
-//        let textChoices = [
-//            ORKTextChoice(text: "Joelho", value: "joelho"),
-//            ORKTextChoice(text: "Ombro", value: "ombro"),
-//            ORKTextChoice(text: "Cotovelo", value: "cotovelo"),
-//            ORKTextChoice(text: "Não tive dor", value: "não tive dor")
-//        ]
-//        
-//        let painAnswerFormat: ORKTextChoiceAnswerFormat = ORKAnswerFormat.choiceAnswerFormatWithStyle(.SingleChoice, textChoices: textChoices)
-//        let painQuestionStep = ORKQuestionStep(identifier: "PainQuestionStep", title: painQuestionStepTitle, answer: painAnswerFormat)
-//        
-//        
-//        steps += [painQuestionStep]
-        
         let painQuestionStepTitle = "Onde é a sua dor?"
         
         let imageChoices = [

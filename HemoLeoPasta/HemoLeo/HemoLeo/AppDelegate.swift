@@ -19,15 +19,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let defaults = NSUserDefaults.standardUserDefaults()
         
-        if !defaults.boolForKey("firstLaunch") {
+//        if !defaults.boolForKey("firstLaunch") {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let initialViewController = storyboard.instantiateViewControllerWithIdentifier("pageViewController") as! PageViewCcontroller
         
             self.window?.rootViewController = initialViewController
             self.window?.makeKeyAndVisible()
             
-            defaults.setBool(true, forKey: "firstLaunch")
-        }
+//            defaults.setBool(true, forKey: "firstLaunch")
+//        }
         
         return true
     }

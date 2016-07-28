@@ -33,6 +33,6 @@ import CareKit
 extension OCKInsightItem {
     /// Returns an `OCKInsightItem` to show when no insights have been calculated.
     static func emptyInsightsMessage() -> OCKInsightItem {
-        return OCKMessageItem(title: "No Insights", text: "There are no insights to show.", tintColor: UIColor.greenColor(), messageType: .Tip)
+        return OCKMessageItem(title: "Sem Insights", text: "Não há Insights para mostrar.", tintColor: UIColor.greenColor(), messageType: .Tip)
     }
 }

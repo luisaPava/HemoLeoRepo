@@ -57,6 +57,10 @@ class AddActivityViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func doneBtn(sender: AnyObject) {
+        self.dismissViewControllerAnimated(false, completion: nil)
+    }
 }
 
 //MARK: - Extension
