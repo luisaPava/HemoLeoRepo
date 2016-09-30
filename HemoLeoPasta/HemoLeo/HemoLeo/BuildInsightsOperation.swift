@@ -87,7 +87,7 @@ class BuildInsightsOperation: Operation {
         for offset in 0..<7 {
             components.day = offset
 //            let dayDate = calendar.dateByAddingComponents(components, toDate: startDate, options: [])!
-            let dayDate = calendar.date(byAdding: components, to: startDate)
+            let dayDate = calendar.date(byAdding: components as DateComponents, to: startDate as Date)
 
             let dayComponents = NSDateComponents(date: dayDate, calendar: calendar)
             let eventsForDay = medicationEvents[dayComponents]
