@@ -24,8 +24,9 @@ class CareCardViewController: UINavigationController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+   
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         
         viewController = createCareCardVC()
         self.pushViewController(viewController, animated: false)
@@ -33,7 +34,7 @@ class CareCardViewController: UINavigationController {
     }
     
     @IBAction func cancel(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
     
     private func createCareCardVC() -> OCKCareCardViewController {
@@ -49,15 +50,15 @@ class CareCardViewController: UINavigationController {
         
         viewController.navigationItem.rightBarButtonItem?.title = "Hoje"
         
-        viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Nova", style: .Done, target: self, action: #selector(pushAddActivityController))
-        viewController.navigationItem.leftBarButtonItem?.tintColor = UIColor.redColor()
+        viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Nova", style: .done, target: self, action: #selector(pushAddActivityController))
+        viewController.navigationItem.leftBarButtonItem?.tintColor = UIColor.red
 
         return viewController
     }
     
     @IBAction func unwindToMainViewController (sender: UIStoryboardSegue) {
         // bug? exit segue doesn't dismiss so we do it manually...
-        self.dismissViewControllerAnimated(true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
     
     
@@ -66,13 +67,13 @@ class CareCardViewController: UINavigationController {
     // Instantiates the AddActivityTableViewController from Main.storyboard
     // and asks navigationController to show it.
     func pushAddActivityController() {
-        self.performSegueWithIdentifier("cardToAdd", sender: self)
+        self.performSegue(withIdentifier: "cardToAdd", sender: self)
     }
 }
 
 //MARK: - UIPopoverPresentationControllerDelegate
 extension CareCardViewController: UIPopoverPresentationControllerDelegate {
     func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle {
-        return UIModalPresentationStyle.None
+        return UIModalPresentationStyle.none
     }
 }

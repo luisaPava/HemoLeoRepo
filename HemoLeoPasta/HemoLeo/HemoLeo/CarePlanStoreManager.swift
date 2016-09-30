@@ -94,16 +94,16 @@ class CarePlanStoreManager: NSObject {
     
     private override init() {
         // Determine the file URL for the store.
-        let searchPaths = NSSearchPathForDirectoriesInDomains(.ApplicationSupportDirectory, .UserDomainMask, true)
+        let searchPaths = NSSearchPathForDirectoriesInDomains(.applicationSupportDirectory, .userDomainMask, true)
         let applicationSupportPath = searchPaths[0]
         let persistenceDirectoryURL = NSURL(fileURLWithPath: applicationSupportPath)
         
-        if !NSFileManager.defaultManager().fileExistsAtPath(persistenceDirectoryURL.absoluteString, isDirectory: nil) {
-            try! NSFileManager.defaultManager().createDirectoryAtURL(persistenceDirectoryURL, withIntermediateDirectories: true, attributes: nil)
+        if !FileManager.default.fileExists(atPath: persistenceDirectoryURL.absoluteString!, isDirectory: nil) {
+            try! FileManager.default.createDirectory(at: persistenceDirectoryURL as URL, withIntermediateDirectories: true, attributes: nil)
         }
         
         // Create the store.
-        store = OCKCarePlanStore(persistenceDirectoryURL: persistenceDirectoryURL)
+        store = OCKCarePlanStore(persistenceDirectoryURL: persistenceDirectoryURL as URL)
         
         /*
          Create an `InsightsBuilder` to build insights based on the data in
@@ -124,8 +124,8 @@ class CarePlanStoreManager: NSObject {
     func updateInsights() {
         insightsBuilder.updateInsights { [weak self] completed, newInsights in
             // If new insights have been created, notifiy the delegate.
-            guard let storeManager = self, newInsights = newInsights where completed else { return }
-            storeManager.delegate?.carePlanStoreManager(storeManager, didUpdateInsights: newInsights)
+            guard let storeManager = self, let newInsights = newInsights , completed else { return }
+            storeManager.delegate?.carePlanStoreManager(manager: storeManager, didUpdateInsights: newInsights)
         }
     }
 }
@@ -133,7 +133,7 @@ class CarePlanStoreManager: NSObject {
 
 
 extension CarePlanStoreManager: OCKCarePlanStoreDelegate {
-    func carePlanStoreActivityListDidChange(store: OCKCarePlanStore) {
+    func carePlanStoreActivityListDidChange(_ store: OCKCarePlanStore) {
         updateInsights()
     }
     

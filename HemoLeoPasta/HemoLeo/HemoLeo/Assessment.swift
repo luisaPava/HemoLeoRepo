@@ -18,19 +18,19 @@ protocol Assessment: Activity {
 extension Assessment {
     func buildResultForCarePlanEvent(event: OCKCarePlanEvent, taskResult: ORKTaskResult) -> OCKCarePlanEventResult {
         // Get the first result for the first step of the task result.
-        guard let firstResult = taskResult.firstResult as? ORKStepResult, stepResult = firstResult.results?.first else { fatalError("Unexepected task results") }
+        guard let firstResult = taskResult.firstResult as? ORKStepResult, let stepResult = firstResult.results?.first else { fatalError("Unexepected task results") }
 
         // Determine what type of result should be saved.
-        if let scaleResult = stepResult as? ORKScaleQuestionResult, answer = scaleResult.scaleAnswer {
+        if let scaleResult = stepResult as? ORKScaleQuestionResult, let answer = scaleResult.scaleAnswer {
             return OCKCarePlanEventResult(valueString: answer.stringValue, unitString: "out of 10", userInfo: nil)
         }
-        else if let numericResult = stepResult as? ORKNumericQuestionResult, answer = numericResult.numericAnswer {
+        else if let numericResult = stepResult as? ORKNumericQuestionResult, let answer = numericResult.numericAnswer {
             return OCKCarePlanEventResult(valueString: answer.stringValue, unitString: numericResult.unit, userInfo: nil)
             
-        } else if let scaleResult = stepResult as? ORKBooleanQuestionResult, answer = scaleResult.booleanAnswer {
+        } else if let scaleResult = stepResult as? ORKBooleanQuestionResult, let answer = scaleResult.booleanAnswer {
             return OCKCarePlanEventResult(valueString: answer.stringValue, unitString: "", userInfo: nil)
             
-        } else if let textResult = stepResult as? ORKChoiceQuestionResult, answer = textResult.choiceAnswers {
+        } else if let textResult = stepResult as? ORKChoiceQuestionResult, let answer = textResult.choiceAnswers {
             return OCKCarePlanEventResult(valueString: answer.first as! String, unitString: "", userInfo: nil)
             
         }

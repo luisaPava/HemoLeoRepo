@@ -37,8 +37,8 @@ class AddCustomActivityViewController: UIViewController {
     @IBAction func datePicker(datePicker: UIDatePicker) {
         let chosenDate = datePicker.date
         
-        let calendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)
-        self.dateComponents = calendar?.components([.Weekday, .Year], fromDate: chosenDate)
+        let calendar = NSCalendar(calendarIdentifier: NSCalendar.Identifier.gregorian)
+        self.dateComponents = calendar?.components([.weekday, .year], from: chosenDate) as NSDateComponents?
         
         self.startDay = (dateComponents?.day)!
         self.startMonth = (dateComponents?.month)!
@@ -47,19 +47,19 @@ class AddCustomActivityViewController: UIViewController {
     
     @IBAction func saveCustomActivity(sender: AnyObject) {
         
-        let schedule = OCKCareSchedule.weeklyScheduleWithStartDate(self.dateComponents!, occurrencesOnEachDay: [1, 1, 1, 1, 1, 1, 1])
+        let schedule = OCKCareSchedule.weeklySchedule(withStartDate: self.dateComponents! as DateComponents, occurrencesOnEachDay: [1, 1, 1, 1, 1, 1, 1])
         
-        let activity = OCKCarePlanActivity.interventionWithIdentifier(self.activityNameTextField.text!,
+        let activity = OCKCarePlanActivity.intervention(withIdentifier: self.activityNameTextField.text!,
                                                                       groupIdentifier: nil,
                                                                       title: self.activityNameTextField.text!,
                                                                       text: self.activitySubtitleTextField.text!,
-                                                                      tintColor: UIColor.blackColor(),
+                                                                      tintColor: UIColor.black,
                                                                       instructions: self.activityInstructionsTextField.text!,
                                                                       imageURL: nil,
                                                                       schedule: schedule,
                                                                       userInfo: nil)
         
-        self.storeManager.store.addActivity(activity) { (success, error) in
+        self.storeManager.store.add(activity) { (success, error) in
             if error == nil {
                 print("Successfully saved custom activity")
             } else {
@@ -67,11 +67,11 @@ class AddCustomActivityViewController: UIViewController {
             }
         }
         
-        self.dismissViewControllerAnimated(true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
     @IBAction func backToAddActivities(sender: AnyObject) {
         
-        self.dismissViewControllerAnimated(true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
 
     }
 }

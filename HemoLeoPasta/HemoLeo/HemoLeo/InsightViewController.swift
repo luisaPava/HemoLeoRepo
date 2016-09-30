@@ -10,8 +10,8 @@ import UIKit
 import CareKit
 
 class InsightViewController: UINavigationController {
-    private let storeManager: CarePlanStoreManager = CarePlanStoreManager.sharedCarePlanStoreManager
-    private static var insightsViewController: OCKInsightsViewController! = nil
+    let storeManager: CarePlanStoreManager = CarePlanStoreManager.sharedCarePlanStoreManager
+    static var insightsViewController: OCKInsightsViewController! = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +31,7 @@ class InsightViewController: UINavigationController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         if InsightViewController.insightsViewController == nil {
             InsightViewController.insightsViewController = createInsightsViewController()
             

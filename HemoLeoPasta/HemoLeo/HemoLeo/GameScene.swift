@@ -14,14 +14,14 @@ class GameScene: SKScene {
     var lion: SKSpriteNode!
     var lion2: SKSpriteNode!
     var lionMovingFrames: [SKTexture]!
-    let defaults = NSUserDefaults.standardUserDefaults()
+    let defaults = UserDefaults.standard
     var bgImage: SKSpriteNode!
     
-    override func didMoveToView(view: SKView) {
+    override func didMove(to view: SKView) {
         /* Setup your scene here */
 //        backgroundColor = UIColor.clearColor()
         
-        if let image = defaults.stringForKey("background") {
+        if let image = defaults.string(forKey: "background") {
             bgImage = SKSpriteNode(imageNamed: image)
             
         } else {
@@ -29,7 +29,7 @@ class GameScene: SKScene {
             
         }
         
-        bgImage.position = CGPointMake(self.size.width/2, self.size.height/2)
+        bgImage.position = CGPoint(x: self.size.width/2, y: self.size.height/2)
         bgImage.zPosition = -10
         addChild(bgImage)
         
@@ -47,8 +47,8 @@ class GameScene: SKScene {
         let firstFrame = lionMovingFrames[0]
         lion = SKSpriteNode(texture: firstFrame)
         lion.name = "lionLeo"
-        lion.userInteractionEnabled = false
-        lion.position = CGPointMake(self.size.width/2, self.size.height/3)
+        lion.isUserInteractionEnabled = false
+        lion.position = CGPoint(x: self.size.width/2, y: self.size.height/3)
         lion.zPosition = 1
         //lion.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame))
         addChild(lion)
@@ -57,8 +57,8 @@ class GameScene: SKScene {
         moveLionLeo()
     }
     
-    override func willMoveFromView(view: SKView) {
-        if let image = defaults.stringForKey("background") {
+    override func willMove(from view: SKView) {
+        if let image = defaults.string(forKey: "background") {
             bgImage = SKSpriteNode(imageNamed: image)
             
         } else {
@@ -69,8 +69,8 @@ class GameScene: SKScene {
     
     func moveLionLeo() {
         //This is our general runAction method to make our bear walk.
-        lion.runAction(SKAction.repeatActionForever(
-            SKAction.animateWithTextures(lionMovingFrames,
+        lion.run(SKAction.repeatForever(
+            SKAction.animate(with: lionMovingFrames,
                 timePerFrame: 0.12,
                 resize: false,
                 restore: true)),
@@ -78,22 +78,22 @@ class GameScene: SKScene {
     }
     
     func cuddleLeo() {
-        lion.hidden = true
+        lion.isHidden = true
         
-        lion2.runAction(SKAction.repeatAction(SKAction.animateWithTextures(lionMovingFrames,
+        lion2.run(SKAction.repeat(SKAction.animate(with: lionMovingFrames,
             timePerFrame: 0.15,
             resize: false,
             restore: true), count: 1)) {
                 print("Petting ended")
-                self.lion.hidden = false
-                self.lion2.hidden = true
+                self.lion.isHidden = false
+                self.lion2.isHidden = true
         }
     }
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch = touches.first!
-        let touchLocation = touch.locationInNode(self)
-        let touchedNode = self.nodeAtPoint(touchLocation)
+        let touchLocation = touch.location(in: self)
+        let touchedNode = self.atPoint(touchLocation)
         
         if let name = touchedNode.name {
             if name == "lionLeo" {
@@ -112,7 +112,7 @@ class GameScene: SKScene {
                 
                 let firstFrame = lionMovingFrames[0]
                 lion2 = SKSpriteNode(texture: firstFrame)
-                lion2.position = CGPointMake(self.size.width/2, self.size.height/3)
+                lion2.position = CGPoint(x: self.size.width/2, y: self.size.height/3)
                 lion2.zPosition = 1
                 addChild(lion2)
                 cuddleLeo()
@@ -121,10 +121,10 @@ class GameScene: SKScene {
     }
     
     
-    override func update(currentTime: CFTimeInterval) {
-        if defaults.boolForKey("badgeSmart") && !defaults.boolForKey("smartAlreadyShown") && defaults.boolForKey("isGameScene") {
+    override func update(_ currentTime: CFTimeInterval) {
+        if defaults.bool(forKey: "badgeSmart") && !defaults.bool(forKey: "smartAlreadyShown") && defaults.bool(forKey: "isGameScene") {
             print("Badge Complete")
-            defaults.setBool(true, forKey: "smartAlreadyShown")
+            defaults.set(true, forKey: "smartAlreadyShown")
         }
     }
     
@@ -132,6 +132,6 @@ class GameScene: SKScene {
 
 extension GameScene: UIPopoverPresentationControllerDelegate {
     func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle {
-        return UIModalPresentationStyle.None
+        return UIModalPresentationStyle.none
     }
 }

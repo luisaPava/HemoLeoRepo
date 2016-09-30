@@ -57,14 +57,14 @@ class Canvas: UIViewController, UIPopoverPresentationControllerDelegate {
     @IBAction func share(sender: AnyObject) {
         
         UIGraphicsBeginImageContext(mainImageView.bounds.size)
-        mainImageView.image?.drawInRect(CGRect(x: 0, y: 0,
+        mainImageView.image?.draw(in: CGRect(x: 0, y: 0,
             width: mainImageView.frame.size.width, height: mainImageView.frame.size.height))
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         
         let activity = UIActivityViewController(activityItems: [image], applicationActivities: nil)
         activity.popoverPresentationController?.sourceView = self.view
-        presentViewController(activity, animated: true, completion: nil)
+        present(activity, animated: true, completion: nil)
 
     }
     
@@ -88,10 +88,10 @@ class Canvas: UIViewController, UIPopoverPresentationControllerDelegate {
     
     // MARK: Touch handling
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         swiped = false
         if let touch = touches.first as UITouch! {
-            lastPoint = touch.locationInView(self.view)
+            lastPoint = touch.location(in: self.view)
         }
     }
     
@@ -101,20 +101,23 @@ class Canvas: UIViewController, UIPopoverPresentationControllerDelegate {
         // 1
         UIGraphicsBeginImageContext(view.frame.size)
         let context = UIGraphicsGetCurrentContext()
-        tempImageView.image?.drawInRect(CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height))
+        tempImageView.image?.draw(in: CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height))
         
         // 2
-        CGContextMoveToPoint(context, fromPoint.x, fromPoint.y)
-        CGContextAddLineToPoint(context, toPoint.x, toPoint.y)
+//        CGContextMoveToPoint(context, fromPoint.x, fromPoint.y)
+//        CGContextAddLineToPoint(context, toPoint.x, toPoint.y)
+        
+        context?.move(to: CGPoint(x: fromPoint.x, y: fromPoint.y))
+        context?.addLine(to: CGPoint(x: toPoint.x, y: toPoint.y))
         
         // 3
-        CGContextSetLineCap(context, .Round)
-        CGContextSetLineWidth(context, brushWidth)
-        CGContextSetRGBStrokeColor(context, red, green, blue, 1.0)
-        CGContextSetBlendMode(context, .Normal)
+        context!.setLineCap(.round)
+        context!.setLineWidth(brushWidth)
+        context!.setStrokeColor(red: red, green: green, blue: blue, alpha: 1.0)
+        context!.setBlendMode(.normal)
         
         // 4
-        CGContextStrokePath(context)
+        context!.strokePath()
         
         // 5
         tempImageView.image = UIGraphicsGetImageFromCurrentImageContext()
@@ -123,36 +126,36 @@ class Canvas: UIViewController, UIPopoverPresentationControllerDelegate {
         
     }
     
-    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         // 6
         swiped = true
         if let touch = touches.first as UITouch! {
-            let currentPoint = touch.locationInView(view)
-            drawLineFrom(lastPoint, toPoint: currentPoint)
+            let currentPoint = touch.location(in: view)
+            drawLineFrom(fromPoint: lastPoint, toPoint: currentPoint)
             
             // 7
             lastPoint = currentPoint
         }
     }
     
-    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         if !swiped {
             // draw a single point
-            drawLineFrom(lastPoint, toPoint: lastPoint)
+            drawLineFrom(fromPoint: lastPoint, toPoint: lastPoint)
         }
         
         // Merge tempImageView into mainImageView
         UIGraphicsBeginImageContext(mainImageView.frame.size)
-        mainImageView.image?.drawInRect(CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height), blendMode: .Normal, alpha: 1.0)
-        tempImageView.image?.drawInRect(CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height), blendMode: .Normal, alpha: opacity)
+        mainImageView.image?.draw(in: CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height), blendMode: .normal, alpha: 1.0)
+        tempImageView.image?.draw(in: CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height), blendMode: .normal, alpha: opacity)
         mainImageView.image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         
         tempImageView.image = nil
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let settingsViewController = segue.destinationViewController as! SettingViewController
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let settingsViewController = segue.destination as! SettingViewController
         
         settingsViewController.popoverPresentationController?.delegate = self
         settingsViewController.popoverPresentationController?.sourceRect = CGRect(x: 30, y: 70, width: 0, height: 0)
@@ -165,19 +168,21 @@ class Canvas: UIViewController, UIPopoverPresentationControllerDelegate {
     }
     
 
+    
+
     @IBAction func backToMain(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
         
     
     
     func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle {
-        return UIModalPresentationStyle.None
+        return UIModalPresentationStyle.none
     }
     @IBOutlet weak var settings: UIButton!
     @IBAction func toSettings(sender: AnyObject) {
         
-        performSegueWithIdentifier("canvasToSettings", sender: self)
+        performSegue(withIdentifier: "canvasToSettings", sender: self)
     }
     
 }

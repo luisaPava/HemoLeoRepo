@@ -12,11 +12,11 @@ class PageViewCcontroller: UIPageViewController {
     
     // Set an array with the view controllers to be shown
     private(set) lazy var orderedViewControllers: [UIViewController] = {
-        return [self.getViewController("story1"),
-                self.getViewController("story2"),
-                self.getViewController("story3"),
-            self.getViewController("story4") ,
-            self.getViewController("story5")]
+        return [self.getViewController(name: "story1"),
+                self.getViewController(name: "story2"),
+                self.getViewController(name: "story3"),
+            self.getViewController(name: "story4") ,
+            self.getViewController(name: "story5")]
     }()
 
     //MARK: - Life Cycle
@@ -28,7 +28,7 @@ class PageViewCcontroller: UIPageViewController {
         // Load the first view controller
         if let firstViewController = orderedViewControllers.first {
             setViewControllers([firstViewController],
-                                direction: .Reverse,
+                                direction: .reverse,
                                 animated: true,
                                 completion: nil)
         }
@@ -42,29 +42,29 @@ class PageViewCcontroller: UIPageViewController {
     
     // Return the view controller with the identifier received
     private func getViewController(name: String) -> UIViewController {
-        return UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier(name)
+        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: name)
     }
     
     // Change the page control background color
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
-        let subViews: NSArray = view.subviews
+        let subViews: NSArray = view.subviews as NSArray
         var scrollView: UIScrollView? = nil
         var pageControl: UIPageControl? = nil
         
         for view in subViews {
-            if view.isKindOfClass(UIScrollView) {
+            if (view as AnyObject).isKind(UIScrollView) {
                 scrollView = view as? UIScrollView
             }
-            else if view.isKindOfClass(UIPageControl) {
+            else if (view as AnyObject).isKind(UIPageControl.self) {
                 pageControl = view as? UIPageControl
             }
         }
         
         if (scrollView != nil && pageControl != nil) {
             scrollView?.frame = view.bounds
-            view.bringSubviewToFront(pageControl!)
+            view.bringSubview(toFront: pageControl!)
         }
     }
 }
@@ -72,8 +72,9 @@ class PageViewCcontroller: UIPageViewController {
 
 //MARK: - UIPageViewControllerDataSource
 extension PageViewCcontroller: UIPageViewControllerDataSource {
-    func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
-        guard let viewControllerIndex = orderedViewControllers.indexOf(viewController) else {
+    
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
+        guard let viewControllerIndex = orderedViewControllers.index(of: viewController) else {
             return nil
         }
         
@@ -90,8 +91,8 @@ extension PageViewCcontroller: UIPageViewControllerDataSource {
         return orderedViewControllers[previousIndex]
     }
     
-    func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
-        guard let viewControllerIndex = orderedViewControllers.indexOf(viewController) else {
+    override func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+        guard let viewControllerIndex = orderedViewControllers.index(of: viewController) else {
             return nil
         }
         
@@ -115,7 +116,7 @@ extension PageViewCcontroller: UIPageViewControllerDataSource {
     
     func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {
         guard let firstViewController = viewControllers?.first,
-                  firstViewControllerIndex = orderedViewControllers.indexOf(firstViewController) else {
+                  let firstViewControllerIndex = orderedViewControllers.index(of: firstViewController) else {
             return 0
         }
         

@@ -17,7 +17,7 @@ class MainViewController: UIViewController {
     var themesButton: UIButton!
     var insightCardButton: UIButton!
     
-    let defaults = NSUserDefaults.standardUserDefaults()
+    let defaults = UserDefaults.standard
     
     var background: String = "Default"
 
@@ -29,7 +29,7 @@ class MainViewController: UIViewController {
         skView.showsFPS = false
         skView.showsNodeCount = false
         skView.ignoresSiblingOrder = true
-        scene.scaleMode = .ResizeFill
+        scene.scaleMode = .resizeFill
         skView.presentScene(scene)
         
         func prefersStatusBarHidden() -> Bool {
@@ -40,72 +40,72 @@ class MainViewController: UIViewController {
         
         //Button to CareCard
         careCardButton = UIButton(frame: CGRect(x: 934, y: 30, width: 70, height: 70))
-        careCardButton.backgroundColor = UIColor.whiteColor()
-        careCardButton.addTarget(self, action: #selector(careCardButtonAction), forControlEvents: .TouchUpInside)
+        careCardButton.backgroundColor = UIColor.white
+        careCardButton.addTarget(self, action: #selector(careCardButtonAction), for: .touchUpInside)
         careCardButton.layer.cornerRadius = 35
         careCardButton.layer.masksToBounds = true
         careCardButton.layer.zPosition = 1000
         careCardButton.showsTouchWhenHighlighted = false
         careCardButton.reversesTitleShadowWhenHighlighted = false
-        careCardButton.setImage(UIImage(named: "Health"), forState: .Normal)
+        careCardButton.setImage(UIImage(named: "Health"), for: .normal)
         
         self.view.addSubview(careCardButton)
         
         //Button to SymptomCard
         symptomCardButton = UIButton(frame: CGRect(x: 834, y: 30, width: 70, height: 70))
-        symptomCardButton.backgroundColor = UIColor.whiteColor()
-        symptomCardButton.addTarget(self, action: #selector(symptomCardButtonAction), forControlEvents: .TouchUpInside)
+        symptomCardButton.backgroundColor = UIColor.white
+        symptomCardButton.addTarget(self, action: #selector(symptomCardButtonAction), for: .touchUpInside)
         symptomCardButton.layer.cornerRadius = 35
         symptomCardButton.layer.masksToBounds = true
         symptomCardButton.layer.zPosition = 1000
-        symptomCardButton.setImage(UIImage(named: "ActivityCheck"), forState: .Normal)
+        symptomCardButton.setImage(UIImage(named: "ActivityCheck"), for: .normal)
         
         self.view.addSubview(symptomCardButton)
         
         //Button to Canvas
         canvasButton = UIButton(frame: CGRect(x: 30, y: 30, width: 70, height: 70))
-        canvasButton.backgroundColor = UIColor.whiteColor()
-        canvasButton.addTarget(self, action: #selector(canvasButtonAction), forControlEvents: .TouchUpInside)
+        canvasButton.backgroundColor = UIColor.white
+        canvasButton.addTarget(self, action: #selector(canvasButtonAction), for: .touchUpInside)
         canvasButton.layer.cornerRadius = 35
         canvasButton.layer.masksToBounds = true
         canvasButton.layer.zPosition = 1000
-        canvasButton.setImage(UIImage(named: "Canvas"), forState: .Normal)
+        canvasButton.setImage(UIImage(named: "Canvas"), for: .normal)
         
         self.view.addSubview(canvasButton)
         
         //Button to Themes
         themesButton = UIButton(frame: CGRect(x: 130, y: 30, width: 70, height: 70))
-        themesButton.backgroundColor = UIColor.whiteColor()
-        themesButton.addTarget(self, action: #selector(themesButtonAction), forControlEvents: .TouchUpInside)
+        themesButton.backgroundColor = UIColor.white
+        themesButton.addTarget(self, action: #selector(themesButtonAction), for: .touchUpInside)
         themesButton.layer.cornerRadius = 35
         themesButton.layer.masksToBounds = true
         themesButton.layer.zPosition = 1000
-        themesButton.setImage(UIImage(named: "Botao Temas"), forState: .Normal)
+        themesButton.setImage(UIImage(named: "Botao Temas"), for: .normal)
         
         self.view.addSubview(themesButton)
         
         //Button to InsightCard
         insightCardButton = UIButton(frame: CGRect(x: 734, y: 30, width: 70, height: 70))
-        insightCardButton.backgroundColor = UIColor.whiteColor()
-        insightCardButton.addTarget(self, action: #selector(insightCardButtonAction), forControlEvents: .TouchUpInside)
+        insightCardButton.backgroundColor = UIColor.white
+        insightCardButton.addTarget(self, action: #selector(insightCardButtonAction), for: .touchUpInside)
         insightCardButton.layer.cornerRadius = 35
         insightCardButton.layer.masksToBounds = true
         insightCardButton.layer.zPosition = 1000
-        insightCardButton.setImage(UIImage(named: "Insight"), forState: .Normal)
+        insightCardButton.setImage(UIImage(named: "Insight"), for: .normal)
         
         self.view.addSubview(insightCardButton)
 
         
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         print(#function)
         let scene = GameScene(size: view.bounds.size)
         let skView = view as! SKView
         skView.showsFPS = false
         skView.showsNodeCount = false
         skView.ignoresSiblingOrder = true
-        scene.scaleMode = .ResizeFill
+        scene.scaleMode = .resizeFill
         skView.presentScene(scene)
     }
     
@@ -118,10 +118,10 @@ class MainViewController: UIViewController {
     }
     
     override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
-        if UIDevice.currentDevice().userInterfaceIdiom == .Phone {
-            return .AllButUpsideDown
+        if UIDevice.current.userInterfaceIdiom == .phone {
+            return .allButUpsideDown
         } else {
-            return .All
+            return .all
         }
     }
 
@@ -140,65 +140,66 @@ class MainViewController: UIViewController {
     
     //Care Card button action
     func careCardButtonAction() {
-        let popoverViewController = self.storyboard?.instantiateViewControllerWithIdentifier("CareCard") as! CareCardViewController
-        popoverViewController.modalPresentationStyle = .Popover
+        let popoverViewController = self.storyboard?.instantiateViewController(withIdentifier: "CareCard") as! CareCardViewController
+        popoverViewController.modalPresentationStyle = .popover
         
         let popoverPresentationViewController = popoverViewController.popoverPresentationController
         
-        popoverPresentationViewController?.permittedArrowDirections = UIPopoverArrowDirection.Up
+        popoverPresentationViewController?.permittedArrowDirections = UIPopoverArrowDirection.up
         popoverPresentationViewController?.delegate = self
         popoverPresentationViewController?.sourceView = self.careCardButton
-        popoverPresentationViewController?.sourceRect = CGRectMake(careCardButton.frame.width / 2, careCardButton.frame.height, 0, 0)
+        popoverPresentationViewController?.sourceRect = CGRect(x: careCardButton.frame.width / 2, y: careCardButton.frame.height, width: 0, height: 0)
         
-        ButtonAnimation.addButtonPressAnimationToView(careCardButton)
         
-        presentViewController(popoverViewController, animated: true, completion: nil)
+        ButtonAnimation.addButtonPressAnimationToView(viewToAnimate: careCardButton)
+        
+        present(popoverViewController, animated: true, completion: nil)
     }
     
     //Symptom Card button action
     func symptomCardButtonAction() {
-        let popoverViewController = self.storyboard?.instantiateViewControllerWithIdentifier("SymptomCard") as! SymptomCardViewController
-        popoverViewController.modalPresentationStyle = .Popover
+        let popoverViewController = self.storyboard?.instantiateViewController(withIdentifier: "SymptomCard") as! SymptomCardViewController
+        popoverViewController.modalPresentationStyle = .popover
         
         let popoverPresentationViewController = popoverViewController.popoverPresentationController
         
-        popoverPresentationViewController?.permittedArrowDirections = UIPopoverArrowDirection.Up
+        popoverPresentationViewController?.permittedArrowDirections = UIPopoverArrowDirection.up
         popoverPresentationViewController?.delegate = self
         popoverPresentationViewController?.sourceView = self.symptomCardButton
-        popoverPresentationViewController?.sourceRect = CGRectMake(symptomCardButton.frame.width / 2, symptomCardButton.frame.height, 0, 0)
+        popoverPresentationViewController?.sourceRect = CGRect(x: symptomCardButton.frame.width / 2, y: symptomCardButton.frame.height, width: 0, height: 0)
         
-        ButtonAnimation.addButtonPressAnimationToView(symptomCardButton)
+        ButtonAnimation.addButtonPressAnimationToView(viewToAnimate: symptomCardButton)
         
-        presentViewController(popoverViewController, animated: true, completion: nil)
+        present(popoverViewController, animated: true, completion: nil)
     }
     
     //Insight Card button action
     func insightCardButtonAction() {
-        let popoverViewController = self.storyboard?.instantiateViewControllerWithIdentifier("InsightCard") as! InsightViewController
-        popoverViewController.modalPresentationStyle = .Popover
+        let popoverViewController = self.storyboard?.instantiateViewController(withIdentifier: "InsightCard") as! InsightViewController
+        popoverViewController.modalPresentationStyle = .popover
         
         let popoverPresentationViewController = popoverViewController.popoverPresentationController
         
-        popoverPresentationViewController?.permittedArrowDirections = UIPopoverArrowDirection.Up
+        popoverPresentationViewController?.permittedArrowDirections = UIPopoverArrowDirection.up
         popoverPresentationViewController?.delegate = self
         popoverPresentationViewController?.sourceView = self.insightCardButton
-        popoverPresentationViewController?.sourceRect = CGRectMake(insightCardButton.frame.width / 2, insightCardButton.frame.height, 0, 0)
+        popoverPresentationViewController?.sourceRect = CGRect(x: insightCardButton.frame.width / 2, y: insightCardButton.frame.height, width: 0, height: 0)
         
-        ButtonAnimation.addButtonPressAnimationToView(insightCardButton)
+        ButtonAnimation.addButtonPressAnimationToView(viewToAnimate: insightCardButton)
         
-        presentViewController(popoverViewController, animated: true, completion: nil)
+        present(popoverViewController, animated: true, completion: nil)
     }
     
     //Canvas button action
     func canvasButtonAction() {
-        ButtonAnimation.addButtonPressAnimationToView(canvasButton)
-        performSegueWithIdentifier("mainToCanvas", sender: self)
+        ButtonAnimation.addButtonPressAnimationToView(viewToAnimate: canvasButton)
+        performSegue(withIdentifier: "mainToCanvas", sender: self)
     }
     
     //Theme button action
     func themesButtonAction() {
-        ButtonAnimation.addButtonPressAnimationToView(themesButton)
-        performSegueWithIdentifier("mainToThemes", sender: self)
+        ButtonAnimation.addButtonPressAnimationToView(viewToAnimate: themesButton)
+        performSegue(withIdentifier: "mainToThemes", sender: self)
     }
     
 }
@@ -206,6 +207,6 @@ class MainViewController: UIViewController {
 //MARK: - UIPopoverPresentationControllerDelegate
 extension MainViewController: UIPopoverPresentationControllerDelegate {
     func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle {
-        return UIModalPresentationStyle.None
+        return UIModalPresentationStyle.none
     }
 }
