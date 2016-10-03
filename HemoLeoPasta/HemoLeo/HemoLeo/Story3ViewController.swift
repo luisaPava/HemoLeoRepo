@@ -10,7 +10,7 @@ import UIKit
 
 class Story3ViewController: UIViewController {
     
-    var timer = NSTimer()
+    var timer = Timer()
     
     
     @IBOutlet weak var storyView: Storytelling3View!
@@ -19,7 +19,7 @@ class Story3ViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        timer = NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: #selector(animation), userInfo: nil, repeats: false)
+        timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(animation), userInfo: nil, repeats: false)
         
         // Do any additional setup after loading the view.
         //        animation()

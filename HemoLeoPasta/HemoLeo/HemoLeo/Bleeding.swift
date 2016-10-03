@@ -16,19 +16,19 @@ class Bleeding: Assessment {
     func carePlanActivity() -> OCKCarePlanActivity {
         //Create a weekly schedule
         let startDate = NSDateComponents(year: 2016, month: 01, day: 01)
-        let schedule = OCKCareSchedule.weeklyScheduleWithStartDate(startDate, occurrencesOnEachDay: [1, 1, 1, 1, 1, 1, 1])
+        let schedule = OCKCareSchedule.weeklySchedule(withStartDate: startDate as DateComponents, occurrencesOnEachDay: [1, 1, 1, 1, 1, 1, 1])
         
         //Get the localized strungs to use in the assessment
         let title = NSLocalizedString("Sangramento", comment: "")
         let summary = NSLocalizedString("", comment: "")
         
         //Create the activity
-        let activity = OCKCarePlanActivity.assessmentWithIdentifier(
-            activityType.rawValue,
+        let activity = OCKCarePlanActivity.assessment(
+            withIdentifier: activityType.rawValue,
             groupIdentifier: nil,
             title: title,
             text: summary,
-            tintColor: UIColor.brownColor(),
+            tintColor: UIColor.brown,
             resultResettable: true,
             schedule: schedule,
             userInfo: nil
@@ -51,37 +51,37 @@ class Bleeding: Assessment {
             ORKImageChoice(
                 normalImage: UIImage(named: "Boca gray")!,
                 selectedImage: UIImage(named: "Boca highlighted")!,
-                text: "", value: "Boca"
+                text: "", value: "Boca" as NSCoding & NSCopying & NSObjectProtocol
             ),
             ORKImageChoice(
                 normalImage: UIImage(named: "Garganta gray"),
                 selectedImage: UIImage(named: "Garganta highlighted"),
-                text: "", value: "Garganta"
+                text: "", value: "Garganta" as NSCoding & NSCopying & NSObjectProtocol
             ),
             ORKImageChoice(
                 normalImage: UIImage(named: "Gastro gray"),
                 selectedImage: UIImage(named: "Gastro highlighted"),
-                text: "", value: "Gastro"
+                text: "", value: "Gastro" as NSCoding & NSCopying & NSObjectProtocol
             ),
             ORKImageChoice(
                 normalImage: UIImage(named: "Nariz gray"),
                 selectedImage: UIImage(named: "Nariz highlighted"),
-                text: "", value: "Nariz"
+                text: "", value: "Nariz" as NSCoding & NSCopying & NSObjectProtocol
             ),
             ORKImageChoice(
                 normalImage: UIImage(named: "Olho gray"),
                 selectedImage: UIImage(named: "Olho highlighted"),
-                text: "", value: "Olho"
+                text: "", value: "Olho" as NSCoding & NSCopying & NSObjectProtocol
             ),
             ORKImageChoice(
                 normalImage: UIImage(named: "Urinario gray"),
                 selectedImage: UIImage(named: "Urinario highlighted"),
-                text: "", value: "Urinario"
+                text: "", value: "Urinario" as NSCoding & NSCopying & NSObjectProtocol
             )]
         
-        let bleedingAnswerFormat: ORKImageChoiceAnswerFormat = ORKAnswerFormat.choiceAnswerFormatWithImageChoices(imageChoices)
+        let bleedingAnswerFormat: ORKImageChoiceAnswerFormat = ORKAnswerFormat.choiceAnswerFormat(with: imageChoices)
         let bleedingQuestionStep = ORKQuestionStep(identifier: "ImageChoiceQuestionStep", title: bleedingQuestionStepTitle, answer: bleedingAnswerFormat)
-        bleedingQuestionStep.optional = false
+        bleedingQuestionStep.isOptional = false
         
         steps += [bleedingQuestionStep]
         
@@ -98,7 +98,7 @@ class Bleeding: Assessment {
         
         let bleedingLevelQuestionStepTitle = "Qual o nível do seu sangramento?"
         let bleedingLevelQuestionStep = ORKQuestionStep(identifier: "BleedingLevelQuestionStep", title: bleedingLevelQuestionStepTitle, answer: bleedingLevelAnswerFormat)
-        bleedingLevelQuestionStep.optional = false
+        bleedingLevelQuestionStep.isOptional = false
         
         steps += [bleedingLevelQuestionStep]
         

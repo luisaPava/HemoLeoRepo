@@ -49,12 +49,12 @@ class OccurenciesViewController: UIViewController {
         cellDescriptor.append(cells(additionalRows: 1, cellIdentifier: "idCellNormal", isExpandable: true, isExpanded: true, isVisible: true, primaryTitle: "Domingo", secondaryTitle: "", value: ""))
         cellDescriptor.append(cellSlider)
         
-        tableView = UITableView(frame: CGRectMake(0, 100, 400, 450), style: .Plain)
+        tableView = UITableView(frame: CGRect(x: 0, y: 100, width: 400, height: 450), style: .plain)
         tableView.delegate = self
         tableView.dataSource = self
         tableView.rowHeight = 70
-        tableView.registerNib(UINib(nibName: "CustomActivityCell", bundle: nil), forCellReuseIdentifier: "idCellNormal")
-        tableView.registerNib(UINib(nibName: "SliderCell", bundle: nil), forCellReuseIdentifier: "idCellSlider")
+        tableView.register(UINib(nibName: "CustomActivityCell", bundle: nil), forCellReuseIdentifier: "idCellNormal")
+        tableView.register(UINib(nibName: "SliderCell", bundle: nil), forCellReuseIdentifier: "idCellSlider")
         tableView.clipsToBounds = true
 
         
@@ -76,21 +76,21 @@ class OccurenciesViewController: UIViewController {
         
         switch activity {
         case 3:
-            instanceOfActivity = Exercise().carePlanActivityCustom(occurences)
+            instanceOfActivity = Exercise().carePlanActivityCustom(customOccurencies: occurences)
             
         case 4:
-            instanceOfActivity = Fisiotherapy().carePlanActivityCustom(occurences)
+            instanceOfActivity = Fisiotherapy().carePlanActivityCustom(customOccurencies: occurences)
             
         case 5:
-            instanceOfActivity = Shot().carePlanActivityCustom(occurences)
+            instanceOfActivity = Shot().carePlanActivityCustom(customOccurencies: occurences)
         default:
             break
         }
         
         if let activity = activity {
-            self.storeManager.store.addActivity(instanceOfActivity) { (success, error) in
+            self.storeManager.store.add(instanceOfActivity) { (success, error) in
                 if (error != nil) {
-                    print("An error occurred when adding a new Activity: \(error?.debugDescription)")
+                    print("An error occurred when adding a new Activity: \(error.debugDescription)")
                 }
             }
             
@@ -98,24 +98,24 @@ class OccurenciesViewController: UIViewController {
 
             
             // Saves the 'to add' activity to 'addedActivities' coding and array.
-            self.codingManager.saveAddedActivitiesData(activities)
+            self.codingManager.saveAddedActivitiesData(activities: activities)
             
             // Removes the selected 'to add' activity from its coding and array.
-            self.codingManager.saveToAddActivitiesData(activities)
+            self.codingManager.saveToAddActivitiesData(activities: activities)
 //            print(button)
-            button.selected = true
+            button.isSelected = true
         }
         
-        dismissViewControllerAnimated(true, completion: nil)
+        dismiss(animated: true, completion: nil)
         
     }
 }
 
 //MARK: - Table View Delegate
 extension OccurenciesViewController: UITableViewDelegate {
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cellName = visibleCell[indexPath.row].primaryTitle
-        let indexCellDescriptor = getIndexDescriptor(cellName)
+        let indexCellDescriptor = getIndexDescriptor(name: cellName)
 //        var cell =
         
         if visibleCell[indexPath.row].isExpandable {
@@ -140,7 +140,7 @@ extension OccurenciesViewController: UITableViewDelegate {
     //Get the index of a cell in the cellDecriptor array
     func getIndexDescriptor(name: String) -> Int {
         for cell in cellDescriptor where cell.primaryTitle == name {
-            return cellDescriptor.indexOf(cell)!
+            return cellDescriptor.index(of: cell)!
         }
         
         return -1
@@ -161,22 +161,48 @@ extension OccurenciesViewController: UITableViewDelegate {
 
 //MARK: - Table View Data Source
 extension OccurenciesViewController: UITableViewDataSource {
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    @available(iOS 2.0, *)
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell: CustomActivityCell
         let cellName = visibleCell[indexPath.row].primaryTitle
-        let indexCellDescriptor = getIndexDescriptor(cellName)
+        let indexCellDescriptor = getIndexDescriptor(name: cellName)
         
         if visibleCell[indexPath.row].cellIdentifier == "idCellNormal" {
-            cell = tableView.dequeueReusableCellWithIdentifier("idCellNormal", forIndexPath: indexPath) as! CustomActivityCell
+            cell = tableView.dequeueReusableCell(withIdentifier: "idCellNormal", for: indexPath as IndexPath) as! CustomActivityCell
             
             
             cell.labelNome.text = visibleCell[indexPath.row].primaryTitle
             cell.ocurrencesLabel.text = cellDescriptor[indexCellDescriptor + 1].value
-            cell.check.hidden = visibleCell[indexPath.row].buttonHidden
+            cell.check.isHidden = visibleCell[indexPath.row].buttonHidden
             
         } else {
             currentCell = visibleCell[indexPath.row - 1].primaryTitle
-            cell = tableView.dequeueReusableCellWithIdentifier("idCellSlider", forIndexPath: indexPath) as! CustomActivityCell
+            cell = tableView.dequeueReusableCell(withIdentifier: "idCellSlider", for: indexPath as IndexPath) as! CustomActivityCell
+            
+        }
+        
+        cell.delegate = self
+        
+        return cell
+        
+    }
+
+    @nonobjc func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: IndexPath) -> UITableViewCell {
+        var cell: CustomActivityCell
+        let cellName = visibleCell[indexPath.row].primaryTitle
+        let indexCellDescriptor = getIndexDescriptor(name: cellName)
+        
+        if visibleCell[indexPath.row].cellIdentifier == "idCellNormal" {
+            cell = tableView.dequeueReusableCell(withIdentifier: "idCellNormal", for: indexPath as IndexPath) as! CustomActivityCell
+            
+            
+            cell.labelNome.text = visibleCell[indexPath.row].primaryTitle
+            cell.ocurrencesLabel.text = cellDescriptor[indexCellDescriptor + 1].value
+            cell.check.isHidden = visibleCell[indexPath.row].buttonHidden
+            
+        } else {
+            currentCell = visibleCell[indexPath.row - 1].primaryTitle
+            cell = tableView.dequeueReusableCell(withIdentifier: "idCellSlider", for: indexPath as IndexPath) as! CustomActivityCell
 
         }
         
@@ -185,7 +211,7 @@ extension OccurenciesViewController: UITableViewDataSource {
         return cell
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return visibleCell.count
         
     }
@@ -194,8 +220,8 @@ extension OccurenciesViewController: UITableViewDataSource {
 //MARK: - Custom Cell Delegate
 extension OccurenciesViewController: CustomCellDelegate {
     func sliderDidChangeValue(newSliderValue: String) {
-        let indexCellDescriptor = getIndexDescriptor(currentCell)
-        let index = getIndexOccurences(cellDescriptor[indexCellDescriptor].primaryTitle)
+        let indexCellDescriptor = getIndexDescriptor(name: currentCell)
+        let index = getIndexOccurences(day: cellDescriptor[indexCellDescriptor].primaryTitle)
         
         cellDescriptor[indexCellDescriptor + 1].value = newSliderValue
         occurences[index] = Int(newSliderValue)!

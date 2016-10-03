@@ -17,11 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        let defaults = NSUserDefaults.standardUserDefaults()
+        let defaults = UserDefaults.standard
         
 //        if !defaults.boolForKey("firstLaunch") {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let initialViewController = storyboard.instantiateViewControllerWithIdentifier("pageViewController") as! PageViewCcontroller
+            let initialViewController = storyboard.instantiateViewController(withIdentifier: "pageViewController") as! PageViewCcontroller
         
             self.window?.rootViewController = initialViewController
             self.window?.makeKeyAndVisible()

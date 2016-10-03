@@ -17,21 +17,21 @@ class AddActivityViewController: UIViewController {
     @IBOutlet weak var fisiotherapyBtn: UIButton!
     @IBOutlet weak var shotBtn: UIButton!
     
-    private var activities: Array<Bool> = []
-    private var senderActivity: Int!
-    private var buttons: Array<UIButton> = []
-    private var selectedButton: UIButton!
+    var activities: Array<Bool> = []
+    var senderActivity: Int!
+    var buttons: Array<UIButton> = []
+    var selectedButton: UIButton!
     
     //MARK: - Managers
-    private let storeManager: CarePlanStoreManager = CarePlanStoreManager.sharedCarePlanStoreManager
-    private let codingManager: NSCodingManager = NSCodingManager.sharedNSCodingManager
+    let storeManager: CarePlanStoreManager = CarePlanStoreManager.sharedCarePlanStoreManager
+    let codingManager: NSCodingManager = NSCodingManager.sharedNSCodingManager
 //    private let transitionManager = TransitionDelegate()
     
     //MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.navigationBar.translucent = false
+        self.navigationController?.navigationBar.isTranslucent = false
         
 //        self.transitioningDelegate = transitionManager
         
@@ -39,11 +39,11 @@ class AddActivityViewController: UIViewController {
         buttons += [vegetableBtn, fruitsBtn, waterBtn, exerciseBtn, fisiotherapyBtn, shotBtn]
         
         // Loads default Activities if it's the app's first launch
-        let defaults = NSUserDefaults.standardUserDefaults()
+        let defaults = UserDefaults.standard
         
-        if !defaults.boolForKey("loadedDefaultCareCardData") {
+        if !defaults.bool(forKey: "loadedDefaultCareCardData") {
             loadDefaultActivities()
-            defaults.setBool(true, forKey: "loadedDefaultCareCardData")
+            defaults.set(true, forKey: "loadedDefaultCareCardData")
         } else {
             self.activities = codingManager.loadToAddActivitiesData()!
         }
@@ -59,7 +59,7 @@ class AddActivityViewController: UIViewController {
     }
     
     @IBAction func doneBtn(sender: AnyObject) {
-        self.dismissViewControllerAnimated(false, completion: nil)
+        self.dismiss(animated: false, completion: nil)
     }
 }
 
@@ -96,20 +96,20 @@ extension AddActivityViewController {
             }
             
             if let activity = activity {
-                self.storeManager.store.removeActivity(activity) { (success, error) in
+                self.storeManager.store.remove(activity) { (success, error) in
                     if (error != nil) {
-                        print("An error occurred when removing the Activity: \(error?.debugDescription)")
+                        print("An error occurred when removing the Activity: \(error.debugDescription)")
                     }
                 }
                 
                 self.activities[key] = false
-                sender.selected = false
+                sender.isSelected = false
                 
                 // Saves the 'added' activity to 'activities' coding and array.
-                self.codingManager.saveToAddActivitiesData(activities)
+                self.codingManager.saveToAddActivitiesData(activities: activities)
                 
                 // Removes the selected 'added' activity from its coding and array.
-                self.codingManager.saveAddedActivitiesData(activities)
+                self.codingManager.saveAddedActivitiesData(activities: activities)
             }
             
         } else {
@@ -125,42 +125,42 @@ extension AddActivityViewController {
                 
             case 3:
                 senderActivity = 3
-                performSegueWithIdentifier("activitiesToOccurencies", sender: self)
+                performSegue(withIdentifier: "activitiesToOccurencies", sender: self)
                 
             case 4:
                 senderActivity = 4
-                performSegueWithIdentifier("activitiesToOccurencies", sender: self)
+                performSegue(withIdentifier: "activitiesToOccurencies", sender: self)
                 
             case 5:
                 senderActivity = 5
-                performSegueWithIdentifier("activitiesToOccurencies", sender: self)
+                performSegue(withIdentifier: "activitiesToOccurencies", sender: self)
                 
             default:
                 break
             }
             
             if let activity = activity {
-                self.storeManager.store.addActivity(activity) { (success, error) in
+                self.storeManager.store.add(activity) { (success, error) in
                     if (error != nil) {
-                        print("An error occurred when adding a new Activity: \(error?.debugDescription)")
+                        print("An error occurred when adding a new Activity: \(error.debugDescription)")
                     }
                 }
                 
-                sender.selected = true
+                sender.isSelected = true
                 self.activities[key] = true
                 
                 // Saves the 'to add' activity to 'addedActivities' coding and array.
-                self.codingManager.saveAddedActivitiesData(activities)
+                self.codingManager.saveAddedActivitiesData(activities: activities)
                 
                 // Removes the selected 'to add' activity from its coding and array.
-                self.codingManager.saveToAddActivitiesData(activities)
+                self.codingManager.saveToAddActivitiesData(activities: activities)
             }
         }
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "activitiesToOccurencies" {
-            if let destinationVC = segue.destinationViewController as? OccurenciesViewController {
+            if let destinationVC = segue.destination as? OccurenciesViewController {
                 destinationVC.activity = senderActivity
                 destinationVC.button = selectedButton
                 
@@ -176,13 +176,13 @@ extension AddActivityViewController {
             self.activities.append(false)
         }
         
-        codingManager.saveToAddActivitiesData(activities)
+        codingManager.saveToAddActivitiesData(activities: activities)
     }
     
     //MARK: - Other methods
     func setButtons() {
         for i in 0..<activities.count {
-            buttons[i].selected = activities[i]
+            buttons[i].isSelected = activities[i]
         }
     }
 }

@@ -24,11 +24,11 @@ class ThemesViewController: UIViewController, UICollectionViewDelegate, UICollec
         super.viewDidLoad()
         
         view.backgroundColor = UIColor(patternImage: UIImage(named: "greenBackground")!)
-        collectionView.backgroundColor = UIColor.clearColor()
+        collectionView.backgroundColor = UIColor.clear
 
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         //collectionView.backgroundColor = UIColor.clearColor()
         //super.viewDidAppear(animated)
         if cellPos != nil{
@@ -53,21 +53,21 @@ class ThemesViewController: UIViewController, UICollectionViewDelegate, UICollec
     }
     
     @IBAction func back(sender: AnyObject) {
-                dismissViewControllerAnimated(true, completion: nil)
+                dismiss(animated: true, completion: nil)
     }
     
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         print(themes.count)
         return self.themes.count
     }
     
     
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! ThemesCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath as IndexPath) as! ThemesCollectionViewCell
         
         cell.imageView?.image = themes[indexPath.row]
-        cell.backgroundColor = UIColor.clearColor()
+        cell.backgroundColor = UIColor.clear
         
         return cell
     }
@@ -75,40 +75,40 @@ class ThemesViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         index = indexPath.row
-        let cell = collectionView.cellForItemAtIndexPath(indexPath) as! ThemesCollectionViewCell
+        let cell = collectionView.cellForItem(at: indexPath as IndexPath) as! ThemesCollectionViewCell
         image = UIImageView(image: cell.imageView.image)
         image.frame.size = cell.frame.size
-        image.frame.origin = view.convertPoint(cell.frame.origin, fromView: collectionView)
+        image.frame.origin = view.convert(cell.frame.origin, from: collectionView)
         view.addSubview(image)
         cellPos = image.center
         
         //let fadeOut = UIAnimation.fadeOutWithDuration(0.2)
-        let movement = UIAnimation.moveTo(CGPointMake(view.frame.width/2, view.frame.height/2), duration: 0.8)
+        let movement = UIAnimation.moveTo(point: CGPoint(x: view.frame.width/2, y: view.frame.height/2), duration: 0.8)
         
         let doMovement = UIAnimation.runBlock {
-            UIView.animateWithDuration(1, animations: {
-                self.image.transform = CGAffineTransformScale(self.image.transform, 1.5, 1.5)
+            UIView.animate(withDuration: 1, animations: {
+                self.image.transform = self.image.transform.scaledBy(x: 1.5, y: 1.5)
             })
-            self.image.runAnimation(movement)
+            self.image.runAnimation(animation: movement)
             
         }
         
         //let sequence = UIAnimation.sequence([fadeOut,doMovement])
-        let sequence = UIAnimation.sequence([doMovement])
+        let sequence = UIAnimation.sequence(animations: [doMovement])
         
         //collectionView.runAnimation(sequence)
         
-        collectionView.runAnimation(sequence, completion:  { finished in
-            self.performSegueWithIdentifier("toSelectTheme", sender: self)
+        collectionView.runAnimation(animation: sequence, completion:  { finished in
+            self.performSegue(withIdentifier: "toSelectTheme", sender: self)
         })
         
         //self.performSegueWithIdentifier("toSelectTheme", sender: self)
         
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "toSelectTheme") {
-            let vc = segue.destinationViewController as! SelectThemeViewController
+            let vc = segue.destination as! SelectThemeViewController
             vc.imageToSend = themesNames[index]
             //vc.previousVC = self
 //            vc.previousVC = MainViewController()

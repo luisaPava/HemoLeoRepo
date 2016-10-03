@@ -12,9 +12,9 @@ import UIKit
 
     // MARK: Inspectable properties ******************************
     
-    @IBInspectable var startColor: UIColor = UIColor.whiteColor() {didSet{setupView()}
+    @IBInspectable var startColor: UIColor = UIColor.white {didSet{setupView()}
     }
-    @IBInspectable var endColor: UIColor = UIColor.blackColor() {didSet{setupView()}
+    @IBInspectable var endColor: UIColor = UIColor.black {didSet{setupView()}
     }
     @IBInspectable var isHorizontal: Bool = false
         {didSet{setupView()}
@@ -28,7 +28,7 @@ import UIKit
     // Setup the view appearance
     private func setupView(){
         
-        let colors:Array = [startColor.CGColor, endColor.CGColor]
+        let colors:Array = [startColor.cgColor, endColor.cgColor]
         gradientLayer.colors = colors
         gradientLayer.cornerRadius = roundness
         
@@ -49,7 +49,7 @@ import UIKit
     
     // MARK: Overrides ******************************************
     
-    override class func layerClass()->AnyClass{
+    var  layerClass: AnyClass{
         return CAGradientLayer.self
     }
     

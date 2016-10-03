@@ -29,18 +29,18 @@ class SelectThemeViewController: UIViewController {
     
     @IBAction func backButtonPressed(sender: AnyObject) {
         
-        self.dismissViewControllerAnimated(false, completion: nil)
+        self.dismiss(animated: false, completion: nil)
         
     }
     
     @IBAction func applyButtonPressed(sender: AnyObject) {
-        let defaults = NSUserDefaults.standardUserDefaults()
-        defaults.setObject(imageToSend, forKey: "background")
+        let defaults = UserDefaults.standard
+        defaults.set(imageToSend, forKey: "background")
         
         let presentingViewController: UIViewController! = self.presentingViewController
         
-        self.dismissViewControllerAnimated(false) {
-            presentingViewController.dismissViewControllerAnimated(false, completion: nil)
+        self.dismiss(animated: false) {
+            presentingViewController.dismiss(animated: false, completion: nil)
                     
         }
     }

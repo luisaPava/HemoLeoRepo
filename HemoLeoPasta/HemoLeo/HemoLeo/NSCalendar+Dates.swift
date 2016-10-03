@@ -36,9 +36,10 @@ extension Calendar {
         specified date falls in.
      */
     func weekDatesForDate(date: NSDate) -> (start: NSDate, end: NSDate) {
-        var interval: TimeInterval = 0
-        var start: NSDate?
+        let interval: TimeInterval = 0
+        let start: NSDate?
         range(of: .weekOfYear, start: &start, interval: &interval, for: date as Date)
+        
         let end = start!.addingTimeInterval(interval)
         
         return (start!, end)

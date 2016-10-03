@@ -19,15 +19,15 @@ class NSCodingManager: NSObject {
     // MARK: NSCoding
     
     func loadAddedActivitiesData() -> [Bool]? {
-        return NSKeyedUnarchiver.unarchiveObjectWithFile(AddedActivitiesData.ArchiveURL.path!) as? [Bool]
+        return NSKeyedUnarchiver.unarchiveObject(withFile: AddedActivitiesData.ArchiveURL.path) as? [Bool]
     }
     
     func loadToAddActivitiesData() -> [Bool]? {
-        return NSKeyedUnarchiver.unarchiveObjectWithFile(ToAddActivitiesData.ArchiveURL.path!) as? [Bool]
+        return NSKeyedUnarchiver.unarchiveObject(withFile: ToAddActivitiesData.ArchiveURL.path) as? [Bool]
     }
     
     func saveAddedActivitiesData(activities: Array<Bool>) {
-        let isSuccessfullSave = NSKeyedArchiver.archiveRootObject(activities, toFile: AddedActivitiesData.ArchiveURL.path!)
+        let isSuccessfullSave = NSKeyedArchiver.archiveRootObject(activities, toFile: AddedActivitiesData.ArchiveURL.path)
         
         if !isSuccessfullSave {
             print("Failed to save 'added' activities...")
@@ -35,7 +35,7 @@ class NSCodingManager: NSObject {
     }
     
     func saveToAddActivitiesData(activities: Array<Bool>) {
-        let isSuccessfullSave = NSKeyedArchiver.archiveRootObject(activities, toFile: ToAddActivitiesData.ArchiveURL.path!)
+        let isSuccessfullSave = NSKeyedArchiver.archiveRootObject(activities, toFile: ToAddActivitiesData.ArchiveURL.path)
         
         if !isSuccessfullSave {
             print("Failed to save 'to add' activities...")

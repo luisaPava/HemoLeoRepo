@@ -12,12 +12,13 @@ struct AddedActivitiesPropertyKey {
     static let activity: String = "addedActivity"
 }
 
-class AddedActivitiesData: NSObject, NSCoding {
+class AddedActivitiesData: NSObject {
     // MARK: Properties
     var activity: Dictionary<String, Bool>?
     
-    static let DocumentsDirectory = NSFileManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask).first!
-    static let ArchiveURL = DocumentsDirectory.URLByAppendingPathComponent("addedActivities")
+    static var DocumentsDirectory = FileManager().urls(for: .documentDirectory, in: .userDomainMask).first!
+//    static let ArchiveURL = DocumentsDirectory.URLByAppendingPathComponent("addedActivities")
+    static let ArchiveURL = DocumentsDirectory.appendingPathComponent("addedActivities")
     
     // MARK: Initialization
     init(activityName: String) {
@@ -29,11 +30,11 @@ class AddedActivitiesData: NSObject, NSCoding {
     
     // MARK: NSCoding
     func encodeWithCoder(aCoder: NSCoder) {
-        aCoder.encodeObject(activity, forKey: AddedActivitiesPropertyKey.activity)
+        aCoder.encode(activity, forKey: AddedActivitiesPropertyKey.activity)
     }
     
     required convenience init?(coder aDecoder: NSCoder) {
-        let activity = aDecoder.decodeObjectForKey(AddedActivitiesPropertyKey.activity) as! String
+        let activity = aDecoder.decodeObject(forKey: AddedActivitiesPropertyKey.activity) as! String
         
         // Must call designated initializer.
         self.init(activityName: activity)

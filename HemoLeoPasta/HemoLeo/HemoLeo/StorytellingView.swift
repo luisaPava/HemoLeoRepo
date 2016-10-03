@@ -5,10 +5,10 @@
 //// DO NOT MODIFY THIS FILE. IT IS AUTO-GENERATED AND WILL BE OVERWRITTEN
 ////
 //
-//import UIKit
+import UIKit
 //
-//@IBDesignable
-//class StorytellingView : UIView {
+@IBDesignable
+class StorytellingView : UIView {
 //
 //
 //	var animationCompletions = Dictionary<CAAnimation, (Bool) -> Void>()
@@ -203,9 +203,9 @@
 //
 //	// - MARK: story1
 //
-//	func addStory1Animation() {
+	func addStory1Animation() {
 //		addStory1AnimationWithBeginTime(0, fillMode: kCAFillModeBoth, removedOnCompletion: false, completion: nil)
-//	}
+	}
 //
 //	func addStory1Animation(completion: ((Bool) -> Void)?) {
 //		addStory1AnimationWithBeginTime(0, fillMode: kCAFillModeBoth, removedOnCompletion: false, completion: completion)
@@ -368,4 +368,4 @@
 //		}
 //		self.layer.removeAnimationForKey("Story1")
 //	}
-//}
+}

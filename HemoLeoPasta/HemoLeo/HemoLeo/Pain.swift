@@ -16,19 +16,19 @@ class Pain: Assessment {
     func carePlanActivity() -> OCKCarePlanActivity {
         //Create a weekly schedule
         let startDate = NSDateComponents(year: 2016, month: 01, day: 01)
-        let schedule = OCKCareSchedule.weeklyScheduleWithStartDate(startDate, occurrencesOnEachDay: [1, 1, 1, 1, 1, 1, 1])
+        let schedule = OCKCareSchedule.weeklySchedule(withStartDate: startDate as DateComponents, occurrencesOnEachDay: [1, 1, 1, 1, 1, 1, 1])
         
         //Get the localized strings to use in the assessment
         let title = NSLocalizedString("Dor", comment: "")
         let summary = NSLocalizedString("", comment: "")
         
         //Create the activity
-        let activity = OCKCarePlanActivity.assessmentWithIdentifier(
-            activityType.rawValue,
+        let activity = OCKCarePlanActivity.assessment(
+            withIdentifier: activityType.rawValue,
             groupIdentifier: nil,
             title: title,
             text: summary,
-            tintColor: UIColor.blueColor(),
+            tintColor: UIColor.blue,
             resultResettable: true,
             schedule: schedule,
             userInfo: nil
@@ -51,37 +51,37 @@ class Pain: Assessment {
             ORKImageChoice(
                 normalImage: UIImage(named: "Virilha gray")!,
                 selectedImage: UIImage(named: "Virilha highlighted")!,
-                text: "", value: "Virilha"
+                text: "", value: "Virilha" as NSCoding & NSCopying & NSObjectProtocol
         ),
             ORKImageChoice(
                 normalImage: UIImage(named: "Tornozelo gray"),
                 selectedImage: UIImage(named: "Tornozelo highlighted"),
-                text: "", value: "Tornozelo"
+                text: "", value: "Tornozelo" as NSCoding & NSCopying & NSObjectProtocol
         ),
             ORKImageChoice(
                 normalImage: UIImage(named: "Ombro gray"),
                 selectedImage: UIImage(named: "Ombro highlighted"),
-                text: "", value: "Ombro"
+                text: "", value: "Ombro" as NSCoding & NSCopying & NSObjectProtocol
         ),
             ORKImageChoice(
                 normalImage: UIImage(named: "Cotovelo gray"),
                 selectedImage: UIImage(named: "Cotovelo highlighted"),
-                text: "", value: "Cotovelo"
+                text: "", value: "Cotovelo" as NSCoding & NSCopying & NSObjectProtocol
         ),
             ORKImageChoice(
                 normalImage: UIImage(named: "Joelho gray"),
                 selectedImage: UIImage(named: "Joelho highlighted"),
-                text: "", value: "Joelho"
+                text: "", value: "Joelho" as NSCoding & NSCopying & NSObjectProtocol
         ),
             ORKImageChoice(
                 normalImage: UIImage(named: "Punho gray"),
                 selectedImage: UIImage(named: "Punho highlighted"),
-                text: "", value: "Punho"
+                text: "", value: "Punho" as NSCoding & NSCopying & NSObjectProtocol
         )]
         
-        let painAnswerFormat: ORKImageChoiceAnswerFormat = ORKAnswerFormat.choiceAnswerFormatWithImageChoices(imageChoices)
+        let painAnswerFormat: ORKImageChoiceAnswerFormat = ORKAnswerFormat.choiceAnswerFormat(with: imageChoices)
         let painQuestionStep = ORKQuestionStep(identifier: "ImageChoiceQuestionStep", title: painQuestionStepTitle, answer: painAnswerFormat)
-        painQuestionStep.optional = false
+        painQuestionStep.isOptional = false
         
         steps += [painQuestionStep]
         
@@ -99,7 +99,7 @@ class Pain: Assessment {
         
         let painLevelQuestionStepTitle = "Qual o nível da dor?"
         let painLevelQuestionStep = ORKQuestionStep(identifier: "PainLevelQuestionStep", title: painLevelQuestionStepTitle, answer: painLevelAnswerFormat)
-        painLevelQuestionStep.optional = false
+        painLevelQuestionStep.isOptional = false
         
         steps += [painLevelQuestionStep]
         

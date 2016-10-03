@@ -89,13 +89,13 @@ class BuildInsightsOperation: Operation {
 //            let dayDate = calendar.dateByAddingComponents(components, toDate: startDate, options: [])!
             let dayDate = calendar.date(byAdding: components as DateComponents, to: startDate as Date)
 
-            let dayComponents = NSDateComponents(date: dayDate, calendar: calendar)
+            let dayComponents = NSDateComponents(date: dayDate!, calendar: calendar)
             let eventsForDay = medicationEvents[dayComponents]
             
             totalEventCount += eventsForDay.count
             
             for event in eventsForDay {
-                if event.state == .Completed {
+                if event.state == .completed {
                     completedEventCount += 1
                 }
             }
@@ -225,16 +225,16 @@ class BuildInsightsOperation: Operation {
  extension adds a method to return the first element that matches the day
  specified by the supplied `NSDateComponents`.
  */
-extension Sequence where Generator.Element: OCKCarePlanEvent {
-    
-    func eventForDay(dayComponents: NSDateComponents) -> Generator.Element? {
-        for event in self where
-                event.date.year == dayComponents.year &&
-                event.date.month == dayComponents.month &&
-                event.date.day == dayComponents.day {
-            return event
-        }
-        
-        return nil
-    }
-}
+//extension Sequence where Generator.Element: OCKCarePlanEvent {
+//    
+//    func eventForDay(dayComponents: NSDateComponents) -> Generator.Element? {
+//        for event in self where
+//                event.date.year == dayComponents.year &&
+//                event.date.month == dayComponents.month &&
+//                event.date.day == dayComponents.day {
+//            return event
+//        }
+//        
+//        return nil
+//    }
+//}

@@ -19,7 +19,7 @@ extension UIView{
      *
      * - Parameter animation: A 'UIAnimation'
      */
-    func runAnimation(animation : UIAnimation, completion : ()->Void = {}){
+    func runAnimation(animation : UIAnimation, completion : @escaping ()->Void = {}){
         animation.execute(view: self, completion)
         
     }
@@ -56,7 +56,7 @@ class UIAnimation : NSObject{
      * - Parameter duration: A 'NSTimerInverval' specifying the duration of the movement
      */
     class func moveTo(point : CGPoint, duration : TimeInterval) -> UIAnimation{
-        return UIAnimation(data: NSDictionary(objects: [NSValue(CGPoint: point),false], forKeys: ["point" as NSCopying,"isBy" as NSCopying]), duration, _handleMovement)
+        return UIAnimation(data: NSDictionary(objects: [NSValue(cgPoint: point),false], forKeys: ["point" as NSCopying,"isBy" as NSCopying]), duration, _handleMovement)
     }
     
     /**
@@ -66,7 +66,7 @@ class UIAnimation : NSObject{
      * - Parameter duration: A 'NSTimerInverval' specifying the duration of the movement
      */
     class func moveBy(point : CGPoint, duration : TimeInterval) -> UIAnimation{
-        return UIAnimation(data: NSDictionary(objects: [NSValue(CGPoint: point),true], forKeys: ["point" as NSCopying,"isBy" as NSCopying]), duration, _handleMovement)
+        return UIAnimation(data: NSDictionary(objects: [NSValue(cgPoint: point),true], forKeys: ["point" as NSCopying,"isBy" as NSCopying]), duration, _handleMovement)
     }
     
     /**
@@ -96,7 +96,7 @@ class UIAnimation : NSObject{
      * - Parameter duration: A 'NSTimerInverval' specifying the duration of the rotation
      */
     class func fadeAlphaBy(alpha : CGFloat, duration : TimeInterval) -> UIAnimation{
-        return UIAnimation(data: NSDictionary(objects: [alpha,true], forKeys: ["alpha" as NSCopying,"isBy"]), duration, _handleAlpha)
+        return UIAnimation(data: NSDictionary(objects: [alpha,true], forKeys: ["alpha" as NSCopying,"isBy" as NSCopying]), duration, _handleAlpha)
     }
     
     /**
@@ -105,8 +105,8 @@ class UIAnimation : NSObject{
      * - Parameter alpha: A 'CGFloat' value specifying the new value of the view's alpha
      * - Parameter duration: A 'NSTimerInverval' specifying the duration of the rotation
      */
-    class func fadeAlphaTo(alpha : CGFloat, duration : NSTimeInterval) -> UIAnimation{
-        return UIAnimation(data: NSDictionary(objects: [alpha,false], forKeys: ["alpha","isBy"]), duration, _handleAlpha)
+    class func fadeAlphaTo(alpha : CGFloat, duration : TimeInterval) -> UIAnimation{
+        return UIAnimation(data: NSDictionary(objects: [alpha,false], forKeys: ["alpha" as NSCopying,"isBy" as NSCopying]), duration, _handleAlpha)
     }
     
     /**
@@ -114,8 +114,8 @@ class UIAnimation : NSObject{
      *
      * - Parameter duration: A 'NSTimerInverval' specifying the duration of the rotation
      */
-    class func fadeInWithDuration(duration : NSTimeInterval) -> UIAnimation{
-        return fadeAlphaTo(1, duration: duration)
+    class func fadeInWithDuration(duration : TimeInterval) -> UIAnimation{
+        return fadeAlphaTo(alpha: 1, duration: duration)
     }
     
     /**
@@ -123,8 +123,8 @@ class UIAnimation : NSObject{
      *
      * - Parameter duration: A 'NSTimerInverval' specifying the duration of the rotation
      */
-    class func fadeOutWithDuration(duration : NSTimeInterval) -> UIAnimation{
-        return fadeAlphaTo(0, duration: duration)
+    class func fadeOutWithDuration(duration : TimeInterval) -> UIAnimation{
+        return fadeAlphaTo(alpha: 0, duration: duration)
     }
     
     /**
@@ -133,11 +133,11 @@ class UIAnimation : NSObject{
      * - Parameter animations: An array of 'UIAnimation'
      */
     class func sequence(animations : [UIAnimation]) -> UIAnimation{
-        var c : NSTimeInterval = 0
+        var c : TimeInterval = 0
         for a in animations{
             c += a.time
         }
-        return UIAnimation(data: NSDictionary(object: animations, forKey: "animations"), c, _handleSequence)
+        return UIAnimation(data: NSDictionary(object: animations, forKey: "animations" as NSCopying), c, _handleSequence)
     }
     
     /**
@@ -146,13 +146,13 @@ class UIAnimation : NSObject{
      * - Parameter animations: An array of 'UIAnimation'
      */
     class func group(animations : [UIAnimation]) -> UIAnimation{
-        var c : NSTimeInterval = 0
+        var c : TimeInterval = 0
         for a in animations{
             if a.time>c{
                 c = a.time
             }
         }
-        return UIAnimation(data: NSDictionary(object: animations, forKey: "animations"), c, _handleGroup)
+        return UIAnimation(data: NSDictionary(object: animations, forKey: "animations" as NSCopying), c, _handleGroup)
     }
     
     /**
@@ -162,7 +162,7 @@ class UIAnimation : NSObject{
      * - Parameter count: how many times it should repeat
      */
     class func repeatAnimation(animation : UIAnimation, count : Int) -> UIAnimation{
-        return UIAnimation(data: NSDictionary(objects: [animation,count], forKeys: ["animation","repTime"]), animation.time*NSTimeInterval(count), _handleRepeat)
+        return UIAnimation(data: NSDictionary(objects: [animation,count], forKeys: ["animation" as NSCopying,"repTime" as NSCopying]), animation.time*TimeInterval(count), _handleRepeat)
     }
     
     /**
@@ -171,7 +171,7 @@ class UIAnimation : NSObject{
      * - Parameter animation: The action to repeat
      */
     class func repeatAnimationForever(animation : UIAnimation) -> UIAnimation{
-        return repeatAnimation(animation, count: -1)
+        return repeatAnimation(animation: animation, count: -1)
     }
     
     /**
@@ -179,8 +179,8 @@ class UIAnimation : NSObject{
      *
      * - Parameter block: The '()->Void' block to be executed
      */
-    class func runBlock(block : ()->Void) -> UIAnimation{
-        return UIAnimation(data: NSDictionary(object: BlockWrapper(block), forKey: "block"), 0, _handleBlock)
+    class func runBlock(block : @escaping ()->Void) -> UIAnimation{
+        return UIAnimation(data: NSDictionary(object: BlockWrapper(block), forKey: "block" as NSCopying), 0, _handleBlock)
     }
     
     /**
@@ -188,7 +188,7 @@ class UIAnimation : NSObject{
      *
      * - Parameter duration: A 'NSTimeInterval' with how many seconds it should idle
      */
-    class func waitForDuration(duration : NSTimeInterval) -> UIAnimation{
+    class func waitForDuration(duration : TimeInterval) -> UIAnimation{
         return UIAnimation(data: NSDictionary(), duration, _handleWait)
     }
     
@@ -201,9 +201,9 @@ class UIAnimation : NSObject{
     class func followPoints(points : [CGPoint], withSpeed speed : CGFloat) -> UIAnimation{
         var v = [NSValue]()
         for p in points{
-            v.append(NSValue(CGPoint: p))
+            v.append(NSValue(cgPoint: p))
         }
-        return UIAnimation(data: NSDictionary(objects: [speed,v], forKeys: ["speed","points"]), 0, _handlePath)
+        return UIAnimation(data: NSDictionary(objects: [speed,v], forKeys: ["speed" as NSCopying,"points" as NSCopying]), 0, _handlePath)
     }
     
     /**
@@ -213,46 +213,46 @@ class UIAnimation : NSObject{
      * - Parameter frequence: A 'CGFloat' specifying how many shakes per second the view should do
      * - Parameter duration: A 'NSTimeInterval' specifying the estimated total duration of the shake animation (might differ a little)
      */
-    class func shake(force : CGPoint, frequence : CGFloat, duration : NSTimeInterval) -> UIAnimation{
-        let eachDuration = NSTimeInterval(1.0/frequence)
-        return UIAnimation(data: NSDictionary(objects: [eachDuration,Int(duration/eachDuration),NSValue(CGPoint: force)], forKeys: ["eachTime","quant","force"]), duration, _handleShake)
+    class func shake(force : CGPoint, frequence : CGFloat, duration : TimeInterval) -> UIAnimation{
+        let eachDuration = TimeInterval(1.0/frequence)
+        return UIAnimation(data: NSDictionary(objects: [eachDuration,Int(duration/eachDuration),NSValue(cgPoint: force)], forKeys: ["eachTime" as NSCopying,"quant" as NSCopying,"force" as NSCopying]), duration, _handleShake)
     }
     
     private class BlockWrapper{
         let block: ()->Void
-        init(_ block: ()->Void){
+        init(_ block: @escaping ()->Void){
             self.block = block
         }
     }
     class PrivateTimer : NSObject{
-        class func runTimer(timer : NSTimer){
+        class func runTimer(timer : Timer){
             (timer.userInfo as! BlockWrapper).block()
         }
     }
     
     /// Duration of the animation
-    private let time : NSTimeInterval
+    private let time : TimeInterval
     /// Information of the animation
     private let data : NSDictionary
     /// The function to be called when a UIView runs the animation
     private let handler : (UIView,UIAnimation,(()->Void)?)->Void
     
-    private init(data : NSDictionary, _ time : NSTimeInterval, _ handler : (UIView,UIAnimation,(()->Void)?)->Void){
+    private init(data : NSDictionary, _ time : TimeInterval, _ handler : @escaping (UIView,UIAnimation,(()->Void)?)->Void){
         self.time = time
         self.data = data
         self.handler = handler
     }
     
-    func execute(view : UIView, _ completion : ()->Void){
+    func execute(view : UIView, _ completion : @escaping ()->Void){
         handler(view,self,completion)
     }
     
     class private func _handleMovement(view : UIView, _ anim : UIAnimation, _ comp: (()->Void)?){
-        var p = (anim.data["point"] as! NSValue).CGPointValue()
+        var p = (anim.data["point"] as! NSValue).cgPointValue
         if (anim.data["isBy"] as! Bool){
             p.x = view.center.x+p.x; p.y = view.center.y+p.y
         }
-        UIView.animateWithDuration(anim.time, animations: { () -> Void in
+        UIView.animate(withDuration: anim.time, animations: { () -> Void in
             view.center = p
         }) { (v) -> Void in
             if v{ comp?() }
@@ -265,8 +265,8 @@ class UIAnimation : NSObject{
     
     class private func _handleRotation(view : UIView, _ anim : UIAnimation, _ comp: (()->Void)?){
         let a = (anim.data["angle"] as! CGFloat) / 180.0 * CGFloat(M_PI)
-        UIView.animateWithDuration(anim.time, animations: { () -> Void in
-            view.transform = (anim.data["isBy"] as! Bool) ? CGAffineTransformRotate(view.transform, a) : CGAffineTransformMakeRotation(a)
+        UIView.animate(withDuration: anim.time, animations: { () -> Void in
+            view.transform = (anim.data["isBy"] as! Bool) ? view.transform.rotated(by: a) : CGAffineTransform(rotationAngle: a)
         }) { (v) -> Void in
             if v{ comp?() }
         }
@@ -277,7 +277,7 @@ class UIAnimation : NSObject{
         if anim.data["isBy"] as! Bool{
             a += view.alpha
         }
-        UIView.animateWithDuration(anim.time, animations: { () -> Void in
+        UIView.animate(withDuration: anim.time, animations: { () -> Void in
             view.alpha = a
         }) { (v) -> Void in
             if v{ comp?() }
@@ -309,18 +309,18 @@ class UIAnimation : NSObject{
     
     class private func _handleWait(view : UIView, _ anim : UIAnimation, _ comp: (()->Void)?){
         if let c = comp{
-            NSTimer.scheduledTimerWithTimeInterval(anim.time, target: UIAnimation.PrivateTimer.self, selector: #selector(PrivateTimer.runTimer(_:)), userInfo: BlockWrapper(c), repeats: false)
+            Timer.scheduledTimerWithTimeInterval(anim.time, target: UIAnimation.PrivateTimer.self, selector: #selector(PrivateTimer.runTimer(_:)), userInfo: BlockWrapper(c), repeats: false)
         }
     }
     
     class private func _handleShake(view : UIView, _ anim : UIAnimation, _ comp: (()->Void)?){
         let q = anim.data["quant"] as! Int
-        let f = (anim.data["force"] as! NSValue).CGPointValue()
-        let e = anim.data["eachTime"] as! NSTimeInterval
+        let f = (anim.data["force"] as! NSValue).cgPointValue
+        let e = anim.data["eachTime"] as! TimeInterval
         var actions = [UIAnimation]()
         for _ in 0 ..< q {
             let a = CGFloat(arc4random()) / CGFloat(UINT32_MAX) * CGFloat(2*M_PI)
-            actions.append(UIAnimation.moveTo(CGPointMake(view.center.x+cos(a)*f.x,view.center.y+sin(a)*f.y), duration: e))
+            actions.append(UIAnimation.moveTo(point: CGPoint(x: view.center.x+cos(a)*f.x, y: view.center.y+sin(a)*f.y), duration: e))
         }
         actions.append(UIAnimation.moveTo(point: view.center, duration: 0))
         view.runAnimation(animation: UIAnimation.sequence(animations: actions)) { () -> Void in
@@ -333,7 +333,7 @@ class UIAnimation : NSObject{
         let curr = anim[i]
         curr.handler(view,curr,{ () -> Void in
             if (++i)<anim.count{
-                _run(view, anim, completion, i)
+                _run(view, anim, i, completion)
             }
             else{ completion?() }
         })
@@ -342,7 +342,7 @@ class UIAnimation : NSObject{
     class private func _runPath(view : UIView, _ speed : CGFloat, _ points : [NSValue], _ i : Int, _ completion : (()->Void)?){
         var i = i
         let curr = points[i].cgPointValue
-        view.runAnimation(animation: UIAnimation.moveTo(curr, duration: TimeInterval(speed/sqrt(pow(curr.x-view.center.x, 2)+pow(curr.y-view.center.y, 2))))) { () -> Void in
+        view.runAnimation(animation: UIAnimation.moveTo(point: curr, duration: TimeInterval(speed/sqrt(pow(curr.x-view.center.x, 2)+pow(curr.y-view.center.y, 2))))) { () -> Void in
             if (++i)<points.count{
                 _runPath(view, speed, points, i, completion)
             }
@@ -350,10 +350,11 @@ class UIAnimation : NSObject{
         }
     }
     
-    class private func _repetition(view : UIView, _ anim : UIAnimation, var _ rep : Int, _ completion : (()->Void)?){
+    class private func _repetition(view : UIView, _ anim : UIAnimation, _ rep : Int, _ completion : (()->Void)?){
+        var rep = rep
         anim.handler(view,anim,{ () -> Void in
             if (rep <= -1 || --rep>0){
-                _repetition(view, anim, rep, completion)
+                _repetition(view, anim, completion, rep)
             }
             else{ completion?() }
         })

@@ -35,7 +35,7 @@ class CustomActivityCell: UITableViewCell {
 
     }
 
-    override func setSelected(selected: Bool, animated: Bool) {
+    override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
@@ -43,7 +43,7 @@ class CustomActivityCell: UITableViewCell {
     
     @IBAction func sliderAction(sender: UISlider) {
         if delegate != nil {
-            delegate.sliderDidChangeValue("\(Int(sender.value))")
+            delegate.sliderDidChangeValue(newSliderValue: "\(Int(sender.value))")
             
         }
     }

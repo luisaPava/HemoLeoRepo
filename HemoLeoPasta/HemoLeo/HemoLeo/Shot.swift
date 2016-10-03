@@ -21,7 +21,7 @@ class Shot: Activity {
         
         // Setup the weekly schedule for the activity
         let startDate = NSDateComponents(year: 2016, month: 1, day: 1)
-        let schedule = OCKCareSchedule.weeklyScheduleWithStartDate(startDate, occurrencesOnEachDay: occurrences)
+        let schedule = OCKCareSchedule.weeklySchedule(withStartDate: startDate as DateComponents, occurrencesOnEachDay: occurrences as [NSNumber])
         
         // Set information for the activity
         let title = NSLocalizedString("Aplicação", comment: "")
@@ -29,12 +29,12 @@ class Shot: Activity {
         let instructions = NSLocalizedString("", comment: "")
         
         // Setup the activity
-        let activity = OCKCarePlanActivity.interventionWithIdentifier(
-            activityType.rawValue,
+        let activity = OCKCarePlanActivity.intervention(
+            withIdentifier: activityType.rawValue,
             groupIdentifier: nil,
             title: title,
             text: summary,
-            tintColor: UIColor.lightGrayColor(),
+            tintColor: UIColor.lightGray,
             instructions: instructions,
             imageURL: nil,
             schedule: schedule,

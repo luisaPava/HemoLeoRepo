@@ -26,7 +26,7 @@ class AssessmentsManager: NSObject {
         for assessment in assessments {
             let carePlanActivity = assessment.carePlanActivity()
             
-            carePlanStore.addActivity(carePlanActivity) { (success, error) in
+            carePlanStore.add(carePlanActivity) { (success, error) in
                 if !success {
                     print(error.debugDescription)
                 }
