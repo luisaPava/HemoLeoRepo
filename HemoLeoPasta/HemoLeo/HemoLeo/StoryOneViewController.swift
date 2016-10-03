@@ -10,13 +10,13 @@ import UIKit
 
 class StoryOneViewController: UIViewController {
     
-    var timer = NSTimer()
+    var timer = Timer()
 
     @IBOutlet weak var storyView: StorytellingView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        timer = NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: #selector(animation), userInfo: nil, repeats: false)
+        timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(animation), userInfo: nil, repeats: false)
 
         // Do any additional setup after loading the view.
 //        animation()

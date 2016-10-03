@@ -54,10 +54,10 @@ class PageViewCcontroller: UIPageViewController {
         var pageControl: UIPageControl? = nil
         
         for view in subViews {
-            if (view as AnyObject).isKind(UIScrollView) {
+            if view is UIScrollView {
                 scrollView = view as? UIScrollView
             }
-            else if (view as AnyObject).isKind(UIPageControl.self) {
+            else if view is UIPageControl {
                 pageControl = view as? UIPageControl
             }
         }
@@ -91,7 +91,7 @@ extension PageViewCcontroller: UIPageViewControllerDataSource {
         return orderedViewControllers[previousIndex]
     }
     
-    override func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         guard let viewControllerIndex = orderedViewControllers.index(of: viewController) else {
             return nil
         }

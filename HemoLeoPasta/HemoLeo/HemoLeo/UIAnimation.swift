@@ -20,7 +20,8 @@ extension UIView{
      * - Parameter animation: A 'UIAnimation'
      */
     func runAnimation(animation : UIAnimation, completion : ()->Void = {}){
-        animation.execute(self,completion)
+        animation.execute(view: self, completion)
+        
     }
     /**
      * Removes all the 'UIAnimation' that are running on the view
@@ -54,8 +55,8 @@ class UIAnimation : NSObject{
      * - Parameter point: A 'CGPoint' value specifying where the 'UIView' should move
      * - Parameter duration: A 'NSTimerInverval' specifying the duration of the movement
      */
-    class func moveTo(point : CGPoint, duration : NSTimeInterval) -> UIAnimation{
-        return UIAnimation(data: NSDictionary(objects: [NSValue(CGPoint: point),false], forKeys: ["point","isBy"]), duration, _handleMovement)
+    class func moveTo(point : CGPoint, duration : TimeInterval) -> UIAnimation{
+        return UIAnimation(data: NSDictionary(objects: [NSValue(CGPoint: point),false], forKeys: ["point" as NSCopying,"isBy" as NSCopying]), duration, _handleMovement)
     }
     
     /**
@@ -64,8 +65,8 @@ class UIAnimation : NSObject{
      * - Parameter point: A 'CGPoint' value specifying how much the 'UIView' should move
      * - Parameter duration: A 'NSTimerInverval' specifying the duration of the movement
      */
-    class func moveBy(point : CGPoint, duration : NSTimeInterval) -> UIAnimation{
-        return UIAnimation(data: NSDictionary(objects: [NSValue(CGPoint: point),true], forKeys: ["point","isBy"]), duration, _handleMovement)
+    class func moveBy(point : CGPoint, duration : TimeInterval) -> UIAnimation{
+        return UIAnimation(data: NSDictionary(objects: [NSValue(CGPoint: point),true], forKeys: ["point" as NSCopying,"isBy" as NSCopying]), duration, _handleMovement)
     }
     
     /**
@@ -74,8 +75,8 @@ class UIAnimation : NSObject{
      * - Parameter angle: A 'CGFloat' value specifying the angle the 'UIView' should rotate to, in degrees
      * - Parameter duration: A 'NSTimerInverval' specifying the duration of the rotation
      */
-    class func rotateTo(angle : CGFloat, duration : NSTimeInterval) -> UIAnimation{
-        return UIAnimation(data: NSDictionary(objects: [angle,false], forKeys: ["angle","isBy"]), duration, _handleRotation)
+    class func rotateTo(angle : CGFloat, duration : TimeInterval) -> UIAnimation{
+        return UIAnimation(data: NSDictionary(objects: [angle,false], forKeys: ["angle" as NSCopying,"isBy" as NSCopying]), duration, _handleRotation)
     }
     
     /**
@@ -84,8 +85,8 @@ class UIAnimation : NSObject{
      * - Parameter angle: A 'CGFloat' value specifying the ammount the UIView should rotate, in degrees
      * - Parameter duration: A 'NSTimerInverval' specifying the duration of the rotation
      */
-    class func rotateBy(angle : CGFloat, duration : NSTimeInterval) -> UIAnimation{
-        return UIAnimation(data: NSDictionary(objects: [angle,true], forKeys: ["angle","isBy"]), duration, _handleRotation)
+    class func rotateBy(angle : CGFloat, duration : TimeInterval) -> UIAnimation{
+        return UIAnimation(data: NSDictionary(objects: [angle,true], forKeys: ["angle" as NSCopying,"isBy" as NSCopying]), duration, _handleRotation)
     }
     
     /**
@@ -94,8 +95,8 @@ class UIAnimation : NSObject{
      * - Parameter alpha: A 'CGFloat' value specifying the ammount to add to a view's alpha value
      * - Parameter duration: A 'NSTimerInverval' specifying the duration of the rotation
      */
-    class func fadeAlphaBy(alpha : CGFloat, duration : NSTimeInterval) -> UIAnimation{
-        return UIAnimation(data: NSDictionary(objects: [alpha,true], forKeys: ["alpha","isBy"]), duration, _handleAlpha)
+    class func fadeAlphaBy(alpha : CGFloat, duration : TimeInterval) -> UIAnimation{
+        return UIAnimation(data: NSDictionary(objects: [alpha,true], forKeys: ["alpha" as NSCopying,"isBy"]), duration, _handleAlpha)
     }
     
     /**
@@ -321,25 +322,27 @@ class UIAnimation : NSObject{
             let a = CGFloat(arc4random()) / CGFloat(UINT32_MAX) * CGFloat(2*M_PI)
             actions.append(UIAnimation.moveTo(CGPointMake(view.center.x+cos(a)*f.x,view.center.y+sin(a)*f.y), duration: e))
         }
-        actions.append(UIAnimation.moveTo(view.center, duration: 0))
-        view.runAnimation(UIAnimation.sequence(actions)) { () -> Void in
+        actions.append(UIAnimation.moveTo(point: view.center, duration: 0))
+        view.runAnimation(animation: UIAnimation.sequence(animations: actions)) { () -> Void in
             comp?()
         }
     }
     
-    class private func _run(view : UIView, _ anim : [UIAnimation], var _ i : Int, _ completion : (()->Void)?){
+    class private func _run(view : UIView, _ anim : [UIAnimation], _ i : Int, _ completion : (()->Void)?){
+        var i = i
         let curr = anim[i]
         curr.handler(view,curr,{ () -> Void in
             if (++i)<anim.count{
-                _run(view, anim, i, completion)
+                _run(view, anim, completion, i)
             }
             else{ completion?() }
         })
     }
     
-    class private func _runPath(view : UIView, _ speed : CGFloat, _ points : [NSValue], var _ i : Int, _ completion : (()->Void)?){
-        let curr = points[i].CGPointValue()
-        view.runAnimation(UIAnimation.moveTo(curr, duration: NSTimeInterval(speed/sqrt(pow(curr.x-view.center.x, 2)+pow(curr.y-view.center.y, 2))))) { () -> Void in
+    class private func _runPath(view : UIView, _ speed : CGFloat, _ points : [NSValue], _ i : Int, _ completion : (()->Void)?){
+        var i = i
+        let curr = points[i].cgPointValue
+        view.runAnimation(animation: UIAnimation.moveTo(curr, duration: TimeInterval(speed/sqrt(pow(curr.x-view.center.x, 2)+pow(curr.y-view.center.y, 2))))) { () -> Void in
             if (++i)<points.count{
                 _runPath(view, speed, points, i, completion)
             }

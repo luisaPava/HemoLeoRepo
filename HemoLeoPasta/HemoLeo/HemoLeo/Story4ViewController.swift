@@ -12,13 +12,13 @@ class Story4ViewController: UIViewController {
 
     @IBOutlet weak var storyView: Storytelling4View!
     
-    var timer = NSTimer()
+    var timer = Timer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        timer = NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: #selector(animation), userInfo: nil, repeats: false)
+        timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(animation), userInfo: nil, repeats: false)
         
         // Do any additional setup after loading the view.
         //        animation()

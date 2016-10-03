@@ -17,19 +17,19 @@ class Bruising: Assessment {
     func carePlanActivity() -> OCKCarePlanActivity {
         //Create a weekly schedule
         let startDate = NSDateComponents(year: 2016, month: 01, day: 01)
-        let schedule = OCKCareSchedule.weeklyScheduleWithStartDate(startDate, occurrencesOnEachDay: [1, 1, 1, 1, 1, 1, 1])
+        let schedule = OCKCareSchedule.weeklySchedule(withStartDate: startDate as DateComponents, occurrencesOnEachDay: [1, 1, 1, 1, 1, 1, 1])
         
         //Get the localized strings to use in the assessment
         let title = NSLocalizedString("Hematomas", comment: "")
         let summary = NSLocalizedString("", comment: "")
         
         //Create the activity
-        let activity = OCKCarePlanActivity.assessmentWithIdentifier(
-            activityType.rawValue,
+        let activity = OCKCarePlanActivity.assessment(
+            withIdentifier: activityType.rawValue,
             groupIdentifier: nil,
             title: title,
             text: summary,
-            tintColor: UIColor.redColor(),
+            tintColor: UIColor.red,
             resultResettable: true,
             schedule: schedule,
             userInfo: nil
@@ -48,15 +48,15 @@ class Bruising: Assessment {
         //First step: Where is your bruise?
         let bruisingQuestionStepTitle = "Onde é o seu hematoma?"
         let textChoices = [
-            ORKTextChoice(text: "Joelho", value: "Joelho"),
-            ORKTextChoice(text: "Ombro", value: "Ombro"),
-            ORKTextChoice(text: "Cotovelo", value: "Cotovelo"),
-            ORKTextChoice(text: "Não tive hematoma", value: "Não tive hematomas")
+            ORKTextChoice(text: "Joelho", value: "Joelho" as NSCoding & NSCopying & NSObjectProtocol),
+            ORKTextChoice(text: "Ombro", value: "Ombro" as NSCoding & NSCopying & NSObjectProtocol),
+            ORKTextChoice(text: "Cotovelo", value: "Cotovelo" as NSCoding & NSCopying & NSObjectProtocol),
+            ORKTextChoice(text: "Não tive hematoma", value: "Não tive hematomas" as NSCoding & NSCopying & NSObjectProtocol)
         ]
         
-        let bruisingAnswerFormat: ORKTextChoiceAnswerFormat = ORKAnswerFormat.choiceAnswerFormatWithStyle(.SingleChoice, textChoices: textChoices)
+        let bruisingAnswerFormat: ORKTextChoiceAnswerFormat = ORKAnswerFormat.choiceAnswerFormat(with: .singleChoice, textChoices: textChoices)
         let bruisingQuestionStep = ORKQuestionStep(identifier: "BruisingQuestionStep", title: bruisingQuestionStepTitle, answer: bruisingAnswerFormat)
-        bruisingQuestionStep.optional = false
+        bruisingQuestionStep.isOptional = false
         steps += [bruisingQuestionStep]
         
 //        let painQuestionStepTitle = "Onde é a sua dor?"
@@ -111,7 +111,7 @@ class Bruising: Assessment {
         
         let bruisingLevelQuestionStepTitle = "Qual o tamanho do hematoma?"
         let bruisingLevelQuestionStep = ORKQuestionStep(identifier: "BruisingLevelQuestionStep", title: bruisingLevelQuestionStepTitle, answer: bruisingLevelAnswerFormat)
-        bruisingLevelQuestionStep.optional = false
+        bruisingLevelQuestionStep.isOptional = false
         
         steps += [bruisingLevelQuestionStep]
         
