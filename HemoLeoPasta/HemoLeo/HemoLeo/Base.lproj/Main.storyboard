@@ -932,7 +932,7 @@
                                         <state key="normal" image="ComidaNotSelected"/>
                                         <state key="selected" image="Comida highlighted"/>
                                         <connections>
-                                            <action selector="addActivityAction:" destination="Cfu-op-DX6" eventType="touchUpInside" id="ZTx-2m-cIA"/>
+                                            <action selector="addActivityActionWithSender:" destination="Cfu-op-DX6" eventType="touchUpInside" id="6ig-wo-QfJ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2lZ-TZ-KSR">
@@ -943,7 +943,7 @@
                                         <state key="normal" image="FruitsNotSelected"/>
                                         <state key="selected" image="FrutasHIghlighted"/>
                                         <connections>
-                                            <action selector="addActivityAction:" destination="Cfu-op-DX6" eventType="touchUpInside" id="ZFt-Xt-KzX"/>
+                                            <action selector="addActivityActionWithSender:" destination="Cfu-op-DX6" eventType="touchUpInside" id="OsQ-rx-onJ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -963,7 +963,7 @@
                                         <state key="selected" image="physical_therapyHIghlighted"/>
                                         <state key="highlighted" image="physical_therapyHIghlighted"/>
                                         <connections>
-                                            <action selector="addActivityAction:" destination="Cfu-op-DX6" eventType="touchUpInside" id="jYx-Jz-2Yu"/>
+                                            <action selector="addActivityActionWithSender:" destination="Cfu-op-DX6" eventType="touchUpInside" id="Cee-ts-ok5"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8HE-DR-gCT">
@@ -974,7 +974,7 @@
                                         <state key="normal" image="ShotNotSelected"/>
                                         <state key="selected" image="Shot hightlighted"/>
                                         <connections>
-                                            <action selector="addActivityAction:" destination="Cfu-op-DX6" eventType="touchUpInside" id="pUr-WO-BT3"/>
+                                            <action selector="addActivityActionWithSender:" destination="Cfu-op-DX6" eventType="touchUpInside" id="6Ks-Lr-MEO"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -993,7 +993,7 @@
                                         <state key="normal" image="BebidaNotSelected"/>
                                         <state key="selected" image="Bebidahighlighted"/>
                                         <connections>
-                                            <action selector="addActivityAction:" destination="Cfu-op-DX6" eventType="touchUpInside" id="yS2-ho-68R"/>
+                                            <action selector="addActivityActionWithSender:" destination="Cfu-op-DX6" eventType="touchUpInside" id="jgF-2h-krP"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XjB-w8-JBw">
@@ -1004,7 +1004,7 @@
                                         <state key="normal" image="swimmingNotSelected"/>
                                         <state key="selected" image="swimmingHIghlighted"/>
                                         <connections>
-                                            <action selector="addActivityAction:" destination="Cfu-op-DX6" eventType="touchUpInside" id="Uiz-A7-qQB"/>
+                                            <action selector="addActivityActionWithSender:" destination="Cfu-op-DX6" eventType="touchUpInside" id="AuN-nL-da4"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1021,7 +1021,7 @@
                                     <navigationItem title="Atividades" id="7WL-ob-M4B">
                                         <barButtonItem key="rightBarButtonItem" title="Ok" id="BEc-0L-6b9">
                                             <connections>
-                                                <action selector="doneBtn:" destination="Cfu-op-DX6" id="0pW-0V-Mae"/>
+                                                <action selector="doneBtnWithSender:" destination="Cfu-op-DX6" id="T8j-Zd-8Zl"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>

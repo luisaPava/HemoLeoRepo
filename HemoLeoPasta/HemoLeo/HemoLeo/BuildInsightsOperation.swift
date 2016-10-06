@@ -78,11 +78,13 @@ class BuildInsightsOperation: Operation {
         
         let components = NSDateComponents()
         components.day = -7
-        let startDate = calendar.weekDatesForDate(date: calendar.date(byAdding: components as DateComponents, to: now as Date)! as NSDate).start
+//        let startDate = calendar.weekDatesForDate(date: calendar.date(byAdding: components as DateComponents, to: now as Date)! as NSDate).start
 
         
         var totalEventCount = 0
         var completedEventCount = 0
+        
+        let startDate = Date()
         
         for offset in 0..<7 {
             components.day = offset

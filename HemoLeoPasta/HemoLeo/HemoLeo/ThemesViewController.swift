@@ -83,24 +83,24 @@ class ThemesViewController: UIViewController, UICollectionViewDelegate, UICollec
         cellPos = image.center
         
         //let fadeOut = UIAnimation.fadeOutWithDuration(0.2)
-        let movement = UIAnimation.moveTo(point: CGPoint(x: view.frame.width/2, y: view.frame.height/2), duration: 0.8)
+//        let movement = UIAnimation.moveTo(point: CGPoint(x: view.frame.width/2, y: view.frame.height/2), duration: 0.8)
         
-        let doMovement = UIAnimation.runBlock {
-            UIView.animate(withDuration: 1, animations: {
-                self.image.transform = self.image.transform.scaledBy(x: 1.5, y: 1.5)
-            })
-            self.image.runAnimation(animation: movement)
-            
-        }
+//        let doMovement = UIAnimation.runBlock {
+//            UIView.animate(withDuration: 1, animations: {
+//                self.image.transform = self.image.transform.scaledBy(x: 1.5, y: 1.5)
+//            })
+//            self.image.runAnimation(animation: movement)
+//            
+//        }
         
         //let sequence = UIAnimation.sequence([fadeOut,doMovement])
-        let sequence = UIAnimation.sequence(animations: [doMovement])
+//        let sequence = UIAnimation.sequence(animations: [doMovement])
         
         //collectionView.runAnimation(sequence)
-        
-        collectionView.runAnimation(animation: sequence, completion:  { finished in
-            self.performSegue(withIdentifier: "toSelectTheme", sender: self)
-        })
+//        
+//        collectionView.runAnimation(animation: sequence, completion:  { finished in
+//            self.performSegue(withIdentifier: "toSelectTheme", sender: self)
+//        })
         
         //self.performSegueWithIdentifier("toSelectTheme", sender: self)
         
