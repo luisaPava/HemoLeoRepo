@@ -43,5 +43,4 @@ class Vegetables: Activity {
         
         return activity
     }
-
 }

@@ -10,10 +10,8 @@ import UIKit
 import CareKit
 
 class CareCardViewController: UINavigationController {
-    
-    private let storeManager: CarePlanStoreManager = CarePlanStoreManager.sharedCarePlanStoreManager
-    
     private var viewController: UIViewController! = nil
+    private let careCardModel = CareCardModel.sharedCareCardModel
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,33 +25,14 @@ class CareCardViewController: UINavigationController {
    
     
     override func viewWillAppear(_ animated: Bool) {
-        
-        viewController = createCareCardVC()
+        viewController = careCardModel.createCareCard()
+        viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Nova", style: .done, target: self, action: #selector(pushAddActivityController))
         self.pushViewController(viewController, animated: false)
         
     }
     
     @IBAction func cancel(sender: AnyObject) {
         dismiss(animated: true, completion: nil)
-    }
-    
-    private func createCareCardVC() -> OCKCareCardViewController {
-        let viewController = OCKCareCardViewController(carePlanStore: storeManager.store)
-        
-        viewController.showEdgeIndicators = true
-        
-//        viewController.
-        
-        // Setup controller's title and tab bar icon
-        viewController.title = "Cuidados"
-        viewController.tabBarItem = UITabBarItem(title: "Cuidados", image: UIImage(named: "carecard"), selectedImage: UIImage(named: "carecard-fill"))
-        
-        viewController.navigationItem.rightBarButtonItem?.title = "Hoje"
-        
-        viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Nova", style: .done, target: self, action: #selector(pushAddActivityController))
-        viewController.navigationItem.leftBarButtonItem?.tintColor = UIColor.red
-
-        return viewController
     }
     
     @IBAction func unwindToMainViewController (sender: UIStoryboardSegue) {

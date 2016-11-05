@@ -53,17 +53,15 @@ class ThemesViewController: UIViewController, UICollectionViewDelegate, UICollec
     }
     
     @IBAction func back(sender: AnyObject) {
-                dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print(themes.count)
         return self.themes.count
     }
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath as IndexPath) as! ThemesCollectionViewCell
         
         cell.imageView?.image = themes[indexPath.row]

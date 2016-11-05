@@ -57,8 +57,7 @@ class Canvas: UIViewController, UIPopoverPresentationControllerDelegate {
     @IBAction func share(sender: AnyObject) {
         
         UIGraphicsBeginImageContext(mainImageView.bounds.size)
-        mainImageView.image?.draw(in: CGRect(x: 0, y: 0,
-            width: mainImageView.frame.size.width, height: mainImageView.frame.size.height))
+        mainImageView.image?.draw(in: CGRect(x: 0, y: 0, width: mainImageView.frame.size.width, height: mainImageView.frame.size.height))
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         

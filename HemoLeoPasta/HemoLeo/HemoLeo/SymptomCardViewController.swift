@@ -47,22 +47,12 @@ class SymptomCardViewController: UINavigationController {
         return viewController
     }
     
-    func pushAddActivityController() {
-        guard let addActivityTableVC = self.storyboard?.instantiateViewController(withIdentifier: "AddActivityVC") else { return }
-        
-        self.present(addActivityTableVC, animated: true, completion: nil)
-    }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "symptomToSurvey" {
-            let vc = segue.destination as! SurveyViewController
-            vc.task = task
+//            let vc = segue.destination as! SurveyViewController
+//            vc.task = task
         }
     }
-    
-
-    
-
 }
 
 //MARK: - SymptomTracker Delegate
@@ -71,19 +61,19 @@ extension SymptomCardViewController: OCKSymptomTrackerViewControllerDelegate {
         
         // Lookup the assessment the row represents.
         guard let activityType = ActivityType(rawValue: assessmentEvent.activity.identifier) else { return }
-        guard let sampleAssessment = assessmentManager!.activityWithType(type: activityType) else { return }
+        guard assessmentManager!.activityWithType(type: activityType) != nil else { return }
     
         guard assessmentEvent.state == .initial ||
-            assessmentEvent.state == .notCompleted ||
-            (assessmentEvent.state == .completed && assessmentEvent.activity.resultResettable) else { return }
+              assessmentEvent.state == .notCompleted ||
+              (assessmentEvent.state == .completed && assessmentEvent.activity.resultResettable) else { return }
         
         //Show an `ORKTaskViewController` for the assessment's task.
         let taskViewController = self.storyboard?.instantiateViewController(withIdentifier: "survey") as! SurveyViewController
         
-        task = sampleAssessment.task()
+//        task = sampleAssessment.task()
         taskViewController.popoverPresentationController?.delegate = self
         
-        performSegue(withIdentifier: "symptomToSurvey", sender: self)
+        performSegue(withIdentifier: "symptomToSurvey2", sender: self)
     }
 }
 

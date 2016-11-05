@@ -137,7 +137,7 @@ extension CarePlanStoreManager: OCKCarePlanStoreDelegate {
         updateInsights()
     }
     
-    func carePlanStore(store: OCKCarePlanStore, didReceiveUpdateOfEvent event: OCKCarePlanEvent) {
+    func carePlanStore(_ store: OCKCarePlanStore, didReceiveUpdateOf event: OCKCarePlanEvent) {
         updateInsights()
     }
 }

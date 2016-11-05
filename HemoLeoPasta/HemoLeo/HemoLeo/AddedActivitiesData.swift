@@ -17,7 +17,6 @@ class AddedActivitiesData: NSObject {
     var activity: Dictionary<String, Bool>?
     
     static var DocumentsDirectory = FileManager().urls(for: .documentDirectory, in: .userDomainMask).first!
-//    static let ArchiveURL = DocumentsDirectory.URLByAppendingPathComponent("addedActivities")
     static let ArchiveURL = DocumentsDirectory.appendingPathComponent("addedActivities")
     
     // MARK: Initialization

@@ -15,8 +15,8 @@ class PageViewCcontroller: UIPageViewController {
         return [self.getViewController(name: "story1"),
                 self.getViewController(name: "story2"),
                 self.getViewController(name: "story3"),
-            self.getViewController(name: "story4") ,
-            self.getViewController(name: "story5")]
+                self.getViewController(name: "story4") ,
+                self.getViewController(name: "story5")]
     }()
 
     //MARK: - Life Cycle

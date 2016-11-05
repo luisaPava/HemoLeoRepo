@@ -24,10 +24,6 @@ class SurveyViewController: ORKTaskViewController {
 
         // Do any additional setup after loading the view.
     }
-    
-//    override func viewWillAppear(animated: Bool) {
-//        defaults.setBool(false, forKey: "isGameScene")
-//    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

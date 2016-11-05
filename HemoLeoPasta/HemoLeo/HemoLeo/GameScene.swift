@@ -34,27 +34,27 @@ class GameScene: SKScene {
         addChild(bgImage)
         
         
-        let lionAnimatedAtlas = SKTextureAtlas(named: "LeoImages")
-        var lionFrames = [SKTexture]()
-        
-        //let numImages = lionAnimatedAtlas.textureNames.count
-        for i in 1..<23 {
-            let lionTextureName = "leo\(i)"
-            lionFrames.append(lionAnimatedAtlas.textureNamed(lionTextureName))
-        }
-        lionMovingFrames = lionFrames
-        
-        let firstFrame = lionMovingFrames[0]
-        lion = SKSpriteNode(texture: firstFrame)
-        lion.name = "lionLeo"
-        lion.isUserInteractionEnabled = false
-        lion.position = CGPoint(x: self.size.width/2, y: self.size.height/3)
-        lion.zPosition = 1
-        //lion.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame))
-        addChild(lion)
-        
-        
-        moveLionLeo()
+//        let lionAnimatedAtlas = SKTextureAtlas(named: "LeoImages")
+//        var lionFrames = [SKTexture]()
+//        
+//        //let numImages = lionAnimatedAtlas.textureNames.count
+//        for i in 1..<23 {
+//            let lionTextureName = "leo\(i)"
+//            lionFrames.append(lionAnimatedAtlas.textureNamed(lionTextureName))
+//        }
+//        lionMovingFrames = lionFrames
+//        
+//        let firstFrame = lionMovingFrames[0]
+//        lion = SKSpriteNode(texture: firstFrame)
+//        lion.name = "lionLeo"
+//        lion.isUserInteractionEnabled = false
+//        lion.position = CGPoint(x: self.size.width/2, y: self.size.height/3)
+//        lion.zPosition = 1
+//        //lion.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame))
+//        addChild(lion)
+//        
+//        
+//        moveLionLeo()
     }
     
     override func willMove(from view: SKView) {

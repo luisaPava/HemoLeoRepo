@@ -50,14 +50,14 @@ class AddCustomActivityViewController: UIViewController {
         let schedule = OCKCareSchedule.weeklySchedule(withStartDate: self.dateComponents! as DateComponents, occurrencesOnEachDay: [1, 1, 1, 1, 1, 1, 1])
         
         let activity = OCKCarePlanActivity.intervention(withIdentifier: self.activityNameTextField.text!,
-                                                                      groupIdentifier: nil,
-                                                                      title: self.activityNameTextField.text!,
-                                                                      text: self.activitySubtitleTextField.text!,
-                                                                      tintColor: UIColor.black,
-                                                                      instructions: self.activityInstructionsTextField.text!,
-                                                                      imageURL: nil,
-                                                                      schedule: schedule,
-                                                                      userInfo: nil)
+                                                                        groupIdentifier: nil,
+                                                                        title: self.activityNameTextField.text!,
+                                                                        text: self.activitySubtitleTextField.text!,
+                                                                        tintColor: UIColor.black,
+                                                                        instructions: self.activityInstructionsTextField.text!,
+                                                                        imageURL: nil,
+                                                                        schedule: schedule,
+                                                                        userInfo: nil)
         
         self.storeManager.store.add(activity) { (success, error) in
             if error == nil {

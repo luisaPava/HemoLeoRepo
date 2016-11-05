@@ -19,7 +19,7 @@ class InsightViewController: UINavigationController {
         // Do any additional setup after loading the view.
         
         storeManager.delegate = self
-        print("Insight")
+        
         if InsightViewController.insightsViewController == nil {
             InsightViewController.insightsViewController = createInsightsViewController()
             

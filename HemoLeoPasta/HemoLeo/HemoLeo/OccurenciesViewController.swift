@@ -23,8 +23,6 @@ class OccurenciesViewController: UIViewController {
     
     private let codingManager: NSCodingManager = NSCodingManager.sharedNSCodingManager
     private let storeManager: CarePlanStoreManager = CarePlanStoreManager.sharedCarePlanStoreManager
-
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,8 +70,6 @@ class OccurenciesViewController: UIViewController {
     
     @IBAction func save(sender: AnyObject) {
         
-//        let st = Int(stepper.value)
-        
         switch activity {
         case 3:
             instanceOfActivity = Exercise().carePlanActivityCustom(customOccurencies: occurences)
@@ -102,7 +98,6 @@ class OccurenciesViewController: UIViewController {
             
             // Removes the selected 'to add' activity from its coding and array.
             self.codingManager.saveToAddActivitiesData(activities: activities)
-//            print(button)
             button.isSelected = true
         }
         
@@ -116,11 +111,8 @@ extension OccurenciesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cellName = visibleCell[indexPath.row].primaryTitle
         let indexCellDescriptor = getIndexDescriptor(name: cellName)
-//        var cell =
         
         if visibleCell[indexPath.row].isExpandable {
-//            var expansionCell = cellDescriptor[indexCellDescriptor + 1]
-            
             if !cellDescriptor[indexCellDescriptor + 1].isExpanded {
                 cellDescriptor[indexCellDescriptor].buttonHidden = false
                 cellDescriptor[indexCellDescriptor + 1].isVisible = true
