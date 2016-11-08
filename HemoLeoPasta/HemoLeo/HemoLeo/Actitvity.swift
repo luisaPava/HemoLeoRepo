@@ -20,6 +20,7 @@ enum ActivityType: String {
     case Vegetables
     case Fruits
     case Water
+    
     // Weekly (every Sunday by default)
     case Exercise  //É um group na verdade
     case Shot       //É um group na verdade

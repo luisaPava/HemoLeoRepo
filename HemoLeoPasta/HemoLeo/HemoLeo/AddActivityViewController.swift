@@ -23,9 +23,7 @@ class AddActivityViewController: UIViewController {
     var selectedButton: UIButton!
     
     //MARK: - Managers
-    let storeManager: CarePlanStoreManager = CarePlanStoreManager.sharedCarePlanStoreManager
-    let codingManager: NSCodingManager = NSCodingManager.sharedNSCodingManager
-//    private let transitionManager = TransitionDelegate()
+    fileprivate let careCardModel = CareCardModel.sharedCareCardModel
     
     //MARK: - Life Cycle
     override func viewDidLoad() {
@@ -33,21 +31,14 @@ class AddActivityViewController: UIViewController {
         
         self.navigationController?.navigationBar.isTranslucent = false
         
-//        self.transitioningDelegate = transitionManager
+        careCardModel.loadActivities()
         
-        //Set an array of buttons
+        // Get the activities that are added to the CareKit
+        activities = careCardModel.getActivities()
+        
+        // Set an array of buttons
         buttons += [vegetableBtn, fruitsBtn, waterBtn, exerciseBtn, fisiotherapyBtn, shotBtn]
-        
-        // Loads default Activities if it's the app's first launch
-        let defaults = UserDefaults.standard
-        
-        if !defaults.bool(forKey: "loadedDefaultCareCardData") {
-            loadDefaultActivities()
-            defaults.set(true, forKey: "loadedDefaultCareCardData")
-        } else {
-            self.activities = codingManager.loadToAddActivitiesData()!
-        }
-        
+    
         //Set the buttons state
         setButtons()
         
@@ -67,94 +58,21 @@ class AddActivityViewController: UIViewController {
 extension AddActivityViewController {
     
     @IBAction func addActivityAction(sender: UIButton) {
-        print(#function)
         let key = sender.tag
-        var activity: OCKCarePlanActivity? = nil
         selectedButton = sender
         
         if (activities[key] == true) {
-            switch key {
-            case 0:
-                activity = Vegetables().carePlanActivity()
-                
-            case 1:
-                activity = Fruits().carePlanActivity()
-                
-            case 2:
-                activity = Water().carePlanActivity()
-                
-            case 3:
-                activity = Exercise().carePlanActivity()
-                
-            case 4:
-                activity = Fisiotherapy().carePlanActivity()
-                
-            case 5:
-                activity = Shot().carePlanActivity()
-                
-            default:
-                break
-            }
-            
-            if let activity = activity {
-                self.storeManager.store.remove(activity) { (success, error) in
-                    if (error != nil) {
-                        print("An error occurred when removing the Activity: \(error.debugDescription)")
-                    }
-                }
-                
-                self.activities[key] = false
-                sender.isSelected = false
-                
-                // Saves the 'added' activity to 'activities' coding and array.
-                self.codingManager.saveToAddActivitiesData(activities: activities)
-                
-                // Removes the selected 'added' activity from its coding and array.
-                self.codingManager.saveAddedActivitiesData(activities: activities)
-            }
+            careCardModel.removeActivity(key)
+            sender.isSelected = false
             
         } else {
-            switch key {
-            case 0:
-                activity = Vegetables().carePlanActivity()
-                
-            case 1:
-                activity = Fruits().carePlanActivity()
-                
-            case 2:
-                activity = Water().carePlanActivity()
-                
-            case 3:
-                senderActivity = 3
+            if key == 3 || key == 4 || key == 5 {
+                senderActivity = key
                 performSegue(withIdentifier: "activitiesToOccurencies", sender: self)
                 
-            case 4:
-                senderActivity = 4
-                performSegue(withIdentifier: "activitiesToOccurencies", sender: self)
-                
-            case 5:
-                senderActivity = 5
-                performSegue(withIdentifier: "activitiesToOccurencies", sender: self)
-                
-            default:
-                break
-            }
-            
-            if let activity = activity {
-                self.storeManager.store.add(activity) { (success, error) in
-                    if (error != nil) {
-                        print("An error occurred when adding a new Activity: \(error.debugDescription)")
-                    }
-                }
-                
-                sender.isSelected = true
-                self.activities[key] = true
-                
-                // Saves the 'to add' activity to 'addedActivities' coding and array.
-                self.codingManager.saveAddedActivitiesData(activities: activities)
-                
-                // Removes the selected 'to add' activity from its coding and array.
-                self.codingManager.saveToAddActivitiesData(activities: activities)
+            } else {
+                careCardModel.addActivity(key, nil)
+                selectedButton.isSelected = true
             }
         }
     }
@@ -167,17 +85,6 @@ extension AddActivityViewController {
                 
             }
         }
-    }
-    
-    // MARK: - NSCoding
-    func loadDefaultActivities() {
-        let activitiesToLoad = 6
-        
-        for _ in 0..<activitiesToLoad {
-            self.activities.append(false)
-        }
-        
-        codingManager.saveToAddActivitiesData(activities: activities)
     }
     
     //MARK: - Other methods

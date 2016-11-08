@@ -1,8 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -11,62 +15,42 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Times" translatesAutoresizingMaskIntoConstraints="NO" id="ev5-9c-y9v">
-                        <rect key="frame" x="0.0" y="0.0" width="70" height="71"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="70" id="QJE-Hr-Bo8"/>
-                            <constraint firstAttribute="height" constant="70" id="wvi-WO-JSi"/>
-                        </constraints>
-                    </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uyZ-Uv-FUT">
-                        <rect key="frame" x="29" y="22" width="14" height="27"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark" translatesAutoresizingMaskIntoConstraints="NO" id="pIC-wJ-LCq">
-                        <rect key="frame" x="250" y="0.0" width="70" height="71"/>
+                        <rect key="frame" x="250" y="0.0" width="70" height="70"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="70" id="V3S-F6-6he"/>
                             <constraint firstAttribute="width" constant="70" id="zDy-Jb-yDw"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    Segunda-feira" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ct-r5-Dbe">
-                        <rect key="frame" x="70" y="0.0" width="180" height="71"/>
+                        <rect key="frame" x="20" y="21.5" width="162.5" height="26.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="162.5" id="klV-kd-eKl"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="7Ct-r5-Dbe" firstAttribute="leading" secondItem="ev5-9c-y9v" secondAttribute="trailing" id="1F2-Wq-xLG"/>
-                    <constraint firstAttribute="bottom" secondItem="7Ct-r5-Dbe" secondAttribute="bottom" id="FFB-9D-tn6"/>
-                    <constraint firstAttribute="bottom" secondItem="ev5-9c-y9v" secondAttribute="bottom" id="QHn-Xv-X8F"/>
-                    <constraint firstItem="uyZ-Uv-FUT" firstAttribute="centerX" secondItem="ev5-9c-y9v" secondAttribute="centerX" id="QjZ-6R-E4C"/>
-                    <constraint firstItem="ev5-9c-y9v" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="R7L-7z-SJe"/>
-                    <constraint firstItem="pIC-wJ-LCq" firstAttribute="leading" secondItem="7Ct-r5-Dbe" secondAttribute="trailing" id="XhE-a5-xQj"/>
+                    <constraint firstItem="7Ct-r5-Dbe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="4H6-ae-aSV"/>
                     <constraint firstAttribute="trailing" secondItem="pIC-wJ-LCq" secondAttribute="trailing" id="Z5u-o3-cgt"/>
+                    <constraint firstItem="7Ct-r5-Dbe" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="apI-93-iOP"/>
                     <constraint firstAttribute="bottom" secondItem="pIC-wJ-LCq" secondAttribute="bottom" id="buX-ea-Gjr"/>
-                    <constraint firstItem="7Ct-r5-Dbe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="eql-lC-mIh"/>
-                    <constraint firstItem="uyZ-Uv-FUT" firstAttribute="centerY" secondItem="ev5-9c-y9v" secondAttribute="centerY" id="hKo-U5-E2P"/>
-                    <constraint firstItem="ev5-9c-y9v" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="rML-CY-mJU"/>
                     <constraint firstItem="pIC-wJ-LCq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="zPk-l5-iIc"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="check" destination="pIC-wJ-LCq" id="UoF-DN-6yp"/>
                 <outlet property="labelNome" destination="7Ct-r5-Dbe" id="oyP-0Q-RbX"/>
-                <outlet property="ocurrencesLabel" destination="uyZ-Uv-FUT" id="C3i-N9-Hhf"/>
-                <outlet property="roundImage" destination="ev5-9c-y9v" id="6Ma-nN-oyx"/>
             </connections>
             <point key="canvasLocation" x="200" y="325"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="Times" width="60" height="60"/>
         <image name="checkmark" width="19" height="15"/>
     </resources>
 </document>

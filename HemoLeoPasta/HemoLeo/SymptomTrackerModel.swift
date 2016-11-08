@@ -12,8 +12,12 @@ import CareKit
 class SymptomTrackerModel: NSObject {
     static let sharedSymptomTracker = SymptomTrackerModel()
     private let sharedCarePlanStore = CarePlanStoreManager.sharedCarePlanStoreManager
+    private let storeManager: CarePlanStoreManager = CarePlanStoreManager.sharedCarePlanStoreManager
+    private let assessmentManager: AssessmentsManager!
     
-    private override init() { }
+    private override init() {
+        assessmentManager = AssessmentsManager(carePlanStore: storeManager.store)
+    }
     
     func createSymtomTracker() -> OCKSymptomTrackerViewController {
         let symptomCardViewController = OCKSymptomTrackerViewController(carePlanStore: sharedCarePlanStore.store)
@@ -29,6 +33,17 @@ class SymptomTrackerModel: NSObject {
         return symptomCardViewController
     }
     
-    func 
+    func shouldGoToSurvey(assessmentEvent: OCKCarePlanEvent) -> Bool {
+        // Lookup the assessment the row represents.
+        guard let activityType = ActivityType(rawValue: assessmentEvent.activity.identifier) else { return false }
+        
+        guard assessmentManager!.activityWithType(type: activityType) != nil else { return false }
+        
+        guard assessmentEvent.state == .initial ||
+              assessmentEvent.state == .notCompleted ||
+              (assessmentEvent.state == .completed && assessmentEvent.activity.resultResettable) else { return false }
+        
+        return true
+    }
 }
 

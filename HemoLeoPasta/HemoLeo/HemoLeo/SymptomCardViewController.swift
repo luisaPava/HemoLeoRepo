@@ -11,10 +11,12 @@ import CareKit
 import ResearchKit
 
 class SymptomCardViewController: UINavigationController {
-    let storeManager: CarePlanStoreManager = CarePlanStoreManager.sharedCarePlanStoreManager
+    var storeManager: CarePlanStoreManager = CarePlanStoreManager.sharedCarePlanStoreManager
     var assessmentManager: AssessmentsManager? = nil
-    static var viewController: OCKSymptomTrackerViewController!
+    let symptomTrackerModel = SymptomTrackerModel.sharedSymptomTracker
+    var viewController: OCKSymptomTrackerViewController!
     var task: ORKTask!
+    var event: OCKCarePlanEvent!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,8 +25,9 @@ class SymptomCardViewController: UINavigationController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        SymptomCardViewController.viewController = createCareCardVC()
-        self.pushViewController(SymptomCardViewController.viewController, animated: false)
+        viewController = symptomTrackerModel.createSymtomTracker()
+        viewController.delegate = self
+        self.pushViewController(viewController, animated: false)
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,25 +35,10 @@ class SymptomCardViewController: UINavigationController {
         // Dispose of any resources that can be recreated.
     }
     
-    private func createCareCardVC() -> OCKSymptomTrackerViewController {
-        let viewController = OCKSymptomTrackerViewController(carePlanStore: storeManager.store)
-        
-        viewController.showEdgeIndicators = true
-        viewController.delegate = self
-        
-        // Setup controller's title and tab bar icon
-        viewController.title = "Cuidados"
-        viewController.tabBarItem = UITabBarItem(title: "Cuidados", image: UIImage(named: "carecard"), selectedImage: UIImage(named: "carecard-fill"))
-        
-        viewController.navigationItem.leftBarButtonItem?.tintColor = UIColor.red
-        
-        return viewController
-    }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "symptomToSurvey" {
-//            let vc = segue.destination as! SurveyViewController
-//            vc.task = task
+        if segue.identifier == "symptomToSurvey2" {
+            let vc = segue.destination as! SurveyController
+            vc.event = self.event
         }
     }
 }
@@ -59,21 +47,16 @@ class SymptomCardViewController: UINavigationController {
 extension SymptomCardViewController: OCKSymptomTrackerViewControllerDelegate {
     func symptomTrackerViewController(_ viewController: OCKSymptomTrackerViewController, didSelectRowWithAssessmentEvent assessmentEvent: OCKCarePlanEvent) {
         
-        // Lookup the assessment the row represents.
-        guard let activityType = ActivityType(rawValue: assessmentEvent.activity.identifier) else { return }
-        guard assessmentManager!.activityWithType(type: activityType) != nil else { return }
-    
-        guard assessmentEvent.state == .initial ||
-              assessmentEvent.state == .notCompleted ||
-              (assessmentEvent.state == .completed && assessmentEvent.activity.resultResettable) else { return }
-        
-        //Show an `ORKTaskViewController` for the assessment's task.
-        let taskViewController = self.storyboard?.instantiateViewController(withIdentifier: "survey") as! SurveyViewController
-        
-//        task = sampleAssessment.task()
-        taskViewController.popoverPresentationController?.delegate = self
-        
-        performSegue(withIdentifier: "symptomToSurvey2", sender: self)
+        if symptomTrackerModel.shouldGoToSurvey(assessmentEvent: assessmentEvent) {
+            self.event = assessmentEvent
+            
+            //Show an `ORKTaskViewController` for the assessment's task.
+            let taskViewController = self.storyboard?.instantiateViewController(withIdentifier: "survey") as! SurveyController
+            taskViewController.popoverPresentationController?.delegate = self
+            
+            performSegue(withIdentifier: "symptomToSurvey2", sender: self)
+            
+        }
     }
 }
 

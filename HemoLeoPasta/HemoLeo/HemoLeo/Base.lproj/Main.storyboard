@@ -813,7 +813,7 @@
         <!--Survey View Controller-->
         <scene sceneID="s8G-Jt-sJZ">
             <objects>
-                <viewController storyboardIdentifier="survey" id="osk-FB-Tce" customClass="SurveyViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="osk-FB-Tce" customClass="SurveyViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AXO-33-kx5"/>
                         <viewControllerLayoutGuide type="bottom" id="KOa-WY-agA"/>
@@ -833,10 +833,10 @@
             </objects>
             <point key="canvasLocation" x="-78" y="2745"/>
         </scene>
-        <!--View Controller-->
+        <!--Survey Controller-->
         <scene sceneID="EWW-uz-Vfp">
             <objects>
-                <viewController id="qx3-w8-gE8" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="survey" id="qx3-w8-gE8" customClass="SurveyController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CJK-3Z-Bi8"/>
                         <viewControllerLayoutGuide type="bottom" id="3jY-vQ-ZQg"/>
@@ -845,13 +845,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Teste" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EM4-ju-eCP">
-                                <rect key="frame" x="83" y="98" width="315" height="151"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TYu-pB-afu">
+                                <rect key="frame" x="59" y="158" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="47"/>
                                 <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jz-sE-9n3">
+                                <rect key="frame" x="84" y="485" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="save:" destination="qx3-w8-gE8" eventType="touchUpInside" id="zl5-Gd-779"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -860,6 +868,9 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="414" height="736"/>
+                    <connections>
+                        <outlet property="texxt" destination="TYu-pB-afu" id="psz-rZ-xR1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OsO-MD-YHf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1142,7 +1153,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="save:" destination="UwC-e4-M0J" eventType="touchUpInside" id="62C-Yl-tyD"/>
+                                    <action selector="saveWithSender:" destination="UwC-e4-M0J" eventType="touchUpInside" id="vxt-TE-BuQ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quantas vezes você faz essa atividade por dia?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOz-9h-RXO">
@@ -1171,113 +1182,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bHd-ch-X2v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2669" y="909"/>
-        </scene>
-        <!--Add Custom Activity View Controller-->
-        <scene sceneID="KWp-v0-vgt">
-            <objects>
-                <viewController storyboardIdentifier="AddCustomActivityVC" id="od5-IO-opm" customClass="AddCustomActivityViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="k4Z-D2-0fx"/>
-                        <viewControllerLayoutGuide type="bottom" id="eHR-gM-bLi"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="wDy-ul-gIV">
-                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TGe-hh-CX8">
-                                <rect key="frame" x="20" y="94" width="560" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="ymB-CK-qoR"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d1H-Qf-rQO">
-                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="xrP-bu-sK8"/>
-                                </constraints>
-                                <items>
-                                    <navigationItem title="Atividade Personalizada" id="shh-hs-tjE">
-                                        <barButtonItem key="leftBarButtonItem" title="Voltar" id="4YB-2R-FhN">
-                                            <connections>
-                                                <action selector="backToAddActivities:" destination="od5-IO-opm" id="VC0-zg-pkL"/>
-                                            </connections>
-                                        </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="Salvar" id="0n5-Fx-pLE">
-                                            <connections>
-                                                <action selector="saveCustomActivity:" destination="od5-IO-opm" id="Rye-Ot-yRQ"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Subtitulo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J8k-yr-br7">
-                                <rect key="frame" x="20" y="139" width="560" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="cB0-gW-XJc"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Instruções" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fhW-vc-sNc">
-                                <rect key="frame" x="20" y="184" width="560" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="X8W-2q-h59"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ocorrências" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ema-We-Gfl">
-                                <rect key="frame" x="20" y="229" width="560" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="hPz-I8-tW2"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="SOC-8G-KPL">
-                                <rect key="frame" x="20" y="289" width="560" height="216"/>
-                                <date key="date" timeIntervalSinceReferenceDate="490223109.97774601">
-                                    <!--2016-07-14 21:05:09 +0000-->
-                                </date>
-                                <connections>
-                                    <action selector="datePicker:" destination="od5-IO-opm" eventType="valueChanged" id="CFG-gs-13R"/>
-                                </connections>
-                            </datePicker>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="Ema-We-Gfl" firstAttribute="leading" secondItem="wDy-ul-gIV" secondAttribute="leadingMargin" id="344-5S-RoQ"/>
-                            <constraint firstItem="fhW-vc-sNc" firstAttribute="leading" secondItem="wDy-ul-gIV" secondAttribute="leadingMargin" id="3Fm-Kw-MeR"/>
-                            <constraint firstItem="SOC-8G-KPL" firstAttribute="top" secondItem="Ema-We-Gfl" secondAttribute="bottom" constant="30" id="5W1-KW-SiB"/>
-                            <constraint firstItem="d1H-Qf-rQO" firstAttribute="leading" secondItem="wDy-ul-gIV" secondAttribute="leadingMargin" constant="-20" id="8hV-BS-Xkj"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Ema-We-Gfl" secondAttribute="trailing" id="9fH-Ug-Anf"/>
-                            <constraint firstItem="fhW-vc-sNc" firstAttribute="top" secondItem="J8k-yr-br7" secondAttribute="bottom" constant="15" id="AwF-zD-Cj6"/>
-                            <constraint firstItem="J8k-yr-br7" firstAttribute="leading" secondItem="wDy-ul-gIV" secondAttribute="leadingMargin" id="O3y-yE-qL7"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="SOC-8G-KPL" secondAttribute="trailing" id="Ofw-uh-KW0"/>
-                            <constraint firstItem="d1H-Qf-rQO" firstAttribute="top" secondItem="k4Z-D2-0fx" secondAttribute="bottom" id="QH1-kW-XmJ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="d1H-Qf-rQO" secondAttribute="trailing" constant="-20" id="UZK-dL-xah"/>
-                            <constraint firstItem="TGe-hh-CX8" firstAttribute="leading" secondItem="wDy-ul-gIV" secondAttribute="leadingMargin" id="f1X-VF-bVn"/>
-                            <constraint firstItem="Ema-We-Gfl" firstAttribute="top" secondItem="fhW-vc-sNc" secondAttribute="bottom" constant="15" id="fBH-an-qcH"/>
-                            <constraint firstItem="TGe-hh-CX8" firstAttribute="top" secondItem="d1H-Qf-rQO" secondAttribute="bottom" constant="30" id="g4l-kd-fyL"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="TGe-hh-CX8" secondAttribute="trailing" id="gfh-Sq-Kwa"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="J8k-yr-br7" secondAttribute="trailing" id="kdo-rM-cTl"/>
-                            <constraint firstItem="J8k-yr-br7" firstAttribute="top" secondItem="TGe-hh-CX8" secondAttribute="bottom" constant="15" id="pqg-RC-hSU"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="fhW-vc-sNc" secondAttribute="trailing" id="qzj-cO-pTm"/>
-                            <constraint firstItem="SOC-8G-KPL" firstAttribute="leading" secondItem="wDy-ul-gIV" secondAttribute="leadingMargin" id="s5m-1T-Vnn"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="activityInstructionsTextField" destination="fhW-vc-sNc" id="h40-gf-YHg"/>
-                        <outlet property="activityNameTextField" destination="TGe-hh-CX8" id="2hr-AI-qBE"/>
-                        <outlet property="activityOccurrencesTextField" destination="Ema-We-Gfl" id="16m-ZM-wso"/>
-                        <outlet property="activitySubtitleTextField" destination="J8k-yr-br7" id="qOY-Mn-IVH"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0pC-OQ-eJO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2000" y="1779"/>
         </scene>
     </scenes>
     <resources>

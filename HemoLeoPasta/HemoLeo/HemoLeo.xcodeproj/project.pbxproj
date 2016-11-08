@@ -131,6 +131,8 @@
 		4E36E46B1D45BA330005A1BE /* OCKInsightItem+EmptyMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E36E4691D45BA330005A1BE /* OCKInsightItem+EmptyMessage.swift */; };
 		4E3CE02B1D3FDF0F00E4F422 /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3CE02A1D3FDF0F00E4F422 /* SurveyViewController.swift */; };
 		4E3CE03C1D400FFF00E4F422 /* ButtonAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3CE03B1D400FFF00E4F422 /* ButtonAnimation.swift */; };
+		4E4F03EA1DCD8ABF00523507 /* SurveyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4F03E91DCD8ABF00523507 /* SurveyController.swift */; };
+		4E4F03EC1DD0B9EE00523507 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4F03EB1DD0B9EE00523507 /* Helper.swift */; };
 		4EA969411D3D622400DBF2AD /* Bleeding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA969401D3D622400DBF2AD /* Bleeding.swift */; };
 		4EA969471D3D681000DBF2AD /* Bruising.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA969461D3D681000DBF2AD /* Bruising.swift */; };
 		4EAFA1EF1DC7AAC2002BA048 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAFA1EE1DC7AAC2002BA048 /* AppDelegate.swift */; };
@@ -341,6 +343,8 @@
 		4E36E4691D45BA330005A1BE /* OCKInsightItem+EmptyMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OCKInsightItem+EmptyMessage.swift"; sourceTree = "<group>"; };
 		4E3CE02A1D3FDF0F00E4F422 /* SurveyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
 		4E3CE03B1D400FFF00E4F422 /* ButtonAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonAnimation.swift; sourceTree = "<group>"; };
+		4E4F03E91DCD8ABF00523507 /* SurveyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyController.swift; sourceTree = "<group>"; };
+		4E4F03EB1DD0B9EE00523507 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		4EA969401D3D622400DBF2AD /* Bleeding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bleeding.swift; sourceTree = "<group>"; };
 		4EA969461D3D681000DBF2AD /* Bruising.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bruising.swift; sourceTree = "<group>"; };
 		4EAFA1EC1DC7AAC2002BA048 /* iPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -470,7 +474,6 @@
 				2B1A21501D3E7B70007F1B68 /* Managers */,
 				2B1A214F1D3E75D6007F1B68 /* Scenes */,
 				2BA1889E1D355C5F007F1CEB /* Global */,
-				2BA1889C1D355C17007F1CEB /* CareKit */,
 				2BA1889B1D355C09007F1CEB /* Others */,
 				2BA1889A1D355BFB007F1CEB /* Storyboards */,
 				2BA188991D355BCC007F1CEB /* Controllers */,
@@ -504,7 +507,6 @@
 				4E2B29C11D36CD7600EED2B4 /* Canvas.swift */,
 				77E89D101D4252AA00FDA59B /* ThemesViewController.swift */,
 				77E89D161D4252EA00FDA59B /* ThemesCollectionViewCell.swift */,
-				2B87D5E81D38247000F29678 /* AddActivityViewController.swift */,
 				2B87D5F11D382F0100F29678 /* AddCustomActivityViewController.swift */,
 				4E2B29C71D37057A00EED2B4 /* PageViewCcontroller.swift */,
 				77E89D1A1D42542900FDA59B /* UIAnimation.swift */,
@@ -536,6 +538,7 @@
 				2BA188A01D355C7F007F1CEB /* Activities */,
 			);
 			name = CareKit;
+			path = HemoLeo;
 			sourceTree = "<group>";
 		};
 		2BA1889E1D355C5F007F1CEB /* Global */ = {
@@ -653,9 +656,11 @@
 				2B1A214D1D3E71E2007F1B68 /* OccurenciesViewController.swift */,
 				4E36E45A1D45B2570005A1BE /* InsightViewController.swift */,
 				77E89D181D4253CD00FDA59B /* SelectThemeViewController.swift */,
+				2B87D5E81D38247000F29678 /* AddActivityViewController.swift */,
 				4E2B29CD1D395AF800EED2B4 /* SymptomCardViewController.swift */,
 				4E3CE02A1D3FDF0F00E4F422 /* SurveyViewController.swift */,
 				4E2B29C31D36CDC400EED2B4 /* CareCardViewController.swift */,
+				4E4F03E91DCD8ABF00523507 /* SurveyController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -684,6 +689,7 @@
 		4EAFA1FF1DC7AB70002BA048 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2BA1889C1D355C17007F1CEB /* CareKit */,
 				4EAFA2001DC7AB97002BA048 /* CareCardModel.swift */,
 				2BA188A11D355CBD007F1CEB /* CarePlanStoreManager.swift */,
 				4EAFA2021DC7AD4E002BA048 /* SymptomTrackerModel.swift */,
@@ -692,6 +698,7 @@
 				4EAFA2081DC7B373002BA048 /* Leo.swift */,
 				4EAFA20A1DC7B5C4002BA048 /* OccurenciesModel.swift */,
 				2B1A21511D3E7BA3007F1B68 /* NSCodingManager.swift */,
+				4E4F03EB1DD0B9EE00523507 /* Helper.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -1048,6 +1055,7 @@
 				2B7997F21D37CD9F00D0996D /* Story2ViewController.swift in Sources */,
 				4E2B2DF31D3ABEEB00EED2B4 /* AssessmentsManager.swift in Sources */,
 				2BCA5D351D42B8FF00EAC063 /* Storytelling3View.swift in Sources */,
+				4E4F03EA1DCD8ABF00523507 /* SurveyController.swift in Sources */,
 				2BA188801D355A2C007F1CEB /* AppDelegate.swift in Sources */,
 				77E89D191D4253CD00FDA59B /* SelectThemeViewController.swift in Sources */,
 				2B87D5E91D38247000F29678 /* AddActivityViewController.swift in Sources */,
@@ -1058,6 +1066,7 @@
 				4E36E4651D45B9A20005A1BE /* InsightsBuilder.swift in Sources */,
 				4EAFA20B1DC7B5C4002BA048 /* OccurenciesModel.swift in Sources */,
 				2BCA5CDA1D42ABE700EAC063 /* Story3ViewController.swift in Sources */,
+				4E4F03EC1DD0B9EE00523507 /* Helper.swift in Sources */,
 				7777110D1D3E9BD00066A0E2 /* GameScene.swift in Sources */,
 				4E132CE61D427DA1004CBC6F /* Cells.swift in Sources */,
 				2B1A214E1D3E71E2007F1B68 /* OccurenciesViewController.swift in Sources */,

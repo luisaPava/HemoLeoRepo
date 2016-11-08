@@ -32,6 +32,8 @@ class MainViewController: UIViewController {
         scene.scaleMode = .resizeFill
         skView.presentScene(scene)
         
+        print("\(self.view.bounds.height) - \(self.view.bounds.width)")
+        
         func prefersStatusBarHidden() -> Bool {
             return true
         }
@@ -39,10 +41,10 @@ class MainViewController: UIViewController {
         //Buttons
         
         //Button to CareCard
-        careCardButton = UIButton(frame: CGRect(x: 934, y: 30, width: 70, height: 70))
+        careCardButton = UIButton(frame: CGRect(x: width / 1.096, y: height / 25.6, width: width / 14.628, height: height / 10.971))
         careCardButton.backgroundColor = UIColor.white
         careCardButton.addTarget(self, action: #selector(careCardButtonAction), for: .touchUpInside)
-        careCardButton.layer.cornerRadius = 35
+        careCardButton.layer.cornerRadius = width / 29.25
         careCardButton.layer.masksToBounds = true
         careCardButton.layer.zPosition = 1000
         careCardButton.showsTouchWhenHighlighted = false
@@ -52,10 +54,10 @@ class MainViewController: UIViewController {
         self.view.addSubview(careCardButton)
         
         //Button to SymptomCard
-        symptomCardButton = UIButton(frame: CGRect(x: 834, y: 30, width: 70, height: 70))
+        symptomCardButton = UIButton(frame: CGRect(x: width / 1.227, y: height / 25.6, width: width / 14.628, height: height / 10.971))
         symptomCardButton.backgroundColor = UIColor.white
         symptomCardButton.addTarget(self, action: #selector(symptomCardButtonAction), for: .touchUpInside)
-        symptomCardButton.layer.cornerRadius = 35
+        symptomCardButton.layer.cornerRadius = width / 29.25
         symptomCardButton.layer.masksToBounds = true
         symptomCardButton.layer.zPosition = 1000
         symptomCardButton.setImage(UIImage(named: "ActivityCheck"), for: .normal)
@@ -63,10 +65,10 @@ class MainViewController: UIViewController {
         self.view.addSubview(symptomCardButton)
         
         //Button to Canvas
-        canvasButton = UIButton(frame: CGRect(x: 30, y: 30, width: 70, height: 70))
+        canvasButton = UIButton(frame: CGRect(x: width / 34.133, y: height / 25.6, width: width / 14.628, height: height / 10.971))
         canvasButton.backgroundColor = UIColor.white
         canvasButton.addTarget(self, action: #selector(canvasButtonAction), for: .touchUpInside)
-        canvasButton.layer.cornerRadius = 35
+        canvasButton.layer.cornerRadius = width / 29.25
         canvasButton.layer.masksToBounds = true
         canvasButton.layer.zPosition = 1000
         canvasButton.setImage(UIImage(named: "Canvas"), for: .normal)
@@ -74,10 +76,10 @@ class MainViewController: UIViewController {
         self.view.addSubview(canvasButton)
         
         //Button to Themes
-        themesButton = UIButton(frame: CGRect(x: 130, y: 30, width: 70, height: 70))
+        themesButton = UIButton(frame: CGRect(x: width / 7.876, y: height / 25.6, width: width / 14.628, height: height / 10.971))
         themesButton.backgroundColor = UIColor.white
         themesButton.addTarget(self, action: #selector(themesButtonAction), for: .touchUpInside)
-        themesButton.layer.cornerRadius = 35
+        themesButton.layer.cornerRadius = width / 29.25
         themesButton.layer.masksToBounds = true
         themesButton.layer.zPosition = 1000
         themesButton.setImage(UIImage(named: "Botao Temas"), for: .normal)
@@ -85,10 +87,10 @@ class MainViewController: UIViewController {
         self.view.addSubview(themesButton)
         
         //Button to InsightCard
-        insightCardButton = UIButton(frame: CGRect(x: 734, y: 30, width: 70, height: 70))
+        insightCardButton = UIButton(frame: CGRect(x: width / 1.395, y: height / 25.6, width: width / 14.628, height: height / 10.971))
         insightCardButton.backgroundColor = UIColor.white
         insightCardButton.addTarget(self, action: #selector(insightCardButtonAction), for: .touchUpInside)
-        insightCardButton.layer.cornerRadius = 35
+        insightCardButton.layer.cornerRadius = width / 29.25
         insightCardButton.layer.masksToBounds = true
         insightCardButton.layer.zPosition = 1000
         insightCardButton.setImage(UIImage(named: "Insight"), for: .normal)
@@ -109,7 +111,7 @@ class MainViewController: UIViewController {
     }
     
     override func loadView() {
-        self.view = SKView(frame: CGRect(x: 0, y: 0, width: 1024, height: 768))
+        self.view = SKView(frame: CGRect(x: 0, y: 0, width: width, height: height))
     }
     
     override var shouldAutorotate: Bool {

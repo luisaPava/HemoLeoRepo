@@ -44,25 +44,25 @@ class SurveyViewController: ORKTaskViewController {
 extension SurveyViewController: ORKTaskViewControllerDelegate {
     // Called with then user completes a presented `ORKTaskViewController`.
     func taskViewController(_ taskViewController: ORKTaskViewController, didFinishWith reason: ORKTaskViewControllerFinishReason, error: Error?) {
-        defer {
-            dismiss(animated: true, completion: nil)
-        }
+//        defer {
+//            dismiss(animated: true, completion: nil)
+//        }
+//        
+//        // Make sure the reason the task controller finished is that it was completed.
+//        guard reason == .completed else { return }
+//        
+//        // Determine the event that was completed and the `SampleAssessment` it represents.
+//        guard let event = SymptomCardViewController.viewController.lastSelectedAssessmentEvent,
+//            let activityType = ActivityType(rawValue: event.activity.identifier),
+//            let sampleAssessment = assessmentManager!.activityWithType(type: activityType) else { return }
+//        
+//        // Build an `OCKCarePlanEventResult` that can be saved into the `OCKCarePlanStore`.
+////        let carePlanResult = sampleAssessment.buildResultForCarePlanEvent(event: event, taskResult: taskViewController.result)
+//        
+//        badgeSmartProgress(survey: event.activity.identifier)
+//        badgeSmartComplete()
         
-        // Make sure the reason the task controller finished is that it was completed.
-        guard reason == .completed else { return }
-        
-        // Determine the event that was completed and the `SampleAssessment` it represents.
-        guard let event = SymptomCardViewController.viewController.lastSelectedAssessmentEvent,
-            let activityType = ActivityType(rawValue: event.activity.identifier),
-            let sampleAssessment = assessmentManager!.activityWithType(type: activityType) else { return }
-        
-        // Build an `OCKCarePlanEventResult` that can be saved into the `OCKCarePlanStore`.
-        let carePlanResult = sampleAssessment.buildResultForCarePlanEvent(event: event, taskResult: taskViewController.result)
-        
-        badgeSmartProgress(survey: event.activity.identifier)
-        badgeSmartComplete()
-        
-        completeEvent(event: event, inStore: storeManager.store, withResult: carePlanResult)
+//        completeEvent(event: event, inStore: storeManager.store, withResult: carePlanResult)
     }
     
     func taskViewController(_ taskViewController: ORKTaskViewController, stepViewControllerWillAppear stepViewController: ORKStepViewController) {
