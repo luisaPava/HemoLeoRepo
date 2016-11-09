@@ -21,7 +21,7 @@ class SurveyController: UIViewController {
         assessmentManager = AssessmentsManager(carePlanStore: storeManager.store)
         
     }
-
+    
     @IBAction func save(_ sender: Any) {
         let activityType = ActivityType(rawValue: event.activity.identifier)
         let assessment = assessmentManager!.activityWithType(type: activityType!)
@@ -30,13 +30,17 @@ class SurveyController: UIViewController {
         completeEvent(event: event, inStore: storeManager.store, withResult: result!)
         
         self.dismiss(animated: false, completion: nil)
+    }
     
+    
+    @IBAction func choiceAction(_ sender: Any) {
+        
     }
     
     func completeEvent(event: OCKCarePlanEvent, inStore store: OCKCarePlanStore, withResult result: OCKCarePlanEventResult) {
         store.update(event, with: result, state: .completed) { success, _, error in
             if !success {
-                print(error?.localizedDescription)
+                print(error?.localizedDescription as Any)
             }
         }
     }

@@ -48,6 +48,7 @@ class OccurenciesViewController: UIViewController {
             button.isSelected = false
             
         } else {
+            careCardModel.removeActivity(activity)
             careCardModel.addActivity(activity, occurencies)
             button.isSelected = true
 
