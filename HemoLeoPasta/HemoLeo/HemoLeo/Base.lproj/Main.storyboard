@@ -531,14 +531,14 @@
                                 <rect key="frame" x="16" y="581" width="343" height="56"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKa-Wf-XBB">
-                                        <rect key="frame" x="0.0" y="2.5" width="0.0" height="51"/>
+                                        <rect key="frame" x="0.0" y="3" width="0.0" height="51"/>
                                         <state key="normal" image="Black"/>
                                         <connections>
                                             <action selector="pencilPressed:" destination="DsG-hq-x4v" eventType="touchUpInside" id="X1d-27-qdZ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXh-hg-lqw">
-                                        <rect key="frame" x="0.0" y="2.5" width="0.0" height="51"/>
+                                        <rect key="frame" x="0.0" y="3" width="0.0" height="51"/>
                                         <state key="normal" image="LightGray"/>
                                         <connections>
                                             <action selector="pencilPressed:" destination="DsG-hq-x4v" eventType="touchUpInside" id="glI-Nt-DTN"/>
@@ -552,49 +552,49 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MVP-KI-IyB">
-                                        <rect key="frame" x="0.0" y="2.5" width="0.0" height="51"/>
+                                        <rect key="frame" x="0.0" y="3" width="0.0" height="51"/>
                                         <state key="normal" image="DarkBlue"/>
                                         <connections>
                                             <action selector="pencilPressed:" destination="DsG-hq-x4v" eventType="touchUpInside" id="m10-Ym-SZC"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0E8-1u-8lg">
-                                        <rect key="frame" x="0.0" y="2.5" width="32" height="51"/>
+                                        <rect key="frame" x="0.0" y="3" width="32" height="51"/>
                                         <state key="normal" image="LightBlue"/>
                                         <connections>
                                             <action selector="pencilPressed:" destination="DsG-hq-x4v" eventType="touchUpInside" id="xLz-s2-jvx"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="5" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WmQ-r9-jQH">
-                                        <rect key="frame" x="32" y="2.5" width="51" height="51"/>
+                                        <rect key="frame" x="32" y="3" width="51" height="51"/>
                                         <state key="normal" image="DarkGreen"/>
                                         <connections>
                                             <action selector="pencilPressed:" destination="DsG-hq-x4v" eventType="touchUpInside" id="4Gd-qt-THb"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="6" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5pq-qR-jJS">
-                                        <rect key="frame" x="83" y="2.5" width="51" height="51"/>
+                                        <rect key="frame" x="83" y="3" width="51" height="51"/>
                                         <state key="normal" image="LightGreen"/>
                                         <connections>
                                             <action selector="pencilPressed:" destination="DsG-hq-x4v" eventType="touchUpInside" id="Zwx-3w-9Wd"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="7" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oGk-lv-xiD">
-                                        <rect key="frame" x="134" y="2.5" width="51" height="51"/>
+                                        <rect key="frame" x="134" y="3" width="51" height="51"/>
                                         <state key="normal" image="Brown"/>
                                         <connections>
                                             <action selector="pencilPressed:" destination="DsG-hq-x4v" eventType="touchUpInside" id="TId-nw-f1r"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="8" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xr-h8-fKv">
-                                        <rect key="frame" x="185" y="2.5" width="51" height="51"/>
+                                        <rect key="frame" x="185" y="3" width="51" height="51"/>
                                         <state key="normal" image="Orange"/>
                                         <connections>
                                             <action selector="pencilPressed:" destination="DsG-hq-x4v" eventType="touchUpInside" id="7YA-9c-EtT"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="9" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbL-aJ-Hhg">
-                                        <rect key="frame" x="236" y="2.5" width="51" height="51"/>
+                                        <rect key="frame" x="236" y="3" width="51" height="51"/>
                                         <state key="normal" image="Yellos"/>
                                         <connections>
                                             <action selector="pencilPressed:" destination="DsG-hq-x4v" eventType="touchUpInside" id="CFF-gR-V9v"/>
@@ -852,11 +852,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0WH-kA-9gq">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0WH-kA-9gq">
                                 <rect key="frame" x="315" y="485" width="68" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" identifier="Joelho"/>
                                 <state key="normal" title="Tornozelo"/>
+                                <connections>
+                                    <action selector="ombroAction:" destination="qx3-w8-gE8" eventType="touchUpInside" id="2nz-xF-aqt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmP-AC-8Wf">
                                 <rect key="frame" x="171" y="596" width="43" height="30"/>
@@ -866,29 +869,41 @@
                                     <action selector="save:" destination="qx3-w8-gE8" eventType="touchUpInside" id="gKF-Xd-bEz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jz-sE-9n3">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jz-sE-9n3">
                                 <rect key="frame" x="59" y="485" width="48" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" identifier="Ombro"/>
                                 <state key="normal" title="Ombro"/>
+                                <connections>
+                                    <action selector="ombroAction:" destination="qx3-w8-gE8" eventType="touchUpInside" id="Zfu-ez-5Zo"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbc-tF-Tn6">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbc-tF-Tn6">
                                 <rect key="frame" x="120" y="485" width="61" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" identifier="Cotovelo"/>
                                 <state key="normal" title="Cotovelo"/>
+                                <connections>
+                                    <action selector="ombroAction:" destination="qx3-w8-gE8" eventType="touchUpInside" id="EuC-zY-BMH"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43X-w4-OeA">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43X-w4-OeA">
                                 <rect key="frame" x="198" y="485" width="43" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" identifier="Virilha"/>
                                 <state key="normal" title="Virilha"/>
+                                <connections>
+                                    <action selector="ombroAction:" destination="qx3-w8-gE8" eventType="touchUpInside" id="lgS-My-jrq"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uXO-nR-ObZ">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uXO-nR-ObZ">
                                 <rect key="frame" x="248" y="485" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" identifier="Joelho"/>
                                 <state key="normal" title="Joelho"/>
+                                <connections>
+                                    <action selector="ombroAction:" destination="qx3-w8-gE8" eventType="touchUpInside" id="oBY-r3-FJl"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

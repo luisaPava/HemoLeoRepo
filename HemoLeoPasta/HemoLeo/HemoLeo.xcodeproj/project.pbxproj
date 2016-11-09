@@ -426,10 +426,8 @@
 		2BA188731D355A2C007F1CEB = {
 			isa = PBXGroup;
 			children = (
+				4E3243F81DD3873E00258CE1 /* Frameworks */,
 				4EAFA1FE1DC7AB50002BA048 /* Common */,
-				777711061D3E9AAC0066A0E2 /* SpriteKit.framework */,
-				4E2B2DDB1D3A984D00EED2B4 /* ResearchKit.xcodeproj */,
-				2B02111F1D35735800AFFB17 /* CareKit.xcodeproj */,
 				2BA1887E1D355A2C007F1CEB /* HemoLeo */,
 				4EAFA1ED1DC7AAC2002BA048 /* iPhone */,
 				2BA1887D1D355A2C007F1CEB /* Products */,
@@ -535,6 +533,16 @@
 				4EA969401D3D622400DBF2AD /* Bleeding.swift */,
 			);
 			name = Assessments;
+			sourceTree = "<group>";
+		};
+		4E3243F81DD3873E00258CE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				777711061D3E9AAC0066A0E2 /* SpriteKit.framework */,
+				4E2B2DDB1D3A984D00EED2B4 /* ResearchKit.xcodeproj */,
+				2B02111F1D35735800AFFB17 /* CareKit.xcodeproj */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		4E36E4601D45B97E0005A1BE /* Insight */ = {

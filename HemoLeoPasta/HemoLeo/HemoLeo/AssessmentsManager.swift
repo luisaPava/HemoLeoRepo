@@ -39,11 +39,9 @@ class AssessmentsManager: NSObject {
     //Returns the activity that matches with the supplied activity type
     func activityWithType(type: ActivityType) -> Assessment? {
         for activity in assessments where activity.activityType == type {
-            print(#function)
-            print(activity.activityType)
             return activity
         }
-        print("Não deveria entrar aqui")
+
         return nil
     }
 }

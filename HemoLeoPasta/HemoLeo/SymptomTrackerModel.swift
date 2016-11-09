@@ -45,5 +45,17 @@ class SymptomTrackerModel: NSObject {
         
         return true
     }
+    
+    func completeEvent(event: OCKCarePlanEvent, withResult result: OCKCarePlanEventResult) {
+        storeManager.store.update(event, with: result, state: .completed) { success, _, error in
+            if !success {
+                print(error?.localizedDescription as Any)
+            }
+        }
+    }
+    
+    func getAssessmentManager() -> AssessmentsManager {
+        return self.assessmentManager
+    }
 }
 

@@ -12,39 +12,64 @@ import CareKit
 class SurveyController: UIViewController {
     @IBOutlet weak var texxt: UITextField!
     var event: OCKCarePlanEvent! = nil
-    let storeManager = CarePlanStoreManager.sharedCarePlanStoreManager
-    var assessmentManager: AssessmentsManager? = nil
+    var resultString = ""
+    var resultArray: Array<String> = ["", "", "", "", ""]
+    
+    private var assessmentManager: AssessmentsManager? = nil
+    private let symptomTrackerModel = SymptomTrackerModel.sharedSymptomTracker
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        assessmentManager = AssessmentsManager(carePlanStore: storeManager.store)
+        assessmentManager = symptomTrackerModel.getAssessmentManager()
         
     }
     
     @IBAction func save(_ sender: Any) {
         let activityType = ActivityType(rawValue: event.activity.identifier)
         let assessment = assessmentManager!.activityWithType(type: activityType!)
-        let result = assessment?.buildResultForCarePlanEvent(event: event, taskResult: texxt.text!)
+        var result: OCKCarePlanEventResult!
         
-        completeEvent(event: event, inStore: storeManager.store, withResult: result!)
+        if self.countNonEmptyElements() == 1 {
+            resultString = resultArray.first!
+            
+        } else {
+            resultString = "\(self.countNonEmptyElements()) lugares"
+            
+        }
+        
+        result = assessment?.buildResultForCarePlanEvent(event: event, taskResult: resultString)
+        
+        symptomTrackerModel.completeEvent(event: event, withResult: result!)
         
         self.dismiss(animated: false, completion: nil)
     }
-    
-    // Storyboard não funciona direito não é minha culpa :(
 
-    
-    func completeEvent(event: OCKCarePlanEvent, inStore store: OCKCarePlanStore, withResult result: OCKCarePlanEventResult) {
-        store.update(event, with: result, state: .completed) { success, _, error in
-            if !success {
-                print(error?.localizedDescription as Any)
-            }
+    @IBAction func ombroAction(_ sender: UIButton) {
+        if sender.isSelected == false {
+            resultArray.insert(sender.accessibilityIdentifier!, at: sender.tag)
+            sender.isSelected = true
+            
+        } else {
+            resultArray[sender.tag] = sender.accessibilityIdentifier!
+            sender.isSelected = false
         }
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func countNonEmptyElements() -> Int {
+        var count: Int = 0
+            
+        for i in resultArray {
+            if i != "" {
+                count += 1
+            }
+        }
+            
+        return count
     }
 }
