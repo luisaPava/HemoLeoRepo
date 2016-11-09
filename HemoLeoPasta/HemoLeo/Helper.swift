@@ -12,3 +12,15 @@ import UIKit
 let screenRect = UIScreen.main.bounds
 let width = screenRect.size.width
 let height = screenRect.size.height
+
+extension Array where Element: Equatable {
+    func allElementsAreEqual(to i: Element) -> Bool {
+        for j in self {
+            if j != i {
+                return false
+            }
+        }
+        
+        return true
+    }
+}

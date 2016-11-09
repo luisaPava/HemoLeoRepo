@@ -61,22 +61,23 @@ extension AddActivityViewController {
         let key = sender.tag
         selectedButton = sender
         
-        if (activities[key] == true) {
-            careCardModel.removeActivity(key)
-            sender.isSelected = false
+        if key == 3 || key == 4 || key == 5 {
+            senderActivity = key
+            performSegue(withIdentifier: "activitiesToOccurencies", sender: self)
             
         } else {
-            if key == 3 || key == 4 || key == 5 {
-                senderActivity = key
-                performSegue(withIdentifier: "activitiesToOccurencies", sender: self)
+            if (activities[key] == true) {
+                careCardModel.removeActivity(key)
+                sender.isSelected = false
                 
             } else {
                 careCardModel.addActivity(key, nil)
                 selectedButton.isSelected = true
+                
             }
         }
     }
-    
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "activitiesToOccurencies" {
             if let destinationVC = segue.destination as? OccurenciesViewController {

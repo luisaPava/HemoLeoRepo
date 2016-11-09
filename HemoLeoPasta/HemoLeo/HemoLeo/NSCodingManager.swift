@@ -31,6 +31,34 @@ class NSCodingManager: NSObject {
         return NSKeyedUnarchiver.unarchiveObject(withFile: archiveURL.path) as! String
     }
     
+    func saveOccurencies(occurencies: Array<Int>) -> Bool {
+        let archiveURL = documentsDirectory.appendingPathComponent("Occurencies")
+        let isSuccessfullSave = NSKeyedArchiver.archiveRootObject(occurencies, toFile: archiveURL.path)
+        
+        if !isSuccessfullSave {
+            return false
+        }
+        
+        return true
+    }
+    
+    func getAnyWithPath(path: String) -> Any? {
+        let archiveURL = documentsDirectory.appendingPathComponent(path)
+        
+        return NSKeyedUnarchiver.unarchiveObject(withFile: archiveURL.path)
+    }
+    
+    func saveAnyWithPath(path: String, object: Any) -> Bool {
+        let archiveURL = documentsDirectory.appendingPathComponent(path)
+        let isSuccessfullSave = NSKeyedArchiver.archiveRootObject(object, toFile: archiveURL.path)
+        
+        if !isSuccessfullSave {
+            return false
+        }
+        
+        return true
+    }
+    
     func setBackground(bg: String) {
         let archiveURL = documentsDirectory.appendingPathComponent("background")
         let isSuccessfullSave = NSKeyedArchiver.archiveRootObject(bg, toFile: archiveURL.path)
