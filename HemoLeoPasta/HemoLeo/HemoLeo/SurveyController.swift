@@ -34,6 +34,12 @@ class SurveyController: UIViewController {
     
     
     @IBAction func choiceAction(_ sender: Any) {
+     
+
+
+    }
+    
+    @IBAction func cotovelo(_ sender: Any) {
         
     }
     
