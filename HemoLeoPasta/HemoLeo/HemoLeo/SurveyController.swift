@@ -35,8 +35,6 @@ class SurveyController: UIViewController {
     // Storyboard não funciona direito não é minha culpa :(
 
     
-    
-    
     func completeEvent(event: OCKCarePlanEvent, inStore store: OCKCarePlanStore, withResult result: OCKCarePlanEventResult) {
         store.update(event, with: result, state: .completed) { success, _, error in
             if !success {
