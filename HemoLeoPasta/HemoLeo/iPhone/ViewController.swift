@@ -7,12 +7,27 @@
 //
 
 import UIKit
+import CareKit
 
-class ViewController: UIViewController {
-
+class ViewController: UITabBarController {
+    private let careCardModel = CareCardModel.sharedCareCardModel
+    private let symptomTrackerModel = SymptomTrackerModel.sharedSymptomTracker
+    private let insightModel = InsightModel.sharedInsightModel
+    
+    private var careCardViewController: OCKCareCardViewController!
+    private var symptomTrackerViewController: OCKSymptomTrackerViewController!
+    private var insightsViewController: OCKInsightsViewController!
+    private var connectViewController: OCKConnectViewController!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        careCardViewController = careCardModel.createCareCard()
+        symptomTrackerViewController = symptomTrackerModel.createSymtomTracker()
+        
+        self.viewControllers = [ UINavigationController(rootViewController: careCardViewController),
+                                 UINavigationController(rootViewController: symptomTrackerViewController), ]
+        
     }
 
     override func didReceiveMemoryWarning() {

@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9YJ-Sv-SV9">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iPhone" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -21,6 +26,241 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-540" y="54"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="BdT-UE-jeH">
+            <objects>
+                <viewController id="xvG-wT-ueO" customClass="SymptomCardViewController" customModule="iPhone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CYs-Mj-uND"/>
+                        <viewControllerLayoutGuide type="bottom" id="UsN-Tu-v7h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DaA-8P-fiJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="4IH-IX-ZhB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WO2-gs-2uU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="751" y="-496"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="qig-Rz-NzJ">
+            <objects>
+                <viewController id="JrD-Jf-jIV" customClass="CareCardViewController" customModule="iPhone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3nm-SE-dxA"/>
+                        <viewControllerLayoutGuide type="bottom" id="MWp-c1-Ae3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NML-Wy-maL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="z69-i0-3jE"/>
+                    <connections>
+                        <segue destination="D9I-a2-SYt" kind="presentation" identifier="cardToAdd" id="F8h-yr-jut"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kou-8g-wTu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748" y="-1150"/>
+        </scene>
+        <!--Add Activity View Controller-->
+        <scene sceneID="xp7-QO-Eiv">
+            <objects>
+                <viewController id="D9I-a2-SYt" customClass="AddActivityViewController" customModule="iPhone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SM9-Ws-tUq"/>
+                        <viewControllerLayoutGuide type="bottom" id="XBA-nn-8hT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Tna-hq-krj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mfr-4s-Nux">
+                                <rect key="frame" x="46" y="96" width="110" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="7ze-BO-Ucj"/>
+                                    <constraint firstAttribute="height" constant="110" id="XlU-U0-G0D"/>
+                                </constraints>
+                                <state key="normal" title="Vegetais" image="ComidaNotSelected"/>
+                                <state key="highlighted" image="Comida highlighted"/>
+                                <connections>
+                                    <action selector="addActivityActionWithSender:" destination="D9I-a2-SYt" eventType="touchUpInside" id="jTw-kc-fpC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="29e-Nc-0oh">
+                                <rect key="frame" x="214" y="96" width="110" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="0eE-Dm-hSC"/>
+                                    <constraint firstAttribute="width" constant="110" id="Smh-Ke-YM9"/>
+                                </constraints>
+                                <state key="normal" title="Frutas" image="FruitsNotSelected"/>
+                                <state key="highlighted" image="FrutasHIghlighted"/>
+                                <connections>
+                                    <action selector="addActivityActionWithSender:" destination="D9I-a2-SYt" eventType="touchUpInside" id="WkU-tw-7ox"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2U-UM-g2z">
+                                <rect key="frame" x="46" y="236" width="110" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="TDE-vg-tfd"/>
+                                    <constraint firstAttribute="width" constant="110" id="h6i-jf-Pgn"/>
+                                </constraints>
+                                <state key="normal" title="Agua" image="BebidaNotSelected"/>
+                                <state key="highlighted" image="Bebidahighlighted"/>
+                                <connections>
+                                    <action selector="addActivityActionWithSender:" destination="D9I-a2-SYt" eventType="touchUpInside" id="mf8-Ug-m97"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lOW-0i-jHX">
+                                <rect key="frame" x="214" y="247" width="110" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="cwi-qb-Uhk"/>
+                                    <constraint firstAttribute="height" constant="110" id="um0-ZF-wVL"/>
+                                </constraints>
+                                <state key="normal" title="Exercicios" image="swimmingNotSelected"/>
+                                <state key="highlighted" image="swimmingHIghlighted"/>
+                                <connections>
+                                    <action selector="addActivityActionWithSender:" destination="D9I-a2-SYt" eventType="touchUpInside" id="fdC-E9-A2L"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rps-2l-7IF">
+                                <rect key="frame" x="46" y="408" width="110" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="7Tp-aq-6cv"/>
+                                    <constraint firstAttribute="width" constant="110" id="Hhq-4n-SfM"/>
+                                </constraints>
+                                <state key="normal" title="Fisioterapia" image="physical_therapyNotSelected"/>
+                                <state key="highlighted" image="physical_therapyHIghlighted"/>
+                                <connections>
+                                    <action selector="addActivityActionWithSender:" destination="D9I-a2-SYt" eventType="touchUpInside" id="OnM-C5-P1G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksZ-CI-Ftq">
+                                <rect key="frame" x="214" y="408" width="110" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="OFj-FV-QK6"/>
+                                    <constraint firstAttribute="width" constant="110" id="gIt-XV-rhD"/>
+                                </constraints>
+                                <state key="normal" title="Aplicacao" image="ShotNotSelected"/>
+                                <state key="highlighted" image="ShotSelected"/>
+                                <connections>
+                                    <action selector="addActivityActionWithSender:" destination="D9I-a2-SYt" eventType="touchUpInside" id="JQt-9v-rHz"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vxc-sG-S1f">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Atividades" id="s8y-XD-x5Y">
+                                        <barButtonItem key="rightBarButtonItem" title="Ok" id="D44-Bk-yFO">
+                                            <connections>
+                                                <action selector="doneBtnWithSender:" destination="D9I-a2-SYt" id="SKd-9j-NqE"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="c2U-UM-g2z" firstAttribute="leading" secondItem="Tna-hq-krj" secondAttribute="leadingMargin" constant="30" id="05A-X3-WYc"/>
+                            <constraint firstAttribute="trailing" secondItem="Vxc-sG-S1f" secondAttribute="trailing" id="4hL-cI-UHU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ksZ-CI-Ftq" secondAttribute="trailing" constant="35" id="6Q3-hx-XFK"/>
+                            <constraint firstItem="29e-Nc-0oh" firstAttribute="top" secondItem="Vxc-sG-S1f" secondAttribute="bottom" constant="32" id="Bos-zG-Aab"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="29e-Nc-0oh" secondAttribute="trailing" constant="35" id="Bux-4g-U4N"/>
+                            <constraint firstItem="Rps-2l-7IF" firstAttribute="leading" secondItem="Tna-hq-krj" secondAttribute="leadingMargin" constant="30" id="DWf-Av-ENC"/>
+                            <constraint firstItem="c2U-UM-g2z" firstAttribute="top" secondItem="Mfr-4s-Nux" secondAttribute="bottom" constant="30" id="I0Z-TE-f2C"/>
+                            <constraint firstItem="ksZ-CI-Ftq" firstAttribute="top" secondItem="lOW-0i-jHX" secondAttribute="bottom" constant="51" id="IBN-3V-5ga"/>
+                            <constraint firstItem="Mfr-4s-Nux" firstAttribute="top" secondItem="Vxc-sG-S1f" secondAttribute="bottom" constant="32" id="N9w-s8-0BO"/>
+                            <constraint firstItem="Vxc-sG-S1f" firstAttribute="top" secondItem="SM9-Ws-tUq" secondAttribute="bottom" id="Uo7-gt-KOm"/>
+                            <constraint firstItem="lOW-0i-jHX" firstAttribute="top" secondItem="29e-Nc-0oh" secondAttribute="bottom" constant="41" id="VXf-tb-AWx"/>
+                            <constraint firstItem="Vxc-sG-S1f" firstAttribute="leading" secondItem="Tna-hq-krj" secondAttribute="leading" id="kph-YP-oE9"/>
+                            <constraint firstItem="Rps-2l-7IF" firstAttribute="top" secondItem="c2U-UM-g2z" secondAttribute="bottom" constant="62" id="piD-kZ-ubw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lOW-0i-jHX" secondAttribute="trailing" constant="35" id="snL-wq-DgV"/>
+                            <constraint firstItem="Mfr-4s-Nux" firstAttribute="leading" secondItem="Tna-hq-krj" secondAttribute="leadingMargin" constant="30" id="yFA-KO-Rth"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="exerciseBtn" destination="lOW-0i-jHX" id="0Do-aP-ckm"/>
+                        <outlet property="fisiotherapyBtn" destination="Rps-2l-7IF" id="AJN-Of-lB2"/>
+                        <outlet property="fruitsBtn" destination="29e-Nc-0oh" id="sSP-7z-Xsb"/>
+                        <outlet property="shotBtn" destination="ksZ-CI-Ftq" id="KMs-D8-eK9"/>
+                        <outlet property="vegetableBtn" destination="Mfr-4s-Nux" id="QUh-7g-dtO"/>
+                        <outlet property="waterBtn" destination="c2U-UM-g2z" id="6kh-Vn-ECc"/>
+                        <segue destination="7Uw-hT-u2w" kind="presentation" identifier="activitiesToOccurencies" id="pnK-8P-c3o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q3p-XR-wFu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1508" y="-1150.0749625187407"/>
+        </scene>
+        <!--Occurencies View Controller-->
+        <scene sceneID="Ges-Nd-UU1">
+            <objects>
+                <viewController id="7Uw-hT-u2w" customClass="OccurenciesViewController" customModule="iPhone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4C8-Q7-9bu"/>
+                        <viewControllerLayoutGuide type="bottom" id="T5t-Ts-HUW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fWv-bo-RHs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDC-7D-UvD">
+                                <rect key="frame" x="166" y="617" width="43" height="30"/>
+                                <state key="normal" title="Salvar"/>
+                                <connections>
+                                    <action selector="saveWithSender:" destination="7Uw-hT-u2w" eventType="touchUpInside" id="vee-z1-bVa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tDC-7D-UvD" firstAttribute="centerX" secondItem="fWv-bo-RHs" secondAttribute="centerX" id="VIq-3q-R6t"/>
+                            <constraint firstItem="T5t-Ts-HUW" firstAttribute="top" secondItem="tDC-7D-UvD" secondAttribute="bottom" constant="20" id="luu-ue-HpZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t1z-j6-JLm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2242" y="-1150"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ety-tk-1U6">
+            <objects>
+                <tabBarController id="9YJ-Sv-SV9" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="zas-oC-5B9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="JrD-Jf-jIV" kind="relationship" relationship="viewControllers" id="anz-HM-Q3P"/>
+                        <segue destination="xvG-wT-ueO" kind="relationship" relationship="viewControllers" id="QRe-ye-MVx"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KDr-JI-hzQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-201" y="-823"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="BebidaNotSelected" width="111" height="111"/>
+        <image name="Bebidahighlighted" width="111" height="111"/>
+        <image name="Comida highlighted" width="110" height="110"/>
+        <image name="ComidaNotSelected" width="110" height="110"/>
+        <image name="FruitsNotSelected" width="110" height="110"/>
+        <image name="FrutasHIghlighted" width="110" height="110"/>
+        <image name="ShotNotSelected" width="110" height="110"/>
+        <image name="ShotSelected" width="45" height="45"/>
+        <image name="physical_therapyHIghlighted" width="110" height="110"/>
+        <image name="physical_therapyNotSelected" width="110" height="110"/>
+        <image name="swimmingHIghlighted" width="110" height="110"/>
+        <image name="swimmingNotSelected" width="110" height="110"/>
+    </resources>
 </document>

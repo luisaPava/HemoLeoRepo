@@ -8,11 +8,11 @@
 
 import Foundation
 import CareKit
-import ResearchKit
+//import ResearchKit
 
 //Protocol that adds a method to the `Activity` protocol that returns an `ORKTask` to present to the user.
 protocol Assessment: Activity {
-    func task() -> ORKTask
+//    func task() -> ORKTask
 }
 
 extension Assessment {

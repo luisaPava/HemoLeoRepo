@@ -6,7 +6,7 @@
 //  Copyright © 2016 Bepid. All rights reserved.
 //
 
-import ResearchKit
+//import ResearchKit
 import CareKit
 
 class AssessmentsManager: NSObject {

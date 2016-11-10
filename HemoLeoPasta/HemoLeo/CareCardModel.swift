@@ -161,10 +161,6 @@ class CareCardModel: NSObject {
     func getActivities() -> Array<Bool> {
         return activities
     }
-    
-    func saveOccurencies(occurencies: Array<Int>) {
-        
-    }
 }
 
 extension CareCardModel: OCKCareCardViewControllerDelegate {

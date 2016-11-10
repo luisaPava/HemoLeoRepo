@@ -42,9 +42,6 @@ class CareCardViewController: UINavigationController {
     
     
     // MARK: - User interaction functions
-    
-    // Instantiates the AddActivityTableViewController from Main.storyboard
-    // and asks navigationController to show it.
     func pushAddActivityController() {
         self.performSegue(withIdentifier: "cardToAdd", sender: self)
     }
