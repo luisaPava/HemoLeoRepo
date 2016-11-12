@@ -11,5 +11,10 @@ import CareKit
 
 class Leo {
     private let sharedDAOCK = DAOCloudKit.sharedDAOCK
+    private var store: CarePlanStoreManager!
     
+//    init(carePlanPath: String) {
+////        self.store = CarePlanStoreManager()
+//        
+//    }
 }

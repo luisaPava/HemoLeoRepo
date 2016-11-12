@@ -107,6 +107,13 @@
 		2BCA5D6C1D42C03900EAC063 /* Cabeça leo feliz.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BCA5D6A1D42C03900EAC063 /* Cabeça leo feliz.png */; };
 		2BCA5D6D1D42C03900EAC063 /* Cabeça leo feliz@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BCA5D6B1D42C03900EAC063 /* Cabeça leo feliz@2x.png */; };
 		2BCA5D711D42C26C00EAC063 /* Storytelling5View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCA5D701D42C26C00EAC063 /* Storytelling5View.swift */; };
+		4E0310291DD6ACC8002B8200 /* G8SliderStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0310281DD6ACC8002B8200 /* G8SliderStep.swift */; };
+		4E03102A1DD6ACC8002B8200 /* G8SliderStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0310281DD6ACC8002B8200 /* G8SliderStep.swift */; };
+		4E03102B1DD6ACD3002B8200 /* PopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E3244A71DD6A4B000258CE1 /* PopUp.storyboard */; };
+		4E03102F1DD6AEC0002B8200 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E03102E1DD6AEC0002B8200 /* PopUpViewController.swift */; };
+		4E0310301DD6AEC0002B8200 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E03102E1DD6AEC0002B8200 /* PopUpViewController.swift */; };
+		4E0364E61DD6B6D200C2793E /* PopupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0364E51DD6B6D200C2793E /* PopupController.swift */; };
+		4E0364E71DD6B6D200C2793E /* PopupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0364E51DD6B6D200C2793E /* PopupController.swift */; };
 		4E132CB81D41242A004CBC6F /* CustomActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E132CB61D41242A004CBC6F /* CustomActivityCell.swift */; };
 		4E132CB91D41242A004CBC6F /* CustomActivityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E132CB71D41242A004CBC6F /* CustomActivityCell.xib */; };
 		4E2B29C01D36CD0E00EED2B4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B29BF1D36CD0E00EED2B4 /* MainViewController.swift */; };
@@ -158,6 +165,7 @@
 		4E32449F1DD3ECD400258CE1 /* CustomActivityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E132CB71D41242A004CBC6F /* CustomActivityCell.xib */; };
 		4E3244A01DD3EF4300258CE1 /* SymptomCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B29CD1D395AF800EED2B4 /* SymptomCardViewController.swift */; };
 		4E3244A11DD3F88E00258CE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BA1888A1D355A2C007F1CEB /* Assets.xcassets */; };
+		4E3244A81DD6A4B000258CE1 /* PopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E3244A71DD6A4B000258CE1 /* PopUp.storyboard */; };
 		4E36E45B1D45B2570005A1BE /* InsightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E36E45A1D45B2570005A1BE /* InsightViewController.swift */; };
 		4E36E4641D45B9A20005A1BE /* BuildInsightsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E36E4611D45B9A20005A1BE /* BuildInsightsOperation.swift */; };
 		4E36E4651D45B9A20005A1BE /* InsightsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E36E4621D45B9A20005A1BE /* InsightsBuilder.swift */; };
@@ -373,6 +381,9 @@
 		2BCA5D6A1D42C03900EAC063 /* Cabeça leo feliz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cabeça leo feliz.png"; sourceTree = "<group>"; };
 		2BCA5D6B1D42C03900EAC063 /* Cabeça leo feliz@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cabeça leo feliz@2x.png"; sourceTree = "<group>"; };
 		2BCA5D701D42C26C00EAC063 /* Storytelling5View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storytelling5View.swift; sourceTree = "<group>"; };
+		4E0310281DD6ACC8002B8200 /* G8SliderStep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = G8SliderStep.swift; sourceTree = "<group>"; };
+		4E03102E1DD6AEC0002B8200 /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		4E0364E51DD6B6D200C2793E /* PopupController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupController.swift; sourceTree = "<group>"; };
 		4E132CB61D41242A004CBC6F /* CustomActivityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomActivityCell.swift; sourceTree = "<group>"; };
 		4E132CB71D41242A004CBC6F /* CustomActivityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomActivityCell.xib; path = HemoLeo/CustomActivityCell.xib; sourceTree = "<group>"; };
 		4E2B29BF1D36CD0E00EED2B4 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -384,6 +395,7 @@
 		4E2B2DEE1D3AA7F900EED2B4 /* Assessment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assessment.swift; sourceTree = "<group>"; };
 		4E2B2DF21D3ABEEB00EED2B4 /* AssessmentsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssessmentsManager.swift; sourceTree = "<group>"; };
 		4E2B2DF41D3AD12A00EED2B4 /* Pain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pain.swift; sourceTree = "<group>"; };
+		4E3244A71DD6A4B000258CE1 /* PopUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PopUp.storyboard; sourceTree = "<group>"; };
 		4E36E45A1D45B2570005A1BE /* InsightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsightViewController.swift; sourceTree = "<group>"; };
 		4E36E4611D45B9A20005A1BE /* BuildInsightsOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildInsightsOperation.swift; sourceTree = "<group>"; };
 		4E36E4621D45B9A20005A1BE /* InsightsBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsightsBuilder.swift; sourceTree = "<group>"; };
@@ -572,6 +584,39 @@
 			name = IBDesignables;
 			sourceTree = "<group>";
 		};
+		4E0310231DD6ACB4002B8200 /* Slider */ = {
+			isa = PBXGroup;
+			children = (
+				4E0310281DD6ACC8002B8200 /* G8SliderStep.swift */,
+			);
+			name = Slider;
+			sourceTree = "<group>";
+		};
+		4E03102C1DD6AE8D002B8200 /* PopUp */ = {
+			isa = PBXGroup;
+			children = (
+				4E3244A71DD6A4B000258CE1 /* PopUp.storyboard */,
+				4E03102E1DD6AEC0002B8200 /* PopUpViewController.swift */,
+			);
+			name = PopUp;
+			sourceTree = "<group>";
+		};
+		4E03102D1DD6AE98002B8200 /* CustomActivityCell */ = {
+			isa = PBXGroup;
+			children = (
+				4E132CB71D41242A004CBC6F /* CustomActivityCell.xib */,
+			);
+			name = CustomActivityCell;
+			sourceTree = "<group>";
+		};
+		4E0364E01DD6B5BD00C2793E /* PopUp */ = {
+			isa = PBXGroup;
+			children = (
+				4E0364E51DD6B6D200C2793E /* PopupController.swift */,
+			);
+			name = PopUp;
+			sourceTree = "<group>";
+		};
 		4E2B2DDC1D3A984D00EED2B4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -596,6 +641,8 @@
 		4E3243F81DD3873E00258CE1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4E0364E01DD6B5BD00C2793E /* PopUp */,
+				4E0310231DD6ACB4002B8200 /* Slider */,
 				777711061D3E9AAC0066A0E2 /* SpriteKit.framework */,
 				4E2B2DDB1D3A984D00EED2B4 /* ResearchKit.xcodeproj */,
 				2B02111F1D35735800AFFB17 /* CareKit.xcodeproj */,
@@ -641,9 +688,26 @@
 		4E32449E1DD3ECC500258CE1 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4E132CB71D41242A004CBC6F /* CustomActivityCell.xib */,
+				4E3244A61DD6A48800258CE1 /* SymptomTracker */,
+				4E3244A51DD6A47300258CE1 /* CareCard */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		4E3244A51DD6A47300258CE1 /* CareCard */ = {
+			isa = PBXGroup;
+			children = (
+				4E03102D1DD6AE98002B8200 /* CustomActivityCell */,
+			);
+			name = CareCard;
+			sourceTree = "<group>";
+		};
+		4E3244A61DD6A48800258CE1 /* SymptomTracker */ = {
+			isa = PBXGroup;
+			children = (
+				4E03102C1DD6AE8D002B8200 /* PopUp */,
+			);
+			name = SymptomTracker;
 			sourceTree = "<group>";
 		};
 		4E36E4601D45B97E0005A1BE /* Insight */ = {
@@ -784,9 +848,9 @@
 		4EAFA1FE1DC7AB50002BA048 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				4EAFA1FF1DC7AB70002BA048 /* Model */,
 				4E32449E1DD3ECC500258CE1 /* View */,
 				4E3244961DD3EC7400258CE1 /* Controller */,
-				4EAFA1FF1DC7AB70002BA048 /* Model */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -948,7 +1012,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = Bepid;
 				TargetAttributes = {
 					2BA1887B1D355A2C007F1CEB = {
@@ -959,6 +1023,7 @@
 					4EAFA1EB1DC7AAC2002BA048 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = BUK6UDW987;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -1099,6 +1164,7 @@
 				2BCA5D0A1D42B5B400EAC063 /* Ponto esquerda em cima.png in Resources */,
 				2BCA5D041D42B5B400EAC063 /* Menino.png in Resources */,
 				2BCA5D331D42B77000EAC063 /* Tela1@2x.png in Resources */,
+				4E3244A81DD6A4B000258CE1 /* PopUp.storyboard in Resources */,
 				2BCA5D411D42BB8100EAC063 /* Fala6@2x.png in Resources */,
 				2BCA5D541D42BB8F00EAC063 /* Roxo pata.png in Resources */,
 				2BCA5D2F1D42B77000EAC063 /* Sangue Copy@2x.png in Resources */,
@@ -1115,6 +1181,7 @@
 				4EAFA1F41DC7AAC2002BA048 /* Main.storyboard in Resources */,
 				4E32449F1DD3ECD400258CE1 /* CustomActivityCell.xib in Resources */,
 				4E3244A11DD3F88E00258CE1 /* Assets.xcassets in Resources */,
+				4E03102B1DD6ACD3002B8200 /* PopUp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1147,6 +1214,7 @@
 				2BA188C01D3560C3007F1CEB /* Fruits.swift in Sources */,
 				2B1A21521D3E7BA3007F1B68 /* NSCodingManager.swift in Sources */,
 				4EA969411D3D622400DBF2AD /* Bleeding.swift in Sources */,
+				4E03102F1DD6AEC0002B8200 /* PopUpViewController.swift in Sources */,
 				2BCA5D371D42BB6100EAC063 /* Storytelling4View.swift in Sources */,
 				4E2B29C01D36CD0E00EED2B4 /* MainViewController.swift in Sources */,
 				4E3CE02B1D3FDF0F00E4F422 /* SurveyViewController.swift in Sources */,
@@ -1161,9 +1229,11 @@
 				4EAFA20D1DC7B772002BA048 /* MainViewModel.swift in Sources */,
 				2B7997F21D37CD9F00D0996D /* Story2ViewController.swift in Sources */,
 				4E2B2DF31D3ABEEB00EED2B4 /* AssessmentsManager.swift in Sources */,
+				4E0364E61DD6B6D200C2793E /* PopupController.swift in Sources */,
 				2BCA5D351D42B8FF00EAC063 /* Storytelling3View.swift in Sources */,
 				4E4F03EA1DCD8ABF00523507 /* SurveyController.swift in Sources */,
 				2BA188801D355A2C007F1CEB /* AppDelegate.swift in Sources */,
+				4E0310291DD6ACC8002B8200 /* G8SliderStep.swift in Sources */,
 				77E89D191D4253CD00FDA59B /* SelectThemeViewController.swift in Sources */,
 				2B87D5E91D38247000F29678 /* AddActivityViewController.swift in Sources */,
 				4EAFA2011DC7AB97002BA048 /* CareCardModel.swift in Sources */,
@@ -1192,9 +1262,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E0364E71DD6B6D200C2793E /* PopupController.swift in Sources */,
 				4E3244801DD3DE2D00258CE1 /* Fruits.swift in Sources */,
 				4E3244881DD3DE3200258CE1 /* Pain.swift in Sources */,
 				4E32447D1DD3DE2700258CE1 /* Helper.swift in Sources */,
+				4E03102A1DD6ACC8002B8200 /* G8SliderStep.swift in Sources */,
 				4E32449C1DD3ECAF00258CE1 /* AddActivityViewController.swift in Sources */,
 				4E3244891DD3DE3200258CE1 /* Bruising.swift in Sources */,
 				4E32448C1DD3DE3800258CE1 /* InsightsBuilder.swift in Sources */,
@@ -1219,6 +1291,7 @@
 				4E32447C1DD3DE2700258CE1 /* NSCodingManager.swift in Sources */,
 				4E3244831DD3DE2D00258CE1 /* Fisiotherapy.swift in Sources */,
 				4E3244931DD3EB5F00258CE1 /* AssessmentsManager.swift in Sources */,
+				4E0310301DD6AEC0002B8200 /* PopUpViewController.swift in Sources */,
 				4E32448D1DD3DE3800258CE1 /* QueryActivityEventsOperation.swift in Sources */,
 				4EAFA1EF1DC7AAC2002BA048 /* AppDelegate.swift in Sources */,
 				4E3244941DD3EB7800258CE1 /* NSCalendar+Dates.swift in Sources */,

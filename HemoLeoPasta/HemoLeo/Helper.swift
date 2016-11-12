@@ -24,5 +24,3 @@ extension Array where Element: Equatable {
         return true
     }
 }
-
- 

@@ -82,7 +82,7 @@ class CarePlanStoreManager: NSObject {
     
     weak var delegate: CarePlanStoreManagerDelegate?
     
-    let store: OCKCarePlanStore
+    var store: OCKCarePlanStore
     
     var insights: [OCKInsightItem] {
         return insightsBuilder.insights
@@ -92,10 +92,11 @@ class CarePlanStoreManager: NSObject {
     
     // MARK: Initialization
     
-    private override init() {
+    private override init(/*path: String*/) {
         // Determine the file URL for the store.
         let searchPaths = NSSearchPathForDirectoriesInDomains(.applicationSupportDirectory, .userDomainMask, true)
-        let applicationSupportPath = searchPaths[0]
+        let applicationSupportPath = searchPaths[0]/*)/\(path)"*/
+        print(applicationSupportPath)
         let persistenceDirectoryURL = NSURL(fileURLWithPath: applicationSupportPath)
         
         if !FileManager.default.fileExists(atPath: persistenceDirectoryURL.absoluteString!, isDirectory: nil) {
@@ -103,6 +104,7 @@ class CarePlanStoreManager: NSObject {
         }
         
         // Create the store.
+        
         store = OCKCarePlanStore(persistenceDirectoryURL: persistenceDirectoryURL as URL)
         
         /*

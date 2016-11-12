@@ -42,10 +42,86 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="4IH-IX-ZhB"/>
+                    <connections>
+                        <segue destination="GgD-EG-mHu" kind="presentation" identifier="symptomToSurvey2" id="vNz-Ge-xNc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WO2-gs-2uU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="751" y="-496"/>
+        </scene>
+        <!--Survey Controller-->
+        <scene sceneID="kcb-eb-Qok">
+            <objects>
+                <viewController storyboardIdentifier="survey" id="GgD-EG-mHu" customClass="SurveyController" customModule="iPhone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vrp-C9-8Kv"/>
+                        <viewControllerLayoutGuide type="bottom" id="hpe-9K-nYr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lZb-YL-I8W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quC-8G-UhJ">
+                                <rect key="frame" x="291" y="433" width="68" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="Tornozelo"/>
+                                <state key="normal" title="Tornozelo"/>
+                                <connections>
+                                    <action selector="ombroAction:" destination="GgD-EG-mHu" eventType="touchUpInside" id="X8M-aI-BMb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bX6-RT-t9G">
+                                <rect key="frame" x="147" y="544" width="43" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Salvar"/>
+                                <connections>
+                                    <action selector="save:" destination="GgD-EG-mHu" eventType="touchUpInside" id="bTG-fK-MKY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfA-Ch-fKy">
+                                <rect key="frame" x="35" y="433" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="Ombro"/>
+                                <state key="normal" title="Ombro"/>
+                                <connections>
+                                    <action selector="ombroAction:" destination="GgD-EG-mHu" eventType="touchUpInside" id="J06-3y-1I7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpu-mB-9zK">
+                                <rect key="frame" x="96" y="433" width="61" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="Cotovelo"/>
+                                <state key="normal" title="Cotovelo"/>
+                                <connections>
+                                    <action selector="ombroAction:" destination="GgD-EG-mHu" eventType="touchUpInside" id="l8l-m8-fZF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTI-tp-5Pl">
+                                <rect key="frame" x="174" y="433" width="43" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="Virilha"/>
+                                <state key="normal" title="Virilha"/>
+                                <connections>
+                                    <action selector="ombroAction:" destination="GgD-EG-mHu" eventType="touchUpInside" id="7mm-iv-44f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WgN-ue-Dg0">
+                                <rect key="frame" x="224" y="433" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="Joelho"/>
+                                <state key="normal" title="Joelho"/>
+                                <connections>
+                                    <action selector="ombroAction:" destination="GgD-EG-mHu" eventType="touchUpInside" id="JLC-Av-88J"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m9j-En-Uak" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1508" y="-496"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="qig-Rz-NzJ">
@@ -88,6 +164,7 @@
                                     <constraint firstAttribute="height" constant="110" id="XlU-U0-G0D"/>
                                 </constraints>
                                 <state key="normal" title="Vegetais" image="ComidaNotSelected"/>
+                                <state key="selected" image="Comida highlighted"/>
                                 <state key="highlighted" image="Comida highlighted"/>
                                 <connections>
                                     <action selector="addActivityActionWithSender:" destination="D9I-a2-SYt" eventType="touchUpInside" id="jTw-kc-fpC"/>
@@ -100,6 +177,7 @@
                                     <constraint firstAttribute="width" constant="110" id="Smh-Ke-YM9"/>
                                 </constraints>
                                 <state key="normal" title="Frutas" image="FruitsNotSelected"/>
+                                <state key="selected" image="FrutasHIghlighted"/>
                                 <state key="highlighted" image="FrutasHIghlighted"/>
                                 <connections>
                                     <action selector="addActivityActionWithSender:" destination="D9I-a2-SYt" eventType="touchUpInside" id="WkU-tw-7ox"/>
@@ -112,6 +190,7 @@
                                     <constraint firstAttribute="width" constant="110" id="h6i-jf-Pgn"/>
                                 </constraints>
                                 <state key="normal" title="Agua" image="BebidaNotSelected"/>
+                                <state key="selected" image="Bebidahighlighted"/>
                                 <state key="highlighted" image="Bebidahighlighted"/>
                                 <connections>
                                     <action selector="addActivityActionWithSender:" destination="D9I-a2-SYt" eventType="touchUpInside" id="mf8-Ug-m97"/>
@@ -124,6 +203,7 @@
                                     <constraint firstAttribute="height" constant="110" id="um0-ZF-wVL"/>
                                 </constraints>
                                 <state key="normal" title="Exercicios" image="swimmingNotSelected"/>
+                                <state key="selected" image="swimmingHIghlighted"/>
                                 <state key="highlighted" image="swimmingHIghlighted"/>
                                 <connections>
                                     <action selector="addActivityActionWithSender:" destination="D9I-a2-SYt" eventType="touchUpInside" id="fdC-E9-A2L"/>
@@ -136,6 +216,7 @@
                                     <constraint firstAttribute="width" constant="110" id="Hhq-4n-SfM"/>
                                 </constraints>
                                 <state key="normal" title="Fisioterapia" image="physical_therapyNotSelected"/>
+                                <state key="selected" image="physical_therapyHIghlighted"/>
                                 <state key="highlighted" image="physical_therapyHIghlighted"/>
                                 <connections>
                                     <action selector="addActivityActionWithSender:" destination="D9I-a2-SYt" eventType="touchUpInside" id="OnM-C5-P1G"/>
@@ -148,6 +229,7 @@
                                     <constraint firstAttribute="width" constant="110" id="gIt-XV-rhD"/>
                                 </constraints>
                                 <state key="normal" title="Aplicacao" image="ShotNotSelected"/>
+                                <state key="selected" image="Shot hightlighted"/>
                                 <state key="highlighted" image="ShotSelected"/>
                                 <connections>
                                     <action selector="addActivityActionWithSender:" destination="D9I-a2-SYt" eventType="touchUpInside" id="JQt-9v-rHz"/>
@@ -256,6 +338,7 @@
         <image name="ComidaNotSelected" width="110" height="110"/>
         <image name="FruitsNotSelected" width="110" height="110"/>
         <image name="FrutasHIghlighted" width="110" height="110"/>
+        <image name="Shot hightlighted" width="110" height="110"/>
         <image name="ShotNotSelected" width="110" height="110"/>
         <image name="ShotSelected" width="45" height="45"/>
         <image name="physical_therapyHIghlighted" width="110" height="110"/>
