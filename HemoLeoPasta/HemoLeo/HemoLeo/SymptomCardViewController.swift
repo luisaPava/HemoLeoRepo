@@ -11,7 +11,7 @@ import CareKit
 //import ResearchKit
 
 class SymptomCardViewController: UINavigationController {
-    var storeManager: CarePlanStoreManager = CarePlanStoreManager.sharedCarePlanStoreManager
+//    var storeManager: CarePlanStoreManager = CarePlanStoreManager.sharedCarePlanStoreManager
     var assessmentManager: AssessmentsManager? = nil
     let symptomTrackerModel = SymptomTrackerModel.sharedSymptomTracker
     var viewController: OCKSymptomTrackerViewController!
@@ -21,7 +21,7 @@ class SymptomCardViewController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        assessmentManager = AssessmentsManager(carePlanStore: storeManager.store)
+        assessmentManager = symptomTrackerModel.getAssessmentManager()
     }
     
     override func viewWillAppear(_ animated: Bool) {

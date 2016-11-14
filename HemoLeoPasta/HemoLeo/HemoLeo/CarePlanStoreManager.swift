@@ -73,10 +73,10 @@
 
 import CareKit
 
-class CarePlanStoreManager: NSObject {
+class CarePlanStoreManager: NSObject, NSCoding {
     // MARK: Static Properties
     
-    static var sharedCarePlanStoreManager = CarePlanStoreManager()
+//    static var sharedCarePlanStoreManager = CarePlanStoreManager()
     
     // MARK: Properties
     
@@ -90,22 +90,33 @@ class CarePlanStoreManager: NSObject {
     
     private let insightsBuilder: InsightsBuilder
     
+    public required init?(coder aDecoder: NSCoder) {
+        self.delegate = aDecoder.decodeObject(forKey: "delegate") as? CarePlanStoreManagerDelegate
+        self.store = aDecoder.decodeObject(forKey: "store") as! OCKCarePlanStore
+        self.insightsBuilder = aDecoder.decodeObject(forKey: "insightsBuilder") as! InsightsBuilder
+    }
+    
+    public func encode(with aCoder: NSCoder) {
+        aCoder.encode(self.delegate, forKey: "delegate")
+        aCoder.encode(self.store, forKey: "store")
+        aCoder.encode(self.insightsBuilder, forKey: "insightsBuilder")
+        
+    }
+    
     // MARK: Initialization
     
-    private override init(/*path: String*/) {
+    init(path: String) {
         // Determine the file URL for the store.
-        let searchPaths = NSSearchPathForDirectoriesInDomains(.applicationSupportDirectory, .userDomainMask, true)
-        let applicationSupportPath = searchPaths[0]/*)/\(path)"*/
-        print(applicationSupportPath)
-        let persistenceDirectoryURL = NSURL(fileURLWithPath: applicationSupportPath)
+        let applicationSupportPath = NSSearchPathForDirectoriesInDomains(.applicationSupportDirectory, .userDomainMask, true).first
+        let persistenceDirectoryURL = NSURL(fileURLWithPath: applicationSupportPath!).appendingPathComponent(path)
         
-        if !FileManager.default.fileExists(atPath: persistenceDirectoryURL.absoluteString!, isDirectory: nil) {
-            try! FileManager.default.createDirectory(at: persistenceDirectoryURL as URL, withIntermediateDirectories: true, attributes: nil)
+        if !FileManager.default.fileExists(atPath: persistenceDirectoryURL!.path, isDirectory: nil) {
+            try! FileManager.default.createDirectory(at: persistenceDirectoryURL! as URL, withIntermediateDirectories: true, attributes: nil)
         }
         
-        // Create the store.
         
-        store = OCKCarePlanStore(persistenceDirectoryURL: persistenceDirectoryURL as URL)
+        // Create the store.
+        store = OCKCarePlanStore(persistenceDirectoryURL: persistenceDirectoryURL! as URL)
         
         /*
          Create an `InsightsBuilder` to build insights based on the data in

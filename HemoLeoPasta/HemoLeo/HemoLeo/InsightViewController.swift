@@ -10,7 +10,7 @@ import UIKit
 import CareKit
 
 class InsightViewController: UINavigationController {
-    let storeManager: CarePlanStoreManager = CarePlanStoreManager.sharedCarePlanStoreManager
+//    let storeManager: CarePlanStoreManager = CarePlanStoreManager.sharedCarePlanStoreManager
     static var insightsViewController: OCKInsightsViewController! = nil
 
     override func viewDidLoad() {
@@ -18,12 +18,12 @@ class InsightViewController: UINavigationController {
 
         // Do any additional setup after loading the view.
         
-        storeManager.delegate = self
+//        storeManager.delegate = self
         
-        if InsightViewController.insightsViewController == nil {
-            InsightViewController.insightsViewController = createInsightsViewController()
-            
-        }
+//        if InsightViewController.insightsViewController == nil {
+//            InsightViewController.insightsViewController = createInsightsViewController()
+        
+//        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,25 +31,25 @@ class InsightViewController: UINavigationController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        if InsightViewController.insightsViewController == nil {
-            InsightViewController.insightsViewController = createInsightsViewController()
-            
-        }
-        
-        self.pushViewController(InsightViewController.insightsViewController, animated: false)
-    }
+//    override func viewWillAppear(_ animated: Bool) {
+//        if InsightViewController.insightsViewController == nil {
+//            InsightViewController.insightsViewController = createInsightsViewController()
+//            
+//        }
     
-    private func createInsightsViewController() -> OCKInsightsViewController {
+//        self.pushViewController(InsightViewController.insightsViewController, animated: false)
+//    }
+    
+    private func createInsightsViewController() /* -> OCKInsightsViewController */ {
         // Create an `OCKInsightsViewController` with sample data.
-        let headerTitle = NSLocalizedString("Gráficos Semanais", comment: "")
-        let viewController = OCKInsightsViewController(insightItems: storeManager.insights, headerTitle: headerTitle, headerSubtitle: "")
-        
-        // Setup the controller's title and tab bar item
-        viewController.title = NSLocalizedString("Insights", comment: "")
-        viewController.tabBarItem = UITabBarItem(title: viewController.title, image: UIImage(named:"insights"), selectedImage: UIImage(named: "insights-filled"))
-        
-        return viewController
+//        let headerTitle = NSLocalizedString("Gráficos Semanais", comment: "")
+//        let viewController = OCKInsightsViewController(insightItems: storeManager.insights, headerTitle: headerTitle, headerSubtitle: "")
+//        
+//        // Setup the controller's title and tab bar item
+//        viewController.title = NSLocalizedString("Insights", comment: "")
+//        viewController.tabBarItem = UITabBarItem(title: viewController.title, image: UIImage(named:"insights"), selectedImage: UIImage(named: "insights-filled"))
+//        
+//        return viewController
     }
 }
 

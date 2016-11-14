@@ -28,8 +28,6 @@ class SurveyController: UIViewController {
     }
     
     @IBAction func save(_ sender: UIButton) {
-        
-        
         let popup = PopupController.create(self)
         
         let container = PopUpViewController.instance()

@@ -9,18 +9,30 @@
 import Foundation
 import CareKit
 
-class SymptomTrackerModel: NSObject {
+class SymptomTrackerModel: Observer {
     static let sharedSymptomTracker = SymptomTrackerModel()
-    private let sharedCarePlanStore = CarePlanStoreManager.sharedCarePlanStoreManager
-    private let storeManager: CarePlanStoreManager = CarePlanStoreManager.sharedCarePlanStoreManager
-    private let assessmentManager: AssessmentsManager!
+    private var storeManager: CarePlanStoreManager!
+    private var leo: Leo!
+    private var assessmentManager: AssessmentsManager!
     
     private override init() {
+        super.init()
+        
+        self.subject = Subject.sharedSubject
+        self.subject.attach(self)
+        self.leo = self.subject.getLeo()
+        
+        storeManager = CarePlanStoreManager(path: leo.getId())
         assessmentManager = AssessmentsManager(carePlanStore: storeManager.store)
     }
     
+    // Update the user
+    override func update() {
+        self.leo = self.subject.getLeo()
+    }
+    
     func createSymtomTracker() -> OCKSymptomTrackerViewController {
-        let symptomCardViewController = OCKSymptomTrackerViewController(carePlanStore: sharedCarePlanStore.store)
+        let symptomCardViewController = OCKSymptomTrackerViewController(carePlanStore: storeManager.store)
         
         symptomCardViewController.showEdgeIndicators = true
         

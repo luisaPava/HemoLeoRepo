@@ -9,14 +9,28 @@
 import Foundation
 import CareKit
 
-class CareCardModel: NSObject {
+class CareCardModel: Observer {
     static let sharedCareCardModel = CareCardModel()
-    private let sharedCarePlanStoreManager = CarePlanStoreManager.sharedCarePlanStoreManager
+    private var sharedCarePlanStoreManager: CarePlanStoreManager!
+    private var leo: Leo!
     private let defaults = UserDefaults.standard
     private var activities: Array<Bool> = []
     private let codingManager: NSCodingManager = NSCodingManager.sharedNSCodingManager
     
-    private override init() { }
+    private override init() {
+        super.init()
+        
+        self.subject = Subject.sharedSubject
+        self.subject.attach(self)
+        
+        self.leo = self.subject.getLeo()
+        self.sharedCarePlanStoreManager = CarePlanStoreManager(path: leo.getId())
+    }
+    
+    // Update the user
+    override func update() {
+         self.leo = self.subject.getLeo()
+    }
     
     func createCareCard() -> OCKCareCardViewController {
         let careCardViewController = OCKCareCardViewController(carePlanStore: sharedCarePlanStoreManager.store)
@@ -27,7 +41,7 @@ class CareCardModel: NSObject {
         careCardViewController.title = "Cuidados"
         careCardViewController.tabBarItem = UITabBarItem(title: "Cuidados", image: UIImage(named: "carecard"), selectedImage: UIImage(named: "carecard-fill"))
         careCardViewController.navigationItem.rightBarButtonItem?.title = "Hoje"
-        careCardViewController.delegate = self
+//        careCardViewController.delegate = self
         careCardViewController.navigationItem.leftBarButtonItem?.tintColor = UIColor.red
         
         return careCardViewController
@@ -163,8 +177,8 @@ class CareCardModel: NSObject {
     }
 }
 
-extension CareCardModel: OCKCareCardViewControllerDelegate {
-    func careCardViewController(_ viewController: OCKCareCardViewController, didSelectButtonWithInterventionEvent interventionEvent: OCKCarePlanEvent) {
-        print("teste")
-    }
-}
+//extension CareCardModel: OCKCareCardViewControllerDelegate {
+//    func careCardViewController(_ viewController: OCKCareCardViewController, didSelectButtonWithInterventionEvent interventionEvent: OCKCarePlanEvent) {
+//        print("teste")
+//    }
+//}
