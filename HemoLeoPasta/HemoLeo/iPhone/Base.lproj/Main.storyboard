@@ -171,8 +171,8 @@
                                     <action selector="ombroAction:" destination="GgD-EG-mHu" eventType="touchUpInside" id="vtZ-jS-SQ1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvV-XM-hNh">
-                                <rect key="frame" x="151" y="335" width="73" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvV-XM-hNh">
+                                <rect key="frame" x="110" y="315" width="156" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" identifier="Ombro"/>
                                 <state key="normal" title="OmbroEsq"/>
@@ -403,6 +403,176 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t1z-j6-JLm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2242" y="-1150"/>
+        </scene>
+        <!--Tutorial1 View Controller-->
+        <scene sceneID="TyU-Ta-Fsb">
+            <objects>
+                <viewController storyboardIdentifier="tutorial1" id="LVb-0k-ePf" customClass="Tutorial1ViewController" customModule="iPhone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FZN-9q-HcH"/>
+                        <viewControllerLayoutGuide type="bottom" id="9P5-2h-3NL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Deo-Dq-PHp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="78q-Pv-Gwh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2351" y="-2595"/>
+        </scene>
+        <!--Tutorial2 View Controller-->
+        <scene sceneID="UY2-48-OiM">
+            <objects>
+                <viewController storyboardIdentifier="tutorial2" id="0wA-Gs-hqi" customClass="Tutorial2ViewController" customModule="iPhone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fiq-Sn-XIm"/>
+                        <viewControllerLayoutGuide type="bottom" id="erB-1S-KCs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Pj9-lW-dpu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Em-UY-Xuu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1574" y="-2594"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="raL-kH-j5n">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="fFN-je-hZ7" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OHY-zD-TO5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3220" y="-2596"/>
+        </scene>
+        <!--Tutorial7 View Controller-->
+        <scene sceneID="Kmn-Uc-uyK">
+            <objects>
+                <viewController storyboardIdentifier="tutorial7" id="04D-6B-PcA" customClass="Tutorial7ViewController" customModule="iPhone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vF9-Hz-EWZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="PqR-IE-Tcg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wsR-Jd-e7G">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="06B-9D-hvw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2351" y="-1801"/>
+        </scene>
+        <!--Tutorial8 View Controller-->
+        <scene sceneID="dA7-jk-qpf">
+            <objects>
+                <viewController storyboardIdentifier="tutorial8" id="EG2-0A-U3F" customClass="Tutorial8ViewController" customModule="iPhone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Mj-66-jYC"/>
+                        <viewControllerLayoutGuide type="bottom" id="OvS-An-25K"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8aP-Dm-lds">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PKN-wh-CMb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1465" y="-1801"/>
+        </scene>
+        <!--Tutorial9 View Controller-->
+        <scene sceneID="ivp-cm-ZIy">
+            <objects>
+                <viewController storyboardIdentifier="tutorial9" id="oFP-KC-lXQ" customClass="Tutorial9ViewController" customModule="iPhone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UgR-mw-jwx"/>
+                        <viewControllerLayoutGuide type="bottom" id="JSs-sl-I29"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mst-8m-uDg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MYk-Iv-4kx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-578" y="-1766"/>
+        </scene>
+        <!--Tutorial3 View Controller-->
+        <scene sceneID="rU7-rs-KAN">
+            <objects>
+                <viewController storyboardIdentifier="tutorial3" id="2bb-AS-dhf" customClass="Tutorial3ViewController" customModule="iPhone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jK1-gI-Cge"/>
+                        <viewControllerLayoutGuide type="bottom" id="g9n-Hy-BVh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2Le-5P-NBP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1OA-Nx-rkQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-718" y="-2543"/>
+        </scene>
+        <!--Tutorial4 View Controller-->
+        <scene sceneID="KlI-Vv-hTv">
+            <objects>
+                <viewController storyboardIdentifier="tutorial4" id="kqn-HZ-63c" customClass="Tutorial4ViewController" customModule="iPhone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="f9v-KO-AQQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="kA5-yh-JCu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lkf-sZ-YUN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ScU-vx-0ya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="351" y="-2522"/>
+        </scene>
+        <!--Tutorial5 View Controller-->
+        <scene sceneID="93D-wF-5oS">
+            <objects>
+                <viewController storyboardIdentifier="tutorial5" id="IhX-mF-aw0" customClass="Tutorial5ViewController" customModule="iPhone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oXs-cl-yrj"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZrU-9A-ElK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bJ6-lJ-kx7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nb9-1E-7Ql" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1252" y="-2542"/>
+        </scene>
+        <!--Tutorial6 View Controller-->
+        <scene sceneID="cBA-rN-AhM">
+            <objects>
+                <viewController storyboardIdentifier="tutorial6" id="kXp-Rf-cyI" customClass="Tutorial6ViewController" customModule="iPhone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AAM-hr-xne"/>
+                        <viewControllerLayoutGuide type="bottom" id="4kR-vA-aQX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jF3-l5-O29">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xPZ-Fw-QDw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2132" y="-2515"/>
         </scene>
         <!--User View Controller-->
         <scene sceneID="sxT-Iz-GKr">

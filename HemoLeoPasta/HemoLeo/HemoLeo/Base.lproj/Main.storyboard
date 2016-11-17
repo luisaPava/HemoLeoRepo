@@ -291,6 +291,176 @@
             </objects>
             <point key="canvasLocation" x="520" y="-861"/>
         </scene>
+        <!--Page View Controller-->
+        <scene sceneID="RIl-hv-7aU">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="cWQ-MQ-lvC" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nPI-Vj-PQK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2367" y="-2811"/>
+        </scene>
+        <!--Tutorial1 View Controller-->
+        <scene sceneID="sH9-IK-trg">
+            <objects>
+                <viewController storyboardIdentifier="tutorial1" id="H79-R7-vqW" customClass="Tutorial1ViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fBd-ol-ofS"/>
+                        <viewControllerLayoutGuide type="bottom" id="akT-gA-nj6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WHg-8g-Rpi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cms-oR-bVE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1552" y="-2793"/>
+        </scene>
+        <!--Tutorial2 View Controller-->
+        <scene sceneID="gHX-3g-Qx0">
+            <objects>
+                <viewController storyboardIdentifier="tutorial2" id="d09-5s-adD" customClass="Tutorial2ViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qvl-IU-oj1"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zbr-jy-Vrr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GCc-BX-qgS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aK5-Jq-fQg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-813" y="-2796"/>
+        </scene>
+        <!--Tutorial6 View Controller-->
+        <scene sceneID="n2c-Jb-5zk">
+            <objects>
+                <viewController storyboardIdentifier="tutorial6" id="kkm-um-0v9" customClass="Tutorial6ViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EnB-bc-lIA"/>
+                        <viewControllerLayoutGuide type="bottom" id="zNd-aE-7fK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7Go-lu-33i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G7b-Zz-oVM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2286" y="-1271"/>
+        </scene>
+        <!--Tutorial9 View Controller-->
+        <scene sceneID="eyH-dg-DcI">
+            <objects>
+                <viewController storyboardIdentifier="tutorial9" id="Txp-AL-mtW" customClass="Tutorial9ViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hzx-H0-355"/>
+                        <viewControllerLayoutGuide type="bottom" id="scw-xK-LTj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Evq-yp-l9y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qye-RE-v0D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2316" y="-540"/>
+        </scene>
+        <!--Tutorial7 View Controller-->
+        <scene sceneID="wdF-3y-3wm">
+            <objects>
+                <viewController storyboardIdentifier="tutorial7" id="Se6-bW-dHx" customClass="Tutorial7ViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LlF-HY-Epj"/>
+                        <viewControllerLayoutGuide type="bottom" id="4wM-2u-RRp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hE4-J0-zLO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZkB-jP-P82" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1518" y="-1272"/>
+        </scene>
+        <!--Tutorial8 View Controller-->
+        <scene sceneID="vXC-Ji-I3n">
+            <objects>
+                <viewController storyboardIdentifier="tutorial8" id="2DF-zy-gOz" customClass="Tutorial8ViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Yp7-gR-G5V"/>
+                        <viewControllerLayoutGuide type="bottom" id="9Qh-xS-LS7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="siu-pn-cSZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qbo-PU-ywa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-752" y="-1274"/>
+        </scene>
+        <!--Tutorial5 View Controller-->
+        <scene sceneID="nNv-ez-2Eg">
+            <objects>
+                <viewController storyboardIdentifier="tutorial5" id="ZDF-ag-vTy" customClass="Tutorial5ViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vvP-HX-oT0"/>
+                        <viewControllerLayoutGuide type="bottom" id="hLH-Li-brf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MhJ-tP-bot">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xjC-pa-n2d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-762" y="-2048"/>
+        </scene>
+        <!--Tutorial3 View Controller-->
+        <scene sceneID="eSN-L7-sBr">
+            <objects>
+                <viewController storyboardIdentifier="tutorial3" id="VQy-gI-qF0" customClass="Tutorial3ViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bcO-ar-kia"/>
+                        <viewControllerLayoutGuide type="bottom" id="C0A-mI-ZIZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="v2g-A0-NdF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jia-dv-RBo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2336" y="-2048"/>
+        </scene>
+        <!--Tutorial4 View Controller-->
+        <scene sceneID="i2n-rk-m8M">
+            <objects>
+                <viewController storyboardIdentifier="tutorial4" id="3En-dM-WKg" customClass="Tutorial4ViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Pe8-hq-mSb"/>
+                        <viewControllerLayoutGuide type="bottom" id="z3Y-Lo-Dwm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VZX-gf-UuV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DmP-6J-pcf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1542" y="-2047"/>
+        </scene>
         <!--Select Theme View Controller-->
         <scene sceneID="JXc-Xb-y01">
             <objects>
@@ -391,7 +561,7 @@
                                 </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="n5b-az-IT4">
-                                <rect key="frame" x="-313" y="-70" width="1001" height="807"/>
+                                <rect key="frame" x="-312.5" y="-69.5" width="1000" height="806"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="1000" id="60P-oA-a5R"/>
                                     <constraint firstAttribute="height" constant="806" id="AJs-lC-KVv"/>
@@ -405,14 +575,14 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="3Kc-LL-596" customClass="ThemesCollectionViewCell" customModule="HemoLeo" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="176" width="588" height="456"/>
+                                        <rect key="frame" x="0.0" y="175" width="588" height="456"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="588" height="456"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default" translatesAutoresizingMaskIntoConstraints="NO" id="rm3-nA-v20">
-                                                    <rect key="frame" x="-6" y="-3" width="600" height="462"/>
+                                                    <rect key="frame" x="-6" y="-2.5" width="600" height="461"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="600" id="3Qd-uQ-9P6"/>
                                                         <constraint firstAttribute="height" constant="461" id="FK4-U9-UbW"/>
@@ -724,13 +894,13 @@
                                 <rect key="frame" x="40" y="195" width="440" height="91"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opacidade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwp-wv-wr9">
-                                        <rect key="frame" x="0.0" y="35" width="84" height="21"/>
+                                        <rect key="frame" x="0.0" y="35.5" width="83.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="DnH-5F-nb9">
-                                        <rect key="frame" x="84" y="31" width="265" height="31"/>
+                                        <rect key="frame" x="84" y="30.5" width="265" height="31"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="261" id="DMF-1s-z4v"/>
                                         </constraints>
@@ -754,13 +924,13 @@
                                 <rect key="frame" x="40" y="94" width="440" height="91"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pincel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2iw-0S-FCe">
-                                        <rect key="frame" x="0.0" y="35" width="47" height="21"/>
+                                        <rect key="frame" x="0.0" y="35.5" width="46.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="dHD-hM-hRK">
-                                        <rect key="frame" x="77" y="31" width="265" height="31"/>
+                                        <rect key="frame" x="76.5" y="30.5" width="265" height="31"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="261" id="uOO-nn-8VQ"/>
                                         </constraints>

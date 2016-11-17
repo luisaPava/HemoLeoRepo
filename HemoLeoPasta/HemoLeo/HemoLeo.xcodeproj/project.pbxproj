@@ -205,13 +205,33 @@
 		4EAFA20B1DC7B5C4002BA048 /* OccurenciesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAFA20A1DC7B5C4002BA048 /* OccurenciesModel.swift */; };
 		4EAFA20D1DC7B772002BA048 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAFA20C1DC7B772002BA048 /* MainViewModel.swift */; };
 		4EAFA20F1DC7BF39002BA048 /* BGEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAFA20E1DC7BF39002BA048 /* BGEnum.swift */; };
+		4ED0D2961DDDD90700BE15CE /* TutorialPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED0D2951DDDD90700BE15CE /* TutorialPageViewController.swift */; };
+		4ED0D2981DDDDADD00BE15CE /* Tutorial1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED0D2971DDDDADD00BE15CE /* Tutorial1ViewController.swift */; };
+		4ED0D29A1DDDDAF400BE15CE /* Tutorial2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED0D2991DDDDAF400BE15CE /* Tutorial2ViewController.swift */; };
+		4ED0D29C1DDDDB0500BE15CE /* Tutorial3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED0D29B1DDDDB0500BE15CE /* Tutorial3ViewController.swift */; };
+		4ED0D29E1DDDDB1600BE15CE /* Tutorial4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED0D29D1DDDDB1600BE15CE /* Tutorial4ViewController.swift */; };
+		4ED0D2A01DDDDB2900BE15CE /* Tutorial5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED0D29F1DDDDB2900BE15CE /* Tutorial5ViewController.swift */; };
+		4ED0D2A21DDDDB3B00BE15CE /* Tutorial6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED0D2A11DDDDB3B00BE15CE /* Tutorial6ViewController.swift */; };
+		4ED0D2A41DDDDB4900BE15CE /* Tutorial7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED0D2A31DDDDB4900BE15CE /* Tutorial7ViewController.swift */; };
+		4ED0D2A61DDDDB5A00BE15CE /* Tutorial8ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED0D2A51DDDDB5A00BE15CE /* Tutorial8ViewController.swift */; };
+		4ED0D2A81DDDDB6A00BE15CE /* Tutorial9ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED0D2A71DDDDB6A00BE15CE /* Tutorial9ViewController.swift */; };
+		4ED0D2AB1DDDDE9D00BE15CE /* TutorialPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED0D2951DDDD90700BE15CE /* TutorialPageViewController.swift */; };
+		4ED0D2AC1DDDDEA000BE15CE /* Tutorial1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED0D2971DDDDADD00BE15CE /* Tutorial1ViewController.swift */; };
+		4ED0D2AD1DDDDEA400BE15CE /* Tutorial2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED0D2991DDDDAF400BE15CE /* Tutorial2ViewController.swift */; };
+		4ED0D2AE1DDDDEA700BE15CE /* Tutorial3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED0D29B1DDDDB0500BE15CE /* Tutorial3ViewController.swift */; };
+		4ED0D2AF1DDDDEAB00BE15CE /* Tutorial4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED0D29D1DDDDB1600BE15CE /* Tutorial4ViewController.swift */; };
+		4ED0D2B01DDDDEAF00BE15CE /* Tutorial5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED0D29F1DDDDB2900BE15CE /* Tutorial5ViewController.swift */; };
+		4ED0D2B11DDDDEB200BE15CE /* Tutorial6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED0D2A11DDDDB3B00BE15CE /* Tutorial6ViewController.swift */; };
+		4ED0D2B21DDDDEB500BE15CE /* Tutorial7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED0D2A31DDDDB4900BE15CE /* Tutorial7ViewController.swift */; };
+		4ED0D2B31DDDDEB900BE15CE /* Tutorial8ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED0D2A51DDDDB5A00BE15CE /* Tutorial8ViewController.swift */; };
+		4ED0D2B41DDDDEBD00BE15CE /* Tutorial9ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED0D2A71DDDDB6A00BE15CE /* Tutorial9ViewController.swift */; };
+		4ED0D2B81DDDE47600BE15CE /* UIAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED0D2B71DDDE47600BE15CE /* UIAnimation.swift */; };
 		777711071D3E9AAC0066A0E2 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 777711061D3E9AAC0066A0E2 /* SpriteKit.framework */; };
 		7777110D1D3E9BD00066A0E2 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7777110C1D3E9BD00066A0E2 /* GameScene.swift */; };
 		7777110F1D3E9C110066A0E2 /* LeoImages.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 7777110E1D3E9C110066A0E2 /* LeoImages.atlas */; };
 		77E89D111D4252AA00FDA59B /* ThemesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E89D101D4252AA00FDA59B /* ThemesViewController.swift */; };
 		77E89D171D4252EA00FDA59B /* ThemesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E89D161D4252EA00FDA59B /* ThemesCollectionViewCell.swift */; };
 		77E89D191D4253CD00FDA59B /* SelectThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E89D181D4253CD00FDA59B /* SelectThemeViewController.swift */; };
-		77E89D1B1D42542900FDA59B /* UIAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E89D1A1D42542900FDA59B /* UIAnimation.swift */; };
 		EBBD25AE1D3731BE00786155 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBD25AD1D3731BE00786155 /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -446,13 +466,23 @@
 		4EAFA20A1DC7B5C4002BA048 /* OccurenciesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OccurenciesModel.swift; sourceTree = "<group>"; };
 		4EAFA20C1DC7B772002BA048 /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		4EAFA20E1DC7BF39002BA048 /* BGEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGEnum.swift; sourceTree = "<group>"; };
+		4ED0D2951DDDD90700BE15CE /* TutorialPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialPageViewController.swift; sourceTree = "<group>"; };
+		4ED0D2971DDDDADD00BE15CE /* Tutorial1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutorial1ViewController.swift; sourceTree = "<group>"; };
+		4ED0D2991DDDDAF400BE15CE /* Tutorial2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutorial2ViewController.swift; sourceTree = "<group>"; };
+		4ED0D29B1DDDDB0500BE15CE /* Tutorial3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutorial3ViewController.swift; sourceTree = "<group>"; };
+		4ED0D29D1DDDDB1600BE15CE /* Tutorial4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutorial4ViewController.swift; sourceTree = "<group>"; };
+		4ED0D29F1DDDDB2900BE15CE /* Tutorial5ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutorial5ViewController.swift; sourceTree = "<group>"; };
+		4ED0D2A11DDDDB3B00BE15CE /* Tutorial6ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutorial6ViewController.swift; sourceTree = "<group>"; };
+		4ED0D2A31DDDDB4900BE15CE /* Tutorial7ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutorial7ViewController.swift; sourceTree = "<group>"; };
+		4ED0D2A51DDDDB5A00BE15CE /* Tutorial8ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutorial8ViewController.swift; sourceTree = "<group>"; };
+		4ED0D2A71DDDDB6A00BE15CE /* Tutorial9ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutorial9ViewController.swift; sourceTree = "<group>"; };
+		4ED0D2B71DDDE47600BE15CE /* UIAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAnimation.swift; sourceTree = "<group>"; };
 		777711061D3E9AAC0066A0E2 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		7777110C1D3E9BD00066A0E2 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		7777110E1D3E9C110066A0E2 /* LeoImages.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = LeoImages.atlas; sourceTree = "<group>"; };
 		77E89D101D4252AA00FDA59B /* ThemesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemesViewController.swift; sourceTree = "<group>"; };
 		77E89D161D4252EA00FDA59B /* ThemesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemesCollectionViewCell.swift; sourceTree = "<group>"; };
 		77E89D181D4253CD00FDA59B /* SelectThemeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectThemeViewController.swift; sourceTree = "<group>"; };
-		77E89D1A1D42542900FDA59B /* UIAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAnimation.swift; sourceTree = "<group>"; };
 		EBBD25AD1D3731BE00786155 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -705,6 +735,7 @@
 		4E3244961DD3EC7400258CE1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4ED0D2901DDDD8A500BE15CE /* Tutorial */,
 				4E4F03F61DD2A13800523507 /* Insights */,
 				4E4F03F41DD2A0E800523507 /* SymptomTracker */,
 				4E4F03F31DD2A09900523507 /* CareCard */,
@@ -858,6 +889,7 @@
 		4EAFA1E61DC7A731002BA048 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4ED0D2B71DDDE47600BE15CE /* UIAnimation.swift */,
 				2BA188971D355BAA007F1CEB /* Assets */,
 				2BCA5CD61D42A4C700EAC063 /* IBDesignables */,
 				4E3CE03A1D400FEF00E4F422 /* Animação */,
@@ -875,7 +907,6 @@
 				4E4F03F71DD2A14B00523507 /* Themes */,
 				4E4F03F51DD2A11500523507 /* Canvas */,
 				2B7997F41D37DD2B00D0996D /* StoryTelling */,
-				77E89D1A1D42542900FDA59B /* UIAnimation.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -921,6 +952,24 @@
 				4E973BB01DD8FECB00D4CD8B /* UserModel.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		4ED0D2901DDDD8A500BE15CE /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				4ED0D2951DDDD90700BE15CE /* TutorialPageViewController.swift */,
+				4ED0D2971DDDDADD00BE15CE /* Tutorial1ViewController.swift */,
+				4ED0D2991DDDDAF400BE15CE /* Tutorial2ViewController.swift */,
+				4ED0D29B1DDDDB0500BE15CE /* Tutorial3ViewController.swift */,
+				4ED0D29D1DDDDB1600BE15CE /* Tutorial4ViewController.swift */,
+				4ED0D29F1DDDDB2900BE15CE /* Tutorial5ViewController.swift */,
+				4ED0D2A11DDDDB3B00BE15CE /* Tutorial6ViewController.swift */,
+				4ED0D2A31DDDDB4900BE15CE /* Tutorial7ViewController.swift */,
+				4ED0D2A51DDDDB5A00BE15CE /* Tutorial8ViewController.swift */,
+				4ED0D2A71DDDDB6A00BE15CE /* Tutorial9ViewController.swift */,
+			);
+			name = Tutorial;
+			path = HemoLeo;
 			sourceTree = "<group>";
 		};
 		EB6F10E21D41C4170056606B /* AnimaçõesCoreAnimator */ = {
@@ -1260,20 +1309,24 @@
 			files = (
 				4E36E4661D45B9A20005A1BE /* QueryActivityEventsOperation.swift in Sources */,
 				4E973BAC1DD8DAEB00D4CD8B /* Subject.swift in Sources */,
+				4ED0D2A41DDDDB4900BE15CE /* Tutorial7ViewController.swift in Sources */,
 				2BA188A21D355CBD007F1CEB /* CarePlanStoreManager.swift in Sources */,
+				4ED0D2A01DDDDB2900BE15CE /* Tutorial5ViewController.swift in Sources */,
 				4E2B29C81D37057A00EED2B4 /* PageViewCcontroller.swift in Sources */,
 				2BCA5D711D42C26C00EAC063 /* Storytelling5View.swift in Sources */,
 				4E36E46B1D45BA330005A1BE /* OCKInsightItem+EmptyMessage.swift in Sources */,
 				2B1A21481D3E6E64007F1B68 /* Fisiotherapy.swift in Sources */,
+				4ED0D29E1DDDDB1600BE15CE /* Tutorial4ViewController.swift in Sources */,
 				4EA969471D3D681000DBF2AD /* Bruising.swift in Sources */,
 				2BCA5CDC1D42ABF500EAC063 /* Story4ViewController.swift in Sources */,
 				2BCA5CDE1D42AC0300EAC063 /* Story5ViewController.swift in Sources */,
 				4E6796881DDD35C9000E0A5E /* ADVSegmentedControl.swift in Sources */,
 				4EAFA2091DC7B373002BA048 /* Leo.swift in Sources */,
 				4E3CE03C1D400FFF00E4F422 /* ButtonAnimation.swift in Sources */,
-				77E89D1B1D42542900FDA59B /* UIAnimation.swift in Sources */,
+				4ED0D2A61DDDDB5A00BE15CE /* Tutorial8ViewController.swift in Sources */,
 				2B7997EE1D37CD8F00D0996D /* StoryOneViewController.swift in Sources */,
 				2BA188C21D3567A5007F1CEB /* Water.swift in Sources */,
+				4ED0D2961DDDD90700BE15CE /* TutorialPageViewController.swift in Sources */,
 				EBBD25AE1D3731BE00786155 /* SettingViewController.swift in Sources */,
 				4EAFA2031DC7AD4E002BA048 /* SymptomTrackerModel.swift in Sources */,
 				4E973BB41DD90FD700D4CD8B /* AddUserViewController.swift in Sources */,
@@ -1296,9 +1349,11 @@
 				4E2B29CE1D395AF800EED2B4 /* SymptomCardViewController.swift in Sources */,
 				4E36E46A1D45BA330005A1BE /* NSCalendar+Dates.swift in Sources */,
 				4E2B29C41D36CDC400EED2B4 /* CareCardViewController.swift in Sources */,
+				4ED0D2981DDDDADD00BE15CE /* Tutorial1ViewController.swift in Sources */,
 				4E36E4641D45B9A20005A1BE /* BuildInsightsOperation.swift in Sources */,
 				4EAFA20D1DC7B772002BA048 /* MainViewModel.swift in Sources */,
 				2B7997F21D37CD9F00D0996D /* Story2ViewController.swift in Sources */,
+				4ED0D2A21DDDDB3B00BE15CE /* Tutorial6ViewController.swift in Sources */,
 				4E2B2DF31D3ABEEB00EED2B4 /* AssessmentsManager.swift in Sources */,
 				4E0364E61DD6B6D200C2793E /* PopupController.swift in Sources */,
 				2BCA5D351D42B8FF00EAC063 /* Storytelling3View.swift in Sources */,
@@ -1311,12 +1366,15 @@
 				2BCA5CE31D42B20C00EAC063 /* Storytelling2View.swift in Sources */,
 				4E132CB81D41242A004CBC6F /* CustomActivityCell.swift in Sources */,
 				2BA188BC1D355D96007F1CEB /* Actitvity.swift in Sources */,
+				4ED0D2A81DDDDB6A00BE15CE /* Tutorial9ViewController.swift in Sources */,
+				4ED0D29C1DDDDB0500BE15CE /* Tutorial3ViewController.swift in Sources */,
 				4E36E4651D45B9A20005A1BE /* InsightsBuilder.swift in Sources */,
 				4E973BAA1DD8D8B700D4CD8B /* Observer.swift in Sources */,
 				4EAFA20B1DC7B5C4002BA048 /* OccurenciesModel.swift in Sources */,
 				2BCA5CDA1D42ABE700EAC063 /* Story3ViewController.swift in Sources */,
 				4E4F03EC1DD0B9EE00523507 /* Helper.swift in Sources */,
 				7777110D1D3E9BD00066A0E2 /* GameScene.swift in Sources */,
+				4ED0D29A1DDDDAF400BE15CE /* Tutorial2ViewController.swift in Sources */,
 				2B1A214E1D3E71E2007F1B68 /* OccurenciesViewController.swift in Sources */,
 				2BA188BE1D355EEF007F1CEB /* Vagetables.swift in Sources */,
 				4E2B2DF51D3AD12A00EED2B4 /* Pain.swift in Sources */,
@@ -1326,6 +1384,7 @@
 				4EAFA2051DC7B180002BA048 /* InsightModel.swift in Sources */,
 				2B87D5EB1D3825DB00F29678 /* AddedActivitiesData.swift in Sources */,
 				77E89D111D4252AA00FDA59B /* ThemesViewController.swift in Sources */,
+				4ED0D2B81DDDE47600BE15CE /* UIAnimation.swift in Sources */,
 				2BCA5CB51D42A34F00EAC063 /* StorytellingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1335,6 +1394,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E0364E71DD6B6D200C2793E /* PopupController.swift in Sources */,
+				4ED0D2AD1DDDDEA400BE15CE /* Tutorial2ViewController.swift in Sources */,
 				4E3244801DD3DE2D00258CE1 /* Fruits.swift in Sources */,
 				4E973BAF1DD8FE9700D4CD8B /* UserViewController.swift in Sources */,
 				4E973BB51DD90FD700D4CD8B /* AddUserViewController.swift in Sources */,
@@ -1355,27 +1415,36 @@
 				4E3244861DD3DE2D00258CE1 /* ToAddedActivitiesData.swift in Sources */,
 				4E3244971DD3EC9D00258CE1 /* InsightViewController.swift in Sources */,
 				4E3244991DD3ECA900258CE1 /* SurveyController.swift in Sources */,
+				4ED0D2B41DDDDEBD00BE15CE /* Tutorial9ViewController.swift in Sources */,
 				4E3244811DD3DE2D00258CE1 /* Exercise.swift in Sources */,
+				4ED0D2B21DDDDEB500BE15CE /* Tutorial7ViewController.swift in Sources */,
 				4E32448A1DD3DE3200258CE1 /* Bleeding.swift in Sources */,
 				4E3244781DD3DE2700258CE1 /* InsightModel.swift in Sources */,
 				4E32447B1DD3DE2700258CE1 /* OccurenciesModel.swift in Sources */,
+				4ED0D2B11DDDDEB200BE15CE /* Tutorial6ViewController.swift in Sources */,
 				4E973BB21DD8FECB00D4CD8B /* UserModel.swift in Sources */,
 				4E3244951DD3EB7800258CE1 /* OCKInsightItem+EmptyMessage.swift in Sources */,
 				4E32449A1DD3ECAF00258CE1 /* CustomActivityCell.swift in Sources */,
 				4E32449D1DD3ECAF00258CE1 /* CareCardViewController.swift in Sources */,
 				4E32448B1DD3DE3800258CE1 /* BuildInsightsOperation.swift in Sources */,
 				4E32447A1DD3DE2700258CE1 /* Leo.swift in Sources */,
+				4ED0D2B01DDDDEAF00BE15CE /* Tutorial5ViewController.swift in Sources */,
 				4E32447C1DD3DE2700258CE1 /* NSCodingManager.swift in Sources */,
 				4E3244831DD3DE2D00258CE1 /* Fisiotherapy.swift in Sources */,
+				4ED0D2AC1DDDDEA000BE15CE /* Tutorial1ViewController.swift in Sources */,
 				4E3244931DD3EB5F00258CE1 /* AssessmentsManager.swift in Sources */,
+				4ED0D2AE1DDDDEA700BE15CE /* Tutorial3ViewController.swift in Sources */,
 				4E0310301DD6AEC0002B8200 /* PopUpViewController.swift in Sources */,
+				4ED0D2AF1DDDDEAB00BE15CE /* Tutorial4ViewController.swift in Sources */,
 				4E32448D1DD3DE3800258CE1 /* QueryActivityEventsOperation.swift in Sources */,
 				4EAFA1EF1DC7AAC2002BA048 /* AppDelegate.swift in Sources */,
+				4ED0D2AB1DDDDE9D00BE15CE /* TutorialPageViewController.swift in Sources */,
 				4E3244941DD3EB7800258CE1 /* NSCalendar+Dates.swift in Sources */,
 				4E3244841DD3DE2D00258CE1 /* Water.swift in Sources */,
 				4E3244751DD3DE2200258CE1 /* CareCardModel.swift in Sources */,
 				4E32447F1DD3DE2D00258CE1 /* Vagetables.swift in Sources */,
 				4E3244761DD3DE2700258CE1 /* CarePlanStoreManager.swift in Sources */,
+				4ED0D2B31DDDDEB900BE15CE /* Tutorial8ViewController.swift in Sources */,
 				4E32449B1DD3ECAF00258CE1 /* OccurenciesViewController.swift in Sources */,
 				4E973BB61DD9115B00D4CD8B /* Observer.swift in Sources */,
 				4E32447E1DD3DE2D00258CE1 /* Actitvity.swift in Sources */,
