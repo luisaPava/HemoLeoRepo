@@ -186,6 +186,9 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="OU2-lj-h6j"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="segmentedControlAction:" destination="GgD-EG-mHu" eventType="valueChanged" id="HVC-ZJ-GRx"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -195,6 +198,18 @@
                             <constraint firstItem="wqG-5u-d25" firstAttribute="top" secondItem="Vrp-C9-8Kv" secondAttribute="bottom" constant="47" id="x91-pM-zOI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cotDir" destination="rpu-mB-9zK" id="ELV-Yr-BaZ"/>
+                        <outlet property="cotEsq" destination="KXb-sK-DEH" id="Lgi-JL-zGQ"/>
+                        <outlet property="joelhoDir" destination="WgN-ue-Dg0" id="pGR-tu-l8w"/>
+                        <outlet property="joelhoEsq" destination="kFZ-Po-2lD" id="RDb-H8-bXT"/>
+                        <outlet property="ombroDir" destination="sfA-Ch-fKy" id="iTa-22-js6"/>
+                        <outlet property="ombroEsq" destination="zvV-XM-hNh" id="fgE-Mw-HRY"/>
+                        <outlet property="tornozeloDir" destination="quC-8G-UhJ" id="OLX-tA-Nhk"/>
+                        <outlet property="tronozeloEsq" destination="Xvf-N7-2vN" id="QMd-R5-Rlf"/>
+                        <outlet property="virilhaDir" destination="PTI-tp-5Pl" id="eUJ-h6-I07"/>
+                        <outlet property="virilhaEsq" destination="4Tq-lY-ALp" id="qUa-SZ-CiG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m9j-En-Uak" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

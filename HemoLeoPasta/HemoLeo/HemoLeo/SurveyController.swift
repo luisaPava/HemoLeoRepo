@@ -16,12 +16,33 @@ class SurveyController: UIViewController {
     var resultArray: Array<String> = ["", "", "", "", ""]
     var index = 0
     var sliderValue = 0
+    var esqArray: Array<UIButton> = []
+    var dirArray: Array<UIButton> = []
+    
+    @IBOutlet weak var ombroEsq: UIButton!
+    @IBOutlet weak var cotEsq: UIButton!
+    @IBOutlet weak var virilhaEsq: UIButton!
+    @IBOutlet weak var joelhoEsq: UIButton!
+    @IBOutlet weak var tronozeloEsq: UIButton!
+    
+    @IBOutlet weak var ombroDir: UIButton!
+    @IBOutlet weak var cotDir: UIButton!
+    @IBOutlet weak var virilhaDir: UIButton!
+    @IBOutlet weak var joelhoDir: UIButton!
+    @IBOutlet weak var tornozeloDir: UIButton!
+    
     
     private var assessmentManager: AssessmentsManager? = nil
     private let symptomTrackerModel = SymptomTrackerModel.sharedSymptomTracker
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        esqArray = [ombroEsq, cotEsq, virilhaEsq, joelhoEsq, tronozeloEsq]
+        dirArray = [ombroDir, cotDir, virilhaDir, joelhoDir, tornozeloDir]
+        
+        setArrayBtn(dirArray, bool: false)
+        setArrayBtn(esqArray, bool: true)
         
         assessmentManager = symptomTrackerModel.getAssessmentManager()
         
@@ -62,6 +83,21 @@ class SurveyController: UIViewController {
         
     }
 
+    @IBAction func segmentedControlAction(_ sender: ADVSegmentedControl) {
+        let index = sender.selectedIndex
+        
+        if index == 0 {
+            setArrayBtn(dirArray, bool: false)
+            setArrayBtn(esqArray, bool: true)
+            
+        } else {
+            setArrayBtn(dirArray, bool: true)
+            setArrayBtn(esqArray, bool: false)
+            
+        }
+        
+    }
+    
     @IBAction func ombroAction(_ sender: UIButton) {
         if sender.isSelected == false {
             resultArray[sender.tag] = sender.accessibilityIdentifier!
@@ -70,6 +106,12 @@ class SurveyController: UIViewController {
         } else {
             resultArray[sender.tag] = ""
             sender.isSelected = false
+        }
+    }
+    
+    func setArrayBtn(_ array: Array<UIButton>, bool: Bool) {
+        for btn in array {
+            btn.isEnabled = bool
         }
     }
 
