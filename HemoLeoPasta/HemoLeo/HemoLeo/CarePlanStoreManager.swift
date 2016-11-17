@@ -74,10 +74,6 @@
 import CareKit
 
 class CarePlanStoreManager: NSObject, NSCoding {
-    // MARK: Static Properties
-    
-//    static var sharedCarePlanStoreManager = CarePlanStoreManager()
-    
     // MARK: Properties
     
     weak var delegate: CarePlanStoreManagerDelegate?
@@ -107,16 +103,20 @@ class CarePlanStoreManager: NSObject, NSCoding {
     
     init(path: String) {
         // Determine the file URL for the store.
-        let applicationSupportPath = NSSearchPathForDirectoriesInDomains(.applicationSupportDirectory, .userDomainMask, true).first
+        let applicationSupportPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first
         let persistenceDirectoryURL = NSURL(fileURLWithPath: applicationSupportPath!).appendingPathComponent(path)
         
         if !FileManager.default.fileExists(atPath: persistenceDirectoryURL!.path, isDirectory: nil) {
             try! FileManager.default.createDirectory(at: persistenceDirectoryURL! as URL, withIntermediateDirectories: true, attributes: nil)
         }
         
+        print(persistenceDirectoryURL)
+        
         
         // Create the store.
         store = OCKCarePlanStore(persistenceDirectoryURL: persistenceDirectoryURL! as URL)
+        
+//        store.
         
         /*
          Create an `InsightsBuilder` to build insights based on the data in

@@ -135,13 +135,70 @@
                                     <action selector="ombroAction:" destination="GgD-EG-mHu" eventType="touchUpInside" id="JLC-Av-88J"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xvf-N7-2vN">
+                                <rect key="frame" x="279" y="387" width="93" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="Tornozelo"/>
+                                <state key="normal" title="TornozeloEsq"/>
+                                <connections>
+                                    <action selector="ombroAction:" destination="GgD-EG-mHu" eventType="touchUpInside" id="fNe-0D-JL7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXb-sK-DEH">
+                                <rect key="frame" x="7" y="387" width="86" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="Cotovelo"/>
+                                <state key="normal" title="CotoveloEsq"/>
+                                <connections>
+                                    <action selector="ombroAction:" destination="GgD-EG-mHu" eventType="touchUpInside" id="n4z-EA-0cQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Tq-lY-ALp">
+                                <rect key="frame" x="112" y="387" width="68" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="Virilha"/>
+                                <state key="normal" title="VirilhaEsq"/>
+                                <connections>
+                                    <action selector="ombroAction:" destination="GgD-EG-mHu" eventType="touchUpInside" id="4es-hL-lyd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kFZ-Po-2lD">
+                                <rect key="frame" x="199" y="387" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="Joelho"/>
+                                <state key="normal" title="JoelhoEsq"/>
+                                <connections>
+                                    <action selector="ombroAction:" destination="GgD-EG-mHu" eventType="touchUpInside" id="vtZ-jS-SQ1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvV-XM-hNh">
+                                <rect key="frame" x="151" y="335" width="73" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="Ombro"/>
+                                <state key="normal" title="OmbroEsq"/>
+                                <connections>
+                                    <action selector="ombroAction:" destination="GgD-EG-mHu" eventType="touchUpInside" id="2ms-tH-Kxs"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wqG-5u-d25" customClass="ADVSegmentedControl" customModule="iPhone" customModuleProvider="target">
+                                <rect key="frame" x="67" y="67" width="240" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="OU2-lj-h6j"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="wqG-5u-d25" secondAttribute="trailing" constant="52" id="19c-6v-vFe"/>
+                            <constraint firstItem="wqG-5u-d25" firstAttribute="leading" secondItem="lZb-YL-I8W" secondAttribute="leadingMargin" constant="51" id="aBE-1T-wWe"/>
+                            <constraint firstItem="wqG-5u-d25" firstAttribute="top" secondItem="Vrp-C9-8Kv" secondAttribute="bottom" constant="47" id="x91-pM-zOI"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m9j-En-Uak" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1508" y="-496"/>
+            <point key="canvasLocation" x="1508" y="-496.10194902548727"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="qig-Rz-NzJ">

@@ -10,22 +10,12 @@ import Foundation
 
 
 class NSCodingManager: NSObject {
-//    public required init?(coder aDecoder: NSCoder) {
-//        
-//    }
-//
-//    public func encode(with aCoder: NSCoder) {
-//        
-//    }
-
-    
     static var sharedNSCodingManager = NSCodingManager()
     private let documentsDirectory = FileManager().urls(for: .documentDirectory, in: .userDomainMask).first!
     
     private override init() {
         super.init()
     }
-    
     
     // MARK: NSCoding
     
@@ -55,16 +45,15 @@ class NSCodingManager: NSObject {
     func getAnyWithPath(path: String) -> Any? {
         let archiveURL = documentsDirectory.appendingPathComponent(path)
         
+        print(archiveURL.path)
+        
         return NSKeyedUnarchiver.unarchiveObject(withFile: archiveURL.path)
     }
     
     func saveAnyWithPath(path: String, object: Any) -> Bool {
-        print(#function)
-        
         let archiveURL = documentsDirectory.appendingPathComponent(path)
         let isSuccessfullSave = NSKeyedArchiver.archiveRootObject(object, toFile: archiveURL.path)
         
-        print(#function)
         
         if !isSuccessfullSave {
             return false

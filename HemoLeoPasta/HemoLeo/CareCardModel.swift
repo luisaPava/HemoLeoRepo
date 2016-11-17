@@ -29,7 +29,8 @@ class CareCardModel: Observer {
     
     // Update the user
     override func update() {
-         self.leo = self.subject.getLeo()
+        self.leo = self.subject.getLeo()
+        self.sharedCarePlanStoreManager = CarePlanStoreManager(path: leo.getId())
     }
     
     func createCareCard() -> OCKCareCardViewController {

@@ -30,7 +30,6 @@ class UserModel: NSObject {
         let array = codingManager.getAnyWithPath(path: path)
         
         if array == nil {
-            print("array == nil")
             return []
         }
         
@@ -38,18 +37,16 @@ class UserModel: NSObject {
     }
     
     func createNewUser(nome: String) {
-        print(#function)
         let newLeo = Leo(nome: nome)
-        
         
         userArray.append(newLeo)
         
-        codingManager.saveAnyWithPath(path: path, object: userArray)
+        if !codingManager.saveAnyWithPath(path: path, object: userArray) {
+            print("Erro, não foi possível salvar os dados")
+        }
     }
     
     func setUser(index: Int) {
-//        print(userArray[index].nome)
-        
         Subject.sharedSubject.notify(leo: userArray[index] as Leo)
     }
 }

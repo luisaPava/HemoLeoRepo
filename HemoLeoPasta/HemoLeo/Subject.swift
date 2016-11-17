@@ -32,9 +32,7 @@ class Subject {
     }
     
     private func notifyAllObservers() {
-        print("notify")
         for observer in arrayObserver {
-            print("notify")
             observer.update()
         }
     }
