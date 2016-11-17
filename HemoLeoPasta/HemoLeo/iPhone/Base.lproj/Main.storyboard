@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gVx-zF-NN8">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,7 +20,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lgy-me-3qm">
@@ -48,7 +49,7 @@
             </objects>
             <point key="canvasLocation" x="-1146" y="-106"/>
         </scene>
-        <!--Item 2-->
+        <!--Simtomas-->
         <scene sceneID="BdT-UE-jeH">
             <objects>
                 <viewController id="xvG-wT-ueO" customClass="SymptomCardViewController" customModule="iPhone" customModuleProvider="target" sceneMemberID="viewController">
@@ -57,11 +58,11 @@
                         <viewControllerLayoutGuide type="bottom" id="UsN-Tu-v7h"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="DaA-8P-fiJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="4IH-IX-ZhB"/>
+                    <tabBarItem key="tabBarItem" title="Simtomas" image="Symptom" selectedImage="Symptom" id="4IH-IX-ZhB"/>
                     <connections>
                         <segue destination="GgD-EG-mHu" kind="presentation" identifier="symptomToSurvey2" id="vNz-Ge-xNc"/>
                     </connections>
@@ -79,132 +80,177 @@
                         <viewControllerLayoutGuide type="bottom" id="hpe-9K-nYr"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="lZb-YL-I8W">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="MeninoEsquerdoAtivo" translatesAutoresizingMaskIntoConstraints="NO" id="8p4-Gp-7hA">
-                                <rect key="frame" x="0.0" y="88" width="372" height="519"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MeninoEsquerdoAtivo" translatesAutoresizingMaskIntoConstraints="NO" id="8p4-Gp-7hA">
+                                <rect key="frame" x="0.0" y="88" width="414" height="552"/>
                             </imageView>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quC-8G-UhJ">
-                                <rect key="frame" x="199" y="550" width="36" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="Tornozelo"/>
-                                <state key="normal" image="BotãoDesativadoDor"/>
-                                <connections>
-                                    <action selector="ombroAction:" destination="GgD-EG-mHu" eventType="touchUpInside" id="X8M-aI-BMb"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bX6-RT-t9G">
-                                <rect key="frame" x="29" y="615" width="316" height="39"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bX6-RT-t9G">
+                                <rect key="frame" x="33" y="689" width="347" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="iPe-Im-GyK"/>
+                                </constraints>
                                 <state key="normal" image="Botão Finalizar"/>
                                 <connections>
                                     <action selector="save:" destination="GgD-EG-mHu" eventType="touchUpInside" id="bTG-fK-MKY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpu-mB-9zK">
-                                <rect key="frame" x="216" y="287" width="36" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="Cotovelo"/>
-                                <state key="normal" image="BotãoDesativadoDor"/>
-                                <connections>
-                                    <action selector="ombroAction:" destination="GgD-EG-mHu" eventType="touchUpInside" id="l8l-m8-fZF"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTI-tp-5Pl">
-                                <rect key="frame" x="192" y="369" width="36" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="Virilha"/>
-                                <state key="normal" image="BotãoDesativadoDor"/>
-                                <connections>
-                                    <action selector="ombroAction:" destination="GgD-EG-mHu" eventType="touchUpInside" id="7mm-iv-44f"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WgN-ue-Dg0">
-                                <rect key="frame" x="199" y="456" width="36" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="Joelho"/>
-                                <state key="normal" image="BotãoDesativadoDor"/>
-                                <connections>
-                                    <action selector="ombroAction:" destination="GgD-EG-mHu" eventType="touchUpInside" id="JLC-Av-88J"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xvf-N7-2vN">
-                                <rect key="frame" x="130" y="550" width="36" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="Tornozelo"/>
-                                <state key="normal" image="BotãoDesativadoDor"/>
-                                <connections>
-                                    <action selector="ombroAction:" destination="GgD-EG-mHu" eventType="touchUpInside" id="fNe-0D-JL7"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXb-sK-DEH">
-                                <rect key="frame" x="108" y="287" width="36" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="Cotovelo"/>
-                                <state key="normal" image="BotãoDesativadoDor"/>
-                                <state key="selected" image="BotãoAtivoDor"/>
-                                <connections>
-                                    <action selector="ombroAction:" destination="GgD-EG-mHu" eventType="touchUpInside" id="n4z-EA-0cQ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Tq-lY-ALp">
-                                <rect key="frame" x="138" y="369" width="36" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="Virilha"/>
-                                <state key="normal" image="BotãoDesativadoDor"/>
-                                <connections>
-                                    <action selector="ombroAction:" destination="GgD-EG-mHu" eventType="touchUpInside" id="4es-hL-lyd"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kFZ-Po-2lD">
-                                <rect key="frame" x="130" y="456" width="36" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="Joelho"/>
-                                <state key="normal" image="BotãoDesativadoDor"/>
-                                <connections>
-                                    <action selector="ombroAction:" destination="GgD-EG-mHu" eventType="touchUpInside" id="vtZ-jS-SQ1"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvV-XM-hNh">
-                                <rect key="frame" x="113" y="196" width="36" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="Ombro"/>
-                                <state key="normal" image="BotãoDesativadoDor"/>
-                                <connections>
-                                    <action selector="ombroAction:" destination="GgD-EG-mHu" eventType="touchUpInside" id="2ms-tH-Kxs"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="U3b-xT-b3H">
+                                <rect key="frame" x="109" y="170" width="186" height="441.66666666666663"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="rjK-3x-bh7" userLabel="Ombro">
+                                        <rect key="frame" x="29" y="0.0" width="128" height="64.666666666666657"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvV-XM-hNh">
+                                                <rect key="frame" x="0.0" y="10.333333333333343" width="44" height="44"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="Ombro"/>
+                                                <state key="normal" image="BotãoDesativadoDor"/>
+                                                <connections>
+                                                    <action selector="ombroAction:" destination="GgD-EG-mHu" eventType="touchUpInside" id="2ms-tH-Kxs"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfA-Ch-fKy">
+                                                <rect key="frame" x="84" y="10.333333333333343" width="44" height="44"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="Ombro"/>
+                                                <state key="normal" image="BotãoDesativadoDor"/>
+                                                <connections>
+                                                    <action selector="ombroAction:" destination="GgD-EG-mHu" eventType="touchUpInside" id="J06-3y-1I7"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Xfc-74-R40" userLabel="Cotovelo">
+                                        <rect key="frame" x="24" y="84.666666666666657" width="138" height="65.000000000000028"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXb-sK-DEH">
+                                                <rect key="frame" x="0.0" y="10.666666666666657" width="44" height="44"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="Cotovelo"/>
+                                                <state key="normal" image="BotãoDesativadoDor"/>
+                                                <state key="selected" image="BotãoAtivoDor"/>
+                                                <connections>
+                                                    <action selector="ombroAction:" destination="GgD-EG-mHu" eventType="touchUpInside" id="n4z-EA-0cQ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpu-mB-9zK">
+                                                <rect key="frame" x="94" y="10.666666666666657" width="44" height="44"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="Cotovelo"/>
+                                                <state key="normal" image="BotãoDesativadoDor"/>
+                                                <connections>
+                                                    <action selector="ombroAction:" destination="GgD-EG-mHu" eventType="touchUpInside" id="l8l-m8-fZF"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="ZS2-uB-YB6" userLabel="Quadris">
+                                        <rect key="frame" x="15" y="169.66666666666669" width="156" height="64.666666666666629"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Tq-lY-ALp">
+                                                <rect key="frame" x="0.0" y="0.0" width="78" height="64.666666666666629"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="Virilha"/>
+                                                <state key="normal" image="BotãoDesativadoDor"/>
+                                                <connections>
+                                                    <action selector="ombroAction:" destination="GgD-EG-mHu" eventType="touchUpInside" id="4es-hL-lyd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTI-tp-5Pl">
+                                                <rect key="frame" x="78" y="0.0" width="78" height="64.666666666666629"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="Virilha"/>
+                                                <state key="normal" image="BotãoDesativadoDor"/>
+                                                <connections>
+                                                    <action selector="ombroAction:" destination="GgD-EG-mHu" eventType="touchUpInside" id="7mm-iv-44f"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="h5v-TZ-eXU" userLabel="Joelho">
+                                        <rect key="frame" x="39" y="254.33333333333329" width="108" height="64.666666666666714"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kFZ-Po-2lD">
+                                                <rect key="frame" x="0.0" y="0.0" width="44" height="64.666666666666686"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="Joelho"/>
+                                                <state key="normal" image="BotãoDesativadoDor"/>
+                                                <connections>
+                                                    <action selector="ombroAction:" destination="GgD-EG-mHu" eventType="touchUpInside" id="vtZ-jS-SQ1"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WgN-ue-Dg0">
+                                                <rect key="frame" x="64" y="0.0" width="44" height="64.666666666666686"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="Joelho"/>
+                                                <state key="normal" image="BotãoDesativadoDor"/>
+                                                <connections>
+                                                    <action selector="ombroAction:" destination="GgD-EG-mHu" eventType="touchUpInside" id="JLC-Av-88J"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Y6a-c5-nIZ" userLabel="Tornozelo">
+                                        <rect key="frame" x="44" y="339" width="98" height="102.66666666666663"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xvf-N7-2vN">
+                                                <rect key="frame" x="0.0" y="29.333333333333371" width="44" height="44"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="Tornozelo"/>
+                                                <state key="normal" image="BotãoDesativadoDor"/>
+                                                <connections>
+                                                    <action selector="ombroAction:" destination="GgD-EG-mHu" eventType="touchUpInside" id="fNe-0D-JL7"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quC-8G-UhJ">
+                                                <rect key="frame" x="54" y="29.333333333333371" width="44" height="44"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="Tornozelo"/>
+                                                <state key="normal" image="BotãoDesativadoDor"/>
+                                                <connections>
+                                                    <action selector="ombroAction:" destination="GgD-EG-mHu" eventType="touchUpInside" id="X8M-aI-BMb"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ZS2-uB-YB6" secondAttribute="trailing" constant="15" id="ZTc-q8-Npx"/>
+                                    <constraint firstItem="ZS2-uB-YB6" firstAttribute="leading" secondItem="U3b-xT-b3H" secondAttribute="leading" constant="15" id="bsc-J1-ylc"/>
+                                </constraints>
+                            </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wqG-5u-d25" customClass="ADVSegmentedControl" customModule="iPhone" customModuleProvider="target">
-                                <rect key="frame" x="36" y="30" width="303" height="50"/>
+                                <rect key="frame" x="40" y="30" width="334" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="OU2-lj-h6j"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedLabelColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="unselectedLabelColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="thumbColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="segmentedControlAction:" destination="GgD-EG-mHu" eventType="valueChanged" id="HVC-ZJ-GRx"/>
                                 </connections>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfA-Ch-fKy">
-                                <rect key="frame" x="207" y="196" width="36" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="Ombro"/>
-                                <state key="normal" image="BotãoDesativadoDor"/>
-                                <connections>
-                                    <action selector="ombroAction:" destination="GgD-EG-mHu" eventType="touchUpInside" id="J06-3y-1I7"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="U3b-xT-b3H" firstAttribute="top" secondItem="wqG-5u-d25" secondAttribute="bottom" constant="90" id="04t-Gf-UVk"/>
                             <constraint firstAttribute="trailingMargin" secondItem="wqG-5u-d25" secondAttribute="trailing" constant="20" id="19c-6v-vFe"/>
-                            <constraint firstItem="bX6-RT-t9G" firstAttribute="leading" secondItem="lZb-YL-I8W" secondAttribute="leadingMargin" constant="20" id="6IG-vN-W3W"/>
-                            <constraint firstItem="8p4-Gp-7hA" firstAttribute="leading" secondItem="lZb-YL-I8W" secondAttribute="leading" id="7Zg-of-ZKX"/>
-                            <constraint firstItem="8p4-Gp-7hA" firstAttribute="top" secondItem="wqG-5u-d25" secondAttribute="bottom" id="JWT-nV-nLo"/>
-                            <constraint firstAttribute="trailing" secondItem="8p4-Gp-7hA" secondAttribute="trailing" constant="3" id="UCS-0P-m8Y"/>
-                            <constraint firstItem="bX6-RT-t9G" firstAttribute="top" secondItem="8p4-Gp-7hA" secondAttribute="bottom" constant="8" id="V99-DO-88x"/>
-                            <constraint firstItem="hpe-9K-nYr" firstAttribute="top" secondItem="bX6-RT-t9G" secondAttribute="bottom" constant="10" id="Vhb-a0-eQx"/>
+                            <constraint firstItem="U3b-xT-b3H" firstAttribute="height" secondItem="lZb-YL-I8W" secondAttribute="height" multiplier="0.6" id="2LB-FR-KfU"/>
+                            <constraint firstItem="8p4-Gp-7hA" firstAttribute="leading" secondItem="lZb-YL-I8W" secondAttribute="leading" id="5Li-eE-u3S"/>
+                            <constraint firstItem="8p4-Gp-7hA" firstAttribute="top" secondItem="wqG-5u-d25" secondAttribute="bottom" constant="8" id="9xp-rf-vOj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bX6-RT-t9G" secondAttribute="trailing" constant="14" id="B5K-g8-2Fb"/>
+                            <constraint firstItem="8p4-Gp-7hA" firstAttribute="height" secondItem="lZb-YL-I8W" secondAttribute="height" multiplier="0.75" id="H4V-hv-MwY"/>
+                            <constraint firstAttribute="trailing" secondItem="8p4-Gp-7hA" secondAttribute="trailing" id="Qf2-96-0nA"/>
                             <constraint firstItem="wqG-5u-d25" firstAttribute="leading" secondItem="lZb-YL-I8W" secondAttribute="leadingMargin" constant="20" id="aBE-1T-wWe"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="bX6-RT-t9G" secondAttribute="trailing" constant="20" id="ses-Wc-tcB"/>
+                            <constraint firstItem="hpe-9K-nYr" firstAttribute="top" secondItem="bX6-RT-t9G" secondAttribute="bottom" constant="13" id="ahe-Wc-YKT"/>
+                            <constraint firstItem="U3b-xT-b3H" firstAttribute="centerX" secondItem="lZb-YL-I8W" secondAttribute="centerX" constant="-5" id="cXg-eF-wKr"/>
+                            <constraint firstItem="U3b-xT-b3H" firstAttribute="width" secondItem="lZb-YL-I8W" secondAttribute="width" multiplier="0.45" id="hsN-gZ-oeu"/>
+                            <constraint firstItem="bX6-RT-t9G" firstAttribute="leading" secondItem="lZb-YL-I8W" secondAttribute="leadingMargin" constant="13" id="rTn-uS-9pd"/>
                             <constraint firstItem="wqG-5u-d25" firstAttribute="top" secondItem="Vrp-C9-8Kv" secondAttribute="bottom" constant="10" id="x91-pM-zOI"/>
                         </constraints>
                     </view>
@@ -225,7 +271,7 @@
             </objects>
             <point key="canvasLocation" x="1508" y="-496.10194902548727"/>
         </scene>
-        <!--Item 1-->
+        <!--Atividades-->
         <scene sceneID="qig-Rz-NzJ">
             <objects>
                 <viewController id="JrD-Jf-jIV" customClass="CareCardViewController" customModule="iPhone" customModuleProvider="target" sceneMemberID="viewController">
@@ -234,11 +280,11 @@
                         <viewControllerLayoutGuide type="bottom" id="MWp-c1-Ae3"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="NML-Wy-maL">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="z69-i0-3jE"/>
+                    <tabBarItem key="tabBarItem" title="Atividades" image="CareCard" selectedImage="CareCard" id="z69-i0-3jE"/>
                     <connections>
                         <segue destination="D9I-a2-SYt" kind="presentation" identifier="cardToAdd" id="F8h-yr-jut"/>
                     </connections>
@@ -256,11 +302,11 @@
                         <viewControllerLayoutGuide type="bottom" id="XBA-nn-8hT"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Tna-hq-krj">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mfr-4s-Nux">
-                                <rect key="frame" x="46" y="96" width="110" height="110"/>
+                                <rect key="frame" x="50" y="96" width="110" height="110"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="110" id="7ze-BO-Ucj"/>
                                     <constraint firstAttribute="height" constant="110" id="XlU-U0-G0D"/>
@@ -273,7 +319,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="29e-Nc-0oh">
-                                <rect key="frame" x="214" y="96" width="110" height="110"/>
+                                <rect key="frame" x="249" y="96" width="110" height="110"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="110" id="0eE-Dm-hSC"/>
                                     <constraint firstAttribute="width" constant="110" id="Smh-Ke-YM9"/>
@@ -286,7 +332,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2U-UM-g2z">
-                                <rect key="frame" x="46" y="236" width="110" height="110"/>
+                                <rect key="frame" x="50" y="236" width="110" height="110"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="110" id="TDE-vg-tfd"/>
                                     <constraint firstAttribute="width" constant="110" id="h6i-jf-Pgn"/>
@@ -299,7 +345,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lOW-0i-jHX">
-                                <rect key="frame" x="214" y="247" width="110" height="110"/>
+                                <rect key="frame" x="249" y="247" width="110" height="110"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="110" id="cwi-qb-Uhk"/>
                                     <constraint firstAttribute="height" constant="110" id="um0-ZF-wVL"/>
@@ -312,7 +358,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rps-2l-7IF">
-                                <rect key="frame" x="46" y="408" width="110" height="110"/>
+                                <rect key="frame" x="50" y="408" width="110" height="110"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="110" id="7Tp-aq-6cv"/>
                                     <constraint firstAttribute="width" constant="110" id="Hhq-4n-SfM"/>
@@ -325,7 +371,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksZ-CI-Ftq">
-                                <rect key="frame" x="214" y="408" width="110" height="110"/>
+                                <rect key="frame" x="249" y="408" width="110" height="110"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="110" id="OFj-FV-QK6"/>
                                     <constraint firstAttribute="width" constant="110" id="gIt-XV-rhD"/>
@@ -338,7 +384,7 @@
                                 </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vxc-sG-S1f">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                                 <items>
                                     <navigationItem title="Atividades" id="s8y-XD-x5Y">
                                         <barButtonItem key="rightBarButtonItem" title="Ok" id="D44-Bk-yFO">
@@ -392,11 +438,11 @@
                         <viewControllerLayoutGuide type="bottom" id="T5t-Ts-HUW"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fWv-bo-RHs">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDC-7D-UvD">
-                                <rect key="frame" x="166" y="617" width="43" height="30"/>
+                                <rect key="frame" x="185.66666666666666" y="686" width="43" height="30"/>
                                 <state key="normal" title="Salvar"/>
                                 <connections>
                                     <action selector="saveWithSender:" destination="7Uw-hT-u2w" eventType="touchUpInside" id="vee-z1-bVa"/>
@@ -423,7 +469,7 @@
                         <viewControllerLayoutGuide type="bottom" id="9P5-2h-3NL"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Deo-Dq-PHp">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -441,7 +487,7 @@
                         <viewControllerLayoutGuide type="bottom" id="erB-1S-KCs"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Pj9-lW-dpu">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -467,7 +513,7 @@
                         <viewControllerLayoutGuide type="bottom" id="PqR-IE-Tcg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="wsR-Jd-e7G">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -485,7 +531,7 @@
                         <viewControllerLayoutGuide type="bottom" id="OvS-An-25K"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8aP-Dm-lds">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -503,7 +549,7 @@
                         <viewControllerLayoutGuide type="bottom" id="JSs-sl-I29"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="mst-8m-uDg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -521,7 +567,7 @@
                         <viewControllerLayoutGuide type="bottom" id="g9n-Hy-BVh"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="2Le-5P-NBP">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -539,7 +585,7 @@
                         <viewControllerLayoutGuide type="bottom" id="kA5-yh-JCu"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="lkf-sZ-YUN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -557,7 +603,7 @@
                         <viewControllerLayoutGuide type="bottom" id="ZrU-9A-ElK"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bJ6-lJ-kx7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -575,7 +621,7 @@
                         <viewControllerLayoutGuide type="bottom" id="4kR-vA-aQX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="jF3-l5-O29">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -593,7 +639,7 @@
                         <viewControllerLayoutGuide type="bottom" id="XsS-t6-2sp"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="HB2-GU-4EJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mzb-wu-xVN">
@@ -656,6 +702,7 @@
         <image name="Botão Finalizar" width="279" height="34"/>
         <image name="BotãoAtivoDor" width="44" height="44"/>
         <image name="BotãoDesativadoDor" width="44" height="44"/>
+        <image name="CareCard" width="22" height="30"/>
         <image name="Comida highlighted" width="110" height="110"/>
         <image name="ComidaNotSelected" width="110" height="110"/>
         <image name="FruitsNotSelected" width="110" height="110"/>
@@ -664,6 +711,7 @@
         <image name="Shot hightlighted" width="110" height="110"/>
         <image name="ShotNotSelected" width="110" height="110"/>
         <image name="ShotSelected" width="45" height="45"/>
+        <image name="Symptom" width="28" height="28"/>
         <image name="physical_therapyHIghlighted" width="110" height="110"/>
         <image name="physical_therapyNotSelected" width="110" height="110"/>
         <image name="swimmingHIghlighted" width="110" height="110"/>
