@@ -22,6 +22,8 @@ class Story4ViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         //        animation()
+        self.view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "BG"))
+
     }
     
     

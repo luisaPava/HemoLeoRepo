@@ -20,6 +20,8 @@ class StoryOneViewController: UIViewController {
 
         // Do any additional setup after loading the view.
 //        animation()
+        
+        self.view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "BG"))
     }
 
 
@@ -30,7 +32,7 @@ class StoryOneViewController: UIViewController {
     
     func animation () {
         
-        storyView.addStory1Animation()
+        storyView.addStory2Animation()
 
         
     }

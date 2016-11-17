@@ -91,6 +91,7 @@ extension PageViewCcontroller: UIPageViewControllerDataSource {
         return orderedViewControllers[previousIndex]
     }
     
+    
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         guard let viewControllerIndex = orderedViewControllers.index(of: viewController) else {
             return nil
@@ -110,16 +111,20 @@ extension PageViewCcontroller: UIPageViewControllerDataSource {
         return orderedViewControllers[nextIndex]
     }
     
-    func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int {
+    
+    
+    func presentationCount(for pageViewController: UIPageViewController) -> Int {
+        print(orderedViewControllers.count)
         return orderedViewControllers.count
     }
     
-    func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {
+    func presentationIndex(for pageViewController: UIPageViewController) -> Int {
         guard let firstViewController = viewControllers?.first,
-                  let firstViewControllerIndex = orderedViewControllers.index(of: firstViewController) else {
-            return 0
+            let firstViewControllerIndex = orderedViewControllers.index(of: firstViewController) else {
+                return 0
         }
         
         return firstViewControllerIndex
     }
+    
 }

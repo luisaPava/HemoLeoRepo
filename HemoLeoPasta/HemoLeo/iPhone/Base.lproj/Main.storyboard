@@ -82,106 +82,100 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quC-8G-UhJ">
-                                <rect key="frame" x="291" y="433" width="68" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="MeninoEsquerdoAtivo" translatesAutoresizingMaskIntoConstraints="NO" id="8p4-Gp-7hA">
+                                <rect key="frame" x="0.0" y="88" width="372" height="519"/>
+                            </imageView>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quC-8G-UhJ">
+                                <rect key="frame" x="199" y="550" width="36" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" identifier="Tornozelo"/>
-                                <state key="normal" title="Tornozelo"/>
+                                <state key="normal" image="BotãoDesativadoDor"/>
                                 <connections>
                                     <action selector="ombroAction:" destination="GgD-EG-mHu" eventType="touchUpInside" id="X8M-aI-BMb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bX6-RT-t9G">
-                                <rect key="frame" x="147" y="544" width="43" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Salvar"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bX6-RT-t9G">
+                                <rect key="frame" x="29" y="615" width="316" height="39"/>
+                                <state key="normal" image="Botão Finalizar"/>
                                 <connections>
                                     <action selector="save:" destination="GgD-EG-mHu" eventType="touchUpInside" id="bTG-fK-MKY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfA-Ch-fKy">
-                                <rect key="frame" x="35" y="433" width="48" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="Ombro"/>
-                                <state key="normal" title="Ombro"/>
-                                <connections>
-                                    <action selector="ombroAction:" destination="GgD-EG-mHu" eventType="touchUpInside" id="J06-3y-1I7"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpu-mB-9zK">
-                                <rect key="frame" x="96" y="433" width="61" height="30"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpu-mB-9zK">
+                                <rect key="frame" x="216" y="287" width="36" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" identifier="Cotovelo"/>
-                                <state key="normal" title="Cotovelo"/>
+                                <state key="normal" image="BotãoDesativadoDor"/>
                                 <connections>
                                     <action selector="ombroAction:" destination="GgD-EG-mHu" eventType="touchUpInside" id="l8l-m8-fZF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTI-tp-5Pl">
-                                <rect key="frame" x="174" y="433" width="43" height="30"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTI-tp-5Pl">
+                                <rect key="frame" x="192" y="369" width="36" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" identifier="Virilha"/>
-                                <state key="normal" title="Virilha"/>
+                                <state key="normal" image="BotãoDesativadoDor"/>
                                 <connections>
                                     <action selector="ombroAction:" destination="GgD-EG-mHu" eventType="touchUpInside" id="7mm-iv-44f"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WgN-ue-Dg0">
-                                <rect key="frame" x="224" y="433" width="46" height="30"/>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WgN-ue-Dg0">
+                                <rect key="frame" x="199" y="456" width="36" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" identifier="Joelho"/>
-                                <state key="normal" title="Joelho"/>
+                                <state key="normal" image="BotãoDesativadoDor"/>
                                 <connections>
                                     <action selector="ombroAction:" destination="GgD-EG-mHu" eventType="touchUpInside" id="JLC-Av-88J"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xvf-N7-2vN">
-                                <rect key="frame" x="279" y="387" width="93" height="30"/>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xvf-N7-2vN">
+                                <rect key="frame" x="130" y="550" width="36" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" identifier="Tornozelo"/>
-                                <state key="normal" title="TornozeloEsq"/>
+                                <state key="normal" image="BotãoDesativadoDor"/>
                                 <connections>
                                     <action selector="ombroAction:" destination="GgD-EG-mHu" eventType="touchUpInside" id="fNe-0D-JL7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXb-sK-DEH">
-                                <rect key="frame" x="7" y="387" width="86" height="30"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXb-sK-DEH">
+                                <rect key="frame" x="108" y="287" width="36" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" identifier="Cotovelo"/>
-                                <state key="normal" title="CotoveloEsq"/>
+                                <state key="normal" image="BotãoDesativadoDor"/>
+                                <state key="selected" image="BotãoAtivoDor"/>
                                 <connections>
                                     <action selector="ombroAction:" destination="GgD-EG-mHu" eventType="touchUpInside" id="n4z-EA-0cQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Tq-lY-ALp">
-                                <rect key="frame" x="112" y="387" width="68" height="30"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Tq-lY-ALp">
+                                <rect key="frame" x="138" y="369" width="36" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" identifier="Virilha"/>
-                                <state key="normal" title="VirilhaEsq"/>
+                                <state key="normal" image="BotãoDesativadoDor"/>
                                 <connections>
                                     <action selector="ombroAction:" destination="GgD-EG-mHu" eventType="touchUpInside" id="4es-hL-lyd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kFZ-Po-2lD">
-                                <rect key="frame" x="199" y="387" width="71" height="30"/>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kFZ-Po-2lD">
+                                <rect key="frame" x="130" y="456" width="36" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" identifier="Joelho"/>
-                                <state key="normal" title="JoelhoEsq"/>
+                                <state key="normal" image="BotãoDesativadoDor"/>
                                 <connections>
                                     <action selector="ombroAction:" destination="GgD-EG-mHu" eventType="touchUpInside" id="vtZ-jS-SQ1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvV-XM-hNh">
-                                <rect key="frame" x="110" y="315" width="156" height="70"/>
+                                <rect key="frame" x="113" y="196" width="36" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" identifier="Ombro"/>
-                                <state key="normal" title="OmbroEsq"/>
+                                <state key="normal" image="BotãoDesativadoDor"/>
                                 <connections>
                                     <action selector="ombroAction:" destination="GgD-EG-mHu" eventType="touchUpInside" id="2ms-tH-Kxs"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wqG-5u-d25" customClass="ADVSegmentedControl" customModule="iPhone" customModuleProvider="target">
-                                <rect key="frame" x="67" y="67" width="240" height="50"/>
+                                <rect key="frame" x="36" y="30" width="303" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="OU2-lj-h6j"/>
@@ -190,12 +184,28 @@
                                     <action selector="segmentedControlAction:" destination="GgD-EG-mHu" eventType="valueChanged" id="HVC-ZJ-GRx"/>
                                 </connections>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfA-Ch-fKy">
+                                <rect key="frame" x="207" y="196" width="36" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="Ombro"/>
+                                <state key="normal" image="BotãoDesativadoDor"/>
+                                <connections>
+                                    <action selector="ombroAction:" destination="GgD-EG-mHu" eventType="touchUpInside" id="J06-3y-1I7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="wqG-5u-d25" secondAttribute="trailing" constant="52" id="19c-6v-vFe"/>
-                            <constraint firstItem="wqG-5u-d25" firstAttribute="leading" secondItem="lZb-YL-I8W" secondAttribute="leadingMargin" constant="51" id="aBE-1T-wWe"/>
-                            <constraint firstItem="wqG-5u-d25" firstAttribute="top" secondItem="Vrp-C9-8Kv" secondAttribute="bottom" constant="47" id="x91-pM-zOI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wqG-5u-d25" secondAttribute="trailing" constant="20" id="19c-6v-vFe"/>
+                            <constraint firstItem="bX6-RT-t9G" firstAttribute="leading" secondItem="lZb-YL-I8W" secondAttribute="leadingMargin" constant="20" id="6IG-vN-W3W"/>
+                            <constraint firstItem="8p4-Gp-7hA" firstAttribute="leading" secondItem="lZb-YL-I8W" secondAttribute="leading" id="7Zg-of-ZKX"/>
+                            <constraint firstItem="8p4-Gp-7hA" firstAttribute="top" secondItem="wqG-5u-d25" secondAttribute="bottom" id="JWT-nV-nLo"/>
+                            <constraint firstAttribute="trailing" secondItem="8p4-Gp-7hA" secondAttribute="trailing" constant="3" id="UCS-0P-m8Y"/>
+                            <constraint firstItem="bX6-RT-t9G" firstAttribute="top" secondItem="8p4-Gp-7hA" secondAttribute="bottom" constant="8" id="V99-DO-88x"/>
+                            <constraint firstItem="hpe-9K-nYr" firstAttribute="top" secondItem="bX6-RT-t9G" secondAttribute="bottom" constant="10" id="Vhb-a0-eQx"/>
+                            <constraint firstItem="wqG-5u-d25" firstAttribute="leading" secondItem="lZb-YL-I8W" secondAttribute="leadingMargin" constant="20" id="aBE-1T-wWe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bX6-RT-t9G" secondAttribute="trailing" constant="20" id="ses-Wc-tcB"/>
+                            <constraint firstItem="wqG-5u-d25" firstAttribute="top" secondItem="Vrp-C9-8Kv" secondAttribute="bottom" constant="10" id="x91-pM-zOI"/>
                         </constraints>
                     </view>
                     <connections>
@@ -643,10 +653,14 @@
     <resources>
         <image name="BebidaNotSelected" width="111" height="111"/>
         <image name="Bebidahighlighted" width="111" height="111"/>
+        <image name="Botão Finalizar" width="279" height="34"/>
+        <image name="BotãoAtivoDor" width="44" height="44"/>
+        <image name="BotãoDesativadoDor" width="44" height="44"/>
         <image name="Comida highlighted" width="110" height="110"/>
         <image name="ComidaNotSelected" width="110" height="110"/>
         <image name="FruitsNotSelected" width="110" height="110"/>
         <image name="FrutasHIghlighted" width="110" height="110"/>
+        <image name="MeninoEsquerdoAtivo" width="161" height="530"/>
         <image name="Shot hightlighted" width="110" height="110"/>
         <image name="ShotNotSelected" width="110" height="110"/>
         <image name="ShotSelected" width="45" height="45"/>

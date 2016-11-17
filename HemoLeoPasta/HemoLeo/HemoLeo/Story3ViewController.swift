@@ -23,6 +23,8 @@ class Story3ViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         //        animation()
+        self.view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "BG"))
+
     }
     
     
@@ -33,7 +35,7 @@ class Story3ViewController: UIViewController {
     
     func animation () {
         
-        storyView.addStory3Animation()
+        storyView.addStory2Animation()
         
         
     }
