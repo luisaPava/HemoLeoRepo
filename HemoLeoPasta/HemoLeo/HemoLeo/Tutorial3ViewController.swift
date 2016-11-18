@@ -9,15 +9,18 @@
 import UIKit
 
 class Tutorial3ViewController: UIViewController {
+    @IBOutlet weak var passo3: TutorialPasso3View!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "BG"))
         if UIDevice.current.modelName.contains("iPhone") {
             
             
         } else {
             
-            
+            passo3.addPasso3Animation()
         }
 
         // Do any additional setup after loading the view.

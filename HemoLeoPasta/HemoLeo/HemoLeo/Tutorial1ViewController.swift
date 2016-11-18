@@ -9,7 +9,7 @@
 import UIKit
 
 class Tutorial1ViewController: UIViewController {
-    @IBOutlet weak var passo2: TutorialPasso2View!
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,8 +23,7 @@ class Tutorial1ViewController: UIViewController {
             
         } else {
             
-            passo2.addPasso2Animation()
-            passo2.clipsToBounds = true
+            
         }
 
         // Do any additional setup after loading the view.
