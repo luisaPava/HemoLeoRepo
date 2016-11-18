@@ -10,15 +10,18 @@ import UIKit
 
 class Tutorial5ViewController: UIViewController {
 
+    @IBOutlet weak var passo5: TutorialPasso5View!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "BG"))
         
         if UIDevice.current.modelName.contains("iPhone") {
             
             
         } else {
             
-            
+           passo5.addPasso5Animation()
         }
 
         // Do any additional setup after loading the view.
