@@ -229,9 +229,9 @@
                                 <rect key="frame" x="153" y="130" width="717" height="461"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="4WK-7z-hAI" customClass="TutorialPasso2View" customModule="HemoLeo" customModuleProvider="target">
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="4WK-7z-hAI">
                                 <rect key="frame" x="153" y="130" width="717" height="461"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGP-nk-4OI">
                                 <rect key="frame" x="928" y="50" width="46" height="45"/>
@@ -256,9 +256,6 @@
                             <constraint firstItem="4WK-7z-hAI" firstAttribute="top" secondItem="fBd-ol-ofS" secondAttribute="bottom" constant="110" id="zZZ-O9-tVP"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="passo2" destination="4WK-7z-hAI" id="mja-xB-YCd"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cms-oR-bVE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1284,9 +1281,9 @@
                                 <rect key="frame" x="153" y="130" width="717" height="461"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="zfm-vK-OrF" customClass="TutorialPasso2View" customModule="HemoLeo" customModuleProvider="target">
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="zfm-vK-OrF">
                                 <rect key="frame" x="153" y="130" width="717" height="461"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iQv-8J-Mm1">
                                 <rect key="frame" x="928" y="50" width="46" height="45"/>
@@ -1311,9 +1308,6 @@
                             <constraint firstItem="zfm-vK-OrF" firstAttribute="width" secondItem="3Wd-Pq-NKy" secondAttribute="width" multiplier="0.7" constant="1" id="wZ7-IL-Baa"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="passo2" destination="zfm-vK-OrF" id="GRJ-Ri-5Pr"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Xv-Gl-iYH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1343,9 +1337,9 @@
                                 <rect key="frame" x="153" y="130" width="717" height="461"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="zRw-92-KYO" customClass="TutorialPasso2View" customModule="HemoLeo" customModuleProvider="target">
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="zRw-92-KYO">
                                 <rect key="frame" x="153" y="130" width="717" height="461"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.12941176469999999" green="0.25098039220000001" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9V-wM-NI9">
                                 <rect key="frame" x="928" y="50" width="46" height="45"/>
@@ -1370,9 +1364,6 @@
                             <constraint firstAttribute="trailingMargin" secondItem="o9V-wM-NI9" secondAttribute="trailing" constant="30" id="vGj-eg-dsN"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="passo2" destination="zRw-92-KYO" id="LrR-Oa-tet"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o4e-hO-ilX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1402,9 +1393,9 @@
                                 <rect key="frame" x="153" y="130" width="717" height="461"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="pov-R3-rQx" customClass="TutorialPasso2View" customModule="HemoLeo" customModuleProvider="target">
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="pov-R3-rQx">
                                 <rect key="frame" x="153" y="130" width="717" height="461"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.090196078430000007" green="0.66274509800000003" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oLi-LQ-Nl4">
                                 <rect key="frame" x="928" y="50" width="46" height="45"/>
@@ -1429,9 +1420,6 @@
                             <constraint firstAttribute="trailing" secondItem="Jad-K1-Bzl" secondAttribute="trailing" id="zIs-99-7eq"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="passo2" destination="pov-R3-rQx" id="IvF-5M-WLw"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rfA-j5-yOP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1461,9 +1449,9 @@
                                 <rect key="frame" x="153" y="130" width="717" height="461"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="zB5-sY-Yro" customClass="TutorialPasso2View" customModule="HemoLeo" customModuleProvider="target">
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="zB5-sY-Yro">
                                 <rect key="frame" x="153" y="130" width="717" height="461"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.41568627450000001" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSd-lW-PES">
                                 <rect key="frame" x="928" y="50" width="46" height="45"/>
@@ -1488,9 +1476,6 @@
                             <constraint firstItem="KEu-im-8DX" firstAttribute="top" secondItem="hVs-uf-MtA" secondAttribute="bottom" constant="110" id="nly-Kx-YMB"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="passo2" destination="zB5-sY-Yro" id="39M-dS-5ay"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tMQ-Mq-EVz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1520,9 +1505,9 @@
                                 <rect key="frame" x="153" y="130" width="717" height="461"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="0Bv-DJ-Mrk" customClass="TutorialPasso2View" customModule="HemoLeo" customModuleProvider="target">
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="0Bv-DJ-Mrk">
                                 <rect key="frame" x="153" y="130" width="717" height="461"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJg-Ke-EHc">
                                 <rect key="frame" x="928" y="50" width="46" height="45"/>
@@ -1547,9 +1532,6 @@
                             <constraint firstItem="3A6-2z-Bz4" firstAttribute="top" secondItem="2ha-lR-Qku" secondAttribute="bottom" constant="110" id="rEz-Sx-69r"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="passo2" destination="0Bv-DJ-Mrk" id="KF6-Wf-UTA"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ESK-Yo-ttQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1579,9 +1561,9 @@
                                 <rect key="frame" x="153" y="130" width="717" height="461"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="hhV-pX-nRF" customClass="TutorialPasso2View" customModule="HemoLeo" customModuleProvider="target">
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="hhV-pX-nRF">
                                 <rect key="frame" x="153" y="130" width="717" height="461"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.1843137255" green="0.19215686269999999" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fz5-xW-VYV">
                                 <rect key="frame" x="928" y="50" width="46" height="45"/>
@@ -1606,9 +1588,6 @@
                             <constraint firstItem="hhV-pX-nRF" firstAttribute="centerX" secondItem="le2-Nj-Jul" secondAttribute="centerX" id="tL6-2x-s0t"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="passo2" destination="hhV-pX-nRF" id="JuR-vp-bTf"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HS1-ah-MqB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1638,7 +1617,7 @@
                                 <rect key="frame" x="153" y="130" width="717" height="461"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="veo-QM-79D" customClass="TutorialPasso2View" customModule="HemoLeo" customModuleProvider="target">
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="veo-QM-79D">
                                 <rect key="frame" x="153" y="130" width="717" height="461"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
@@ -1665,9 +1644,6 @@
                             <constraint firstItem="sf6-ki-N2O" firstAttribute="top" secondItem="fDu-8x-Dke" secondAttribute="bottom" constant="30" id="rdU-cG-xCB"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="passo2" destination="veo-QM-79D" id="WgE-XX-K5k"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vE4-HN-e9w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
