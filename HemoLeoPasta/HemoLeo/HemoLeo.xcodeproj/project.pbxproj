@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		2B0211291D35736D00AFFB17 /* CareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B0211261D35735800AFFB17 /* CareKit.framework */; };
 		2B02112A1D35736D00AFFB17 /* CareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B0211261D35735800AFFB17 /* CareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2B17DB2A1DDF9231009EE442 /* Materiais.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B17DB281DDF9231009EE442 /* Materiais.xcassets */; };
+		2B17DB2B1DDF9231009EE442 /* Materiais.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B17DB281DDF9231009EE442 /* Materiais.xcassets */; };
+		2B17DB2C1DDF9231009EE442 /* MateriaisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B17DB291DDF9231009EE442 /* MateriaisView.swift */; };
+		2B17DB2D1DDF9231009EE442 /* MateriaisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B17DB291DDF9231009EE442 /* MateriaisView.swift */; };
 		2B1A21481D3E6E64007F1B68 /* Fisiotherapy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A21471D3E6E64007F1B68 /* Fisiotherapy.swift */; };
 		2B1A214E1D3E71E2007F1B68 /* OccurenciesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A214D1D3E71E2007F1B68 /* OccurenciesViewController.swift */; };
 		2B1A21521D3E7BA3007F1B68 /* NSCodingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A21511D3E7BA3007F1B68 /* NSCodingManager.swift */; };
@@ -273,6 +277,8 @@
 
 /* Begin PBXFileReference section */
 		2B02111F1D35735800AFFB17 /* CareKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CareKit.xcodeproj; path = ../CareKitRoot/CareKit.xcodeproj; sourceTree = "<group>"; };
+		2B17DB281DDF9231009EE442 /* Materiais.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Materiais.xcassets; sourceTree = "<group>"; };
+		2B17DB291DDF9231009EE442 /* MateriaisView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MateriaisView.swift; sourceTree = "<group>"; };
 		2B1A21471D3E6E64007F1B68 /* Fisiotherapy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fisiotherapy.swift; sourceTree = "<group>"; };
 		2B1A214D1D3E71E2007F1B68 /* OccurenciesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OccurenciesViewController.swift; sourceTree = "<group>"; };
 		2B1A21511D3E7BA3007F1B68 /* NSCodingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSCodingManager.swift; path = HemoLeo/NSCodingManager.swift; sourceTree = "<group>"; };
@@ -443,7 +449,7 @@
 		2B7099AE1DDF2133006C27F0 /* Animação */ = {
 			isa = PBXGroup;
 			children = (
-				2B7099BB1DDF2179006C27F0 /* Passo9 */,
+				2B7099BB1DDF2179006C27F0 /* Passo0 */,
 				2B7099BA1DDF2170006C27F0 /* Passo8 */,
 				2B7099B91DDF2167006C27F0 /* Passo7 */,
 				2B7099B81DDF2161006C27F0 /* Passo6 */,
@@ -522,11 +528,13 @@
 			name = Passo8;
 			sourceTree = "<group>";
 		};
-		2B7099BB1DDF2179006C27F0 /* Passo9 */ = {
+		2B7099BB1DDF2179006C27F0 /* Passo0 */ = {
 			isa = PBXGroup;
 			children = (
+				2B17DB281DDF9231009EE442 /* Materiais.xcassets */,
+				2B17DB291DDF9231009EE442 /* MateriaisView.swift */,
 			);
-			name = Passo9;
+			name = Passo0;
 			sourceTree = "<group>";
 		};
 		2B7997F41D37DD2B00D0996D /* StoryTelling */ = {
@@ -1188,6 +1196,7 @@
 				2BA188891D355A2C007F1CEB /* Main.storyboard in Resources */,
 				4E132CB91D41242A004CBC6F /* CustomActivityCell.xib in Resources */,
 				2B5731101DDF808500F1A834 /* TutorialPasso3.xcassets in Resources */,
+				2B17DB2A1DDF9231009EE442 /* Materiais.xcassets in Resources */,
 				2B5731201DDF809A00F1A834 /* TutorialPasso5.xcassets in Resources */,
 				4E3244A81DD6A4B000258CE1 /* PopUp.storyboard in Resources */,
 			);
@@ -1198,6 +1207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B5731111DDF808500F1A834 /* TutorialPasso3.xcassets in Resources */,
+				2B17DB2B1DDF9231009EE442 /* Materiais.xcassets in Resources */,
 				4EAFA1F91DC7AAC2002BA048 /* LaunchScreen.storyboard in Resources */,
 				2B7099BF1DDF2223006C27F0 /* TutorialPasso 2.xcassets in Resources */,
 				2B5731271DDF80A300F1A834 /* TutorialPasso6.xcassets in Resources */,
@@ -1263,6 +1273,7 @@
 				4E2B29CE1D395AF800EED2B4 /* SymptomCardViewController.swift in Sources */,
 				4E36E46A1D45BA330005A1BE /* NSCalendar+Dates.swift in Sources */,
 				4E2B29C41D36CDC400EED2B4 /* CareCardViewController.swift in Sources */,
+				2B17DB2C1DDF9231009EE442 /* MateriaisView.swift in Sources */,
 				4ED0D2981DDDDADD00BE15CE /* Tutorial1ViewController.swift in Sources */,
 				4E36E4641D45B9A20005A1BE /* BuildInsightsOperation.swift in Sources */,
 				4EAFA20D1DC7B772002BA048 /* MainViewModel.swift in Sources */,
@@ -1354,6 +1365,7 @@
 				4ED0D2B01DDDDEAF00BE15CE /* Tutorial5ViewController.swift in Sources */,
 				4E32447C1DD3DE2700258CE1 /* NSCodingManager.swift in Sources */,
 				4E3244831DD3DE2D00258CE1 /* Fisiotherapy.swift in Sources */,
+				2B17DB2D1DDF9231009EE442 /* MateriaisView.swift in Sources */,
 				4ED0D2AC1DDDDEA000BE15CE /* Tutorial1ViewController.swift in Sources */,
 				4E3244931DD3EB5F00258CE1 /* AssessmentsManager.swift in Sources */,
 				4ED0D2AE1DDDDEA700BE15CE /* Tutorial3ViewController.swift in Sources */,
