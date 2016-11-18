@@ -200,7 +200,7 @@
         <!--Tutorial Page View Controller-->
         <scene sceneID="RIl-hv-7aU">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" doubleSided="YES" id="cWQ-MQ-lvC" customClass="TutorialPageViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="cWQ-MQ-lvC" customClass="TutorialPageViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nPI-Vj-PQK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3025" y="-2813"/>
