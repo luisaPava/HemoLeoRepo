@@ -38,7 +38,7 @@ class SymptomTrackerModel: Observer {
         
         // Setup controller's title and tab bar icon
         symptomCardViewController.title = "Cuidados"
-        symptomCardViewController.tabBarItem = UITabBarItem(title: "Cuidados", image: UIImage(named: "carecard"), selectedImage: UIImage(named: "carecard-fill"))
+        symptomCardViewController.tabBarItem = UITabBarItem(title: "Sintomas", image: UIImage(named: "carecard"), selectedImage: UIImage(named: "carecard-fill"))
         
         symptomCardViewController.navigationItem.leftBarButtonItem?.tintColor = UIColor.red
         

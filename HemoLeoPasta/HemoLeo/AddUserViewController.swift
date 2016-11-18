@@ -25,7 +25,6 @@ class AddUserViewController: UIViewController {
     }
     
     @IBAction func saveBtn(_ sender: Any) {
-        print("salvar")
         userModel.createNewUser(nome: txtField.text!)
         dismiss(animated: true, completion: nil)
     }

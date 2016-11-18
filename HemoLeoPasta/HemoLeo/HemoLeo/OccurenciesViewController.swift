@@ -14,13 +14,15 @@ class OccurenciesViewController: UIViewController {
     var activity: Int!
     var button: UIButton!
     var occurencies: Array<Int> = [0, 0, 0, 0, 0, 0, 0]
-    let path = "Occurencies"
+    var path = ""
     
     private let codingManager: NSCodingManager = NSCodingManager.sharedNSCodingManager
     private let careCardModel = CareCardModel.sharedCareCardModel
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        path = "\(careCardModel.getLeo().getId())/Occurencies"
        
         tableView = UITableView(frame: CGRect(x: 0, y: height / 7.36, width: width / 1.034, height: height / 0.92), style: .plain)
         tableView.delegate = self
@@ -84,7 +86,6 @@ extension OccurenciesViewController: UITableViewDelegate {
 
 //MARK: - Table View Data Source
 extension OccurenciesViewController: UITableViewDataSource {
-//    @available(iOS 2.0, *)
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell: CustomActivityCell
         let cellName = self.getIndexOccurences(day: indexPath.row)

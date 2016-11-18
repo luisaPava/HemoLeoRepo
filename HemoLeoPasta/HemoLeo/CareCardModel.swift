@@ -153,9 +153,9 @@ class CareCardModel: Observer {
     
     // Check if it's the first launch and load the activities
     func loadActivities() {
-        if !defaults.bool(forKey: "loadedDefaultCareCardData") {
+        if !defaults.bool(forKey: "\(leo.getId())/loadedDefaultCareCardData") {
             loadDefaultActivities()
-            defaults.set(true, forKey: "loadedDefaultCareCardData")
+            defaults.set(true, forKey: "\(leo.getId())/loadedDefaultCareCardData")
             
         } else {
             self.activities = codingManager.loadToAddActivitiesData()!
@@ -175,6 +175,10 @@ class CareCardModel: Observer {
     
     func getActivities() -> Array<Bool> {
         return activities
+    }
+    
+    func getLeo() -> Leo {
+        return self.leo
     }
 }
 

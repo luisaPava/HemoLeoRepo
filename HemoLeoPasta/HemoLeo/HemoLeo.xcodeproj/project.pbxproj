@@ -161,6 +161,9 @@
 		4ED0D2B31DDDDEB900BE15CE /* Tutorial8ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED0D2A51DDDDB5A00BE15CE /* Tutorial8ViewController.swift */; };
 		4ED0D2B41DDDDEBD00BE15CE /* Tutorial9ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED0D2A71DDDDB6A00BE15CE /* Tutorial9ViewController.swift */; };
 		4ED0D2B81DDDE47600BE15CE /* UIAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED0D2B71DDDE47600BE15CE /* UIAnimation.swift */; };
+		4ED0D2C01DDE778700BE15CE /* ContactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED0D2BF1DDE778700BE15CE /* ContactsModel.swift */; };
+		4ED0D2C61DDE869300BE15CE /* ConnectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED0D2C51DDE869300BE15CE /* ConnectViewController.swift */; };
+		4ED0D2C81DDE8B0100BE15CE /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED0D2C71DDE8B0100BE15CE /* AddContactViewController.swift */; };
 		777711071D3E9AAC0066A0E2 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 777711061D3E9AAC0066A0E2 /* SpriteKit.framework */; };
 		7777110D1D3E9BD00066A0E2 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7777110C1D3E9BD00066A0E2 /* GameScene.swift */; };
 		7777110F1D3E9C110066A0E2 /* LeoImages.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 7777110E1D3E9C110066A0E2 /* LeoImages.atlas */; };
@@ -347,6 +350,9 @@
 		4ED0D2A51DDDDB5A00BE15CE /* Tutorial8ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutorial8ViewController.swift; sourceTree = "<group>"; };
 		4ED0D2A71DDDDB6A00BE15CE /* Tutorial9ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutorial9ViewController.swift; sourceTree = "<group>"; };
 		4ED0D2B71DDDE47600BE15CE /* UIAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAnimation.swift; sourceTree = "<group>"; };
+		4ED0D2BF1DDE778700BE15CE /* ContactsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsModel.swift; sourceTree = "<group>"; };
+		4ED0D2C51DDE869300BE15CE /* ConnectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectViewController.swift; sourceTree = "<group>"; };
+		4ED0D2C71DDE8B0100BE15CE /* AddContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
 		777711061D3E9AAC0066A0E2 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		7777110C1D3E9BD00066A0E2 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		7777110E1D3E9C110066A0E2 /* LeoImages.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = LeoImages.atlas; sourceTree = "<group>"; };
@@ -626,6 +632,8 @@
 			isa = PBXGroup;
 			children = (
 				4EAFA1F01DC7AAC2002BA048 /* ViewController.swift */,
+				4ED0D2C51DDE869300BE15CE /* ConnectViewController.swift */,
+				4ED0D2C71DDE8B0100BE15CE /* AddContactViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -643,6 +651,7 @@
 		4E3244741DD3DADA00258CE1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4ED0D2BF1DDE778700BE15CE /* ContactsModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -1177,6 +1186,7 @@
 				4E3244891DD3DE3200258CE1 /* Bruising.swift in Sources */,
 				4E32448C1DD3DE3800258CE1 /* InsightsBuilder.swift in Sources */,
 				4E6796891DDD35C9000E0A5E /* ADVSegmentedControl.swift in Sources */,
+				4ED0D2C81DDE8B0100BE15CE /* AddContactViewController.swift in Sources */,
 				4E3244791DD3DE2700258CE1 /* DAOCloudKit.swift in Sources */,
 				4E3244821DD3DE2D00258CE1 /* Shot.swift in Sources */,
 				4E3244771DD3DE2700258CE1 /* SymptomTrackerModel.swift in Sources */,
@@ -1190,6 +1200,7 @@
 				4ED0D2B41DDDDEBD00BE15CE /* Tutorial9ViewController.swift in Sources */,
 				4E3244811DD3DE2D00258CE1 /* Exercise.swift in Sources */,
 				4ED0D2B21DDDDEB500BE15CE /* Tutorial7ViewController.swift in Sources */,
+				4ED0D2C01DDE778700BE15CE /* ContactsModel.swift in Sources */,
 				4E32448A1DD3DE3200258CE1 /* Bleeding.swift in Sources */,
 				4E3244781DD3DE2700258CE1 /* InsightModel.swift in Sources */,
 				4E32447B1DD3DE2700258CE1 /* OccurenciesModel.swift in Sources */,
@@ -1213,6 +1224,7 @@
 				4ED0D2AB1DDDDE9D00BE15CE /* TutorialPageViewController.swift in Sources */,
 				4E3244941DD3EB7800258CE1 /* NSCalendar+Dates.swift in Sources */,
 				4E3244841DD3DE2D00258CE1 /* Water.swift in Sources */,
+				4ED0D2C61DDE869300BE15CE /* ConnectViewController.swift in Sources */,
 				4E3244751DD3DE2200258CE1 /* CareCardModel.swift in Sources */,
 				4E32447F1DD3DE2D00258CE1 /* Vagetables.swift in Sources */,
 				4E3244761DD3DE2700258CE1 /* CarePlanStoreManager.swift in Sources */,
