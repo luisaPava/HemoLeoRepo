@@ -1,0 +1,18 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "scale" : "2x",
+      "filename" : "Alcool@2x.png"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "1x",
+      "filename" : "Alcool.png"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "coreanimator"
+  }
+}

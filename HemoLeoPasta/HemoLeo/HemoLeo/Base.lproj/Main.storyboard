@@ -1630,7 +1630,7 @@
                                 <rect key="frame" x="153" y="130" width="717" height="461"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="veo-QM-79D">
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="veo-QM-79D" customClass="MateriaisView" customModule="HemoLeo" customModuleProvider="target">
                                 <rect key="frame" x="153" y="130" width="717" height="461"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
@@ -1657,6 +1657,9 @@
                             <constraint firstItem="sf6-ki-N2O" firstAttribute="top" secondItem="fDu-8x-Dke" secondAttribute="bottom" constant="30" id="rdU-cG-xCB"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="materiais" destination="veo-QM-79D" id="WiD-wk-ptX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vE4-HN-e9w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

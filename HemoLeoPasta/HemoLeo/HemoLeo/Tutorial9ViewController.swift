@@ -9,6 +9,7 @@
 import UIKit
 
 class Tutorial9ViewController: UIViewController {
+    @IBOutlet weak var materiais: MateriaisView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,7 @@ class Tutorial9ViewController: UIViewController {
             
         } else {
             
+            materiais.addMateriaisAnimation()
             
         }
 
