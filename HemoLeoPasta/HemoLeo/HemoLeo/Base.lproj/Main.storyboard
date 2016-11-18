@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="SQc-XE-Gic">
-    <device id="ipad9_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cWQ-MQ-lvC">
+    <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,11 +20,11 @@
                         <viewControllerLayoutGuide type="bottom" id="c24-mg-6bQ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fXy-yT-zS4">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="0dZ-U8-kFd" customClass="StorytellingView" customModule="HemoLeo" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
@@ -52,11 +53,11 @@
                         <viewControllerLayoutGuide type="bottom" id="oQN-AA-4LD"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="mT2-uK-ZdC">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JDG-bT-reb" customClass="Storytelling4View" customModule="HemoLeo" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                                <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
@@ -85,11 +86,11 @@
                         <viewControllerLayoutGuide type="bottom" id="iq9-yc-tZ0"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="zar-oI-P5G">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="ugM-3h-f9m" customClass="Storytelling2View" customModule="HemoLeo" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
@@ -118,15 +119,15 @@
                         <viewControllerLayoutGuide type="bottom" id="E1v-uc-wSj"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="iqR-gD-U9B">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8qm-TA-Yzj" customClass="Storytelling5View" customModule="HemoLeo" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                                <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U5Q-7h-kyL">
-                                <rect key="frame" x="673" y="929" width="65" height="65"/>
+                                <rect key="frame" x="929" y="673" width="65" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="65" id="CuT-5c-WDM"/>
                                     <constraint firstAttribute="height" constant="65" id="I8k-2G-KyU"/>
@@ -172,11 +173,11 @@
                         <viewControllerLayoutGuide type="bottom" id="tnc-xi-Duj"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8rc-FV-tsp">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jz0-sN-eGr" customClass="Storytelling3View" customModule="HemoLeo" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
@@ -196,175 +197,72 @@
             </objects>
             <point key="canvasLocation" x="520" y="-861"/>
         </scene>
-        <!--Page View Controller-->
+        <!--Tutorial Page View Controller-->
         <scene sceneID="RIl-hv-7aU">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="cWQ-MQ-lvC" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" doubleSided="YES" id="cWQ-MQ-lvC" customClass="TutorialPageViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nPI-Vj-PQK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2367" y="-2811"/>
         </scene>
-        <!--Tutorial1 View Controller-->
+        <!--Tutorial2 View Controller-->
         <scene sceneID="sH9-IK-trg">
             <objects>
-                <viewController storyboardIdentifier="tutorial1" id="H79-R7-vqW" customClass="Tutorial1ViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="tutorial2" id="H79-R7-vqW" customClass="Tutorial2ViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fBd-ol-ofS"/>
                         <viewControllerLayoutGuide type="bottom" id="akT-gA-nj6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="WHg-8g-Rpi">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M4s-UK-sli">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="JRm-AU-NqW">
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <view alpha="0.55000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oc9-Wb-VPp">
+                                <rect key="frame" x="153" y="130" width="717" height="461"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="4WK-7z-hAI" customClass="TutorialPasso2View" customModule="HemoLeo" customModuleProvider="target">
+                                <rect key="frame" x="153" y="130" width="717" height="461"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGP-nk-4OI">
+                                <rect key="frame" x="928" y="50" width="46" height="45"/>
+                                <state key="normal" image="reset"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="M4s-UK-sli" secondAttribute="trailing" id="4Gw-GJ-glH"/>
+                            <constraint firstItem="BGP-nk-4OI" firstAttribute="top" secondItem="fBd-ol-ofS" secondAttribute="bottom" constant="30" id="6Bv-Zc-EF6"/>
+                            <constraint firstItem="4WK-7z-hAI" firstAttribute="width" secondItem="WHg-8g-Rpi" secondAttribute="width" multiplier="0.7" constant="1" id="H07-eQ-VY2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BGP-nk-4OI" secondAttribute="trailing" constant="30" id="Tf0-1i-wj1"/>
+                            <constraint firstItem="oc9-Wb-VPp" firstAttribute="top" secondItem="fBd-ol-ofS" secondAttribute="bottom" constant="110" id="UUz-bb-Uzl"/>
+                            <constraint firstItem="oc9-Wb-VPp" firstAttribute="centerX" secondItem="WHg-8g-Rpi" secondAttribute="centerX" id="cAP-Oz-0pj"/>
+                            <constraint firstItem="akT-gA-nj6" firstAttribute="top" secondItem="M4s-UK-sli" secondAttribute="bottom" id="eU9-DQ-Sgz"/>
+                            <constraint firstItem="4WK-7z-hAI" firstAttribute="height" secondItem="WHg-8g-Rpi" secondAttribute="height" multiplier="0.6" id="gpY-2o-EAp"/>
+                            <constraint firstItem="oc9-Wb-VPp" firstAttribute="height" secondItem="WHg-8g-Rpi" secondAttribute="height" multiplier="0.6" id="hq8-0c-IBa"/>
+                            <constraint firstItem="M4s-UK-sli" firstAttribute="leading" secondItem="WHg-8g-Rpi" secondAttribute="leading" id="kD1-Vs-tE0"/>
+                            <constraint firstItem="4WK-7z-hAI" firstAttribute="centerX" secondItem="WHg-8g-Rpi" secondAttribute="centerX" id="pqY-lI-Aw8"/>
+                            <constraint firstItem="oc9-Wb-VPp" firstAttribute="width" secondItem="WHg-8g-Rpi" secondAttribute="width" multiplier="0.7" id="u9N-gb-D5w"/>
+                            <constraint firstItem="M4s-UK-sli" firstAttribute="top" secondItem="WHg-8g-Rpi" secondAttribute="top" id="uGt-I7-LoZ"/>
+                            <constraint firstItem="4WK-7z-hAI" firstAttribute="top" secondItem="fBd-ol-ofS" secondAttribute="bottom" constant="110" id="zZZ-O9-tVP"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="passo2" destination="4WK-7z-hAI" id="mja-xB-YCd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cms-oR-bVE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1552" y="-2793"/>
-        </scene>
-        <!--Tutorial2 View Controller-->
-        <scene sceneID="gHX-3g-Qx0">
-            <objects>
-                <viewController storyboardIdentifier="tutorial2" id="d09-5s-adD" customClass="Tutorial2ViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="qvl-IU-oj1"/>
-                        <viewControllerLayoutGuide type="bottom" id="Zbr-jy-Vrr"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="GCc-BX-qgS">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aK5-Jq-fQg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-813" y="-2796"/>
-        </scene>
-        <!--Tutorial6 View Controller-->
-        <scene sceneID="n2c-Jb-5zk">
-            <objects>
-                <viewController storyboardIdentifier="tutorial6" id="kkm-um-0v9" customClass="Tutorial6ViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="EnB-bc-lIA"/>
-                        <viewControllerLayoutGuide type="bottom" id="zNd-aE-7fK"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="7Go-lu-33i">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="G7b-Zz-oVM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2286" y="-1271"/>
-        </scene>
-        <!--Tutorial9 View Controller-->
-        <scene sceneID="eyH-dg-DcI">
-            <objects>
-                <viewController storyboardIdentifier="tutorial9" id="Txp-AL-mtW" customClass="Tutorial9ViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="hzx-H0-355"/>
-                        <viewControllerLayoutGuide type="bottom" id="scw-xK-LTj"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Evq-yp-l9y">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qye-RE-v0D" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2316" y="-540"/>
-        </scene>
-        <!--Tutorial7 View Controller-->
-        <scene sceneID="wdF-3y-3wm">
-            <objects>
-                <viewController storyboardIdentifier="tutorial7" id="Se6-bW-dHx" customClass="Tutorial7ViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="LlF-HY-Epj"/>
-                        <viewControllerLayoutGuide type="bottom" id="4wM-2u-RRp"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="hE4-J0-zLO">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZkB-jP-P82" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1518" y="-1272"/>
-        </scene>
-        <!--Tutorial8 View Controller-->
-        <scene sceneID="vXC-Ji-I3n">
-            <objects>
-                <viewController storyboardIdentifier="tutorial8" id="2DF-zy-gOz" customClass="Tutorial8ViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Yp7-gR-G5V"/>
-                        <viewControllerLayoutGuide type="bottom" id="9Qh-xS-LS7"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="siu-pn-cSZ">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qbo-PU-ywa" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-752" y="-1274"/>
-        </scene>
-        <!--Tutorial5 View Controller-->
-        <scene sceneID="nNv-ez-2Eg">
-            <objects>
-                <viewController storyboardIdentifier="tutorial5" id="ZDF-ag-vTy" customClass="Tutorial5ViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="vvP-HX-oT0"/>
-                        <viewControllerLayoutGuide type="bottom" id="hLH-Li-brf"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="MhJ-tP-bot">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xjC-pa-n2d" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-762" y="-2048"/>
-        </scene>
-        <!--Tutorial3 View Controller-->
-        <scene sceneID="eSN-L7-sBr">
-            <objects>
-                <viewController storyboardIdentifier="tutorial3" id="VQy-gI-qF0" customClass="Tutorial3ViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="bcO-ar-kia"/>
-                        <viewControllerLayoutGuide type="bottom" id="C0A-mI-ZIZ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="v2g-A0-NdF">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jia-dv-RBo" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2336" y="-2048"/>
-        </scene>
-        <!--Tutorial4 View Controller-->
-        <scene sceneID="i2n-rk-m8M">
-            <objects>
-                <viewController storyboardIdentifier="tutorial4" id="3En-dM-WKg" customClass="Tutorial4ViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Pe8-hq-mSb"/>
-                        <viewControllerLayoutGuide type="bottom" id="z3Y-Lo-Dwm"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="VZX-gf-UuV">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DmP-6J-pcf" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1542" y="-2047"/>
+            <point key="canvasLocation" x="-752" y="-2812"/>
         </scene>
         <!--Select Theme View Controller-->
         <scene sceneID="JXc-Xb-y01">
@@ -375,11 +273,11 @@
                         <viewControllerLayoutGuide type="bottom" id="Dit-4T-NML"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Xbr-jA-YjQ">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8NL-Aw-424">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8NL-Aw-424">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JoL-4N-QSQ">
                                 <rect key="frame" x="35" y="35" width="65" height="65"/>
@@ -392,8 +290,8 @@
                                     <action selector="backButtonPressed:" destination="Bbv-1w-PVr" eventType="touchUpInside" id="4PH-KM-MQV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXk-zT-hX6">
-                                <rect key="frame" x="515" y="35" width="65" height="63"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXk-zT-hX6">
+                                <rect key="frame" x="924" y="35" width="65" height="63"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="63" id="nPJ-jY-OPy"/>
                                     <constraint firstAttribute="width" constant="65" id="sLB-OW-xyU"/>
@@ -451,7 +349,7 @@
                         <viewControllerLayoutGuide type="bottom" id="kxK-qc-0II"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dG8-Ix-E6C">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VV1-Si-1tF">
@@ -466,7 +364,7 @@
                                 </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="n5b-az-IT4">
-                                <rect key="frame" x="-116" y="109" width="1000" height="806"/>
+                                <rect key="frame" x="12" y="-19" width="1000" height="806"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="1000" id="60P-oA-a5R"/>
                                     <constraint firstAttribute="height" constant="806" id="AJs-lC-KVv"/>
@@ -544,7 +442,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Kdh-pG-Rr0"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6pC-mc-sck" customClass="SKView">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEL-WE-NQp">
@@ -571,7 +469,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Aw-op-AJz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="578" y="-29"/>
+            <point key="canvasLocation" x="579" y="75"/>
         </scene>
         <!--Canvas-->
         <scene sceneID="5fx-eo-Pu6">
@@ -582,17 +480,17 @@
                         <viewControllerLayoutGuide type="bottom" id="qYg-VL-re9"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="C1X-KC-rxA">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NMO-ll-KL7" userLabel="MainImageView">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pxo-8B-FBp" userLabel="TempImageView">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YSI-uW-y38">
-                                <rect key="frame" x="692" y="20" width="56" height="56"/>
+                                <rect key="frame" x="948" y="20" width="56" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="5tl-zO-4cq"/>
                                     <constraint firstAttribute="width" constant="56" id="DL4-1C-d0R"/>
@@ -603,7 +501,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="g39-ib-5s5">
-                                <rect key="frame" x="20" y="938" width="728" height="56"/>
+                                <rect key="frame" x="20" y="682" width="984" height="56"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKa-Wf-XBB">
                                         <rect key="frame" x="0.0" y="2.5" width="51" height="51"/>
@@ -613,70 +511,70 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXh-hg-lqw">
-                                        <rect key="frame" x="67" y="2.5" width="51" height="51"/>
+                                        <rect key="frame" x="92.5" y="2.5" width="51" height="51"/>
                                         <state key="normal" image="LightGray"/>
                                         <connections>
                                             <action selector="pencilPressed:" destination="DsG-hq-x4v" eventType="touchUpInside" id="glI-Nt-DTN"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="guG-ge-4zf">
-                                        <rect key="frame" x="134" y="2" width="52" height="52"/>
+                                        <rect key="frame" x="185.5" y="2" width="52" height="52"/>
                                         <state key="normal" image="Red"/>
                                         <connections>
                                             <action selector="pencilPressed:" destination="DsG-hq-x4v" eventType="touchUpInside" id="PK4-G8-wAJ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MVP-KI-IyB">
-                                        <rect key="frame" x="202.5" y="2.5" width="51" height="51"/>
+                                        <rect key="frame" x="279" y="2.5" width="51" height="51"/>
                                         <state key="normal" image="DarkBlue"/>
                                         <connections>
                                             <action selector="pencilPressed:" destination="DsG-hq-x4v" eventType="touchUpInside" id="m10-Ym-SZC"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0E8-1u-8lg">
-                                        <rect key="frame" x="269.5" y="2.5" width="51" height="51"/>
+                                        <rect key="frame" x="372" y="2.5" width="51" height="51"/>
                                         <state key="normal" image="LightBlue"/>
                                         <connections>
                                             <action selector="pencilPressed:" destination="DsG-hq-x4v" eventType="touchUpInside" id="xLz-s2-jvx"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WmQ-r9-jQH">
-                                        <rect key="frame" x="336.5" y="2.5" width="51" height="51"/>
+                                        <rect key="frame" x="464.5" y="2.5" width="51" height="51"/>
                                         <state key="normal" image="DarkGreen"/>
                                         <connections>
                                             <action selector="pencilPressed:" destination="DsG-hq-x4v" eventType="touchUpInside" id="4Gd-qt-THb"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5pq-qR-jJS">
-                                        <rect key="frame" x="403.5" y="2.5" width="51" height="51"/>
+                                        <rect key="frame" x="557" y="2.5" width="51" height="51"/>
                                         <state key="normal" image="LightGreen"/>
                                         <connections>
                                             <action selector="pencilPressed:" destination="DsG-hq-x4v" eventType="touchUpInside" id="Zwx-3w-9Wd"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oGk-lv-xiD">
-                                        <rect key="frame" x="470.5" y="2.5" width="51" height="51"/>
+                                        <rect key="frame" x="650" y="2.5" width="51" height="51"/>
                                         <state key="normal" image="Brown"/>
                                         <connections>
                                             <action selector="pencilPressed:" destination="DsG-hq-x4v" eventType="touchUpInside" id="TId-nw-f1r"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xr-h8-fKv">
-                                        <rect key="frame" x="538" y="2.5" width="51" height="51"/>
+                                        <rect key="frame" x="742.5" y="2.5" width="51" height="51"/>
                                         <state key="normal" image="Orange"/>
                                         <connections>
                                             <action selector="pencilPressed:" destination="DsG-hq-x4v" eventType="touchUpInside" id="7YA-9c-EtT"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbL-aJ-Hhg">
-                                        <rect key="frame" x="605" y="2.5" width="51" height="51"/>
+                                        <rect key="frame" x="835.5" y="2.5" width="51" height="51"/>
                                         <state key="normal" image="Yellos"/>
                                         <connections>
                                             <action selector="pencilPressed:" destination="DsG-hq-x4v" eventType="touchUpInside" id="CFF-gR-V9v"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VTq-ZB-K2z">
-                                        <rect key="frame" x="672" y="0.0" width="56" height="56"/>
+                                        <rect key="frame" x="928" y="0.0" width="56" height="56"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="56" id="Cae-xs-1iS"/>
                                             <constraint firstAttribute="height" constant="56" id="i49-Le-Lbs"/>
@@ -692,7 +590,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cz-P3-91v" userLabel="Settings">
-                                <rect key="frame" x="550" y="20" width="56" height="56"/>
+                                <rect key="frame" x="806" y="20" width="56" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="W0c-Ly-cg7"/>
                                     <constraint firstAttribute="width" constant="56" id="hBc-Wk-uhE"/>
@@ -703,7 +601,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j0N-7w-rbB">
-                                <rect key="frame" x="621" y="20" width="56" height="56"/>
+                                <rect key="frame" x="877" y="20" width="56" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="56" id="9bC-c2-nrb"/>
                                     <constraint firstAttribute="height" constant="56" id="XZ4-xu-786"/>
@@ -906,7 +804,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EYU-jz-ig8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-78" y="2745"/>
+            <point key="canvasLocation" x="-78" y="1595"/>
         </scene>
         <!--Survey Controller-->
         <scene sceneID="EWW-uz-Vfp">
@@ -994,7 +892,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OsO-MD-YHf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-762" y="2745"/>
+            <point key="canvasLocation" x="-469" y="1595"/>
         </scene>
         <!--Symptom Card View Controller-->
         <scene sceneID="Hiw-WY-5q9">
@@ -1047,7 +945,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9ap-QN-d4B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="651" y="2964"/>
+            <point key="canvasLocation" x="295" y="1595"/>
         </scene>
         <!--Care Card View Controller-->
         <scene sceneID="MxI-xp-R8I">
@@ -1302,6 +1200,478 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bHd-ch-X2v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2669" y="909"/>
+        </scene>
+        <!--Tutorial1 View Controller-->
+        <scene sceneID="PhT-yw-QXt">
+            <objects>
+                <viewController storyboardIdentifier="tutorial1" id="PLR-9L-0Zs" customClass="Tutorial1ViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dv4-xl-vOv"/>
+                        <viewControllerLayoutGuide type="bottom" id="gcF-rz-4ot"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pPT-UV-CNr">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Mi-eN-Jax">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="NdM-Sp-pcV">
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <view alpha="0.55000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HVR-Nm-iLw">
+                                <rect key="frame" x="153" y="130" width="717" height="461"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="jqR-FJ-rHr" customClass="TutorialPasso2View" customModule="HemoLeo" customModuleProvider="target">
+                                <rect key="frame" x="153" y="130" width="717" height="461"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zh2-hq-SQJ">
+                                <rect key="frame" x="928" y="50" width="46" height="45"/>
+                                <state key="normal" image="reset"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="0Mi-eN-Jax" secondAttribute="trailing" id="2yT-dx-KiO"/>
+                            <constraint firstItem="jqR-FJ-rHr" firstAttribute="width" secondItem="pPT-UV-CNr" secondAttribute="width" multiplier="0.7" constant="1" id="9UO-eg-DSO"/>
+                            <constraint firstItem="jqR-FJ-rHr" firstAttribute="centerX" secondItem="pPT-UV-CNr" secondAttribute="centerX" id="Abf-u3-xf5"/>
+                            <constraint firstItem="HVR-Nm-iLw" firstAttribute="centerX" secondItem="pPT-UV-CNr" secondAttribute="centerX" id="NwB-j0-LMH"/>
+                            <constraint firstItem="jqR-FJ-rHr" firstAttribute="height" secondItem="pPT-UV-CNr" secondAttribute="height" multiplier="0.6" id="VP2-UB-sZC"/>
+                            <constraint firstItem="HVR-Nm-iLw" firstAttribute="top" secondItem="dv4-xl-vOv" secondAttribute="bottom" constant="110" id="VuG-yP-wv1"/>
+                            <constraint firstItem="HVR-Nm-iLw" firstAttribute="height" secondItem="pPT-UV-CNr" secondAttribute="height" multiplier="0.6" id="fTA-VY-W8K"/>
+                            <constraint firstItem="jqR-FJ-rHr" firstAttribute="top" secondItem="dv4-xl-vOv" secondAttribute="bottom" constant="110" id="hBN-LU-nQI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Zh2-hq-SQJ" secondAttribute="trailing" constant="30" id="nF3-ng-W8W"/>
+                            <constraint firstItem="Zh2-hq-SQJ" firstAttribute="top" secondItem="dv4-xl-vOv" secondAttribute="bottom" constant="30" id="sUp-wI-DOc"/>
+                            <constraint firstItem="0Mi-eN-Jax" firstAttribute="top" secondItem="pPT-UV-CNr" secondAttribute="top" id="uuc-ix-pKN"/>
+                            <constraint firstItem="0Mi-eN-Jax" firstAttribute="leading" secondItem="pPT-UV-CNr" secondAttribute="leading" id="vOS-I4-s4L"/>
+                            <constraint firstItem="HVR-Nm-iLw" firstAttribute="width" secondItem="pPT-UV-CNr" secondAttribute="width" multiplier="0.7" id="xmD-Ap-FQf"/>
+                            <constraint firstItem="gcF-rz-4ot" firstAttribute="top" secondItem="0Mi-eN-Jax" secondAttribute="bottom" id="xpW-d8-1JQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="passo2" destination="jqR-FJ-rHr" id="KFZ-Ty-B9d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kzX-mL-MRU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1542" y="-2812"/>
+        </scene>
+        <!--Tutorial3 View Controller-->
+        <scene sceneID="30B-2d-YUL">
+            <objects>
+                <viewController storyboardIdentifier="tutorial3" id="fUX-Az-RDC" customClass="Tutorial3ViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="B4m-L5-jL3"/>
+                        <viewControllerLayoutGuide type="bottom" id="IUx-rM-oGR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3Wd-Pq-NKy">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ddH-qY-0aD">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="eps-1e-QOp">
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <view alpha="0.55000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="80I-mu-bpb">
+                                <rect key="frame" x="153" y="130" width="717" height="461"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="zfm-vK-OrF" customClass="TutorialPasso2View" customModule="HemoLeo" customModuleProvider="target">
+                                <rect key="frame" x="153" y="130" width="717" height="461"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iQv-8J-Mm1">
+                                <rect key="frame" x="928" y="50" width="46" height="45"/>
+                                <state key="normal" image="reset"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ddH-qY-0aD" secondAttribute="trailing" id="0Kz-Ae-Q5u"/>
+                            <constraint firstItem="zfm-vK-OrF" firstAttribute="top" secondItem="B4m-L5-jL3" secondAttribute="bottom" constant="110" id="6xk-kl-RZX"/>
+                            <constraint firstItem="ddH-qY-0aD" firstAttribute="top" secondItem="3Wd-Pq-NKy" secondAttribute="top" id="ACd-n6-ZkO"/>
+                            <constraint firstItem="80I-mu-bpb" firstAttribute="centerX" secondItem="3Wd-Pq-NKy" secondAttribute="centerX" id="Hsz-0p-SSX"/>
+                            <constraint firstItem="80I-mu-bpb" firstAttribute="height" secondItem="3Wd-Pq-NKy" secondAttribute="height" multiplier="0.6" id="Irc-5p-eSN"/>
+                            <constraint firstItem="80I-mu-bpb" firstAttribute="top" secondItem="B4m-L5-jL3" secondAttribute="bottom" constant="110" id="Jp3-pV-ena"/>
+                            <constraint firstItem="zfm-vK-OrF" firstAttribute="height" secondItem="3Wd-Pq-NKy" secondAttribute="height" multiplier="0.6" id="Npk-DL-jRe"/>
+                            <constraint firstItem="ddH-qY-0aD" firstAttribute="leading" secondItem="3Wd-Pq-NKy" secondAttribute="leading" id="Oas-ZT-cXy"/>
+                            <constraint firstItem="zfm-vK-OrF" firstAttribute="centerX" secondItem="3Wd-Pq-NKy" secondAttribute="centerX" id="PXA-f3-oPB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iQv-8J-Mm1" secondAttribute="trailing" constant="30" id="Tze-rF-0xT"/>
+                            <constraint firstItem="IUx-rM-oGR" firstAttribute="top" secondItem="ddH-qY-0aD" secondAttribute="bottom" id="X9t-Wi-dnw"/>
+                            <constraint firstItem="80I-mu-bpb" firstAttribute="width" secondItem="3Wd-Pq-NKy" secondAttribute="width" multiplier="0.7" id="Zex-4M-B55"/>
+                            <constraint firstItem="iQv-8J-Mm1" firstAttribute="top" secondItem="B4m-L5-jL3" secondAttribute="bottom" constant="30" id="tw4-KX-p28"/>
+                            <constraint firstItem="zfm-vK-OrF" firstAttribute="width" secondItem="3Wd-Pq-NKy" secondAttribute="width" multiplier="0.7" constant="1" id="wZ7-IL-Baa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="passo2" destination="zfm-vK-OrF" id="GRJ-Ri-5Pr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Xv-Gl-iYH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2367" y="-2048"/>
+        </scene>
+        <!--Tutorial4 View Controller-->
+        <scene sceneID="mfC-02-p1R">
+            <objects>
+                <viewController storyboardIdentifier="tutorial4" id="nmY-Zx-vKe" customClass="Tutorial4ViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cQl-r2-GoU"/>
+                        <viewControllerLayoutGuide type="bottom" id="aK4-M2-39A"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Sfw-El-Bcr">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iUg-TS-DE1">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ncY-nK-GQB">
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <view alpha="0.55000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yid-ag-Ecs">
+                                <rect key="frame" x="153" y="130" width="717" height="461"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="zRw-92-KYO" customClass="TutorialPasso2View" customModule="HemoLeo" customModuleProvider="target">
+                                <rect key="frame" x="153" y="130" width="717" height="461"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9V-wM-NI9">
+                                <rect key="frame" x="928" y="50" width="46" height="45"/>
+                                <state key="normal" image="reset"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="o9V-wM-NI9" firstAttribute="top" secondItem="cQl-r2-GoU" secondAttribute="bottom" constant="30" id="4X4-k1-Ok9"/>
+                            <constraint firstItem="Yid-ag-Ecs" firstAttribute="width" secondItem="Sfw-El-Bcr" secondAttribute="width" multiplier="0.7" id="62N-ja-dkq"/>
+                            <constraint firstItem="zRw-92-KYO" firstAttribute="centerX" secondItem="Sfw-El-Bcr" secondAttribute="centerX" id="LJY-HA-qdS"/>
+                            <constraint firstItem="aK4-M2-39A" firstAttribute="top" secondItem="iUg-TS-DE1" secondAttribute="bottom" id="Nek-h4-jqB"/>
+                            <constraint firstItem="iUg-TS-DE1" firstAttribute="leading" secondItem="Sfw-El-Bcr" secondAttribute="leading" id="UjU-nL-2aH"/>
+                            <constraint firstItem="zRw-92-KYO" firstAttribute="height" secondItem="Sfw-El-Bcr" secondAttribute="height" multiplier="0.6" id="Vlu-xX-uvH"/>
+                            <constraint firstItem="zRw-92-KYO" firstAttribute="top" secondItem="cQl-r2-GoU" secondAttribute="bottom" constant="110" id="ZhH-mE-L54"/>
+                            <constraint firstItem="Yid-ag-Ecs" firstAttribute="top" secondItem="cQl-r2-GoU" secondAttribute="bottom" constant="110" id="ZlB-Jj-Zgk"/>
+                            <constraint firstItem="Yid-ag-Ecs" firstAttribute="height" secondItem="Sfw-El-Bcr" secondAttribute="height" multiplier="0.6" id="c8D-c3-dDg"/>
+                            <constraint firstItem="Yid-ag-Ecs" firstAttribute="centerX" secondItem="Sfw-El-Bcr" secondAttribute="centerX" id="dbf-Zm-N9Z"/>
+                            <constraint firstAttribute="trailing" secondItem="iUg-TS-DE1" secondAttribute="trailing" id="hf8-tz-Srj"/>
+                            <constraint firstItem="zRw-92-KYO" firstAttribute="width" secondItem="Sfw-El-Bcr" secondAttribute="width" multiplier="0.7" constant="1" id="r0e-JO-KLp"/>
+                            <constraint firstItem="iUg-TS-DE1" firstAttribute="top" secondItem="Sfw-El-Bcr" secondAttribute="top" id="tSf-nI-59z"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="o9V-wM-NI9" secondAttribute="trailing" constant="30" id="vGj-eg-dsN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="passo2" destination="zRw-92-KYO" id="LrR-Oa-tet"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o4e-hO-ilX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1542" y="-2048"/>
+        </scene>
+        <!--Tutorial5 View Controller-->
+        <scene sceneID="wxc-Ji-Qri">
+            <objects>
+                <viewController storyboardIdentifier="tutorial5" id="YtS-Wr-xwC" customClass="Tutorial5ViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gcj-eM-ZKf"/>
+                        <viewControllerLayoutGuide type="bottom" id="ikm-7l-vAo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JzR-JI-BB9">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jad-K1-Bzl">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Goq-Mk-BeT">
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <view alpha="0.55000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ywK-ua-Dfa">
+                                <rect key="frame" x="153" y="130" width="717" height="461"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="pov-R3-rQx" customClass="TutorialPasso2View" customModule="HemoLeo" customModuleProvider="target">
+                                <rect key="frame" x="153" y="130" width="717" height="461"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oLi-LQ-Nl4">
+                                <rect key="frame" x="928" y="50" width="46" height="45"/>
+                                <state key="normal" image="reset"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pov-R3-rQx" firstAttribute="centerX" secondItem="JzR-JI-BB9" secondAttribute="centerX" id="06R-1O-ynY"/>
+                            <constraint firstItem="ywK-ua-Dfa" firstAttribute="centerX" secondItem="JzR-JI-BB9" secondAttribute="centerX" id="2Me-DE-jM1"/>
+                            <constraint firstItem="ikm-7l-vAo" firstAttribute="top" secondItem="Jad-K1-Bzl" secondAttribute="bottom" id="9Ts-Hl-ubF"/>
+                            <constraint firstItem="pov-R3-rQx" firstAttribute="width" secondItem="JzR-JI-BB9" secondAttribute="width" multiplier="0.7" constant="1" id="EoH-by-ipD"/>
+                            <constraint firstItem="pov-R3-rQx" firstAttribute="height" secondItem="JzR-JI-BB9" secondAttribute="height" multiplier="0.6" id="J6f-iA-oJ3"/>
+                            <constraint firstItem="Jad-K1-Bzl" firstAttribute="top" secondItem="JzR-JI-BB9" secondAttribute="top" id="S84-wu-Pec"/>
+                            <constraint firstItem="pov-R3-rQx" firstAttribute="top" secondItem="gcj-eM-ZKf" secondAttribute="bottom" constant="110" id="Sdo-gn-ICp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oLi-LQ-Nl4" secondAttribute="trailing" constant="30" id="VER-NQ-Euk"/>
+                            <constraint firstItem="oLi-LQ-Nl4" firstAttribute="top" secondItem="gcj-eM-ZKf" secondAttribute="bottom" constant="30" id="XdD-jB-Opy"/>
+                            <constraint firstItem="Jad-K1-Bzl" firstAttribute="leading" secondItem="JzR-JI-BB9" secondAttribute="leading" id="ZTT-K8-FXZ"/>
+                            <constraint firstItem="ywK-ua-Dfa" firstAttribute="width" secondItem="JzR-JI-BB9" secondAttribute="width" multiplier="0.7" id="f5O-ku-mbf"/>
+                            <constraint firstItem="ywK-ua-Dfa" firstAttribute="height" secondItem="JzR-JI-BB9" secondAttribute="height" multiplier="0.6" id="vEX-3i-AYo"/>
+                            <constraint firstItem="ywK-ua-Dfa" firstAttribute="top" secondItem="gcj-eM-ZKf" secondAttribute="bottom" constant="110" id="wpt-EF-KLi"/>
+                            <constraint firstAttribute="trailing" secondItem="Jad-K1-Bzl" secondAttribute="trailing" id="zIs-99-7eq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="passo2" destination="pov-R3-rQx" id="IvF-5M-WLw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rfA-j5-yOP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-752" y="-2048"/>
+        </scene>
+        <!--Tutorial6 View Controller-->
+        <scene sceneID="x3T-zg-x0O">
+            <objects>
+                <viewController storyboardIdentifier="tutorial6" id="p9I-6b-Hag" customClass="Tutorial6ViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hVs-uf-MtA"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lpb-fe-aA8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="o6I-e6-S05">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tPZ-ET-H8O">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gZc-KL-iXH">
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <view alpha="0.55000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KEu-im-8DX">
+                                <rect key="frame" x="153" y="130" width="717" height="461"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="zB5-sY-Yro" customClass="TutorialPasso2View" customModule="HemoLeo" customModuleProvider="target">
+                                <rect key="frame" x="153" y="130" width="717" height="461"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSd-lW-PES">
+                                <rect key="frame" x="928" y="50" width="46" height="45"/>
+                                <state key="normal" image="reset"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KEu-im-8DX" firstAttribute="centerX" secondItem="o6I-e6-S05" secondAttribute="centerX" id="3Fb-AK-Nrz"/>
+                            <constraint firstItem="zB5-sY-Yro" firstAttribute="height" secondItem="o6I-e6-S05" secondAttribute="height" multiplier="0.6" id="3Rj-x0-oie"/>
+                            <constraint firstItem="Lpb-fe-aA8" firstAttribute="top" secondItem="tPZ-ET-H8O" secondAttribute="bottom" id="3TG-V7-31Z"/>
+                            <constraint firstAttribute="trailing" secondItem="tPZ-ET-H8O" secondAttribute="trailing" id="4v3-wu-J76"/>
+                            <constraint firstItem="tPZ-ET-H8O" firstAttribute="top" secondItem="o6I-e6-S05" secondAttribute="top" id="Ca3-cA-RGh"/>
+                            <constraint firstItem="zB5-sY-Yro" firstAttribute="top" secondItem="hVs-uf-MtA" secondAttribute="bottom" constant="110" id="Ef7-zU-ZVD"/>
+                            <constraint firstItem="tPZ-ET-H8O" firstAttribute="leading" secondItem="o6I-e6-S05" secondAttribute="leading" id="Udu-ld-kaY"/>
+                            <constraint firstItem="KEu-im-8DX" firstAttribute="width" secondItem="o6I-e6-S05" secondAttribute="width" multiplier="0.7" id="YWS-gd-P7q"/>
+                            <constraint firstItem="zB5-sY-Yro" firstAttribute="centerX" secondItem="o6I-e6-S05" secondAttribute="centerX" id="Yhq-w1-EQZ"/>
+                            <constraint firstItem="zB5-sY-Yro" firstAttribute="width" secondItem="o6I-e6-S05" secondAttribute="width" multiplier="0.7" constant="1" id="cqA-G1-2MR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WSd-lW-PES" secondAttribute="trailing" constant="30" id="daH-Z2-sKZ"/>
+                            <constraint firstItem="WSd-lW-PES" firstAttribute="top" secondItem="hVs-uf-MtA" secondAttribute="bottom" constant="30" id="f17-WZ-KAr"/>
+                            <constraint firstItem="KEu-im-8DX" firstAttribute="height" secondItem="o6I-e6-S05" secondAttribute="height" multiplier="0.6" id="jl6-DK-hU0"/>
+                            <constraint firstItem="KEu-im-8DX" firstAttribute="top" secondItem="hVs-uf-MtA" secondAttribute="bottom" constant="110" id="nly-Kx-YMB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="passo2" destination="zB5-sY-Yro" id="39M-dS-5ay"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tMQ-Mq-EVz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2367" y="-1274"/>
+        </scene>
+        <!--Tutorial7 View Controller-->
+        <scene sceneID="wjB-s1-bby">
+            <objects>
+                <viewController storyboardIdentifier="tutorial7" id="NdY-I2-uaF" customClass="Tutorial7ViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2ha-lR-Qku"/>
+                        <viewControllerLayoutGuide type="bottom" id="xwl-FM-8gA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bU3-MR-kHo">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="07w-Bp-0TF">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="FT4-TN-7eM">
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <view alpha="0.55000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3A6-2z-Bz4">
+                                <rect key="frame" x="153" y="130" width="717" height="461"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="0Bv-DJ-Mrk" customClass="TutorialPasso2View" customModule="HemoLeo" customModuleProvider="target">
+                                <rect key="frame" x="153" y="130" width="717" height="461"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJg-Ke-EHc">
+                                <rect key="frame" x="928" y="50" width="46" height="45"/>
+                                <state key="normal" image="reset"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3A6-2z-Bz4" firstAttribute="width" secondItem="bU3-MR-kHo" secondAttribute="width" multiplier="0.7" id="5je-UA-WmR"/>
+                            <constraint firstItem="0Bv-DJ-Mrk" firstAttribute="top" secondItem="2ha-lR-Qku" secondAttribute="bottom" constant="110" id="FKa-Ud-j4a"/>
+                            <constraint firstItem="0Bv-DJ-Mrk" firstAttribute="width" secondItem="bU3-MR-kHo" secondAttribute="width" multiplier="0.7" constant="1" id="FZX-At-mfU"/>
+                            <constraint firstAttribute="trailing" secondItem="07w-Bp-0TF" secondAttribute="trailing" id="Hc5-iG-u2C"/>
+                            <constraint firstItem="3A6-2z-Bz4" firstAttribute="centerX" secondItem="bU3-MR-kHo" secondAttribute="centerX" id="IsL-JS-JKF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dJg-Ke-EHc" secondAttribute="trailing" constant="30" id="Kus-rO-qGp"/>
+                            <constraint firstItem="dJg-Ke-EHc" firstAttribute="top" secondItem="2ha-lR-Qku" secondAttribute="bottom" constant="30" id="M3a-O5-VD9"/>
+                            <constraint firstItem="xwl-FM-8gA" firstAttribute="top" secondItem="07w-Bp-0TF" secondAttribute="bottom" id="Q2Z-PI-GYH"/>
+                            <constraint firstItem="0Bv-DJ-Mrk" firstAttribute="centerX" secondItem="bU3-MR-kHo" secondAttribute="centerX" id="V99-xV-Nxf"/>
+                            <constraint firstItem="07w-Bp-0TF" firstAttribute="top" secondItem="bU3-MR-kHo" secondAttribute="top" id="Xft-Bj-JGz"/>
+                            <constraint firstItem="0Bv-DJ-Mrk" firstAttribute="height" secondItem="bU3-MR-kHo" secondAttribute="height" multiplier="0.6" id="kF0-Dr-tEa"/>
+                            <constraint firstItem="07w-Bp-0TF" firstAttribute="leading" secondItem="bU3-MR-kHo" secondAttribute="leading" id="lCh-tV-KmB"/>
+                            <constraint firstItem="3A6-2z-Bz4" firstAttribute="height" secondItem="bU3-MR-kHo" secondAttribute="height" multiplier="0.6" id="oZf-lJ-TPS"/>
+                            <constraint firstItem="3A6-2z-Bz4" firstAttribute="top" secondItem="2ha-lR-Qku" secondAttribute="bottom" constant="110" id="rEz-Sx-69r"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="passo2" destination="0Bv-DJ-Mrk" id="KF6-Wf-UTA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ESK-Yo-ttQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1542" y="-1274"/>
+        </scene>
+        <!--Tutorial8 View Controller-->
+        <scene sceneID="9se-Za-4ia">
+            <objects>
+                <viewController storyboardIdentifier="tutorial8" id="3F5-Es-joA" customClass="Tutorial8ViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aCv-SQ-KLS"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ks7-o9-o1E"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="le2-Nj-Jul">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EGg-mU-fkR">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="kQO-vQ-oZe">
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <view alpha="0.55000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J9l-NI-Gi2">
+                                <rect key="frame" x="153" y="130" width="717" height="461"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="hhV-pX-nRF" customClass="TutorialPasso2View" customModule="HemoLeo" customModuleProvider="target">
+                                <rect key="frame" x="153" y="130" width="717" height="461"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fz5-xW-VYV">
+                                <rect key="frame" x="928" y="50" width="46" height="45"/>
+                                <state key="normal" image="reset"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EGg-mU-fkR" firstAttribute="top" secondItem="le2-Nj-Jul" secondAttribute="top" id="5Fc-Eg-BoI"/>
+                            <constraint firstItem="J9l-NI-Gi2" firstAttribute="centerX" secondItem="le2-Nj-Jul" secondAttribute="centerX" id="5t8-K4-cwb"/>
+                            <constraint firstItem="fz5-xW-VYV" firstAttribute="top" secondItem="aCv-SQ-KLS" secondAttribute="bottom" constant="30" id="89q-q1-bsT"/>
+                            <constraint firstAttribute="trailing" secondItem="EGg-mU-fkR" secondAttribute="trailing" id="HoF-Tq-Vqg"/>
+                            <constraint firstItem="Ks7-o9-o1E" firstAttribute="top" secondItem="EGg-mU-fkR" secondAttribute="bottom" id="IU1-Wj-jJZ"/>
+                            <constraint firstItem="J9l-NI-Gi2" firstAttribute="top" secondItem="aCv-SQ-KLS" secondAttribute="bottom" constant="110" id="LhF-NW-ATY"/>
+                            <constraint firstItem="hhV-pX-nRF" firstAttribute="top" secondItem="aCv-SQ-KLS" secondAttribute="bottom" constant="110" id="S4g-1a-Qyd"/>
+                            <constraint firstItem="J9l-NI-Gi2" firstAttribute="height" secondItem="le2-Nj-Jul" secondAttribute="height" multiplier="0.6" id="Slj-b3-13x"/>
+                            <constraint firstItem="EGg-mU-fkR" firstAttribute="leading" secondItem="le2-Nj-Jul" secondAttribute="leading" id="Zfv-gM-E92"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fz5-xW-VYV" secondAttribute="trailing" constant="30" id="kcn-XV-EPU"/>
+                            <constraint firstItem="hhV-pX-nRF" firstAttribute="width" secondItem="le2-Nj-Jul" secondAttribute="width" multiplier="0.7" constant="1" id="pZD-bU-crr"/>
+                            <constraint firstItem="hhV-pX-nRF" firstAttribute="height" secondItem="le2-Nj-Jul" secondAttribute="height" multiplier="0.6" id="qRJ-iN-cXx"/>
+                            <constraint firstItem="J9l-NI-Gi2" firstAttribute="width" secondItem="le2-Nj-Jul" secondAttribute="width" multiplier="0.7" id="s58-ln-gBi"/>
+                            <constraint firstItem="hhV-pX-nRF" firstAttribute="centerX" secondItem="le2-Nj-Jul" secondAttribute="centerX" id="tL6-2x-s0t"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="passo2" destination="hhV-pX-nRF" id="JuR-vp-bTf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HS1-ah-MqB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-752" y="-1274"/>
+        </scene>
+        <!--Tutorial9 View Controller-->
+        <scene sceneID="7Br-SJ-zoe">
+            <objects>
+                <viewController storyboardIdentifier="tutorial9" id="4T0-Bi-dfW" customClass="Tutorial9ViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fDu-8x-Dke"/>
+                        <viewControllerLayoutGuide type="bottom" id="php-I9-YLw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KBL-6a-cad">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PC2-VU-KCo">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ui1-S0-XPs">
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <view alpha="0.55000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W2K-ld-UF7">
+                                <rect key="frame" x="153" y="130" width="717" height="461"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="veo-QM-79D" customClass="TutorialPasso2View" customModule="HemoLeo" customModuleProvider="target">
+                                <rect key="frame" x="153" y="130" width="717" height="461"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sf6-ki-N2O">
+                                <rect key="frame" x="928" y="50" width="46" height="45"/>
+                                <state key="normal" image="reset"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PC2-VU-KCo" firstAttribute="top" secondItem="KBL-6a-cad" secondAttribute="top" id="1S3-gN-cF8"/>
+                            <constraint firstItem="veo-QM-79D" firstAttribute="top" secondItem="fDu-8x-Dke" secondAttribute="bottom" constant="110" id="820-h1-d3L"/>
+                            <constraint firstItem="W2K-ld-UF7" firstAttribute="top" secondItem="fDu-8x-Dke" secondAttribute="bottom" constant="110" id="BXc-el-Iwe"/>
+                            <constraint firstItem="veo-QM-79D" firstAttribute="centerX" secondItem="KBL-6a-cad" secondAttribute="centerX" id="CEc-Pj-zke"/>
+                            <constraint firstAttribute="trailing" secondItem="PC2-VU-KCo" secondAttribute="trailing" id="DkW-M0-vDB"/>
+                            <constraint firstItem="veo-QM-79D" firstAttribute="height" secondItem="KBL-6a-cad" secondAttribute="height" multiplier="0.6" id="FLm-zp-nC0"/>
+                            <constraint firstItem="W2K-ld-UF7" firstAttribute="centerX" secondItem="KBL-6a-cad" secondAttribute="centerX" id="Ffr-3s-tlf"/>
+                            <constraint firstItem="W2K-ld-UF7" firstAttribute="width" secondItem="KBL-6a-cad" secondAttribute="width" multiplier="0.7" id="RPx-ud-HPh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sf6-ki-N2O" secondAttribute="trailing" constant="30" id="acV-hC-1HB"/>
+                            <constraint firstItem="W2K-ld-UF7" firstAttribute="height" secondItem="KBL-6a-cad" secondAttribute="height" multiplier="0.6" id="bmp-4f-2hr"/>
+                            <constraint firstItem="veo-QM-79D" firstAttribute="width" secondItem="KBL-6a-cad" secondAttribute="width" multiplier="0.7" constant="1" id="dli-Ke-B2t"/>
+                            <constraint firstItem="php-I9-YLw" firstAttribute="top" secondItem="PC2-VU-KCo" secondAttribute="bottom" id="qaH-kX-T4H"/>
+                            <constraint firstItem="PC2-VU-KCo" firstAttribute="leading" secondItem="KBL-6a-cad" secondAttribute="leading" id="qdQ-On-Ojo"/>
+                            <constraint firstItem="sf6-ki-N2O" firstAttribute="top" secondItem="fDu-8x-Dke" secondAttribute="bottom" constant="30" id="rdU-cG-xCB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="passo2" destination="veo-QM-79D" id="WgE-XX-K5k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vE4-HN-e9w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2367" y="-527"/>
         </scene>
     </scenes>
     <resources>
