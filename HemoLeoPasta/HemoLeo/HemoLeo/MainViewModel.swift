@@ -27,7 +27,7 @@ class MainViewModel {
         sharedNSCoding.setBackground(bg: bg.rawValue)
     }
     
-    func createButton(view: UIView, x: CGFloat, y: CGFloat, image: String, action: ()->()) {
+    func createButton(view: UIView, x: CGFloat, y: CGFloat, image: UIImage) -> UIButton {
         let button = UIButton(frame: CGRect(x: x, y: y, width: 70, height: 70))
         button.backgroundColor = UIColor.white
         button.layer.cornerRadius = 75
@@ -35,8 +35,8 @@ class MainViewModel {
         button.layer.zPosition = 1000
         button.showsTouchWhenHighlighted = false
         button.reversesTitleShadowWhenHighlighted = false
-        button.setImage(UIImage(named: image), for: .normal)
+        button.setImage(image, for: .normal)
         
-        view.addSubview(button)
+        return button
     }
 }

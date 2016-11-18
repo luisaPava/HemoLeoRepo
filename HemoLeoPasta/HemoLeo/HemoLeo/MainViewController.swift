@@ -10,7 +10,7 @@ import UIKit
 import SpriteKit
 
 class MainViewController: UIViewController {
-    
+    var tutorialButton: UIButton!
     var careCardButton: UIButton!
     var symptomCardButton: UIButton!
     var canvasButton: UIButton!
@@ -20,6 +20,8 @@ class MainViewController: UIViewController {
     let defaults = UserDefaults.standard
     
     var background: String = "Default"
+    
+    private let mainModel = MainViewModel.sharedMainModel
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,64 +40,42 @@ class MainViewController: UIViewController {
             return true
         }
         
+        print("\(width) - \(height)")
+        
         //Buttons
         
         //Button to CareCard
-        careCardButton = UIButton(frame: CGRect(x: width / 1.096, y: height / 25.6, width: width / 14.628, height: height / 10.971))
-        careCardButton.backgroundColor = UIColor.white
+        careCardButton = mainModel.createButton(view: self.view, x: width / 1.906, y: height / 25.6, image: #imageLiteral(resourceName: "Health"))
         careCardButton.addTarget(self, action: #selector(careCardButtonAction), for: .touchUpInside)
-        careCardButton.layer.cornerRadius = width / 29.25
-        careCardButton.layer.masksToBounds = true
-        careCardButton.layer.zPosition = 1000
-        careCardButton.showsTouchWhenHighlighted = false
-        careCardButton.reversesTitleShadowWhenHighlighted = false
-        careCardButton.setImage(UIImage(named: "Health"), for: .normal)
         
         self.view.addSubview(careCardButton)
         
         //Button to SymptomCard
-        symptomCardButton = UIButton(frame: CGRect(x: width / 1.227, y: height / 25.6, width: width / 14.628, height: height / 10.971))
-        symptomCardButton.backgroundColor = UIColor.white
+        symptomCardButton = mainModel.createButton(view: self.view, x: width / 1.227, y: height / 25.6, image: #imageLiteral(resourceName: "ActivityCheck"))
         symptomCardButton.addTarget(self, action: #selector(symptomCardButtonAction), for: .touchUpInside)
-        symptomCardButton.layer.cornerRadius = width / 29.25
-        symptomCardButton.layer.masksToBounds = true
-        symptomCardButton.layer.zPosition = 1000
-        symptomCardButton.setImage(UIImage(named: "ActivityCheck"), for: .normal)
-        
+    
         self.view.addSubview(symptomCardButton)
         
         //Button to Canvas
-        canvasButton = UIButton(frame: CGRect(x: width / 34.133, y: height / 25.6, width: width / 14.628, height: height / 10.971))
-        canvasButton.backgroundColor = UIColor.white
+        canvasButton = mainModel.createButton(view: self.view, x: width / 34.133, y: height / 25.6, image: #imageLiteral(resourceName: "Canvas"))
         canvasButton.addTarget(self, action: #selector(canvasButtonAction), for: .touchUpInside)
-        canvasButton.layer.cornerRadius = width / 29.25
-        canvasButton.layer.masksToBounds = true
-        canvasButton.layer.zPosition = 1000
-        canvasButton.setImage(UIImage(named: "Canvas"), for: .normal)
         
         self.view.addSubview(canvasButton)
         
         //Button to Themes
-        themesButton = UIButton(frame: CGRect(x: width / 7.876, y: height / 25.6, width: width / 14.628, height: height / 10.971))
-        themesButton.backgroundColor = UIColor.white
+        themesButton = mainModel.createButton(view: self.view, x: width / 7.876, y: height / 25.6, image: #imageLiteral(resourceName: "Botao Temas"))
         themesButton.addTarget(self, action: #selector(themesButtonAction), for: .touchUpInside)
-        themesButton.layer.cornerRadius = width / 29.25
-        themesButton.layer.masksToBounds = true
-        themesButton.layer.zPosition = 1000
-        themesButton.setImage(UIImage(named: "Botao Temas"), for: .normal)
         
         self.view.addSubview(themesButton)
         
         //Button to InsightCard
-        insightCardButton = UIButton(frame: CGRect(x: width / 1.395, y: height / 25.6, width: width / 14.628, height: height / 10.971))
-        insightCardButton.backgroundColor = UIColor.white
+        insightCardButton = mainModel.createButton(view: self.view, x: width / 1.395, y: height / 25.6, image: #imageLiteral(resourceName: "Insight"))
         insightCardButton.addTarget(self, action: #selector(insightCardButtonAction), for: .touchUpInside)
-        insightCardButton.layer.cornerRadius = width / 29.25
-        insightCardButton.layer.masksToBounds = true
-        insightCardButton.layer.zPosition = 1000
-        insightCardButton.setImage(UIImage(named: "Insight"), for: .normal)
         
         self.view.addSubview(insightCardButton)
+        
+        //Button to Tutorial
+//        tutorialButton = mainModel.createButton(view: self.view, x: , y: <#T##CGFloat#>, image: <#T##UIImage#>)
 
         
     }
@@ -201,6 +181,12 @@ class MainViewController: UIViewController {
     func themesButtonAction() {
         ButtonAnimation.addButtonPressAnimationToView(viewToAnimate: themesButton)
         performSegue(withIdentifier: "mainToThemes", sender: self)
+    }
+    
+    //Tutorial button action
+    func tutorialButtonAction() {
+        ButtonAnimation.addButtonPressAnimationToView(viewToAnimate: tutorialButton)
+        performSegue(withIdentifier: "mainToTutorial", sender: self)
     }
     
 }
