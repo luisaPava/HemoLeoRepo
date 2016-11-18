@@ -11,11 +11,15 @@ import SpriteKit
 
 
 class GameScene: SKScene {
+    
     var lion: SKSpriteNode!
     var lion2: SKSpriteNode!
     var lionMovingFrames: [SKTexture]!
+    var lionCuddlingFrames: [SKTexture]!
     let defaults = UserDefaults.standard
     var bgImage: SKSpriteNode!
+    
+    var mytimer = Timer()
     
     override func didMove(to view: SKView) {
         /* Setup your scene here */
@@ -34,27 +38,36 @@ class GameScene: SKScene {
         addChild(bgImage)
         
         
-//        let lionAnimatedAtlas = SKTextureAtlas(named: "LeoImages")
-//        var lionFrames = [SKTexture]()
-//        
-//        //let numImages = lionAnimatedAtlas.textureNames.count
-//        for i in 1..<23 {
-//            let lionTextureName = "leo\(i)"
-//            lionFrames.append(lionAnimatedAtlas.textureNamed(lionTextureName))
-//        }
-//        lionMovingFrames = lionFrames
-//        
-//        let firstFrame = lionMovingFrames[0]
-//        lion = SKSpriteNode(texture: firstFrame)
-//        lion.name = "lionLeo"
-//        lion.isUserInteractionEnabled = false
-//        lion.position = CGPoint(x: self.size.width/2, y: self.size.height/3)
-//        lion.zPosition = 1
-//        //lion.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame))
-//        addChild(lion)
-//        
-//        
-//        moveLionLeo()
+        let lionAnimatedAtlas = SKTextureAtlas(named: "LeoImages")
+        var lionFrames = [SKTexture]()
+        
+        //let numImages = lionAnimatedAtlas.textureNames.count
+        for i in 1..<21 {
+            let lionTextureName = "Leo\(i)"
+            lionFrames.append(lionAnimatedAtlas.textureNamed(lionTextureName))
+        }
+        var i = 20;
+        while (i > 0) {
+            let lionTextureName = "Leo\(i)"
+            lionFrames.append(lionAnimatedAtlas.textureNamed(lionTextureName))
+            i -= 1;
+        }
+        lionMovingFrames = lionFrames
+        
+        let firstFrame = lionMovingFrames[0]
+        lion = SKSpriteNode(texture: firstFrame)
+        lion.name = "lionLeo"
+        lion.size = CGSize(width: 400, height: 400)
+        lion.isUserInteractionEnabled = false
+        lion.position = CGPoint(x: self.size.width/2, y: self.size.height/3)
+        lion.zPosition = 1
+        addChild(lion)
+        
+        //moveLionLeo()
+        
+        mytimer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(GameScene.moveLionLeo), userInfo: nil, repeats: true)
+        
+        mytimer.fire()
     }
     
     override func willMove(from view: SKView) {
@@ -69,24 +82,26 @@ class GameScene: SKScene {
     
     func moveLionLeo() {
         //This is our general runAction method to make our bear walk.
-        lion.run(SKAction.repeatForever(
+        lion.run(SKAction.repeat(
             SKAction.animate(with: lionMovingFrames,
                 timePerFrame: 0.12,
                 resize: false,
-                restore: true)),
+                restore: true), count: 1),
                        withKey:"LionMovingInScreen")
     }
     
     func cuddleLeo() {
         lion.isHidden = true
         
-        lion2.run(SKAction.repeat(SKAction.animate(with: lionMovingFrames,
-            timePerFrame: 0.15,
+        lion2.run(SKAction.repeat(SKAction.animate(with: lionCuddlingFrames,
+            timePerFrame: 0.03,
             resize: false,
             restore: true), count: 1)) {
                 print("Petting ended")
                 self.lion.isHidden = false
                 self.lion2.isHidden = true
+                
+                //sleep(2)
         }
     }
     
@@ -102,17 +117,24 @@ class GameScene: SKScene {
                 //ele receber carinho
                 
                 let lionAnimatedAtlas = SKTextureAtlas(named: "LeoImages")
-                var lionFrames = [SKTexture]()
+                var lionFrames2 = [SKTexture]()
                 
-                for i in 1..<8 {
+                for i in 1..<20 {
                     let lionTextureName = "carinho\(i)"
-                    lionFrames.append(lionAnimatedAtlas.textureNamed(lionTextureName))
+                    lionFrames2.append(lionAnimatedAtlas.textureNamed(lionTextureName))
                 }
-                lionMovingFrames = lionFrames
+                var i = 19;
+                while (i > 0) {
+                    let lionTextureName = "carinho\(i)"
+                    lionFrames2.append(lionAnimatedAtlas.textureNamed(lionTextureName))
+                    i -= 1;
+                }
+                lionCuddlingFrames = lionFrames2
                 
-                let firstFrame = lionMovingFrames[0]
+                let firstFrame = lionCuddlingFrames[0]
                 lion2 = SKSpriteNode(texture: firstFrame)
                 lion2.position = CGPoint(x: self.size.width/2, y: self.size.height/3)
+                lion2.size = CGSize(width: 400, height: 400)
                 lion2.zPosition = 1
                 addChild(lion2)
                 cuddleLeo()
