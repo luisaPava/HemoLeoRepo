@@ -203,7 +203,7 @@
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" doubleSided="YES" id="cWQ-MQ-lvC" customClass="TutorialPageViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nPI-Vj-PQK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2367" y="-2811"/>
+            <point key="canvasLocation" x="-3025" y="-2813"/>
         </scene>
         <!--Tutorial2 View Controller-->
         <scene sceneID="sH9-IK-trg">
@@ -431,7 +431,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q0w-ed-pn7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-222" y="-186"/>
+            <point key="canvasLocation" x="-175" y="-156"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="CBo-oo-oxk">
@@ -465,11 +465,12 @@
                     <connections>
                         <segue destination="DsG-hq-x4v" kind="modal" identifier="mainToCanvas" id="xtU-hp-v3G"/>
                         <segue destination="VRu-cM-AZ2" kind="show" identifier="mainToThemes" id="Avs-7W-DGM"/>
+                        <segue destination="cWQ-MQ-lvC" kind="show" identifier="mainToTutorial" id="sHp-a7-B2F"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Aw-op-AJz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="579" y="75"/>
+            <point key="canvasLocation" x="638" y="76"/>
         </scene>
         <!--Canvas-->
         <scene sceneID="5fx-eo-Pu6">
@@ -1608,7 +1609,7 @@
         <!--Tutorial9 View Controller-->
         <scene sceneID="7Br-SJ-zoe">
             <objects>
-                <viewController storyboardIdentifier="tutorial9" id="4T0-Bi-dfW" customClass="Tutorial9ViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="tutorial0" id="4T0-Bi-dfW" customClass="Tutorial9ViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fDu-8x-Dke"/>
                         <viewControllerLayoutGuide type="bottom" id="php-I9-YLw"/>
@@ -1659,7 +1660,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vE4-HN-e9w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2367" y="-527"/>
+            <point key="canvasLocation" x="-2336" y="-2813"/>
         </scene>
     </scenes>
     <resources>

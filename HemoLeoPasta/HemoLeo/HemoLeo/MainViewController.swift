@@ -34,18 +34,14 @@ class MainViewController: UIViewController {
         scene.scaleMode = .resizeFill
         skView.presentScene(scene)
         
-        print("\(self.view.bounds.height) - \(self.view.bounds.width)")
         
         func prefersStatusBarHidden() -> Bool {
             return true
         }
         
-        print("\(width) - \(height)")
-        
-        //Buttons
         
         //Button to CareCard
-        careCardButton = mainModel.createButton(view: self.view, x: width / 1.906, y: height / 25.6, image: #imageLiteral(resourceName: "Health"))
+        careCardButton = mainModel.createButton(view: self.view, x: width / 1.1, y: height / 25.6, image: #imageLiteral(resourceName: "Health"))
         careCardButton.addTarget(self, action: #selector(careCardButtonAction), for: .touchUpInside)
         
         self.view.addSubview(careCardButton)
@@ -75,7 +71,10 @@ class MainViewController: UIViewController {
         self.view.addSubview(insightCardButton)
         
         //Button to Tutorial
-//        tutorialButton = mainModel.createButton(view: self.view, x: , y: <#T##CGFloat#>, image: <#T##UIImage#>)
+        tutorialButton = mainModel.createButton(view: self.view, x: width / 34.133, y: height / 1.15, image: #imageLiteral(resourceName: "Tutorial"))
+        tutorialButton.addTarget(self, action: #selector(tutorialButtonAction), for: .touchUpInside)
+        
+        self.view.addSubview(tutorialButton)
 
         
     }

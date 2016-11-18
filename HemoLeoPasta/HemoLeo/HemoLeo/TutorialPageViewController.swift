@@ -12,23 +12,15 @@ class TutorialPageViewController: UIPageViewController {
     
     // Set an array with the view controllers to be shown
     private(set) lazy var orderedViewControllers: [UIViewController] = {
-        return [self.getViewController(name: "tutorial1"),
-                self.getViewController(name: "tutorial2"),
+        return [self.getViewController(name: "tutorial0"),
+                self.getViewController(name: "tutorial1"),
                 self.getViewController(name: "tutorial2"),
                 self.getViewController(name: "tutorial3"),
-                self.getViewController(name: "tutorial3"),
                 self.getViewController(name: "tutorial4"),
-                self.getViewController(name: "tutorial4"),
-                self.getViewController(name: "tutorial5"),
                 self.getViewController(name: "tutorial5"),
                 self.getViewController(name: "tutorial6"),
-                self.getViewController(name: "tutorial5"),
                 self.getViewController(name: "tutorial7"),
-                self.getViewController(name: "tutorial7"),
-                self.getViewController(name: "tutorial8"),
-                self.getViewController(name: "tutorial8"),
-                self.getViewController(name: "tutorial9"),
-                self.getViewController(name: "tutorial9")]
+                self.getViewController(name: "tutorial8")]
     }()
     
     //MARK: - Life Cycle

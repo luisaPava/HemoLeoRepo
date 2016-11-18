@@ -28,9 +28,9 @@ class MainViewModel {
     }
     
     func createButton(view: UIView, x: CGFloat, y: CGFloat, image: UIImage) -> UIButton {
-        let button = UIButton(frame: CGRect(x: x, y: y, width: 70, height: 70))
+        let button = UIButton(frame: CGRect(x: x, y: y, width: width / 14.628, height: width / 14.628))
         button.backgroundColor = UIColor.white
-        button.layer.cornerRadius = 75
+        button.layer.cornerRadius = width / 29.2571
         button.layer.masksToBounds = true
         button.layer.zPosition = 1000
         button.showsTouchWhenHighlighted = false
