@@ -84,7 +84,7 @@ class GameScene: SKScene {
         //This is our general runAction method to make our bear walk.
         lion.run(SKAction.repeat(
             SKAction.animate(with: lionMovingFrames,
-                timePerFrame: 0.12,
+                timePerFrame: 0.016,
                 resize: false,
                 restore: true), count: 1),
                        withKey:"LionMovingInScreen")
