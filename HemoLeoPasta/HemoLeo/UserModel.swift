@@ -36,8 +36,8 @@ class UserModel: NSObject {
         return array as! Array<Leo>
     }
     
-    func createNewUser(nome: String) {
-        let newLeo = Leo(nome: nome)
+    func createNewUser(nome: String, imagem: String) {
+        let newLeo = Leo(nome: nome, imagem: imagem)
         
         userArray.append(newLeo)
         
@@ -47,6 +47,23 @@ class UserModel: NSObject {
     }
     
     func setUser(index: Int) {
+        
         Subject.sharedSubject.notify(leo: userArray[index] as Leo)
+    }
+    
+    func getLeo(atIndex i: Int) -> Leo {
+        return userArray[i]
+    }
+    
+    private func getLeo(withId id: String) -> Leo? {
+        for leo in userArray {
+            if leo.getId() == id {
+                return leo
+
+            }
+        }
+        
+        print("Usuário não encontrado")
+        return nil
     }
 }

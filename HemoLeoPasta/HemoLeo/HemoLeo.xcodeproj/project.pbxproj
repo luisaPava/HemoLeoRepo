@@ -186,6 +186,12 @@
 		4ED0D2C01DDE778700BE15CE /* ContactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED0D2BF1DDE778700BE15CE /* ContactsModel.swift */; };
 		4ED0D2C61DDE869300BE15CE /* ConnectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED0D2C51DDE869300BE15CE /* ConnectViewController.swift */; };
 		4ED0D2C81DDE8B0100BE15CE /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED0D2C71DDE8B0100BE15CE /* AddContactViewController.swift */; };
+		4EE05E691DE0F3AB0088CB99 /* UserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE05E681DE0F3AB0088CB99 /* UserCollectionViewCell.swift */; };
+		4EE05E6A1DE0F3AB0088CB99 /* UserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE05E681DE0F3AB0088CB99 /* UserCollectionViewCell.swift */; };
+		4EE05E6C1DE0FB570088CB99 /* AddUserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE05E6B1DE0FB570088CB99 /* AddUserCollectionViewCell.swift */; };
+		4EE05E6D1DE0FB570088CB99 /* AddUserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE05E6B1DE0FB570088CB99 /* AddUserCollectionViewCell.swift */; };
+		4EE05E6F1DE0FEDA0088CB99 /* carinho1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EE05E6E1DE0FEDA0088CB99 /* carinho1.png */; };
+		4EE05E701DE0FEDA0088CB99 /* carinho1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EE05E6E1DE0FEDA0088CB99 /* carinho1.png */; };
 		777711071D3E9AAC0066A0E2 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 777711061D3E9AAC0066A0E2 /* SpriteKit.framework */; };
 		7777110D1D3E9BD00066A0E2 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7777110C1D3E9BD00066A0E2 /* GameScene.swift */; };
 		7777110F1D3E9C110066A0E2 /* LeoImages.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 7777110E1D3E9C110066A0E2 /* LeoImages.atlas */; };
@@ -216,20 +222,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 8605A5B91C4F04EC00DD65FF;
 			remoteInfo = CareKit;
-		};
-		4E2B2DE31D3A984D00EED2B4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4E2B2DDB1D3A984D00EED2B4 /* ResearchKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = B183A5951A8535D100C76870;
-			remoteInfo = ResearchKit;
-		};
-		4E2B2DE51D3A984D00EED2B4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4E2B2DDB1D3A984D00EED2B4 /* ResearchKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
-			remoteInfo = ResearchKitTests;
 		};
 		4E3244901DD3EAAA00258CE1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -324,7 +316,6 @@
 		4E2B29C31D36CDC400EED2B4 /* CareCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CareCardViewController.swift; sourceTree = "<group>"; };
 		4E2B29C71D37057A00EED2B4 /* PageViewCcontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewCcontroller.swift; sourceTree = "<group>"; };
 		4E2B29CD1D395AF800EED2B4 /* SymptomCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymptomCardViewController.swift; sourceTree = "<group>"; };
-		4E2B2DDB1D3A984D00EED2B4 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = ../ResearchKit/ResearchKit.xcodeproj; sourceTree = "<group>"; };
 		4E2B2DEE1D3AA7F900EED2B4 /* Assessment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assessment.swift; sourceTree = "<group>"; };
 		4E2B2DF21D3ABEEB00EED2B4 /* AssessmentsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssessmentsManager.swift; sourceTree = "<group>"; };
 		4E2B2DF41D3AD12A00EED2B4 /* Pain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pain.swift; sourceTree = "<group>"; };
@@ -379,6 +370,9 @@
 		4ED0D2BF1DDE778700BE15CE /* ContactsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsModel.swift; sourceTree = "<group>"; };
 		4ED0D2C51DDE869300BE15CE /* ConnectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectViewController.swift; sourceTree = "<group>"; };
 		4ED0D2C71DDE8B0100BE15CE /* AddContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
+		4EE05E681DE0F3AB0088CB99 /* UserCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCollectionViewCell.swift; sourceTree = "<group>"; };
+		4EE05E6B1DE0FB570088CB99 /* AddUserCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddUserCollectionViewCell.swift; sourceTree = "<group>"; };
+		4EE05E6E1DE0FEDA0088CB99 /* carinho1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = carinho1.png; path = LeoImages.atlas/carinho1.png; sourceTree = "<group>"; };
 		777711061D3E9AAC0066A0E2 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		7777110C1D3E9BD00066A0E2 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		7777110E1D3E9C110066A0E2 /* LeoImages.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = LeoImages.atlas; sourceTree = "<group>"; };
@@ -627,6 +621,7 @@
 		2BA188971D355BAA007F1CEB /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				4EE05E6E1DE0FEDA0088CB99 /* carinho1.png */,
 				7777110E1D3E9C110066A0E2 /* LeoImages.atlas */,
 				2BA1888A1D355A2C007F1CEB /* Assets.xcassets */,
 			);
@@ -710,15 +705,6 @@
 			name = PopUp;
 			sourceTree = "<group>";
 		};
-		4E2B2DDC1D3A984D00EED2B4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				4E2B2DE41D3A984D00EED2B4 /* ResearchKit.framework */,
-				4E2B2DE61D3A984D00EED2B4 /* ResearchKitTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		4E2B2DEB1D3AA71300EED2B4 /* Assessments */ = {
 			isa = PBXGroup;
 			children = (
@@ -738,7 +724,6 @@
 				4E0364E01DD6B5BD00C2793E /* PopUp */,
 				4E0310231DD6ACB4002B8200 /* Slider */,
 				777711061D3E9AAC0066A0E2 /* SpriteKit.framework */,
-				4E2B2DDB1D3A984D00EED2B4 /* ResearchKit.xcodeproj */,
 				2B02111F1D35735800AFFB17 /* CareKit.xcodeproj */,
 			);
 			name = Frameworks;
@@ -775,12 +760,11 @@
 		4E3244961DD3EC7400258CE1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4EE05E671DE0F35F0088CB99 /* User */,
 				4ED0D2901DDDD8A500BE15CE /* Tutorial */,
 				4E4F03F61DD2A13800523507 /* Insights */,
 				4E4F03F41DD2A0E800523507 /* SymptomTracker */,
 				4E4F03F31DD2A09900523507 /* CareCard */,
-				4E973BAD1DD8FE9700D4CD8B /* UserViewController.swift */,
-				4E973BB31DD90FD700D4CD8B /* AddUserViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -1013,6 +997,17 @@
 			path = HemoLeo;
 			sourceTree = "<group>";
 		};
+		4EE05E671DE0F35F0088CB99 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				4E973BAD1DD8FE9700D4CD8B /* UserViewController.swift */,
+				4E973BB31DD90FD700D4CD8B /* AddUserViewController.swift */,
+				4EE05E681DE0F3AB0088CB99 /* UserCollectionViewCell.swift */,
+				4EE05E6B1DE0FB570088CB99 /* AddUserCollectionViewCell.swift */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
 		EB6F10E21D41C4170056606B /* AnimaçõesStorytelling */ = {
 			isa = PBXGroup;
 			children = (
@@ -1079,7 +1074,7 @@
 					2BA1887B1D355A2C007F1CEB = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = BUK6UDW987;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0810;
 						SystemCapabilities = {
 							com.apple.Push = {
 								enabled = 1;
@@ -1121,10 +1116,6 @@
 					ProductGroup = 2B0211201D35735800AFFB17 /* Products */;
 					ProjectRef = 2B02111F1D35735800AFFB17 /* CareKit.xcodeproj */;
 				},
-				{
-					ProductGroup = 4E2B2DDC1D3A984D00EED2B4 /* Products */;
-					ProjectRef = 4E2B2DDB1D3A984D00EED2B4 /* ResearchKit.xcodeproj */;
-				},
 			);
 			projectRoot = "";
 			targets = (
@@ -1149,20 +1140,6 @@
 			remoteRef = 2B0211271D35735800AFFB17 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		4E2B2DE41D3A984D00EED2B4 /* ResearchKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ResearchKit.framework;
-			remoteRef = 4E2B2DE31D3A984D00EED2B4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4E2B2DE61D3A984D00EED2B4 /* ResearchKitTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ResearchKitTests.xctest;
-			remoteRef = 4E2B2DE51D3A984D00EED2B4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -1170,6 +1147,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EE05E6F1DE0FEDA0088CB99 /* carinho1.png in Resources */,
 				2B7099BE1DDF2223006C27F0 /* TutorialPasso 2.xcassets in Resources */,
 				2B9707231DDDF30600FE3A74 /* Storytelling5.xcassets in Resources */,
 				7777110F1D3E9C110066A0E2 /* LeoImages.atlas in Resources */,
@@ -1200,6 +1178,7 @@
 				2B7099BF1DDF2223006C27F0 /* TutorialPasso 2.xcassets in Resources */,
 				2B5731271DDF80A300F1A834 /* TutorialPasso6.xcassets in Resources */,
 				4EAFA1F61DC7AAC2002BA048 /* Assets.xcassets in Resources */,
+				4EE05E701DE0FEDA0088CB99 /* carinho1.png in Resources */,
 				4EAFA1F41DC7AAC2002BA048 /* Main.storyboard in Resources */,
 				4E32449F1DD3ECD400258CE1 /* CustomActivityCell.xib in Resources */,
 				2B57311B1DDF809000F1A834 /* TutorialPasso4.xcassets in Resources */,
@@ -1262,6 +1241,7 @@
 				4E36E46A1D45BA330005A1BE /* NSCalendar+Dates.swift in Sources */,
 				4E2B29C41D36CDC400EED2B4 /* CareCardViewController.swift in Sources */,
 				2B17DB2C1DDF9231009EE442 /* MateriaisView.swift in Sources */,
+				4EE05E6C1DE0FB570088CB99 /* AddUserCollectionViewCell.swift in Sources */,
 				4ED0D2981DDDDADD00BE15CE /* Tutorial1ViewController.swift in Sources */,
 				4E36E4641D45B9A20005A1BE /* BuildInsightsOperation.swift in Sources */,
 				4EAFA20D1DC7B772002BA048 /* MainViewModel.swift in Sources */,
@@ -1293,6 +1273,7 @@
 				2B1A214E1D3E71E2007F1B68 /* OccurenciesViewController.swift in Sources */,
 				2BA188BE1D355EEF007F1CEB /* Vagetables.swift in Sources */,
 				4E2B2DF51D3AD12A00EED2B4 /* Pain.swift in Sources */,
+				4EE05E691DE0F3AB0088CB99 /* UserCollectionViewCell.swift in Sources */,
 				4E36E45B1D45B2570005A1BE /* InsightViewController.swift in Sources */,
 				4EAFA20F1DC7BF39002BA048 /* BGEnum.swift in Sources */,
 				2B7099C01DDF2223006C27F0 /* TutorialPasso2View.swift in Sources */,
@@ -1317,6 +1298,7 @@
 				4E32447D1DD3DE2700258CE1 /* Helper.swift in Sources */,
 				4E03102A1DD6ACC8002B8200 /* G8SliderStep.swift in Sources */,
 				4E32449C1DD3ECAF00258CE1 /* AddActivityViewController.swift in Sources */,
+				4EE05E6A1DE0F3AB0088CB99 /* UserCollectionViewCell.swift in Sources */,
 				4E3244891DD3DE3200258CE1 /* Bruising.swift in Sources */,
 				2B57311D1DDF809000F1A834 /* TutorialPasso4View.swift in Sources */,
 				4E32448C1DD3DE3800258CE1 /* InsightsBuilder.swift in Sources */,
@@ -1362,6 +1344,7 @@
 				4E32448D1DD3DE3800258CE1 /* QueryActivityEventsOperation.swift in Sources */,
 				4EAFA1EF1DC7AAC2002BA048 /* AppDelegate.swift in Sources */,
 				4ED0D2AB1DDDDE9D00BE15CE /* TutorialPageViewController.swift in Sources */,
+				4EE05E6D1DE0FB570088CB99 /* AddUserCollectionViewCell.swift in Sources */,
 				4E3244941DD3EB7800258CE1 /* NSCalendar+Dates.swift in Sources */,
 				4E3244841DD3DE2D00258CE1 /* Water.swift in Sources */,
 				4ED0D2C61DDE869300BE15CE /* ConnectViewController.swift in Sources */,

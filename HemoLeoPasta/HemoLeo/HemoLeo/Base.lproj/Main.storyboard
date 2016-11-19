@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uUq-gs-TkJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="s0Y-r7-cGL">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
@@ -205,6 +205,145 @@
             </objects>
             <point key="canvasLocation" x="-3025" y="-2813"/>
         </scene>
+        <!--User View Controller-->
+        <scene sceneID="O89-R9-4g2">
+            <objects>
+                <viewController id="s0Y-r7-cGL" customClass="UserViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lyN-XA-aVa"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wiw-Bz-nuf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cK4-PZ-tYd">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="XrN-Au-uCJ">
+                                <rect key="frame" x="0.0" y="151" width="1004" height="597"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ppb-Pg-KK6">
+                                    <size key="itemSize" width="371" height="526"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="userCell" id="Kzq-x6-ERE" customClass="UserCollectionViewCell" customModule="HemoLeo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="36" width="371" height="526"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="371" height="526"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4lp-p1-KeB">
+                                                    <rect key="frame" x="8" y="8" width="363" height="463"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEb-hf-cY8">
+                                                    <rect key="frame" x="122" y="479" width="127" height="39"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <connections>
+                                            <outlet property="imagem" destination="4lp-p1-KeB" id="DWk-dn-clU"/>
+                                            <outlet property="labelNome" destination="VEb-hf-cY8" id="1yz-07-8lp"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gwm-JR-Yq7">
+                                <rect key="frame" x="615" y="28" width="66" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="ov5-wh-3xi" kind="presentation" id="VTc-6B-lvY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="XrN-Au-uCJ" id="v0K-vt-2cD"/>
+                        <segue destination="uUq-gs-TkJ" kind="show" identifier="userToMain" id="ffS-Q9-k5R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rpd-HG-WnJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4114.453125" y="-1798.4375"/>
+        </scene>
+        <!--Add User View Controller-->
+        <scene sceneID="GJf-YJ-X3t">
+            <objects>
+                <viewController id="ov5-wh-3xi" customClass="AddUserViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tW9-QD-tAf"/>
+                        <viewControllerLayoutGuide type="bottom" id="PoX-Qe-6TE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aWA-pr-Hfp">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A3K-hB-eJE">
+                                <rect key="frame" x="246" y="556" width="268" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7Jq-40-EX0">
+                                <rect key="frame" x="190" y="195" width="668" height="285"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jpR-vn-HiF">
+                                    <size key="itemSize" width="167" height="267"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="addUserCell" id="E0l-1M-m1V" customClass="AddUserCollectionViewCell" customModule="HemoLeo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="9" width="167" height="267"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="167" height="267"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kaV-Ut-9Dj">
+                                                    <rect key="frame" x="0.0" y="0.0" width="167" height="267"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <connections>
+                                            <outlet property="imagem" destination="kaV-Ut-9Dj" id="bFh-g0-9g7"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOz-Wf-0AJ">
+                                <rect key="frame" x="357" y="680" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="saveBtn:" destination="ov5-wh-3xi" eventType="touchUpInside" id="yC5-ko-otL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="7Jq-40-EX0" id="BJ1-AZ-dea"/>
+                        <outlet property="txtField" destination="A3K-hB-eJE" id="YYX-Ex-IOf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tUn-7T-BuP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3159.375" y="-1798.4375"/>
+        </scene>
         <!--Tutorial2 View Controller-->
         <scene sceneID="sH9-IK-trg">
             <objects>
@@ -385,7 +524,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default" translatesAutoresizingMaskIntoConstraints="NO" id="rm3-nA-v20">
-                                                    <rect key="frame" x="-6" y="-2.5" width="600" height="461"/>
+                                                    <rect key="frame" x="-6" y="-3" width="600" height="462"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="600" id="3Qd-uQ-9P6"/>
                                                         <constraint firstAttribute="height" constant="461" id="FK4-U9-UbW"/>
@@ -1699,4 +1838,7 @@
         <image name="swimmingHIghlighted" width="110" height="110"/>
         <image name="swimmingNotSelected" width="110" height="110"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ffS-Q9-k5R"/>
+    </inferredMetricsTieBreakers>
 </document>
