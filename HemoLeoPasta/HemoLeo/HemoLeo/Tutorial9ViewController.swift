@@ -20,9 +20,8 @@ class Tutorial9ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    func viewDidAppear() {
-        super.viewDidAppear(true)
-        
+    func viewWillAppear() {
+        super.viewWillAppear(false)
         if UIDevice.current.modelName.contains("iPhone") {
             
             
@@ -35,11 +34,16 @@ class Tutorial9ViewController: UIViewController {
         
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
-        
+    override func viewWillDisappear(_ animated: Bool) {
+//        super.viewWillDisappear
         materiais.removeMateriaisAnimation()
     }
     
+    
+    @IBAction func redo(_ sender: Any) {
+        materiais.removeMateriaisAnimation()
+        materiais.addMateriaisAnimation()
+    }
     
     
 

@@ -15,7 +15,7 @@ class OccurenciesViewController: UIViewController {
     var button: UIButton!
     var occurencies: Array<Int> = [0, 0, 0, 0, 0, 0, 0]
     var path = ""
-    let color: Array<UIColor> = [.blue, .green, .red, .yellow, .black, .lightGray, .orange]
+    let color: Array<UIColor> = [UIColor(netHex: 0x54C7FC), UIColor(netHex: 0xD0011B), UIColor(netHex: 0x44DB5E), UIColor(netHex: 0xFF9600), UIColor(netHex: 0x9B59B6), UIColor(netHex: 0xA4AAB3), UIColor(netHex: 0xFFCD00)]
     
     private let codingManager: NSCodingManager = NSCodingManager.sharedNSCodingManager
     private let careCardModel = CareCardModel.sharedCareCardModel
@@ -32,9 +32,7 @@ class OccurenciesViewController: UIViewController {
         tableView.register(UINib(nibName: "CustomActivityCell", bundle: nil), forCellReuseIdentifier: "idCellNormal")
         tableView.clipsToBounds = true
 
-        
         self.view.addSubview(tableView)
-        
         self.getDefaultOccurencies()
         
     }
