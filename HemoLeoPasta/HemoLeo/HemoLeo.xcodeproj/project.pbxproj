@@ -172,6 +172,8 @@
 		4EE05E6D1DE0FB570088CB99 /* AddUserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE05E6B1DE0FB570088CB99 /* AddUserCollectionViewCell.swift */; };
 		4EE05E6F1DE0FEDA0088CB99 /* carinho1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EE05E6E1DE0FEDA0088CB99 /* carinho1.png */; };
 		4EE05E701DE0FEDA0088CB99 /* carinho1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EE05E6E1DE0FEDA0088CB99 /* carinho1.png */; };
+		4EE05E7D1DE25DFB0088CB99 /* UIViewIBDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE05E7C1DE25DFB0088CB99 /* UIViewIBDesignable.swift */; };
+		4EE05E7E1DE25DFB0088CB99 /* UIViewIBDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE05E7C1DE25DFB0088CB99 /* UIViewIBDesignable.swift */; };
 		777711071D3E9AAC0066A0E2 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 777711061D3E9AAC0066A0E2 /* SpriteKit.framework */; };
 		7777110D1D3E9BD00066A0E2 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7777110C1D3E9BD00066A0E2 /* GameScene.swift */; };
 		7777110F1D3E9C110066A0E2 /* LeoImages.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 7777110E1D3E9C110066A0E2 /* LeoImages.atlas */; };
@@ -358,6 +360,7 @@
 		4EE05E681DE0F3AB0088CB99 /* UserCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCollectionViewCell.swift; sourceTree = "<group>"; };
 		4EE05E6B1DE0FB570088CB99 /* AddUserCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddUserCollectionViewCell.swift; sourceTree = "<group>"; };
 		4EE05E6E1DE0FEDA0088CB99 /* carinho1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = carinho1.png; path = LeoImages.atlas/carinho1.png; sourceTree = "<group>"; };
+		4EE05E7C1DE25DFB0088CB99 /* UIViewIBDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewIBDesignable.swift; sourceTree = "<group>"; };
 		777711061D3E9AAC0066A0E2 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		7777110C1D3E9BD00066A0E2 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		7777110E1D3E9C110066A0E2 /* LeoImages.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = LeoImages.atlas; sourceTree = "<group>"; };
@@ -880,6 +883,7 @@
 			isa = PBXGroup;
 			children = (
 				4E6796871DDD35C9000E0A5E /* ADVSegmentedControl.swift */,
+				4EE05E7C1DE25DFB0088CB99 /* UIViewIBDesignable.swift */,
 			);
 			name = IBDesignables;
 			sourceTree = "<group>";
@@ -1239,6 +1243,7 @@
 				4E36E4641D45B9A20005A1BE /* BuildInsightsOperation.swift in Sources */,
 				4EAFA20D1DC7B772002BA048 /* MainViewModel.swift in Sources */,
 				2B7997F21D37CD9F00D0996D /* Story2ViewController.swift in Sources */,
+				4EE05E7D1DE25DFB0088CB99 /* UIViewIBDesignable.swift in Sources */,
 				4ED0D2A21DDDDB3B00BE15CE /* Tutorial6ViewController.swift in Sources */,
 				4E2B2DF31D3ABEEB00EED2B4 /* AssessmentsManager.swift in Sources */,
 				4E0364E61DD6B6D200C2793E /* PopupController.swift in Sources */,
@@ -1308,6 +1313,7 @@
 				4E3244861DD3DE2D00258CE1 /* ToAddedActivitiesData.swift in Sources */,
 				4E3244971DD3EC9D00258CE1 /* InsightViewController.swift in Sources */,
 				4E3244991DD3ECA900258CE1 /* SurveyController.swift in Sources */,
+				4EE05E7E1DE25DFB0088CB99 /* UIViewIBDesignable.swift in Sources */,
 				4ED0D2B41DDDDEBD00BE15CE /* Tutorial9ViewController.swift in Sources */,
 				4E3244811DD3DE2D00258CE1 /* Exercise.swift in Sources */,
 				4ED0D2B21DDDDEB500BE15CE /* Tutorial7ViewController.swift in Sources */,
