@@ -61,6 +61,7 @@ extension UserViewController: UICollectionViewDataSource {
         let leo = userModel.getLeo(atIndex: indexPath.row)
         
         cell.imagem.image =  UIImage(named: leo.getImage())
+        print(leo.nome)
         cell.labelNome.text = leo.nome
         
         return cell
