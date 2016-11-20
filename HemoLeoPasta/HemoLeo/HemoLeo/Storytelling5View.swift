@@ -79,9 +79,9 @@ class Storytelling5View : UIView, CAAnimationDelegate {
 		let fala9__xScale = Storytelling5PassthroughView()
 		let fala9__yScale = Storytelling5PassthroughView()
 		let fala9 = UIImageView()
-		let imgFala7 = UIImage(named:"Fala7.png", in: bundle, compatibleWith: nil)
+		let imgFala7 = UIImage(named:"Fala9.png", in: bundle, compatibleWith: nil)
 		if imgFala7 == nil {
-			print("** Warning: Could not create image from 'Fala7.png'")
+			print("** Warning: Could not create image from 'Fala9.png'")
 		}
 		fala9.image = imgFala7
 		fala9.contentMode = .center
@@ -129,9 +129,9 @@ class Storytelling5View : UIView, CAAnimationDelegate {
 		let fala8__xScale = Storytelling5PassthroughView()
 		let fala8__yScale = Storytelling5PassthroughView()
 		let fala8 = UIImageView()
-		let imgFala6 = UIImage(named:"Fala6.png", in: bundle, compatibleWith: nil)
+		let imgFala6 = UIImage(named:"Fala8.png", in: bundle, compatibleWith: nil)
 		if imgFala6 == nil {
-			print("** Warning: Could not create image from 'Fala6.png'")
+			print("** Warning: Could not create image from 'Fala8.png'")
 		}
 		fala8.image = imgFala6
 		fala8.contentMode = .center

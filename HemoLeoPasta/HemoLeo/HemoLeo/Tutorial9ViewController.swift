@@ -16,6 +16,13 @@ class Tutorial9ViewController: UIViewController {
         
         self.view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "BG"))
         
+
+        // Do any additional setup after loading the view.
+    }
+    
+    func viewDidAppear() {
+        super.viewDidAppear(true)
+        
         if UIDevice.current.modelName.contains("iPhone") {
             
             
@@ -25,9 +32,16 @@ class Tutorial9ViewController: UIViewController {
             materiais.clipsToBounds = true
             
         }
-
-        // Do any additional setup after loading the view.
+        
     }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        
+        materiais.removeMateriaisAnimation()
+    }
+    
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

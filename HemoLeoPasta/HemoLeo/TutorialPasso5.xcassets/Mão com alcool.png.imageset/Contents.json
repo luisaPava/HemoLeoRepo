@@ -2,17 +2,21 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "2x",
-      "filename" : "Mão com alcool@2x.png"
+      "filename" : "Mão com alcool.png",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "Mão com alcool.png"
+      "filename" : "Mão com alcool@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {
     "version" : 1,
-    "author" : "coreanimator"
+    "author" : "xcode"
   }
 }

@@ -2,11 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Leo sorrindo.png",
+      "filename" : "GarroteP6.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "GarroteP6@2x.png",
       "scale" : "2x"
     },
     {

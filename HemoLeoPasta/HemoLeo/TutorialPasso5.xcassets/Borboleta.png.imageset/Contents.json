@@ -2,17 +2,21 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "2x",
-      "filename" : "Borboleta@2x.png"
+      "filename" : "Borboleta.png",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "Borboleta.png"
+      "filename" : "Borboleta@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {
     "version" : 1,
-    "author" : "coreanimator"
+    "author" : "xcode"
   }
 }

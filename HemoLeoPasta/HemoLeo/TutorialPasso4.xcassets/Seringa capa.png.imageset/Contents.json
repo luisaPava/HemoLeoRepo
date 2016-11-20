@@ -2,17 +2,21 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "2x",
-      "filename" : "Seringa capa@2x.png"
+      "filename" : "Seringa capa.png",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "Seringa capa.png"
+      "filename" : "Seringa capa@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {
     "version" : 1,
-    "author" : "coreanimator"
+    "author" : "xcode"
   }
 }

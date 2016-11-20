@@ -2,17 +2,21 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "2x",
-      "filename" : "Garrote@2x.png"
+      "filename" : "Garrote.png",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "Garrote.png"
+      "filename" : "Garrote@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {
     "version" : 1,
-    "author" : "coreanimator"
+    "author" : "xcode"
   }
 }

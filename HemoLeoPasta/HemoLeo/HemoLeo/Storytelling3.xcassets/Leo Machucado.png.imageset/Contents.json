@@ -2,13 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "2x",
-      "filename" : "Fala7@2x.png"
-    },
-    {
-      "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "Fala7.png"
+      "filename" : "Leo Machucado.png"
     }
   ],
   "info" : {
