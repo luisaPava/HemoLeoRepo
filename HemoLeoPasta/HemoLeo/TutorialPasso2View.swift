@@ -200,30 +200,30 @@ class TutorialPasso2View : UIView, CAAnimationDelegate {
 		viewsByName["Dispo virado__yScale"] = dispoVirado__yScale
 		viewsByName["Dispo virado"] = dispoVirado
 
-		let dispositivoVirado__root = TutorialPasso2PassthroughView()
-		let dispositivoVirado__xScale = TutorialPasso2PassthroughView()
-		let dispositivoVirado__yScale = TutorialPasso2PassthroughView()
-		let dispositivoVirado = UIImageView()
-		let imgDispositivoVirado = UIImage(named:"Dispositivo virado.png", in: bundle, compatibleWith: nil)
-		if imgDispositivoVirado == nil {
-			print("** Warning: Could not create image from 'Dispositivo virado.png'")
+		let dispositivoViradoP2__root = TutorialPasso2PassthroughView()
+		let dispositivoViradoP2__xScale = TutorialPasso2PassthroughView()
+		let dispositivoViradoP2__yScale = TutorialPasso2PassthroughView()
+		let dispositivoViradoP2 = UIImageView()
+		let imgDispositivoViradoP2 = UIImage(named:"DispositivoViradoP2.png", in: bundle, compatibleWith: nil)
+		if imgDispositivoViradoP2 == nil {
+			print("** Warning: Could not create image from 'DispositivoViradoP2.png'")
 		}
-		dispositivoVirado.image = imgDispositivoVirado
-		dispositivoVirado.contentMode = .center
-		dispositivoVirado.bounds = CGRect(x:0, y:0, width:137.0, height:215.0)
-		dispositivoVirado__root.layer.position = CGPoint(x:178.211, y:202.000)
-		dispositivoVirado__xScale.transform = CGAffineTransform(scaleX: 1.00, y: 1.00)
-		dispositivoVirado__yScale.transform = CGAffineTransform(scaleX: 1.00, y: 1.00)
-		dispositivoVirado__root.transform = CGAffineTransform(rotationAngle: 0.000)
-		dispoVirado.addSubview(dispositivoVirado__root)
-		dispositivoVirado__root.addSubview(dispositivoVirado__xScale)
-		dispositivoVirado__xScale.addSubview(dispositivoVirado__yScale)
-		dispositivoVirado__yScale.addSubview(dispositivoVirado)
-		dispoVirado.addSubview(dispositivoVirado__root)
-		viewsByName["Dispositivo virado__root"] = dispositivoVirado__root
-		viewsByName["Dispositivo virado__xScale"] = dispositivoVirado__xScale
-		viewsByName["Dispositivo virado__yScale"] = dispositivoVirado__yScale
-		viewsByName["Dispositivo virado"] = dispositivoVirado
+		dispositivoViradoP2.image = imgDispositivoViradoP2
+		dispositivoViradoP2.contentMode = .center
+		dispositivoViradoP2.bounds = CGRect(x:0, y:0, width:362.0, height:404.0)
+		dispositivoViradoP2__root.layer.position = CGPoint(x:178.000, y:202.000)
+		dispositivoViradoP2__xScale.transform = CGAffineTransform(scaleX: 0.99, y: 1.00)
+		dispositivoViradoP2__yScale.transform = CGAffineTransform(scaleX: 1.00, y: 0.99)
+		dispositivoViradoP2__root.transform = CGAffineTransform(rotationAngle: 0.000)
+		dispoVirado.addSubview(dispositivoViradoP2__root)
+		dispositivoViradoP2__root.addSubview(dispositivoViradoP2__xScale)
+		dispositivoViradoP2__xScale.addSubview(dispositivoViradoP2__yScale)
+		dispositivoViradoP2__yScale.addSubview(dispositivoViradoP2)
+		dispoVirado.addSubview(dispositivoViradoP2__root)
+		viewsByName["DispositivoViradoP2__root"] = dispositivoViradoP2__root
+		viewsByName["DispositivoViradoP2__xScale"] = dispositivoViradoP2__xScale
+		viewsByName["DispositivoViradoP2__yScale"] = dispositivoViradoP2__yScale
+		viewsByName["DispositivoViradoP2"] = dispositivoViradoP2
 
 		let embalagemVirada__root = TutorialPasso2PassthroughView()
 		let embalagemVirada__xScale = TutorialPasso2PassthroughView()
@@ -250,40 +250,20 @@ class TutorialPasso2View : UIView, CAAnimationDelegate {
 		viewsByName["embalagem virada__yScale"] = embalagemVirada__yScale
 		viewsByName["embalagem virada"] = embalagemVirada
 
-		let tudo__root = TutorialPasso2PassthroughView()
-		let tudo__xScale = TutorialPasso2PassthroughView()
-		let tudo__yScale = TutorialPasso2PassthroughView()
-		let tudo = UIView()
-		tudo.bounds = CGRect(x:0, y:0, width:362.0, height:404.0)
-		tudo__root.layer.position = CGPoint(x:207.000, y:245.000)
-		tudo__root.alpha = 0.00
-		tudo__xScale.transform = CGAffineTransform(scaleX: 1.00, y: 1.00)
-		tudo__yScale.transform = CGAffineTransform(scaleX: 1.00, y: 1.00)
-		tudo__root.transform = CGAffineTransform(rotationAngle: 0.000)
-		__scaling__.addSubview(tudo__root)
-		tudo__root.addSubview(tudo__xScale)
-		tudo__xScale.addSubview(tudo__yScale)
-		tudo__yScale.addSubview(tudo)
-		__scaling__.addSubview(tudo__root)
-		viewsByName["Tudo__root"] = tudo__root
-		viewsByName["Tudo__xScale"] = tudo__xScale
-		viewsByName["Tudo__yScale"] = tudo__yScale
-		viewsByName["Tudo"] = tudo
-
 		let dispositivoGrupo__root = TutorialPasso2PassthroughView()
 		let dispositivoGrupo__xScale = TutorialPasso2PassthroughView()
 		let dispositivoGrupo__yScale = TutorialPasso2PassthroughView()
 		let dispositivoGrupo = UIView()
 		dispositivoGrupo.bounds = CGRect(x:0, y:0, width:362.0, height:404.0)
-		dispositivoGrupo__root.layer.position = CGPoint(x:181.000, y:202.000)
+		dispositivoGrupo__root.layer.position = CGPoint(x:207.000, y:245.000)
 		dispositivoGrupo__xScale.transform = CGAffineTransform(scaleX: 1.00, y: 1.00)
 		dispositivoGrupo__yScale.transform = CGAffineTransform(scaleX: 1.00, y: 1.00)
 		dispositivoGrupo__root.transform = CGAffineTransform(rotationAngle: 0.000)
-		tudo.addSubview(dispositivoGrupo__root)
+		__scaling__.addSubview(dispositivoGrupo__root)
 		dispositivoGrupo__root.addSubview(dispositivoGrupo__xScale)
 		dispositivoGrupo__xScale.addSubview(dispositivoGrupo__yScale)
 		dispositivoGrupo__yScale.addSubview(dispositivoGrupo)
-		tudo.addSubview(dispositivoGrupo__root)
+		__scaling__.addSubview(dispositivoGrupo__root)
 		viewsByName["DispositivoGrupo__root"] = dispositivoGrupo__root
 		viewsByName["DispositivoGrupo__xScale"] = dispositivoGrupo__xScale
 		viewsByName["DispositivoGrupo__yScale"] = dispositivoGrupo__yScale
@@ -339,6 +319,25 @@ class TutorialPasso2View : UIView, CAAnimationDelegate {
 		viewsByName["Embalagem__yScale"] = embalagem__yScale
 		viewsByName["Embalagem"] = embalagem
 
+		let tampaGrupo__root = TutorialPasso2PassthroughView()
+		let tampaGrupo__xScale = TutorialPasso2PassthroughView()
+		let tampaGrupo__yScale = TutorialPasso2PassthroughView()
+		let tampaGrupo = UIView()
+		tampaGrupo.bounds = CGRect(x:0, y:0, width:313.0, height:174.8)
+		tampaGrupo__root.layer.position = CGPoint(x:195.000, y:141.383)
+		tampaGrupo__xScale.transform = CGAffineTransform(scaleX: 1.00, y: 1.00)
+		tampaGrupo__yScale.transform = CGAffineTransform(scaleX: 1.00, y: 1.00)
+		tampaGrupo__root.transform = CGAffineTransform(rotationAngle: 0.000)
+		__scaling__.addSubview(tampaGrupo__root)
+		tampaGrupo__root.addSubview(tampaGrupo__xScale)
+		tampaGrupo__xScale.addSubview(tampaGrupo__yScale)
+		tampaGrupo__yScale.addSubview(tampaGrupo)
+		__scaling__.addSubview(tampaGrupo__root)
+		viewsByName["TampaGrupo__root"] = tampaGrupo__root
+		viewsByName["TampaGrupo__xScale"] = tampaGrupo__xScale
+		viewsByName["TampaGrupo__yScale"] = tampaGrupo__yScale
+		viewsByName["TampaGrupo"] = tampaGrupo
+
 		let tampaDot__root = TutorialPasso2PassthroughView()
 		let tampaDot__xScale = TutorialPasso2PassthroughView()
 		let tampaDot__yScale = TutorialPasso2PassthroughView()
@@ -350,16 +349,16 @@ class TutorialPasso2View : UIView, CAAnimationDelegate {
 		tampaDot.image = imgTampaDot
 		tampaDot.contentMode = .center
 		tampaDot.bounds = CGRect(x:0, y:0, width:313.0, height:173.0)
-		tampaDot__root.layer.position = CGPoint(x:169.000, y:99.267)
+		tampaDot__root.layer.position = CGPoint(x:156.500, y:88.267)
 		tampaDot__root.alpha = 0.00
 		tampaDot__xScale.transform = CGAffineTransform(scaleX: 1.00, y: 1.00)
 		tampaDot__yScale.transform = CGAffineTransform(scaleX: 1.00, y: 1.00)
 		tampaDot__root.transform = CGAffineTransform(rotationAngle: 0.000)
-		tudo.addSubview(tampaDot__root)
+		tampaGrupo.addSubview(tampaDot__root)
 		tampaDot__root.addSubview(tampaDot__xScale)
 		tampaDot__xScale.addSubview(tampaDot__yScale)
 		tampaDot__yScale.addSubview(tampaDot)
-		tudo.addSubview(tampaDot__root)
+		tampaGrupo.addSubview(tampaDot__root)
 		viewsByName["Tampa dot__root"] = tampaDot__root
 		viewsByName["Tampa dot__xScale"] = tampaDot__xScale
 		viewsByName["Tampa dot__yScale"] = tampaDot__yScale
@@ -376,15 +375,15 @@ class TutorialPasso2View : UIView, CAAnimationDelegate {
 		tampa.image = imgTampa
 		tampa.contentMode = .center
 		tampa.bounds = CGRect(x:0, y:0, width:313.0, height:173.0)
-		tampa__root.layer.position = CGPoint(x:169.000, y:98.763)
+		tampa__root.layer.position = CGPoint(x:156.500, y:87.763)
 		tampa__xScale.transform = CGAffineTransform(scaleX: 1.00, y: 1.00)
 		tampa__yScale.transform = CGAffineTransform(scaleX: 1.00, y: 1.00)
 		tampa__root.transform = CGAffineTransform(rotationAngle: 0.000)
-		tudo.addSubview(tampa__root)
+		tampaGrupo.addSubview(tampa__root)
 		tampa__root.addSubview(tampa__xScale)
 		tampa__xScale.addSubview(tampa__yScale)
 		tampa__yScale.addSubview(tampa)
-		tudo.addSubview(tampa__root)
+		tampaGrupo.addSubview(tampa__root)
 		viewsByName["Tampa__root"] = tampa__root
 		viewsByName["Tampa__xScale"] = tampa__xScale
 		viewsByName["Tampa__yScale"] = tampa__yScale
@@ -401,16 +400,16 @@ class TutorialPasso2View : UIView, CAAnimationDelegate {
 		tampaAberta.image = imgTampaAberta
 		tampaAberta.contentMode = .center
 		tampaAberta.bounds = CGRect(x:0, y:0, width:313.0, height:173.0)
-		tampaAberta__root.layer.position = CGPoint(x:169.000, y:97.500)
+		tampaAberta__root.layer.position = CGPoint(x:156.500, y:86.500)
 		tampaAberta__root.alpha = 0.00
 		tampaAberta__xScale.transform = CGAffineTransform(scaleX: 1.00, y: 1.00)
 		tampaAberta__yScale.transform = CGAffineTransform(scaleX: 1.00, y: 1.00)
 		tampaAberta__root.transform = CGAffineTransform(rotationAngle: 0.000)
-		tudo.addSubview(tampaAberta__root)
+		tampaGrupo.addSubview(tampaAberta__root)
 		tampaAberta__root.addSubview(tampaAberta__xScale)
 		tampaAberta__xScale.addSubview(tampaAberta__yScale)
 		tampaAberta__yScale.addSubview(tampaAberta)
-		tudo.addSubview(tampaAberta__root)
+		tampaGrupo.addSubview(tampaAberta__root)
 		viewsByName["Tampa aberta__root"] = tampaAberta__root
 		viewsByName["Tampa aberta__xScale"] = tampaAberta__xScale
 		viewsByName["Tampa aberta__yScale"] = tampaAberta__yScale
@@ -448,45 +447,15 @@ class TutorialPasso2View : UIView, CAAnimationDelegate {
 			self.animationCompletions[layer.animation(forKey: "Passo2")!] = complete
 		}
 
-		let tudoRotationAnimation = CAKeyframeAnimation(keyPath: "transform.rotation.z")
-		tudoRotationAnimation.duration = 14.000
-		tudoRotationAnimation.values = [0.000, 0.000, -3.142, -3.142] as [Float]
-		tudoRotationAnimation.keyTimes = [0.000, 0.350, 0.407, 1.000] as [NSNumber]
-		tudoRotationAnimation.timingFunctions = [linearTiming, linearTiming, linearTiming]
-		tudoRotationAnimation.beginTime = beginTime
-		tudoRotationAnimation.fillMode = fillMode
-		tudoRotationAnimation.isRemovedOnCompletion = removedOnCompletion
-		self.viewsByName["Tudo__root"]?.layer.add(tudoRotationAnimation, forKey:"Passo2_Rotation")
-
-		let tudoOpacityAnimation = CAKeyframeAnimation(keyPath: "opacity")
-		tudoOpacityAnimation.duration = 14.000
-		tudoOpacityAnimation.values = [0.000, 1.000, 1.000, 0.000, 0.000] as [Float]
-		tudoOpacityAnimation.keyTimes = [0.000, 0.032, 0.350, 0.407, 1.000] as [NSNumber]
-		tudoOpacityAnimation.timingFunctions = [linearTiming, linearTiming, linearTiming, linearTiming]
-		tudoOpacityAnimation.beginTime = beginTime
-		tudoOpacityAnimation.fillMode = fillMode
-		tudoOpacityAnimation.isRemovedOnCompletion = removedOnCompletion
-		self.viewsByName["Tudo__root"]?.layer.add(tudoOpacityAnimation, forKey:"Passo2_Opacity")
-
-		let tampaDotOpacityAnimation = CAKeyframeAnimation(keyPath: "opacity")
-		tampaDotOpacityAnimation.duration = 14.000
-		tampaDotOpacityAnimation.values = [0.000, 0.000, 1.000, 1.000] as [Float]
-		tampaDotOpacityAnimation.keyTimes = [0.000, 0.168, 0.184, 1.000] as [NSNumber]
-		tampaDotOpacityAnimation.timingFunctions = [linearTiming, linearTiming, linearTiming]
-		tampaDotOpacityAnimation.beginTime = beginTime
-		tampaDotOpacityAnimation.fillMode = fillMode
-		tampaDotOpacityAnimation.isRemovedOnCompletion = removedOnCompletion
-		self.viewsByName["Tampa dot__root"]?.layer.add(tampaDotOpacityAnimation, forKey:"Passo2_Opacity")
-
-		let tampaAbertaOpacityAnimation = CAKeyframeAnimation(keyPath: "opacity")
-		tampaAbertaOpacityAnimation.duration = 14.000
-		tampaAbertaOpacityAnimation.values = [0.000, 0.000, 1.000, 1.000, 0.000, 0.000] as [Float]
-		tampaAbertaOpacityAnimation.keyTimes = [0.000, 0.186, 0.218, 0.261, 0.293, 1.000] as [NSNumber]
-		tampaAbertaOpacityAnimation.timingFunctions = [linearTiming, linearTiming, linearTiming, linearTiming, linearTiming]
-		tampaAbertaOpacityAnimation.beginTime = beginTime
-		tampaAbertaOpacityAnimation.fillMode = fillMode
-		tampaAbertaOpacityAnimation.isRemovedOnCompletion = removedOnCompletion
-		self.viewsByName["Tampa aberta__root"]?.layer.add(tampaAbertaOpacityAnimation, forKey:"Passo2_Opacity")
+		let diluenteOpacityAnimation = CAKeyframeAnimation(keyPath: "opacity")
+		diluenteOpacityAnimation.duration = 14.000
+		diluenteOpacityAnimation.values = [0.000, 0.000, 1.000, 1.000] as [Float]
+		diluenteOpacityAnimation.keyTimes = [0.000, 0.486, 0.507, 1.000] as [NSNumber]
+		diluenteOpacityAnimation.timingFunctions = [linearTiming, linearTiming, linearTiming]
+		diluenteOpacityAnimation.beginTime = beginTime
+		diluenteOpacityAnimation.fillMode = fillMode
+		diluenteOpacityAnimation.isRemovedOnCompletion = removedOnCompletion
+		self.viewsByName["Diluente__root"]?.layer.add(diluenteOpacityAnimation, forKey:"Passo2_Opacity")
 
 		let dispoViradoRotationAnimation = CAKeyframeAnimation(keyPath: "transform.rotation.z")
 		dispoViradoRotationAnimation.duration = 14.000
@@ -528,26 +497,6 @@ class TutorialPasso2View : UIView, CAAnimationDelegate {
 		dispoViradoTranslationYAnimation.isRemovedOnCompletion = removedOnCompletion
 		self.viewsByName["Dispo virado__root"]?.layer.add(dispoViradoTranslationYAnimation, forKey:"Passo2_TranslationY")
 
-		let setaParaCimaOpacityAnimation = CAKeyframeAnimation(keyPath: "opacity")
-		setaParaCimaOpacityAnimation.duration = 14.000
-		setaParaCimaOpacityAnimation.values = [0.000, 0.000, 1.000, 0.000, 1.000, 0.000] as [Float]
-		setaParaCimaOpacityAnimation.keyTimes = [0.000, 0.786, 0.857, 0.893, 0.929, 1.000] as [NSNumber]
-		setaParaCimaOpacityAnimation.timingFunctions = [linearTiming, linearTiming, linearTiming, linearTiming, linearTiming]
-		setaParaCimaOpacityAnimation.beginTime = beginTime
-		setaParaCimaOpacityAnimation.fillMode = fillMode
-		setaParaCimaOpacityAnimation.isRemovedOnCompletion = removedOnCompletion
-		self.viewsByName["Seta para cima__root"]?.layer.add(setaParaCimaOpacityAnimation, forKey:"Passo2_Opacity")
-
-		let tampaOpacityAnimation = CAKeyframeAnimation(keyPath: "opacity")
-		tampaOpacityAnimation.duration = 14.000
-		tampaOpacityAnimation.values = [1.000, 1.000, 0.000, 0.000] as [Float]
-		tampaOpacityAnimation.keyTimes = [0.000, 0.200, 0.218, 1.000] as [NSNumber]
-		tampaOpacityAnimation.timingFunctions = [linearTiming, linearTiming, linearTiming]
-		tampaOpacityAnimation.beginTime = beginTime
-		tampaOpacityAnimation.fillMode = fillMode
-		tampaOpacityAnimation.isRemovedOnCompletion = removedOnCompletion
-		self.viewsByName["Tampa__root"]?.layer.add(tampaOpacityAnimation, forKey:"Passo2_Opacity")
-
 		let setaAbrirOpacityAnimation = CAKeyframeAnimation(keyPath: "opacity")
 		setaAbrirOpacityAnimation.duration = 14.000
 		setaAbrirOpacityAnimation.values = [0.000, 0.000, 1.000, 0.000, 1.000, 0.000, 0.000] as [Float]
@@ -557,16 +506,6 @@ class TutorialPasso2View : UIView, CAAnimationDelegate {
 		setaAbrirOpacityAnimation.fillMode = fillMode
 		setaAbrirOpacityAnimation.isRemovedOnCompletion = removedOnCompletion
 		self.viewsByName["Seta abrir__root"]?.layer.add(setaAbrirOpacityAnimation, forKey:"Passo2_Opacity")
-
-		let diluenteOpacityAnimation = CAKeyframeAnimation(keyPath: "opacity")
-		diluenteOpacityAnimation.duration = 14.000
-		diluenteOpacityAnimation.values = [0.000, 0.000, 1.000, 1.000] as [Float]
-		diluenteOpacityAnimation.keyTimes = [0.000, 0.486, 0.507, 1.000] as [NSNumber]
-		diluenteOpacityAnimation.timingFunctions = [linearTiming, linearTiming, linearTiming]
-		diluenteOpacityAnimation.beginTime = beginTime
-		diluenteOpacityAnimation.fillMode = fillMode
-		diluenteOpacityAnimation.isRemovedOnCompletion = removedOnCompletion
-		self.viewsByName["Diluente__root"]?.layer.add(diluenteOpacityAnimation, forKey:"Passo2_Opacity")
 
 		let embalagemViradaTranslationXAnimation = CAKeyframeAnimation(keyPath: "transform.translation.x")
 		embalagemViradaTranslationXAnimation.duration = 14.000
@@ -597,25 +536,63 @@ class TutorialPasso2View : UIView, CAAnimationDelegate {
 		setaParaBaixoOpacityAnimation.fillMode = fillMode
 		setaParaBaixoOpacityAnimation.isRemovedOnCompletion = removedOnCompletion
 		self.viewsByName["Seta para baixo__root"]?.layer.add(setaParaBaixoOpacityAnimation, forKey:"Passo2_Opacity")
+
+		let tampaDotOpacityAnimation = CAKeyframeAnimation(keyPath: "opacity")
+		tampaDotOpacityAnimation.duration = 14.000
+		tampaDotOpacityAnimation.values = [0.000, 0.000, 1.000, 1.000] as [Float]
+		tampaDotOpacityAnimation.keyTimes = [0.000, 0.168, 0.184, 1.000] as [NSNumber]
+		tampaDotOpacityAnimation.timingFunctions = [linearTiming, linearTiming, linearTiming]
+		tampaDotOpacityAnimation.beginTime = beginTime
+		tampaDotOpacityAnimation.fillMode = fillMode
+		tampaDotOpacityAnimation.isRemovedOnCompletion = removedOnCompletion
+		self.viewsByName["Tampa dot__root"]?.layer.add(tampaDotOpacityAnimation, forKey:"Passo2_Opacity")
+
+		let tampaAbertaOpacityAnimation = CAKeyframeAnimation(keyPath: "opacity")
+		tampaAbertaOpacityAnimation.duration = 14.000
+		tampaAbertaOpacityAnimation.values = [0.000, 0.000, 1.000, 1.000, 0.000, 0.000] as [Float]
+		tampaAbertaOpacityAnimation.keyTimes = [0.000, 0.186, 0.218, 0.261, 0.293, 1.000] as [NSNumber]
+		tampaAbertaOpacityAnimation.timingFunctions = [linearTiming, linearTiming, linearTiming, linearTiming, linearTiming]
+		tampaAbertaOpacityAnimation.beginTime = beginTime
+		tampaAbertaOpacityAnimation.fillMode = fillMode
+		tampaAbertaOpacityAnimation.isRemovedOnCompletion = removedOnCompletion
+		self.viewsByName["Tampa aberta__root"]?.layer.add(tampaAbertaOpacityAnimation, forKey:"Passo2_Opacity")
+
+		let setaParaCimaOpacityAnimation = CAKeyframeAnimation(keyPath: "opacity")
+		setaParaCimaOpacityAnimation.duration = 14.000
+		setaParaCimaOpacityAnimation.values = [0.000, 0.000, 1.000, 0.000, 1.000, 0.000] as [Float]
+		setaParaCimaOpacityAnimation.keyTimes = [0.000, 0.786, 0.857, 0.893, 0.929, 1.000] as [NSNumber]
+		setaParaCimaOpacityAnimation.timingFunctions = [linearTiming, linearTiming, linearTiming, linearTiming, linearTiming]
+		setaParaCimaOpacityAnimation.beginTime = beginTime
+		setaParaCimaOpacityAnimation.fillMode = fillMode
+		setaParaCimaOpacityAnimation.isRemovedOnCompletion = removedOnCompletion
+		self.viewsByName["Seta para cima__root"]?.layer.add(setaParaCimaOpacityAnimation, forKey:"Passo2_Opacity")
+
+		let tampaOpacityAnimation = CAKeyframeAnimation(keyPath: "opacity")
+		tampaOpacityAnimation.duration = 14.000
+		tampaOpacityAnimation.values = [1.000, 1.000, 0.000, 0.000] as [Float]
+		tampaOpacityAnimation.keyTimes = [0.000, 0.200, 0.218, 1.000] as [NSNumber]
+		tampaOpacityAnimation.timingFunctions = [linearTiming, linearTiming, linearTiming]
+		tampaOpacityAnimation.beginTime = beginTime
+		tampaOpacityAnimation.fillMode = fillMode
+		tampaOpacityAnimation.isRemovedOnCompletion = removedOnCompletion
+		self.viewsByName["Tampa__root"]?.layer.add(tampaOpacityAnimation, forKey:"Passo2_Opacity")
 	}
 
 	func removePasso2Animation() {
 		self.layer.removeAnimation(forKey: "Passo2")
-		self.viewsByName["Tudo__root"]?.layer.removeAnimation(forKey: "Passo2_Rotation")
-		self.viewsByName["Tudo__root"]?.layer.removeAnimation(forKey: "Passo2_Opacity")
-		self.viewsByName["Tampa dot__root"]?.layer.removeAnimation(forKey: "Passo2_Opacity")
-		self.viewsByName["Tampa aberta__root"]?.layer.removeAnimation(forKey: "Passo2_Opacity")
+		self.viewsByName["Diluente__root"]?.layer.removeAnimation(forKey: "Passo2_Opacity")
 		self.viewsByName["Dispo virado__root"]?.layer.removeAnimation(forKey: "Passo2_Rotation")
 		self.viewsByName["Dispo virado__root"]?.layer.removeAnimation(forKey: "Passo2_Opacity")
 		self.viewsByName["Dispo virado__root"]?.layer.removeAnimation(forKey: "Passo2_TranslationX")
 		self.viewsByName["Dispo virado__root"]?.layer.removeAnimation(forKey: "Passo2_TranslationY")
-		self.viewsByName["Seta para cima__root"]?.layer.removeAnimation(forKey: "Passo2_Opacity")
-		self.viewsByName["Tampa__root"]?.layer.removeAnimation(forKey: "Passo2_Opacity")
 		self.viewsByName["Seta abrir__root"]?.layer.removeAnimation(forKey: "Passo2_Opacity")
-		self.viewsByName["Diluente__root"]?.layer.removeAnimation(forKey: "Passo2_Opacity")
 		self.viewsByName["embalagem virada__root"]?.layer.removeAnimation(forKey: "Passo2_TranslationX")
 		self.viewsByName["embalagem virada__root"]?.layer.removeAnimation(forKey: "Passo2_TranslationY")
 		self.viewsByName["Seta para baixo__root"]?.layer.removeAnimation(forKey: "Passo2_Opacity")
+		self.viewsByName["Tampa dot__root"]?.layer.removeAnimation(forKey: "Passo2_Opacity")
+		self.viewsByName["Tampa aberta__root"]?.layer.removeAnimation(forKey: "Passo2_Opacity")
+		self.viewsByName["Seta para cima__root"]?.layer.removeAnimation(forKey: "Passo2_Opacity")
+		self.viewsByName["Tampa__root"]?.layer.removeAnimation(forKey: "Passo2_Opacity")
 	}
 
 	// MARK: CAAnimationDelegate

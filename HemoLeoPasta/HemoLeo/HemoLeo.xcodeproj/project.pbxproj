@@ -192,10 +192,10 @@
 		EB69AB8B1DE255D6003EAB99 /* TutorialPasso6.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB69AB881DE255D6003EAB99 /* TutorialPasso6.xcassets */; };
 		EB69AB8C1DE255D6003EAB99 /* TutorialPasso6View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB69AB891DE255D6003EAB99 /* TutorialPasso6View.swift */; };
 		EB69AB8D1DE255D6003EAB99 /* TutorialPasso6View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB69AB891DE255D6003EAB99 /* TutorialPasso6View.swift */; };
-		EB69AB961DE25743003EAB99 /* TutorialPasso 2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB69AB941DE25743003EAB99 /* TutorialPasso 2.xcassets */; };
-		EB69AB971DE25743003EAB99 /* TutorialPasso 2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB69AB941DE25743003EAB99 /* TutorialPasso 2.xcassets */; };
-		EB69AB981DE25743003EAB99 /* TutorialPasso2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB69AB951DE25743003EAB99 /* TutorialPasso2View.swift */; };
-		EB69AB991DE25743003EAB99 /* TutorialPasso2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB69AB951DE25743003EAB99 /* TutorialPasso2View.swift */; };
+		EBBA6BB41DE25BA0002FC4EE /* TutorialPasso 2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBBA6BB21DE25BA0002FC4EE /* TutorialPasso 2.xcassets */; };
+		EBBA6BB51DE25BA0002FC4EE /* TutorialPasso 2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBBA6BB21DE25BA0002FC4EE /* TutorialPasso 2.xcassets */; };
+		EBBA6BB61DE25BA0002FC4EE /* TutorialPasso2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBA6BB31DE25BA0002FC4EE /* TutorialPasso2View.swift */; };
+		EBBA6BB71DE25BA0002FC4EE /* TutorialPasso2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBA6BB31DE25BA0002FC4EE /* TutorialPasso2View.swift */; };
 		EBBD25AE1D3731BE00786155 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBD25AD1D3731BE00786155 /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -374,8 +374,8 @@
 		EB69AB711DE24FC6003EAB99 /* TutorialPasso5View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialPasso5View.swift; sourceTree = "<group>"; };
 		EB69AB881DE255D6003EAB99 /* TutorialPasso6.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TutorialPasso6.xcassets; sourceTree = "<group>"; };
 		EB69AB891DE255D6003EAB99 /* TutorialPasso6View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialPasso6View.swift; sourceTree = "<group>"; };
-		EB69AB941DE25743003EAB99 /* TutorialPasso 2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "TutorialPasso 2.xcassets"; sourceTree = "<group>"; };
-		EB69AB951DE25743003EAB99 /* TutorialPasso2View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialPasso2View.swift; sourceTree = "<group>"; };
+		EBBA6BB21DE25BA0002FC4EE /* TutorialPasso 2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "TutorialPasso 2.xcassets"; sourceTree = "<group>"; };
+		EBBA6BB31DE25BA0002FC4EE /* TutorialPasso2View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialPasso2View.swift; sourceTree = "<group>"; };
 		EBBD25AD1D3731BE00786155 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -450,8 +450,8 @@
 		2B7099B41DDF2142006C27F0 /* Passo2 */ = {
 			isa = PBXGroup;
 			children = (
-				EB69AB941DE25743003EAB99 /* TutorialPasso 2.xcassets */,
-				EB69AB951DE25743003EAB99 /* TutorialPasso2View.swift */,
+				EBBA6BB21DE25BA0002FC4EE /* TutorialPasso 2.xcassets */,
+				EBBA6BB31DE25BA0002FC4EE /* TutorialPasso2View.swift */,
 			);
 			name = Passo2;
 			sourceTree = "<group>";
@@ -1147,7 +1147,7 @@
 				7777110F1D3E9C110066A0E2 /* LeoImages.atlas in Resources */,
 				2B97071F1DDDF2FD00FE3A74 /* Storytelling4 .xcassets in Resources */,
 				2B9707111DDDEE8000FE3A74 /* Storytelling.xcassets in Resources */,
-				EB69AB961DE25743003EAB99 /* TutorialPasso 2.xcassets in Resources */,
+				EBBA6BB41DE25BA0002FC4EE /* TutorialPasso 2.xcassets in Resources */,
 				2BA1888E1D355A2C007F1CEB /* LaunchScreen.storyboard in Resources */,
 				2B57311A1DDF809000F1A834 /* TutorialPasso4.xcassets in Resources */,
 				2BA1888B1D355A2C007F1CEB /* Assets.xcassets in Resources */,
@@ -1174,7 +1174,7 @@
 				4E32449F1DD3ECD400258CE1 /* CustomActivityCell.xib in Resources */,
 				2B57311B1DDF809000F1A834 /* TutorialPasso4.xcassets in Resources */,
 				4E3244A11DD3F88E00258CE1 /* Assets.xcassets in Resources */,
-				EB69AB971DE25743003EAB99 /* TutorialPasso 2.xcassets in Resources */,
+				EBBA6BB51DE25BA0002FC4EE /* TutorialPasso 2.xcassets in Resources */,
 				EB69AB611DE245AD003EAB99 /* Materiais.xcassets in Resources */,
 				EB69AB731DE24FC6003EAB99 /* TutorialPasso5.xcassets in Resources */,
 				EB69AB8B1DE255D6003EAB99 /* TutorialPasso6.xcassets in Resources */,
@@ -1226,7 +1226,7 @@
 				4E03102F1DD6AEC0002B8200 /* PopUpViewController.swift in Sources */,
 				4E973BAE1DD8FE9700D4CD8B /* UserViewController.swift in Sources */,
 				4E2B29C01D36CD0E00EED2B4 /* MainViewController.swift in Sources */,
-				EB69AB981DE25743003EAB99 /* TutorialPasso2View.swift in Sources */,
+				EBBA6BB61DE25BA0002FC4EE /* TutorialPasso2View.swift in Sources */,
 				4E3CE02B1D3FDF0F00E4F422 /* SurveyViewController.swift in Sources */,
 				2BCA5CD81D42A4D600EAC063 /* BWGradientView.swift in Sources */,
 				EB69AB5D1DE24576003EAB99 /* Storytelling3View.swift in Sources */,
@@ -1284,7 +1284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E0364E71DD6B6D200C2793E /* PopupController.swift in Sources */,
-				EB69AB991DE25743003EAB99 /* TutorialPasso2View.swift in Sources */,
+				EBBA6BB71DE25BA0002FC4EE /* TutorialPasso2View.swift in Sources */,
 				4ED0D2AD1DDDDEA400BE15CE /* Tutorial2ViewController.swift in Sources */,
 				4E3244801DD3DE2D00258CE1 /* Fruits.swift in Sources */,
 				4E973BAF1DD8FE9700D4CD8B /* UserViewController.swift in Sources */,
