@@ -15,6 +15,7 @@ class OccurenciesViewController: UIViewController {
     var button: UIButton!
     var occurencies: Array<Int> = [0, 0, 0, 0, 0, 0, 0]
     var path = ""
+    let color: Array = [#imageLiteral(resourceName: "LightBlue"), #imageLiteral(resourceName: "LightGreen"), #imageLiteral(resourceName: "Red"), #imageLiteral(resourceName: "Yellos"), #imageLiteral(resourceName: "Black"), #imageLiteral(resourceName: "LightGray"), #imageLiteral(resourceName: "Orange")]
     
     private let codingManager: NSCodingManager = NSCodingManager.sharedNSCodingManager
     private let careCardModel = CareCardModel.sharedCareCardModel
@@ -91,6 +92,7 @@ extension OccurenciesViewController: UITableViewDataSource {
         let cellName = self.getIndexOccurences(day: indexPath.row)
         cell = tableView.dequeueReusableCell(withIdentifier: "idCellNormal", for: indexPath as IndexPath) as! CustomActivityCell
         cell.labelNome.text = cellName
+//        cell.colorMark
         cell.check.isHidden = (occurencies[indexPath.row] == 0) ? true : false
         
         return cell

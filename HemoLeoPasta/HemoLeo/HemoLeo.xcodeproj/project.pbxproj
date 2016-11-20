@@ -133,8 +133,6 @@
 		4E3CE03C1D400FFF00E4F422 /* ButtonAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3CE03B1D400FFF00E4F422 /* ButtonAnimation.swift */; };
 		4E4F03EA1DCD8ABF00523507 /* SurveyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4F03E91DCD8ABF00523507 /* SurveyController.swift */; };
 		4E4F03EC1DD0B9EE00523507 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4F03EB1DD0B9EE00523507 /* Helper.swift */; };
-		4E6796581DDA897A000E0A5E /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6796571DDA897A000E0A5E /* CloudKit.framework */; };
-		4E67965A1DDA89B0000E0A5E /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6796571DDA897A000E0A5E /* CloudKit.framework */; };
 		4E6796881DDD35C9000E0A5E /* ADVSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6796871DDD35C9000E0A5E /* ADVSegmentedControl.swift */; };
 		4E6796891DDD35C9000E0A5E /* ADVSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6796871DDD35C9000E0A5E /* ADVSegmentedControl.swift */; };
 		4E973BAA1DD8D8B700D4CD8B /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E973BA91DD8D8B700D4CD8B /* Observer.swift */; };
@@ -331,7 +329,6 @@
 		4E4F03E91DCD8ABF00523507 /* SurveyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyController.swift; sourceTree = "<group>"; };
 		4E4F03EB1DD0B9EE00523507 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		4E6796561DDA893E000E0A5E /* HemoLeo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HemoLeo.entitlements; sourceTree = "<group>"; };
-		4E6796571DDA897A000E0A5E /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		4E6796591DDA89AA000E0A5E /* iPhone.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iPhone.entitlements; sourceTree = "<group>"; };
 		4E6796871DDD35C9000E0A5E /* ADVSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADVSegmentedControl.swift; sourceTree = "<group>"; };
 		4E973BA91DD8D8B700D4CD8B /* Observer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
@@ -388,7 +385,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				777711071D3E9AAC0066A0E2 /* SpriteKit.framework in Frameworks */,
-				4E6796581DDA897A000E0A5E /* CloudKit.framework in Frameworks */,
 				2B0211291D35736D00AFFB17 /* CareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,7 +394,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E32448E1DD3EAAA00258CE1 /* CareKit.framework in Frameworks */,
-				4E67965A1DDA89B0000E0A5E /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -720,7 +715,6 @@
 		4E3243F81DD3873E00258CE1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4E6796571DDA897A000E0A5E /* CloudKit.framework */,
 				4E0364E01DD6B5BD00C2793E /* PopUp */,
 				4E0310231DD6ACB4002B8200 /* Slider */,
 				777711061D3E9AAC0066A0E2 /* SpriteKit.framework */,
@@ -1073,14 +1067,14 @@
 				TargetAttributes = {
 					2BA1887B1D355A2C007F1CEB = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = BUK6UDW987;
+						DevelopmentTeam = AU45XX83RQ;
 						LastSwiftMigration = 0810;
 						SystemCapabilities = {
 							com.apple.Push = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.iCloud = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -1502,10 +1496,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = HemoLeo/HemoLeo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = BUK6UDW987;
+				DEVELOPMENT_TEAM = AU45XX83RQ;
 				INFOPLIST_FILE = HemoLeo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1521,10 +1514,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = HemoLeo/HemoLeo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = BUK6UDW987;
+				DEVELOPMENT_TEAM = AU45XX83RQ;
 				INFOPLIST_FILE = HemoLeo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

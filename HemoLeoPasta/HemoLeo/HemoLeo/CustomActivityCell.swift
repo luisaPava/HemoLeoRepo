@@ -15,6 +15,7 @@ protocol CustomCellDelegate {
 class CustomActivityCell: UITableViewCell {
     @IBOutlet weak var check: UIImageView!
     @IBOutlet weak var labelNome: UILabel!
+    @IBOutlet weak var colorMark: UIView!
     
     var value: Int?
 

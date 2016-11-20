@@ -22,6 +22,7 @@ class Tutorial9ViewController: UIViewController {
         } else {
             
             materiais.addMateriaisAnimation()
+            materiais.clipsToBounds = true
             
         }
 

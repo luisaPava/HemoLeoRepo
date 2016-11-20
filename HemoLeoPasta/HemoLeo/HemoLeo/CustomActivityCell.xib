@@ -4,8 +4,8 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -26,7 +26,7 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    Segunda-feira" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ct-r5-Dbe">
-                        <rect key="frame" x="20" y="21.5" width="162.5" height="26.5"/>
+                        <rect key="frame" x="28" y="21.5" width="163" height="27"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="162.5" id="klV-kd-eKl"/>
                         </constraints>
@@ -34,17 +34,28 @@
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0WP-MM-BDP">
+                        <rect key="frame" x="0.0" y="0.0" width="30" height="70"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="kKB-jw-4BF"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="7Ct-r5-Dbe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="4H6-ae-aSV"/>
+                    <constraint firstAttribute="bottom" secondItem="0WP-MM-BDP" secondAttribute="bottom" id="5wZ-zG-6v6"/>
+                    <constraint firstItem="0WP-MM-BDP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Ret-5D-Gxc"/>
+                    <constraint firstItem="0WP-MM-BDP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Td6-4Y-TJc"/>
                     <constraint firstAttribute="trailing" secondItem="pIC-wJ-LCq" secondAttribute="trailing" id="Z5u-o3-cgt"/>
                     <constraint firstItem="7Ct-r5-Dbe" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="apI-93-iOP"/>
                     <constraint firstAttribute="bottom" secondItem="pIC-wJ-LCq" secondAttribute="bottom" id="buX-ea-Gjr"/>
+                    <constraint firstItem="7Ct-r5-Dbe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="egO-Pq-qpH"/>
                     <constraint firstItem="pIC-wJ-LCq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="zPk-l5-iIc"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="check" destination="pIC-wJ-LCq" id="UoF-DN-6yp"/>
+                <outlet property="colorMark" destination="0WP-MM-BDP" id="2uh-dl-sK5"/>
                 <outlet property="labelNome" destination="7Ct-r5-Dbe" id="oyP-0Q-RbX"/>
             </connections>
             <point key="canvasLocation" x="200" y="325"/>

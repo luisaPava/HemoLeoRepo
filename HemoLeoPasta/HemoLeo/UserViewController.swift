@@ -17,6 +17,7 @@ class UserViewController: UIViewController {
         super.viewDidLoad()
         
         
+        self.view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "BG"))
         
         collectionView.delegate = self
         collectionView.dataSource = self
