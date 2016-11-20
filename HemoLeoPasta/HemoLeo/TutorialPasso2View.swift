@@ -625,7 +625,7 @@ class TutorialPasso2View : UIView, CAAnimationDelegate {
 		}
 	}
 
-	func removeAllAnimations() {
+	override func removeAllAnimations() {
 		for subview in viewsByName.values {
 			subview.layer.removeAllAnimations()
 		}
