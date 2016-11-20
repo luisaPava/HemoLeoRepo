@@ -15,7 +15,7 @@ class OccurenciesViewController: UIViewController {
     var button: UIButton!
     var occurencies: Array<Int> = [0, 0, 0, 0, 0, 0, 0]
     var path = ""
-    let color: Array = [#imageLiteral(resourceName: "LightBlue"), #imageLiteral(resourceName: "LightGreen"), #imageLiteral(resourceName: "Red"), #imageLiteral(resourceName: "Yellos"), #imageLiteral(resourceName: "Black"), #imageLiteral(resourceName: "LightGray"), #imageLiteral(resourceName: "Orange")]
+    let color: Array<UIColor> = [.blue, .green, .red, .yellow, .black, .lightGray, .orange]
     
     private let codingManager: NSCodingManager = NSCodingManager.sharedNSCodingManager
     private let careCardModel = CareCardModel.sharedCareCardModel
@@ -57,7 +57,9 @@ class OccurenciesViewController: UIViewController {
 
         }
         
-        codingManager.saveAnyWithPath(path: path, object: occurencies)
+        if !codingManager.saveAnyWithPath(path: path, object: occurencies){
+            print("Não foi possível salvar as ocorrências")
+        }
         
         dismiss(animated: true, completion: nil)
         
@@ -82,6 +84,7 @@ extension OccurenciesViewController: UITableViewDelegate {
         let cell = tableView.cellForRow(at: indexPath) as! CustomActivityCell
         
         cell.check.isHidden = cell.check.isHidden ? false : true
+        
     }
 }
 
@@ -92,8 +95,9 @@ extension OccurenciesViewController: UITableViewDataSource {
         let cellName = self.getIndexOccurences(day: indexPath.row)
         cell = tableView.dequeueReusableCell(withIdentifier: "idCellNormal", for: indexPath as IndexPath) as! CustomActivityCell
         cell.labelNome.text = cellName
-//        cell.colorMark
+
         cell.check.isHidden = (occurencies[indexPath.row] == 0) ? true : false
+        cell.colorMark.backgroundColor = color[indexPath.row]
         
         return cell
         
@@ -126,7 +130,7 @@ extension OccurenciesViewController: UITableViewDataSource {
             return "Sexta-feira"
             
         default:
-            return "Séabado"
+            return "Sábado"
             
         }
     }
