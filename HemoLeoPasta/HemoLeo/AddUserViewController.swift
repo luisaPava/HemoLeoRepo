@@ -22,7 +22,7 @@ class AddUserViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
 
-        self.hideKeyboardWhenTappedAround()
+//        self.hideKeyboardWhenTappedAround()
     }
 
     override func didReceiveMemoryWarning() {

@@ -21,7 +21,8 @@ class UserViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        self.hideKeyboardWhenTappedAround()
+        
+//        self.hideKeyboardWhenTappedAround()
 
     }
     
@@ -46,6 +47,10 @@ extension UserViewController: UICollectionViewDelegate {
         userModel.setUser(index: indexPath.row)
         
         performSegue(withIdentifier: "userToMain", sender: self)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
+        return true
     }
 }
 
