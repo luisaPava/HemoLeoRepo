@@ -255,9 +255,9 @@ class MateriaisView : UIView, CAAnimationDelegate {
 		let tampa__xScale = MateriaisPassthroughView()
 		let tampa__yScale = MateriaisPassthroughView()
 		let tampa = UIImageView()
-		let imgTampa = UIImage(named:"Tampa.png", in: bundle, compatibleWith: nil)
+		let imgTampa = UIImage(named:"DispositivoP0.png", in: bundle, compatibleWith: nil)
 		if imgTampa == nil {
-			print("** Warning: Could not create image from 'Tampa.png'")
+			print("** Warning: Could not create image from 'DispositivoP0.png'")
 		}
 		tampa.image = imgTampa
 		tampa.contentMode = .center
