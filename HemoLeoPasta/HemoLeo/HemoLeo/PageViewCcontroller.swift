@@ -72,8 +72,28 @@ class PageViewCcontroller: UIPageViewController {
 
 //MARK: - UIPageViewControllerDataSource
 extension PageViewCcontroller: UIPageViewControllerDataSource {
-    
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
+        guard let viewControllerIndex = orderedViewControllers.index(of: viewController) else {
+            return nil
+        }
+        
+        let nextIndex = viewControllerIndex + 1
+        let viewControllersCount = orderedViewControllers.count
+        
+        guard viewControllersCount != nextIndex else {
+            return nil
+        }
+        
+        guard viewControllersCount > nextIndex else {
+            return nil
+        }
+        
+        print(nextIndex)
+        
+        return orderedViewControllers[nextIndex]
+    }
+    
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         guard let viewControllerIndex = orderedViewControllers.index(of: viewController) else {
             return nil
         }
@@ -91,34 +111,13 @@ extension PageViewCcontroller: UIPageViewControllerDataSource {
         return orderedViewControllers[previousIndex]
     }
     
-    
-    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        guard let viewControllerIndex = orderedViewControllers.index(of: viewController) else {
-            return nil
-        }
-        
-        let nextIndex = viewControllerIndex + 1
-        let viewControllersCount = orderedViewControllers.count
-        
-        guard viewControllersCount != nextIndex else {
-            return nil
-        }
-        
-        guard viewControllersCount > nextIndex else {
-            return nil
-        }
-        
-        return orderedViewControllers[nextIndex]
-    }
-    
-    
-    
     func presentationCount(for pageViewController: UIPageViewController) -> Int {
         print(orderedViewControllers.count)
         return orderedViewControllers.count
     }
     
     func presentationIndex(for pageViewController: UIPageViewController) -> Int {
+        print(#function)
         guard let firstViewController = viewControllers?.first,
             let firstViewControllerIndex = orderedViewControllers.index(of: firstViewController) else {
                 return 0
@@ -126,5 +125,62 @@ extension PageViewCcontroller: UIPageViewControllerDataSource {
         
         return firstViewControllerIndex
     }
-    
 }
+
+//extension PageViewCcontroller: UIPageViewControllerDataSource {
+//    
+//    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
+//        guard let viewControllerIndex = orderedViewControllers.index(of: viewController) else {
+//            return nil
+//        }
+//        
+//        let previousIndex = viewControllerIndex - 1
+//        
+//        guard previousIndex >= 0 else {
+//            return nil
+//        }
+//        
+//        guard orderedViewControllers.count > previousIndex else {
+//            return nil
+//        }
+//        
+//        return orderedViewControllers[previousIndex]
+//    }
+//    
+//    
+//    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+//        guard let viewControllerIndex = orderedViewControllers.index(of: viewController) else {
+//            return nil
+//        }
+//        
+//        let nextIndex = viewControllerIndex + 1
+//        let viewControllersCount = orderedViewControllers.count
+//        
+//        guard viewControllersCount != nextIndex else {
+//            return nil
+//        }
+//        
+//        guard viewControllersCount > nextIndex else {
+//            return nil
+//        }
+//        
+//        return orderedViewControllers[nextIndex]
+//    }
+//    
+//    
+//    
+//    func presentationCount(for pageViewController: UIPageViewController) -> Int {
+//        print(orderedViewControllers.count)
+//        return orderedViewControllers.count
+//    }
+//    
+//    func presentationIndex(for pageViewController: UIPageViewController) -> Int {
+//        guard let firstViewController = viewControllers?.first,
+//            let firstViewControllerIndex = orderedViewControllers.index(of: firstViewController) else {
+//                return 0
+//        }
+//        
+//        return firstViewControllerIndex
+//    }
+//    
+//}
