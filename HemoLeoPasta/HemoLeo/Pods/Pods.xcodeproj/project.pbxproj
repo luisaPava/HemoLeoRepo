@@ -366,7 +366,13 @@
 					15556EE0A00EC4978A0D62564AD43FEC = {
 						LastSwiftMigration = 0810;
 					};
+					9D15F01F650419FF78F13F4522638A3A = {
+						LastSwiftMigration = 0810;
+					};
 					DF0878C7762B0323F244297D2E4A8306 = {
+						LastSwiftMigration = 0810;
+					};
+					EA573FB24356DBC1ED73D0D375947491 = {
 						LastSwiftMigration = 0810;
 					};
 				};
@@ -472,6 +478,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -640,6 +647,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -673,6 +681,7 @@
 				PRODUCT_NAME = Pods_HemoLeo;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -744,6 +753,7 @@
 				PRODUCT_NAME = SkyFloatingLabelTextField;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

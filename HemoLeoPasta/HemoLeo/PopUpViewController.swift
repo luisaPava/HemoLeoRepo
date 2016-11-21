@@ -19,6 +19,7 @@ class PopUpViewController: UIViewController, PopupContentViewController {
         super.viewDidLoad()
         
         popupSize = CGSize(width: 300, height: 300)
+        setSliderImages()
         
     }
     
@@ -46,16 +47,28 @@ class PopUpViewController: UIViewController, PopupContentViewController {
     // Set the images of the slider
     func setSliderImages() {
         for i in 0...10 {
-            if i <= 5 {
-                // Colocar imagem de 1 a 5 (carinha feliz)
-//                slider?.stepImages?.append(<#T##newElement: Element##Element#>)
-                
-            } else {
-                // Colocar imagem de 6 a 10 (carinha triste)
-//                slider?.stepImages?.append(<#T##newElement: Element##Element#>)
+            
+            switch i {
+            case 0:
+                slider?.stepImages?.append(#imageLiteral(resourceName: "N0"))
+            case 1:
+                slider?.stepImages?.append(#imageLiteral(resourceName: "N1e2"))
+            case 2:
+                slider?.stepImages?.append(#imageLiteral(resourceName: "N1e2"))
+            case 3...4:
+                slider?.stepImages?.append(#imageLiteral(resourceName: "3e4"))
+            case 5:
+                slider?.stepImages?.append(#imageLiteral(resourceName: "N5"))
+            case 6...7:
+                slider?.stepImages?.append(#imageLiteral(resourceName: "6e7"))
+            case 8...9:
+                slider?.stepImages?.append(#imageLiteral(resourceName: "8e9"))
+            case 10:
+                slider?.stepImages?.append(#imageLiteral(resourceName: "N10"))
+            default:
+                break
             }
-        }
-    }
+        }    }
     
     @IBAction func sliderChanged(_ sender: G8SliderStep) {
         PopUpViewController.sliderValue = Int(sender.value)

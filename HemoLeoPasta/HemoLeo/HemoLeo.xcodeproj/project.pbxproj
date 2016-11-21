@@ -179,6 +179,10 @@
 		4EE05E961DE32AD10088CB99 /* MeninoDor.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EE05E931DE32AD10088CB99 /* MeninoDor.xcassets */; };
 		4EE05E971DE32AD10088CB99 /* MeninoDorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE05E941DE32AD10088CB99 /* MeninoDorView.swift */; };
 		4EE05E981DE32AD10088CB99 /* MeninoDorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE05E941DE32AD10088CB99 /* MeninoDorView.swift */; };
+		4EE05E9B1DE33F440088CB99 /* MeninoSangramento.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EE05E991DE33F440088CB99 /* MeninoSangramento.xcassets */; };
+		4EE05E9C1DE33F440088CB99 /* MeninoSangramento.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EE05E991DE33F440088CB99 /* MeninoSangramento.xcassets */; };
+		4EE05E9D1DE33F440088CB99 /* MeninoSangramentoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE05E9A1DE33F440088CB99 /* MeninoSangramentoView.swift */; };
+		4EE05E9E1DE33F440088CB99 /* MeninoSangramentoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE05E9A1DE33F440088CB99 /* MeninoSangramentoView.swift */; };
 		777711071D3E9AAC0066A0E2 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 777711061D3E9AAC0066A0E2 /* SpriteKit.framework */; };
 		7777110D1D3E9BD00066A0E2 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7777110C1D3E9BD00066A0E2 /* GameScene.swift */; };
 		7777110F1D3E9C110066A0E2 /* LeoImages.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 7777110E1D3E9C110066A0E2 /* LeoImages.atlas */; };
@@ -371,6 +375,8 @@
 		4EE05E7C1DE25DFB0088CB99 /* UIViewIBDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewIBDesignable.swift; sourceTree = "<group>"; };
 		4EE05E931DE32AD10088CB99 /* MeninoDor.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MeninoDor.xcassets; sourceTree = "<group>"; };
 		4EE05E941DE32AD10088CB99 /* MeninoDorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeninoDorView.swift; sourceTree = "<group>"; };
+		4EE05E991DE33F440088CB99 /* MeninoSangramento.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MeninoSangramento.xcassets; sourceTree = "<group>"; };
+		4EE05E9A1DE33F440088CB99 /* MeninoSangramentoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeninoSangramentoView.swift; sourceTree = "<group>"; };
 		614E74FB9878C77BC0228158 /* Pods-iPhone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPhone.release.xcconfig"; path = "Pods/Target Support Files/Pods-iPhone/Pods-iPhone.release.xcconfig"; sourceTree = "<group>"; };
 		777711061D3E9AAC0066A0E2 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		7777110C1D3E9BD00066A0E2 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -804,8 +810,8 @@
 		4E3244A61DD6A48800258CE1 /* SymptomTracker */ = {
 			isa = PBXGroup;
 			children = (
-				4EE05E931DE32AD10088CB99 /* MeninoDor.xcassets */,
-				4EE05E941DE32AD10088CB99 /* MeninoDorView.swift */,
+				4EE05E9F1DE33F480088CB99 /* Sangramento */,
+				4EE05EA01DE33F5E0088CB99 /* Dor */,
 				4E03102C1DD6AE8D002B8200 /* PopUp */,
 			);
 			name = SymptomTracker;
@@ -1023,6 +1029,24 @@
 			name = User;
 			sourceTree = "<group>";
 		};
+		4EE05E9F1DE33F480088CB99 /* Sangramento */ = {
+			isa = PBXGroup;
+			children = (
+				4EE05E991DE33F440088CB99 /* MeninoSangramento.xcassets */,
+				4EE05E9A1DE33F440088CB99 /* MeninoSangramentoView.swift */,
+			);
+			name = Sangramento;
+			sourceTree = "<group>";
+		};
+		4EE05EA01DE33F5E0088CB99 /* Dor */ = {
+			isa = PBXGroup;
+			children = (
+				4EE05E931DE32AD10088CB99 /* MeninoDor.xcassets */,
+				4EE05E941DE32AD10088CB99 /* MeninoDorView.swift */,
+			);
+			name = Dor;
+			sourceTree = "<group>";
+		};
 		877CB3A2704E34131DA160A3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1105,7 +1129,7 @@
 				TargetAttributes = {
 					2BA1887B1D355A2C007F1CEB = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = AU45XX83RQ;
+						DevelopmentTeam = BUK6UDW987;
 						LastSwiftMigration = 0810;
 						SystemCapabilities = {
 							com.apple.Push = {
@@ -1194,6 +1218,7 @@
 				2BA188891D355A2C007F1CEB /* Main.storyboard in Resources */,
 				EB69AB8A1DE255D6003EAB99 /* TutorialPasso6.xcassets in Resources */,
 				EB69AB601DE245AD003EAB99 /* Materiais.xcassets in Resources */,
+				4EE05E9B1DE33F440088CB99 /* MeninoSangramento.xcassets in Resources */,
 				4E132CB91D41242A004CBC6F /* CustomActivityCell.xib in Resources */,
 				4EE05E951DE32AD10088CB99 /* MeninoDor.xcassets in Resources */,
 				2B5731101DDF808500F1A834 /* TutorialPasso3.xcassets in Resources */,
@@ -1215,6 +1240,7 @@
 				2B57311B1DDF809000F1A834 /* TutorialPasso4.xcassets in Resources */,
 				4E3244A11DD3F88E00258CE1 /* Assets.xcassets in Resources */,
 				4EE05E851DE278D70088CB99 /* TutorialPasso 2.xcassets in Resources */,
+				4EE05E9C1DE33F440088CB99 /* MeninoSangramento.xcassets in Resources */,
 				EB69AB611DE245AD003EAB99 /* Materiais.xcassets in Resources */,
 				EB69AB731DE24FC6003EAB99 /* TutorialPasso5.xcassets in Resources */,
 				EB69AB8B1DE255D6003EAB99 /* TutorialPasso6.xcassets in Resources */,
@@ -1403,6 +1429,7 @@
 				2BA188BE1D355EEF007F1CEB /* Vagetables.swift in Sources */,
 				4E2B2DF51D3AD12A00EED2B4 /* Pain.swift in Sources */,
 				4EE05E691DE0F3AB0088CB99 /* UserCollectionViewCell.swift in Sources */,
+				4EE05E9D1DE33F440088CB99 /* MeninoSangramentoView.swift in Sources */,
 				4E36E45B1D45B2570005A1BE /* InsightViewController.swift in Sources */,
 				4EAFA20F1DC7BF39002BA048 /* BGEnum.swift in Sources */,
 				2B87D5ED1D38261300F29678 /* ToAddedActivitiesData.swift in Sources */,
@@ -1420,6 +1447,7 @@
 				4E0364E71DD6B6D200C2793E /* PopupController.swift in Sources */,
 				4EE05E841DE278D20088CB99 /* TutorialPasso2View.swift in Sources */,
 				4ED0D2AD1DDDDEA400BE15CE /* Tutorial2ViewController.swift in Sources */,
+				4EE05E9E1DE33F440088CB99 /* MeninoSangramentoView.swift in Sources */,
 				4E3244801DD3DE2D00258CE1 /* Fruits.swift in Sources */,
 				4E973BAF1DD8FE9700D4CD8B /* UserViewController.swift in Sources */,
 				4E973BB51DD90FD700D4CD8B /* AddUserViewController.swift in Sources */,
@@ -1634,7 +1662,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = AU45XX83RQ;
+				DEVELOPMENT_TEAM = BUK6UDW987;
 				INFOPLIST_FILE = HemoLeo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1653,7 +1681,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = AU45XX83RQ;
+				DEVELOPMENT_TEAM = BUK6UDW987;
 				INFOPLIST_FILE = HemoLeo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

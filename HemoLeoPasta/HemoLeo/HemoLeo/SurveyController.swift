@@ -18,19 +18,12 @@ class SurveyController: UIViewController {
     var sliderValue = 0
     var esqArray: Array<UIButton> = []
     var dirArray: Array<UIButton> = []
+    var activityType: ActivityType!
     
     @IBOutlet weak var viewMenino: MeninoDorView!
-    @IBOutlet weak var ombroEsq: UIButton!
-    @IBOutlet weak var cotEsq: UIButton!
-    @IBOutlet weak var virilhaEsq: UIButton!
-    @IBOutlet weak var joelhoEsq: UIButton!
-    @IBOutlet weak var tronozeloEsq: UIButton!
     
-    @IBOutlet weak var ombroDir: UIButton!
-    @IBOutlet weak var cotDir: UIButton!
-    @IBOutlet weak var virilhaDir: UIButton!
-    @IBOutlet weak var joelhoDir: UIButton!
-    @IBOutlet weak var tornozeloDir: UIButton!
+//    var viewMenino: UIView!
+//    var viewMeninoSangue: MeninoSangramentoView
     
     
     private var assessmentManager: AssessmentsManager? = nil
@@ -40,8 +33,13 @@ class SurveyController: UIViewController {
         super.viewDidLoad()
         
         assessmentManager = symptomTrackerModel.getAssessmentManager()
+        activityType = ActivityType(rawValue: event.activity.identifier)
         
         viewMenino.meninoDorViewDelegate = self
+        
+//        print("\(width) - \(height)")
+        
+        
         
     }
     
@@ -59,8 +57,16 @@ class SurveyController: UIViewController {
         let _ = popup.show(container)
     }
     
+//    func chooseViewClass() {
+//        if activityType == .Pain {
+//            viewMenino = MeninoDorView(frame: CGRect(x: 0, y: 150, width: width, height: height / 0.7))
+//            viewMenino.meninoDorViewDelegate = self
+//        } else {
+//            
+//        }
+//    }
+    
     func saveResult() {
-        let activityType = ActivityType(rawValue: event.activity.identifier)
         let assessment = assessmentManager!.activityWithType(type: activityType!)
         var result: OCKCarePlanEventResult!
         
@@ -137,7 +143,7 @@ class SurveyController: UIViewController {
 extension SurveyController: MeninoDorViewDelegate {
     func botãoDesativadoDor(botãoDesativado: UIButton) {
         if botãoDesativado.isSelected == false {
-//            resultArray[botãoDesativado.tag] = botãoDesativado.accessibilityIdentifier!
+            resultArray[botãoDesativado.tag] = botãoDesativado.accessibilityIdentifier!
             botãoDesativado.isSelected = true
             
         } else {

@@ -4,7 +4,7 @@
 //
 // DO NOT MODIFY THIS FILE. IT IS AUTO-GENERATED AND WILL BE OVERWRITTEN
 //
-
+import Foundation
 import UIKit
 
 protocol MeninoDorViewDelegate: class {

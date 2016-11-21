@@ -7,15 +7,16 @@
 //
 
 import UIKit
+import SkyFloatingLabelTextField
 
 class AddContactViewController: UIViewController {
     private let contactModel = ContactModel.sharedContactModel
     
-    @IBOutlet weak var nome: UITextField!
-    @IBOutlet weak var relacao: UITextField!
-    @IBOutlet weak var telefone: UITextField!
-    @IBOutlet weak var email: UITextField!
-    @IBOutlet weak var tipo: UITextField!
+    @IBOutlet weak var nome: SkyFloatingLabelTextField!
+    @IBOutlet weak var relacao: SkyFloatingLabelTextField!
+    @IBOutlet weak var telefone:SkyFloatingLabelTextField!
+    @IBOutlet weak var email: SkyFloatingLabelTextField!
+    @IBOutlet weak var tipo: SkyFloatingLabelTextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +32,10 @@ class AddContactViewController: UIViewController {
                                  email: email.text!)
         
         self.dismiss(animated: false, completion: nil)
+    }
+    
+    @IBAction func cancelBtn(_ sender: UIButton) {
+        dismiss(animated: false, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {

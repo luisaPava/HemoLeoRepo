@@ -200,9 +200,9 @@ class Storytelling2View : UIView, CAAnimationDelegate {
 		let menino__xScale = Storytelling2PassthroughView()
 		let menino__yScale = Storytelling2PassthroughView()
 		let menino = UIImageView()
-		let imgMenino = UIImage(named:"Menino.png", in: bundle, compatibleWith: nil)
+		let imgMenino = UIImage(named:"MeninoST.png", in: bundle, compatibleWith: nil)
 		if imgMenino == nil {
-			print("** Warning: Could not create image from 'Menino.png'")
+			print("** Warning: Could not create image from 'MeninoST.png'")
 		}
 		menino.image = imgMenino
 		menino.contentMode = .center
