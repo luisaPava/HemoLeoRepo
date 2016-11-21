@@ -21,19 +21,19 @@ class Tutorial9ViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        if UIDevice.current.modelName.contains("iPhone") {
-            
-        } else {
-            materiais.addMateriaisAnimation()
-            materiais.clipsToBounds = true
-            
-        }
+//        if UIDevice.current.modelName.contains("iPhone") {
+//            
+//        } else {
+//            materiais.addMateriaisAnimation()
+//            materiais.clipsToBounds = true
+//            
+//        }
     }
     
     
     override func viewWillDisappear(_ animated: Bool) {
 //        super.viewWillDisappear
-        materiais.removeMateriaisAnimation()
+//        materiais.removeMateriaisAnimation()
     }
     
     

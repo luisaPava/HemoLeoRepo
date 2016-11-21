@@ -19,6 +19,7 @@ class SurveyController: UIViewController {
     var esqArray: Array<UIButton> = []
     var dirArray: Array<UIButton> = []
     
+    @IBOutlet weak var viewMenino: MeninoDorView!
     @IBOutlet weak var ombroEsq: UIButton!
     @IBOutlet weak var cotEsq: UIButton!
     @IBOutlet weak var virilhaEsq: UIButton!
@@ -38,13 +39,9 @@ class SurveyController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        esqArray = [ombroEsq, cotEsq, virilhaEsq, joelhoEsq, tronozeloEsq]
-        dirArray = [ombroDir, cotDir, virilhaDir, joelhoDir, tornozeloDir]
-        
-        setArrayBtn(dirArray, bool: false)
-        setArrayBtn(esqArray, bool: true)
-        
         assessmentManager = symptomTrackerModel.getAssessmentManager()
+        
+        viewMenino.meninoDorViewDelegate = self
         
     }
     
@@ -87,12 +84,10 @@ class SurveyController: UIViewController {
         let index = sender.selectedIndex
         
         if index == 0 {
-            setArrayBtn(dirArray, bool: false)
-            setArrayBtn(esqArray, bool: true)
+            viewMenino.addSwitchMaskToRightAnimation()
             
         } else {
-            setArrayBtn(dirArray, bool: true)
-            setArrayBtn(esqArray, bool: false)
+            viewMenino.addSwitchMaskToLeftAnimation()
             
         }
         
@@ -136,5 +131,18 @@ class SurveyController: UIViewController {
         }
             
         return count
+    }
+}
+
+extension SurveyController: MeninoDorViewDelegate {
+    func botãoDesativadoDor(botãoDesativado: UIButton) {
+        if botãoDesativado.isSelected == false {
+//            resultArray[botãoDesativado.tag] = botãoDesativado.accessibilityIdentifier!
+            botãoDesativado.isSelected = true
+            
+        } else {
+            resultArray[botãoDesativado.tag] = ""
+            botãoDesativado.isSelected = false
+        }
     }
 }

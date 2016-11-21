@@ -29,13 +29,13 @@ class Tutorial1ViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        if UIDevice.current.modelName.contains("iPhone") {
-            
-            
-        } else {
-            
-            
-        }
+//        if UIDevice.current.modelName.contains("iPhone") {
+//            
+//            
+//        } else {
+//            
+//            
+//        }
     }
     
     
