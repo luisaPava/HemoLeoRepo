@@ -73,7 +73,7 @@ class ThemesViewController: UIViewController, UICollectionViewDelegate, UICollec
     }
     
     
-    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         index = indexPath.row
         let cell = collectionView.cellForItem(at: indexPath as IndexPath) as! ThemesCollectionViewCell
         image = UIImageView(image: cell.imageView.image)

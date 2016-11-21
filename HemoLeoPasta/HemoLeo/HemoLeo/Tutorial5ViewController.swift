@@ -42,7 +42,7 @@ class Tutorial5ViewController: UIViewController {
     
     @IBAction func redo(_ sender: UIButton) {
         passo5.removePasso5Animation()
-        passo2.addPasso5Animation()
+        passo5.addPasso5Animation()
     }
     
 

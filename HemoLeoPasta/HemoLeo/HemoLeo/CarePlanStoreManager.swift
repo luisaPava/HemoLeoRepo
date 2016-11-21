@@ -110,7 +110,7 @@ class CarePlanStoreManager: NSObject, NSCoding {
             try! FileManager.default.createDirectory(at: persistenceDirectoryURL! as URL, withIntermediateDirectories: true, attributes: nil)
         }
         
-        print(persistenceDirectoryURL)
+        print(persistenceDirectoryURL!)
         
         
         // Create the store.

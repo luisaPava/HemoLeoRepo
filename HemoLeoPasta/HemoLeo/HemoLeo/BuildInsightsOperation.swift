@@ -74,7 +74,7 @@ class BuildInsightsOperation: Operation {
         
         // Determine the start date for the previous week.
         let calendar = Calendar.current
-        let now = NSDate()
+        _ = NSDate()
         
         let components = NSDateComponents()
         components.day = -7
@@ -129,7 +129,7 @@ class BuildInsightsOperation: Operation {
         
 //        let startDate = calendar.dateByAddingComponents(components, toDate: NSDate(), options: [])!
         
-        let startDate = calendar.date(byAdding: components as DateComponents, to: Date())
+        _ = calendar.date(byAdding: components as DateComponents, to: Date())
 
         // Create formatters for the data.
         let dayOfWeekFormatter = DateFormatter()
