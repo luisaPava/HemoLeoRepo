@@ -172,6 +172,8 @@
 		4EE05E701DE0FEDA0088CB99 /* carinho1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EE05E6E1DE0FEDA0088CB99 /* carinho1.png */; };
 		4EE05E7D1DE25DFB0088CB99 /* UIViewIBDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE05E7C1DE25DFB0088CB99 /* UIViewIBDesignable.swift */; };
 		4EE05E7E1DE25DFB0088CB99 /* UIViewIBDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE05E7C1DE25DFB0088CB99 /* UIViewIBDesignable.swift */; };
+		4EE05E841DE278D20088CB99 /* TutorialPasso2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9377701DE25E980075631B /* TutorialPasso2View.swift */; };
+		4EE05E851DE278D70088CB99 /* TutorialPasso 2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB93776F1DE25E980075631B /* TutorialPasso 2.xcassets */; };
 		777711071D3E9AAC0066A0E2 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 777711061D3E9AAC0066A0E2 /* SpriteKit.framework */; };
 		7777110D1D3E9BD00066A0E2 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7777110C1D3E9BD00066A0E2 /* GameScene.swift */; };
 		7777110F1D3E9C110066A0E2 /* LeoImages.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 7777110E1D3E9C110066A0E2 /* LeoImages.atlas */; };
@@ -1172,6 +1174,7 @@
 				4E32449F1DD3ECD400258CE1 /* CustomActivityCell.xib in Resources */,
 				2B57311B1DDF809000F1A834 /* TutorialPasso4.xcassets in Resources */,
 				4E3244A11DD3F88E00258CE1 /* Assets.xcassets in Resources */,
+				4EE05E851DE278D70088CB99 /* TutorialPasso 2.xcassets in Resources */,
 				EB69AB611DE245AD003EAB99 /* Materiais.xcassets in Resources */,
 				EB69AB731DE24FC6003EAB99 /* TutorialPasso5.xcassets in Resources */,
 				EB69AB8B1DE255D6003EAB99 /* TutorialPasso6.xcassets in Resources */,
@@ -1281,6 +1284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E0364E71DD6B6D200C2793E /* PopupController.swift in Sources */,
+				4EE05E841DE278D20088CB99 /* TutorialPasso2View.swift in Sources */,
 				4ED0D2AD1DDDDEA400BE15CE /* Tutorial2ViewController.swift in Sources */,
 				4E3244801DD3DE2D00258CE1 /* Fruits.swift in Sources */,
 				4E973BAF1DD8FE9700D4CD8B /* UserViewController.swift in Sources */,

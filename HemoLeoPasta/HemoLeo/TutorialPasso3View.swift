@@ -457,10 +457,10 @@ class TutorialPasso3View : UIView, CAAnimationDelegate {
 		}
 	}
 
-	override func removeAllAnimations() {
-		for subview in viewsByName.values {
-			subview.layer.removeAllAnimations()
-		}
-		self.layer.removeAnimation(forKey: "Passo3")
-	}
+//	override func removeAllAnimations() {
+//		for subview in viewsByName.values {
+//			subview.layer.removeAllAnimations()
+//		}
+//		self.layer.removeAnimation(forKey: "Passo3")
+//	}
 }
