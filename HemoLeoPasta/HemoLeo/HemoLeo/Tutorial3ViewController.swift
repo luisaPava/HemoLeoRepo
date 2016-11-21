@@ -15,6 +15,15 @@ class Tutorial3ViewController: UIViewController {
         super.viewDidLoad()
         
         self.view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "BG"))
+    
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         if UIDevice.current.modelName.contains("iPhone") {
             
             
@@ -22,14 +31,18 @@ class Tutorial3ViewController: UIViewController {
             
             passo3.addPasso3Animation()
         }
-
-        // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        passo3.removePasso3Animation()
     }
+    
+    @IBAction func redo(_ sender: UIButton) {
+        passo3.removePasso3Animation()
+        passo3.addPasso3Animation()
+    }
+    
+    
     
 
     /*

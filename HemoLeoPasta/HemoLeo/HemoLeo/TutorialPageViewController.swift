@@ -19,8 +19,7 @@ class TutorialPageViewController: UIPageViewController {
                 self.getViewController(name: "tutorial4"),
                 self.getViewController(name: "tutorial5"),
                 self.getViewController(name: "tutorial6"),
-                self.getViewController(name: "tutorial7"),
-                self.getViewController(name: "tutorial8")]
+                self.getViewController(name: "tutorial7")]
     }()
     
     //MARK: - Life Cycle
@@ -77,58 +76,6 @@ class TutorialPageViewController: UIPageViewController {
 
 
 //MARK: - UIPageViewControllerDataSource
-//extension TutorialPageViewController: UIPageViewControllerDataSource {
-//    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-//        guard let viewControllerIndex = orderedViewControllers.index(of: viewController) else {
-//            return nil
-//        }
-//        
-//        let previousIndex = viewControllerIndex - 1
-//        
-//        guard previousIndex >= 0 else {
-//            return nil
-//        }
-//        
-//        guard orderedViewControllers.count > previousIndex else {
-//            return nil
-//        }
-//        
-//        return orderedViewControllers[previousIndex]
-//    }
-//    
-//    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-//        guard let viewControllerIndex = orderedViewControllers.index(of: viewController) else {
-//            return nil
-//        }
-//        
-//        let nextIndex = viewControllerIndex + 1
-//        let viewControllersCount = orderedViewControllers.count
-//        
-//        guard viewControllersCount != nextIndex else {
-//            return nil
-//        }
-//        
-//        guard viewControllersCount > nextIndex else {
-//            return nil
-//        }
-//        
-//        return orderedViewControllers[nextIndex]
-//    }
-//    
-//    func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int {
-//        return orderedViewControllers.count
-//    }
-//
-//    func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {
-//        guard let firstViewController = viewControllers?.first,
-//            let firstViewControllerIndex = orderedViewControllers.index(of: firstViewController) else {
-//                return 0
-//        }
-//        
-//        return firstViewControllerIndex
-//    }
-//}
-
 extension TutorialPageViewController: UIPageViewControllerDataSource {
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         guard let viewControllerIndex = orderedViewControllers.index(of: viewController) else {

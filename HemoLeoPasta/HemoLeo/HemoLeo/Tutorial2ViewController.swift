@@ -16,6 +16,16 @@ class Tutorial2ViewController: UIViewController {
         
         self.view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "BG"))
 
+        
+        // Do any additional setup after loading the view.
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         if UIDevice.current.modelName.contains("iPhone") {
             
             
@@ -25,12 +35,15 @@ class Tutorial2ViewController: UIViewController {
             passo2.clipsToBounds = true
             
         }
-        // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        passo2.removePasso2Animation()
+    }
+    
+    @IBAction func redo(_ sender: UIButton) {
+        passo2.removePasso2Animation()
+        passo2.addPasso2Animation()
     }
     
 

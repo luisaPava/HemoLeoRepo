@@ -15,14 +15,7 @@ class Tutorial6ViewController: UIViewController {
         super.viewDidLoad()
         
         self.view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "BG"))
-        
-        if UIDevice.current.modelName.contains("iPhone") {
-            
-            
-        } else {
-            
-           passo6.addPasso6Animation()
-        }
+    
 
         // Do any additional setup after loading the view.
     }
@@ -30,6 +23,25 @@ class Tutorial6ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if UIDevice.current.modelName.contains("iPhone") {
+            
+            
+        } else {
+            
+            passo6.addPasso6Animation()
+        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        passo6.removePasso6Animation()
+    }
+    
+    @IBAction func redo(_ sender: UIButton) {
+        passo6.removePasso6Animation()
+        passo6.addPasso6Animation()
     }
     
 

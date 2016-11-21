@@ -435,6 +435,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGP-nk-4OI">
                                 <rect key="frame" x="928" y="50" width="46" height="45"/>
                                 <state key="normal" image="reset"/>
+                                <connections>
+                                    <action selector="redo:" destination="H79-R7-vqW" eventType="touchUpInside" id="VeG-Wy-5Vp"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1488,6 +1491,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iQv-8J-Mm1">
                                 <rect key="frame" x="928" y="50" width="46" height="45"/>
                                 <state key="normal" image="reset"/>
+                                <connections>
+                                    <action selector="redo:" destination="fUX-Az-RDC" eventType="touchUpInside" id="qlA-JW-cah"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1547,6 +1553,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9V-wM-NI9">
                                 <rect key="frame" x="928" y="50" width="46" height="45"/>
                                 <state key="normal" image="reset"/>
+                                <connections>
+                                    <action selector="redo:" destination="nmY-Zx-vKe" eventType="touchUpInside" id="FVX-91-WSB"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1606,6 +1615,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oLi-LQ-Nl4">
                                 <rect key="frame" x="928" y="50" width="46" height="45"/>
                                 <state key="normal" image="reset"/>
+                                <connections>
+                                    <action selector="redo:" destination="YtS-Wr-xwC" eventType="touchUpInside" id="URC-le-djn"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1665,6 +1677,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSd-lW-PES">
                                 <rect key="frame" x="928" y="50" width="46" height="45"/>
                                 <state key="normal" image="reset"/>
+                                <connections>
+                                    <action selector="redo:" destination="p9I-6b-Hag" eventType="touchUpInside" id="6wa-KS-OC3"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1748,62 +1763,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ESK-Yo-ttQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1542" y="-1274"/>
-        </scene>
-        <!--Tutorial8 View Controller-->
-        <scene sceneID="9se-Za-4ia">
-            <objects>
-                <viewController storyboardIdentifier="tutorial8" id="3F5-Es-joA" customClass="Tutorial8ViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="aCv-SQ-KLS"/>
-                        <viewControllerLayoutGuide type="bottom" id="Ks7-o9-o1E"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="le2-Nj-Jul">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EGg-mU-fkR">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="kQO-vQ-oZe">
-                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                </view>
-                                <blurEffect style="light"/>
-                            </visualEffectView>
-                            <view alpha="0.55000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J9l-NI-Gi2">
-                                <rect key="frame" x="153" y="130" width="717" height="461"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="hhV-pX-nRF">
-                                <rect key="frame" x="153" y="130" width="717" height="461"/>
-                                <color key="backgroundColor" red="0.1843137255" green="0.19215686269999999" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fz5-xW-VYV">
-                                <rect key="frame" x="928" y="50" width="46" height="45"/>
-                                <state key="normal" image="reset"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="EGg-mU-fkR" firstAttribute="top" secondItem="le2-Nj-Jul" secondAttribute="top" id="5Fc-Eg-BoI"/>
-                            <constraint firstItem="J9l-NI-Gi2" firstAttribute="centerX" secondItem="le2-Nj-Jul" secondAttribute="centerX" id="5t8-K4-cwb"/>
-                            <constraint firstItem="fz5-xW-VYV" firstAttribute="top" secondItem="aCv-SQ-KLS" secondAttribute="bottom" constant="30" id="89q-q1-bsT"/>
-                            <constraint firstAttribute="trailing" secondItem="EGg-mU-fkR" secondAttribute="trailing" id="HoF-Tq-Vqg"/>
-                            <constraint firstItem="Ks7-o9-o1E" firstAttribute="top" secondItem="EGg-mU-fkR" secondAttribute="bottom" id="IU1-Wj-jJZ"/>
-                            <constraint firstItem="J9l-NI-Gi2" firstAttribute="top" secondItem="aCv-SQ-KLS" secondAttribute="bottom" constant="110" id="LhF-NW-ATY"/>
-                            <constraint firstItem="hhV-pX-nRF" firstAttribute="top" secondItem="aCv-SQ-KLS" secondAttribute="bottom" constant="110" id="S4g-1a-Qyd"/>
-                            <constraint firstItem="J9l-NI-Gi2" firstAttribute="height" secondItem="le2-Nj-Jul" secondAttribute="height" multiplier="0.6" id="Slj-b3-13x"/>
-                            <constraint firstItem="EGg-mU-fkR" firstAttribute="leading" secondItem="le2-Nj-Jul" secondAttribute="leading" id="Zfv-gM-E92"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="fz5-xW-VYV" secondAttribute="trailing" constant="30" id="kcn-XV-EPU"/>
-                            <constraint firstItem="hhV-pX-nRF" firstAttribute="width" secondItem="le2-Nj-Jul" secondAttribute="width" multiplier="0.7" constant="1" id="pZD-bU-crr"/>
-                            <constraint firstItem="hhV-pX-nRF" firstAttribute="height" secondItem="le2-Nj-Jul" secondAttribute="height" multiplier="0.6" id="qRJ-iN-cXx"/>
-                            <constraint firstItem="J9l-NI-Gi2" firstAttribute="width" secondItem="le2-Nj-Jul" secondAttribute="width" multiplier="0.7" id="s58-ln-gBi"/>
-                            <constraint firstItem="hhV-pX-nRF" firstAttribute="centerX" secondItem="le2-Nj-Jul" secondAttribute="centerX" id="tL6-2x-s0t"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HS1-ah-MqB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-752" y="-1274"/>
         </scene>
         <!--Tutorial9 View Controller-->
         <scene sceneID="7Br-SJ-zoe">

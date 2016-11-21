@@ -16,13 +16,7 @@ class Tutorial5ViewController: UIViewController {
         
         self.view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "BG"))
         
-        if UIDevice.current.modelName.contains("iPhone") {
-            
-            
-        } else {
-            
-           passo5.addPasso5Animation()
-        }
+        
 
         // Do any additional setup after loading the view.
     }
@@ -30,6 +24,25 @@ class Tutorial5ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if UIDevice.current.modelName.contains("iPhone") {
+            
+            
+        } else {
+            
+            passo5.addPasso5Animation()
+        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        passo5.removePasso5Animation()
+    }
+    
+    @IBAction func redo(_ sender: UIButton) {
+        passo5.removePasso5Animation()
+        passo2.addPasso5Animation()
     }
     
 

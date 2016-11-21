@@ -15,13 +15,7 @@ class Tutorial7ViewController: UIViewController {
         
         self.view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "BG"))
         
-        if UIDevice.current.modelName.contains("iPhone") {
-            
-            
-        } else {
-            
-            
-        }
+        
 
         // Do any additional setup after loading the view.
     }
@@ -30,6 +24,8 @@ class Tutorial7ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
     
 
     /*
