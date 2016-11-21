@@ -68,7 +68,8 @@ class PopUpViewController: UIViewController, PopupContentViewController {
             default:
                 break
             }
-        }    }
+        }
+    }
     
     @IBAction func sliderChanged(_ sender: G8SliderStep) {
         PopUpViewController.sliderValue = Int(sender.value)

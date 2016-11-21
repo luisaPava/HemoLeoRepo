@@ -44,6 +44,7 @@
 		2BA188C21D3567A5007F1CEB /* Water.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA188C11D3567A5007F1CEB /* Water.swift */; };
 		2BA188C41D35681E007F1CEB /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA188C31D35681E007F1CEB /* Exercise.swift */; };
 		2BA188C61D35696A007F1CEB /* Shot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA188C51D35696A007F1CEB /* Shot.swift */; };
+		2BB8A8A61DE353BF004545A5 /* MeninoDorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE05E941DE32AD10088CB99 /* MeninoDorView.swift */; };
 		2BCA5CD81D42A4D600EAC063 /* BWGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCA5CD71D42A4D600EAC063 /* BWGradientView.swift */; };
 		2BCA5CDA1D42ABE700EAC063 /* Story3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCA5CD91D42ABE700EAC063 /* Story3ViewController.swift */; };
 		2BCA5CDC1D42ABF500EAC063 /* Story4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCA5CDB1D42ABF500EAC063 /* Story4ViewController.swift */; };
@@ -178,7 +179,6 @@
 		4EE05E951DE32AD10088CB99 /* MeninoDor.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EE05E931DE32AD10088CB99 /* MeninoDor.xcassets */; };
 		4EE05E961DE32AD10088CB99 /* MeninoDor.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EE05E931DE32AD10088CB99 /* MeninoDor.xcassets */; };
 		4EE05E971DE32AD10088CB99 /* MeninoDorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE05E941DE32AD10088CB99 /* MeninoDorView.swift */; };
-		4EE05E981DE32AD10088CB99 /* MeninoDorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE05E941DE32AD10088CB99 /* MeninoDorView.swift */; };
 		4EE05E9B1DE33F440088CB99 /* MeninoSangramento.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EE05E991DE33F440088CB99 /* MeninoSangramento.xcassets */; };
 		4EE05E9C1DE33F440088CB99 /* MeninoSangramento.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EE05E991DE33F440088CB99 /* MeninoSangramento.xcassets */; };
 		4EE05E9D1DE33F440088CB99 /* MeninoSangramentoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE05E9A1DE33F440088CB99 /* MeninoSangramentoView.swift */; };
@@ -1129,7 +1129,7 @@
 				TargetAttributes = {
 					2BA1887B1D355A2C007F1CEB = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = BUK6UDW987;
+						DevelopmentTeam = AU45XX83RQ;
 						LastSwiftMigration = 0810;
 						SystemCapabilities = {
 							com.apple.Push = {
@@ -1142,15 +1142,15 @@
 					};
 					4EAFA1EB1DC7AAC2002BA048 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = BUK6UDW987;
+						DevelopmentTeam = AU45XX83RQ;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Push = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.iCloud = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -1461,9 +1461,9 @@
 				2B57311D1DDF809000F1A834 /* TutorialPasso4View.swift in Sources */,
 				4E32448C1DD3DE3800258CE1 /* InsightsBuilder.swift in Sources */,
 				2B5731131DDF808500F1A834 /* TutorialPasso3View.swift in Sources */,
-				4EE05E981DE32AD10088CB99 /* MeninoDorView.swift in Sources */,
 				4E6796891DDD35C9000E0A5E /* ADVSegmentedControl.swift in Sources */,
 				4ED0D2C81DDE8B0100BE15CE /* AddContactViewController.swift in Sources */,
+				2BB8A8A61DE353BF004545A5 /* MeninoDorView.swift in Sources */,
 				4E3244791DD3DE2700258CE1 /* DAOCloudKit.swift in Sources */,
 				4E3244821DD3DE2D00258CE1 /* Shot.swift in Sources */,
 				4E3244771DD3DE2700258CE1 /* SymptomTrackerModel.swift in Sources */,
@@ -1662,7 +1662,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = BUK6UDW987;
+				DEVELOPMENT_TEAM = AU45XX83RQ;
 				INFOPLIST_FILE = HemoLeo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1681,7 +1681,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = BUK6UDW987;
+				DEVELOPMENT_TEAM = AU45XX83RQ;
 				INFOPLIST_FILE = HemoLeo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1700,8 +1700,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CODE_SIGN_ENTITLEMENTS = iPhone/iPhone.entitlements;
-				DEVELOPMENT_TEAM = BUK6UDW987;
+				DEVELOPMENT_TEAM = AU45XX83RQ;
 				INFOPLIST_FILE = iPhone/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1719,8 +1718,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CODE_SIGN_ENTITLEMENTS = iPhone/iPhone.entitlements;
-				DEVELOPMENT_TEAM = BUK6UDW987;
+				DEVELOPMENT_TEAM = AU45XX83RQ;
 				INFOPLIST_FILE = iPhone/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

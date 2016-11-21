@@ -99,16 +99,6 @@ class SurveyController: UIViewController {
         
     }
     
-    @IBAction func ombroAction(_ sender: UIButton) {
-        if sender.isSelected == false {
-            resultArray[sender.tag] = sender.accessibilityIdentifier!
-            sender.isSelected = true
-            
-        } else {
-            resultArray[sender.tag] = ""
-            sender.isSelected = false
-        }
-    }
     
     func setArrayBtn(_ array: Array<UIButton>, bool: Bool) {
         for btn in array {
