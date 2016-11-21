@@ -24,6 +24,8 @@ class AddUserViewController: UIViewController {
         
         collectionView.delegate = self
         collectionView.dataSource = self
+        
+        txtField.delegate = self
 
 //        self.hideKeyboardWhenTappedAround()
     }
@@ -61,4 +63,29 @@ extension AddUserViewController: UICollectionViewDataSource {
         return cell
     }
     
+}
+
+extension AddUserViewController: UITextFieldDelegate {
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        animateViewMoving(true, moveValue: 200)
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        animateViewMoving(false, moveValue: 200)
+    }
+
+    
+    func animateViewMoving(_ up:Bool, moveValue :CGFloat){
+        let movementDuration:TimeInterval = 0.3
+        let movement:CGFloat = ( up ? -moveValue : moveValue)
+        UIView.beginAnimations("animateView", context: nil)
+        UIView.setAnimationBeginsFromCurrentState(true)
+        UIView.setAnimationDuration(movementDuration )
+        self.view.frame = self.view.frame.offsetBy(dx: 0,  dy: movement)
+        UIView.commitAnimations()
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
 }
