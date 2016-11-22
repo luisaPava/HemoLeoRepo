@@ -67,11 +67,11 @@ extension AddUserViewController: UICollectionViewDataSource {
 
 extension AddUserViewController: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        animateViewMoving(true, moveValue: 200)
+        animateViewMoving(true, moveValue: 270)
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        animateViewMoving(false, moveValue: 200)
+        animateViewMoving(false, moveValue: 270)
     }
 
     
