@@ -20,8 +20,13 @@ class AddContactViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        nome.delegate = self
+        relacao.delegate = self
+        telefone.delegate = self
+        email.delegate = self
+        tipo.delegate = self
+        
     }
 
     @IBAction func save(_ sender: UIButton) {
@@ -41,5 +46,30 @@ class AddContactViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+}
+
+extension AddContactViewController: UITextFieldDelegate {
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        animateViewMoving(true, moveValue: 270)
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        animateViewMoving(false, moveValue: 270)
+    }
+    
+    
+    func animateViewMoving(_ up:Bool, moveValue :CGFloat){
+        let movementDuration:TimeInterval = 0.3
+        let movement:CGFloat = ( up ? -moveValue : moveValue)
+        UIView.beginAnimations("animateView", context: nil)
+        UIView.setAnimationBeginsFromCurrentState(true)
+        UIView.setAnimationDuration(movementDuration )
+        self.view.frame = self.view.frame.offsetBy(dx: 0,  dy: movement)
+        UIView.commitAnimations()
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
 }
