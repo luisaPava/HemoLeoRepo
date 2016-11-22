@@ -82,27 +82,30 @@ class ThemesViewController: UIViewController, UICollectionViewDelegate, UICollec
         view.addSubview(image)
         cellPos = image.center
         
-        //let fadeOut = UIAnimation.fadeOutWithDuration(0.2)
-//        let movement = UIAnimation.moveTo(point: CGPoint(x: view.frame.width/2, y: view.frame.height/2), duration: 0.8)
+        let fadeOut = UIAnimation.fadeOutWithDuration(0.2)
+        let movement = UIAnimation.moveTo(CGPoint(x: view.frame.width/2, y: view.frame.height/2), duration: 0.8)
         
-//        let doMovement = UIAnimation.runBlock {
-//            UIView.animate(withDuration: 1, animations: {
-//                self.image.transform = self.image.transform.scaledBy(x: 1.5, y: 1.5)
-//            })
-//            self.image.runAnimation(animation: movement)
-//            
-//        }
+        let doMovement = UIAnimation.runBlock {
+            UIView.animate(withDuration: 1, animations: {
+                self.image.transform = self.image.transform.scaledBy(x: 1.345, y: 1.345)
+            })
+            self.image.runAnimation(movement)
+            
+        }
         
-        //let sequence = UIAnimation.sequence([fadeOut,doMovement])
-//        let sequence = UIAnimation.sequence(animations: [doMovement])
+        let sequence = UIAnimation.sequence([fadeOut,doMovement])
+        //let sequence = UIAnimation.sequence([doMovement])
         
-        //collectionView.runAnimation(sequence)
-//        
-//        collectionView.runAnimation(animation: sequence, completion:  { finished in
+        collectionView.runAnimation(sequence)
+        
+        collectionView.runAnimation(sequence, completion:  { finished in
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+                self.performSegue(withIdentifier: "toSelectTheme", sender: self)
+            }
 //            self.performSegue(withIdentifier: "toSelectTheme", sender: self)
-//        })
-        
-        //self.performSegueWithIdentifier("toSelectTheme", sender: self)
+        })
+ 
+        //self.performSegue(withIdentifier: "toSelectTheme", sender: self)
         
     }
     
@@ -111,10 +114,10 @@ class ThemesViewController: UIViewController, UICollectionViewDelegate, UICollec
             let vc = segue.destination as! SelectThemeViewController
             vc.imageToSend = themesNames[index]
             //vc.previousVC = self
-//            vc.previousVC = MainViewController()
+            //vc.previousVC = MainViewController()
         }
     }
-    
+   
     
 }
 
