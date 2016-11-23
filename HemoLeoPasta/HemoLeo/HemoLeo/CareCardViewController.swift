@@ -26,7 +26,9 @@ class CareCardViewController: UINavigationController {
     
     override func viewWillAppear(_ animated: Bool) {
         viewController = careCardModel.createCareCard()
-        viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Nova", style: .done, target: self, action: #selector(pushAddActivityController))
+//        viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Nova", style: .done, target: self, action: #selector(pushAddActivityController))
+//        viewController.navigationItem.leftBarButtonItem?.tintColor = UIColor(netHex: 0xd53d55)
+//        self.viewController.removeFromParentViewController()
         self.pushViewController(viewController, animated: false)
         
     }

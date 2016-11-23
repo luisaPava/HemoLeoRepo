@@ -28,7 +28,7 @@ class Pain: Assessment {
             groupIdentifier: nil,
             title: title,
             text: summary,
-            tintColor: UIColor.blue,
+            tintColor: UIColor(netHex: 0x2ecc71),
             resultResettable: true,
             schedule: schedule,
             userInfo: nil
@@ -36,78 +36,4 @@ class Pain: Assessment {
         
         return activity
     }
-    
-    //MARK: - Assessment
-//    func task() -> ORKTask {
-//        //Steps array
-//        var steps = [ORKStep]()
-//        
-//        //Create questions and answer formats
-//        
-//        //First step: Where is your pain?
-//        let painQuestionStepTitle = "Onde é a sua dor?"
-//        
-//        let imageChoices = [
-//            ORKImageChoice(
-//                normalImage: UIImage(named: "Virilha gray")!,
-//                selectedImage: UIImage(named: "Virilha highlighted")!,
-//                text: "", value: "Virilha" as NSCoding & NSCopying & NSObjectProtocol
-//        ),
-//            ORKImageChoice(
-//                normalImage: UIImage(named: "Tornozelo gray"),
-//                selectedImage: UIImage(named: "Tornozelo highlighted"),
-//                text: "", value: "Tornozelo" as NSCoding & NSCopying & NSObjectProtocol
-//        ),
-//            ORKImageChoice(
-//                normalImage: UIImage(named: "Ombro gray"),
-//                selectedImage: UIImage(named: "Ombro highlighted"),
-//                text: "", value: "Ombro" as NSCoding & NSCopying & NSObjectProtocol
-//        ),
-//            ORKImageChoice(
-//                normalImage: UIImage(named: "Cotovelo gray"),
-//                selectedImage: UIImage(named: "Cotovelo highlighted"),
-//                text: "", value: "Cotovelo" as NSCoding & NSCopying & NSObjectProtocol
-//        ),
-//            ORKImageChoice(
-//                normalImage: UIImage(named: "Joelho gray"),
-//                selectedImage: UIImage(named: "Joelho highlighted"),
-//                text: "", value: "Joelho" as NSCoding & NSCopying & NSObjectProtocol
-//        ),
-//            ORKImageChoice(
-//                normalImage: UIImage(named: "Punho gray"),
-//                selectedImage: UIImage(named: "Punho highlighted"),
-//                text: "", value: "Punho" as NSCoding & NSCopying & NSObjectProtocol
-//        )]
-//        
-//        let painAnswerFormat: ORKImageChoiceAnswerFormat = ORKAnswerFormat.choiceAnswerFormat(with: imageChoices)
-//        let painQuestionStep = ORKQuestionStep(identifier: "ImageChoiceQuestionStep", title: painQuestionStepTitle, answer: painAnswerFormat)
-//        painQuestionStep.isOptional = false
-//        
-//        steps += [painQuestionStep]
-//        
-//        //Second step: How bad is your pain?
-//        let painLevelAnswerFormat = ORKScaleAnswerFormat(
-//            maximumValue: 10,
-//            minimumValue: 0,
-//            defaultValue: -1,
-//            step: 1,
-//            vertical: false,
-//            maximumValueDescription: ":(",
-//            minimumValueDescription: ":)"
-//        )
-//        
-//        
-//        let painLevelQuestionStepTitle = "Qual o nível da dor?"
-//        let painLevelQuestionStep = ORKQuestionStep(identifier: "PainLevelQuestionStep", title: painLevelQuestionStepTitle, answer: painLevelAnswerFormat)
-//        painLevelQuestionStep.isOptional = false
-//        
-//        steps += [painLevelQuestionStep]
-//        
-//        //Create ordered task
-//        let task = ORKOrderedTask(identifier: activityType.rawValue, steps: steps)
-//        
-//        
-//        return task
-//        
-//    }
 }

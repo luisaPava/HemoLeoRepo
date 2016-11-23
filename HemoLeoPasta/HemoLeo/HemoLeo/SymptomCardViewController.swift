@@ -11,11 +11,9 @@ import CareKit
 //import ResearchKit
 
 class SymptomCardViewController: UINavigationController {
-//    var storeManager: CarePlanStoreManager = CarePlanStoreManager.sharedCarePlanStoreManager
     var assessmentManager: AssessmentsManager? = nil
     let symptomTrackerModel = SymptomTrackerModel.sharedSymptomTracker
     var viewController: OCKSymptomTrackerViewController!
-//    var task: ORKTask!
     var event: OCKCarePlanEvent!
     
     override func viewDidLoad() {

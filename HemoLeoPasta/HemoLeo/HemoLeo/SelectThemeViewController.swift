@@ -27,11 +27,11 @@ class SelectThemeViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    @IBAction func backButtonPressed(sender: AnyObject) {
-        
-        self.dismiss(animated: false, completion: nil)
-        
-    }
+//    @IBAction func backButtonPressed(sender: AnyObject) {
+//        
+//        self.dismiss(animated: false, completion: nil)
+//        
+//    }
     
     @IBAction func applyButtonPressed(sender: AnyObject) {
         let defaults = UserDefaults.standard

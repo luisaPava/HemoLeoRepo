@@ -35,8 +35,9 @@ class ThemesViewController: UIViewController, UICollectionViewDelegate, UICollec
             self.image.removeFromSuperview()
             cellPos = nil
         }
-        
+
     }
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -75,6 +76,7 @@ class ThemesViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         index = indexPath.row
+//        image.isHidden = false
         let cell = collectionView.cellForItem(at: indexPath as IndexPath) as! ThemesCollectionViewCell
         image = UIImageView(image: cell.imageView.image)
         image.frame.size = cell.frame.size
@@ -96,7 +98,7 @@ class ThemesViewController: UIViewController, UICollectionViewDelegate, UICollec
         let sequence = UIAnimation.sequence([fadeOut,doMovement])
         //let sequence = UIAnimation.sequence([doMovement])
         
-        collectionView.runAnimation(sequence)
+        //collectionView.runAnimation(sequence)
         
         collectionView.runAnimation(sequence, completion:  { finished in
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
@@ -104,8 +106,6 @@ class ThemesViewController: UIViewController, UICollectionViewDelegate, UICollec
             }
 //            self.performSegue(withIdentifier: "toSelectTheme", sender: self)
         })
- 
-        //self.performSegue(withIdentifier: "toSelectTheme", sender: self)
         
     }
     
@@ -118,6 +118,21 @@ class ThemesViewController: UIViewController, UICollectionViewDelegate, UICollec
         }
     }
    
-    
+    @IBAction func unwindToThemes(sender: UIStoryboardSegue) {
+        print("reload")
+        image.removeFromSuperview()
+        collectionView.reloadData()
+        
+        //collectionView.removeAllAnimations()
+        
+        
+        let fadeIn = UIAnimation.fadeInWithDuration(0.2)
+        //let movement = UIAnimation.moveTo(CGPoint(x: view.frame.width, y: view.frame.height), duration: 0.8)
+        
+        
+        //let sequence = UIAnimation.sequence([fadeIn])
+        
+        collectionView.runAnimation(fadeIn)
+    }
 }
 

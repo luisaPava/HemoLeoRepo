@@ -42,8 +42,8 @@ class CareCardModel: Observer {
         careCardViewController.title = "Cuidados"
         careCardViewController.tabBarItem = UITabBarItem(title: "Cuidados", image: UIImage(named: "carecard"), selectedImage: UIImage(named: "carecard-fill"))
         careCardViewController.navigationItem.rightBarButtonItem?.title = "Hoje"
-//        careCardViewController.delegate = self
-        careCardViewController.navigationItem.leftBarButtonItem?.tintColor = UIColor.red
+//        careCardViewController.navigationItem.rightBarButtonItem?.tintColor = UIColor(netHex: 0xd53d55)
+        
         
         return careCardViewController
     }

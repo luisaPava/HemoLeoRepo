@@ -492,7 +492,7 @@
                                 </constraints>
                                 <state key="normal" image="back"/>
                                 <connections>
-                                    <action selector="backButtonPressedWithSender:" destination="Bbv-1w-PVr" eventType="touchUpInside" id="8jg-nV-XbO"/>
+                                    <segue destination="aYv-8n-8i5" kind="unwind" unwindAction="unwindToThemesWithSender:" id="dl8-95-pvc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXk-zT-hX6">
@@ -542,8 +542,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PLl-GU-mRt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="aYv-8n-8i5" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-1026" y="-187"/>
+            <point key="canvasLocation" x="-1498" y="-24"/>
         </scene>
         <!--Themes View Controller-->
         <scene sceneID="iL8-iK-G9W">
@@ -557,17 +558,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VV1-Si-1tF">
-                                <rect key="frame" x="25" y="20" width="65" height="65"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="Qs0-dv-0oc"/>
-                                    <constraint firstAttribute="width" constant="65" id="R8U-oJ-0Fs"/>
-                                </constraints>
-                                <state key="normal" image="MainBotao"/>
-                                <connections>
-                                    <action selector="backWithSender:" destination="VRu-cM-AZ2" eventType="touchUpInside" id="MFQ-Qx-GLc"/>
-                                </connections>
-                            </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="n5b-az-IT4">
                                 <rect key="frame" x="12" y="-19" width="1000" height="806"/>
                                 <constraints>
@@ -620,6 +610,17 @@
                                     <outlet property="delegate" destination="VRu-cM-AZ2" id="yet-9N-No2"/>
                                 </connections>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VV1-Si-1tF">
+                                <rect key="frame" x="25" y="20" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="Qs0-dv-0oc"/>
+                                    <constraint firstAttribute="width" constant="65" id="R8U-oJ-0Fs"/>
+                                </constraints>
+                                <state key="normal" image="MainBotao"/>
+                                <connections>
+                                    <action selector="backWithSender:" destination="VRu-cM-AZ2" eventType="touchUpInside" id="MFQ-Qx-GLc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
