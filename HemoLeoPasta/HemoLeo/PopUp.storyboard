@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="10" minimumValueImage="N0" maximumValueImage="N10" translatesAutoresizingMaskIntoConstraints="NO" id="gcC-vp-j20" customClass="G8SliderStep" customModule="HemoLeo" customModuleProvider="target">
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="gcC-vp-j20" customClass="G8SliderStep" customModule="HemoLeo" customModuleProvider="target">
                                 <rect key="frame" x="14" y="124" width="272" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="minimumTrackTintColor" red="0.18039215689999999" green="0.80000000000000004" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
@@ -98,8 +98,4 @@
             <point key="canvasLocation" x="219" y="114"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="N0" width="38" height="38"/>
-        <image name="N10" width="38" height="38"/>
-    </resources>
 </document>

@@ -42,6 +42,8 @@ class AddActivityViewController: UIViewController {
         //Set the buttons state
         setButtons()
         
+
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -49,9 +51,7 @@ class AddActivityViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func doneBtn(sender: AnyObject) {
-        self.dismiss(animated: false, completion: nil)
-    }
+
 }
 
 //MARK: - Extension

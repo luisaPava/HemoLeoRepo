@@ -30,13 +30,27 @@ class AddContactViewController: UIViewController {
     }
 
     @IBAction func save(_ sender: UIButton) {
+        
+        if (nome.text?.isEmpty)! || (relacao.text?.isEmpty)! || (telefone.text?.isEmpty)! || (email.text?.isEmpty)! || (email.text?.isEmpty)! {
+        
+            let alertController = UIAlertController(title: "Atenção", message:
+                "Todos os campos devem ser preenchidos", preferredStyle: UIAlertControllerStyle.alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default,handler: nil))
+            
+            self.present(alertController, animated: true, completion: nil)
+
+        
+        } else {
+        
         contactModel.saveContact(tipo: Int(tipo.text!)!,
                                  nome: nome.text!,
                                  relacao: relacao.text!,
                                  telefone: telefone.text!,
                                  email: email.text!)
         
+        
         self.dismiss(animated: false, completion: nil)
+        }
     }
     
     @IBAction func cancelBtn(_ sender: UIButton) {
