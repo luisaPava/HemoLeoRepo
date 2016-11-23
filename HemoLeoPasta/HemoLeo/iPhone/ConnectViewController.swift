@@ -24,10 +24,12 @@ class ConnectViewController: UINavigationController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        viewController = contactModel.createConnectViewController()
-        viewController?.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Novo", style: .done, target: self, action: #selector(pushAddContactController))
-        
-        self.pushViewController(viewController!, animated: false)
+        if self.viewControllers.isEmpty {
+            viewController = contactModel.createConnectViewController()
+            viewController?.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Novo", style: .done, target: self, action: #selector(pushAddContactController))
+            
+            self.pushViewController(viewController!, animated: false)
+        }
     }
     
     func pushAddContactController() {

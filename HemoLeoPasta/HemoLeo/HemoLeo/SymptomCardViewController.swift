@@ -23,9 +23,12 @@ class SymptomCardViewController: UINavigationController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        viewController = symptomTrackerModel.createSymtomTracker()
-        viewController.delegate = self
-        self.pushViewController(viewController, animated: false)
+        if self.viewControllers.isEmpty {
+            viewController = symptomTrackerModel.createSymtomTracker()
+            viewController.delegate = self
+            self.pushViewController(viewController, animated: false)
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {
