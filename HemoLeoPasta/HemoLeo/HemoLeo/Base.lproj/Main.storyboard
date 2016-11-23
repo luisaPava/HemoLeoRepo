@@ -1436,13 +1436,16 @@
                                 <rect key="frame" x="153" y="130" width="717" height="461"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="jqR-FJ-rHr">
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="jqR-FJ-rHr" customClass="TutorialPasso1View" customModule="HemoLeo" customModuleProvider="target">
                                 <rect key="frame" x="153" y="130" width="717" height="461"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zh2-hq-SQJ">
                                 <rect key="frame" x="928" y="50" width="46" height="45"/>
                                 <state key="normal" image="reset"/>
+                                <connections>
+                                    <action selector="redo:" destination="PLR-9L-0Zs" eventType="touchUpInside" id="cCh-0v-fWH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1463,6 +1466,9 @@
                             <constraint firstItem="gcF-rz-4ot" firstAttribute="top" secondItem="0Mi-eN-Jax" secondAttribute="bottom" id="xpW-d8-1JQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="passo1" destination="jqR-FJ-rHr" id="dk3-lm-TuG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kzX-mL-MRU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -25,6 +25,10 @@
 		2B87D5E91D38247000F29678 /* AddActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B87D5E81D38247000F29678 /* AddActivityViewController.swift */; };
 		2B87D5EB1D3825DB00F29678 /* AddedActivitiesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B87D5EA1D3825DB00F29678 /* AddedActivitiesData.swift */; };
 		2B87D5ED1D38261300F29678 /* ToAddedActivitiesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B87D5EC1D38261300F29678 /* ToAddedActivitiesData.swift */; };
+		2B9080461DE603C300318DDB /* TutorialPasso1.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B9080441DE603C300318DDB /* TutorialPasso1.xcassets */; };
+		2B9080471DE603C300318DDB /* TutorialPasso1.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B9080441DE603C300318DDB /* TutorialPasso1.xcassets */; };
+		2B9080481DE603C300318DDB /* TutorialPasso1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9080451DE603C300318DDB /* TutorialPasso1View.swift */; };
+		2B9080491DE603C300318DDB /* TutorialPasso1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9080451DE603C300318DDB /* TutorialPasso1View.swift */; };
 		2B9707111DDDEE8000FE3A74 /* Storytelling.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B97070F1DDDEE8000FE3A74 /* Storytelling.xcassets */; };
 		2B9707141DDDF07600FE3A74 /* StorytellingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9707131DDDF07600FE3A74 /* StorytellingView.swift */; };
 		2B9707171DDDF2E900FE3A74 /* Storytelling2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B9707151DDDF2E900FE3A74 /* Storytelling2.xcassets */; };
@@ -280,6 +284,8 @@
 		2B87D5E81D38247000F29678 /* AddActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddActivityViewController.swift; sourceTree = "<group>"; };
 		2B87D5EA1D3825DB00F29678 /* AddedActivitiesData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddedActivitiesData.swift; sourceTree = "<group>"; };
 		2B87D5EC1D38261300F29678 /* ToAddedActivitiesData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToAddedActivitiesData.swift; sourceTree = "<group>"; };
+		2B9080441DE603C300318DDB /* TutorialPasso1.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TutorialPasso1.xcassets; sourceTree = "<group>"; };
+		2B9080451DE603C300318DDB /* TutorialPasso1View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialPasso1View.swift; sourceTree = "<group>"; };
 		2B97070F1DDDEE8000FE3A74 /* Storytelling.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Storytelling.xcassets; sourceTree = "<group>"; };
 		2B9707131DDDF07600FE3A74 /* StorytellingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorytellingView.swift; sourceTree = "<group>"; };
 		2B9707151DDDF2E900FE3A74 /* Storytelling2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Storytelling2.xcassets; sourceTree = "<group>"; };
@@ -465,6 +471,8 @@
 		2B7099B31DDF213C006C27F0 /* Passo1 */ = {
 			isa = PBXGroup;
 			children = (
+				2B9080441DE603C300318DDB /* TutorialPasso1.xcassets */,
+				2B9080451DE603C300318DDB /* TutorialPasso1View.swift */,
 			);
 			name = Passo1;
 			sourceTree = "<group>";
@@ -1206,6 +1214,7 @@
 				4EE05E6F1DE0FEDA0088CB99 /* carinho1.png in Resources */,
 				EB69AB5C1DE24576003EAB99 /* Storytelling3.xcassets in Resources */,
 				2B9707231DDDF30600FE3A74 /* Storytelling5.xcassets in Resources */,
+				2B9080461DE603C300318DDB /* TutorialPasso1.xcassets in Resources */,
 				7777110F1D3E9C110066A0E2 /* LeoImages.atlas in Resources */,
 				2B97071F1DDDF2FD00FE3A74 /* Storytelling4 .xcassets in Resources */,
 				2B9707111DDDEE8000FE3A74 /* Storytelling.xcassets in Resources */,
@@ -1244,6 +1253,7 @@
 				EB69AB611DE245AD003EAB99 /* Materiais.xcassets in Resources */,
 				EB69AB731DE24FC6003EAB99 /* TutorialPasso5.xcassets in Resources */,
 				EB69AB8B1DE255D6003EAB99 /* TutorialPasso6.xcassets in Resources */,
+				2B9080471DE603C300318DDB /* TutorialPasso1.xcassets in Resources */,
 				4E03102B1DD6ACD3002B8200 /* PopUp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1375,6 +1385,7 @@
 				4E973BB41DD90FD700D4CD8B /* AddUserViewController.swift in Sources */,
 				2BA188C41D35681E007F1CEB /* Exercise.swift in Sources */,
 				77E89D171D4252EA00FDA59B /* ThemesCollectionViewCell.swift in Sources */,
+				2B9080481DE603C300318DDB /* TutorialPasso1View.swift in Sources */,
 				4EAFA2071DC7B286002BA048 /* DAOCloudKit.swift in Sources */,
 				2BA188C01D3560C3007F1CEB /* Fruits.swift in Sources */,
 				2B1A21521D3E7BA3007F1B68 /* NSCodingManager.swift in Sources */,
@@ -1471,6 +1482,7 @@
 				4E3244A01DD3EF4300258CE1 /* SymptomCardViewController.swift in Sources */,
 				4EAFA1F11DC7AAC2002BA048 /* ViewController.swift in Sources */,
 				4E3244871DD3DE3200258CE1 /* Assessment.swift in Sources */,
+				2B9080491DE603C300318DDB /* TutorialPasso1View.swift in Sources */,
 				4E973BB71DD9115F00D4CD8B /* Subject.swift in Sources */,
 				4E3244861DD3DE2D00258CE1 /* ToAddedActivitiesData.swift in Sources */,
 				4E3244971DD3EC9D00258CE1 /* InsightViewController.swift in Sources */,

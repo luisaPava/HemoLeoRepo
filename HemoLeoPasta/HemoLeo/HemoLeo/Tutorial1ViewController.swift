@@ -10,6 +10,7 @@ import UIKit
 
 class Tutorial1ViewController: UIViewController {
 
+    @IBOutlet weak var passo1: TutorialPasso1View!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,13 +30,24 @@ class Tutorial1ViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-//        if UIDevice.current.modelName.contains("iPhone") {
-//            
-//            
-//        } else {
-//            
-//            
-//        }
+        if UIDevice.current.modelName.contains("iPhone") {
+            
+            
+        } else {
+            
+            passo1.addLavarMaoAnimation()
+            passo1.clipsToBounds = true
+            
+        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        passo1.removeLavarMaoAnimation()
+    }
+    
+    @IBAction func redo(_ sender: UIButton) {
+        passo1.removeLavarMaoAnimation()
+        passo1.addLavarMaoAnimation()
     }
     
     
