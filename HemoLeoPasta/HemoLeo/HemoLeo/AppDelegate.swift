@@ -14,36 +14,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-//    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-//        // Override point for customization after application launch.
-//        
-//        let defaults = UserDefaults.standard
-//        
-////        if !defaults.boolForKey("firstLaunch") {
-//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//            let initialViewController = storyboard.instantiateViewController(withIdentifier: "pageViewController") as! PageViewCcontroller
-//        
-//            self.window?.rootViewController = initialViewController
-//            self.window?.makeKeyAndVisible()
-//            
-////            defaults.setBool(true, forKey: "firstLaunch")
-////        }
-//        
-//        return true
-//    }
+
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
-        let _ = UserDefaults.standard
+        let defaults = UserDefaults.standard
         
-        //        if !defaults.boolForKey("firstLaunch") {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let initialViewController = storyboard.instantiateViewController(withIdentifier: "pageViewController") as! PageViewCcontroller
+        if !defaults.bool(forKey: "firstLaunch") {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let initialViewController = storyboard.instantiateViewController(withIdentifier: "pageViewController") as! PageViewCcontroller
         
-        self.window?.rootViewController = initialViewController
-        self.window?.makeKeyAndVisible()
+            self.window?.rootViewController = initialViewController
+            self.window?.makeKeyAndVisible()
         
-        //            defaults.setBool(true, forKey: "firstLaunch")
-        //        }
+            defaults.set(true, forKey: "firstLaunch")
+        }
         
         return true
 
