@@ -67,12 +67,12 @@ extension AddActivityViewController {
             
         } else {
             if (activities[key] == true) {
-                careCardModel.removeActivity(key)
+                careCardModel.removeActivity(withKey: key)
                 activities[key] = false
                 sender.isSelected = false
                 
             } else {
-                careCardModel.addActivity(key, nil)
+                careCardModel.addActivity(withKey: key, occurencies: nil)
                 activities[key] = true
                 selectedButton.isSelected = true
                 

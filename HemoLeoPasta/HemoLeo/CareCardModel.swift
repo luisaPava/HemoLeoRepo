@@ -42,15 +42,14 @@ class CareCardModel: Observer {
         careCardViewController.title = "Cuidados"
         careCardViewController.tabBarItem = UITabBarItem(title: "Cuidados", image: UIImage(named: "carecard"), selectedImage: UIImage(named: "carecard-fill"))
         careCardViewController.navigationItem.rightBarButtonItem?.title = "Hoje"
-//        careCardViewController.navigationItem.rightBarButtonItem?.tintColor = UIColor(netHex: 0xd53d55)
         
         
         return careCardViewController
     }
     
     // Remove the activity
-    func removeActivity(_ key: Int) {
-        let activity = self.getActivityWithKey(key)
+    func removeActivity(withKey key: Int) {
+        let activity = self.getActivity(withKey: key)
         
         if activity != nil {
             self.sharedCarePlanStoreManager.store.remove(activity!) { (success, error) in
@@ -71,8 +70,8 @@ class CareCardModel: Observer {
     }
     
     // Add the activity
-    func addActivity(_ key: Int, _ occurencies: [Int]?) {
-        let activity = self.getActivityWithKey(key, occurencies)
+    func addActivity(withKey key: Int, occurencies: [Int]?) {
+        let activity = self.getActivity(withKey: key, occurencies: occurencies)
         
         if activity != nil {
             self.sharedCarePlanStoreManager.store.add(activity!) { (success, error) in
@@ -91,7 +90,7 @@ class CareCardModel: Observer {
         }
     }
     
-    func getActivityWithKey(_ key: Int, _ occurencies: [Int]?) -> OCKCarePlanActivity? {
+    private func getActivity(withKey key: Int, occurencies: [Int]?) -> OCKCarePlanActivity? {
         var activity: OCKCarePlanActivity? = nil
         
         switch key {
@@ -121,7 +120,7 @@ class CareCardModel: Observer {
         
     }
     
-    func getActivityWithKey(_ key: Int) -> OCKCarePlanActivity? {
+    private func getActivity(withKey key: Int) -> OCKCarePlanActivity? {
         var activity: OCKCarePlanActivity? = nil
         
         switch key {
@@ -179,6 +178,10 @@ class CareCardModel: Observer {
     
     func getLeo() -> Leo {
         return self.leo
+    }
+    
+    func getActivityID(withKey key: Int) -> String {
+        return (getActivity(withKey: key)?.identifier)!
     }
 }
 

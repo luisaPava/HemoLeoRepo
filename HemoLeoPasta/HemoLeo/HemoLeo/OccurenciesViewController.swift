@@ -23,7 +23,8 @@ class OccurenciesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        path = "\(careCardModel.getLeo().getId())/Occurencies"
+        let id = careCardModel.getActivityID(withKey: activity)
+        path = "\(careCardModel.getLeo().getId())/Occurencies\(id)"
        
         tableView = UITableView(frame: CGRect(x: 0, y: height / 7.36, width: width / 1.034, height: height / 0.92), style: .plain)
         tableView.delegate = self
@@ -43,14 +44,14 @@ class OccurenciesViewController: UIViewController {
     }
 
     
-    @IBAction func save(sender: AnyObject) {
+    func save() {
         if occurencies.allElementsAreEqual(to: 0) {
-            careCardModel.removeActivity(activity)
+            careCardModel.removeActivity(withKey: activity)
             button.isSelected = false
             
         } else {
-            careCardModel.removeActivity(activity)
-            careCardModel.addActivity(activity, occurencies)
+            careCardModel.removeActivity(withKey: activity)
+            careCardModel.addActivity(withKey: activity, occurencies: occurencies)
             button.isSelected = true
 
         }
@@ -58,9 +59,6 @@ class OccurenciesViewController: UIViewController {
         if !codingManager.saveAnyWithPath(path: path, object: occurencies){
             print("Não foi possível salvar as ocorrências")
         }
-        
-        dismiss(animated: true, completion: nil)
-        
     }
     
     func getDefaultOccurencies() {
@@ -82,6 +80,8 @@ extension OccurenciesViewController: UITableViewDelegate {
         let cell = tableView.cellForRow(at: indexPath) as! CustomActivityCell
         
         cell.check.isHidden = cell.check.isHidden ? false : true
+        
+        save()
         
     }
 }
