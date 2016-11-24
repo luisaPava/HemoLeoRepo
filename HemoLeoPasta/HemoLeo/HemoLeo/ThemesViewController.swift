@@ -89,7 +89,7 @@ class ThemesViewController: UIViewController, UICollectionViewDelegate, UICollec
         
         let doMovement = UIAnimation.runBlock {
             UIView.animate(withDuration: 1, animations: {
-                self.image.transform = self.image.transform.scaledBy(x: 1.345, y: 1.345)
+                self.image.transform = self.image.transform.scaledBy(x: 1.35, y: 1.35)
             })
             self.image.runAnimation(movement)
             

@@ -26,12 +26,7 @@ class SelectThemeViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
-//    @IBAction func backButtonPressed(sender: AnyObject) {
-//        
-//        self.dismiss(animated: false, completion: nil)
-//        
-//    }
+
     
     @IBAction func applyButtonPressed(sender: AnyObject) {
         let defaults = UserDefaults.standard
@@ -40,7 +35,7 @@ class SelectThemeViewController: UIViewController {
         let presentingViewController: UIViewController! = self.presentingViewController
         
         self.dismiss(animated: false) {
-            presentingViewController.dismiss(animated: false, completion: nil)
+            presentingViewController.dismiss(animated: true, completion: nil)
                     
         }
     }

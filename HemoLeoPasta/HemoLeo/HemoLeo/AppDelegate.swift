@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if !defaults.bool(forKey: "firstLaunch") {
             print("entrou")
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let initialViewController = storyboard.instantiateViewController(withIdentifier: "main") as! MainViewController
+            let initialViewController = storyboard.instantiateViewController(withIdentifier: "uservc") as! UserViewController
             
             let frame = UIScreen.main.bounds
             window = UIWindow(frame: frame)

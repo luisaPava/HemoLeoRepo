@@ -208,7 +208,7 @@
         <!--User View Controller-->
         <scene sceneID="O89-R9-4g2">
             <objects>
-                <viewController id="s0Y-r7-cGL" customClass="UserViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="uservc" id="s0Y-r7-cGL" customClass="UserViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lyN-XA-aVa"/>
                         <viewControllerLayoutGuide type="bottom" id="Wiw-Bz-nuf"/>
@@ -428,8 +428,8 @@
                                 <blurEffect style="light"/>
                             </visualEffectView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJG-qe-NEz">
-                                <rect key="frame" x="392" y="600" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="120" y="621" width="784" height="117"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <string key="text">Retira a tampa do dispositivo sem tirá-lo da embalagem. Em seguida, vire a embalagem, insira a ponta de plástico limpa na tampa do diluente e finalmente retire a embalagem.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
@@ -1446,7 +1446,7 @@
                             </visualEffectView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Lavar bem as mãos com sabão e colocar as luvas." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hoW-iQ-cS0">
                                 <rect key="frame" x="120" y="621" width="784" height="117"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1880,19 +1880,30 @@
                                 </view>
                                 <blurEffect style="light"/>
                             </visualEffectView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yox-5D-CR2">
+                                <rect key="frame" x="30" y="30" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="1kx-6V-kSc"/>
+                                    <constraint firstAttribute="height" constant="60" id="XVn-cA-iPG"/>
+                                </constraints>
+                                <state key="normal" image="MainBotao"/>
+                                <connections>
+                                    <action selector="backButton:" destination="4T0-Bi-dfW" eventType="touchUpInside" id="2Zb-JO-bpp"/>
+                                </connections>
+                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Materiais: Garrote, diluente, produto, borboleta, luvas, seringa, álcool 70%, band-aid e dispositivo." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O5O-Jr-MhI">
-                                <rect key="frame" x="120" y="621" width="784" height="117"/>
+                                <rect key="frame" x="120" y="601" width="784" height="127"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <view alpha="0.55000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W2K-ld-UF7">
-                                <rect key="frame" x="153" y="130" width="717" height="461"/>
+                                <rect key="frame" x="153" y="110" width="717" height="461"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="veo-QM-79D" customClass="MateriaisView" customModule="HemoLeo" customModuleProvider="target">
-                                <rect key="frame" x="153" y="130" width="717" height="461"/>
+                                <rect key="frame" x="153" y="110" width="717" height="461"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sf6-ki-N2O">
@@ -1907,8 +1918,9 @@
                         <constraints>
                             <constraint firstItem="O5O-Jr-MhI" firstAttribute="leading" secondItem="KBL-6a-cad" secondAttribute="leadingMargin" constant="100" id="0Ua-qg-PnQ"/>
                             <constraint firstItem="PC2-VU-KCo" firstAttribute="top" secondItem="KBL-6a-cad" secondAttribute="top" id="1S3-gN-cF8"/>
-                            <constraint firstItem="veo-QM-79D" firstAttribute="top" secondItem="fDu-8x-Dke" secondAttribute="bottom" constant="110" id="820-h1-d3L"/>
-                            <constraint firstItem="W2K-ld-UF7" firstAttribute="top" secondItem="fDu-8x-Dke" secondAttribute="bottom" constant="110" id="BXc-el-Iwe"/>
+                            <constraint firstItem="veo-QM-79D" firstAttribute="top" secondItem="fDu-8x-Dke" secondAttribute="bottom" constant="90" id="820-h1-d3L"/>
+                            <constraint firstItem="yox-5D-CR2" firstAttribute="leading" secondItem="KBL-6a-cad" secondAttribute="leadingMargin" constant="10" id="AbD-tO-Lq4"/>
+                            <constraint firstItem="W2K-ld-UF7" firstAttribute="top" secondItem="fDu-8x-Dke" secondAttribute="bottom" constant="90" id="BXc-el-Iwe"/>
                             <constraint firstItem="veo-QM-79D" firstAttribute="centerX" secondItem="KBL-6a-cad" secondAttribute="centerX" id="CEc-Pj-zke"/>
                             <constraint firstAttribute="trailing" secondItem="PC2-VU-KCo" secondAttribute="trailing" id="DkW-M0-vDB"/>
                             <constraint firstItem="veo-QM-79D" firstAttribute="height" secondItem="KBL-6a-cad" secondAttribute="height" multiplier="0.6" id="FLm-zp-nC0"/>
@@ -1918,7 +1930,8 @@
                             <constraint firstAttribute="trailingMargin" secondItem="sf6-ki-N2O" secondAttribute="trailing" constant="30" id="acV-hC-1HB"/>
                             <constraint firstItem="W2K-ld-UF7" firstAttribute="height" secondItem="KBL-6a-cad" secondAttribute="height" multiplier="0.6" id="bmp-4f-2hr"/>
                             <constraint firstItem="veo-QM-79D" firstAttribute="width" secondItem="KBL-6a-cad" secondAttribute="width" multiplier="0.7" constant="1" id="dli-Ke-B2t"/>
-                            <constraint firstItem="php-I9-YLw" firstAttribute="top" secondItem="O5O-Jr-MhI" secondAttribute="bottom" constant="30" id="hao-Vp-bjY"/>
+                            <constraint firstItem="php-I9-YLw" firstAttribute="top" secondItem="O5O-Jr-MhI" secondAttribute="bottom" constant="40" id="hao-Vp-bjY"/>
+                            <constraint firstItem="yox-5D-CR2" firstAttribute="top" secondItem="fDu-8x-Dke" secondAttribute="bottom" constant="10" id="oHt-Nz-3ea"/>
                             <constraint firstItem="php-I9-YLw" firstAttribute="top" secondItem="PC2-VU-KCo" secondAttribute="bottom" id="qaH-kX-T4H"/>
                             <constraint firstItem="PC2-VU-KCo" firstAttribute="leading" secondItem="KBL-6a-cad" secondAttribute="leading" id="qdQ-On-Ojo"/>
                             <constraint firstItem="sf6-ki-N2O" firstAttribute="top" secondItem="fDu-8x-Dke" secondAttribute="bottom" constant="30" id="rdU-cG-xCB"/>
