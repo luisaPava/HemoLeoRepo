@@ -1799,8 +1799,9 @@
                                 <blurEffect style="light"/>
                             </visualEffectView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Lavar bem as mãos com sabão e colocar as luvas." translatesAutoresizingMaskIntoConstraints="NO" id="O5O-Jr-MhI">
-                                <rect key="frame" x="60" y="621" width="904" height="117"/>
+                                <rect key="frame" x="120" y="621" width="784" height="117"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -1822,7 +1823,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="O5O-Jr-MhI" firstAttribute="leading" secondItem="KBL-6a-cad" secondAttribute="leadingMargin" constant="40" id="0Ua-qg-PnQ"/>
+                            <constraint firstItem="O5O-Jr-MhI" firstAttribute="leading" secondItem="KBL-6a-cad" secondAttribute="leadingMargin" constant="100" id="0Ua-qg-PnQ"/>
                             <constraint firstItem="PC2-VU-KCo" firstAttribute="top" secondItem="KBL-6a-cad" secondAttribute="top" id="1S3-gN-cF8"/>
                             <constraint firstItem="veo-QM-79D" firstAttribute="top" secondItem="fDu-8x-Dke" secondAttribute="bottom" constant="110" id="820-h1-d3L"/>
                             <constraint firstItem="W2K-ld-UF7" firstAttribute="top" secondItem="fDu-8x-Dke" secondAttribute="bottom" constant="110" id="BXc-el-Iwe"/>
@@ -1830,7 +1831,7 @@
                             <constraint firstAttribute="trailing" secondItem="PC2-VU-KCo" secondAttribute="trailing" id="DkW-M0-vDB"/>
                             <constraint firstItem="veo-QM-79D" firstAttribute="height" secondItem="KBL-6a-cad" secondAttribute="height" multiplier="0.6" id="FLm-zp-nC0"/>
                             <constraint firstItem="W2K-ld-UF7" firstAttribute="centerX" secondItem="KBL-6a-cad" secondAttribute="centerX" id="Ffr-3s-tlf"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="O5O-Jr-MhI" secondAttribute="trailing" constant="40" id="Gfj-g2-ZD0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="O5O-Jr-MhI" secondAttribute="trailing" constant="100" id="Gfj-g2-ZD0"/>
                             <constraint firstItem="W2K-ld-UF7" firstAttribute="width" secondItem="KBL-6a-cad" secondAttribute="width" multiplier="0.7" id="RPx-ud-HPh"/>
                             <constraint firstAttribute="trailingMargin" secondItem="sf6-ki-N2O" secondAttribute="trailing" constant="30" id="acV-hC-1HB"/>
                             <constraint firstItem="W2K-ld-UF7" firstAttribute="height" secondItem="KBL-6a-cad" secondAttribute="height" multiplier="0.6" id="bmp-4f-2hr"/>

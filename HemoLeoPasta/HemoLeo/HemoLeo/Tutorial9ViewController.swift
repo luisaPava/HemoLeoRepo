@@ -32,7 +32,6 @@ class Tutorial9ViewController: UIViewController {
     
     
     override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear
         materiais.removeMateriaisAnimation()
     }
     
