@@ -1798,6 +1798,13 @@
                                 </view>
                                 <blurEffect style="light"/>
                             </visualEffectView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="O5O-Jr-MhI">
+                                <rect key="frame" x="392" y="650" width="240" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <view alpha="0.55000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W2K-ld-UF7">
                                 <rect key="frame" x="153" y="130" width="717" height="461"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -1816,6 +1823,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="O5O-Jr-MhI" firstAttribute="leading" secondItem="KBL-6a-cad" secondAttribute="leadingMargin" constant="40" id="0Ua-qg-PnQ"/>
                             <constraint firstItem="PC2-VU-KCo" firstAttribute="top" secondItem="KBL-6a-cad" secondAttribute="top" id="1S3-gN-cF8"/>
                             <constraint firstItem="veo-QM-79D" firstAttribute="top" secondItem="fDu-8x-Dke" secondAttribute="bottom" constant="110" id="820-h1-d3L"/>
                             <constraint firstItem="W2K-ld-UF7" firstAttribute="top" secondItem="fDu-8x-Dke" secondAttribute="bottom" constant="110" id="BXc-el-Iwe"/>
@@ -1823,13 +1831,16 @@
                             <constraint firstAttribute="trailing" secondItem="PC2-VU-KCo" secondAttribute="trailing" id="DkW-M0-vDB"/>
                             <constraint firstItem="veo-QM-79D" firstAttribute="height" secondItem="KBL-6a-cad" secondAttribute="height" multiplier="0.6" id="FLm-zp-nC0"/>
                             <constraint firstItem="W2K-ld-UF7" firstAttribute="centerX" secondItem="KBL-6a-cad" secondAttribute="centerX" id="Ffr-3s-tlf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="O5O-Jr-MhI" secondAttribute="trailing" constant="40" id="Gfj-g2-ZD0"/>
                             <constraint firstItem="W2K-ld-UF7" firstAttribute="width" secondItem="KBL-6a-cad" secondAttribute="width" multiplier="0.7" id="RPx-ud-HPh"/>
                             <constraint firstAttribute="trailingMargin" secondItem="sf6-ki-N2O" secondAttribute="trailing" constant="30" id="acV-hC-1HB"/>
                             <constraint firstItem="W2K-ld-UF7" firstAttribute="height" secondItem="KBL-6a-cad" secondAttribute="height" multiplier="0.6" id="bmp-4f-2hr"/>
                             <constraint firstItem="veo-QM-79D" firstAttribute="width" secondItem="KBL-6a-cad" secondAttribute="width" multiplier="0.7" constant="1" id="dli-Ke-B2t"/>
+                            <constraint firstItem="php-I9-YLw" firstAttribute="top" secondItem="O5O-Jr-MhI" secondAttribute="bottom" constant="30" id="hao-Vp-bjY"/>
                             <constraint firstItem="php-I9-YLw" firstAttribute="top" secondItem="PC2-VU-KCo" secondAttribute="bottom" id="qaH-kX-T4H"/>
                             <constraint firstItem="PC2-VU-KCo" firstAttribute="leading" secondItem="KBL-6a-cad" secondAttribute="leading" id="qdQ-On-Ojo"/>
                             <constraint firstItem="sf6-ki-N2O" firstAttribute="top" secondItem="fDu-8x-Dke" secondAttribute="bottom" constant="30" id="rdU-cG-xCB"/>
+                            <constraint firstItem="O5O-Jr-MhI" firstAttribute="top" secondItem="veo-QM-79D" secondAttribute="bottom" constant="30" id="v4t-GL-hru"/>
                         </constraints>
                     </view>
                     <connections>
@@ -1838,7 +1849,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vE4-HN-e9w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2336" y="-2813"/>
+            <point key="canvasLocation" x="-2336.1328125" y="-2813.28125"/>
         </scene>
     </scenes>
     <resources>
