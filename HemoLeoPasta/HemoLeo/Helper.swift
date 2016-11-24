@@ -128,6 +128,19 @@ public extension UIDevice {
     
 }
 
+extension String {
+    func getInitials() -> String {
+        let stringInputArr = self.components(separatedBy: " ")
+        var stringNeed = ""
+        
+        for string in stringInputArr {
+            stringNeed = stringNeed + String(string.characters.first!)
+        }
+        
+        return stringNeed
+    }
+}
+
 //class TextFieldDelegate: UITextFieldDelegate {
 //    func textFieldDidBeginEditing(_ textField: UITextField) {
 //        animateViewMoving(true, moveValue: 270)

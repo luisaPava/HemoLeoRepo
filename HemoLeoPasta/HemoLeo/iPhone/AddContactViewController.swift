@@ -42,14 +42,14 @@ class AddContactViewController: UIViewController {
         
         } else {
         
-        contactModel.saveContact(tipo: Int(tipo.text!)!,
-                                 nome: nome.text!,
-                                 relacao: relacao.text!,
-                                 telefone: telefone.text!,
-                                 email: email.text!)
+            contactModel.saveContact(tipo: Int(tipo.text!)!,
+                                     nome: nome.text!,
+                                     relacao: relacao.text!,
+                                     telefone: telefone.text!,
+                                     email: email.text!)
         
         
-        self.dismiss(animated: false, completion: nil)
+            self.dismiss(animated: false, completion: nil)
         }
     }
     

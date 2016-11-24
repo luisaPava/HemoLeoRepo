@@ -51,7 +51,7 @@ class ContactModel: Observer {
                                     phoneNumber: CNPhoneNumber(stringValue: telefone),
                                     messageNumber: nil,
                                     emailAddress: email,
-                                    monogram: "MR",
+                                    monogram: nome.getInitials(),
                                     image: nil)
         
         contactsArray.append(newContact)
