@@ -19,14 +19,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
         let defaults = UserDefaults.standard
         
+        print(defaults.bool(forKey: "firstLaunch"))
+        
         if !defaults.bool(forKey: "firstLaunch") {
+            print("entrou")
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let initialViewController = storyboard.instantiateViewController(withIdentifier: "pageViewController") as! PageViewCcontroller
+            let initialViewController = storyboard.instantiateViewController(withIdentifier: "main") as! MainViewController
+            
+            let frame = UIScreen.main.bounds
+            window = UIWindow(frame: frame)
         
             self.window?.rootViewController = initialViewController
             self.window?.makeKeyAndVisible()
-        
-            defaults.set(true, forKey: "firstLaunch")
+
+            
+        } else {
+            defaults.set(false, forKey: "firstLaunch")
+            
         }
         
         return true
