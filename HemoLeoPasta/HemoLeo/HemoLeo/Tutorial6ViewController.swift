@@ -15,7 +15,7 @@ class Tutorial6ViewController: UIViewController {
         super.viewDidLoad()
         
         self.view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "BG"))
-    
+        passo6.clipsToBounds = true
 
         // Do any additional setup after loading the view.
     }
@@ -26,13 +26,9 @@ class Tutorial6ViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        if UIDevice.current.modelName.contains("iPhone") {
-            
-            
-        } else {
             
             passo6.addPasso6Animation()
-        }
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {

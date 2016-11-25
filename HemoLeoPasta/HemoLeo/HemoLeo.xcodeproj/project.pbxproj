@@ -117,7 +117,6 @@
 		4E36E4661D45B9A20005A1BE /* QueryActivityEventsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E36E4631D45B9A20005A1BE /* QueryActivityEventsOperation.swift */; };
 		4E36E46A1D45BA330005A1BE /* NSCalendar+Dates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E36E4681D45BA330005A1BE /* NSCalendar+Dates.swift */; };
 		4E36E46B1D45BA330005A1BE /* OCKInsightItem+EmptyMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E36E4691D45BA330005A1BE /* OCKInsightItem+EmptyMessage.swift */; };
-		4E3CE02B1D3FDF0F00E4F422 /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3CE02A1D3FDF0F00E4F422 /* SurveyViewController.swift */; };
 		4E3CE03C1D400FFF00E4F422 /* ButtonAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3CE03B1D400FFF00E4F422 /* ButtonAnimation.swift */; };
 		4E4F03EA1DCD8ABF00523507 /* SurveyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4F03E91DCD8ABF00523507 /* SurveyController.swift */; };
 		4E4F03EC1DD0B9EE00523507 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4F03EB1DD0B9EE00523507 /* Helper.swift */; };
@@ -335,7 +334,6 @@
 		4E36E4631D45B9A20005A1BE /* QueryActivityEventsOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryActivityEventsOperation.swift; sourceTree = "<group>"; };
 		4E36E4681D45BA330005A1BE /* NSCalendar+Dates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSCalendar+Dates.swift"; sourceTree = "<group>"; };
 		4E36E4691D45BA330005A1BE /* OCKInsightItem+EmptyMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OCKInsightItem+EmptyMessage.swift"; sourceTree = "<group>"; };
-		4E3CE02A1D3FDF0F00E4F422 /* SurveyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
 		4E3CE03B1D400FFF00E4F422 /* ButtonAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonAnimation.swift; sourceTree = "<group>"; };
 		4E4F03E91DCD8ABF00523507 /* SurveyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyController.swift; sourceTree = "<group>"; };
 		4E4F03EB1DD0B9EE00523507 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
@@ -873,7 +871,6 @@
 			isa = PBXGroup;
 			children = (
 				4E2B29CD1D395AF800EED2B4 /* SymptomCardViewController.swift */,
-				4E3CE02A1D3FDF0F00E4F422 /* SurveyViewController.swift */,
 				4E4F03E91DCD8ABF00523507 /* SurveyController.swift */,
 			);
 			name = SymptomTracker;
@@ -1400,7 +1397,6 @@
 				4E973BAE1DD8FE9700D4CD8B /* UserViewController.swift in Sources */,
 				4E2B29C01D36CD0E00EED2B4 /* MainViewController.swift in Sources */,
 				EB9377721DE25E980075631B /* TutorialPasso2View.swift in Sources */,
-				4E3CE02B1D3FDF0F00E4F422 /* SurveyViewController.swift in Sources */,
 				2BCA5CD81D42A4D600EAC063 /* BWGradientView.swift in Sources */,
 				EB69AB5D1DE24576003EAB99 /* Storytelling3View.swift in Sources */,
 				4E2B2DEF1D3AA7F900EED2B4 /* Assessment.swift in Sources */,

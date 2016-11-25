@@ -44,17 +44,9 @@ class SurveyController: UIViewController {
     }
     
     @IBAction func save(_ sender: UIButton) {
-        let popup = PopupController.create(self)
         
-        let container = PopUpViewController.instance()
-        container.closeHandler = { _ in
-            self.sliderValue = PopUpViewController.sliderValue
-            print(self.sliderValue)
-            popup.dismiss()
-            self.saveResult()
-        }
-        
-        let _ = popup.show(container)
+        //Colocar a cada tap de botao
+
     }
     
 //    func chooseViewClass() {
@@ -82,22 +74,9 @@ class SurveyController: UIViewController {
         
         symptomTrackerModel.completeEvent(event: event, withResult: result!)
         
-        self.dismiss(animated: false, completion: nil)
         
     }
 
-    @IBAction func segmentedControlAction(_ sender: ADVSegmentedControl) {
-        let index = sender.selectedIndex
-        
-        if index == 0 {
-            viewMenino.addSwitchMaskToRightAnimation()
-            
-        } else {
-            viewMenino.addSwitchMaskToLeftAnimation()
-            
-        }
-        
-    }
     
     
     func setArrayBtn(_ array: Array<UIButton>, bool: Bool) {
@@ -135,6 +114,18 @@ extension SurveyController: MeninoDorViewDelegate {
         if botãoDesativado.isSelected == false {
             resultArray[botãoDesativado.tag] = botãoDesativado.accessibilityIdentifier!
             botãoDesativado.isSelected = true
+            
+            let popup = PopupController.create(self)
+            
+            let container = PopUpViewController.instance()
+            container.closeHandler = { _ in
+                self.sliderValue = PopUpViewController.sliderValue
+                print(self.sliderValue)
+                popup.dismiss()
+                self.saveResult()
+            }
+            
+            let _ = popup.show(container)
             
         } else {
             resultArray[botãoDesativado.tag] = ""

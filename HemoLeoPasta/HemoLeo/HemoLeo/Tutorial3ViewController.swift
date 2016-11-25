@@ -15,6 +15,7 @@ class Tutorial3ViewController: UIViewController {
         super.viewDidLoad()
         
         self.view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "BG"))
+        passo3.clipsToBounds = true
     
     }
 
@@ -24,13 +25,9 @@ class Tutorial3ViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        if UIDevice.current.modelName.contains("iPhone") {
-            
-            
-        } else {
             
             passo3.addPasso3Animation()
-        }
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {

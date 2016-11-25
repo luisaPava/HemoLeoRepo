@@ -18,7 +18,8 @@ class Tutorial1ViewController: UIViewController {
 
         
         self.view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "BG"))
-        
+        passo1.clipsToBounds = true
+
         
 
         // Do any additional setup after loading the view.
@@ -30,15 +31,10 @@ class Tutorial1ViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        if UIDevice.current.modelName.contains("iPhone") {
-            
-            
-        } else {
             
             passo1.addLavarMaoAnimation()
-            passo1.clipsToBounds = true
             
-        }
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {

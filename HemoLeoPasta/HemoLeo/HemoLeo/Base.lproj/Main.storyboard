@@ -716,7 +716,7 @@
                                 </constraints>
                                 <state key="normal" image="share"/>
                                 <connections>
-                                    <action selector="share:" destination="DsG-hq-x4v" eventType="touchUpInside" id="FGE-aJ-NX3"/>
+                                    <action selector="shareWithSender:" destination="DsG-hq-x4v" eventType="touchUpInside" id="t0X-rb-xUp"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="g39-ib-5s5">
@@ -726,70 +726,70 @@
                                         <rect key="frame" x="0.0" y="2.5" width="51" height="51"/>
                                         <state key="normal" image="Black"/>
                                         <connections>
-                                            <action selector="pencilPressed:" destination="DsG-hq-x4v" eventType="touchUpInside" id="X1d-27-qdZ"/>
+                                            <action selector="pencilPressedWithSender:" destination="DsG-hq-x4v" eventType="touchUpInside" id="oR9-1v-5Mj"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXh-hg-lqw">
                                         <rect key="frame" x="92.5" y="2.5" width="51" height="51"/>
                                         <state key="normal" image="LightGray"/>
                                         <connections>
-                                            <action selector="pencilPressed:" destination="DsG-hq-x4v" eventType="touchUpInside" id="glI-Nt-DTN"/>
+                                            <action selector="pencilPressedWithSender:" destination="DsG-hq-x4v" eventType="touchUpInside" id="f0c-L6-8Ep"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="guG-ge-4zf">
                                         <rect key="frame" x="185.5" y="2" width="52" height="52"/>
                                         <state key="normal" image="Red"/>
                                         <connections>
-                                            <action selector="pencilPressed:" destination="DsG-hq-x4v" eventType="touchUpInside" id="PK4-G8-wAJ"/>
+                                            <action selector="pencilPressedWithSender:" destination="DsG-hq-x4v" eventType="touchUpInside" id="db7-yA-R5i"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MVP-KI-IyB">
                                         <rect key="frame" x="279" y="2.5" width="51" height="51"/>
                                         <state key="normal" image="DarkBlue"/>
                                         <connections>
-                                            <action selector="pencilPressed:" destination="DsG-hq-x4v" eventType="touchUpInside" id="m10-Ym-SZC"/>
+                                            <action selector="pencilPressedWithSender:" destination="DsG-hq-x4v" eventType="touchUpInside" id="N0L-sz-amu"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0E8-1u-8lg">
                                         <rect key="frame" x="372" y="2.5" width="51" height="51"/>
                                         <state key="normal" image="LightBlue"/>
                                         <connections>
-                                            <action selector="pencilPressed:" destination="DsG-hq-x4v" eventType="touchUpInside" id="xLz-s2-jvx"/>
+                                            <action selector="pencilPressedWithSender:" destination="DsG-hq-x4v" eventType="touchUpInside" id="T8N-9J-f4C"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WmQ-r9-jQH">
                                         <rect key="frame" x="464.5" y="2.5" width="51" height="51"/>
                                         <state key="normal" image="DarkGreen"/>
                                         <connections>
-                                            <action selector="pencilPressed:" destination="DsG-hq-x4v" eventType="touchUpInside" id="4Gd-qt-THb"/>
+                                            <action selector="pencilPressedWithSender:" destination="DsG-hq-x4v" eventType="touchUpInside" id="KaY-Tf-1XU"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5pq-qR-jJS">
                                         <rect key="frame" x="557" y="2.5" width="51" height="51"/>
                                         <state key="normal" image="LightGreen"/>
                                         <connections>
-                                            <action selector="pencilPressed:" destination="DsG-hq-x4v" eventType="touchUpInside" id="Zwx-3w-9Wd"/>
+                                            <action selector="pencilPressedWithSender:" destination="DsG-hq-x4v" eventType="touchUpInside" id="1sJ-Zw-c0U"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oGk-lv-xiD">
                                         <rect key="frame" x="650" y="2.5" width="51" height="51"/>
                                         <state key="normal" image="Brown"/>
                                         <connections>
-                                            <action selector="pencilPressed:" destination="DsG-hq-x4v" eventType="touchUpInside" id="TId-nw-f1r"/>
+                                            <action selector="pencilPressedWithSender:" destination="DsG-hq-x4v" eventType="touchUpInside" id="JdE-1H-YzR"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xr-h8-fKv">
                                         <rect key="frame" x="742.5" y="2.5" width="51" height="51"/>
                                         <state key="normal" image="Orange"/>
                                         <connections>
-                                            <action selector="pencilPressed:" destination="DsG-hq-x4v" eventType="touchUpInside" id="7YA-9c-EtT"/>
+                                            <action selector="pencilPressedWithSender:" destination="DsG-hq-x4v" eventType="touchUpInside" id="CU8-oO-pNO"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbL-aJ-Hhg">
                                         <rect key="frame" x="835.5" y="2.5" width="51" height="51"/>
                                         <state key="normal" image="Yellos"/>
                                         <connections>
-                                            <action selector="pencilPressed:" destination="DsG-hq-x4v" eventType="touchUpInside" id="CFF-gR-V9v"/>
+                                            <action selector="pencilPressedWithSender:" destination="DsG-hq-x4v" eventType="touchUpInside" id="IsB-Hm-Shb"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VTq-ZB-K2z">
@@ -800,7 +800,7 @@
                                         </constraints>
                                         <state key="normal" image="borracha-1"/>
                                         <connections>
-                                            <action selector="pencilPressed:" destination="DsG-hq-x4v" eventType="touchUpInside" id="dOb-Rj-vN3"/>
+                                            <action selector="pencilPressedWithSender:" destination="DsG-hq-x4v" eventType="touchUpInside" id="JM4-Al-Agx"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -816,7 +816,7 @@
                                 </constraints>
                                 <state key="normal" image="settingss"/>
                                 <connections>
-                                    <action selector="toSettings:" destination="DsG-hq-x4v" eventType="touchUpInside" id="pKk-qL-OhC"/>
+                                    <action selector="toSettingsWithSender:" destination="DsG-hq-x4v" eventType="touchUpInside" id="lo2-pa-uU3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j0N-7w-rbB">
@@ -827,7 +827,7 @@
                                 </constraints>
                                 <state key="normal" image="reset"/>
                                 <connections>
-                                    <action selector="reset:" destination="DsG-hq-x4v" eventType="touchUpInside" id="0Fo-80-JGB"/>
+                                    <action selector="resetWithSender:" destination="DsG-hq-x4v" eventType="touchUpInside" id="v5d-Ud-iHU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Krr-bT-GAs">
@@ -1002,29 +1002,6 @@
             </objects>
             <point key="canvasLocation" x="2584" y="75"/>
         </scene>
-        <!--Survey View Controller-->
-        <scene sceneID="s8G-Jt-sJZ">
-            <objects>
-                <viewController id="osk-FB-Tce" customClass="SurveyViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="AXO-33-kx5"/>
-                        <viewControllerLayoutGuide type="bottom" id="KOa-WY-agA"/>
-                    </layoutGuides>
-                    <view key="view" autoresizesSubviews="NO" contentMode="scaleAspectFill" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="414" verticalHuggingPriority="736" horizontalCompressionResistancePriority="414" verticalCompressionResistancePriority="736" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="736" id="gcd-wi-Zz8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <value key="contentSizeForViewInPopover" type="size" width="414" height="736"/>
-                    <nil key="simulatedStatusBarMetrics"/>
-                    <nil key="simulatedTopBarMetrics"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="414" height="736"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EYU-jz-ig8" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-78" y="1595"/>
-        </scene>
         <!--Survey Controller-->
         <scene sceneID="EWW-uz-Vfp">
             <objects>
@@ -1115,7 +1092,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OsO-MD-YHf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-469.33593749999994" y="1594.53125"/>
+            <point key="canvasLocation" x="-79" y="1573"/>
         </scene>
         <!--Symptom Card View Controller-->
         <scene sceneID="Hiw-WY-5q9">
@@ -1141,8 +1118,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="414" height="736"/>
                     <connections>
-                        <segue destination="osk-FB-Tce" kind="presentation" identifier="symptomToSurvey" animates="NO" modalPresentationStyle="overCurrentContext" id="wq6-b2-rya"/>
-                        <segue destination="qx3-w8-gE8" kind="presentation" identifier="symptomToSurvey2" modalPresentationStyle="overCurrentContext" id="vRz-FT-e5d"/>
+                        <segue destination="qx3-w8-gE8" kind="show" identifier="symptomToSurvey2" id="vRz-FT-e5d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZXp-0g-tKg" userLabel="First Responder" sceneMemberID="firstResponder"/>

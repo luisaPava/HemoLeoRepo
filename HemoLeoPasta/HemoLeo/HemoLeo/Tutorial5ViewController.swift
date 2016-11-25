@@ -15,7 +15,7 @@ class Tutorial5ViewController: UIViewController {
         super.viewDidLoad()
         
         self.view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "BG"))
-        
+        passo5.clipsToBounds = true
         
 
         // Do any additional setup after loading the view.
@@ -27,13 +27,8 @@ class Tutorial5ViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        if UIDevice.current.modelName.contains("iPhone") {
-            
-            
-        } else {
             
             passo5.addPasso5Animation()
-        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {

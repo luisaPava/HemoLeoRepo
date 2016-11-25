@@ -18,16 +18,15 @@ class Tutorial9ViewController: UIViewController {
         
 
         // Do any additional setup after loading the view.
+        materiais.clipsToBounds = true
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        if UIDevice.current.modelName.contains("iPhone") {
-            
-        } else {
+
             materiais.addMateriaisAnimation()
-            materiais.clipsToBounds = true
             
-        }
+        
     }
     
     
@@ -36,7 +35,7 @@ class Tutorial9ViewController: UIViewController {
     }
     
     
-    @IBAction func redo(_ sender: Any) {
+    @IBAction func redo(_ sender: UIButton) {
         materiais.removeMateriaisAnimation()
         materiais.addMateriaisAnimation()
     }

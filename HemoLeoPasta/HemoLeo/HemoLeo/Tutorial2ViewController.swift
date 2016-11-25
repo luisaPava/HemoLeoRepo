@@ -15,6 +15,7 @@ class Tutorial2ViewController: UIViewController {
         super.viewDidLoad()
         
         self.view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "BG"))
+        passo2.clipsToBounds = true
 
         
         // Do any additional setup after loading the view.
@@ -26,15 +27,11 @@ class Tutorial2ViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        if UIDevice.current.modelName.contains("iPhone") {
-            
-            
-        } else {
+
             
             passo2.addPasso2Animation()
-            passo2.clipsToBounds = true
             
-        }
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {

@@ -37,7 +37,7 @@ class AddUserViewController: UIViewController {
     
     @IBAction func saveBtn(_ sender: UIButton) {
         
-        if txtField.text.isEmpty {
+        if (txtField.text?.isEmpty)! {
             
             let alertController = UIAlertController(title: "Atenção", message:
                 "Você deve preencher o campo com o seu nome completo", preferredStyle: UIAlertControllerStyle.alert)
