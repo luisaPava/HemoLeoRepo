@@ -36,8 +36,22 @@ class AddUserViewController: UIViewController {
     }
     
     @IBAction func saveBtn(_ sender: UIButton) {
-        userModel.createNewUser(nome: txtField.text!, imagem: imagem)
-        dismiss(animated: true, completion: nil)
+        
+        if txtField.text.isEmpty {
+            
+            let alertController = UIAlertController(title: "Atenção", message:
+                "Você deve preencher o campo com o seu nome completo", preferredStyle: UIAlertControllerStyle.alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default,handler: nil))
+            
+            self.present(alertController, animated: true, completion: nil)
+            
+        } else {
+            
+            userModel.createNewUser(nome: txtField.text!, imagem: imagem)
+            dismiss(animated: true, completion: nil)
+            
+        }
+
     }
 }
 
