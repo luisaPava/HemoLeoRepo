@@ -109,7 +109,6 @@
 		4E32449D1DD3ECAF00258CE1 /* CareCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B29C31D36CDC400EED2B4 /* CareCardViewController.swift */; };
 		4E32449F1DD3ECD400258CE1 /* CustomActivityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E132CB71D41242A004CBC6F /* CustomActivityCell.xib */; };
 		4E3244A01DD3EF4300258CE1 /* SymptomCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B29CD1D395AF800EED2B4 /* SymptomCardViewController.swift */; };
-		4E3244A11DD3F88E00258CE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BA1888A1D355A2C007F1CEB /* Assets.xcassets */; };
 		4E3244A81DD6A4B000258CE1 /* PopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E3244A71DD6A4B000258CE1 /* PopUp.storyboard */; };
 		4E36E45B1D45B2570005A1BE /* InsightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E36E45A1D45B2570005A1BE /* InsightViewController.swift */; };
 		4E36E4641D45B9A20005A1BE /* BuildInsightsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E36E4611D45B9A20005A1BE /* BuildInsightsOperation.swift */; };
@@ -149,6 +148,8 @@
 		4EAFA20B1DC7B5C4002BA048 /* OccurenciesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAFA20A1DC7B5C4002BA048 /* OccurenciesModel.swift */; };
 		4EAFA20D1DC7B772002BA048 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAFA20C1DC7B772002BA048 /* MainViewModel.swift */; };
 		4EAFA20F1DC7BF39002BA048 /* BGEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAFA20E1DC7BF39002BA048 /* BGEnum.swift */; };
+		4EB711651DE88878009D129C /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EB711641DE88878009D129C /* Media.xcassets */; };
+		4EB711661DE88878009D129C /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EB711641DE88878009D129C /* Media.xcassets */; };
 		4ED0D2961DDDD90700BE15CE /* TutorialPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED0D2951DDDD90700BE15CE /* TutorialPageViewController.swift */; };
 		4ED0D2981DDDDADD00BE15CE /* Tutorial1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED0D2971DDDDADD00BE15CE /* Tutorial1ViewController.swift */; };
 		4ED0D29A1DDDDAF400BE15CE /* Tutorial2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED0D2991DDDDAF400BE15CE /* Tutorial2ViewController.swift */; };
@@ -363,6 +364,7 @@
 		4EAFA20A1DC7B5C4002BA048 /* OccurenciesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OccurenciesModel.swift; sourceTree = "<group>"; };
 		4EAFA20C1DC7B772002BA048 /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		4EAFA20E1DC7BF39002BA048 /* BGEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGEnum.swift; sourceTree = "<group>"; };
+		4EB711641DE88878009D129C /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		4ED0D2951DDDD90700BE15CE /* TutorialPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialPageViewController.swift; sourceTree = "<group>"; };
 		4ED0D2971DDDDADD00BE15CE /* Tutorial1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutorial1ViewController.swift; sourceTree = "<group>"; };
 		4ED0D2991DDDDAF400BE15CE /* Tutorial2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutorial2ViewController.swift; sourceTree = "<group>"; };
@@ -985,6 +987,7 @@
 				4EAFA1FF1DC7AB70002BA048 /* Model */,
 				4E32449E1DD3ECC500258CE1 /* View */,
 				4E3244961DD3EC7400258CE1 /* Controller */,
+				4EB711641DE88878009D129C /* Media.xcassets */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -1228,6 +1231,7 @@
 				2BA188891D355A2C007F1CEB /* Main.storyboard in Resources */,
 				EB69AB8A1DE255D6003EAB99 /* TutorialPasso6.xcassets in Resources */,
 				EB69AB601DE245AD003EAB99 /* Materiais.xcassets in Resources */,
+				4EB711651DE88878009D129C /* Media.xcassets in Resources */,
 				4EE05E9B1DE33F440088CB99 /* MeninoSangramento.xcassets in Resources */,
 				4E132CB91D41242A004CBC6F /* CustomActivityCell.xib in Resources */,
 				4EE05E951DE32AD10088CB99 /* MeninoDor.xcassets in Resources */,
@@ -1243,12 +1247,12 @@
 				2B5731111DDF808500F1A834 /* TutorialPasso3.xcassets in Resources */,
 				4EE05E961DE32AD10088CB99 /* MeninoDor.xcassets in Resources */,
 				4EAFA1F91DC7AAC2002BA048 /* LaunchScreen.storyboard in Resources */,
+				4EB711661DE88878009D129C /* Media.xcassets in Resources */,
 				4EAFA1F61DC7AAC2002BA048 /* Assets.xcassets in Resources */,
 				4EE05E701DE0FEDA0088CB99 /* carinho1.png in Resources */,
 				4EAFA1F41DC7AAC2002BA048 /* Main.storyboard in Resources */,
 				4E32449F1DD3ECD400258CE1 /* CustomActivityCell.xib in Resources */,
 				2B57311B1DDF809000F1A834 /* TutorialPasso4.xcassets in Resources */,
-				4E3244A11DD3F88E00258CE1 /* Assets.xcassets in Resources */,
 				4EE05E851DE278D70088CB99 /* TutorialPasso 2.xcassets in Resources */,
 				4EE05E9C1DE33F440088CB99 /* MeninoSangramento.xcassets in Resources */,
 				EB69AB611DE245AD003EAB99 /* Materiais.xcassets in Resources */,
