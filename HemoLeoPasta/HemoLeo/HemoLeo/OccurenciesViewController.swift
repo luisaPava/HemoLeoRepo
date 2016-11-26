@@ -14,17 +14,21 @@ class OccurenciesViewController: UIViewController {
     var activity: Int!
     var button: UIButton!
     var occurencies: Array<Int> = [0, 0, 0, 0, 0, 0, 0]
-    var path = ""
+    var path: String = ""
+    var id: String!
+    var leo: Leo!
     let color: Array<UIColor> = [UIColor(netHex: 0x54C7FC), UIColor(netHex: 0xD0011B), UIColor(netHex: 0x44DB5E), UIColor(netHex: 0xFF9600), UIColor(netHex: 0x9B59B6), UIColor(netHex: 0xA4AAB3), UIColor(netHex: 0xFFCD00)]
     
-    private let codingManager: NSCodingManager = NSCodingManager.sharedNSCodingManager
+    private let codingManager = NSCodingManager.sharedNSCodingManager
     private let careCardModel = CareCardModel.sharedCareCardModel
+    fileprivate let notificationsModel = NotificationsModel.sharedNotificationsModel
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let id = careCardModel.getActivityID(withKey: activity)
-        path = "\(careCardModel.getLeo().getId())/Occurencies\(id)"
+        id = careCardModel.getActivityID(withKey: activity)
+        leo = careCardModel.getLeo()
+        path = "\(leo.getId())/Occurencies\(id)"
        
         tableView = UITableView(frame: CGRect(x: 0, y: height / 7.36, width: width / 1.034, height: height / 0.92), style: .plain)
         tableView.delegate = self
@@ -80,6 +84,22 @@ extension OccurenciesViewController: UITableViewDelegate {
         let cell = tableView.cellForRow(at: indexPath) as! CustomActivityCell
         
         cell.check.isHidden = cell.check.isHidden ? false : true
+        
+        if id == "Shot" {
+            let notId = "\(leo.getId())\(indexPath.row + 1))"
+            
+            print(notId)
+            
+            if occurencies[indexPath.row] == 1 {
+                notificationsModel.createNotification(title: "Profilaxia",
+                                                      body: "Não esqueça",
+                                                      weekDay: indexPath.row + 1,
+                                                      id: notId)
+            } else {
+                notificationsModel.removeNotification(withId: notId)
+                
+            }
+        }
         
         save()
         

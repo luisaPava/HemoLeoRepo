@@ -25,7 +25,7 @@ class NotificationsModel {
         })
     }
 
-    func createNotification(title: String, body: String, weekDay: Int) {
+    func createNotification(title: String, body: String, weekDay: Int, id: String) {
         let content = UNMutableNotificationContent()
         let calendar = Calendar.current
         let date = getDate(withWeekDay: weekDay)
@@ -37,7 +37,7 @@ class NotificationsModel {
         content.body = body
         
         let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: true)
-        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+        let request = UNNotificationRequest(identifier: id, content: content, trigger: trigger)
         
         center.add(request, withCompletionHandler: { error in
             if error != nil {
@@ -61,6 +61,10 @@ class NotificationsModel {
         let newDate = calendar.date(byAdding: .weekday, value: daysToAdd, to: today)
         
         return newDate!
+    }
+    
+    func removeNotification(withId id: String) {
+        center.removePendingNotificationRequests(withIdentifiers: [id])
     }
 }
 
