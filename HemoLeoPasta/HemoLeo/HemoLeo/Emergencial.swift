@@ -1,15 +1,15 @@
 //
-//  Shot.swift
+//  Emergencial.swift
 //  HemoLeo
 //
-//  Created by Luisa Mello on 7/12/16.
+//  Created by Gabriel Oliveira on 28/11/16.
 //  Copyright © 2016 Bepid. All rights reserved.
 //
 
 import CareKit
 
-class Shot: Activity {
-    let activityType: ActivityType = .Profilaxia
+class Emergencial: Activity {
+    let activityType: ActivityType = .Emergencial
     var occurrences: [Int] = [Int]()
     var extraInfo: String = String()
     var icon: UIImage? = UIImage(named: "shot")
@@ -24,7 +24,7 @@ class Shot: Activity {
         let schedule = OCKCareSchedule.weeklySchedule(withStartDate: startDate as DateComponents, occurrencesOnEachDay: occurrences as [NSNumber])
         
         // Set information for the activity
-        let title = NSLocalizedString("Profilaxia", comment: "")
+        let title = NSLocalizedString("Emergencial", comment: "")
         let summary = NSLocalizedString("", comment: "")
         let instructions = NSLocalizedString("", comment: "")
         
@@ -45,7 +45,6 @@ class Shot: Activity {
     }
     
     func carePlanActivityCustom(customOccurencies: [Int]) -> OCKCarePlanActivity {
-        
         occurrences = customOccurencies
         
         return carePlanActivity()

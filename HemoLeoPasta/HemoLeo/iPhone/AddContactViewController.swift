@@ -17,6 +17,8 @@ class AddContactViewController: UIViewController {
     @IBOutlet weak var telefone:SkyFloatingLabelTextField!
     @IBOutlet weak var email: SkyFloatingLabelTextField!
     @IBOutlet weak var tipo: SkyFloatingLabelTextField!
+    
+    fileprivate let arrayValues: Array<CGFloat> = [0, 30, 80, 110, 150]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,12 +61,13 @@ class AddContactViewController: UIViewController {
 
 extension AddContactViewController: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        animateViewMoving(true, moveValue: 270)
+        animateViewMoving(true, moveValue: arrayValues[textField.tag])
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        animateViewMoving(false, moveValue: 270)
+        animateViewMoving(false, moveValue: arrayValues[textField.tag])
     }
+    
     
     
     func animateViewMoving(_ up: Bool, moveValue: CGFloat){

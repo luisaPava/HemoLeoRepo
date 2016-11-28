@@ -112,6 +112,9 @@ class CareCardModel: Observer {
         case 5:
             activity = Shot().carePlanActivityCustom(customOccurencies: occurencies!)
             
+        case 6:
+            activity = Emergencial().carePlanActivityCustom(customOccurencies: occurencies!)
+            
         default:
             break
         }
@@ -141,6 +144,9 @@ class CareCardModel: Observer {
             
         case 5:
             activity = Shot().carePlanActivity()
+            
+        case 6:
+            activity = Emergencial().carePlanActivity()
             
         default:
             break

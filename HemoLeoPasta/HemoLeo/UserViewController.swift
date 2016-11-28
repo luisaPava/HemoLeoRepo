@@ -10,6 +10,8 @@ import UIKit
 
 class UserViewController: UIViewController {
     fileprivate let userModel = UserModel.sharedUserModel
+    fileprivate var selectedIndex: Int? = nil
+    
     @IBOutlet weak var txtField: UITextField!
     @IBOutlet weak var collectionView: UICollectionView!
 
