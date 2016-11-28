@@ -27,11 +27,11 @@ class NotificationsModel {
 
     func createNotification(title: String, body: String, weekDay: Int, id: String) {
         let content = UNMutableNotificationContent()
-        let calendar = Calendar.current
-        let date = getDate(withWeekDay: weekDay)
+        var components = DateComponents()
         
-        let alarmTime = date.addingTimeInterval(60 * 60 * 24 * 7 - 300)
-        let components = calendar.dateComponents([.weekday, .hour, .minute], from: alarmTime)
+        components.weekday = weekDay
+        components.hour = 12
+        components.minute = 0
         
         content.title = title
         content.body = body

@@ -303,6 +303,7 @@ class MeninoDorView : UIView, CAAnimationDelegate {
         botãoDesativadoDorCD.accessibilityIdentifier = "Cotovelo"
         botãoDesativadoDorCD.tag = 1
 		botãoDesativadoDorCD.setBackgroundImage(imgBotãoDesativadoDor, for:.normal)
+        botãoDesativadoDorCD.setBackgroundImage(imgAtivado, for:.selected)
 		botãoDesativadoDorCD.contentMode = .center
 		botãoDesativadoDorCD.bounds = CGRect(x:0, y:0, width:44.0, height:44.0)
 		botãoDesativadoDorCD__root.layer.position = CGPoint(x:280.000, y:300.000)
@@ -371,31 +372,6 @@ class MeninoDorView : UIView, CAAnimationDelegate {
 		viewsByName["BotãoDesativadoDorOE__xScale"] = botãoDesativadoDorOE__xScale
 		viewsByName["BotãoDesativadoDorOE__yScale"] = botãoDesativadoDorOE__yScale
 		viewsByName["BotãoDesativadoDorOE"] = botãoDesativadoDorOE
-
-		let mascara__root = MeninoDorPassthroughView()
-		let mascara__xScale = MeninoDorPassthroughView()
-		let mascara__yScale = MeninoDorPassthroughView()
-		let mascara = UIImageView()
-		let imgMascara = UIImage(named:"Mascara.png", in: bundle, compatibleWith: nil)
-		if imgMascara == nil {
-			print("** Warning: Could not create image from 'Mascara.png'")
-		}
-		mascara.image = imgMascara
-		mascara.contentMode = .center
-		mascara.bounds = CGRect(x:0, y:0, width:226.0, height:994.0)
-		mascara__root.layer.position = CGPoint(x:310.090, y:367.465)
-		mascara__xScale.transform = CGAffineTransform(scaleX: 0.91, y: 1.00)
-		mascara__yScale.transform = CGAffineTransform(scaleX: 1.00, y: 0.74)
-		mascara__root.transform = CGAffineTransform(rotationAngle: 0.000)
-		__scaling__.addSubview(mascara__root)
-		mascara__root.addSubview(mascara__xScale)
-		mascara__xScale.addSubview(mascara__yScale)
-		mascara__yScale.addSubview(mascara)
-		__scaling__.addSubview(mascara__root)
-		viewsByName["Mascara__root"] = mascara__root
-		viewsByName["Mascara__xScale"] = mascara__xScale
-		viewsByName["Mascara__yScale"] = mascara__yScale
-		viewsByName["Mascara"] = mascara
 
 		self.viewsByName = viewsByName
 	}

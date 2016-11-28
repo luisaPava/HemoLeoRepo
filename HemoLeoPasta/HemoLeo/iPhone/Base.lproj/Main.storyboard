@@ -439,10 +439,10 @@
                                 <rect key="frame" x="20" y="70" width="280" height="399"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XR2-UY-C1l">
-                                        <rect key="frame" x="0.0" y="0.0" width="280" height="133"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="132.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mfr-4s-Nux">
-                                                <rect key="frame" x="0.0" y="11" width="119" height="110"/>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mfr-4s-Nux">
+                                                <rect key="frame" x="0.0" y="11.5" width="119" height="110"/>
                                                 <state key="normal" title="Vegetais" image="ComidaNotSelected"/>
                                                 <state key="selected" image="Comida highlighted"/>
                                                 <state key="highlighted" image="Comida highlighted"/>
@@ -450,8 +450,8 @@
                                                     <action selector="addActivityActionWithSender:" destination="D9I-a2-SYt" eventType="touchUpInside" id="jTw-kc-fpC"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="29e-Nc-0oh">
-                                                <rect key="frame" x="119" y="11" width="161" height="110"/>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="29e-Nc-0oh">
+                                                <rect key="frame" x="119" y="11.5" width="161" height="110"/>
                                                 <state key="normal" title="Frutas" image="FruitsNotSelected"/>
                                                 <state key="selected" image="FrutasHIghlighted"/>
                                                 <state key="highlighted" image="FrutasHIghlighted"/>
@@ -462,10 +462,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3MZ-hz-pij">
-                                        <rect key="frame" x="0.0" y="133" width="280" height="133"/>
+                                        <rect key="frame" x="0.0" y="132.5" width="280" height="134"/>
                                         <subviews>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2U-UM-g2z">
-                                                <rect key="frame" x="0.0" y="11" width="140" height="111"/>
+                                                <rect key="frame" x="0.0" y="11.5" width="140" height="111"/>
                                                 <state key="normal" title="Agua" image="BebidaNotSelected"/>
                                                 <state key="selected" image="Bebidahighlighted"/>
                                                 <state key="highlighted" image="Bebidahighlighted"/>
@@ -473,8 +473,8 @@
                                                     <action selector="addActivityActionWithSender:" destination="D9I-a2-SYt" eventType="touchUpInside" id="mf8-Ug-m97"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="3" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lOW-0i-jHX">
-                                                <rect key="frame" x="140" y="0.0" width="140" height="133"/>
+                                            <button opaque="NO" tag="3" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lOW-0i-jHX">
+                                                <rect key="frame" x="140" y="12" width="140" height="110"/>
                                                 <state key="normal" title="Exercicios" image="swimmingNotSelected"/>
                                                 <state key="selected" image="swimmingHIghlighted"/>
                                                 <state key="highlighted" image="swimmingHIghlighted"/>
@@ -485,10 +485,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="VxI-sr-YPQ">
-                                        <rect key="frame" x="0.0" y="266" width="280" height="133"/>
+                                        <rect key="frame" x="0.0" y="266.5" width="280" height="132.5"/>
                                         <subviews>
-                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rps-2l-7IF">
-                                                <rect key="frame" x="0.0" y="12" width="140" height="110"/>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rps-2l-7IF">
+                                                <rect key="frame" x="0.0" y="11" width="140" height="110"/>
                                                 <state key="normal" title="Fisioterapia" image="physical_therapyNotSelected"/>
                                                 <state key="selected" image="physical_therapyHIghlighted"/>
                                                 <state key="highlighted" image="physical_therapyHIghlighted"/>
@@ -496,8 +496,8 @@
                                                     <action selector="addActivityActionWithSender:" destination="D9I-a2-SYt" eventType="touchUpInside" id="OnM-C5-P1G"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksZ-CI-Ftq">
-                                                <rect key="frame" x="140" y="12" width="140" height="110"/>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksZ-CI-Ftq">
+                                                <rect key="frame" x="140" y="11" width="140" height="110"/>
                                                 <state key="normal" title="Aplicacao" image="ShotNotSelected"/>
                                                 <state key="selected" image="Shot hightlighted"/>
                                                 <state key="highlighted" image="ShotSelected"/>
@@ -645,9 +645,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9aY-Gt-0mT">
-                                <rect key="frame" x="0.0" y="122" width="320" height="341"/>
+                                <rect key="frame" x="0.0" y="121" width="320" height="341"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kXI-yJ-GUZ">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kXI-yJ-GUZ">
                                     <size key="itemSize" width="223" height="412"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -655,7 +655,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" reuseIdentifier="userCell" id="TFC-Pd-Btq" customClass="UserCollectionViewCell" customModule="iPhone" customModuleProvider="target">
-                                        <rect key="frame" x="49" y="0.0" width="223" height="412"/>
+                                        <rect key="frame" x="0.0" y="-36" width="223" height="412"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="223" height="412"/>
@@ -692,7 +692,7 @@
                                 </cells>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mzb-wu-xVN">
-                                <rect key="frame" x="253" y="30" width="41" height="42"/>
+                                <rect key="frame" x="253" y="30" width="41" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Mzb-wu-xVN" secondAttribute="height" multiplier="1:1" id="G2y-Ip-EnH"/>
                                 </constraints>

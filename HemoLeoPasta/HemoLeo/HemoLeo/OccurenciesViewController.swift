@@ -113,6 +113,7 @@ extension OccurenciesViewController: UITableViewDataSource {
         let cellName = self.getIndexOccurences(day: indexPath.row)
         cell = tableView.dequeueReusableCell(withIdentifier: "idCellNormal", for: indexPath as IndexPath) as! CustomActivityCell
         cell.labelNome.text = cellName
+        cell.selectionStyle = .none
 
         cell.check.isHidden = (occurencies[indexPath.row] == 0) ? true : false
         cell.colorMark.backgroundColor = color[indexPath.row]
