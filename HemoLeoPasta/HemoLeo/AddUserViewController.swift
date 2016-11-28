@@ -15,6 +15,7 @@ class AddUserViewController: UIViewController {
     fileprivate let userModel = UserModel.sharedUserModel
     fileprivate let arraySkins: Array<String> = ["Leo", "Leo", "Leo", "Leo"]
     fileprivate var imagem: String = "Leo"
+    fileprivate var selectedIndex: IndexPath? = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,16 +52,22 @@ class AddUserViewController: UIViewController {
             dismiss(animated: true, completion: nil)
             
         }
-
     }
 }
 
 extension AddUserViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(arraySkins[indexPath.row])
         imagem = arraySkins[indexPath.row]
+        
+        selectedIndex = indexPath
+        
+        if selectedIndex != nil {
+            let cell = collectionView.cellForItem(at: selectedIndex!) as! AddUserCollectionViewCell
+            cell.imagem.image = UIImage(named: arraySkins[indexPath.row])
+        }
+        
+//        cell.imagem.image = //Coloque imagem aqui
     }
-    
 }
 
 extension AddUserViewController: UICollectionViewDataSource {
@@ -76,7 +83,6 @@ extension AddUserViewController: UICollectionViewDataSource {
         
         return cell
     }
-    
 }
 
 extension AddUserViewController: UITextFieldDelegate {

@@ -27,7 +27,9 @@ class CareCardViewController: UINavigationController {
     override func viewWillAppear(_ animated: Bool) {
         if self.viewControllers.isEmpty {
             viewController = careCardModel.createCareCard()
-            viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Nova", style: .done, target: self, action: #selector(pushAddActivityController))
+            viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Logout", style: .done, target: self, action: #selector(logOutAction))
+            
+            viewController.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Nova", style: .plain, target: self, action: #selector(pushAddActivityController))
             viewController.navigationItem.leftBarButtonItem?.tintColor = UIColor(netHex: 0xd53d55)
             self.pushViewController(viewController, animated: false)
         }
@@ -47,6 +49,10 @@ class CareCardViewController: UINavigationController {
     // MARK: - User interaction functions
     func pushAddActivityController() {
         self.performSegue(withIdentifier: "cardToAdd", sender: self)
+    }
+    
+    func logOutAction() {
+        self.performSegue(withIdentifier: "careToUser", sender: self)
     }
 }
 

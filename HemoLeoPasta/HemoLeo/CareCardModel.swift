@@ -41,7 +41,7 @@ class CareCardModel: Observer {
         // Setup controller's title and tab bar icon
         careCardViewController.title = "Cuidados"
         careCardViewController.tabBarItem = UITabBarItem(title: "Cuidados", image: UIImage(named: "carecard"), selectedImage: UIImage(named: "carecard-fill"))
-        careCardViewController.navigationItem.rightBarButtonItem?.title = "Hoje"
+//        careCardViewController.navigationItem.rightBarButtonItem?.title = "Logout"
         
         
         return careCardViewController

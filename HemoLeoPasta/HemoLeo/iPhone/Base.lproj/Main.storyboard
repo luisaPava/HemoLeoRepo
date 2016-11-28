@@ -417,6 +417,7 @@
                     <tabBarItem key="tabBarItem" title="Atividades" image="CareCard" selectedImage="CareCard" id="z69-i0-3jE"/>
                     <connections>
                         <segue destination="D9I-a2-SYt" kind="show" identifier="cardToAdd" id="F8h-yr-jut"/>
+                        <segue destination="gVx-zF-NN8" kind="presentation" identifier="careToUser" id="93G-5O-i9Y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kou-8g-wTu" userLabel="First Responder" sceneMemberID="firstResponder"/>
