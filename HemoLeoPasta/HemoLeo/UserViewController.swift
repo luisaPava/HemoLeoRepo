@@ -12,20 +12,18 @@ class UserViewController: UIViewController {
     fileprivate let userModel = UserModel.sharedUserModel
     fileprivate var selectedIndex: Int? = nil
     
-    @IBOutlet weak var txtField: UITextField!
+    @IBOutlet weak var bgView: UIImageView!
     @IBOutlet weak var collectionView: UICollectionView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
-        self.view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "BG"))
-        
+        bgView.layer.zPosition = -1000
         collectionView.delegate = self
         collectionView.dataSource = self
         
         
-//        self.hideKeyboardWhenTappedAround()
 
     }
     
@@ -33,11 +31,7 @@ class UserViewController: UIViewController {
         collectionView.reloadData()
     }
 
-    @IBAction func chooseBtn(_ sender: UIButton) {
-        userModel.setUser(index: Int(txtField.text!)!)
-        
-        performSegue(withIdentifier: "userToMain", sender: self)
-    }
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -63,6 +57,7 @@ extension UserViewController: UICollectionViewDataSource {
         let leo = userModel.getLeo(atIndex: indexPath.row)
         
         cell.imagem.image =  UIImage(named: leo.getImage())
+        cell.imagem.layer.borderWidth = 5
         print(leo.nome)
         cell.labelNome.text = leo.nome
         

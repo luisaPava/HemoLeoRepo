@@ -1198,7 +1198,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="C5M-X6-YIy">
-                                <rect key="frame" x="62" y="124" width="290" height="110"/>
+                                <rect key="frame" x="62" y="40" width="290" height="110"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LG4-Lo-lzC">
                                         <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
@@ -1231,7 +1231,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="3R4-be-U7H">
-                                <rect key="frame" x="62" y="464" width="290" height="110"/>
+                                <rect key="frame" x="62" y="340" width="290" height="110"/>
                                 <subviews>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UtG-Cw-oKf">
                                         <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
@@ -1252,8 +1252,8 @@
                                             <constraint firstAttribute="width" constant="110" id="0gu-H7-7eZ"/>
                                             <constraint firstAttribute="height" constant="110" id="i3R-3w-hgQ"/>
                                         </constraints>
-                                        <state key="normal" image="ShotNotSelected"/>
-                                        <state key="selected" image="Shot hightlighted"/>
+                                        <state key="normal" image="ProfilaxiaNotSelected"/>
+                                        <state key="selected" image="Profilaxia hightlighted"/>
                                         <connections>
                                             <action selector="addActivityActionWithSender:" destination="Cfu-op-DX6" eventType="touchUpInside" id="6Ks-Lr-MEO"/>
                                         </connections>
@@ -1265,7 +1265,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="FKj-E2-LpM">
-                                <rect key="frame" x="62" y="294" width="290" height="110"/>
+                                <rect key="frame" x="62" y="190" width="290" height="110"/>
                                 <subviews>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvC-ZM-hs9">
                                         <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
@@ -1297,20 +1297,35 @@
                                     <constraint firstAttribute="width" constant="290" id="UCJ-qJ-vlE"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UmG-ml-6gi">
+                                <rect key="frame" x="152" y="480" width="110" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="Kg6-1H-Tfc"/>
+                                    <constraint firstAttribute="width" constant="110" id="wSD-jK-cny"/>
+                                </constraints>
+                                <state key="normal" image="EmergencialNotSelected"/>
+                                <state key="selected" image="EmergencialHighlighted"/>
+                                <connections>
+                                    <action selector="addActivityActionWithSender:" destination="Cfu-op-DX6" eventType="touchUpInside" id="54j-ha-ILb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="C5M-X6-YIy" firstAttribute="top" secondItem="pcU-9B-Hnw" secondAttribute="bottom" constant="104" id="7f1-ZB-gw7"/>
-                            <constraint firstItem="3R4-be-U7H" firstAttribute="top" secondItem="FKj-E2-LpM" secondAttribute="bottom" constant="60" id="9M0-dL-THY"/>
+                            <constraint firstItem="C5M-X6-YIy" firstAttribute="top" secondItem="pcU-9B-Hnw" secondAttribute="bottom" constant="20" id="7f1-ZB-gw7"/>
+                            <constraint firstItem="3R4-be-U7H" firstAttribute="top" secondItem="FKj-E2-LpM" secondAttribute="bottom" constant="40" id="9M0-dL-THY"/>
                             <constraint firstItem="FKj-E2-LpM" firstAttribute="centerX" secondItem="vGK-f1-s8h" secondAttribute="centerX" id="Bp7-pz-T9s"/>
+                            <constraint firstItem="UmG-ml-6gi" firstAttribute="top" secondItem="3R4-be-U7H" secondAttribute="bottom" constant="30" id="KeH-oc-1AD"/>
                             <constraint firstItem="C5M-X6-YIy" firstAttribute="centerX" secondItem="vGK-f1-s8h" secondAttribute="centerX" id="KfJ-pR-9KF"/>
                             <constraint firstItem="3R4-be-U7H" firstAttribute="centerX" secondItem="vGK-f1-s8h" secondAttribute="centerX" id="Qvz-2K-ZcZ"/>
-                            <constraint firstItem="FKj-E2-LpM" firstAttribute="top" secondItem="C5M-X6-YIy" secondAttribute="bottom" constant="60" id="YLb-RK-JfR"/>
+                            <constraint firstItem="FKj-E2-LpM" firstAttribute="top" secondItem="C5M-X6-YIy" secondAttribute="bottom" constant="40" id="YLb-RK-JfR"/>
+                            <constraint firstItem="UmG-ml-6gi" firstAttribute="centerX" secondItem="vGK-f1-s8h" secondAttribute="centerX" id="edz-FX-c6i"/>
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="414" height="736"/>
                     <connections>
+                        <outlet property="emergencialBtn" destination="UmG-ml-6gi" id="lec-pA-gB3"/>
                         <outlet property="exerciseBtn" destination="XjB-w8-JBw" id="e78-6v-Ce4"/>
                         <outlet property="fisiotherapyBtn" destination="UtG-Cw-oKf" id="8m4-l6-Gwq"/>
                         <outlet property="fruitsBtn" destination="2lZ-TZ-KSR" id="Uvv-XO-pSd"/>
@@ -1879,6 +1894,8 @@
         <image name="DarkBlue" width="51" height="51"/>
         <image name="DarkGreen" width="51" height="51"/>
         <image name="Default" width="1024" height="768"/>
+        <image name="EmergencialHighlighted" width="110" height="110"/>
+        <image name="EmergencialNotSelected" width="110" height="110"/>
         <image name="FruitsNotSelected" width="110" height="110"/>
         <image name="FrutasHIghlighted" width="110" height="110"/>
         <image name="LightBlue" width="51" height="51"/>
@@ -1886,9 +1903,9 @@
         <image name="LightGreen" width="51" height="51"/>
         <image name="MainBotao" width="60" height="60"/>
         <image name="Orange" width="51" height="51"/>
+        <image name="Profilaxia hightlighted" width="110" height="110"/>
+        <image name="ProfilaxiaNotSelected" width="110" height="110"/>
         <image name="Red" width="52" height="52"/>
-        <image name="Shot hightlighted" width="110" height="110"/>
-        <image name="ShotNotSelected" width="110" height="110"/>
         <image name="Yellos" width="51" height="51"/>
         <image name="back" width="100" height="100"/>
         <image name="borracha-1" width="64" height="46"/>

@@ -842,10 +842,10 @@ class MateriaisView : UIView, CAAnimationDelegate {
 		}
 	}
 
-	func removeAllAnimations() {
-		for subview in viewsByName.values {
-			subview.layer.removeAllAnimations()
-		}
-		self.layer.removeAnimation(forKey: "Materiais")
-	}
+//	func removeAllAnimations() {
+//		for subview in viewsByName.values {
+//			subview.layer.removeAllAnimations()
+//		}
+//		self.layer.removeAnimation(forKey: "Materiais")
+//	}
 }
