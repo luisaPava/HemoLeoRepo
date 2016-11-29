@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -217,6 +216,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG" translatesAutoresizingMaskIntoConstraints="NO" id="1DD-mZ-eTR">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gwm-JR-Yq7">
                                 <rect key="frame" x="872" y="50" width="102" height="102"/>
                                 <constraints>
@@ -279,14 +281,19 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="XrN-Au-uCJ" secondAttribute="trailing" id="C2t-XX-eDQ"/>
+                            <constraint firstAttribute="trailing" secondItem="1DD-mZ-eTR" secondAttribute="trailing" id="CGg-X8-kfL"/>
                             <constraint firstItem="XrN-Au-uCJ" firstAttribute="top" secondItem="Gwm-JR-Yq7" secondAttribute="bottom" constant="30" id="NKq-Np-rtN"/>
+                            <constraint firstItem="Wiw-Bz-nuf" firstAttribute="top" secondItem="1DD-mZ-eTR" secondAttribute="bottom" id="NZX-cg-RJS"/>
                             <constraint firstItem="XrN-Au-uCJ" firstAttribute="leading" secondItem="cK4-PZ-tYd" secondAttribute="leading" id="RFn-AR-h9i"/>
+                            <constraint firstItem="1DD-mZ-eTR" firstAttribute="leading" secondItem="cK4-PZ-tYd" secondAttribute="leading" id="a0E-ET-f0B"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Gwm-JR-Yq7" secondAttribute="trailing" constant="30" id="cC5-1N-hCF"/>
                             <constraint firstItem="Wiw-Bz-nuf" firstAttribute="top" secondItem="XrN-Au-uCJ" secondAttribute="bottom" constant="30" id="hpw-2T-eTN"/>
+                            <constraint firstItem="1DD-mZ-eTR" firstAttribute="top" secondItem="cK4-PZ-tYd" secondAttribute="top" id="i4k-a7-q0J"/>
                             <constraint firstItem="Gwm-JR-Yq7" firstAttribute="top" secondItem="lyN-XA-aVa" secondAttribute="bottom" constant="30" id="s2O-tc-zBA"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bgView" destination="1DD-mZ-eTR" id="V3z-hT-4fl"/>
                         <outlet property="collectionView" destination="XrN-Au-uCJ" id="v0K-vt-2cD"/>
                         <segue destination="uUq-gs-TkJ" kind="show" identifier="userToMain" id="ffS-Q9-k5R"/>
                     </connections>
@@ -1875,6 +1882,7 @@
                     </view>
                     <connections>
                         <outlet property="materiais" destination="veo-QM-79D" id="WiD-wk-ptX"/>
+                        <outlet property="text" destination="O5O-Jr-MhI" id="M1P-5g-umm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vE4-HN-e9w" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1884,6 +1892,7 @@
     </scenes>
     <resources>
         <image name="Adicionar user" width="102" height="102"/>
+        <image name="BG" width="1024" height="768"/>
         <image name="Badges" width="70" height="70"/>
         <image name="BebidaNotSelected" width="111" height="111"/>
         <image name="Bebidahighlighted" width="111" height="111"/>
