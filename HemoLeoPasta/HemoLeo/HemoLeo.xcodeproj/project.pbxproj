@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B0211291D35736D00AFFB17 /* CareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B0211261D35735800AFFB17 /* CareKit.framework */; };
-		2B02112A1D35736D00AFFB17 /* CareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B0211261D35735800AFFB17 /* CareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2B0211291D35736D00AFFB17 /* ReferenceProxy in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B0211261D35735800AFFB17 /* CareKit.framework */; };
+		2B02112A1D35736D00AFFB17 /* ReferenceProxy in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B0211261D35735800AFFB17 /* CareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2B1A21481D3E6E64007F1B68 /* Fisiotherapy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A21471D3E6E64007F1B68 /* Fisiotherapy.swift */; };
 		2B1A214E1D3E71E2007F1B68 /* OccurenciesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A214D1D3E71E2007F1B68 /* OccurenciesViewController.swift */; };
 		2B1A21521D3E7BA3007F1B68 /* NSCodingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A21511D3E7BA3007F1B68 /* NSCodingManager.swift */; };
@@ -96,8 +96,8 @@
 		4E32448B1DD3DE3800258CE1 /* BuildInsightsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E36E4611D45B9A20005A1BE /* BuildInsightsOperation.swift */; };
 		4E32448C1DD3DE3800258CE1 /* InsightsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E36E4621D45B9A20005A1BE /* InsightsBuilder.swift */; };
 		4E32448D1DD3DE3800258CE1 /* QueryActivityEventsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E36E4631D45B9A20005A1BE /* QueryActivityEventsOperation.swift */; };
-		4E32448E1DD3EAAA00258CE1 /* CareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B0211261D35735800AFFB17 /* CareKit.framework */; };
-		4E32448F1DD3EAAA00258CE1 /* CareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B0211261D35735800AFFB17 /* CareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4E32448E1DD3EAAA00258CE1 /* ReferenceProxy in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B0211261D35735800AFFB17 /* CareKit.framework */; };
+		4E32448F1DD3EAAA00258CE1 /* ReferenceProxy in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B0211261D35735800AFFB17 /* CareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4E3244931DD3EB5F00258CE1 /* AssessmentsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B2DF21D3ABEEB00EED2B4 /* AssessmentsManager.swift */; };
 		4E3244941DD3EB7800258CE1 /* NSCalendar+Dates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E36E4681D45BA330005A1BE /* NSCalendar+Dates.swift */; };
 		4E3244951DD3EB7800258CE1 /* OCKInsightItem+EmptyMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E36E4691D45BA330005A1BE /* OCKInsightItem+EmptyMessage.swift */; };
@@ -255,7 +255,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2B02112A1D35736D00AFFB17 /* CareKit.framework in Embed Frameworks */,
+				2B02112A1D35736D00AFFB17 /* ReferenceProxy in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +266,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4E32448F1DD3EAAA00258CE1 /* CareKit.framework in Embed Frameworks */,
+				4E32448F1DD3EAAA00258CE1 /* ReferenceProxy in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,7 +417,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				777711071D3E9AAC0066A0E2 /* SpriteKit.framework in Frameworks */,
-				2B0211291D35736D00AFFB17 /* CareKit.framework in Frameworks */,
+				2B0211291D35736D00AFFB17 /* ReferenceProxy in Frameworks */,
 				CF1F165913B6439F29666239 /* Pods_HemoLeo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,7 +426,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E32448E1DD3EAAA00258CE1 /* CareKit.framework in Frameworks */,
+				4E32448E1DD3EAAA00258CE1 /* ReferenceProxy in Frameworks */,
 				301D65DA593E2D248E5F0AD6 /* Pods_iPhone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,7 +458,7 @@
 			name = Managers;
 			sourceTree = "<group>";
 		};
-		2B7099AE1DDF2133006C27F0 /* Animação */ = {
+		2B7099AE1DDF2133006C27F0 /* Animação */ = {
 			isa = PBXGroup;
 			children = (
 				2B7099BB1DDF2179006C27F0 /* Passo0 */,
@@ -806,7 +806,7 @@
 		4E32449E1DD3ECC500258CE1 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2B7099AE1DDF2133006C27F0 /* Animação */,
+				2B7099AE1DDF2133006C27F0 /* Animação */,
 				4E6796861DDD3597000E0A5E /* IBDesignables */,
 				4E3244A61DD6A48800258CE1 /* SymptomTracker */,
 				4E3244A51DD6A47300258CE1 /* CareCard */,
@@ -852,10 +852,10 @@
 			path = HemoLeo;
 			sourceTree = "<group>";
 		};
-		4E3CE03A1D400FEF00E4F422 /* Animação */ = {
+		4E3CE03A1D400FEF00E4F422 /* Animação */ = {
 			isa = PBXGroup;
 			children = (
-				EB6F10E21D41C4170056606B /* AnimaçõesStorytelling */,
+				EB6F10E21D41C4170056606B /* AnimaçõesStorytelling */,
 				4E3CE03B1D400FFF00E4F422 /* ButtonAnimation.swift */,
 			);
 			name = "Animação";
@@ -953,7 +953,7 @@
 				4ED0D2B71DDDE47600BE15CE /* UIAnimation.swift */,
 				2BA188971D355BAA007F1CEB /* Assets */,
 				2BCA5CD61D42A4C700EAC063 /* IBDesignables */,
-				4E3CE03A1D400FEF00E4F422 /* Animação */,
+				4E3CE03A1D400FEF00E4F422 /* Animação */,
 				2B1A214F1D3E75D6007F1B68 /* Scenes */,
 				2BA188871D355A2C007F1CEB /* Main.storyboard */,
 				2BA1888C1D355A2C007F1CEB /* LaunchScreen.storyboard */,
@@ -1074,7 +1074,7 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		EB6F10E21D41C4170056606B /* AnimaçõesStorytelling */ = {
+		EB6F10E21D41C4170056606B /* AnimaçõesStorytelling */ = {
 			isa = PBXGroup;
 			children = (
 				2B97070E1DDDEE5E00FE3A74 /* Story5 */,
@@ -1145,7 +1145,7 @@
 				TargetAttributes = {
 					2BA1887B1D355A2C007F1CEB = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = BUK6UDW987;
+						DevelopmentTeam = AU45XX83RQ;
 						LastSwiftMigration = 0810;
 						SystemCapabilities = {
 							com.apple.Push = {
@@ -1158,7 +1158,7 @@
 					};
 					4EAFA1EB1DC7AAC2002BA048 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = BUK6UDW987;
+						DevelopmentTeam = AU45XX83RQ;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -1312,7 +1312,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		915FD0B7F6B5B6EDBE504C3A /* [CP] Embed Pods Frameworks */ = {
@@ -1342,7 +1342,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		E72B90F196D110DA259E587C /* [CP] Embed Pods Frameworks */ = {
@@ -1687,7 +1687,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = BUK6UDW987;
+				DEVELOPMENT_TEAM = AU45XX83RQ;
 				INFOPLIST_FILE = HemoLeo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1707,7 +1707,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = BUK6UDW987;
+				DEVELOPMENT_TEAM = AU45XX83RQ;
 				INFOPLIST_FILE = HemoLeo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1727,7 +1727,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				DEVELOPMENT_TEAM = BUK6UDW987;
+				DEVELOPMENT_TEAM = AU45XX83RQ;
 				INFOPLIST_FILE = iPhone/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1746,7 +1746,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				DEVELOPMENT_TEAM = BUK6UDW987;
+				DEVELOPMENT_TEAM = AU45XX83RQ;
 				INFOPLIST_FILE = iPhone/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

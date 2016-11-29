@@ -9,8 +9,11 @@
 import UIKit
 
 class Tutorial9ViewController: UIViewController {
+    
     @IBOutlet weak var materiais: MateriaisView!
-
+    @IBOutlet weak var text: UITextView!
+    var flag: Bool = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -19,12 +22,18 @@ class Tutorial9ViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         materiais.clipsToBounds = true
+        
 
     }
     
     override func viewWillAppear(_ animated: Bool) {
 
-            materiais.addMateriaisAnimation()
+        if flag {
+            text.alpha = 0
+            text.showInstructions(5)
+        }
+        
+        materiais.addMateriaisAnimation()
             
         
     }

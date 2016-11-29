@@ -167,3 +167,21 @@ extension String {
 //    }
 //}
 
+extension UITextView {
+    
+    func showInstructions(
+        _ time: Double) {
+        
+        let timer = Timer.scheduledTimer(withTimeInterval: time, repeats: false, block: { _ in
+        
+            self.runAnimation(UIAnimation.fadeAlphaTo(1, duration: 3))
+        
+        })
+        
+        timer.fire()
+                
+    }
+    
+
+}
+
