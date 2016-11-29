@@ -30,10 +30,10 @@ class OccurenciesViewController: UIViewController {
         leo = careCardModel.getLeo()
         path = "\(leo.getId())/Occurencies\(id)"
        
-        tableView = UITableView(frame: CGRect(x: 0, y: height / 7.36, width: width / 1.034, height: height / 0.92), style: .plain)
+        tableView = UITableView(frame: CGRect(x: 0, y: 0, width: width / 1.034, height: height / 0.92), style: .plain)
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.rowHeight = height / 10.51
+        tableView.rowHeight = height / 8.4
         tableView.register(UINib(nibName: "CustomActivityCell", bundle: nil), forCellReuseIdentifier: "idCellNormal")
         tableView.clipsToBounds = true
 

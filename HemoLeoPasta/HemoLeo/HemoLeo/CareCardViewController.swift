@@ -30,7 +30,10 @@ class CareCardViewController: UINavigationController {
             viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Logout", style: .done, target: self, action: #selector(logOutAction))
             
             viewController.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Nova", style: .plain, target: self, action: #selector(pushAddActivityController))
+            
             viewController.navigationItem.leftBarButtonItem?.tintColor = UIColor(netHex: 0xd53d55)
+            viewController.navigationItem.rightBarButtonItem?.tintColor = UIColor(netHex: 0xd53d55)
+            
             self.pushViewController(viewController, animated: false)
         }
         
