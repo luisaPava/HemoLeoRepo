@@ -18,20 +18,15 @@ class UserViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         bgView.layer.zPosition = -1000
         collectionView.delegate = self
         collectionView.dataSource = self
-        
-        
-
+     
     }
     
     override func viewWillAppear(_ animated: Bool) {
         collectionView.reloadData()
     }
-
-
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -58,7 +53,6 @@ extension UserViewController: UICollectionViewDataSource {
         
         cell.imagem.image =  UIImage(named: leo.getImage())
         cell.imagem.layer.borderWidth = 5
-        print(leo.nome)
         cell.labelNome.text = leo.nome
         
         return cell

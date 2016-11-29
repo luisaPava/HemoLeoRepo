@@ -12,7 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    private let userModel = UserModel.sharedUserModel
 
 
     
@@ -22,9 +22,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print(defaults.bool(forKey: "firstLaunch"))
         
         if !defaults.bool(forKey: "firstLaunch") {
-            print("entrou")
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let initialViewController = storyboard.instantiateViewController(withIdentifier: "uservc") as! UserViewController
+            let initialViewController: UIViewController!
+            
+            if userModel.getUsersCount() == 1 {
+                userModel.setUser(index: 0)
+                
+                initialViewController = storyboard.instantiateViewController(withIdentifier: "main") as! MainViewController
+            } else {
+                initialViewController = storyboard.instantiateViewController(withIdentifier: "uservc") as! UserViewController
+                
+            }
             
             let frame = UIScreen.main.bounds
             window = UIWindow(frame: frame)

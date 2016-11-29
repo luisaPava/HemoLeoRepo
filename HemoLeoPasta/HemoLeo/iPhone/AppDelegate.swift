@@ -12,11 +12,29 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    private let userModel = UserModel.sharedUserModel
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         UITabBar.appearance().tintColor = UIColor(netHex: 0x4F4E4E)
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let initialViewController: UIViewController!
+        
+        if userModel.getUsersCount() == 1 {
+            userModel.setUser(index: 0)
+            
+            initialViewController = storyboard.instantiateViewController(withIdentifier: "tabBarMain") as! UITabBarController
+            
+            let frame = UIScreen.main.bounds
+            window = UIWindow(frame: frame)
+            
+            self.window?.rootViewController = initialViewController
+            self.window?.makeKeyAndVisible()
+
+        }
+        
+        
         return true
     }
 
