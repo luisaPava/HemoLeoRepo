@@ -11,6 +11,10 @@ import UIKit
 class Tutorial5ViewController: UIViewController {
 
     @IBOutlet weak var passo5: TutorialPasso5View!
+    @IBOutlet weak var text: UITextView!
+    
+    var flag: Bool = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -19,6 +23,12 @@ class Tutorial5ViewController: UIViewController {
         
 
         // Do any additional setup after loading the view.
+        if flag {
+            text.alpha = 0
+            text.showInstructions(10)
+            
+            flag = false
+        }
     }
 
     override func didReceiveMemoryWarning() {

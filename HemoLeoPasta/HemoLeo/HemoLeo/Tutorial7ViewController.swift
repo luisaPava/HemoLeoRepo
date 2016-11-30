@@ -10,12 +10,20 @@ import UIKit
 
 class Tutorial7ViewController: UIViewController {
 
+    @IBOutlet weak var text: UITextView!
+    var flag: Bool = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "BG"))
         
-        
+        if flag {
+            text.alpha = 0
+            text.showInstructions(10)
+            
+            flag = false
+        }
 
         // Do any additional setup after loading the view.
     }

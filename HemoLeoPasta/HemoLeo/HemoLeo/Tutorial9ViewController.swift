@@ -23,15 +23,19 @@ class Tutorial9ViewController: UIViewController {
         // Do any additional setup after loading the view.
         materiais.clipsToBounds = true
         
+        if flag {
+            text.alpha = 0
+            text.showInstructions(10)
+            
+            flag = false
+        }
+        
 
     }
     
+    
     override func viewWillAppear(_ animated: Bool) {
 
-        if flag {
-            text.alpha = 0
-            text.showInstructions(5)
-        }
         
         materiais.addMateriaisAnimation()
             

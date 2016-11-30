@@ -326,7 +326,7 @@
                                 </vibrancyEffect>
                             </visualEffectView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A3K-hB-eJE" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                <rect key="frame" x="337" y="555" width="350" height="30"/>
+                                <rect key="frame" x="337" y="520" width="350" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="350" id="1Gx-0T-6pk"/>
                                     <constraint firstAttribute="height" constant="30" id="AsG-aW-BYJ"/>
@@ -339,30 +339,39 @@
                                         <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Nome Completo"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7Jq-40-EX0">
-                                <rect key="frame" x="50" y="220" width="924" height="285"/>
+                                <rect key="frame" x="50" y="170" width="924" height="300"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="285" id="p6U-dR-COz"/>
+                                    <constraint firstAttribute="height" constant="300" id="p6U-dR-COz"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jpR-vn-HiF">
-                                    <size key="itemSize" width="187" height="267"/>
+                                    <size key="itemSize" width="223" height="267"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="addUserCell" id="E0l-1M-m1V" customClass="AddUserCollectionViewCell" customModule="HemoLeo" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="9" width="187" height="267"/>
+                                        <rect key="frame" x="0.0" y="17" width="223" height="267"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="187" height="267"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="223" height="267"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kaV-Ut-9Dj">
-                                                    <rect key="frame" x="0.0" y="0.0" width="187" height="267"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="223" height="267"/>
                                                 </imageView>
                                             </subviews>
                                         </view>
@@ -379,7 +388,7 @@
                                 </cells>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOz-Wf-0AJ">
-                                <rect key="frame" x="807" y="555" width="46" height="30"/>
+                                <rect key="frame" x="807" y="520" width="46" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="7pW-wp-eaJ"/>
                                     <constraint firstAttribute="height" constant="30" id="8Ua-bO-UgD"/>
@@ -397,7 +406,7 @@
                             <constraint firstItem="7Jq-40-EX0" firstAttribute="leading" secondItem="aWA-pr-Hfp" secondAttribute="leadingMargin" constant="30" id="Cst-jE-r9B"/>
                             <constraint firstItem="rZq-CL-3oY" firstAttribute="top" secondItem="tW9-QD-tAf" secondAttribute="bottom" id="UHX-c5-7u3"/>
                             <constraint firstItem="A3K-hB-eJE" firstAttribute="top" secondItem="7Jq-40-EX0" secondAttribute="bottom" constant="50" id="YnR-Qd-337"/>
-                            <constraint firstItem="7Jq-40-EX0" firstAttribute="top" secondItem="tW9-QD-tAf" secondAttribute="bottom" constant="200" id="Zaw-lA-v03"/>
+                            <constraint firstItem="7Jq-40-EX0" firstAttribute="top" secondItem="tW9-QD-tAf" secondAttribute="bottom" constant="150" id="Zaw-lA-v03"/>
                             <constraint firstItem="FOz-Wf-0AJ" firstAttribute="top" secondItem="7Jq-40-EX0" secondAttribute="bottom" constant="50" id="bCO-dB-lMI"/>
                             <constraint firstItem="FOz-Wf-0AJ" firstAttribute="leading" secondItem="A3K-hB-eJE" secondAttribute="trailing" constant="120" id="cmx-hp-4vE"/>
                             <constraint firstItem="7Jq-40-EX0" firstAttribute="centerX" secondItem="aWA-pr-Hfp" secondAttribute="centerX" id="nAX-1s-Jt1"/>
@@ -433,10 +442,10 @@
                                     <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
-                                <blurEffect style="light"/>
+                                <blurEffect style="dark"/>
                             </visualEffectView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJG-qe-NEz">
-                                <rect key="frame" x="120" y="621" width="784" height="117"/>
+                                <rect key="frame" x="120" y="581" width="784" height="157"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <string key="text">Retira a tampa do dispositivo sem tirá-lo da embalagem. Em seguida, vire a embalagem, insira a ponta de plástico limpa na tampa do diluente e finalmente retire a embalagem.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -444,11 +453,11 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <view alpha="0.55000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oc9-Wb-VPp">
-                                <rect key="frame" x="153" y="130" width="717" height="461"/>
+                                <rect key="frame" x="153" y="90" width="717" height="461"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="4WK-7z-hAI" customClass="TutorialPasso2View" customModule="HemoLeo" customModuleProvider="target">
-                                <rect key="frame" x="153" y="130" width="717" height="461"/>
+                                <rect key="frame" x="153" y="90" width="717" height="461"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGP-nk-4OI">
@@ -467,22 +476,23 @@
                             <constraint firstItem="4WK-7z-hAI" firstAttribute="width" secondItem="WHg-8g-Rpi" secondAttribute="width" multiplier="0.7" constant="1" id="H07-eQ-VY2"/>
                             <constraint firstItem="akT-gA-nj6" firstAttribute="top" secondItem="fJG-qe-NEz" secondAttribute="bottom" constant="30" id="Ozt-rL-gaa"/>
                             <constraint firstAttribute="trailingMargin" secondItem="BGP-nk-4OI" secondAttribute="trailing" constant="30" id="Tf0-1i-wj1"/>
-                            <constraint firstItem="oc9-Wb-VPp" firstAttribute="top" secondItem="fBd-ol-ofS" secondAttribute="bottom" constant="110" id="UUz-bb-Uzl"/>
-                            <constraint firstItem="fJG-qe-NEz" firstAttribute="leading" secondItem="WHg-8g-Rpi" secondAttribute="leadingMargin" constant="100" id="V7f-ai-N7G"/>
+                            <constraint firstItem="oc9-Wb-VPp" firstAttribute="top" secondItem="fBd-ol-ofS" secondAttribute="bottom" constant="70" id="UUz-bb-Uzl"/>
+                            <constraint firstItem="fJG-qe-NEz" firstAttribute="leading" secondItem="WHg-8g-Rpi" secondAttribute="leadingMargin" constant="50" id="V7f-ai-N7G"/>
                             <constraint firstItem="oc9-Wb-VPp" firstAttribute="centerX" secondItem="WHg-8g-Rpi" secondAttribute="centerX" id="cAP-Oz-0pj"/>
                             <constraint firstItem="akT-gA-nj6" firstAttribute="top" secondItem="M4s-UK-sli" secondAttribute="bottom" id="eU9-DQ-Sgz"/>
                             <constraint firstItem="4WK-7z-hAI" firstAttribute="height" secondItem="WHg-8g-Rpi" secondAttribute="height" multiplier="0.6" id="gpY-2o-EAp"/>
                             <constraint firstItem="oc9-Wb-VPp" firstAttribute="height" secondItem="WHg-8g-Rpi" secondAttribute="height" multiplier="0.6" id="hq8-0c-IBa"/>
                             <constraint firstItem="M4s-UK-sli" firstAttribute="leading" secondItem="WHg-8g-Rpi" secondAttribute="leading" id="kD1-Vs-tE0"/>
                             <constraint firstItem="4WK-7z-hAI" firstAttribute="centerX" secondItem="WHg-8g-Rpi" secondAttribute="centerX" id="pqY-lI-Aw8"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="fJG-qe-NEz" secondAttribute="trailing" constant="100" id="tUT-ih-Mgf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fJG-qe-NEz" secondAttribute="trailing" constant="50" id="tUT-ih-Mgf"/>
                             <constraint firstItem="oc9-Wb-VPp" firstAttribute="width" secondItem="WHg-8g-Rpi" secondAttribute="width" multiplier="0.7" id="u9N-gb-D5w"/>
                             <constraint firstItem="M4s-UK-sli" firstAttribute="top" secondItem="WHg-8g-Rpi" secondAttribute="top" id="uGt-I7-LoZ"/>
-                            <constraint firstItem="4WK-7z-hAI" firstAttribute="top" secondItem="fBd-ol-ofS" secondAttribute="bottom" constant="110" id="zZZ-O9-tVP"/>
+                            <constraint firstItem="4WK-7z-hAI" firstAttribute="top" secondItem="fBd-ol-ofS" secondAttribute="bottom" constant="70" id="zZZ-O9-tVP"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="passo2" destination="4WK-7z-hAI" id="a03-sX-dMd"/>
+                        <outlet property="text" destination="fJG-qe-NEz" id="Dbs-tK-gAM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cms-oR-bVE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -691,7 +701,7 @@
                     <connections>
                         <segue destination="DsG-hq-x4v" kind="modal" identifier="mainToCanvas" id="xtU-hp-v3G"/>
                         <segue destination="VRu-cM-AZ2" kind="show" identifier="mainToThemes" id="Avs-7W-DGM"/>
-                        <segue destination="cWQ-MQ-lvC" kind="show" identifier="mainToTutorial" id="sHp-a7-B2F"/>
+                        <segue destination="cWQ-MQ-lvC" kind="presentation" identifier="mainToTutorial" id="sHp-a7-B2F"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Aw-op-AJz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1385,21 +1395,21 @@
                                     <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
-                                <blurEffect style="light"/>
+                                <blurEffect style="dark"/>
                             </visualEffectView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Lavar bem as mãos com sabão e colocar as luvas." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hoW-iQ-cS0">
-                                <rect key="frame" x="120" y="621" width="784" height="117"/>
+                                <rect key="frame" x="120" y="581" width="784" height="157"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <view alpha="0.55000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HVR-Nm-iLw">
-                                <rect key="frame" x="153" y="130" width="717" height="461"/>
+                                <rect key="frame" x="153" y="90" width="717" height="461"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="jqR-FJ-rHr" customClass="TutorialPasso1View" customModule="HemoLeo" customModuleProvider="target">
-                                <rect key="frame" x="153" y="130" width="717" height="461"/>
+                                <rect key="frame" x="153" y="90" width="717" height="461"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zh2-hq-SQJ">
@@ -1418,14 +1428,14 @@
                             <constraint firstItem="gcF-rz-4ot" firstAttribute="top" secondItem="hoW-iQ-cS0" secondAttribute="bottom" constant="30" id="HWq-9h-tWN"/>
                             <constraint firstItem="HVR-Nm-iLw" firstAttribute="centerX" secondItem="pPT-UV-CNr" secondAttribute="centerX" id="NwB-j0-LMH"/>
                             <constraint firstItem="jqR-FJ-rHr" firstAttribute="height" secondItem="pPT-UV-CNr" secondAttribute="height" multiplier="0.6" id="VP2-UB-sZC"/>
-                            <constraint firstItem="HVR-Nm-iLw" firstAttribute="top" secondItem="dv4-xl-vOv" secondAttribute="bottom" constant="110" id="VuG-yP-wv1"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="hoW-iQ-cS0" secondAttribute="trailing" constant="100" id="dlF-4c-Iyl"/>
+                            <constraint firstItem="HVR-Nm-iLw" firstAttribute="top" secondItem="dv4-xl-vOv" secondAttribute="bottom" constant="70" id="VuG-yP-wv1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hoW-iQ-cS0" secondAttribute="trailing" constant="50" id="dlF-4c-Iyl"/>
                             <constraint firstItem="HVR-Nm-iLw" firstAttribute="height" secondItem="pPT-UV-CNr" secondAttribute="height" multiplier="0.6" id="fTA-VY-W8K"/>
-                            <constraint firstItem="jqR-FJ-rHr" firstAttribute="top" secondItem="dv4-xl-vOv" secondAttribute="bottom" constant="110" id="hBN-LU-nQI"/>
+                            <constraint firstItem="jqR-FJ-rHr" firstAttribute="top" secondItem="dv4-xl-vOv" secondAttribute="bottom" constant="70" id="hBN-LU-nQI"/>
                             <constraint firstItem="hoW-iQ-cS0" firstAttribute="top" secondItem="jqR-FJ-rHr" secondAttribute="bottom" constant="30" id="huA-46-aNl"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Zh2-hq-SQJ" secondAttribute="trailing" constant="30" id="nF3-ng-W8W"/>
                             <constraint firstItem="Zh2-hq-SQJ" firstAttribute="top" secondItem="dv4-xl-vOv" secondAttribute="bottom" constant="30" id="sUp-wI-DOc"/>
-                            <constraint firstItem="hoW-iQ-cS0" firstAttribute="leading" secondItem="pPT-UV-CNr" secondAttribute="leadingMargin" constant="100" id="uGK-tc-FD9"/>
+                            <constraint firstItem="hoW-iQ-cS0" firstAttribute="leading" secondItem="pPT-UV-CNr" secondAttribute="leadingMargin" constant="50" id="uGK-tc-FD9"/>
                             <constraint firstItem="0Mi-eN-Jax" firstAttribute="top" secondItem="pPT-UV-CNr" secondAttribute="top" id="uuc-ix-pKN"/>
                             <constraint firstItem="0Mi-eN-Jax" firstAttribute="leading" secondItem="pPT-UV-CNr" secondAttribute="leading" id="vOS-I4-s4L"/>
                             <constraint firstItem="HVR-Nm-iLw" firstAttribute="width" secondItem="pPT-UV-CNr" secondAttribute="width" multiplier="0.7" id="xmD-Ap-FQf"/>
@@ -1434,6 +1444,7 @@
                     </view>
                     <connections>
                         <outlet property="passo1" destination="jqR-FJ-rHr" id="dk3-lm-TuG"/>
+                        <outlet property="text" destination="hoW-iQ-cS0" id="51N-nh-nee"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kzX-mL-MRU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1458,10 +1469,10 @@
                                     <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
-                                <blurEffect style="light"/>
+                                <blurEffect style="dark"/>
                             </visualEffectView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UFi-Au-3Pc">
-                                <rect key="frame" x="120" y="621" width="784" height="117"/>
+                                <rect key="frame" x="120" y="581" width="784" height="157"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <string key="text">Com o dispositivo acoplado ao frasco do diluente, inverter o sistema. Em seguida, inserir o outro lado do dispositivo no frasco do produto e girar suavemente para dissolver o material completamente.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1473,7 +1484,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="zfm-vK-OrF" customClass="TutorialPasso3View" customModule="HemoLeo" customModuleProvider="target">
-                                <rect key="frame" x="153" y="130" width="717" height="461"/>
+                                <rect key="frame" x="153" y="90" width="717" height="461"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iQv-8J-Mm1">
@@ -1487,13 +1498,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="ddH-qY-0aD" secondAttribute="trailing" id="0Kz-Ae-Q5u"/>
-                            <constraint firstItem="zfm-vK-OrF" firstAttribute="top" secondItem="B4m-L5-jL3" secondAttribute="bottom" constant="110" id="6xk-kl-RZX"/>
+                            <constraint firstItem="zfm-vK-OrF" firstAttribute="top" secondItem="B4m-L5-jL3" secondAttribute="bottom" constant="70" id="6xk-kl-RZX"/>
                             <constraint firstItem="ddH-qY-0aD" firstAttribute="top" secondItem="3Wd-Pq-NKy" secondAttribute="top" id="ACd-n6-ZkO"/>
                             <constraint firstItem="UFi-Au-3Pc" firstAttribute="top" secondItem="zfm-vK-OrF" secondAttribute="bottom" constant="30" id="EeS-XP-Yqy"/>
-                            <constraint firstItem="UFi-Au-3Pc" firstAttribute="leading" secondItem="3Wd-Pq-NKy" secondAttribute="leadingMargin" constant="100" id="Hhk-DJ-AL6"/>
+                            <constraint firstItem="UFi-Au-3Pc" firstAttribute="leading" secondItem="3Wd-Pq-NKy" secondAttribute="leadingMargin" constant="50" id="Hhk-DJ-AL6"/>
                             <constraint firstItem="80I-mu-bpb" firstAttribute="centerX" secondItem="3Wd-Pq-NKy" secondAttribute="centerX" id="Hsz-0p-SSX"/>
                             <constraint firstItem="80I-mu-bpb" firstAttribute="height" secondItem="3Wd-Pq-NKy" secondAttribute="height" multiplier="0.6" id="Irc-5p-eSN"/>
-                            <constraint firstItem="80I-mu-bpb" firstAttribute="top" secondItem="B4m-L5-jL3" secondAttribute="bottom" constant="110" id="Jp3-pV-ena"/>
+                            <constraint firstItem="80I-mu-bpb" firstAttribute="top" secondItem="B4m-L5-jL3" secondAttribute="bottom" constant="70" id="Jp3-pV-ena"/>
                             <constraint firstItem="zfm-vK-OrF" firstAttribute="height" secondItem="3Wd-Pq-NKy" secondAttribute="height" multiplier="0.6" id="Npk-DL-jRe"/>
                             <constraint firstItem="ddH-qY-0aD" firstAttribute="leading" secondItem="3Wd-Pq-NKy" secondAttribute="leading" id="Oas-ZT-cXy"/>
                             <constraint firstItem="zfm-vK-OrF" firstAttribute="centerX" secondItem="3Wd-Pq-NKy" secondAttribute="centerX" id="PXA-f3-oPB"/>
@@ -1501,13 +1512,14 @@
                             <constraint firstItem="IUx-rM-oGR" firstAttribute="top" secondItem="ddH-qY-0aD" secondAttribute="bottom" id="X9t-Wi-dnw"/>
                             <constraint firstItem="80I-mu-bpb" firstAttribute="width" secondItem="3Wd-Pq-NKy" secondAttribute="width" multiplier="0.7" id="Zex-4M-B55"/>
                             <constraint firstItem="iQv-8J-Mm1" firstAttribute="top" secondItem="B4m-L5-jL3" secondAttribute="bottom" constant="30" id="tw4-KX-p28"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="UFi-Au-3Pc" secondAttribute="trailing" constant="100" id="uhl-Fj-3XN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UFi-Au-3Pc" secondAttribute="trailing" constant="50" id="uhl-Fj-3XN"/>
                             <constraint firstItem="zfm-vK-OrF" firstAttribute="width" secondItem="3Wd-Pq-NKy" secondAttribute="width" multiplier="0.7" constant="1" id="wZ7-IL-Baa"/>
                             <constraint firstItem="IUx-rM-oGR" firstAttribute="top" secondItem="UFi-Au-3Pc" secondAttribute="bottom" constant="30" id="wkH-ON-N30"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="passo3" destination="zfm-vK-OrF" id="tHL-Yx-JED"/>
+                        <outlet property="text" destination="UFi-Au-3Pc" id="zwX-aA-EeL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Xv-Gl-iYH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1532,10 +1544,10 @@
                                     <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
-                                <blurEffect style="light"/>
+                                <blurEffect style="dark"/>
                             </visualEffectView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3HZ-Bk-skB">
-                                <rect key="frame" x="120" y="621" width="784" height="117"/>
+                                <rect key="frame" x="70" y="581" width="884" height="157"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <string key="text">Remover a tampa azul do dispositivo e conectar a seringa sem puxar o ar para a seringa. Inverter o sistema para o produto ficar por cima e puxar o êmbolo para trás lentamente. Desconectar a seringa.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1543,11 +1555,11 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <view alpha="0.55000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yid-ag-Ecs">
-                                <rect key="frame" x="153" y="130" width="717" height="461"/>
+                                <rect key="frame" x="153" y="90" width="717" height="461"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="zRw-92-KYO" customClass="TutorialPasso4View" customModule="HemoLeo" customModuleProvider="target">
-                                <rect key="frame" x="153" y="130" width="717" height="461"/>
+                                <rect key="frame" x="153" y="90" width="717" height="461"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9V-wM-NI9">
@@ -1560,7 +1572,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="3HZ-Bk-skB" secondAttribute="trailing" constant="100" id="045-gR-cTT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3HZ-Bk-skB" secondAttribute="trailing" constant="50" id="045-gR-cTT"/>
                             <constraint firstItem="3HZ-Bk-skB" firstAttribute="top" secondItem="zRw-92-KYO" secondAttribute="bottom" constant="30" id="1GV-yA-cBW"/>
                             <constraint firstItem="o9V-wM-NI9" firstAttribute="top" secondItem="cQl-r2-GoU" secondAttribute="bottom" constant="30" id="4X4-k1-Ok9"/>
                             <constraint firstItem="Yid-ag-Ecs" firstAttribute="width" secondItem="Sfw-El-Bcr" secondAttribute="width" multiplier="0.7" id="62N-ja-dkq"/>
@@ -1569,19 +1581,20 @@
                             <constraint firstItem="aK4-M2-39A" firstAttribute="top" secondItem="3HZ-Bk-skB" secondAttribute="bottom" constant="30" id="UQO-Ad-s6S"/>
                             <constraint firstItem="iUg-TS-DE1" firstAttribute="leading" secondItem="Sfw-El-Bcr" secondAttribute="leading" id="UjU-nL-2aH"/>
                             <constraint firstItem="zRw-92-KYO" firstAttribute="height" secondItem="Sfw-El-Bcr" secondAttribute="height" multiplier="0.6" id="Vlu-xX-uvH"/>
-                            <constraint firstItem="zRw-92-KYO" firstAttribute="top" secondItem="cQl-r2-GoU" secondAttribute="bottom" constant="110" id="ZhH-mE-L54"/>
-                            <constraint firstItem="Yid-ag-Ecs" firstAttribute="top" secondItem="cQl-r2-GoU" secondAttribute="bottom" constant="110" id="ZlB-Jj-Zgk"/>
+                            <constraint firstItem="zRw-92-KYO" firstAttribute="top" secondItem="cQl-r2-GoU" secondAttribute="bottom" constant="70" id="ZhH-mE-L54"/>
+                            <constraint firstItem="Yid-ag-Ecs" firstAttribute="top" secondItem="cQl-r2-GoU" secondAttribute="bottom" constant="70" id="ZlB-Jj-Zgk"/>
                             <constraint firstItem="Yid-ag-Ecs" firstAttribute="height" secondItem="Sfw-El-Bcr" secondAttribute="height" multiplier="0.6" id="c8D-c3-dDg"/>
                             <constraint firstItem="Yid-ag-Ecs" firstAttribute="centerX" secondItem="Sfw-El-Bcr" secondAttribute="centerX" id="dbf-Zm-N9Z"/>
                             <constraint firstAttribute="trailing" secondItem="iUg-TS-DE1" secondAttribute="trailing" id="hf8-tz-Srj"/>
                             <constraint firstItem="zRw-92-KYO" firstAttribute="width" secondItem="Sfw-El-Bcr" secondAttribute="width" multiplier="0.7" constant="1" id="r0e-JO-KLp"/>
-                            <constraint firstItem="3HZ-Bk-skB" firstAttribute="leading" secondItem="Sfw-El-Bcr" secondAttribute="leadingMargin" constant="100" id="sRu-gN-bXH"/>
+                            <constraint firstItem="3HZ-Bk-skB" firstAttribute="leading" secondItem="Sfw-El-Bcr" secondAttribute="leadingMargin" constant="50" id="sRu-gN-bXH"/>
                             <constraint firstItem="iUg-TS-DE1" firstAttribute="top" secondItem="Sfw-El-Bcr" secondAttribute="top" id="tSf-nI-59z"/>
                             <constraint firstAttribute="trailingMargin" secondItem="o9V-wM-NI9" secondAttribute="trailing" constant="30" id="vGj-eg-dsN"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="passo4" destination="zRw-92-KYO" id="Lae-Rr-lKP"/>
+                        <outlet property="text" destination="3HZ-Bk-skB" id="gEf-Cp-Di9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o4e-hO-ilX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1606,10 +1619,10 @@
                                     <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
-                                <blurEffect style="light"/>
+                                <blurEffect style="dark"/>
                             </visualEffectView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qsc-md-a9P">
-                                <rect key="frame" x="120" y="621" width="784" height="117"/>
+                                <rect key="frame" x="70" y="581" width="884" height="157"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <string key="text">Escolher uma veia, colocar o garrote 3 a 4 dedos acima do ponto exato da punção e observar a veia ficar visível. Em seguida, limpar o local com algodão embebido em ácool e conectar a seringa no escalpe. Retira o protetor da agulha, segure pelas asas da borbolate e insira a agulha na veia.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1617,11 +1630,11 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <view alpha="0.55000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ywK-ua-Dfa">
-                                <rect key="frame" x="153" y="130" width="717" height="461"/>
+                                <rect key="frame" x="153" y="90" width="717" height="461"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="pov-R3-rQx" customClass="TutorialPasso5View" customModule="HemoLeo" customModuleProvider="target">
-                                <rect key="frame" x="153" y="130" width="717" height="461"/>
+                                <rect key="frame" x="153" y="90" width="717" height="461"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oLi-LQ-Nl4">
@@ -1636,13 +1649,13 @@
                         <constraints>
                             <constraint firstItem="pov-R3-rQx" firstAttribute="centerX" secondItem="JzR-JI-BB9" secondAttribute="centerX" id="06R-1O-ynY"/>
                             <constraint firstItem="ywK-ua-Dfa" firstAttribute="centerX" secondItem="JzR-JI-BB9" secondAttribute="centerX" id="2Me-DE-jM1"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="qsc-md-a9P" secondAttribute="trailing" constant="100" id="5vP-vb-hZe"/>
-                            <constraint firstItem="qsc-md-a9P" firstAttribute="leading" secondItem="JzR-JI-BB9" secondAttribute="leadingMargin" constant="100" id="7O0-wp-eeC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qsc-md-a9P" secondAttribute="trailing" constant="50" id="5vP-vb-hZe"/>
+                            <constraint firstItem="qsc-md-a9P" firstAttribute="leading" secondItem="JzR-JI-BB9" secondAttribute="leadingMargin" constant="50" id="7O0-wp-eeC"/>
                             <constraint firstItem="ikm-7l-vAo" firstAttribute="top" secondItem="Jad-K1-Bzl" secondAttribute="bottom" id="9Ts-Hl-ubF"/>
                             <constraint firstItem="pov-R3-rQx" firstAttribute="width" secondItem="JzR-JI-BB9" secondAttribute="width" multiplier="0.7" constant="1" id="EoH-by-ipD"/>
                             <constraint firstItem="pov-R3-rQx" firstAttribute="height" secondItem="JzR-JI-BB9" secondAttribute="height" multiplier="0.6" id="J6f-iA-oJ3"/>
                             <constraint firstItem="Jad-K1-Bzl" firstAttribute="top" secondItem="JzR-JI-BB9" secondAttribute="top" id="S84-wu-Pec"/>
-                            <constraint firstItem="pov-R3-rQx" firstAttribute="top" secondItem="gcj-eM-ZKf" secondAttribute="bottom" constant="110" id="Sdo-gn-ICp"/>
+                            <constraint firstItem="pov-R3-rQx" firstAttribute="top" secondItem="gcj-eM-ZKf" secondAttribute="bottom" constant="70" id="Sdo-gn-ICp"/>
                             <constraint firstAttribute="trailingMargin" secondItem="oLi-LQ-Nl4" secondAttribute="trailing" constant="30" id="VER-NQ-Euk"/>
                             <constraint firstItem="qsc-md-a9P" firstAttribute="top" secondItem="pov-R3-rQx" secondAttribute="bottom" constant="30" id="XNo-jg-TpL"/>
                             <constraint firstItem="oLi-LQ-Nl4" firstAttribute="top" secondItem="gcj-eM-ZKf" secondAttribute="bottom" constant="30" id="XdD-jB-Opy"/>
@@ -1650,12 +1663,13 @@
                             <constraint firstItem="ywK-ua-Dfa" firstAttribute="width" secondItem="JzR-JI-BB9" secondAttribute="width" multiplier="0.7" id="f5O-ku-mbf"/>
                             <constraint firstItem="ikm-7l-vAo" firstAttribute="top" secondItem="qsc-md-a9P" secondAttribute="bottom" constant="30" id="o7J-lx-wZf"/>
                             <constraint firstItem="ywK-ua-Dfa" firstAttribute="height" secondItem="JzR-JI-BB9" secondAttribute="height" multiplier="0.6" id="vEX-3i-AYo"/>
-                            <constraint firstItem="ywK-ua-Dfa" firstAttribute="top" secondItem="gcj-eM-ZKf" secondAttribute="bottom" constant="110" id="wpt-EF-KLi"/>
+                            <constraint firstItem="ywK-ua-Dfa" firstAttribute="top" secondItem="gcj-eM-ZKf" secondAttribute="bottom" constant="70" id="wpt-EF-KLi"/>
                             <constraint firstAttribute="trailing" secondItem="Jad-K1-Bzl" secondAttribute="trailing" id="zIs-99-7eq"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="passo5" destination="pov-R3-rQx" id="HMn-gp-uk3"/>
+                        <outlet property="text" destination="qsc-md-a9P" id="aTX-Rh-QgZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rfA-j5-yOP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1680,10 +1694,10 @@
                                     <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
-                                <blurEffect style="light"/>
+                                <blurEffect style="dark"/>
                             </visualEffectView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CaJ-vz-yyT">
-                                <rect key="frame" x="120" y="621" width="784" height="117"/>
+                                <rect key="frame" x="70" y="581" width="884" height="157"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <string key="text">Esperar voltar um pouco de sangue no tubo do escalpe. Usar o band-aid ou esparadrapo para fixar e, se quiser, remover o garrote. Injete o fator lentamente. Finalmente, segure as asss da borboleta e retire a agulha lentamente e com cuidado. Pressione o local até parar de sangrar.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1691,11 +1705,11 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <view alpha="0.55000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KEu-im-8DX">
-                                <rect key="frame" x="153" y="130" width="717" height="461"/>
+                                <rect key="frame" x="153" y="90" width="717" height="461"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="zB5-sY-Yro" customClass="TutorialPasso6View" customModule="HemoLeo" customModuleProvider="target">
-                                <rect key="frame" x="153" y="130" width="717" height="461"/>
+                                <rect key="frame" x="153" y="90" width="717" height="461"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSd-lW-PES">
@@ -1713,9 +1727,9 @@
                             <constraint firstItem="Lpb-fe-aA8" firstAttribute="top" secondItem="tPZ-ET-H8O" secondAttribute="bottom" id="3TG-V7-31Z"/>
                             <constraint firstAttribute="trailing" secondItem="tPZ-ET-H8O" secondAttribute="trailing" id="4v3-wu-J76"/>
                             <constraint firstItem="tPZ-ET-H8O" firstAttribute="top" secondItem="o6I-e6-S05" secondAttribute="top" id="Ca3-cA-RGh"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="CaJ-vz-yyT" secondAttribute="trailing" constant="100" id="DUX-4n-g7C"/>
-                            <constraint firstItem="CaJ-vz-yyT" firstAttribute="leading" secondItem="o6I-e6-S05" secondAttribute="leadingMargin" constant="100" id="ES3-5O-ing"/>
-                            <constraint firstItem="zB5-sY-Yro" firstAttribute="top" secondItem="hVs-uf-MtA" secondAttribute="bottom" constant="110" id="Ef7-zU-ZVD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CaJ-vz-yyT" secondAttribute="trailing" constant="50" id="DUX-4n-g7C"/>
+                            <constraint firstItem="CaJ-vz-yyT" firstAttribute="leading" secondItem="o6I-e6-S05" secondAttribute="leadingMargin" constant="50" id="ES3-5O-ing"/>
+                            <constraint firstItem="zB5-sY-Yro" firstAttribute="top" secondItem="hVs-uf-MtA" secondAttribute="bottom" constant="70" id="Ef7-zU-ZVD"/>
                             <constraint firstItem="tPZ-ET-H8O" firstAttribute="leading" secondItem="o6I-e6-S05" secondAttribute="leading" id="Udu-ld-kaY"/>
                             <constraint firstItem="KEu-im-8DX" firstAttribute="width" secondItem="o6I-e6-S05" secondAttribute="width" multiplier="0.7" id="YWS-gd-P7q"/>
                             <constraint firstItem="zB5-sY-Yro" firstAttribute="centerX" secondItem="o6I-e6-S05" secondAttribute="centerX" id="Yhq-w1-EQZ"/>
@@ -1725,11 +1739,12 @@
                             <constraint firstItem="WSd-lW-PES" firstAttribute="top" secondItem="hVs-uf-MtA" secondAttribute="bottom" constant="30" id="f17-WZ-KAr"/>
                             <constraint firstItem="KEu-im-8DX" firstAttribute="height" secondItem="o6I-e6-S05" secondAttribute="height" multiplier="0.6" id="jl6-DK-hU0"/>
                             <constraint firstItem="CaJ-vz-yyT" firstAttribute="top" secondItem="zB5-sY-Yro" secondAttribute="bottom" constant="30" id="neD-dA-Nhz"/>
-                            <constraint firstItem="KEu-im-8DX" firstAttribute="top" secondItem="hVs-uf-MtA" secondAttribute="bottom" constant="110" id="nly-Kx-YMB"/>
+                            <constraint firstItem="KEu-im-8DX" firstAttribute="top" secondItem="hVs-uf-MtA" secondAttribute="bottom" constant="70" id="nly-Kx-YMB"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="passo6" destination="zB5-sY-Yro" id="eeX-Sn-GiD"/>
+                        <outlet property="text" destination="CaJ-vz-yyT" id="OYk-Tw-QZI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tMQ-Mq-EVz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1754,21 +1769,21 @@
                                     <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
-                                <blurEffect style="light"/>
+                                <blurEffect style="dark"/>
                             </visualEffectView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Registre no HemoLeo que você tomou o fator." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Wo-Yd-VFR">
-                                <rect key="frame" x="120" y="621" width="784" height="117"/>
+                                <rect key="frame" x="70" y="581" width="884" height="157"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <view alpha="0.55000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3A6-2z-Bz4">
-                                <rect key="frame" x="153" y="130" width="717" height="461"/>
+                                <rect key="frame" x="153" y="90" width="717" height="461"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="0Bv-DJ-Mrk">
-                                <rect key="frame" x="153" y="130" width="717" height="461"/>
+                                <rect key="frame" x="153" y="90" width="717" height="461"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJg-Ke-EHc">
@@ -1778,9 +1793,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="3Wo-Yd-VFR" firstAttribute="leading" secondItem="bU3-MR-kHo" secondAttribute="leadingMargin" constant="100" id="1R6-f9-Bbz"/>
+                            <constraint firstItem="3Wo-Yd-VFR" firstAttribute="leading" secondItem="bU3-MR-kHo" secondAttribute="leadingMargin" constant="50" id="1R6-f9-Bbz"/>
                             <constraint firstItem="3A6-2z-Bz4" firstAttribute="width" secondItem="bU3-MR-kHo" secondAttribute="width" multiplier="0.7" id="5je-UA-WmR"/>
-                            <constraint firstItem="0Bv-DJ-Mrk" firstAttribute="top" secondItem="2ha-lR-Qku" secondAttribute="bottom" constant="110" id="FKa-Ud-j4a"/>
+                            <constraint firstItem="0Bv-DJ-Mrk" firstAttribute="top" secondItem="2ha-lR-Qku" secondAttribute="bottom" constant="70" id="FKa-Ud-j4a"/>
                             <constraint firstItem="0Bv-DJ-Mrk" firstAttribute="width" secondItem="bU3-MR-kHo" secondAttribute="width" multiplier="0.7" constant="1" id="FZX-At-mfU"/>
                             <constraint firstItem="3Wo-Yd-VFR" firstAttribute="top" secondItem="0Bv-DJ-Mrk" secondAttribute="bottom" constant="30" id="GKg-Vr-4IR"/>
                             <constraint firstAttribute="trailing" secondItem="07w-Bp-0TF" secondAttribute="trailing" id="Hc5-iG-u2C"/>
@@ -1793,11 +1808,14 @@
                             <constraint firstItem="0Bv-DJ-Mrk" firstAttribute="height" secondItem="bU3-MR-kHo" secondAttribute="height" multiplier="0.6" id="kF0-Dr-tEa"/>
                             <constraint firstItem="07w-Bp-0TF" firstAttribute="leading" secondItem="bU3-MR-kHo" secondAttribute="leading" id="lCh-tV-KmB"/>
                             <constraint firstItem="3A6-2z-Bz4" firstAttribute="height" secondItem="bU3-MR-kHo" secondAttribute="height" multiplier="0.6" id="oZf-lJ-TPS"/>
-                            <constraint firstItem="3A6-2z-Bz4" firstAttribute="top" secondItem="2ha-lR-Qku" secondAttribute="bottom" constant="110" id="rEz-Sx-69r"/>
+                            <constraint firstItem="3A6-2z-Bz4" firstAttribute="top" secondItem="2ha-lR-Qku" secondAttribute="bottom" constant="70" id="rEz-Sx-69r"/>
                             <constraint firstItem="xwl-FM-8gA" firstAttribute="top" secondItem="3Wo-Yd-VFR" secondAttribute="bottom" constant="30" id="tRT-zK-ahU"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="3Wo-Yd-VFR" secondAttribute="trailing" constant="100" id="vti-mH-4s9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3Wo-Yd-VFR" secondAttribute="trailing" constant="50" id="vti-mH-4s9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="text" destination="3Wo-Yd-VFR" id="cYG-Bj-CDg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ESK-Yo-ttQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1821,7 +1839,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
-                                <blurEffect style="light"/>
+                                <blurEffect style="dark"/>
                             </visualEffectView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yox-5D-CR2">
                                 <rect key="frame" x="30" y="30" width="60" height="60"/>
@@ -1835,18 +1853,18 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Materiais: Garrote, diluente, produto, borboleta, luvas, seringa, álcool 70%, band-aid e dispositivo." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O5O-Jr-MhI">
-                                <rect key="frame" x="120" y="601" width="784" height="127"/>
+                                <rect key="frame" x="70" y="581" width="884" height="147"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <view alpha="0.55000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W2K-ld-UF7">
-                                <rect key="frame" x="153" y="110" width="717" height="461"/>
+                                <rect key="frame" x="153" y="90" width="717" height="461"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="veo-QM-79D" customClass="MateriaisView" customModule="HemoLeo" customModuleProvider="target">
-                                <rect key="frame" x="153" y="110" width="717" height="461"/>
+                                <rect key="frame" x="153" y="90" width="717" height="461"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sf6-ki-N2O">
@@ -1859,16 +1877,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="O5O-Jr-MhI" firstAttribute="leading" secondItem="KBL-6a-cad" secondAttribute="leadingMargin" constant="100" id="0Ua-qg-PnQ"/>
+                            <constraint firstItem="O5O-Jr-MhI" firstAttribute="leading" secondItem="KBL-6a-cad" secondAttribute="leadingMargin" constant="50" id="0Ua-qg-PnQ"/>
                             <constraint firstItem="PC2-VU-KCo" firstAttribute="top" secondItem="KBL-6a-cad" secondAttribute="top" id="1S3-gN-cF8"/>
-                            <constraint firstItem="veo-QM-79D" firstAttribute="top" secondItem="fDu-8x-Dke" secondAttribute="bottom" constant="90" id="820-h1-d3L"/>
+                            <constraint firstItem="veo-QM-79D" firstAttribute="top" secondItem="fDu-8x-Dke" secondAttribute="bottom" constant="70" id="820-h1-d3L"/>
                             <constraint firstItem="yox-5D-CR2" firstAttribute="leading" secondItem="KBL-6a-cad" secondAttribute="leadingMargin" constant="10" id="AbD-tO-Lq4"/>
-                            <constraint firstItem="W2K-ld-UF7" firstAttribute="top" secondItem="fDu-8x-Dke" secondAttribute="bottom" constant="90" id="BXc-el-Iwe"/>
+                            <constraint firstItem="W2K-ld-UF7" firstAttribute="top" secondItem="fDu-8x-Dke" secondAttribute="bottom" constant="70" id="BXc-el-Iwe"/>
                             <constraint firstItem="veo-QM-79D" firstAttribute="centerX" secondItem="KBL-6a-cad" secondAttribute="centerX" id="CEc-Pj-zke"/>
                             <constraint firstAttribute="trailing" secondItem="PC2-VU-KCo" secondAttribute="trailing" id="DkW-M0-vDB"/>
                             <constraint firstItem="veo-QM-79D" firstAttribute="height" secondItem="KBL-6a-cad" secondAttribute="height" multiplier="0.6" id="FLm-zp-nC0"/>
                             <constraint firstItem="W2K-ld-UF7" firstAttribute="centerX" secondItem="KBL-6a-cad" secondAttribute="centerX" id="Ffr-3s-tlf"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="O5O-Jr-MhI" secondAttribute="trailing" constant="100" id="Gfj-g2-ZD0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="O5O-Jr-MhI" secondAttribute="trailing" constant="50" id="Gfj-g2-ZD0"/>
                             <constraint firstItem="W2K-ld-UF7" firstAttribute="width" secondItem="KBL-6a-cad" secondAttribute="width" multiplier="0.7" id="RPx-ud-HPh"/>
                             <constraint firstAttribute="trailingMargin" secondItem="sf6-ki-N2O" secondAttribute="trailing" constant="30" id="acV-hC-1HB"/>
                             <constraint firstItem="W2K-ld-UF7" firstAttribute="height" secondItem="KBL-6a-cad" secondAttribute="height" multiplier="0.6" id="bmp-4f-2hr"/>

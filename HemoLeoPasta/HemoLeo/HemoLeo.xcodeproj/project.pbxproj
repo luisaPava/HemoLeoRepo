@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B0211291D35736D00AFFB17 /* ReferenceProxy in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B0211261D35735800AFFB17 /* CareKit.framework */; };
-		2B02112A1D35736D00AFFB17 /* ReferenceProxy in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B0211261D35735800AFFB17 /* CareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2B0211291D35736D00AFFB17 /* CareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B0211261D35735800AFFB17 /* CareKit.framework */; };
+		2B02112A1D35736D00AFFB17 /* CareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B0211261D35735800AFFB17 /* CareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2B1A21481D3E6E64007F1B68 /* Fisiotherapy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A21471D3E6E64007F1B68 /* Fisiotherapy.swift */; };
 		2B1A214E1D3E71E2007F1B68 /* OccurenciesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A214D1D3E71E2007F1B68 /* OccurenciesViewController.swift */; };
 		2B1A21521D3E7BA3007F1B68 /* NSCodingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A21511D3E7BA3007F1B68 /* NSCodingManager.swift */; };
+		2B4909001DEF083F00411661 /* UIAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED0D2B71DDDE47600BE15CE /* UIAnimation.swift */; };
 		2B5731101DDF808500F1A834 /* TutorialPasso3.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B57310E1DDF808500F1A834 /* TutorialPasso3.xcassets */; };
 		2B5731111DDF808500F1A834 /* TutorialPasso3.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B57310E1DDF808500F1A834 /* TutorialPasso3.xcassets */; };
 		2B5731121DDF808500F1A834 /* TutorialPasso3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B57310F1DDF808500F1A834 /* TutorialPasso3View.swift */; };
@@ -96,8 +97,8 @@
 		4E32448B1DD3DE3800258CE1 /* BuildInsightsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E36E4611D45B9A20005A1BE /* BuildInsightsOperation.swift */; };
 		4E32448C1DD3DE3800258CE1 /* InsightsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E36E4621D45B9A20005A1BE /* InsightsBuilder.swift */; };
 		4E32448D1DD3DE3800258CE1 /* QueryActivityEventsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E36E4631D45B9A20005A1BE /* QueryActivityEventsOperation.swift */; };
-		4E32448E1DD3EAAA00258CE1 /* ReferenceProxy in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B0211261D35735800AFFB17 /* CareKit.framework */; };
-		4E32448F1DD3EAAA00258CE1 /* ReferenceProxy in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B0211261D35735800AFFB17 /* CareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4E32448E1DD3EAAA00258CE1 /* CareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B0211261D35735800AFFB17 /* CareKit.framework */; };
+		4E32448F1DD3EAAA00258CE1 /* CareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B0211261D35735800AFFB17 /* CareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4E3244931DD3EB5F00258CE1 /* AssessmentsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B2DF21D3ABEEB00EED2B4 /* AssessmentsManager.swift */; };
 		4E3244941DD3EB7800258CE1 /* NSCalendar+Dates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E36E4681D45BA330005A1BE /* NSCalendar+Dates.swift */; };
 		4E3244951DD3EB7800258CE1 /* OCKInsightItem+EmptyMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E36E4691D45BA330005A1BE /* OCKInsightItem+EmptyMessage.swift */; };
@@ -255,7 +256,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2B02112A1D35736D00AFFB17 /* ReferenceProxy in Embed Frameworks */,
+				2B02112A1D35736D00AFFB17 /* CareKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +267,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4E32448F1DD3EAAA00258CE1 /* ReferenceProxy in Embed Frameworks */,
+				4E32448F1DD3EAAA00258CE1 /* CareKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,7 +380,7 @@
 		4ED0D2A11DDDDB3B00BE15CE /* Tutorial6ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutorial6ViewController.swift; sourceTree = "<group>"; };
 		4ED0D2A31DDDDB4900BE15CE /* Tutorial7ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutorial7ViewController.swift; sourceTree = "<group>"; };
 		4ED0D2A71DDDDB6A00BE15CE /* Tutorial9ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutorial9ViewController.swift; sourceTree = "<group>"; };
-		4ED0D2B71DDDE47600BE15CE /* UIAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAnimation.swift; sourceTree = "<group>"; };
+		4ED0D2B71DDDE47600BE15CE /* UIAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIAnimation.swift; path = HemoLeo/UIAnimation.swift; sourceTree = "<group>"; };
 		4ED0D2BF1DDE778700BE15CE /* ContactsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsModel.swift; sourceTree = "<group>"; };
 		4ED0D2C51DDE869300BE15CE /* ConnectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectViewController.swift; sourceTree = "<group>"; };
 		4ED0D2C71DDE8B0100BE15CE /* AddContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
@@ -417,7 +418,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				777711071D3E9AAC0066A0E2 /* SpriteKit.framework in Frameworks */,
-				2B0211291D35736D00AFFB17 /* ReferenceProxy in Frameworks */,
+				2B0211291D35736D00AFFB17 /* CareKit.framework in Frameworks */,
 				CF1F165913B6439F29666239 /* Pods_HemoLeo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,7 +427,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E32448E1DD3EAAA00258CE1 /* ReferenceProxy in Frameworks */,
+				4E32448E1DD3EAAA00258CE1 /* CareKit.framework in Frameworks */,
 				301D65DA593E2D248E5F0AD6 /* Pods_iPhone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,9 +459,10 @@
 			name = Managers;
 			sourceTree = "<group>";
 		};
-		2B7099AE1DDF2133006C27F0 /* Animação */ = {
+		2B7099AE1DDF2133006C27F0 /* Animação */ = {
 			isa = PBXGroup;
 			children = (
+				4ED0D2B71DDDE47600BE15CE /* UIAnimation.swift */,
 				2B7099BB1DDF2179006C27F0 /* Passo0 */,
 				2B7099BA1DDF2170006C27F0 /* Passo8 */,
 				2B7099B91DDF2167006C27F0 /* Passo7 */,
@@ -806,7 +808,7 @@
 		4E32449E1DD3ECC500258CE1 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2B7099AE1DDF2133006C27F0 /* Animação */,
+				2B7099AE1DDF2133006C27F0 /* Animação */,
 				4E6796861DDD3597000E0A5E /* IBDesignables */,
 				4E3244A61DD6A48800258CE1 /* SymptomTracker */,
 				4E3244A51DD6A47300258CE1 /* CareCard */,
@@ -852,10 +854,10 @@
 			path = HemoLeo;
 			sourceTree = "<group>";
 		};
-		4E3CE03A1D400FEF00E4F422 /* Animação */ = {
+		4E3CE03A1D400FEF00E4F422 /* Animação */ = {
 			isa = PBXGroup;
 			children = (
-				EB6F10E21D41C4170056606B /* AnimaçõesStorytelling */,
+				EB6F10E21D41C4170056606B /* AnimaçõesStorytelling */,
 				4E3CE03B1D400FFF00E4F422 /* ButtonAnimation.swift */,
 			);
 			name = "Animação";
@@ -950,10 +952,9 @@
 		4EAFA1E61DC7A731002BA048 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4ED0D2B71DDDE47600BE15CE /* UIAnimation.swift */,
 				2BA188971D355BAA007F1CEB /* Assets */,
 				2BCA5CD61D42A4C700EAC063 /* IBDesignables */,
-				4E3CE03A1D400FEF00E4F422 /* Animação */,
+				4E3CE03A1D400FEF00E4F422 /* Animação */,
 				2B1A214F1D3E75D6007F1B68 /* Scenes */,
 				2BA188871D355A2C007F1CEB /* Main.storyboard */,
 				2BA1888C1D355A2C007F1CEB /* LaunchScreen.storyboard */,
@@ -1074,7 +1075,7 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		EB6F10E21D41C4170056606B /* AnimaçõesStorytelling */ = {
+		EB6F10E21D41C4170056606B /* AnimaçõesStorytelling */ = {
 			isa = PBXGroup;
 			children = (
 				2B97070E1DDDEE5E00FE3A74 /* Story5 */,
@@ -1505,6 +1506,7 @@
 				4ED0D2C01DDE778700BE15CE /* ContactsModel.swift in Sources */,
 				4E32448A1DD3DE3200258CE1 /* Bleeding.swift in Sources */,
 				4E3244781DD3DE2700258CE1 /* InsightModel.swift in Sources */,
+				2B4909001DEF083F00411661 /* UIAnimation.swift in Sources */,
 				4E3A3CB61DEC963E0095C251 /* MateriaisView.swift in Sources */,
 				4E32447B1DD3DE2700258CE1 /* OccurenciesModel.swift in Sources */,
 				4ED0D2B11DDDDEB200BE15CE /* Tutorial6ViewController.swift in Sources */,

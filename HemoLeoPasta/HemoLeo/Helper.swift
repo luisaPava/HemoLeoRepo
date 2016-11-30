@@ -142,44 +142,18 @@ extension String {
 }
 
 
-//class TextFieldDelegate: UITextFieldDelegate {
-//    func textFieldDidBeginEditing(_ textField: UITextField) {
-//        animateViewMoving(true, moveValue: 270)
-//    }
-//    
-//    func textFieldDidEndEditing(_ textField: UITextField) {
-//        animateViewMoving(false, moveValue: 270)
-//    }
-//    
-//    
-//    func animateViewMoving(_ up:Bool, moveValue :CGFloat){
-//        let movementDuration:TimeInterval = 0.3
-//        let movement:CGFloat = ( up ? -moveValue : moveValue)
-//        UIView.beginAnimations("animateView", context: nil)
-//        UIView.setAnimationBeginsFromCurrentState(true)
-//        UIView.setAnimationDuration(movementDuration )
-//        self.view.frame = self.view.frame.offsetBy(dx: 0,  dy: movement)
-//        UIView.commitAnimations()
-//    }
-//    
-//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        self.view.endEditing(true)
-//    }
-//}
 
 extension UITextView {
     
-    func showInstructions(
-        _ time: Double) {
+    func showInstructions(_ time: Double) {
         
-        let timer = Timer.scheduledTimer(withTimeInterval: time, repeats: false, block: { _ in
-        
-            self.runAnimation(UIAnimation.fadeAlphaTo(1, duration: 3))
+        let _ = Timer.scheduledTimer(withTimeInterval: time, repeats: false, block: { _ in
+            
+            self.runAnimation(UIAnimation.fadeAlphaTo(1, duration: 2))
         
         })
         
-        timer.fire()
-                
+        
     }
     
 

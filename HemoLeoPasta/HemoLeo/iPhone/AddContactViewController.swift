@@ -16,7 +16,8 @@ class AddContactViewController: UIViewController {
     @IBOutlet weak var relacao: SkyFloatingLabelTextField!
     @IBOutlet weak var telefone:SkyFloatingLabelTextField!
     @IBOutlet weak var email: SkyFloatingLabelTextField!
-    @IBOutlet weak var tipo: SkyFloatingLabelTextField!
+    @IBOutlet weak var segmentedTipo: ADVSegmentedControl!
+    private var tipo: Int!
     
     fileprivate let arrayValues: Array<CGFloat> = [0, 30, 80, 110, 150]
 
@@ -27,19 +28,20 @@ class AddContactViewController: UIViewController {
         relacao.delegate = self
         telefone.delegate = self
         email.delegate = self
-        tipo.delegate = self
+        segmentedTipo.items[0] = "Equipe"
+        segmentedTipo.items[1] = "Família"
         
     }
 
     @IBAction func save(_ sender: UIButton) {
-        if (nome.text?.isEmpty)! || (relacao.text?.isEmpty)! || (telefone.text?.isEmpty)! || (email.text?.isEmpty)! || (email.text?.isEmpty)! {
+        if (nome.text?.isEmpty)! || (relacao.text?.isEmpty)! || (telefone.text?.isEmpty)! || (email.text?.isEmpty)! {
             let alertController = UIAlertController(title: "Atenção", message: "Todos os campos devem ser preenchidos", preferredStyle: UIAlertControllerStyle.alert)
             alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default,handler: nil))
             
             self.present(alertController, animated: true, completion: nil)
             
         } else {
-            contactModel.saveContact(tipo: Int(tipo.text!)!,
+            contactModel.saveContact(tipo: segmentedTipo.selectedIndex,
                                      nome: nome.text!,
                                      relacao: relacao.text!,
                                      telefone: telefone.text!,
@@ -48,6 +50,10 @@ class AddContactViewController: UIViewController {
             self.dismiss(animated: false, completion: nil)
         }
     }
+    
+
+    
+    
     
     @IBAction func cancelBtn(_ sender: UIButton) {
         dismiss(animated: false, completion: nil)
@@ -83,4 +89,25 @@ extension AddContactViewController: UITextFieldDelegate {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
+    
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == self.nome {
+            let _ = self.relacao.becomeFirstResponder()
+            print(#function)
+        }
+        
+        if textField == self.relacao   {
+            let _ = self.telefone.becomeFirstResponder()
+        }
+        
+        if textField == self.telefone {
+            let _ = self.email.becomeFirstResponder()
+        }
+        
+        textField.resignFirstResponder()
+        
+        return true
+    }
+    
 }

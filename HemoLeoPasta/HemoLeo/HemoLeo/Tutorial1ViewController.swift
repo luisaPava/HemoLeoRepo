@@ -10,7 +10,9 @@ import UIKit
 
 class Tutorial1ViewController: UIViewController {
 
+    @IBOutlet weak var text: UITextView!
     @IBOutlet weak var passo1: TutorialPasso1View!
+    var flag: Bool = true
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +22,12 @@ class Tutorial1ViewController: UIViewController {
         self.view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "BG"))
         passo1.clipsToBounds = true
 
-        
+        if flag {
+            text.alpha = 0
+            text.showInstructions(10)
+            
+            flag = false
+        }
 
         // Do any additional setup after loading the view.
     }

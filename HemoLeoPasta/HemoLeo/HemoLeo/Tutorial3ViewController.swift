@@ -10,12 +10,23 @@ import UIKit
 
 class Tutorial3ViewController: UIViewController {
     @IBOutlet weak var passo3: TutorialPasso3View!
+    
+    @IBOutlet weak var text: UITextView!
+    
+    var flag: Bool = true
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "BG"))
         passo3.clipsToBounds = true
+        
+        if flag {
+            text.alpha = 0
+            text.showInstructions(10)
+            
+            flag = false
+        }
     
     }
 

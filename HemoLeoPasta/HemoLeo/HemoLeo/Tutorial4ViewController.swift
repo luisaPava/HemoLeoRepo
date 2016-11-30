@@ -10,6 +10,9 @@ import UIKit
 
 class Tutorial4ViewController: UIViewController {
     @IBOutlet weak var passo4: TutorialPasso4View!
+    @IBOutlet weak var text: UITextView!
+    
+    var flag: Bool = true
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +21,12 @@ class Tutorial4ViewController: UIViewController {
         passo4.clipsToBounds = true
 
         // Do any additional setup after loading the view.
+        if flag {
+            text.alpha = 0
+            text.showInstructions(10)
+            
+            flag = false
+        }
     }
 
     override func didReceiveMemoryWarning() {
