@@ -1032,71 +1032,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="nbV-qt-eOV" customClass="ADVSegmentedControl" customModule="HemoLeo" customModuleProvider="target">
-                                <rect key="frame" x="40" y="30" width="334" height="40"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="xYP-yJ-pXu"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedLabelColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="unselectedLabelColor">
-                                        <color key="value" red="0.1803921568627451" green="0.80000000000000004" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.15294117647058825" green="0.68235294117647061" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="thumbColor">
-                                        <color key="value" red="0.18039215689999999" green="0.80000000000000004" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="segmentedControlAction:" destination="qx3-w8-gE8" eventType="valueChanged" id="sGV-n7-kXU"/>
-                                </connections>
-                            </view>
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="8fR-za-0jq" customClass="MeninoDorView" customModule="HemoLeo" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="80" width="414" height="552"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qug-oQ-A6x" customClass="CustomView" customModule="HemoLeo" customModuleProvider="target">
-                                <rect key="frame" x="40" y="676" width="334" height="30"/>
-                                <color key="backgroundColor" red="0.18039215689999999" green="0.80000000000000004" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Ced-Q0-GWU"/>
-                                </constraints>
-                                <state key="normal" title="Finalizar">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.1529411765" green="0.68235294120000001" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornurRadius">
-                                        <real key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="save:" destination="qx3-w8-gE8" eventType="touchUpInside" id="SFd-Ov-n5u"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="qug-oQ-A6x" firstAttribute="leading" secondItem="lje-8y-B1b" secondAttribute="leadingMargin" constant="20" id="5ev-pu-dN4"/>
-                            <constraint firstItem="nbV-qt-eOV" firstAttribute="leading" secondItem="lje-8y-B1b" secondAttribute="leadingMargin" constant="20" id="6Df-uW-WmH"/>
                             <constraint firstItem="8fR-za-0jq" firstAttribute="leading" secondItem="lje-8y-B1b" secondAttribute="leading" id="6xc-fu-gHK"/>
                             <constraint firstItem="8fR-za-0jq" firstAttribute="height" secondItem="lje-8y-B1b" secondAttribute="height" multiplier="0.75" id="CvB-6D-q6W"/>
-                            <constraint firstItem="8fR-za-0jq" firstAttribute="top" secondItem="nbV-qt-eOV" secondAttribute="bottom" constant="10" id="HQ6-BF-Zl0"/>
-                            <constraint firstItem="3jY-vQ-ZQg" firstAttribute="top" secondItem="qug-oQ-A6x" secondAttribute="bottom" constant="30" id="KaZ-mT-64m"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="nbV-qt-eOV" secondAttribute="trailing" constant="20" id="d6h-LD-2XT"/>
-                            <constraint firstItem="nbV-qt-eOV" firstAttribute="top" secondItem="CJK-3Z-Bi8" secondAttribute="bottom" constant="30" id="i6g-f4-Nud"/>
+                            <constraint firstItem="8fR-za-0jq" firstAttribute="top" secondItem="CJK-3Z-Bi8" secondAttribute="bottom" constant="20" id="hnC-B4-Ss6"/>
                             <constraint firstAttribute="trailing" secondItem="8fR-za-0jq" secondAttribute="trailing" id="q54-1Z-Lzj"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="qug-oQ-A6x" secondAttribute="trailing" constant="20" id="zXn-7u-fpt"/>
                         </constraints>
                     </view>
                     <value key="contentSizeForViewInPopover" type="size" width="414" height="736"/>
@@ -1162,7 +1108,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9ap-QN-d4B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="295" y="1595"/>
+            <point key="canvasLocation" x="320" y="1573"/>
         </scene>
         <!--Care Card View Controller-->
         <scene sceneID="MxI-xp-R8I">

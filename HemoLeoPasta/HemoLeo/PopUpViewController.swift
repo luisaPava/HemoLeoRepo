@@ -13,10 +13,12 @@ class PopUpViewController: UIViewController, PopupContentViewController {
     var closeHandler: (() -> Void)?
     static var sliderValue = 0
     @IBOutlet weak var slider: G8SliderStep!
+    @IBOutlet weak var labelNivel: UILabel!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         popupSize = CGSize(width: 300, height: 300)
         slider.maximumValue = 10.0
@@ -50,6 +52,7 @@ class PopUpViewController: UIViewController, PopupContentViewController {
     
     @IBAction func sliderChanged(_ sender: G8SliderStep) {
         PopUpViewController.sliderValue = Int(sender.value)
+        labelNivel.text = String(sender.value.roundTof)
     }
     
     //Dismiss method

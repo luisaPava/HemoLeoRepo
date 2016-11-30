@@ -159,3 +159,13 @@ extension UITextView {
 
 }
 
+extension Float {
+    var roundTof:Float {
+        mutating get {
+            return Float(Int(10.0  * self)/10)
+        }
+    }
+    
+}
+
+

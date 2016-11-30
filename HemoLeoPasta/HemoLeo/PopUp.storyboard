@@ -21,9 +21,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="gcC-vp-j20" customClass="G8SliderStep" customModule="HemoLeo" customModuleProvider="target">
-                                <rect key="frame" x="14" y="124" width="272" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="gcC-vp-j20" customClass="G8SliderStep" customModule="HemoLeo" customModuleProvider="target">
+                                <rect key="frame" x="14" y="135" width="272" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="qA6-Nc-YKB"/>
+                                </constraints>
                                 <color key="minimumTrackTintColor" red="0.18039215689999999" green="0.80000000000000004" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="maximumTrackTintColor" red="0.77758562564849854" green="0.0" blue="0.046121932566165924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
@@ -49,10 +51,10 @@
                                 </connections>
                             </slider>
                             <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="48r-Yr-Z96" customClass="CustomView" customModule="HemoLeo" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="250" width="300" height="50"/>
+                                <rect key="frame" x="-10" y="250" width="320" height="60"/>
                                 <color key="backgroundColor" red="0.18039215689999999" green="0.80000000000000004" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="mFn-YI-rED"/>
+                                    <constraint firstAttribute="height" constant="60" id="mFn-YI-rED"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
                                 <state key="normal" title="OK">
@@ -76,26 +78,86 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o0k-gs-0Bg">
+                                <rect key="frame" x="16" y="165" width="11" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="11" id="Cif-Xu-zHf"/>
+                                    <constraint firstAttribute="height" constant="21" id="OTt-Bt-xrT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NRs-1e-iPF" customClass="CustomView" customModule="HemoLeo" customModuleProvider="target">
+                                <rect key="frame" x="129" y="183" width="42" height="37"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dO-AE-yDd">
+                                        <rect key="frame" x="14.5" y="4" width="13.5" height="29"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="0dO-AE-yDd" firstAttribute="centerY" secondItem="NRs-1e-iPF" secondAttribute="centerY" id="7gZ-Zv-2uS"/>
+                                    <constraint firstAttribute="height" constant="37" id="VSr-jy-gGD"/>
+                                    <constraint firstAttribute="width" constant="42" id="Va3-du-FgB"/>
+                                    <constraint firstItem="0dO-AE-yDd" firstAttribute="centerX" secondItem="NRs-1e-iPF" secondAttribute="centerX" id="taC-EM-WtW"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.18039215689999999" green="0.80000000000000004" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornurRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1oZ-MU-Bgl">
+                                <rect key="frame" x="261" y="168" width="23" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="23" id="cXK-Hz-0Uj"/>
+                                    <constraint firstAttribute="height" constant="24" id="l5z-8i-V3h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="48r-Yr-Z96" secondAttribute="trailing" id="9GA-cX-qKc"/>
-                            <constraint firstItem="48r-Yr-Z96" firstAttribute="leading" secondItem="Mq4-kX-x2X" secondAttribute="leading" id="JPD-UZ-jF5"/>
-                            <constraint firstItem="biv-K6-4Lm" firstAttribute="top" secondItem="48r-Yr-Z96" secondAttribute="bottom" id="Ygw-zb-nrW"/>
+                            <constraint firstItem="gcC-vp-j20" firstAttribute="leading" secondItem="Mq4-kX-x2X" secondAttribute="leadingMargin" id="6W2-SK-giT"/>
+                            <constraint firstAttribute="trailing" secondItem="48r-Yr-Z96" secondAttribute="trailing" constant="-10" id="9GA-cX-qKc"/>
+                            <constraint firstItem="o0k-gs-0Bg" firstAttribute="leading" secondItem="Mq4-kX-x2X" secondAttribute="leadingMargin" id="9SI-EF-vLE"/>
+                            <constraint firstItem="48r-Yr-Z96" firstAttribute="leading" secondItem="Mq4-kX-x2X" secondAttribute="leading" constant="-10" id="JPD-UZ-jF5"/>
+                            <constraint firstItem="1oZ-MU-Bgl" firstAttribute="trailing" secondItem="Mq4-kX-x2X" secondAttribute="trailingMargin" id="MyK-be-CVS"/>
+                            <constraint firstItem="48r-Yr-Z96" firstAttribute="top" secondItem="NRs-1e-iPF" secondAttribute="bottom" constant="30" id="PEN-Qc-Oks"/>
+                            <constraint firstItem="NRs-1e-iPF" firstAttribute="centerX" secondItem="Mq4-kX-x2X" secondAttribute="centerX" id="PhU-bz-9sj"/>
+                            <constraint firstItem="gcC-vp-j20" firstAttribute="centerY" secondItem="Mq4-kX-x2X" secondAttribute="centerY" id="WVY-0i-khL"/>
+                            <constraint firstItem="gcC-vp-j20" firstAttribute="centerX" secondItem="Mq4-kX-x2X" secondAttribute="centerX" id="WeZ-Eb-cLa"/>
+                            <constraint firstItem="biv-K6-4Lm" firstAttribute="top" secondItem="48r-Yr-Z96" secondAttribute="bottom" constant="-10" id="Ygw-zb-nrW"/>
                             <constraint firstItem="VQg-Gs-20Y" firstAttribute="leading" secondItem="Mq4-kX-x2X" secondAttribute="leadingMargin" id="eUu-Kj-QYG"/>
+                            <constraint firstItem="1oZ-MU-Bgl" firstAttribute="top" secondItem="gcC-vp-j20" secondAttribute="bottom" id="hyC-oX-RHZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="VQg-Gs-20Y" secondAttribute="trailing" id="i23-R3-8rn"/>
+                            <constraint firstItem="o0k-gs-0Bg" firstAttribute="top" secondItem="gcC-vp-j20" secondAttribute="bottom" id="oSp-nD-406"/>
+                            <constraint firstItem="gcC-vp-j20" firstAttribute="trailing" secondItem="Mq4-kX-x2X" secondAttribute="trailingMargin" id="tPQ-SD-xxC"/>
                             <constraint firstItem="VQg-Gs-20Y" firstAttribute="top" secondItem="87G-wq-0PW" secondAttribute="bottom" constant="20" id="vTa-DS-Bzx"/>
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="300" height="300"/>
                     <connections>
+                        <outlet property="labelNivel" destination="0dO-AE-yDd" id="UoG-pk-Et3"/>
                         <outlet property="slider" destination="gcC-vp-j20" id="dc6-fG-Esh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ea-RW-9ZJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="219" y="114"/>
+            <point key="canvasLocation" x="217.59999999999999" y="113.3433283358321"/>
         </scene>
     </scenes>
 </document>

@@ -779,7 +779,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" reuseIdentifier="userCell" id="TFC-Pd-Btq" customClass="UserCollectionViewCell" customModule="iPhone" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="7.5" width="223" height="326"/>
+                                        <rect key="frame" x="0.0" y="8" width="223" height="326"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="223" height="326"/>
@@ -1368,18 +1368,18 @@
                                 <state key="normal" image="reset"/>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Registre no HemoLeo que você tomou o fator." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EY7-Uc-9Vi">
-                                <rect key="frame" x="36" y="397.5" width="248" height="150.5"/>
+                                <rect key="frame" x="36" y="398" width="248" height="150"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <view alpha="0.55000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Scb-Jl-MNE">
-                                <rect key="frame" x="36" y="70" width="248" height="312.5"/>
+                                <rect key="frame" x="36" y="70" width="248" height="313"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="b9f-Sf-VOo" customClass="TutorialPasso7View">
-                                <rect key="frame" x="46" y="70" width="228" height="312.5"/>
+                                <rect key="frame" x="46" y="70" width="228" height="313"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>

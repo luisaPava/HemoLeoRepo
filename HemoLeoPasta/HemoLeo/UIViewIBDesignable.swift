@@ -8,7 +8,7 @@
 
 import UIKit
 
-@IBDesignable class CustomView: UIButton {
+@IBDesignable class CustomView: UIView {
     
     //MARK: PROPERTIES
     

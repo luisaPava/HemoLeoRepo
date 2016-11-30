@@ -23,7 +23,8 @@ class ThemesViewController: UIViewController, UICollectionViewDelegate, UICollec
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor(patternImage: UIImage(named: "greenBackground")!)
+        view.backgroundColor = UIColor(netHex: 0x2ECC71)
+        view.alpha = 0.5
         collectionView.backgroundColor = UIColor.clear
 
     }
