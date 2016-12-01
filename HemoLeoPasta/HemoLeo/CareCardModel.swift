@@ -41,7 +41,6 @@ class CareCardModel: Observer {
         // Setup controller's title and tab bar icon
         careCardViewController.title = "Cuidados"
         careCardViewController.tabBarItem = UITabBarItem(title: "Cuidados", image: UIImage(named: "carecard"), selectedImage: UIImage(named: "carecard-fill"))
-//        careCardViewController.navigationItem.rightBarButtonItem?.title = "Logout"
         
         
         return careCardViewController
@@ -112,9 +111,6 @@ class CareCardModel: Observer {
         case 5:
             activity = Shot().carePlanActivityCustom(customOccurencies: occurencies!)
             
-        case 6:
-            activity = Emergencial().carePlanActivityCustom(customOccurencies: occurencies!)
-            
         default:
             break
         }
@@ -144,9 +140,6 @@ class CareCardModel: Observer {
             
         case 5:
             activity = Shot().carePlanActivity()
-            
-        case 6:
-            activity = Emergencial().carePlanActivity()
             
         default:
             break
@@ -190,9 +183,3 @@ class CareCardModel: Observer {
         return (getActivity(withKey: key)?.identifier)!
     }
 }
-
-//extension CareCardModel: OCKCareCardViewControllerDelegate {
-//    func careCardViewController(_ viewController: OCKCareCardViewController, didSelectButtonWithInterventionEvent interventionEvent: OCKCarePlanEvent) {
-//        print("teste")
-//    }
-//}

@@ -10,7 +10,7 @@ import UIKit
 import CareKit
 
 class CareCardViewController: UINavigationController {
-    private var viewController: UIViewController! = nil
+    private var viewController: OCKCareCardViewController! = nil
     private let careCardModel = CareCardModel.sharedCareCardModel
 
     override func viewDidLoad() {
@@ -28,15 +28,15 @@ class CareCardViewController: UINavigationController {
         if self.viewControllers.isEmpty {
             viewController = careCardModel.createCareCard()
             viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Logout", style: .done, target: self, action: #selector(logOutAction))
-            
             viewController.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Nova", style: .plain, target: self, action: #selector(pushAddActivityController))
             
             viewController.navigationItem.leftBarButtonItem?.tintColor = UIColor(netHex: 0xd53d55)
             viewController.navigationItem.rightBarButtonItem?.tintColor = UIColor(netHex: 0xd53d55)
             
+            viewController.delegate = self
+            
             self.pushViewController(viewController, animated: false)
         }
-        
     }
     
     @IBAction func cancel(sender: AnyObject) {
@@ -47,7 +47,6 @@ class CareCardViewController: UINavigationController {
         // bug? exit segue doesn't dismiss so we do it manually...
         self.dismiss(animated: true, completion: nil)
     }
-    
     
     // MARK: - User interaction functions
     func pushAddActivityController() {
@@ -63,5 +62,13 @@ class CareCardViewController: UINavigationController {
 extension CareCardViewController: UIPopoverPresentationControllerDelegate {
     func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle {
         return UIModalPresentationStyle.none
+    }
+}
+
+extension CareCardViewController: OCKCareCardViewControllerDelegate {
+    func careCardViewController(_ viewController: OCKCareCardViewController, didSelectButtonWithInterventionEvent interventionEvent: OCKCarePlanEvent) {
+        if interventionEvent.activity.identifier == "Shot" {
+            
+        }
     }
 }

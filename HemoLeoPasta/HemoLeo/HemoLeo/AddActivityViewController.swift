@@ -16,7 +16,6 @@ class AddActivityViewController: UIViewController {
     @IBOutlet weak var exerciseBtn: UIButton!
     @IBOutlet weak var fisiotherapyBtn: UIButton!
     @IBOutlet weak var shotBtn: UIButton!
-    @IBOutlet weak var emergencialBtn: UIButton!
     
     var activities: Array<Bool> = []
     var senderActivity: Int!
@@ -38,7 +37,7 @@ class AddActivityViewController: UIViewController {
         activities = careCardModel.getActivities()
         
         // Set an array of buttons
-        buttons += [vegetableBtn, fruitsBtn, waterBtn, exerciseBtn, fisiotherapyBtn, shotBtn, emergencialBtn]
+        buttons += [vegetableBtn, fruitsBtn, waterBtn, exerciseBtn, fisiotherapyBtn, shotBtn]
     
         //Set the buttons state
         setButtons()
@@ -60,7 +59,7 @@ extension AddActivityViewController {
         let key = sender.tag
         selectedButton = sender
         
-        if key == 3 || key == 4 || key == 5 || key == 6 {
+        if key == 3 || key == 4 || key == 5 {
             senderActivity = key
             performSegue(withIdentifier: "activitiesToOccurencies", sender: self)
             

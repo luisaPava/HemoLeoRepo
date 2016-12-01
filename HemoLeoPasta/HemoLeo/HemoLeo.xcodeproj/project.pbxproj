@@ -117,8 +117,6 @@
 		4E36E4661D45B9A20005A1BE /* QueryActivityEventsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E36E4631D45B9A20005A1BE /* QueryActivityEventsOperation.swift */; };
 		4E36E46A1D45BA330005A1BE /* NSCalendar+Dates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E36E4681D45BA330005A1BE /* NSCalendar+Dates.swift */; };
 		4E36E46B1D45BA330005A1BE /* OCKInsightItem+EmptyMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E36E4691D45BA330005A1BE /* OCKInsightItem+EmptyMessage.swift */; };
-		4E3A3CAF1DEC944B0095C251 /* Emergencial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3A3CAE1DEC944B0095C251 /* Emergencial.swift */; };
-		4E3A3CB01DEC944B0095C251 /* Emergencial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3A3CAE1DEC944B0095C251 /* Emergencial.swift */; };
 		4E3A3CB31DEC963E0095C251 /* Materiais.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E3A3CB11DEC963E0095C251 /* Materiais.xcassets */; };
 		4E3A3CB41DEC963E0095C251 /* Materiais.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E3A3CB11DEC963E0095C251 /* Materiais.xcassets */; };
 		4E3A3CB51DEC963E0095C251 /* MateriaisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3A3CB21DEC963E0095C251 /* MateriaisView.swift */; };
@@ -342,7 +340,6 @@
 		4E36E4631D45B9A20005A1BE /* QueryActivityEventsOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryActivityEventsOperation.swift; sourceTree = "<group>"; };
 		4E36E4681D45BA330005A1BE /* NSCalendar+Dates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSCalendar+Dates.swift"; sourceTree = "<group>"; };
 		4E36E4691D45BA330005A1BE /* OCKInsightItem+EmptyMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OCKInsightItem+EmptyMessage.swift"; sourceTree = "<group>"; };
-		4E3A3CAE1DEC944B0095C251 /* Emergencial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emergencial.swift; sourceTree = "<group>"; };
 		4E3A3CB11DEC963E0095C251 /* Materiais.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Materiais.xcassets; sourceTree = "<group>"; };
 		4E3A3CB21DEC963E0095C251 /* MateriaisView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MateriaisView.swift; sourceTree = "<group>"; };
 		4E3CE03B1D400FFF00E4F422 /* ButtonAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonAnimation.swift; sourceTree = "<group>"; };
@@ -700,7 +697,6 @@
 				2BA188C11D3567A5007F1CEB /* Water.swift */,
 				2B87D5EA1D3825DB00F29678 /* AddedActivitiesData.swift */,
 				2B87D5EC1D38261300F29678 /* ToAddedActivitiesData.swift */,
-				4E3A3CAE1DEC944B0095C251 /* Emergencial.swift */,
 			);
 			name = Activities;
 			sourceTree = "<group>";
@@ -1455,7 +1451,6 @@
 				4E132CB81D41242A004CBC6F /* CustomActivityCell.swift in Sources */,
 				2BA188BC1D355D96007F1CEB /* Actitvity.swift in Sources */,
 				4ED0D2A81DDDDB6A00BE15CE /* Tutorial9ViewController.swift in Sources */,
-				4E3A3CAF1DEC944B0095C251 /* Emergencial.swift in Sources */,
 				4ED0D29C1DDDDB0500BE15CE /* Tutorial3ViewController.swift in Sources */,
 				4EE05E971DE32AD10088CB99 /* MeninoDorView.swift in Sources */,
 				4E36E4651D45B9A20005A1BE /* InsightsBuilder.swift in Sources */,
@@ -1508,7 +1503,6 @@
 				4E3244771DD3DE2700258CE1 /* SymptomTrackerModel.swift in Sources */,
 				EB69AB8D1DE255D6003EAB99 /* TutorialPasso6View.swift in Sources */,
 				4E53BE421DE71DD800890968 /* NotificationsModel.swift in Sources */,
-				4E3A3CB01DEC944B0095C251 /* Emergencial.swift in Sources */,
 				4E3244A01DD3EF4300258CE1 /* SymptomCardViewController.swift in Sources */,
 				4EAFA1F11DC7AAC2002BA048 /* ViewController.swift in Sources */,
 				4E3244871DD3DE3200258CE1 /* Assessment.swift in Sources */,

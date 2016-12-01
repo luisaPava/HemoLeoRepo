@@ -445,7 +445,7 @@
                                 <blurEffect style="dark"/>
                             </visualEffectView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJG-qe-NEz">
-                                <rect key="frame" x="120" y="581" width="784" height="157"/>
+                                <rect key="frame" x="70" y="581" width="884" height="157"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <string key="text">Retira a tampa do dispositivo sem tirá-lo da embalagem. Em seguida, vire a embalagem, insira a ponta de plástico limpa na tampa do diluente e finalmente retire a embalagem.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1033,7 +1033,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="8fR-za-0jq" customClass="MeninoDorView" customModule="HemoLeo" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="80" width="414" height="552"/>
+                                <rect key="frame" x="0.0" y="20" width="414" height="552"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -1261,35 +1261,20 @@
                                     <constraint firstAttribute="width" constant="290" id="UCJ-qJ-vlE"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UmG-ml-6gi">
-                                <rect key="frame" x="152" y="480" width="110" height="110"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="110" id="Kg6-1H-Tfc"/>
-                                    <constraint firstAttribute="width" constant="110" id="wSD-jK-cny"/>
-                                </constraints>
-                                <state key="normal" image="EmergencialNotSelected"/>
-                                <state key="selected" image="EmergencialHighlighted"/>
-                                <connections>
-                                    <action selector="addActivityActionWithSender:" destination="Cfu-op-DX6" eventType="touchUpInside" id="54j-ha-ILb"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="C5M-X6-YIy" firstAttribute="top" secondItem="pcU-9B-Hnw" secondAttribute="bottom" constant="20" id="7f1-ZB-gw7"/>
                             <constraint firstItem="3R4-be-U7H" firstAttribute="top" secondItem="FKj-E2-LpM" secondAttribute="bottom" constant="40" id="9M0-dL-THY"/>
                             <constraint firstItem="FKj-E2-LpM" firstAttribute="centerX" secondItem="vGK-f1-s8h" secondAttribute="centerX" id="Bp7-pz-T9s"/>
-                            <constraint firstItem="UmG-ml-6gi" firstAttribute="top" secondItem="3R4-be-U7H" secondAttribute="bottom" constant="30" id="KeH-oc-1AD"/>
                             <constraint firstItem="C5M-X6-YIy" firstAttribute="centerX" secondItem="vGK-f1-s8h" secondAttribute="centerX" id="KfJ-pR-9KF"/>
                             <constraint firstItem="3R4-be-U7H" firstAttribute="centerX" secondItem="vGK-f1-s8h" secondAttribute="centerX" id="Qvz-2K-ZcZ"/>
                             <constraint firstItem="FKj-E2-LpM" firstAttribute="top" secondItem="C5M-X6-YIy" secondAttribute="bottom" constant="40" id="YLb-RK-JfR"/>
-                            <constraint firstItem="UmG-ml-6gi" firstAttribute="centerX" secondItem="vGK-f1-s8h" secondAttribute="centerX" id="edz-FX-c6i"/>
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="414" height="736"/>
                     <connections>
-                        <outlet property="emergencialBtn" destination="UmG-ml-6gi" id="lec-pA-gB3"/>
                         <outlet property="exerciseBtn" destination="XjB-w8-JBw" id="e78-6v-Ce4"/>
                         <outlet property="fisiotherapyBtn" destination="UtG-Cw-oKf" id="8m4-l6-Gwq"/>
                         <outlet property="fruitsBtn" destination="2lZ-TZ-KSR" id="Uvv-XO-pSd"/>
@@ -1344,7 +1329,7 @@
                                 <blurEffect style="dark"/>
                             </visualEffectView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Lavar bem as mãos com sabão e colocar as luvas." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hoW-iQ-cS0">
-                                <rect key="frame" x="120" y="581" width="784" height="157"/>
+                                <rect key="frame" x="70" y="581" width="884" height="157"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
@@ -1418,7 +1403,7 @@
                                 <blurEffect style="dark"/>
                             </visualEffectView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UFi-Au-3Pc">
-                                <rect key="frame" x="120" y="581" width="784" height="157"/>
+                                <rect key="frame" x="70" y="581" width="884" height="157"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <string key="text">Com o dispositivo acoplado ao frasco do diluente, inverter o sistema. Em seguida, inserir o outro lado do dispositivo no frasco do produto e girar suavemente para dissolver o material completamente.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1426,7 +1411,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <view alpha="0.55000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="80I-mu-bpb">
-                                <rect key="frame" x="153" y="130" width="717" height="461"/>
+                                <rect key="frame" x="153" y="90" width="717" height="461"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="zfm-vK-OrF" customClass="TutorialPasso3View" customModule="HemoLeo" customModuleProvider="target">
@@ -1868,8 +1853,6 @@
         <image name="DarkBlue" width="51" height="51"/>
         <image name="DarkGreen" width="51" height="51"/>
         <image name="Default" width="1024" height="768"/>
-        <image name="EmergencialHighlighted" width="110" height="110"/>
-        <image name="EmergencialNotSelected" width="110" height="110"/>
         <image name="FruitsNotSelected" width="110" height="110"/>
         <image name="FrutasHIghlighted" width="110" height="110"/>
         <image name="LightBlue" width="51" height="51"/>

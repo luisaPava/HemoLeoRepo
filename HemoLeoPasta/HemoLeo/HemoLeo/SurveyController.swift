@@ -71,9 +71,7 @@ class SurveyController: UIViewController {
         }
         
         result = assessment?.buildResultForCarePlanEvent(event: event, taskResult: resultString)
-        
         symptomTrackerModel.completeEvent(event: event, withResult: result!)
-        
         
     }
 
