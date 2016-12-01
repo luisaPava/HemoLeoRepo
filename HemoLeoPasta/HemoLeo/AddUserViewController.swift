@@ -57,16 +57,15 @@ class AddUserViewController: UIViewController {
 
 extension AddUserViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        imagem = arraySkins[indexPath.row]
-        
-        selectedIndex = indexPath
+        let selectedCell = collectionView.cellForItem(at: selectedIndex!) as! AddUserCollectionViewCell
         
         if selectedIndex != nil {
             let cell = collectionView.cellForItem(at: selectedIndex!) as! AddUserCollectionViewCell
-            cell.imagem.image = UIImage(named: arraySkins[indexPath.row])
+//            cell.leoShadow.isHidden = true
         }
         
-//        cell.imagem.image = //Coloque imagem aqui
+        selectedIndex = indexPath
+//        selectedCell.leoShadow.isHidden = false
     }
 }
 

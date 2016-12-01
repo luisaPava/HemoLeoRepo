@@ -126,6 +126,14 @@
 		4E3CE03C1D400FFF00E4F422 /* ButtonAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3CE03B1D400FFF00E4F422 /* ButtonAnimation.swift */; };
 		4E4F03EA1DCD8ABF00523507 /* SurveyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4F03E91DCD8ABF00523507 /* SurveyController.swift */; };
 		4E4F03EC1DD0B9EE00523507 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4F03EB1DD0B9EE00523507 /* Helper.swift */; };
+		4E5092D31DF0584A001F2B7F /* MeninoHematomas.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E5092D11DF0584A001F2B7F /* MeninoHematomas.xcassets */; };
+		4E5092D41DF0584A001F2B7F /* MeninoHematomas.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E5092D11DF0584A001F2B7F /* MeninoHematomas.xcassets */; };
+		4E5092D51DF0584A001F2B7F /* MeninoHematomasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5092D21DF0584A001F2B7F /* MeninoHematomasView.swift */; };
+		4E5092D61DF0584A001F2B7F /* MeninoHematomasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5092D21DF0584A001F2B7F /* MeninoHematomasView.swift */; };
+		4E5092D91DF05B29001F2B7F /* MeninoSangramento.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E5092D71DF05B29001F2B7F /* MeninoSangramento.xcassets */; };
+		4E5092DA1DF05B29001F2B7F /* MeninoSangramento.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E5092D71DF05B29001F2B7F /* MeninoSangramento.xcassets */; };
+		4E5092DB1DF05B29001F2B7F /* MeninoSangramentoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5092D81DF05B29001F2B7F /* MeninoSangramentoView.swift */; };
+		4E5092DC1DF05B29001F2B7F /* MeninoSangramentoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5092D81DF05B29001F2B7F /* MeninoSangramentoView.swift */; };
 		4E53BE411DE71DD800890968 /* NotificationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E53BE401DE71DD800890968 /* NotificationsModel.swift */; };
 		4E53BE421DE71DD800890968 /* NotificationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E53BE401DE71DD800890968 /* NotificationsModel.swift */; };
 		4E6796881DDD35C9000E0A5E /* ADVSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6796871DDD35C9000E0A5E /* ADVSegmentedControl.swift */; };
@@ -192,10 +200,6 @@
 		4EE05E951DE32AD10088CB99 /* MeninoDor.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EE05E931DE32AD10088CB99 /* MeninoDor.xcassets */; };
 		4EE05E961DE32AD10088CB99 /* MeninoDor.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EE05E931DE32AD10088CB99 /* MeninoDor.xcassets */; };
 		4EE05E971DE32AD10088CB99 /* MeninoDorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE05E941DE32AD10088CB99 /* MeninoDorView.swift */; };
-		4EE05E9B1DE33F440088CB99 /* MeninoSangramento.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EE05E991DE33F440088CB99 /* MeninoSangramento.xcassets */; };
-		4EE05E9C1DE33F440088CB99 /* MeninoSangramento.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EE05E991DE33F440088CB99 /* MeninoSangramento.xcassets */; };
-		4EE05E9D1DE33F440088CB99 /* MeninoSangramentoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE05E9A1DE33F440088CB99 /* MeninoSangramentoView.swift */; };
-		4EE05E9E1DE33F440088CB99 /* MeninoSangramentoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE05E9A1DE33F440088CB99 /* MeninoSangramentoView.swift */; };
 		777711071D3E9AAC0066A0E2 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 777711061D3E9AAC0066A0E2 /* SpriteKit.framework */; };
 		7777110D1D3E9BD00066A0E2 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7777110C1D3E9BD00066A0E2 /* GameScene.swift */; };
 		7777110F1D3E9C110066A0E2 /* LeoImages.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 7777110E1D3E9C110066A0E2 /* LeoImages.atlas */; };
@@ -344,6 +348,10 @@
 		4E3CE03B1D400FFF00E4F422 /* ButtonAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonAnimation.swift; sourceTree = "<group>"; };
 		4E4F03E91DCD8ABF00523507 /* SurveyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyController.swift; sourceTree = "<group>"; };
 		4E4F03EB1DD0B9EE00523507 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		4E5092D11DF0584A001F2B7F /* MeninoHematomas.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MeninoHematomas.xcassets; sourceTree = "<group>"; };
+		4E5092D21DF0584A001F2B7F /* MeninoHematomasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeninoHematomasView.swift; sourceTree = "<group>"; };
+		4E5092D71DF05B29001F2B7F /* MeninoSangramento.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MeninoSangramento.xcassets; sourceTree = "<group>"; };
+		4E5092D81DF05B29001F2B7F /* MeninoSangramentoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeninoSangramentoView.swift; sourceTree = "<group>"; };
 		4E53BE401DE71DD800890968 /* NotificationsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsModel.swift; sourceTree = "<group>"; };
 		4E6796561DDA893E000E0A5E /* HemoLeo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HemoLeo.entitlements; sourceTree = "<group>"; };
 		4E6796591DDA89AA000E0A5E /* iPhone.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iPhone.entitlements; sourceTree = "<group>"; };
@@ -390,8 +398,6 @@
 		4EE05E7C1DE25DFB0088CB99 /* UIViewIBDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewIBDesignable.swift; sourceTree = "<group>"; };
 		4EE05E931DE32AD10088CB99 /* MeninoDor.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MeninoDor.xcassets; sourceTree = "<group>"; };
 		4EE05E941DE32AD10088CB99 /* MeninoDorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeninoDorView.swift; sourceTree = "<group>"; };
-		4EE05E991DE33F440088CB99 /* MeninoSangramento.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MeninoSangramento.xcassets; sourceTree = "<group>"; };
-		4EE05E9A1DE33F440088CB99 /* MeninoSangramentoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeninoSangramentoView.swift; sourceTree = "<group>"; };
 		614E74FB9878C77BC0228158 /* Pods-iPhone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPhone.release.xcconfig"; path = "Pods/Target Support Files/Pods-iPhone/Pods-iPhone.release.xcconfig"; sourceTree = "<group>"; };
 		777711061D3E9AAC0066A0E2 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		7777110C1D3E9BD00066A0E2 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -827,6 +833,7 @@
 		4E3244A61DD6A48800258CE1 /* SymptomTracker */ = {
 			isa = PBXGroup;
 			children = (
+				4E5092CE1DF05832001F2B7F /* Hematomas */,
 				4EE05E9F1DE33F480088CB99 /* Sangramento */,
 				4EE05EA01DE33F5E0088CB99 /* Dor */,
 				4E03102C1DD6AE8D002B8200 /* PopUp */,
@@ -919,6 +926,15 @@
 				4E2B29BF1D36CD0E00EED2B4 /* MainViewController.swift */,
 			);
 			name = Main;
+			sourceTree = "<group>";
+		};
+		4E5092CE1DF05832001F2B7F /* Hematomas */ = {
+			isa = PBXGroup;
+			children = (
+				4E5092D11DF0584A001F2B7F /* MeninoHematomas.xcassets */,
+				4E5092D21DF0584A001F2B7F /* MeninoHematomasView.swift */,
+			);
+			name = Hematomas;
 			sourceTree = "<group>";
 		};
 		4E6796861DDD3597000E0A5E /* IBDesignables */ = {
@@ -1049,8 +1065,8 @@
 		4EE05E9F1DE33F480088CB99 /* Sangramento */ = {
 			isa = PBXGroup;
 			children = (
-				4EE05E991DE33F440088CB99 /* MeninoSangramento.xcassets */,
-				4EE05E9A1DE33F440088CB99 /* MeninoSangramentoView.swift */,
+				4E5092D71DF05B29001F2B7F /* MeninoSangramento.xcassets */,
+				4E5092D81DF05B29001F2B7F /* MeninoSangramentoView.swift */,
 			);
 			name = Sangramento;
 			sourceTree = "<group>";
@@ -1146,7 +1162,7 @@
 				TargetAttributes = {
 					2BA1887B1D355A2C007F1CEB = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = AU45XX83RQ;
+						DevelopmentTeam = BUK6UDW987;
 						LastSwiftMigration = 0810;
 						SystemCapabilities = {
 							com.apple.Push = {
@@ -1159,7 +1175,7 @@
 					};
 					4EAFA1EB1DC7AAC2002BA048 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = AU45XX83RQ;
+						DevelopmentTeam = BUK6UDW987;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -1232,14 +1248,15 @@
 				2B57311A1DDF809000F1A834 /* TutorialPasso4.xcassets in Resources */,
 				2BA1888B1D355A2C007F1CEB /* Assets.xcassets in Resources */,
 				4E3A3CB31DEC963E0095C251 /* Materiais.xcassets in Resources */,
+				4E5092D91DF05B29001F2B7F /* MeninoSangramento.xcassets in Resources */,
 				2B9707171DDDF2E900FE3A74 /* Storytelling2.xcassets in Resources */,
 				EB69AB721DE24FC6003EAB99 /* TutorialPasso5.xcassets in Resources */,
 				2BA188891D355A2C007F1CEB /* Main.storyboard in Resources */,
 				EB69AB8A1DE255D6003EAB99 /* TutorialPasso6.xcassets in Resources */,
 				4EB711651DE88878009D129C /* Media.xcassets in Resources */,
-				4EE05E9B1DE33F440088CB99 /* MeninoSangramento.xcassets in Resources */,
 				4E132CB91D41242A004CBC6F /* CustomActivityCell.xib in Resources */,
 				4EE05E951DE32AD10088CB99 /* MeninoDor.xcassets in Resources */,
+				4E5092D31DF0584A001F2B7F /* MeninoHematomas.xcassets in Resources */,
 				2B5731101DDF808500F1A834 /* TutorialPasso3.xcassets in Resources */,
 				4E3244A81DD6A4B000258CE1 /* PopUp.storyboard in Resources */,
 			);
@@ -1255,14 +1272,15 @@
 				4EB711661DE88878009D129C /* Media.xcassets in Resources */,
 				4EAFA1F61DC7AAC2002BA048 /* Assets.xcassets in Resources */,
 				4EE05E701DE0FEDA0088CB99 /* carinho1.png in Resources */,
+				4E5092DA1DF05B29001F2B7F /* MeninoSangramento.xcassets in Resources */,
 				4EAFA1F41DC7AAC2002BA048 /* Main.storyboard in Resources */,
 				4E32449F1DD3ECD400258CE1 /* CustomActivityCell.xib in Resources */,
 				2B57311B1DDF809000F1A834 /* TutorialPasso4.xcassets in Resources */,
 				4EE05E851DE278D70088CB99 /* TutorialPasso 2.xcassets in Resources */,
-				4EE05E9C1DE33F440088CB99 /* MeninoSangramento.xcassets in Resources */,
 				EB69AB731DE24FC6003EAB99 /* TutorialPasso5.xcassets in Resources */,
 				EB69AB8B1DE255D6003EAB99 /* TutorialPasso6.xcassets in Resources */,
 				4E3A3CB41DEC963E0095C251 /* Materiais.xcassets in Resources */,
+				4E5092D41DF0584A001F2B7F /* MeninoHematomas.xcassets in Resources */,
 				2B9080471DE603C300318DDB /* TutorialPasso1.xcassets in Resources */,
 				4E03102B1DD6ACD3002B8200 /* PopUp.storyboard in Resources */,
 			);
@@ -1376,6 +1394,7 @@
 				4E2B29C81D37057A00EED2B4 /* PageViewCcontroller.swift in Sources */,
 				2B57311C1DDF809000F1A834 /* TutorialPasso4View.swift in Sources */,
 				4E36E46B1D45BA330005A1BE /* OCKInsightItem+EmptyMessage.swift in Sources */,
+				4E5092D51DF0584A001F2B7F /* MeninoHematomasView.swift in Sources */,
 				2B1A21481D3E6E64007F1B68 /* Fisiotherapy.swift in Sources */,
 				4ED0D29E1DDDDB1600BE15CE /* Tutorial4ViewController.swift in Sources */,
 				4EA969471D3D681000DBF2AD /* Bruising.swift in Sources */,
@@ -1393,6 +1412,7 @@
 				2B9707181DDDF2E900FE3A74 /* Storytelling2View.swift in Sources */,
 				EBBD25AE1D3731BE00786155 /* SettingViewController.swift in Sources */,
 				4EAFA2031DC7AD4E002BA048 /* SymptomTrackerModel.swift in Sources */,
+				4E5092DB1DF05B29001F2B7F /* MeninoSangramentoView.swift in Sources */,
 				4E973BB41DD90FD700D4CD8B /* AddUserViewController.swift in Sources */,
 				2BA188C41D35681E007F1CEB /* Exercise.swift in Sources */,
 				77E89D171D4252EA00FDA59B /* ThemesCollectionViewCell.swift in Sources */,
@@ -1451,7 +1471,6 @@
 				2BA188BE1D355EEF007F1CEB /* Vagetables.swift in Sources */,
 				4E2B2DF51D3AD12A00EED2B4 /* Pain.swift in Sources */,
 				4EE05E691DE0F3AB0088CB99 /* UserCollectionViewCell.swift in Sources */,
-				4EE05E9D1DE33F440088CB99 /* MeninoSangramentoView.swift in Sources */,
 				4E36E45B1D45B2570005A1BE /* InsightViewController.swift in Sources */,
 				4EAFA20F1DC7BF39002BA048 /* BGEnum.swift in Sources */,
 				2B87D5ED1D38261300F29678 /* ToAddedActivitiesData.swift in Sources */,
@@ -1469,7 +1488,6 @@
 				4E0364E71DD6B6D200C2793E /* PopupController.swift in Sources */,
 				4EE05E841DE278D20088CB99 /* TutorialPasso2View.swift in Sources */,
 				4ED0D2AD1DDDDEA400BE15CE /* Tutorial2ViewController.swift in Sources */,
-				4EE05E9E1DE33F440088CB99 /* MeninoSangramentoView.swift in Sources */,
 				4E3244801DD3DE2D00258CE1 /* Fruits.swift in Sources */,
 				4E973BAF1DD8FE9700D4CD8B /* UserViewController.swift in Sources */,
 				4E973BB51DD90FD700D4CD8B /* AddUserViewController.swift in Sources */,
@@ -1499,6 +1517,7 @@
 				4E3244861DD3DE2D00258CE1 /* ToAddedActivitiesData.swift in Sources */,
 				4E3244971DD3EC9D00258CE1 /* InsightViewController.swift in Sources */,
 				4E3244991DD3ECA900258CE1 /* SurveyController.swift in Sources */,
+				4E5092DC1DF05B29001F2B7F /* MeninoSangramentoView.swift in Sources */,
 				4EE05E7E1DE25DFB0088CB99 /* UIViewIBDesignable.swift in Sources */,
 				4ED0D2B41DDDDEBD00BE15CE /* Tutorial9ViewController.swift in Sources */,
 				4E3244811DD3DE2D00258CE1 /* Exercise.swift in Sources */,
@@ -1522,6 +1541,7 @@
 				4ED0D2AC1DDDDEA000BE15CE /* Tutorial1ViewController.swift in Sources */,
 				4E3244931DD3EB5F00258CE1 /* AssessmentsManager.swift in Sources */,
 				4ED0D2AE1DDDDEA700BE15CE /* Tutorial3ViewController.swift in Sources */,
+				4E5092D61DF0584A001F2B7F /* MeninoHematomasView.swift in Sources */,
 				4E0310301DD6AEC0002B8200 /* PopUpViewController.swift in Sources */,
 				4ED0D2AF1DDDDEAB00BE15CE /* Tutorial4ViewController.swift in Sources */,
 				4E32448D1DD3DE3800258CE1 /* QueryActivityEventsOperation.swift in Sources */,
@@ -1689,7 +1709,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = AU45XX83RQ;
+				DEVELOPMENT_TEAM = BUK6UDW987;
 				INFOPLIST_FILE = HemoLeo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1709,7 +1729,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = AU45XX83RQ;
+				DEVELOPMENT_TEAM = BUK6UDW987;
 				INFOPLIST_FILE = HemoLeo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1729,7 +1749,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				DEVELOPMENT_TEAM = AU45XX83RQ;
+				DEVELOPMENT_TEAM = BUK6UDW987;
 				INFOPLIST_FILE = iPhone/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1748,7 +1768,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				DEVELOPMENT_TEAM = AU45XX83RQ;
+				DEVELOPMENT_TEAM = BUK6UDW987;
 				INFOPLIST_FILE = iPhone/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
