@@ -14,6 +14,12 @@ let screenRect = UIScreen.main.bounds
 let width = screenRect.size.width
 let height = screenRect.size.height
 
+let formatter: DateFormatter = {
+    let formatter = DateFormatter()
+    formatter.dateFormat = "dd/MM/yyyy"
+    return formatter
+}()
+
 extension Array where Element: Equatable {
     func allElementsAreEqual(to i: Element) -> Bool {
         for j in self {

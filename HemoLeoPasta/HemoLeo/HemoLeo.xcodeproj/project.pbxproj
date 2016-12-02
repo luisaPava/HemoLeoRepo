@@ -132,6 +132,10 @@
 		4E5092DA1DF05B29001F2B7F /* MeninoSangramento.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E5092D71DF05B29001F2B7F /* MeninoSangramento.xcassets */; };
 		4E5092DB1DF05B29001F2B7F /* MeninoSangramentoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5092D81DF05B29001F2B7F /* MeninoSangramentoView.swift */; };
 		4E5092DC1DF05B29001F2B7F /* MeninoSangramentoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5092D81DF05B29001F2B7F /* MeninoSangramentoView.swift */; };
+		4E5092E41DF0D3FB001F2B7F /* DAOCalendario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5092E31DF0D3FB001F2B7F /* DAOCalendario.swift */; };
+		4E5092E51DF0D3FB001F2B7F /* DAOCalendario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5092E31DF0D3FB001F2B7F /* DAOCalendario.swift */; };
+		4E5092EA1DF0EF39001F2B7F /* InsightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5092E91DF0EF39001F2B7F /* InsightsViewController.swift */; };
+		4E5092EB1DF0EF39001F2B7F /* InsightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5092E91DF0EF39001F2B7F /* InsightsViewController.swift */; };
 		4E53BE411DE71DD800890968 /* NotificationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E53BE401DE71DD800890968 /* NotificationsModel.swift */; };
 		4E53BE421DE71DD800890968 /* NotificationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E53BE401DE71DD800890968 /* NotificationsModel.swift */; };
 		4E6796881DDD35C9000E0A5E /* ADVSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6796871DDD35C9000E0A5E /* ADVSegmentedControl.swift */; };
@@ -349,6 +353,8 @@
 		4E5092D21DF0584A001F2B7F /* MeninoHematomasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeninoHematomasView.swift; sourceTree = "<group>"; };
 		4E5092D71DF05B29001F2B7F /* MeninoSangramento.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MeninoSangramento.xcassets; sourceTree = "<group>"; };
 		4E5092D81DF05B29001F2B7F /* MeninoSangramentoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeninoSangramentoView.swift; sourceTree = "<group>"; };
+		4E5092E31DF0D3FB001F2B7F /* DAOCalendario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAOCalendario.swift; sourceTree = "<group>"; };
+		4E5092E91DF0EF39001F2B7F /* InsightsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsightsViewController.swift; sourceTree = "<group>"; };
 		4E53BE401DE71DD800890968 /* NotificationsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsModel.swift; sourceTree = "<group>"; };
 		4E6796561DDA893E000E0A5E /* HemoLeo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HemoLeo.entitlements; sourceTree = "<group>"; };
 		4E6796591DDA89AA000E0A5E /* iPhone.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iPhone.entitlements; sourceTree = "<group>"; };
@@ -901,6 +907,7 @@
 			isa = PBXGroup;
 			children = (
 				4E36E45A1D45B2570005A1BE /* InsightViewController.swift */,
+				4E5092E91DF0EF39001F2B7F /* InsightsViewController.swift */,
 			);
 			name = Insights;
 			path = HemoLeo;
@@ -1026,6 +1033,7 @@
 				4E4F03EB1DD0B9EE00523507 /* Helper.swift */,
 				4E973BB01DD8FECB00D4CD8B /* UserModel.swift */,
 				4E53BE401DE71DD800890968 /* NotificationsModel.swift */,
+				4E5092E31DF0D3FB001F2B7F /* DAOCalendario.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -1327,7 +1335,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		915FD0B7F6B5B6EDBE504C3A /* [CP] Embed Pods Frameworks */ = {
@@ -1357,7 +1365,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		E72B90F196D110DA259E587C /* [CP] Embed Pods Frameworks */ = {
@@ -1400,6 +1408,7 @@
 				2BCA5CDE1D42AC0300EAC063 /* Story5ViewController.swift in Sources */,
 				4E6796881DDD35C9000E0A5E /* ADVSegmentedControl.swift in Sources */,
 				4EAFA2091DC7B373002BA048 /* Leo.swift in Sources */,
+				4E5092E41DF0D3FB001F2B7F /* DAOCalendario.swift in Sources */,
 				4E3CE03C1D400FFF00E4F422 /* ButtonAnimation.swift in Sources */,
 				2B7997EE1D37CD8F00D0996D /* StoryOneViewController.swift in Sources */,
 				4E3A3CB51DEC963E0095C251 /* MateriaisView.swift in Sources */,
@@ -1469,6 +1478,7 @@
 				4E36E45B1D45B2570005A1BE /* InsightViewController.swift in Sources */,
 				4EAFA20F1DC7BF39002BA048 /* BGEnum.swift in Sources */,
 				2B87D5ED1D38261300F29678 /* ToAddedActivitiesData.swift in Sources */,
+				4E5092EA1DF0EF39001F2B7F /* InsightsViewController.swift in Sources */,
 				4EAFA2051DC7B180002BA048 /* InsightModel.swift in Sources */,
 				2B87D5EB1D3825DB00F29678 /* AddedActivitiesData.swift in Sources */,
 				77E89D111D4252AA00FDA59B /* ThemesViewController.swift in Sources */,
@@ -1504,6 +1514,7 @@
 				EB69AB8D1DE255D6003EAB99 /* TutorialPasso6View.swift in Sources */,
 				4E53BE421DE71DD800890968 /* NotificationsModel.swift in Sources */,
 				4E3244A01DD3EF4300258CE1 /* SymptomCardViewController.swift in Sources */,
+				4E5092E51DF0D3FB001F2B7F /* DAOCalendario.swift in Sources */,
 				4EAFA1F11DC7AAC2002BA048 /* ViewController.swift in Sources */,
 				4E3244871DD3DE3200258CE1 /* Assessment.swift in Sources */,
 				2B9080491DE603C300318DDB /* TutorialPasso1View.swift in Sources */,
@@ -1553,6 +1564,7 @@
 				4E973BB61DD9115B00D4CD8B /* Observer.swift in Sources */,
 				4E32447E1DD3DE2D00258CE1 /* Actitvity.swift in Sources */,
 				4E3244851DD3DE2D00258CE1 /* AddedActivitiesData.swift in Sources */,
+				4E5092EB1DF0EF39001F2B7F /* InsightsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

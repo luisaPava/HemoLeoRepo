@@ -156,7 +156,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TbL-Rd-2S2" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                <rect key="frame" x="46" y="168" width="228" height="42.5"/>
+                                <rect key="frame" x="46" y="168" width="228" height="43"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42.5" id="uZt-HV-OSa"/>
@@ -181,7 +181,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Relação" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DWV-Cw-WLs" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                <rect key="frame" x="46" y="244.5" width="228" height="42"/>
+                                <rect key="frame" x="46" y="245" width="228" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="rbG-Lk-uww"/>
                                 </constraints>
@@ -205,7 +205,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Telefone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lsc-7K-3h1" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                <rect key="frame" x="46" y="320.5" width="228" height="42.5"/>
+                                <rect key="frame" x="46" y="321" width="228" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42.5" id="zzo-dl-p7O"/>
                                 </constraints>
@@ -236,14 +236,14 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8F9-JT-2iV">
-                                <rect key="frame" x="40" y="220.5" width="240" height="14"/>
+                                <rect key="frame" x="40" y="221" width="240" height="14"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="Xm9-Fu-uke"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6DH-3K-JY6">
-                                <rect key="frame" x="40" y="296.5" width="240" height="14"/>
+                                <rect key="frame" x="40" y="297" width="240" height="14"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="Uf9-F1-B2H"/>
@@ -329,7 +329,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y7e-L9-YcU" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                <rect key="frame" x="46" y="397" width="228" height="42.5"/>
+                                <rect key="frame" x="46" y="397" width="228" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42.5" id="8XK-ba-hgu"/>
                                 </constraints>
@@ -651,6 +651,43 @@
             </objects>
             <point key="canvasLocation" x="2404" y="-1661"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="Bnq-Pq-8u5">
+            <objects>
+                <viewController id="dTt-AE-tYi" customClass="InsightsViewController" customModule="iPhone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wHg-Hk-pFZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="JNd-rs-MpG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="M3m-SR-d7h">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vm9-va-dIf" customClass="FSCalendar">
+                                <rect key="frame" x="0.0" y="28" width="320" height="234"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ErU-KK-Ip3">
+                                <rect key="frame" x="29" y="372" width="151" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="kD7-c5-FgY"/>
+                    <connections>
+                        <outlet property="calendar" destination="Vm9-va-dIf" id="ae0-77-Hgp"/>
+                        <outlet property="titleLabel" destination="ErU-KK-Ip3" id="uZl-pQ-KUt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7vt-Bx-XRj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1282.5" y="-1742.9577464788733"/>
+        </scene>
         <!--Tutorial-->
         <scene sceneID="raL-kH-j5n">
             <objects>
@@ -693,18 +730,18 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Materiais: Garrote, diluente, produto, borboleta, luvas, seringa, álcool 70%, band-aid e dispositivo." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRm-i2-oQB">
-                                <rect key="frame" x="36" y="397.5" width="248" height="140.5"/>
+                                <rect key="frame" x="36" y="398" width="248" height="140"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <view alpha="0.55000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b3G-7H-bGK">
-                                <rect key="frame" x="36" y="70" width="248" height="312.5"/>
+                                <rect key="frame" x="36" y="70" width="248" height="313"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="7rL-Tl-Q1V" customClass="MateriaisView" customModule="iPhone" customModuleProvider="target">
-                                <rect key="frame" x="46" y="70" width="228" height="312.5"/>
+                                <rect key="frame" x="46" y="70" width="228" height="313"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -850,6 +887,7 @@
                         <segue destination="JrD-Jf-jIV" kind="relationship" relationship="viewControllers" id="anz-HM-Q3P"/>
                         <segue destination="xvG-wT-ueO" kind="relationship" relationship="viewControllers" id="QRe-ye-MVx"/>
                         <segue destination="vuw-fW-3Qo" kind="relationship" relationship="viewControllers" id="Mee-Tw-yi4"/>
+                        <segue destination="dTt-AE-tYi" kind="relationship" relationship="viewControllers" id="f3V-qd-FW0"/>
                         <segue destination="fFN-je-hZ7" kind="relationship" relationship="viewControllers" id="Adz-Zi-7Rz"/>
                     </connections>
                 </tabBarController>
@@ -889,18 +927,18 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Lavar bem as mãos com sabão e colocar as luvas." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hd-Zs-ihd">
-                                <rect key="frame" x="36" y="397.5" width="248" height="150.5"/>
+                                <rect key="frame" x="36" y="398" width="248" height="150"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <view alpha="0.55000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fjZ-6c-kQB">
-                                <rect key="frame" x="36" y="70" width="248" height="312.5"/>
+                                <rect key="frame" x="36" y="70" width="248" height="313"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="1Re-u1-g6t" customClass="TutorialPasso1View" customModule="iPhone" customModuleProvider="target">
-                                <rect key="frame" x="46" y="70" width="228" height="312.5"/>
+                                <rect key="frame" x="46" y="70" width="228" height="313"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -966,7 +1004,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGT-QJ-wIB">
-                                <rect key="frame" x="36" y="397.5" width="248" height="140.5"/>
+                                <rect key="frame" x="36" y="398" width="248" height="140"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <string key="text">Retira a tampa do dispositivo sem tirá-lo da embalagem. Em seguida, vire a embalagem, insira a ponta de plástico limpa na tampa do diluente e finalmente retire a embalagem.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -974,11 +1012,11 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <view alpha="0.55000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1nC-Of-FKu">
-                                <rect key="frame" x="36" y="70" width="248" height="312.5"/>
+                                <rect key="frame" x="36" y="70" width="248" height="313"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="9E7-VQ-zHb" customClass="TutorialPasso2View" customModule="iPhone" customModuleProvider="target">
-                                <rect key="frame" x="46" y="70" width="228" height="312.5"/>
+                                <rect key="frame" x="46" y="70" width="228" height="313"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -1044,7 +1082,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="24R-GO-1xt">
-                                <rect key="frame" x="46" y="397.5" width="228" height="140.5"/>
+                                <rect key="frame" x="46" y="398" width="228" height="140"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <string key="text">Com o dispositivo acoplado ao frasco do diluente, inverter o sistema. Em seguida, inserir o outro lado do dispositivo no frasco do produto e girar suavemente para dissolver o material completamente.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1052,11 +1090,11 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <view alpha="0.55000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ts-N0-Bku">
-                                <rect key="frame" x="36" y="70" width="248" height="312.5"/>
+                                <rect key="frame" x="36" y="70" width="248" height="313"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="dgB-ua-Z6D" customClass="TutorialPasso3View" customModule="iPhone" customModuleProvider="target">
-                                <rect key="frame" x="36" y="70" width="248" height="312.5"/>
+                                <rect key="frame" x="36" y="70" width="248" height="313"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -1122,7 +1160,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AUe-PC-r3l">
-                                <rect key="frame" x="36" y="397.5" width="248" height="140.5"/>
+                                <rect key="frame" x="36" y="398" width="248" height="140"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <string key="text">Remover a tampa azul do dispositivo e conectar a seringa sem puxar o ar para a seringa. Inverter o sistema para o produto ficar por cima e puxar o êmbolo para trás lentamente. Desconectar a seringa.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1130,11 +1168,11 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <view alpha="0.55000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uLh-2r-eKh">
-                                <rect key="frame" x="36" y="70" width="248" height="312.5"/>
+                                <rect key="frame" x="36" y="70" width="248" height="313"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v9s-BK-xde" customClass="TutorialPasso4View" customModule="iPhone" customModuleProvider="target">
-                                <rect key="frame" x="46" y="70" width="228" height="312.5"/>
+                                <rect key="frame" x="46" y="70" width="228" height="313"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -1200,7 +1238,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SzZ-dp-QCi">
-                                <rect key="frame" x="36" y="397.5" width="248" height="140.5"/>
+                                <rect key="frame" x="36" y="398" width="248" height="140"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <string key="text">Escolher uma veia, colocar o garrote 3 a 4 dedos acima do ponto exato da punção e observar a veia ficar visível. Em seguida, limpar o local com algodão embebido em ácool e conectar a seringa no escalpe. Retira o protetor da agulha, segure pelas asas da borbolate e insira a agulha na veia.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1208,11 +1246,11 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <view alpha="0.55000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mzt-ek-7YZ">
-                                <rect key="frame" x="36" y="70" width="248" height="312.5"/>
+                                <rect key="frame" x="36" y="70" width="248" height="313"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="c92-8l-GXB" customClass="TutorialPasso5View" customModule="iPhone" customModuleProvider="target">
-                                <rect key="frame" x="46" y="70" width="228" height="312.5"/>
+                                <rect key="frame" x="46" y="70" width="228" height="313"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -1278,7 +1316,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uct-Nd-TNs">
-                                <rect key="frame" x="36" y="397.5" width="248" height="140.5"/>
+                                <rect key="frame" x="36" y="398" width="248" height="140"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <string key="text">Esperar voltar um pouco de sangue no tubo do escalpe. Usar o band-aid ou esparadrapo para fixar e, se quiser, remover o garrote. Injete o fator lentamente. Finalmente, segure as asss da borboleta e retire a agulha lentamente e com cuidado. Pressione o local até parar de sangrar.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1286,11 +1324,11 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <view alpha="0.55000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DJE-Sy-9JE">
-                                <rect key="frame" x="36" y="70" width="248" height="312.5"/>
+                                <rect key="frame" x="36" y="70" width="248" height="313"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="xHW-4e-QTi" customClass="TutorialPasso6View" customModule="iPhone" customModuleProvider="target">
-                                <rect key="frame" x="46" y="70" width="228" height="312.5"/>
+                                <rect key="frame" x="46" y="70" width="228" height="313"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>

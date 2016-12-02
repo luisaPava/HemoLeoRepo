@@ -7,129 +7,366 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0581F0231AC283E7F37B311575CDA210 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		1B5CDFCE9766A09164452C220579904B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		2292239E9D5918E7133FD46C463B5EED /* Pods-HemoLeo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E52FA13BD48B344F66413FC73B3C63BD /* Pods-HemoLeo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2E0FF0E24C42E7F9B266E20E49BF1E28 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7A0651CC34A6AE0C8F7FFBDB7846DA /* SkyFloatingLabelTextFieldWithIcon.swift */; };
-		30219700514D579AF4E8242069A299DE /* UITextField+fixCaretPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BCDE6E531483A0BC78F2A4754B2FEA /* UITextField+fixCaretPosition.swift */; };
-		42737CB5F77F473271A9BFDD628696D6 /* SkyFloatingLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0FAF602E4995190DC82F7787C3493 /* SkyFloatingLabelTextField.swift */; };
-		634D79464C5F0F4CF3118C4FA9B9858B /* Pods-iPhone-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 144DAD93C2BE18A7A4EB91BB0E907120 /* Pods-iPhone-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		74EDC77118B0FA45C7AE9AEC2F73BD7B /* Pods-iPhone-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C46B6293DF1198E9D28E291DCBF271 /* Pods-iPhone-dummy.m */; };
-		7E8915D133934A8516264FC2F4F646AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		8297553B3F07FCD531118976AA3BB29C /* SkyFloatingLabelTextField-iOS10.1-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A5B3F525E91F5FC331AA3DC94BC49577 /* SkyFloatingLabelTextField-iOS10.1-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8FBEE66878BB940DA588B0964796BB26 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7A0651CC34A6AE0C8F7FFBDB7846DA /* SkyFloatingLabelTextFieldWithIcon.swift */; };
-		9A274BA945644BA3F6295B5578700307 /* SkyFloatingLabelTextField-iOS10.0-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 01AA0057AB2ED8DB38C7C72E32C334CA /* SkyFloatingLabelTextField-iOS10.0-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9A67531AC8A59413D29A559110DF1BC6 /* Pods-HemoLeo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3F2EB0B2D45F59B1B79EF0A27036D0 /* Pods-HemoLeo-dummy.m */; };
-		A85CF01A4005B5F84B006E006302BBDE /* SkyFloatingLabelTextField-iOS10.1-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B68DB63362916962466CBE7F926A55 /* SkyFloatingLabelTextField-iOS10.1-dummy.m */; };
-		B35B34D0972F13D9871E813FE5689CA3 /* UITextField+fixCaretPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BCDE6E531483A0BC78F2A4754B2FEA /* UITextField+fixCaretPosition.swift */; };
-		BB50796EADAD85058154EEF6A05DBF4C /* SkyFloatingLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0FAF602E4995190DC82F7787C3493 /* SkyFloatingLabelTextField.swift */; };
-		C433849D95F9745513684CAED480CF80 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		E7ED6D0B5BBACD28F301F592FDD80694 /* SkyFloatingLabelTextField-iOS10.0-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 127D1AA9630DE4B2791838447F0F016F /* SkyFloatingLabelTextField-iOS10.0-dummy.m */; };
+		0092E388B266351CB027611D04C2811C /* FSCalendar-iOS10.1-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DBE99CAB3ED6354EEC3451F04E60B8A /* FSCalendar-iOS10.1-dummy.m */; };
+		016671FB17506A065B813EF7C04E0066 /* Pods-iPhone-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C46B6293DF1198E9D28E291DCBF271 /* Pods-iPhone-dummy.m */; };
+		04C042F127B1F51BF637B6A4CFE037CA /* Pods-iPhone-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 144DAD93C2BE18A7A4EB91BB0E907120 /* Pods-iPhone-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A1AB727BC4C4E726BA5515C1C08EEC8 /* SkyFloatingLabelTextField-iOS10.0-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0440AE2E8F09326B387D0D9DC6D99ED3 /* SkyFloatingLabelTextField-iOS10.0-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D1874FC756FF96BC82304D820D20D69 /* FSCalendarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA7059E00B8ADCB10ADAB41E7FA8642 /* FSCalendarConstants.m */; };
+		1460B1A27DF37CD2E999305D1F27484C /* FSCalendarWeekdayView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AA873CE5B34E20D20A568ACD56E580 /* FSCalendarWeekdayView.m */; };
+		172C4EF37CBE5210A6BA59349D81F2FC /* FSCalendarConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 82CF0D54BB57CFA674A995B391F158C2 /* FSCalendarConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17B3310D3DE6C3879BCEFAB69688B7FE /* FSCalendarCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 58074BF232AD8B00DF02E29AFA4E4153 /* FSCalendarCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1AC604ADD0D347FC73711B2B0F9722CF /* FSCalendar+Deprecated.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3160E8AA9577D58B6832BD0A1C66EC /* FSCalendar+Deprecated.m */; };
+		1BAD148270883510F1368189D49F575F /* FSCalendarStickyHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 0121EFA88865240C4DB1D78E731BC79D /* FSCalendarStickyHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20D23BC3E83302372366E1468C931777 /* FSCalendarCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 9737FD787C98C92D917E49A800639980 /* FSCalendarCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		230CE08ED225CA77C8AA62AA1F14693C /* FSCalendarCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 524978950C64D185132BD03D817C03B2 /* FSCalendarCollectionViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B3AA6EDCE804B3632AA415C439E1613 /* FSCalendarWeekdayView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AA873CE5B34E20D20A568ACD56E580 /* FSCalendarWeekdayView.m */; };
+		31823A53FB5D73B4B5F7BFFEBF0839DE /* FSCalendarScopeHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1534CDEB27C62296B579EB4C802CEA25 /* FSCalendarScopeHandle.m */; };
+		33E28FC8E57B01787B53B4D92B190458 /* FSCalendarScopeHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = 425E3F4FA07A244292E718B0F4426A67 /* FSCalendarScopeHandle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35F3880BC91DE14B8B24F82B5DE7B4D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A817CAE99C81EE68006DC1E60E295C0A /* Foundation.framework */; };
+		36D0F74392E769209121F3DCB0B50E53 /* FSCalendarScopeHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = 425E3F4FA07A244292E718B0F4426A67 /* FSCalendarScopeHandle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		381B971655C11C089CF78C7D183D2400 /* FSCalendar-iOS10.1-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 51D6BA68FDD81E47BF6C29B6EEEEB552 /* FSCalendar-iOS10.1-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B886BAAD373A99098A3891493B39FD4 /* FSCalendarDelegateProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A8555BCF3A923D4F8C16703CAB168CC /* FSCalendarDelegateProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CE01872721F878F16A132E821350FEB /* UITextField+fixCaretPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0490507E076C6B5671A86DC4C348009 /* UITextField+fixCaretPosition.swift */; };
+		3D3CC27A0E1728EC96D9838D683CF7F1 /* FSCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A98589AF3F138F468AD6E2AFC8D723 /* FSCalendarCell.m */; };
+		3D6327737867C30993D8B1029E9C559C /* FSCalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AE69CD04A05CAC630A17FB476BC9E4 /* FSCalendarHeaderView.m */; };
+		43955B0DA2CE8744BA8FEF72B9900A0F /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4640F4B6D7BFA6738F3BF8272ADE9B /* SkyFloatingLabelTextFieldWithIcon.swift */; };
+		4934C7586A679415506760B45EA75D1B /* FSCalendarExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E76D8628EE69EC56EC2189234AEF527 /* FSCalendarExtensions.m */; };
+		4A479C156FE8479923A4DAC3956ED95A /* FSCalendarCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 9737FD787C98C92D917E49A800639980 /* FSCalendarCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4AE8327D1AB94F343DC80A358CD787C5 /* FSCalendarDelegateProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A8555BCF3A923D4F8C16703CAB168CC /* FSCalendarDelegateProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		53AE54AD1A1F533470434D3F11338717 /* FSCalendarAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDF513F9F71022EB01E689C120A8236 /* FSCalendarAnimator.m */; };
+		55F9C8DF606E0CFBF2C64BEFE6E77A8C /* FSCalendarConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 82CF0D54BB57CFA674A995B391F158C2 /* FSCalendarConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DE72AA6EDB2EDB1624809812C1AB88D /* FSCalendar+Deprecated.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3160E8AA9577D58B6832BD0A1C66EC /* FSCalendar+Deprecated.m */; };
+		611DD5EB06544B1311B6EEB835C54FD6 /* FSCalendarCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 07AA4C694AF6921B4506A9C5DBFF842B /* FSCalendarCalculator.m */; };
+		68F5E88A0652D7DABF5FC6FF686D460D /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4640F4B6D7BFA6738F3BF8272ADE9B /* SkyFloatingLabelTextFieldWithIcon.swift */; };
+		6B9A8D1ADBD7BB12678D24AD2CCD132E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23016F69B2480F44D0BB5526B39192FA /* QuartzCore.framework */; };
+		6BD778285D63251619C251B23A597A4E /* FSCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA1093C315DDB3F6BAB2BBBAFD47B3E /* FSCalendarAppearance.m */; };
+		77AF01200446180AB4809A58AA79FAD8 /* FSCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = E0EDA9B4B3AA4BC844AF7678CA576A2D /* FSCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78752F8636B0AF8E848735CC92BD2930 /* Pods-HemoLeo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E52FA13BD48B344F66413FC73B3C63BD /* Pods-HemoLeo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		795412F5632D68948B2638ECFFF0A048 /* FSCalendarWeekdayView.h in Headers */ = {isa = PBXBuildFile; fileRef = B92BFB8A0FA31ED7DDA5530CE0AA1F86 /* FSCalendarWeekdayView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7DFB289C459C1D7090FD155AE8B11D05 /* FSCalendarStickyHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 0121EFA88865240C4DB1D78E731BC79D /* FSCalendarStickyHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8152238025F9120DE37C66EE45A79B3B /* FSCalendarCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 07AA4C694AF6921B4506A9C5DBFF842B /* FSCalendarCalculator.m */; };
+		843D539DBAD48380D71D5B6D9B049ECC /* FSCalendarAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 74F715ABB10197AE7906684B9778CA8A /* FSCalendarAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8585AC7682899F96157A2C438335A8A9 /* FSCalendarCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EBA287E8A07740042FC940733D0A85E /* FSCalendarCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		876860284522DEE3F713FB6C3F3AA3E7 /* FSCalendarDynamicHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 42A45B2BC5F0C181FBAFEAE4E59BB105 /* FSCalendarDynamicHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9635BC047EE49AF84EE865A532692C01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A817CAE99C81EE68006DC1E60E295C0A /* Foundation.framework */; };
+		96EB4E59A8DB3CA4C92BEF50CF83E0E0 /* SkyFloatingLabelTextField-iOS10.1-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EDC9C5448C5A7E97237836D196C45ADC /* SkyFloatingLabelTextField-iOS10.1-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		983D6A021A31D71CFC186786FF03CF2C /* FSCalendarAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = 994CFBEE9C34CBED1B118B6A17C483E5 /* FSCalendarAppearance.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		992FD547061DDBE4A001DB1319782E66 /* FSCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = B21B0EFA9E02C146731DB8791A1EA5B9 /* FSCalendar.m */; };
+		9F531BD9F312B13C936F8773FA9B3816 /* Pods-HemoLeo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3F2EB0B2D45F59B1B79EF0A27036D0 /* Pods-HemoLeo-dummy.m */; };
+		9FE679D878A302E2C12F4E7A0988DD93 /* FSCalendarHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = E4448E16FFB35FB9868E70F8CC1D2005 /* FSCalendarHeaderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A15EEA77E661C003C59834B7428438F1 /* SkyFloatingLabelTextField-iOS10.1-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4FF0421B48EDE867A07D7AFD20603BB /* SkyFloatingLabelTextField-iOS10.1-dummy.m */; };
+		A44A3C78F211D2A1D415B5E690B33DBB /* FSCalendar-iOS10.0-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6DCA10E9F8FF08D3D6CD0C53A62036 /* FSCalendar-iOS10.0-dummy.m */; };
+		A726A30F0242BBE79BCD2B06F1880394 /* FSCalendarDelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3595AEECEF96D63B24032FAB03D532A /* FSCalendarDelegateProxy.m */; };
+		ABCAE9A705A776F0E63ED2399A9AB80B /* FSCalendarCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 524978950C64D185132BD03D817C03B2 /* FSCalendarCollectionViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ACFAA5EDD5A0829ABE4CADDB96CE2684 /* FSCalendarCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F21BE61E760D6B5F4CE5ABBDE2DE6040 /* FSCalendarCollectionView.m */; };
+		AE5F79CA608EB565B932DCC556ABA86E /* FSCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = B21B0EFA9E02C146731DB8791A1EA5B9 /* FSCalendar.m */; };
+		AE9465534307007510ADCDD059E0BF75 /* SkyFloatingLabelTextField-iOS10.0-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46E2F7A9BD9F3386B2244BEA7C4D8547 /* SkyFloatingLabelTextField-iOS10.0-dummy.m */; };
+		B75A4CBCEBC0B81A0255CC1F8A4A11BE /* FSCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A98589AF3F138F468AD6E2AFC8D723 /* FSCalendarCell.m */; };
+		B7FF151150E0D44B6A3F37689564F96F /* SkyFloatingLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CB7386C75109EA54B3A7033617D219 /* SkyFloatingLabelTextField.swift */; };
+		BB3998ED43D392D42B4631C381D409B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A817CAE99C81EE68006DC1E60E295C0A /* Foundation.framework */; };
+		BD19518056CFBD3F7A4ED5A50820626E /* FSCalendarAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 74F715ABB10197AE7906684B9778CA8A /* FSCalendarAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEABFEC7FE9D7DD1A2321B3D1D0B2AEC /* FSCalendarExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E76D8628EE69EC56EC2189234AEF527 /* FSCalendarExtensions.m */; };
+		BEB3DFCB9E20D717D88A59EB9BB0D085 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A817CAE99C81EE68006DC1E60E295C0A /* Foundation.framework */; };
+		C0FED49B7E763EDA8275F7C4D0A6DBCA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A817CAE99C81EE68006DC1E60E295C0A /* Foundation.framework */; };
+		C6E3C758718CBA8F67622DC054077572 /* FSCalendarAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDF513F9F71022EB01E689C120A8236 /* FSCalendarAnimator.m */; };
+		C828F090E4052C253D4D37C7B3FC5C6F /* FSCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = E0EDA9B4B3AA4BC844AF7678CA576A2D /* FSCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C867E7BEE3E73F24660F0060B289FF2F /* FSCalendarCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 58074BF232AD8B00DF02E29AFA4E4153 /* FSCalendarCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CCA5C3AD72247EC59828B04631E2F413 /* FSCalendarExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BB35016B56D7A7B3B75834D69F6DAED /* FSCalendarExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDD0A04A02394D35BD976B839B6B9226 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091D54A73E1E8BB182C9D7D245AF1C2F /* UIKit.framework */; };
+		CEDBB3B6B92F6B1B5A4BF7911D5DE964 /* FSCalendarCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F21BE61E760D6B5F4CE5ABBDE2DE6040 /* FSCalendarCollectionView.m */; };
+		CF687D5DF12DC6F139DDD37BD0E60805 /* SkyFloatingLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CB7386C75109EA54B3A7033617D219 /* SkyFloatingLabelTextField.swift */; };
+		D4FB11A50EB2F743D4DFDA11B5627653 /* FSCalendarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA7059E00B8ADCB10ADAB41E7FA8642 /* FSCalendarConstants.m */; };
+		D8DE7DD64D87353AEDE5D8A94B9ECB5C /* UITextField+fixCaretPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0490507E076C6B5671A86DC4C348009 /* UITextField+fixCaretPosition.swift */; };
+		DCADDEADA8B5A99C4353049CEA297398 /* FSCalendarCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBFB86E7A1BBCD1DC755313BF29B91A /* FSCalendarCollectionViewLayout.m */; };
+		E45A01B3A290ABD71CE8EAEB704EF996 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091D54A73E1E8BB182C9D7D245AF1C2F /* UIKit.framework */; };
+		E46236872A01BA0ED15CC8A2CEBD4C34 /* FSCalendar-iOS10.0-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F29F02F24D00C4225821F61C8BB60F0 /* FSCalendar-iOS10.0-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E520E1945B42BE91C8A185490B217D89 /* FSCalendarWeekdayView.h in Headers */ = {isa = PBXBuildFile; fileRef = B92BFB8A0FA31ED7DDA5530CE0AA1F86 /* FSCalendarWeekdayView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E72F48FDA5FFD987A7B134B3BFDC1DA1 /* FSCalendarStickyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 420EE7D9207DBAAF7499C1333CEFBEF5 /* FSCalendarStickyHeader.m */; };
+		E826BEFC9E2E7B050327C79CD7B4CE3C /* FSCalendarCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EBA287E8A07740042FC940733D0A85E /* FSCalendarCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E844B3531285C67864A8CE7BC17A6FBF /* FSCalendarScopeHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1534CDEB27C62296B579EB4C802CEA25 /* FSCalendarScopeHandle.m */; };
+		EC0D634D23FF3C979DCF722A438E8CA8 /* FSCalendarExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BB35016B56D7A7B3B75834D69F6DAED /* FSCalendarExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECA5834ADE47D556F8D6793AE1A3C7C0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23016F69B2480F44D0BB5526B39192FA /* QuartzCore.framework */; };
+		ECAA35BFBFA26079E7A6703235E3053D /* FSCalendarCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBFB86E7A1BBCD1DC755313BF29B91A /* FSCalendarCollectionViewLayout.m */; };
+		F144C58E09051B147A28D4CA6A265B72 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A817CAE99C81EE68006DC1E60E295C0A /* Foundation.framework */; };
+		F1523A73257FC10CDEE5226F3D61670F /* FSCalendarDynamicHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 42A45B2BC5F0C181FBAFEAE4E59BB105 /* FSCalendarDynamicHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2912CEC0FA1B3C772CA18F857B9D151 /* FSCalendarAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = 994CFBEE9C34CBED1B118B6A17C483E5 /* FSCalendarAppearance.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4760E0D19B1CDA2DB6538D2BFA49BD8 /* FSCalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AE69CD04A05CAC630A17FB476BC9E4 /* FSCalendarHeaderView.m */; };
+		F581A9F373D7E3374D7944D6DFECE6CD /* FSCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA1093C315DDB3F6BAB2BBBAFD47B3E /* FSCalendarAppearance.m */; };
+		F589BF139FACFD5E63C26DFFF0F1F6AB /* FSCalendarDelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3595AEECEF96D63B24032FAB03D532A /* FSCalendarDelegateProxy.m */; };
+		F97029289D0E5700A5D40A139A80C88D /* FSCalendarStickyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 420EE7D9207DBAAF7499C1333CEFBEF5 /* FSCalendarStickyHeader.m */; };
+		FAE5E43D2E221CF3F0C2AB262901E80C /* FSCalendarHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = E4448E16FFB35FB9868E70F8CC1D2005 /* FSCalendarHeaderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		002B53BF28348DF24DF31232E370E74D /* PBXContainerItemProxy */ = {
+		0470ACF6C5938E7546D5007DAACBFAF3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FBB811370E9259367DA11056F7C11708;
+			remoteGlobalIDString = 2075F7F9F2B1CDCE4C398EFBD21E0B37;
+			remoteInfo = "FSCalendar-iOS10.0";
+		};
+		12922E103FD9785106651B97C967D7AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5E3FD386342F686C290F1C3E8EFE8DB;
+			remoteInfo = "SkyFloatingLabelTextField-iOS10.1";
+		};
+		14AFC7A45EBBDD7DF3CB7561F7EC363C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3DE732EA2E901A3CD76C8D34A1E328A;
 			remoteInfo = "SkyFloatingLabelTextField-iOS10.0";
 		};
-		D81C13D49CDDC6ACF57B303DB36BF4C1 /* PBXContainerItemProxy */ = {
+		858018EA789EB2687224634B1D875E76 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E9CD4F80797D7F106C551C79F178B281;
-			remoteInfo = "SkyFloatingLabelTextField-iOS10.1";
+			remoteGlobalIDString = 952DEB45BBECD0A2C8FE8E4E45697137;
+			remoteInfo = "FSCalendar-iOS10.1";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01AA0057AB2ED8DB38C7C72E32C334CA /* SkyFloatingLabelTextField-iOS10.0-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-iOS10.0-umbrella.h"; sourceTree = "<group>"; };
-		05434B7D46D7F7B58A6439BAFCF9AA96 /* SkyFloatingLabelTextField-iOS10.0.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "SkyFloatingLabelTextField-iOS10.0.modulemap"; sourceTree = "<group>"; };
-		127D1AA9630DE4B2791838447F0F016F /* SkyFloatingLabelTextField-iOS10.0-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SkyFloatingLabelTextField-iOS10.0-dummy.m"; sourceTree = "<group>"; };
+		0121EFA88865240C4DB1D78E731BC79D /* FSCalendarStickyHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarStickyHeader.h; path = FSCalendar/FSCalendarStickyHeader.h; sourceTree = "<group>"; };
+		03E7DC5FCEF68BCB4DB41B1028BC344E /* SkyFloatingLabelTextField-iOS10.1.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "SkyFloatingLabelTextField-iOS10.1.modulemap"; path = "../SkyFloatingLabelTextField-iOS10.1/SkyFloatingLabelTextField-iOS10.1.modulemap"; sourceTree = "<group>"; };
+		0440AE2E8F09326B387D0D9DC6D99ED3 /* SkyFloatingLabelTextField-iOS10.0-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-iOS10.0-umbrella.h"; sourceTree = "<group>"; };
+		07AA4C694AF6921B4506A9C5DBFF842B /* FSCalendarCalculator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCalculator.m; path = FSCalendar/FSCalendarCalculator.m; sourceTree = "<group>"; };
+		091D54A73E1E8BB182C9D7D245AF1C2F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		13C46B6293DF1198E9D28E291DCBF271 /* Pods-iPhone-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iPhone-dummy.m"; sourceTree = "<group>"; };
 		144DAD93C2BE18A7A4EB91BB0E907120 /* Pods-iPhone-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iPhone-umbrella.h"; sourceTree = "<group>"; };
-		1EAFE3EA8A2B0C472FEE9CC008D4995E /* SkyFloatingLabelTextField-iOS10.1.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; name = "SkyFloatingLabelTextField-iOS10.1.modulemap"; path = "../SkyFloatingLabelTextField-iOS10.1/SkyFloatingLabelTextField-iOS10.1.modulemap"; sourceTree = "<group>"; };
-		2480F565095FE1921BD70C2228F20482 /* SkyFloatingLabelTextField-iOS10.1.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "SkyFloatingLabelTextField-iOS10.1.xcconfig"; path = "../SkyFloatingLabelTextField-iOS10.1/SkyFloatingLabelTextField-iOS10.1.xcconfig"; sourceTree = "<group>"; };
+		1534CDEB27C62296B579EB4C802CEA25 /* FSCalendarScopeHandle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarScopeHandle.m; path = FSCalendar/FSCalendarScopeHandle.m; sourceTree = "<group>"; };
+		1A075B23E36C690012175AF968F0B9BF /* Pods_HemoLeo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HemoLeo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23016F69B2480F44D0BB5526B39192FA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		2808F13965995DE40D17C43F6B115C61 /* Pods-iPhone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iPhone.release.xcconfig"; sourceTree = "<group>"; };
-		2FFF26F412AB7F2A415BA88B3FFDF728 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../SkyFloatingLabelTextField-iOS10.1/Info.plist"; sourceTree = "<group>"; };
+		2993FAAB3C84AC2341DDA15FD717EF62 /* FSCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FSCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B4640F4B6D7BFA6738F3BF8272ADE9B /* SkyFloatingLabelTextFieldWithIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextFieldWithIcon.swift; path = Sources/SkyFloatingLabelTextFieldWithIcon.swift; sourceTree = "<group>"; };
+		2CA7059E00B8ADCB10ADAB41E7FA8642 /* FSCalendarConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarConstants.m; path = FSCalendar/FSCalendarConstants.m; sourceTree = "<group>"; };
+		2E6FF0527EE1CC5870A6C903ABAD8ABA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../FSCalendar-iOS10.1/Info.plist"; sourceTree = "<group>"; };
 		30A4A7D7FA3E7811131390757DA6607F /* Pods-HemoLeo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HemoLeo-frameworks.sh"; sourceTree = "<group>"; };
-		318E268DE1003C093F87E6D71D1B18FE /* Pods_HemoLeo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HemoLeo.framework; path = "Pods-HemoLeo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4CEC0F92C2FCB576EDD64CA3EB13CD61 /* SkyFloatingLabelTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SkyFloatingLabelTextField.framework; path = "SkyFloatingLabelTextField-iOS10.1.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4EE0FAF602E4995190DC82F7787C3493 /* SkyFloatingLabelTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextField.swift; path = Sources/SkyFloatingLabelTextField.swift; sourceTree = "<group>"; };
+		30CB7386C75109EA54B3A7033617D219 /* SkyFloatingLabelTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextField.swift; path = Sources/SkyFloatingLabelTextField.swift; sourceTree = "<group>"; };
+		38A98589AF3F138F468AD6E2AFC8D723 /* FSCalendarCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCell.m; path = FSCalendar/FSCalendarCell.m; sourceTree = "<group>"; };
+		3BB35016B56D7A7B3B75834D69F6DAED /* FSCalendarExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarExtensions.h; path = FSCalendar/FSCalendarExtensions.h; sourceTree = "<group>"; };
+		420EE7D9207DBAAF7499C1333CEFBEF5 /* FSCalendarStickyHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarStickyHeader.m; path = FSCalendar/FSCalendarStickyHeader.m; sourceTree = "<group>"; };
+		425E3F4FA07A244292E718B0F4426A67 /* FSCalendarScopeHandle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarScopeHandle.h; path = FSCalendar/FSCalendarScopeHandle.h; sourceTree = "<group>"; };
+		42A45B2BC5F0C181FBAFEAE4E59BB105 /* FSCalendarDynamicHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDynamicHeader.h; path = FSCalendar/FSCalendarDynamicHeader.h; sourceTree = "<group>"; };
+		4491E158959D5697935D2A814AF4F3D6 /* SkyFloatingLabelTextField-iOS10.0.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "SkyFloatingLabelTextField-iOS10.0.xcconfig"; sourceTree = "<group>"; };
+		46E2F7A9BD9F3386B2244BEA7C4D8547 /* SkyFloatingLabelTextField-iOS10.0-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SkyFloatingLabelTextField-iOS10.0-dummy.m"; sourceTree = "<group>"; };
+		4A8555BCF3A923D4F8C16703CAB168CC /* FSCalendarDelegateProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDelegateProxy.h; path = FSCalendar/FSCalendarDelegateProxy.h; sourceTree = "<group>"; };
+		4B6FF8E0E3735753D93FA1586DDEC6F7 /* SkyFloatingLabelTextField-iOS10.0.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "SkyFloatingLabelTextField-iOS10.0.modulemap"; sourceTree = "<group>"; };
+		4DBE99CAB3ED6354EEC3451F04E60B8A /* FSCalendar-iOS10.1-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FSCalendar-iOS10.1-dummy.m"; path = "../FSCalendar-iOS10.1/FSCalendar-iOS10.1-dummy.m"; sourceTree = "<group>"; };
+		4EBA287E8A07740042FC940733D0A85E /* FSCalendarCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCollectionView.h; path = FSCalendar/FSCalendarCollectionView.h; sourceTree = "<group>"; };
+		51D6BA68FDD81E47BF6C29B6EEEEB552 /* FSCalendar-iOS10.1-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FSCalendar-iOS10.1-umbrella.h"; path = "../FSCalendar-iOS10.1/FSCalendar-iOS10.1-umbrella.h"; sourceTree = "<group>"; };
+		524978950C64D185132BD03D817C03B2 /* FSCalendarCollectionViewLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCollectionViewLayout.h; path = FSCalendar/FSCalendarCollectionViewLayout.h; sourceTree = "<group>"; };
+		53F41FC7CB1C732DCA4527438A4EC0A0 /* SkyFloatingLabelTextField-iOS10.1.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "SkyFloatingLabelTextField-iOS10.1.xcconfig"; path = "../SkyFloatingLabelTextField-iOS10.1/SkyFloatingLabelTextField-iOS10.1.xcconfig"; sourceTree = "<group>"; };
+		58074BF232AD8B00DF02E29AFA4E4153 /* FSCalendarCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCell.h; path = FSCalendar/FSCalendarCell.h; sourceTree = "<group>"; };
 		588B0447FAAAA3C942B6EC025A4ACEA0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		60BCDE6E531483A0BC78F2A4754B2FEA /* UITextField+fixCaretPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextField+fixCaretPosition.swift"; path = "Sources/UITextField+fixCaretPosition.swift"; sourceTree = "<group>"; };
-		6796F4F4CE7E839A9201BAF02A823CF7 /* Pods_iPhone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_iPhone.framework; path = "Pods-iPhone.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7663E1B47ECB0EFDCE40EA4FD5BCFF61 /* Pods-iPhone.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-iPhone.modulemap"; sourceTree = "<group>"; };
-		78196EA36E201E9C3225861BC75DA320 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7E1E1220C5506FCC53410D7215D9EF8D /* SkyFloatingLabelTextField-iOS10.0-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-iOS10.0-prefix.pch"; sourceTree = "<group>"; };
+		5B9FAFD6B36693C1A7C1ABF1DA0C014A /* FSCalendar-iOS10.1.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "FSCalendar-iOS10.1.xcconfig"; path = "../FSCalendar-iOS10.1/FSCalendar-iOS10.1.xcconfig"; sourceTree = "<group>"; };
+		6E1933F15195546BF6A7DAB4CA5A6989 /* FSCalendar-iOS10.1-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FSCalendar-iOS10.1-prefix.pch"; path = "../FSCalendar-iOS10.1/FSCalendar-iOS10.1-prefix.pch"; sourceTree = "<group>"; };
+		6E242EF997BAC327D88F0557BB002409 /* SkyFloatingLabelTextField-iOS10.1-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SkyFloatingLabelTextField-iOS10.1-prefix.pch"; path = "../SkyFloatingLabelTextField-iOS10.1/SkyFloatingLabelTextField-iOS10.1-prefix.pch"; sourceTree = "<group>"; };
+		6E76D8628EE69EC56EC2189234AEF527 /* FSCalendarExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarExtensions.m; path = FSCalendar/FSCalendarExtensions.m; sourceTree = "<group>"; };
+		74F715ABB10197AE7906684B9778CA8A /* FSCalendarAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarAnimator.h; path = FSCalendar/FSCalendarAnimator.h; sourceTree = "<group>"; };
+		7663E1B47ECB0EFDCE40EA4FD5BCFF61 /* Pods-iPhone.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-iPhone.modulemap"; sourceTree = "<group>"; };
 		80EED7C0CBAD9ADB40A0BB10365857A2 /* Pods-HemoLeo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HemoLeo.debug.xcconfig"; sourceTree = "<group>"; };
-		82B68DB63362916962466CBE7F926A55 /* SkyFloatingLabelTextField-iOS10.1-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SkyFloatingLabelTextField-iOS10.1-dummy.m"; path = "../SkyFloatingLabelTextField-iOS10.1/SkyFloatingLabelTextField-iOS10.1-dummy.m"; sourceTree = "<group>"; };
-		8B46A4C814005F06A91D11B027B0813B /* Pods-HemoLeo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-HemoLeo.modulemap"; sourceTree = "<group>"; };
+		82CF0D54BB57CFA674A995B391F158C2 /* FSCalendarConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarConstants.h; path = FSCalendar/FSCalendarConstants.h; sourceTree = "<group>"; };
+		844A99A0609125161DA5AD56C2824DFB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../SkyFloatingLabelTextField-iOS10.1/Info.plist"; sourceTree = "<group>"; };
+		88140E630E6F1D3F1578410440492A12 /* SkyFloatingLabelTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SkyFloatingLabelTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B46A4C814005F06A91D11B027B0813B /* Pods-HemoLeo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-HemoLeo.modulemap"; sourceTree = "<group>"; };
 		8C3F2EB0B2D45F59B1B79EF0A27036D0 /* Pods-HemoLeo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HemoLeo-dummy.m"; sourceTree = "<group>"; };
-		8D6830166E955F4BF1C2CCC86F690323 /* SkyFloatingLabelTextField-iOS10.1-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SkyFloatingLabelTextField-iOS10.1-prefix.pch"; path = "../SkyFloatingLabelTextField-iOS10.1/SkyFloatingLabelTextField-iOS10.1-prefix.pch"; sourceTree = "<group>"; };
 		8FE95E6FA99003C6CE563B518D3ACF4F /* Pods-iPhone-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iPhone-frameworks.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9737FD787C98C92D917E49A800639980 /* FSCalendarCalculator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCalculator.h; path = FSCalendar/FSCalendarCalculator.h; sourceTree = "<group>"; };
+		97AE69CD04A05CAC630A17FB476BC9E4 /* FSCalendarHeaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarHeaderView.m; path = FSCalendar/FSCalendarHeaderView.m; sourceTree = "<group>"; };
+		994CFBEE9C34CBED1B118B6A17C483E5 /* FSCalendarAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarAppearance.h; path = FSCalendar/FSCalendarAppearance.h; sourceTree = "<group>"; };
+		9C6DCA10E9F8FF08D3D6CD0C53A62036 /* FSCalendar-iOS10.0-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FSCalendar-iOS10.0-dummy.m"; sourceTree = "<group>"; };
+		9F29F02F24D00C4225821F61C8BB60F0 /* FSCalendar-iOS10.0-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSCalendar-iOS10.0-umbrella.h"; sourceTree = "<group>"; };
 		A3AF271B0B4EB43E3778058E61857CC7 /* Pods-HemoLeo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HemoLeo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A5B3F525E91F5FC331AA3DC94BC49577 /* SkyFloatingLabelTextField-iOS10.1-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SkyFloatingLabelTextField-iOS10.1-umbrella.h"; path = "../SkyFloatingLabelTextField-iOS10.1/SkyFloatingLabelTextField-iOS10.1-umbrella.h"; sourceTree = "<group>"; };
-		AAF45EB8EED03732DA71662910BB963E /* SkyFloatingLabelTextField-iOS10.0.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "SkyFloatingLabelTextField-iOS10.0.xcconfig"; sourceTree = "<group>"; };
+		A4F822C9D69E78371FFDDA6B013DB871 /* FSCalendar-iOS10.0.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "FSCalendar-iOS10.0.modulemap"; sourceTree = "<group>"; };
+		A56F33A1B4F991CA5B33388862BA08CB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6C32454857E69B74161B7B5D7113E53 /* FSCalendar-iOS10.0-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSCalendar-iOS10.0-prefix.pch"; sourceTree = "<group>"; };
+		A817CAE99C81EE68006DC1E60E295C0A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		AD3160E8AA9577D58B6832BD0A1C66EC /* FSCalendar+Deprecated.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FSCalendar+Deprecated.m"; path = "FSCalendar/FSCalendar+Deprecated.m"; sourceTree = "<group>"; };
+		B21B0EFA9E02C146731DB8791A1EA5B9 /* FSCalendar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendar.m; path = FSCalendar/FSCalendar.m; sourceTree = "<group>"; };
 		B3336C7E6172F31CC983C330AF865B26 /* Pods-iPhone-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iPhone-resources.sh"; sourceTree = "<group>"; };
+		B4FF0421B48EDE867A07D7AFD20603BB /* SkyFloatingLabelTextField-iOS10.1-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SkyFloatingLabelTextField-iOS10.1-dummy.m"; path = "../SkyFloatingLabelTextField-iOS10.1/SkyFloatingLabelTextField-iOS10.1-dummy.m"; sourceTree = "<group>"; };
+		B92BFB8A0FA31ED7DDA5530CE0AA1F86 /* FSCalendarWeekdayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarWeekdayView.h; path = FSCalendar/FSCalendarWeekdayView.h; sourceTree = "<group>"; };
+		BAB28F2F0ED6C3A1D287658EDC2EE180 /* FSCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FSCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC5BD6FB5F385D33E77FF04857228C5D /* Pods-iPhone-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iPhone-acknowledgements.plist"; sourceTree = "<group>"; };
-		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		BFB0201F15D7262572374333E8EC0D42 /* Pods_iPhone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iPhone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0490507E076C6B5671A86DC4C348009 /* UITextField+fixCaretPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextField+fixCaretPosition.swift"; path = "Sources/UITextField+fixCaretPosition.swift"; sourceTree = "<group>"; };
+		CAF4474AC2ADB0A781875B94A873E9E6 /* FSCalendar-iOS10.0.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "FSCalendar-iOS10.0.xcconfig"; sourceTree = "<group>"; };
 		CC198A59D508E6A8678458572A40B3AB /* Pods-HemoLeo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HemoLeo-acknowledgements.plist"; sourceTree = "<group>"; };
+		D3595AEECEF96D63B24032FAB03D532A /* FSCalendarDelegateProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarDelegateProxy.m; path = FSCalendar/FSCalendarDelegateProxy.m; sourceTree = "<group>"; };
+		D482C54561758C27F4BCC59518F7C2AC /* SkyFloatingLabelTextField-iOS10.0-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-iOS10.0-prefix.pch"; sourceTree = "<group>"; };
+		D8AA873CE5B34E20D20A568ACD56E580 /* FSCalendarWeekdayView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarWeekdayView.m; path = FSCalendar/FSCalendarWeekdayView.m; sourceTree = "<group>"; };
 		DBD64371D3904BBB7571907204F53F22 /* Pods-HemoLeo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HemoLeo-resources.sh"; sourceTree = "<group>"; };
-		DC7A0651CC34A6AE0C8F7FFBDB7846DA /* SkyFloatingLabelTextFieldWithIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextFieldWithIcon.swift; path = Sources/SkyFloatingLabelTextFieldWithIcon.swift; sourceTree = "<group>"; };
+		DCDF513F9F71022EB01E689C120A8236 /* FSCalendarAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarAnimator.m; path = FSCalendar/FSCalendarAnimator.m; sourceTree = "<group>"; };
+		DFBFB86E7A1BBCD1DC755313BF29B91A /* FSCalendarCollectionViewLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCollectionViewLayout.m; path = FSCalendar/FSCalendarCollectionViewLayout.m; sourceTree = "<group>"; };
+		E0CEB2D28473F5BF8FA35654CE2C2517 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0EDA9B4B3AA4BC844AF7678CA576A2D /* FSCalendar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendar.h; path = FSCalendar/FSCalendar.h; sourceTree = "<group>"; };
 		E1F4463ECF77C2ACCE6ED051B73E5988 /* Pods-iPhone-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iPhone-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E4448E16FFB35FB9868E70F8CC1D2005 /* FSCalendarHeaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarHeaderView.h; path = FSCalendar/FSCalendarHeaderView.h; sourceTree = "<group>"; };
 		E52FA13BD48B344F66413FC73B3C63BD /* Pods-HemoLeo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HemoLeo-umbrella.h"; sourceTree = "<group>"; };
 		E850E31CB9A6170092B51E6780A2E780 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBA1093C315DDB3F6BAB2BBBAFD47B3E /* FSCalendarAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarAppearance.m; path = FSCalendar/FSCalendarAppearance.m; sourceTree = "<group>"; };
+		EDC9C5448C5A7E97237836D196C45ADC /* SkyFloatingLabelTextField-iOS10.1-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SkyFloatingLabelTextField-iOS10.1-umbrella.h"; path = "../SkyFloatingLabelTextField-iOS10.1/SkyFloatingLabelTextField-iOS10.1-umbrella.h"; sourceTree = "<group>"; };
 		F1D3069CE7AB0F00915D7DE57F1AC38A /* Pods-HemoLeo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HemoLeo.release.xcconfig"; sourceTree = "<group>"; };
-		F31A41B31F8AA312A37845F30E671769 /* SkyFloatingLabelTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SkyFloatingLabelTextField.framework; path = "SkyFloatingLabelTextField-iOS10.0.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F21BE61E760D6B5F4CE5ABBDE2DE6040 /* FSCalendarCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCollectionView.m; path = FSCalendar/FSCalendarCollectionView.m; sourceTree = "<group>"; };
 		F73745A890A142B8973EF256EE0B40B4 /* Pods-iPhone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iPhone.debug.xcconfig"; sourceTree = "<group>"; };
+		F81F80DB3ED9CB4DFD3B080BF9AC337E /* FSCalendar-iOS10.1.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "FSCalendar-iOS10.1.modulemap"; path = "../FSCalendar-iOS10.1/FSCalendar-iOS10.1.modulemap"; sourceTree = "<group>"; };
+		FF77C930D1C301045C94F0B00EA26751 /* SkyFloatingLabelTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SkyFloatingLabelTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		46AD57131F65E4B6AFFB514BA2BEA7BC /* Frameworks */ = {
+		399AFBB0214DDC2EFD2631E107120BD8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E8915D133934A8516264FC2F4F646AA /* Foundation.framework in Frameworks */,
+				35F3880BC91DE14B8B24F82B5DE7B4D8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC5902E3996A2FC4C7B2675A17B2E185 /* Frameworks */ = {
+		3E076CAABC5EF76288FD06AD0E3CEC17 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0581F0231AC283E7F37B311575CDA210 /* Foundation.framework in Frameworks */,
+				BEB3DFCB9E20D717D88A59EB9BB0D085 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E30745185B12A4E3551A6EECA0FD2038 /* Frameworks */ = {
+		42791A8A2BD174CC8CEE900A04DCC73D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B5CDFCE9766A09164452C220579904B /* Foundation.framework in Frameworks */,
+				F144C58E09051B147A28D4CA6A265B72 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E9C50A3E72655549E817C9A5EAE5FA40 /* Frameworks */ = {
+		A56070F9907E29A389472FF5D85D8787 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C433849D95F9745513684CAED480CF80 /* Foundation.framework in Frameworks */,
+				C0FED49B7E763EDA8275F7C4D0A6DBCA /* Foundation.framework in Frameworks */,
+				6B9A8D1ADBD7BB12678D24AD2CCD132E /* QuartzCore.framework in Frameworks */,
+				CDD0A04A02394D35BD976B839B6B9226 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBBCFEA93775806680A2A9E0CAEDC86F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB3998ED43D392D42B4631C381D409B5 /* Foundation.framework in Frameworks */,
+				ECA5834ADE47D556F8D6793AE1A3C7C0 /* QuartzCore.framework in Frameworks */,
+				E45A01B3A290ABD71CE8EAEB704EF996 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA43AD173D5015836D720E2666FFDF55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9635BC047EE49AF84EE865A532692C01 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3E538C50B5FBAB3A28B0BDDB5EEAA44A /* Pods */ = {
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D27375834B68F7A6D3B62193783D197A /* SkyFloatingLabelTextField */,
+				DFDE779C6E5D3445E0CB8CCB8D424449 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		146464764B7332DDA6AB6EA000837A67 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1899E6672CBDD872AFAC4D10AFC149B8 /* FSCalendar */,
+				F28E84D9C8AC854E96D0CB2EFEF85CE2 /* SkyFloatingLabelTextField */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		1899E6672CBDD872AFAC4D10AFC149B8 /* FSCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				E0EDA9B4B3AA4BC844AF7678CA576A2D /* FSCalendar.h */,
+				B21B0EFA9E02C146731DB8791A1EA5B9 /* FSCalendar.m */,
+				AD3160E8AA9577D58B6832BD0A1C66EC /* FSCalendar+Deprecated.m */,
+				74F715ABB10197AE7906684B9778CA8A /* FSCalendarAnimator.h */,
+				DCDF513F9F71022EB01E689C120A8236 /* FSCalendarAnimator.m */,
+				994CFBEE9C34CBED1B118B6A17C483E5 /* FSCalendarAppearance.h */,
+				EBA1093C315DDB3F6BAB2BBBAFD47B3E /* FSCalendarAppearance.m */,
+				9737FD787C98C92D917E49A800639980 /* FSCalendarCalculator.h */,
+				07AA4C694AF6921B4506A9C5DBFF842B /* FSCalendarCalculator.m */,
+				58074BF232AD8B00DF02E29AFA4E4153 /* FSCalendarCell.h */,
+				38A98589AF3F138F468AD6E2AFC8D723 /* FSCalendarCell.m */,
+				4EBA287E8A07740042FC940733D0A85E /* FSCalendarCollectionView.h */,
+				F21BE61E760D6B5F4CE5ABBDE2DE6040 /* FSCalendarCollectionView.m */,
+				524978950C64D185132BD03D817C03B2 /* FSCalendarCollectionViewLayout.h */,
+				DFBFB86E7A1BBCD1DC755313BF29B91A /* FSCalendarCollectionViewLayout.m */,
+				82CF0D54BB57CFA674A995B391F158C2 /* FSCalendarConstants.h */,
+				2CA7059E00B8ADCB10ADAB41E7FA8642 /* FSCalendarConstants.m */,
+				4A8555BCF3A923D4F8C16703CAB168CC /* FSCalendarDelegateProxy.h */,
+				D3595AEECEF96D63B24032FAB03D532A /* FSCalendarDelegateProxy.m */,
+				42A45B2BC5F0C181FBAFEAE4E59BB105 /* FSCalendarDynamicHeader.h */,
+				3BB35016B56D7A7B3B75834D69F6DAED /* FSCalendarExtensions.h */,
+				6E76D8628EE69EC56EC2189234AEF527 /* FSCalendarExtensions.m */,
+				E4448E16FFB35FB9868E70F8CC1D2005 /* FSCalendarHeaderView.h */,
+				97AE69CD04A05CAC630A17FB476BC9E4 /* FSCalendarHeaderView.m */,
+				425E3F4FA07A244292E718B0F4426A67 /* FSCalendarScopeHandle.h */,
+				1534CDEB27C62296B579EB4C802CEA25 /* FSCalendarScopeHandle.m */,
+				0121EFA88865240C4DB1D78E731BC79D /* FSCalendarStickyHeader.h */,
+				420EE7D9207DBAAF7499C1333CEFBEF5 /* FSCalendarStickyHeader.m */,
+				B92BFB8A0FA31ED7DDA5530CE0AA1F86 /* FSCalendarWeekdayView.h */,
+				D8AA873CE5B34E20D20A568ACD56E580 /* FSCalendarWeekdayView.m */,
+				3FB8B3A26B310C9E713075882819103F /* Support Files */,
+			);
+			path = FSCalendar;
+			sourceTree = "<group>";
+		};
+		3FB8B3A26B310C9E713075882819103F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A4F822C9D69E78371FFDDA6B013DB871 /* FSCalendar-iOS10.0.modulemap */,
+				CAF4474AC2ADB0A781875B94A873E9E6 /* FSCalendar-iOS10.0.xcconfig */,
+				9C6DCA10E9F8FF08D3D6CD0C53A62036 /* FSCalendar-iOS10.0-dummy.m */,
+				A6C32454857E69B74161B7B5D7113E53 /* FSCalendar-iOS10.0-prefix.pch */,
+				9F29F02F24D00C4225821F61C8BB60F0 /* FSCalendar-iOS10.0-umbrella.h */,
+				F81F80DB3ED9CB4DFD3B080BF9AC337E /* FSCalendar-iOS10.1.modulemap */,
+				5B9FAFD6B36693C1A7C1ABF1DA0C014A /* FSCalendar-iOS10.1.xcconfig */,
+				4DBE99CAB3ED6354EEC3451F04E60B8A /* FSCalendar-iOS10.1-dummy.m */,
+				6E1933F15195546BF6A7DAB4CA5A6989 /* FSCalendar-iOS10.1-prefix.pch */,
+				51D6BA68FDD81E47BF6C29B6EEEEB552 /* FSCalendar-iOS10.1-umbrella.h */,
+				E0CEB2D28473F5BF8FA35654CE2C2517 /* Info.plist */,
+				2E6FF0527EE1CC5870A6C903ABAD8ABA /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FSCalendar-iOS10.0";
+			sourceTree = "<group>";
+		};
+		59F31E15E863F195AD3202E7E0BF178E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				844A99A0609125161DA5AD56C2824DFB /* Info.plist */,
+				A56F33A1B4F991CA5B33388862BA08CB /* Info.plist */,
+				4B6FF8E0E3735753D93FA1586DDEC6F7 /* SkyFloatingLabelTextField-iOS10.0.modulemap */,
+				4491E158959D5697935D2A814AF4F3D6 /* SkyFloatingLabelTextField-iOS10.0.xcconfig */,
+				46E2F7A9BD9F3386B2244BEA7C4D8547 /* SkyFloatingLabelTextField-iOS10.0-dummy.m */,
+				D482C54561758C27F4BCC59518F7C2AC /* SkyFloatingLabelTextField-iOS10.0-prefix.pch */,
+				0440AE2E8F09326B387D0D9DC6D99ED3 /* SkyFloatingLabelTextField-iOS10.0-umbrella.h */,
+				03E7DC5FCEF68BCB4DB41B1028BC344E /* SkyFloatingLabelTextField-iOS10.1.modulemap */,
+				53F41FC7CB1C732DCA4527438A4EC0A0 /* SkyFloatingLabelTextField-iOS10.1.xcconfig */,
+				B4FF0421B48EDE867A07D7AFD20603BB /* SkyFloatingLabelTextField-iOS10.1-dummy.m */,
+				6E242EF997BAC327D88F0557BB002409 /* SkyFloatingLabelTextField-iOS10.1-prefix.pch */,
+				EDC9C5448C5A7E97237836D196C45ADC /* SkyFloatingLabelTextField-iOS10.1-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SkyFloatingLabelTextField-iOS10.0";
 			sourceTree = "<group>";
 		};
 		61491D46C6F0C809F9181C1686E21D42 /* Targets Support Files */ = {
@@ -141,34 +378,28 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		743EA31BC4BB0F4C2C3E87A7F2A9BCF3 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				318E268DE1003C093F87E6D71D1B18FE /* Pods_HemoLeo.framework */,
-				6796F4F4CE7E839A9201BAF02A823CF7 /* Pods_iPhone.framework */,
-				4CEC0F92C2FCB576EDD64CA3EB13CD61 /* SkyFloatingLabelTextField.framework */,
-				F31A41B31F8AA312A37845F30E671769 /* SkyFloatingLabelTextField.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				3E538C50B5FBAB3A28B0BDDB5EEAA44A /* Pods */,
-				743EA31BC4BB0F4C2C3E87A7F2A9BCF3 /* Products */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				146464764B7332DDA6AB6EA000837A67 /* Pods */,
+				80CAABE1D810F66E8B02DEF6014C12EE /* Products */,
 				61491D46C6F0C809F9181C1686E21D42 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		80CAABE1D810F66E8B02DEF6014C12EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BAB28F2F0ED6C3A1D287658EDC2EE180 /* FSCalendar.framework */,
+				2993FAAB3C84AC2341DDA15FD717EF62 /* FSCalendar.framework */,
+				1A075B23E36C690012175AF968F0B9BF /* Pods_HemoLeo.framework */,
+				BFB0201F15D7262572374333E8EC0D42 /* Pods_iPhone.framework */,
+				FF77C930D1C301045C94F0B00EA26751 /* SkyFloatingLabelTextField.framework */,
+				88140E630E6F1D3F1578410440492A12 /* SkyFloatingLabelTextField.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		9C5397C3004849BE901F230949CEABD1 /* Pods-HemoLeo */ = {
@@ -207,144 +438,190 @@
 			path = "Target Support Files/Pods-iPhone";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		DFDE779C6E5D3445E0CB8CCB8D424449 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+				A817CAE99C81EE68006DC1E60E295C0A /* Foundation.framework */,
+				23016F69B2480F44D0BB5526B39192FA /* QuartzCore.framework */,
+				091D54A73E1E8BB182C9D7D245AF1C2F /* UIKit.framework */,
 			);
-			name = Frameworks;
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		D27375834B68F7A6D3B62193783D197A /* SkyFloatingLabelTextField */ = {
+		F28E84D9C8AC854E96D0CB2EFEF85CE2 /* SkyFloatingLabelTextField */ = {
 			isa = PBXGroup;
 			children = (
-				4EE0FAF602E4995190DC82F7787C3493 /* SkyFloatingLabelTextField.swift */,
-				DC7A0651CC34A6AE0C8F7FFBDB7846DA /* SkyFloatingLabelTextFieldWithIcon.swift */,
-				60BCDE6E531483A0BC78F2A4754B2FEA /* UITextField+fixCaretPosition.swift */,
-				EA402B8C38066FCE6A5B0DCC02DDBD75 /* Support Files */,
+				30CB7386C75109EA54B3A7033617D219 /* SkyFloatingLabelTextField.swift */,
+				2B4640F4B6D7BFA6738F3BF8272ADE9B /* SkyFloatingLabelTextFieldWithIcon.swift */,
+				C0490507E076C6B5671A86DC4C348009 /* UITextField+fixCaretPosition.swift */,
+				59F31E15E863F195AD3202E7E0BF178E /* Support Files */,
 			);
-			name = SkyFloatingLabelTextField;
 			path = SkyFloatingLabelTextField;
-			sourceTree = "<group>";
-		};
-		EA402B8C38066FCE6A5B0DCC02DDBD75 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				2FFF26F412AB7F2A415BA88B3FFDF728 /* Info.plist */,
-				78196EA36E201E9C3225861BC75DA320 /* Info.plist */,
-				05434B7D46D7F7B58A6439BAFCF9AA96 /* SkyFloatingLabelTextField-iOS10.0.modulemap */,
-				AAF45EB8EED03732DA71662910BB963E /* SkyFloatingLabelTextField-iOS10.0.xcconfig */,
-				127D1AA9630DE4B2791838447F0F016F /* SkyFloatingLabelTextField-iOS10.0-dummy.m */,
-				7E1E1220C5506FCC53410D7215D9EF8D /* SkyFloatingLabelTextField-iOS10.0-prefix.pch */,
-				01AA0057AB2ED8DB38C7C72E32C334CA /* SkyFloatingLabelTextField-iOS10.0-umbrella.h */,
-				1EAFE3EA8A2B0C472FEE9CC008D4995E /* SkyFloatingLabelTextField-iOS10.1.modulemap */,
-				2480F565095FE1921BD70C2228F20482 /* SkyFloatingLabelTextField-iOS10.1.xcconfig */,
-				82B68DB63362916962466CBE7F926A55 /* SkyFloatingLabelTextField-iOS10.1-dummy.m */,
-				8D6830166E955F4BF1C2CCC86F690323 /* SkyFloatingLabelTextField-iOS10.1-prefix.pch */,
-				A5B3F525E91F5FC331AA3DC94BC49577 /* SkyFloatingLabelTextField-iOS10.1-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SkyFloatingLabelTextField-iOS10.0";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0F271D07BD532720C44438C3FCB3C0CB /* Headers */ = {
+		1E1AE2BCC03A23A34C4C73357DBD7163 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8297553B3F07FCD531118976AA3BB29C /* SkyFloatingLabelTextField-iOS10.1-umbrella.h in Headers */,
+				78752F8636B0AF8E848735CC92BD2930 /* Pods-HemoLeo-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1768E8EA3D5BBAC4FAB674B63DE98C7D /* Headers */ = {
+		855AF78C14C3901358E0E2D91AE60050 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2292239E9D5918E7133FD46C463B5EED /* Pods-HemoLeo-umbrella.h in Headers */,
+				96EB4E59A8DB3CA4C92BEF50CF83E0E0 /* SkyFloatingLabelTextField-iOS10.1-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		43AF379385BB510865F9D9710F8B93AF /* Headers */ = {
+		89B9263BA1A853672F7B495A38718285 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				634D79464C5F0F4CF3118C4FA9B9858B /* Pods-iPhone-umbrella.h in Headers */,
+				0A1AB727BC4C4E726BA5515C1C08EEC8 /* SkyFloatingLabelTextField-iOS10.0-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D8DAAB72A702A67792E3F157BDB9C7AF /* Headers */ = {
+		91E0BC2671F886293F884F4C5AF0EF77 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A274BA945644BA3F6295B5578700307 /* SkyFloatingLabelTextField-iOS10.0-umbrella.h in Headers */,
+				04C042F127B1F51BF637B6A4CFE037CA /* Pods-iPhone-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC2F8814B872AEF362D15C21F7AAF046 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E46236872A01BA0ED15CC8A2CEBD4C34 /* FSCalendar-iOS10.0-umbrella.h in Headers */,
+				77AF01200446180AB4809A58AA79FAD8 /* FSCalendar.h in Headers */,
+				843D539DBAD48380D71D5B6D9B049ECC /* FSCalendarAnimator.h in Headers */,
+				F2912CEC0FA1B3C772CA18F857B9D151 /* FSCalendarAppearance.h in Headers */,
+				20D23BC3E83302372366E1468C931777 /* FSCalendarCalculator.h in Headers */,
+				17B3310D3DE6C3879BCEFAB69688B7FE /* FSCalendarCell.h in Headers */,
+				E826BEFC9E2E7B050327C79CD7B4CE3C /* FSCalendarCollectionView.h in Headers */,
+				ABCAE9A705A776F0E63ED2399A9AB80B /* FSCalendarCollectionViewLayout.h in Headers */,
+				55F9C8DF606E0CFBF2C64BEFE6E77A8C /* FSCalendarConstants.h in Headers */,
+				3B886BAAD373A99098A3891493B39FD4 /* FSCalendarDelegateProxy.h in Headers */,
+				F1523A73257FC10CDEE5226F3D61670F /* FSCalendarDynamicHeader.h in Headers */,
+				EC0D634D23FF3C979DCF722A438E8CA8 /* FSCalendarExtensions.h in Headers */,
+				9FE679D878A302E2C12F4E7A0988DD93 /* FSCalendarHeaderView.h in Headers */,
+				36D0F74392E769209121F3DCB0B50E53 /* FSCalendarScopeHandle.h in Headers */,
+				7DFB289C459C1D7090FD155AE8B11D05 /* FSCalendarStickyHeader.h in Headers */,
+				E520E1945B42BE91C8A185490B217D89 /* FSCalendarWeekdayView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D66E312FAE73824B461C22994F3E5A01 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				381B971655C11C089CF78C7D183D2400 /* FSCalendar-iOS10.1-umbrella.h in Headers */,
+				C828F090E4052C253D4D37C7B3FC5C6F /* FSCalendar.h in Headers */,
+				BD19518056CFBD3F7A4ED5A50820626E /* FSCalendarAnimator.h in Headers */,
+				983D6A021A31D71CFC186786FF03CF2C /* FSCalendarAppearance.h in Headers */,
+				4A479C156FE8479923A4DAC3956ED95A /* FSCalendarCalculator.h in Headers */,
+				C867E7BEE3E73F24660F0060B289FF2F /* FSCalendarCell.h in Headers */,
+				8585AC7682899F96157A2C438335A8A9 /* FSCalendarCollectionView.h in Headers */,
+				230CE08ED225CA77C8AA62AA1F14693C /* FSCalendarCollectionViewLayout.h in Headers */,
+				172C4EF37CBE5210A6BA59349D81F2FC /* FSCalendarConstants.h in Headers */,
+				4AE8327D1AB94F343DC80A358CD787C5 /* FSCalendarDelegateProxy.h in Headers */,
+				876860284522DEE3F713FB6C3F3AA3E7 /* FSCalendarDynamicHeader.h in Headers */,
+				CCA5C3AD72247EC59828B04631E2F413 /* FSCalendarExtensions.h in Headers */,
+				FAE5E43D2E221CF3F0C2AB262901E80C /* FSCalendarHeaderView.h in Headers */,
+				33E28FC8E57B01787B53B4D92B190458 /* FSCalendarScopeHandle.h in Headers */,
+				1BAD148270883510F1368189D49F575F /* FSCalendarStickyHeader.h in Headers */,
+				795412F5632D68948B2638ECFFF0A048 /* FSCalendarWeekdayView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		33A39320A1905391ACBE018E2AD29D20 /* Pods-HemoLeo */ = {
+		2075F7F9F2B1CDCE4C398EFBD21E0B37 /* FSCalendar-iOS10.0 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 615C47DB087AE06DB8AE9541C82CBECF /* Build configuration list for PBXNativeTarget "Pods-HemoLeo" */;
+			buildConfigurationList = 806A625519807EC4E699F77A7B81441C /* Build configuration list for PBXNativeTarget "FSCalendar-iOS10.0" */;
 			buildPhases = (
-				283798FD6119B48399AD9DA749A3AAD0 /* Sources */,
-				AC5902E3996A2FC4C7B2675A17B2E185 /* Frameworks */,
-				1768E8EA3D5BBAC4FAB674B63DE98C7D /* Headers */,
+				AAC5C9389CF9047721770670A0A3B52A /* Sources */,
+				A56070F9907E29A389472FF5D85D8787 /* Frameworks */,
+				CC2F8814B872AEF362D15C21F7AAF046 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7856415DFF0469F46370C8D19A38247D /* PBXTargetDependency */,
+			);
+			name = "FSCalendar-iOS10.0";
+			productName = "FSCalendar-iOS10.0";
+			productReference = BAB28F2F0ED6C3A1D287658EDC2EE180 /* FSCalendar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8D42C988BE526AA38FD5266F17C4C3AF /* Pods-HemoLeo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2C5433C41D0D7CB92093B52E854904D /* Build configuration list for PBXNativeTarget "Pods-HemoLeo" */;
+			buildPhases = (
+				3FE5452939765D67CE8FB4920E236A46 /* Sources */,
+				3E076CAABC5EF76288FD06AD0E3CEC17 /* Frameworks */,
+				1E1AE2BCC03A23A34C4C73357DBD7163 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FB7810706CB8604858E4ECB18340B8B /* PBXTargetDependency */,
+				5C7C05F1AFC6B7FBDEE7E404F35EB3C6 /* PBXTargetDependency */,
 			);
 			name = "Pods-HemoLeo";
 			productName = "Pods-HemoLeo";
-			productReference = 318E268DE1003C093F87E6D71D1B18FE /* Pods_HemoLeo.framework */;
+			productReference = 1A075B23E36C690012175AF968F0B9BF /* Pods_HemoLeo.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		900B43D68D479C3DFE885323A868B762 /* Pods-iPhone */ = {
+		8D942B43545CCD03BE26CC0A771BCAA2 /* Pods-iPhone */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3ACA36F19F299E681C917480F04AB1D5 /* Build configuration list for PBXNativeTarget "Pods-iPhone" */;
+			buildConfigurationList = 563A5D884784A1EAD31E433523E0E80A /* Build configuration list for PBXNativeTarget "Pods-iPhone" */;
 			buildPhases = (
-				C780B63F077E88D186F8553985F14CA0 /* Sources */,
-				E30745185B12A4E3551A6EECA0FD2038 /* Frameworks */,
-				43AF379385BB510865F9D9710F8B93AF /* Headers */,
+				626ED1DBA148E69FC01996D59CD8673F /* Sources */,
+				42791A8A2BD174CC8CEE900A04DCC73D /* Frameworks */,
+				91E0BC2671F886293F884F4C5AF0EF77 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2B57D16B83DA99CF1C61B7FB58A3D697 /* PBXTargetDependency */,
+				EB401E6ABA5DA964783CDA99CC16B1B3 /* PBXTargetDependency */,
+				9F4A6AF155FD394A5AF36E517217E6C3 /* PBXTargetDependency */,
 			);
 			name = "Pods-iPhone";
 			productName = "Pods-iPhone";
-			productReference = 6796F4F4CE7E839A9201BAF02A823CF7 /* Pods_iPhone.framework */;
+			productReference = BFB0201F15D7262572374333E8EC0D42 /* Pods_iPhone.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E9CD4F80797D7F106C551C79F178B281 /* SkyFloatingLabelTextField-iOS10.1 */ = {
+		952DEB45BBECD0A2C8FE8E4E45697137 /* FSCalendar-iOS10.1 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1510333BABC18AB313BE073A72B952BD /* Build configuration list for PBXNativeTarget "SkyFloatingLabelTextField-iOS10.1" */;
+			buildConfigurationList = 2CEADDB0D358880443EEE7748A7ABB42 /* Build configuration list for PBXNativeTarget "FSCalendar-iOS10.1" */;
 			buildPhases = (
-				F4C5DB3470F46435210E939D84A6402C /* Sources */,
-				46AD57131F65E4B6AFFB514BA2BEA7BC /* Frameworks */,
-				0F271D07BD532720C44438C3FCB3C0CB /* Headers */,
+				6A34CEFBEBD864543679FF6D54D25E2F /* Sources */,
+				BBBCFEA93775806680A2A9E0CAEDC86F /* Frameworks */,
+				D66E312FAE73824B461C22994F3E5A01 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "SkyFloatingLabelTextField-iOS10.1";
-			productName = "SkyFloatingLabelTextField-iOS10.1";
-			productReference = 4CEC0F92C2FCB576EDD64CA3EB13CD61 /* SkyFloatingLabelTextField.framework */;
+			name = "FSCalendar-iOS10.1";
+			productName = "FSCalendar-iOS10.1";
+			productReference = 2993FAAB3C84AC2341DDA15FD717EF62 /* FSCalendar.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		FBB811370E9259367DA11056F7C11708 /* SkyFloatingLabelTextField-iOS10.0 */ = {
+		C3DE732EA2E901A3CD76C8D34A1E328A /* SkyFloatingLabelTextField-iOS10.0 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5498C095B6F149E9C7EF9313461AE91B /* Build configuration list for PBXNativeTarget "SkyFloatingLabelTextField-iOS10.0" */;
+			buildConfigurationList = 179A264477384739AEFC717404D07A0B /* Build configuration list for PBXNativeTarget "SkyFloatingLabelTextField-iOS10.0" */;
 			buildPhases = (
-				614104D81D8CA06A562D42C0ADAF7881 /* Sources */,
-				E9C50A3E72655549E817C9A5EAE5FA40 /* Frameworks */,
-				D8DAAB72A702A67792E3F157BDB9C7AF /* Headers */,
+				1A079C125EEB85C6CDD76EB22B6A3119 /* Sources */,
+				399AFBB0214DDC2EFD2631E107120BD8 /* Frameworks */,
+				89B9263BA1A853672F7B495A38718285 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -352,7 +629,24 @@
 			);
 			name = "SkyFloatingLabelTextField-iOS10.0";
 			productName = "SkyFloatingLabelTextField-iOS10.0";
-			productReference = F31A41B31F8AA312A37845F30E671769 /* SkyFloatingLabelTextField.framework */;
+			productReference = FF77C930D1C301045C94F0B00EA26751 /* SkyFloatingLabelTextField.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D5E3FD386342F686C290F1C3E8EFE8DB /* SkyFloatingLabelTextField-iOS10.1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF7E1A7F961149E28F3D6DC2127072D3 /* Build configuration list for PBXNativeTarget "SkyFloatingLabelTextField-iOS10.1" */;
+			buildPhases = (
+				061F0D34AA4B348B8CDDA6CF4EFDCFD5 /* Sources */,
+				FA43AD173D5015836D720E2666FFDF55 /* Frameworks */,
+				855AF78C14C3901358E0E2D91AE60050 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SkyFloatingLabelTextField-iOS10.1";
+			productName = "SkyFloatingLabelTextField-iOS10.1";
+			productReference = 88140E630E6F1D3F1578410440492A12 /* SkyFloatingLabelTextField.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -363,6 +657,17 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					8D942B43545CCD03BE26CC0A771BCAA2 = {
+						LastSwiftMigration = 0810;
+					};
+					952DEB45BBECD0A2C8FE8E4E45697137 = {
+						LastSwiftMigration = 0810;
+					};
+					D5E3FD386342F686C290F1C3E8EFE8DB = {
+						LastSwiftMigration = 0810;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -372,82 +677,199 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 743EA31BC4BB0F4C2C3E87A7F2A9BCF3 /* Products */;
+			productRefGroup = 80CAABE1D810F66E8B02DEF6014C12EE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				33A39320A1905391ACBE018E2AD29D20 /* Pods-HemoLeo */,
-				900B43D68D479C3DFE885323A868B762 /* Pods-iPhone */,
-				FBB811370E9259367DA11056F7C11708 /* SkyFloatingLabelTextField-iOS10.0 */,
-				E9CD4F80797D7F106C551C79F178B281 /* SkyFloatingLabelTextField-iOS10.1 */,
+				2075F7F9F2B1CDCE4C398EFBD21E0B37 /* FSCalendar-iOS10.0 */,
+				952DEB45BBECD0A2C8FE8E4E45697137 /* FSCalendar-iOS10.1 */,
+				8D42C988BE526AA38FD5266F17C4C3AF /* Pods-HemoLeo */,
+				8D942B43545CCD03BE26CC0A771BCAA2 /* Pods-iPhone */,
+				C3DE732EA2E901A3CD76C8D34A1E328A /* SkyFloatingLabelTextField-iOS10.0 */,
+				D5E3FD386342F686C290F1C3E8EFE8DB /* SkyFloatingLabelTextField-iOS10.1 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		283798FD6119B48399AD9DA749A3AAD0 /* Sources */ = {
+		061F0D34AA4B348B8CDDA6CF4EFDCFD5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A67531AC8A59413D29A559110DF1BC6 /* Pods-HemoLeo-dummy.m in Sources */,
+				A15EEA77E661C003C59834B7428438F1 /* SkyFloatingLabelTextField-iOS10.1-dummy.m in Sources */,
+				CF687D5DF12DC6F139DDD37BD0E60805 /* SkyFloatingLabelTextField.swift in Sources */,
+				68F5E88A0652D7DABF5FC6FF686D460D /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */,
+				3CE01872721F878F16A132E821350FEB /* UITextField+fixCaretPosition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		614104D81D8CA06A562D42C0ADAF7881 /* Sources */ = {
+		1A079C125EEB85C6CDD76EB22B6A3119 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7ED6D0B5BBACD28F301F592FDD80694 /* SkyFloatingLabelTextField-iOS10.0-dummy.m in Sources */,
-				BB50796EADAD85058154EEF6A05DBF4C /* SkyFloatingLabelTextField.swift in Sources */,
-				8FBEE66878BB940DA588B0964796BB26 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */,
-				30219700514D579AF4E8242069A299DE /* UITextField+fixCaretPosition.swift in Sources */,
+				AE9465534307007510ADCDD059E0BF75 /* SkyFloatingLabelTextField-iOS10.0-dummy.m in Sources */,
+				B7FF151150E0D44B6A3F37689564F96F /* SkyFloatingLabelTextField.swift in Sources */,
+				43955B0DA2CE8744BA8FEF72B9900A0F /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */,
+				D8DE7DD64D87353AEDE5D8A94B9ECB5C /* UITextField+fixCaretPosition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C780B63F077E88D186F8553985F14CA0 /* Sources */ = {
+		3FE5452939765D67CE8FB4920E236A46 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74EDC77118B0FA45C7AE9AEC2F73BD7B /* Pods-iPhone-dummy.m in Sources */,
+				9F531BD9F312B13C936F8773FA9B3816 /* Pods-HemoLeo-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F4C5DB3470F46435210E939D84A6402C /* Sources */ = {
+		626ED1DBA148E69FC01996D59CD8673F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A85CF01A4005B5F84B006E006302BBDE /* SkyFloatingLabelTextField-iOS10.1-dummy.m in Sources */,
-				42737CB5F77F473271A9BFDD628696D6 /* SkyFloatingLabelTextField.swift in Sources */,
-				2E0FF0E24C42E7F9B266E20E49BF1E28 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */,
-				B35B34D0972F13D9871E813FE5689CA3 /* UITextField+fixCaretPosition.swift in Sources */,
+				016671FB17506A065B813EF7C04E0066 /* Pods-iPhone-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A34CEFBEBD864543679FF6D54D25E2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DE72AA6EDB2EDB1624809812C1AB88D /* FSCalendar+Deprecated.m in Sources */,
+				0092E388B266351CB027611D04C2811C /* FSCalendar-iOS10.1-dummy.m in Sources */,
+				992FD547061DDBE4A001DB1319782E66 /* FSCalendar.m in Sources */,
+				53AE54AD1A1F533470434D3F11338717 /* FSCalendarAnimator.m in Sources */,
+				6BD778285D63251619C251B23A597A4E /* FSCalendarAppearance.m in Sources */,
+				8152238025F9120DE37C66EE45A79B3B /* FSCalendarCalculator.m in Sources */,
+				3D3CC27A0E1728EC96D9838D683CF7F1 /* FSCalendarCell.m in Sources */,
+				CEDBB3B6B92F6B1B5A4BF7911D5DE964 /* FSCalendarCollectionView.m in Sources */,
+				DCADDEADA8B5A99C4353049CEA297398 /* FSCalendarCollectionViewLayout.m in Sources */,
+				0D1874FC756FF96BC82304D820D20D69 /* FSCalendarConstants.m in Sources */,
+				A726A30F0242BBE79BCD2B06F1880394 /* FSCalendarDelegateProxy.m in Sources */,
+				4934C7586A679415506760B45EA75D1B /* FSCalendarExtensions.m in Sources */,
+				F4760E0D19B1CDA2DB6538D2BFA49BD8 /* FSCalendarHeaderView.m in Sources */,
+				E844B3531285C67864A8CE7BC17A6FBF /* FSCalendarScopeHandle.m in Sources */,
+				F97029289D0E5700A5D40A139A80C88D /* FSCalendarStickyHeader.m in Sources */,
+				2B3AA6EDCE804B3632AA415C439E1613 /* FSCalendarWeekdayView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAC5C9389CF9047721770670A0A3B52A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AC604ADD0D347FC73711B2B0F9722CF /* FSCalendar+Deprecated.m in Sources */,
+				A44A3C78F211D2A1D415B5E690B33DBB /* FSCalendar-iOS10.0-dummy.m in Sources */,
+				AE5F79CA608EB565B932DCC556ABA86E /* FSCalendar.m in Sources */,
+				C6E3C758718CBA8F67622DC054077572 /* FSCalendarAnimator.m in Sources */,
+				F581A9F373D7E3374D7944D6DFECE6CD /* FSCalendarAppearance.m in Sources */,
+				611DD5EB06544B1311B6EEB835C54FD6 /* FSCalendarCalculator.m in Sources */,
+				B75A4CBCEBC0B81A0255CC1F8A4A11BE /* FSCalendarCell.m in Sources */,
+				ACFAA5EDD5A0829ABE4CADDB96CE2684 /* FSCalendarCollectionView.m in Sources */,
+				ECAA35BFBFA26079E7A6703235E3053D /* FSCalendarCollectionViewLayout.m in Sources */,
+				D4FB11A50EB2F743D4DFDA11B5627653 /* FSCalendarConstants.m in Sources */,
+				F589BF139FACFD5E63C26DFFF0F1F6AB /* FSCalendarDelegateProxy.m in Sources */,
+				BEABFEC7FE9D7DD1A2321B3D1D0B2AEC /* FSCalendarExtensions.m in Sources */,
+				3D6327737867C30993D8B1029E9C559C /* FSCalendarHeaderView.m in Sources */,
+				31823A53FB5D73B4B5F7BFFEBF0839DE /* FSCalendarScopeHandle.m in Sources */,
+				E72F48FDA5FFD987A7B134B3BFDC1DA1 /* FSCalendarStickyHeader.m in Sources */,
+				1460B1A27DF37CD2E999305D1F27484C /* FSCalendarWeekdayView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2B57D16B83DA99CF1C61B7FB58A3D697 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "SkyFloatingLabelTextField-iOS10.1";
-			target = E9CD4F80797D7F106C551C79F178B281 /* SkyFloatingLabelTextField-iOS10.1 */;
-			targetProxy = D81C13D49CDDC6ACF57B303DB36BF4C1 /* PBXContainerItemProxy */;
-		};
-		7856415DFF0469F46370C8D19A38247D /* PBXTargetDependency */ = {
+		5C7C05F1AFC6B7FBDEE7E404F35EB3C6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "SkyFloatingLabelTextField-iOS10.0";
-			target = FBB811370E9259367DA11056F7C11708 /* SkyFloatingLabelTextField-iOS10.0 */;
-			targetProxy = 002B53BF28348DF24DF31232E370E74D /* PBXContainerItemProxy */;
+			target = C3DE732EA2E901A3CD76C8D34A1E328A /* SkyFloatingLabelTextField-iOS10.0 */;
+			targetProxy = 14AFC7A45EBBDD7DF3CB7561F7EC363C /* PBXContainerItemProxy */;
+		};
+		9F4A6AF155FD394A5AF36E517217E6C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SkyFloatingLabelTextField-iOS10.1";
+			target = D5E3FD386342F686C290F1C3E8EFE8DB /* SkyFloatingLabelTextField-iOS10.1 */;
+			targetProxy = 12922E103FD9785106651B97C967D7AB /* PBXContainerItemProxy */;
+		};
+		9FB7810706CB8604858E4ECB18340B8B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FSCalendar-iOS10.0";
+			target = 2075F7F9F2B1CDCE4C398EFBD21E0B37 /* FSCalendar-iOS10.0 */;
+			targetProxy = 0470ACF6C5938E7546D5007DAACBFAF3 /* PBXContainerItemProxy */;
+		};
+		EB401E6ABA5DA964783CDA99CC16B1B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FSCalendar-iOS10.1";
+			target = 952DEB45BBECD0A2C8FE8E4E45697137 /* FSCalendar-iOS10.1 */;
+			targetProxy = 858018EA789EB2687224634B1D875E76 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0019A6703F4B2112B541C9707EB96FD0 /* Release */ = {
+		2121B0F711584AF46DB25A5DB8FE6559 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AAF45EB8EED03732DA71662910BB963E /* SkyFloatingLabelTextField-iOS10.0.xcconfig */;
+			baseConfigurationReference = 5B9FAFD6B36693C1A7C1ABF1DA0C014A /* FSCalendar-iOS10.1.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FSCalendar-iOS10.1/FSCalendar-iOS10.1-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FSCalendar-iOS10.1/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FSCalendar-iOS10.1/FSCalendar-iOS10.1.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FSCalendar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		234D3A91B80C53E725373FC73AB3CFCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAF4474AC2ADB0A781875B94A873E9E6 /* FSCalendar-iOS10.0.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FSCalendar-iOS10.0/FSCalendar-iOS10.0-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FSCalendar-iOS10.0/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FSCalendar-iOS10.0/FSCalendar-iOS10.0.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FSCalendar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2BE83ED5EF6B52F522329E0DA65F2235 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2808F13965995DE40D17C43F6B115C61 /* Pods-iPhone.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
@@ -456,14 +878,18 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SkyFloatingLabelTextField-iOS10.0/SkyFloatingLabelTextField-iOS10.0-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SkyFloatingLabelTextField-iOS10.0/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-iPhone/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SkyFloatingLabelTextField-iOS10.0/SkyFloatingLabelTextField-iOS10.0.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iPhone/Pods-iPhone.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SkyFloatingLabelTextField;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_iPhone;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -473,7 +899,36 @@
 			};
 			name = Release;
 		};
-		12914D756594D15C6F2CA12FE5F89F1B /* Debug */ = {
+		35B9F59252E97E5161272950A9A8DD43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAF4474AC2ADB0A781875B94A873E9E6 /* FSCalendar-iOS10.0.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FSCalendar-iOS10.0/FSCalendar-iOS10.0-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FSCalendar-iOS10.0/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FSCalendar-iOS10.0/FSCalendar-iOS10.0.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FSCalendar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		42287DDF97330524BA3EF220F0276DA6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -491,7 +946,203 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4509A2E62D8D39CB25E99DDECE0A71F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1D3069CE7AB0F00915D7DE57F1AC38A /* Pods-HemoLeo.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HemoLeo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HemoLeo/Pods-HemoLeo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HemoLeo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		46F4D61DA235B05B97198399857F98C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F73745A890A142B8973EF256EE0B40B4 /* Pods-iPhone.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-iPhone/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iPhone/Pods-iPhone.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_iPhone;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		675779BB75DF27A2444E93C2EFD1D931 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B9FAFD6B36693C1A7C1ABF1DA0C014A /* FSCalendar-iOS10.1.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FSCalendar-iOS10.1/FSCalendar-iOS10.1-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FSCalendar-iOS10.1/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FSCalendar-iOS10.1/FSCalendar-iOS10.1.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FSCalendar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A999E9B3EF9377A7354F1A9DF0242A01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53F41FC7CB1C732DCA4527438A4EC0A0 /* SkyFloatingLabelTextField-iOS10.1.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SkyFloatingLabelTextField-iOS10.1/SkyFloatingLabelTextField-iOS10.1-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SkyFloatingLabelTextField-iOS10.1/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SkyFloatingLabelTextField-iOS10.1/SkyFloatingLabelTextField-iOS10.1.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SkyFloatingLabelTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AE66BC1C2D0589CEF8AF3615AEDF06C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53F41FC7CB1C732DCA4527438A4EC0A0 /* SkyFloatingLabelTextField-iOS10.1.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SkyFloatingLabelTextField-iOS10.1/SkyFloatingLabelTextField-iOS10.1-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SkyFloatingLabelTextField-iOS10.1/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SkyFloatingLabelTextField-iOS10.1/SkyFloatingLabelTextField-iOS10.1.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SkyFloatingLabelTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AE9439C22469D35336242DD983DB5C5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -511,19 +1162,50 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		1AA724E44F80ECFF2A46849D13908DD7 /* Release */ = {
+		C6A880FD87E055E41AB52FB674345C3B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2808F13965995DE40D17C43F6B115C61 /* Pods-iPhone.release.xcconfig */;
+			baseConfigurationReference = 80EED7C0CBAD9ADB40A0BB10365857A2 /* Pods-HemoLeo.debug.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HemoLeo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HemoLeo/Pods-HemoLeo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HemoLeo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E3596C692211C49FE2B25A608C8BF602 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4491E158959D5697935D2A814AF4F3D6 /* SkyFloatingLabelTextField-iOS10.0.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
@@ -532,18 +1214,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-iPhone/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SkyFloatingLabelTextField-iOS10.0/SkyFloatingLabelTextField-iOS10.0-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SkyFloatingLabelTextField-iOS10.0/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-iPhone/Pods-iPhone.modulemap";
+				MODULEMAP_FILE = "Target Support Files/SkyFloatingLabelTextField-iOS10.0/SkyFloatingLabelTextField-iOS10.0.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_iPhone;
+				PRODUCT_NAME = SkyFloatingLabelTextField;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -552,13 +1230,11 @@
 			};
 			name = Release;
 		};
-		28EE1B857BBDF6E2E69764DCEB6419FC /* Debug */ = {
+		F7D819B47CE590D8BFE12F91B07A20C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AAF45EB8EED03732DA71662910BB963E /* SkyFloatingLabelTextField-iOS10.0.xcconfig */;
+			baseConfigurationReference = 4491E158959D5697935D2A814AF4F3D6 /* SkyFloatingLabelTextField-iOS10.0.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
@@ -578,219 +1254,6 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		3DA25F977523A80CD3F8EAF1554ADEAE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2480F565095FE1921BD70C2228F20482 /* SkyFloatingLabelTextField-iOS10.1.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SkyFloatingLabelTextField-iOS10.1/SkyFloatingLabelTextField-iOS10.1-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SkyFloatingLabelTextField-iOS10.1/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SkyFloatingLabelTextField-iOS10.1/SkyFloatingLabelTextField-iOS10.1.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SkyFloatingLabelTextField;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		95C0F4614666DAC46C2B16681BB76585 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 80EED7C0CBAD9ADB40A0BB10365857A2 /* Pods-HemoLeo.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-HemoLeo/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HemoLeo/Pods-HemoLeo.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_HemoLeo;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		CAF33DD96657667AB108C3A21C2ADFFC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F1D3069CE7AB0F00915D7DE57F1AC38A /* Pods-HemoLeo.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-HemoLeo/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HemoLeo/Pods-HemoLeo.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_HemoLeo;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		E5569B926B32B61AB673D74CA429E304 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F73745A890A142B8973EF256EE0B40B4 /* Pods-iPhone.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-iPhone/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-iPhone/Pods-iPhone.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_iPhone;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E72E7977875C2D251FC62736BBDDC389 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		EC768EFC098E30758E85A4B1A217FD13 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2480F565095FE1921BD70C2228F20482 /* SkyFloatingLabelTextField-iOS10.1.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SkyFloatingLabelTextField-iOS10.1/SkyFloatingLabelTextField-iOS10.1-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SkyFloatingLabelTextField-iOS10.1/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SkyFloatingLabelTextField-iOS10.1/SkyFloatingLabelTextField-iOS10.1.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SkyFloatingLabelTextField;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -800,11 +1263,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1510333BABC18AB313BE073A72B952BD /* Build configuration list for PBXNativeTarget "SkyFloatingLabelTextField-iOS10.1" */ = {
+		179A264477384739AEFC717404D07A0B /* Build configuration list for PBXNativeTarget "SkyFloatingLabelTextField-iOS10.0" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EC768EFC098E30758E85A4B1A217FD13 /* Debug */,
-				3DA25F977523A80CD3F8EAF1554ADEAE /* Release */,
+				F7D819B47CE590D8BFE12F91B07A20C4 /* Debug */,
+				E3596C692211C49FE2B25A608C8BF602 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CEADDB0D358880443EEE7748A7ABB42 /* Build configuration list for PBXNativeTarget "FSCalendar-iOS10.1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2121B0F711584AF46DB25A5DB8FE6559 /* Debug */,
+				675779BB75DF27A2444E93C2EFD1D931 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -812,35 +1284,44 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				12914D756594D15C6F2CA12FE5F89F1B /* Debug */,
-				E72E7977875C2D251FC62736BBDDC389 /* Release */,
+				AE9439C22469D35336242DD983DB5C5F /* Debug */,
+				42287DDF97330524BA3EF220F0276DA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3ACA36F19F299E681C917480F04AB1D5 /* Build configuration list for PBXNativeTarget "Pods-iPhone" */ = {
+		563A5D884784A1EAD31E433523E0E80A /* Build configuration list for PBXNativeTarget "Pods-iPhone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E5569B926B32B61AB673D74CA429E304 /* Debug */,
-				1AA724E44F80ECFF2A46849D13908DD7 /* Release */,
+				46F4D61DA235B05B97198399857F98C2 /* Debug */,
+				2BE83ED5EF6B52F522329E0DA65F2235 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5498C095B6F149E9C7EF9313461AE91B /* Build configuration list for PBXNativeTarget "SkyFloatingLabelTextField-iOS10.0" */ = {
+		806A625519807EC4E699F77A7B81441C /* Build configuration list for PBXNativeTarget "FSCalendar-iOS10.0" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				28EE1B857BBDF6E2E69764DCEB6419FC /* Debug */,
-				0019A6703F4B2112B541C9707EB96FD0 /* Release */,
+				234D3A91B80C53E725373FC73AB3CFCC /* Debug */,
+				35B9F59252E97E5161272950A9A8DD43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		615C47DB087AE06DB8AE9541C82CBECF /* Build configuration list for PBXNativeTarget "Pods-HemoLeo" */ = {
+		E2C5433C41D0D7CB92093B52E854904D /* Build configuration list for PBXNativeTarget "Pods-HemoLeo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				95C0F4614666DAC46C2B16681BB76585 /* Debug */,
-				CAF33DD96657667AB108C3A21C2ADFFC /* Release */,
+				C6A880FD87E055E41AB52FB674345C3B /* Debug */,
+				4509A2E62D8D39CB25E99DDECE0A71F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF7E1A7F961149E28F3D6DC2127072D3 /* Build configuration list for PBXNativeTarget "SkyFloatingLabelTextField-iOS10.1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE66BC1C2D0589CEF8AF3615AEDF06C7 /* Debug */,
+				A999E9B3EF9377A7354F1A9DF0242A01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

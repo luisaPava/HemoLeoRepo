@@ -7,6 +7,7 @@ target 'HemoLeo' do
 
   # Pods for HemoLeo
   pod 'SkyFloatingLabelTextField', '~> 1.0'
+  pod 'FSCalendar'
 
 end
 
@@ -16,5 +17,6 @@ target 'iPhone' do
 
   # Pods for iPhone
   pod 'SkyFloatingLabelTextField', '~> 1.0'
+  pod 'FSCalendar'
 
 end

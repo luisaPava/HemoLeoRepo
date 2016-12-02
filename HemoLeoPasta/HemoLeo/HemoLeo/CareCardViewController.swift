@@ -12,6 +12,8 @@ import CareKit
 class CareCardViewController: UINavigationController {
     private var viewController: OCKCareCardViewController! = nil
     private let careCardModel = CareCardModel.sharedCareCardModel
+    
+    fileprivate let calendarDAO = DAOCalendario.sharedDAOCalendario
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,8 +69,9 @@ extension CareCardViewController: UIPopoverPresentationControllerDelegate {
 
 extension CareCardViewController: OCKCareCardViewControllerDelegate {
     func careCardViewController(_ viewController: OCKCareCardViewController, didSelectButtonWithInterventionEvent interventionEvent: OCKCarePlanEvent) {
-        if interventionEvent.activity.identifier == "Shot" {
-            
+        if interventionEvent.activity.identifier == "Profilaxia" {
+            print("Profilaxia")
+            calendarDAO.append(newEvent: "Profilaxia")
         }
     }
 }
