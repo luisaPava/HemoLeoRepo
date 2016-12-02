@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2B0211291D35736D00AFFB17 /* CareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B0211261D35735800AFFB17 /* CareKit.framework */; };
 		2B02112A1D35736D00AFFB17 /* CareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B0211261D35735800AFFB17 /* CareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2B070F121DF1C873003DC921 /* MotivoEmergenciaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B070F111DF1C873003DC921 /* MotivoEmergenciaViewController.swift */; };
+		2B070F131DF1C873003DC921 /* MotivoEmergenciaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B070F111DF1C873003DC921 /* MotivoEmergenciaViewController.swift */; };
 		2B1A21481D3E6E64007F1B68 /* Fisiotherapy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A21471D3E6E64007F1B68 /* Fisiotherapy.swift */; };
 		2B1A214E1D3E71E2007F1B68 /* OccurenciesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A214D1D3E71E2007F1B68 /* OccurenciesViewController.swift */; };
 		2B1A21521D3E7BA3007F1B68 /* NSCodingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A21511D3E7BA3007F1B68 /* NSCodingManager.swift */; };
@@ -283,6 +285,7 @@
 /* Begin PBXFileReference section */
 		088AB1D619AF95E04B23D44C /* Pods-HemoLeo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HemoLeo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HemoLeo/Pods-HemoLeo.debug.xcconfig"; sourceTree = "<group>"; };
 		2B02111F1D35735800AFFB17 /* CareKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CareKit.xcodeproj; path = ../CareKitRoot/CareKit.xcodeproj; sourceTree = "<group>"; };
+		2B070F111DF1C873003DC921 /* MotivoEmergenciaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotivoEmergenciaViewController.swift; sourceTree = "<group>"; };
 		2B1A21471D3E6E64007F1B68 /* Fisiotherapy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fisiotherapy.swift; sourceTree = "<group>"; };
 		2B1A214D1D3E71E2007F1B68 /* OccurenciesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OccurenciesViewController.swift; sourceTree = "<group>"; };
 		2B1A21511D3E7BA3007F1B68 /* NSCodingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSCodingManager.swift; path = HemoLeo/NSCodingManager.swift; sourceTree = "<group>"; };
@@ -839,6 +842,7 @@
 				4EE05E9F1DE33F480088CB99 /* Sangramento */,
 				4EE05EA01DE33F5E0088CB99 /* Dor */,
 				4E03102C1DD6AE8D002B8200 /* PopUp */,
+				2B070F111DF1C873003DC921 /* MotivoEmergenciaViewController.swift */,
 			);
 			name = SymptomTracker;
 			sourceTree = "<group>";
@@ -1410,6 +1414,7 @@
 				4EAFA2091DC7B373002BA048 /* Leo.swift in Sources */,
 				4E5092E41DF0D3FB001F2B7F /* DAOCalendario.swift in Sources */,
 				4E3CE03C1D400FFF00E4F422 /* ButtonAnimation.swift in Sources */,
+				2B070F121DF1C873003DC921 /* MotivoEmergenciaViewController.swift in Sources */,
 				2B7997EE1D37CD8F00D0996D /* StoryOneViewController.swift in Sources */,
 				4E3A3CB51DEC963E0095C251 /* MateriaisView.swift in Sources */,
 				2BA188C21D3567A5007F1CEB /* Water.swift in Sources */,
@@ -1510,6 +1515,7 @@
 				2BB8A8A61DE353BF004545A5 /* MeninoDorView.swift in Sources */,
 				4E3244791DD3DE2700258CE1 /* DAOCloudKit.swift in Sources */,
 				4E3244821DD3DE2D00258CE1 /* Shot.swift in Sources */,
+				2B070F131DF1C873003DC921 /* MotivoEmergenciaViewController.swift in Sources */,
 				4E3244771DD3DE2700258CE1 /* SymptomTrackerModel.swift in Sources */,
 				EB69AB8D1DE255D6003EAB99 /* TutorialPasso6View.swift in Sources */,
 				4E53BE421DE71DD800890968 /* NotificationsModel.swift in Sources */,

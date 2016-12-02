@@ -11,6 +11,7 @@ import UIKit
 class AddUserViewController: UIViewController {
     @IBOutlet weak var txtField: UITextField!
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var bgView: UIImageView!
     
     fileprivate let userModel = UserModel.sharedUserModel
     fileprivate let arraySkins: Array<String> = ["Leo", "Leo", "Leo", "Leo"]
@@ -20,8 +21,7 @@ class AddUserViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "BG"))
-
+        bgView.layer.zPosition = -1000
         
         collectionView.delegate = self
         collectionView.dataSource = self

@@ -51,11 +51,22 @@ extension SymptomCardViewController: OCKSymptomTrackerViewControllerDelegate {
         if symptomTrackerModel.shouldGoToSurvey(assessmentEvent: assessmentEvent) {
             self.event = assessmentEvent
             
+            if event.activity.identifier == "Pain" { // Not Pain, Emergencial!!
+            
             //Show an `ORKTaskViewController` for the assessment's task.
-            let taskViewController = self.storyboard?.instantiateViewController(withIdentifier: "survey") as! SurveyController
+            let taskViewController = self.storyboard?.instantiateViewController(withIdentifier: "emergencial") as! MotivoEmergenciaViewController
             taskViewController.popoverPresentationController?.delegate = self
             
-            performSegue(withIdentifier: "symptomToSurvey2", sender: self)
+            performSegue(withIdentifier: "emergencialToMotivo", sender: self)
+            
+            } else {
+                
+                let taskViewController = self.storyboard?.instantiateViewController(withIdentifier: "survey") as! SurveyController
+                taskViewController.popoverPresentationController?.delegate = self
+                
+                performSegue(withIdentifier: "symptomToSurvey2", sender: self)
+                
+            }
             
         }
     }
