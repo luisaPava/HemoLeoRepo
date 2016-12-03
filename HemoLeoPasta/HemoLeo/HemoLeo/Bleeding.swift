@@ -11,7 +11,7 @@ import CareKit
 
 class Bleeding: Assessment {
     //MARK: - Activity
-    let activityType: ActivityType = .Bleeding
+    let activityType: ActivityType = .Sangramento
     
     func carePlanActivity() -> OCKCarePlanActivity {
         //Create a weekly schedule

@@ -70,8 +70,7 @@ extension CareCardViewController: UIPopoverPresentationControllerDelegate {
 extension CareCardViewController: OCKCareCardViewControllerDelegate {
     func careCardViewController(_ viewController: OCKCareCardViewController, didSelectButtonWithInterventionEvent interventionEvent: OCKCarePlanEvent) {
         if interventionEvent.activity.identifier == "Profilaxia" {
-            print("Profilaxia")
-            calendarDAO.append(newEvent: "Profilaxia")
+            calendarDAO.append(newEvent: "Profilaxia", withType: .Profilaxia)
         }
     }
 }

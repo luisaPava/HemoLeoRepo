@@ -40,6 +40,10 @@ class SymptomCardViewController: UINavigationController {
         if segue.identifier == "symptomToSurvey2" {
             let vc = segue.destination as! SurveyController
             vc.event = self.event
+            
+        } else if segue.identifier == "emergencialToMotivo" {
+            let vc = segue.destination as! MotivoEmergenciaViewController
+            vc.event = self.event
         }
     }
 }
@@ -51,13 +55,11 @@ extension SymptomCardViewController: OCKSymptomTrackerViewControllerDelegate {
         if symptomTrackerModel.shouldGoToSurvey(assessmentEvent: assessmentEvent) {
             self.event = assessmentEvent
             
-            if event.activity.identifier == "Pain" { // Not Pain, Emergencial!!
+            if event.activity.identifier == "Emergencial" {
+                let taskViewController = self.storyboard?.instantiateViewController(withIdentifier: "emergencial") as! MotivoEmergenciaViewController
+                taskViewController.popoverPresentationController?.delegate = self
             
-            //Show an `ORKTaskViewController` for the assessment's task.
-            let taskViewController = self.storyboard?.instantiateViewController(withIdentifier: "emergencial") as! MotivoEmergenciaViewController
-            taskViewController.popoverPresentationController?.delegate = self
-            
-            performSegue(withIdentifier: "emergencialToMotivo", sender: self)
+                performSegue(withIdentifier: "emergencialToMotivo", sender: self)
             
             } else {
                 
@@ -67,7 +69,6 @@ extension SymptomCardViewController: OCKSymptomTrackerViewControllerDelegate {
                 performSegue(withIdentifier: "symptomToSurvey2", sender: self)
                 
             }
-            
         }
     }
 }

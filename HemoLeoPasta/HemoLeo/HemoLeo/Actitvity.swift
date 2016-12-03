@@ -24,13 +24,13 @@ enum ActivityType: String {
     // Weekly (every Sunday by default)
     case Exercise  //É um group na verdade
     case Profilaxia //É um group na verdade
-    case Emergencial
     case Fisiotherapy
     
     // Symptoms
     
     //Criar na pasta de sintomas!!
-    case Bleeding
-    case Bruising
-    case Pain
+    case Sangramento
+    case Hematoma
+    case Dor
+    case Emergencial
 }

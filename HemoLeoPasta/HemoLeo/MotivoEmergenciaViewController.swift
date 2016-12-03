@@ -7,11 +7,18 @@
 //
 
 import UIKit
+import CareKit
 
 class MotivoEmergenciaViewController: UIViewController {
-
     @IBOutlet weak var labelMotivo: UILabel!
     @IBOutlet weak var textViewMotivo: UITextView!
+    
+    var event: OCKCarePlanEvent! = nil
+    var activityType: ActivityType!
+    
+    fileprivate let calendarDAO = DAOCalendario.sharedDAOCalendario
+    private var assessmentManager: AssessmentsManager? = nil
+    private let symptomTrackerModel = SymptomTrackerModel.sharedSymptomTracker
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,48 +30,59 @@ class MotivoEmergenciaViewController: UIViewController {
         
         labelMotivo.alpha = 0
         textViewMotivo.alpha = 0
+        
+        assessmentManager = symptomTrackerModel.getAssessmentManager()
+        activityType = ActivityType(rawValue: event.activity.identifier)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    
-    
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
     @IBAction func hadEmergency(_ sender: UIButton) {
         let flag = sender.isSelected
         
-        if flag == true {
-            
+        if flag {
             labelMotivo.runAnimation(UIAnimation.fadeAlphaTo(0, duration: 0.5))
             textViewMotivo.runAnimation(UIAnimation.fadeAlphaTo(0, duration: 0.5))
             
             sender.isSelected = false
             
-            
-
-            
         } else {
-            
             labelMotivo.runAnimation(UIAnimation.fadeAlphaTo(1, duration: 0.5))
             textViewMotivo.runAnimation(UIAnimation.fadeAlphaTo(1, duration: 0.5))
             
             sender.isSelected = true
 
-            
         }
-        
     }
+}
 
+extension MotivoEmergenciaViewController: UITextViewDelegate {
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        animateViewMoving(true, moveValue: 250)
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        animateViewMoving(false, moveValue: 250)
+        
+        calendarDAO.append(newEvent: textView.text, withType: .Emergencial)
+        
+        print(#function)
+    }
+    
+    func animateViewMoving(_ up:Bool, moveValue :CGFloat){
+        let movementDuration:TimeInterval = 0.3
+        let movement:CGFloat = ( up ? -moveValue : moveValue)
+        UIView.beginAnimations("animateView", context: nil)
+        UIView.setAnimationBeginsFromCurrentState(true)
+        UIView.setAnimationDuration(movementDuration )
+        self.view.frame = self.view.frame.offsetBy(dx: 0,  dy: movement)
+        UIView.commitAnimations()
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
 }

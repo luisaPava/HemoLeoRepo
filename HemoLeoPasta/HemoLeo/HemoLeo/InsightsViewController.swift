@@ -12,28 +12,28 @@ import FSCalendar
 class InsightsViewController: UIViewController {
     @IBOutlet weak var calendar: FSCalendar!
     @IBOutlet weak var titleLabel: UILabel!
-    
-    fileprivate let formatter: DateFormatter = {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "dd/MM/yyyy"
-        return formatter
-    }()
+    @IBOutlet weak var tableView: UITableView!
     
     fileprivate let calendarDAO = DAOCalendario.sharedDAOCalendario
+    fileprivate var arraySectionsName: [String] = []
+    fileprivate var arraySections: [[String]] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         titleLabel.text = ""
         
+        self.tableView.dataSource = self
+        
         self.calendar.delegate = self
         self.calendar.dataSource = self
-        self.calendar.appearance.caseOptions = [.headerUsesUpperCase,.weekdayUsesUpperCase]
+        self.calendar.appearance.caseOptions = [.headerUsesUpperCase, .weekdayUsesUpperCase]
         self.calendar.scopeGesture.isEnabled = true
     }
     
     override func viewWillAppear(_ animated: Bool) {
         calendar.reloadData()
+        tableViewSetup(Date())
         calendarDAO.reloadData()
     }
 
@@ -41,26 +41,63 @@ class InsightsViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    //Populate arrays used on the table view
+    func tableViewSetup(_ date: Date) {
+        arraySections = []
+        arraySectionsName = []
+        
+        guard let testArray = calendarDAO.getValues(at: date) else {
+            arraySections = []
+            arraySectionsName = []
+            
+            return
+        }
+        
+        for array in testArray {
+            arraySections.append(array.value)
+            arraySectionsName.append(array.key.rawValue)
+        }
+    }
+}
+
+extension InsightsViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return arraySectionsName[section]
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return arraySectionsName.count
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return arraySections[section].count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "resumoCell", for: indexPath as IndexPath) as! ResumoTableViewCell
+        
+        cell.resumoLabel.text = arraySections[indexPath.section][indexPath.row]
+        
+        return cell
+    }
 }
 
 extension InsightsViewController: FSCalendarDelegate {
     func calendar(_ calendar: FSCalendar, didSelect date: Date) {
-        print("Delegate calendar")
-        guard let title = calendarDAO.getValue(at: date) else { return }
-        
-        print(title)
-        
-        titleLabel.text = title
+        print("\(calendarDAO.getCount(withDay: date)) Numeros de ocorrencias")
+        tableViewSetup(date)
+        tableView.reloadData()
     }
 }
 
 extension InsightsViewController: FSCalendarDataSource {
     func minimumDate(for calendar: FSCalendar) -> Date {
-        return self.formatter.date(from: "01/01/2016")!
+        return formatter.date(from: "01/01/2016")!
     }
     
     func maximumDate(for calendar: FSCalendar) -> Date {
-        return self.formatter.date(from: "31/12/2017")!
+        return formatter.date(from: "31/12/2017")!
     }
     
     func calendar(_ calendar: FSCalendar, numberOfEventsFor date: Date) -> Int {

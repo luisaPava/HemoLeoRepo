@@ -12,7 +12,7 @@ import CareKit
 
 class Bruising: Assessment {
     //MARK: - Activity
-    let activityType: ActivityType = .Bruising
+    let activityType: ActivityType = .Hematoma
     
     func carePlanActivity() -> OCKCarePlanActivity {
         //Create a weekly schedule

@@ -1,17 +1,17 @@
 //
-//  Pain.swift
+//  Emergencial.swift
 //  HemoLeo
 //
-//  Created by Gabriel Oliveira on 16/07/16.
+//  Created by Gabriel Oliveira on 03/12/16.
 //  Copyright © 2016 Bepid. All rights reserved.
 //
+
 import Foundation
 import CareKit
-//import ResearchKit
 
-class Pain: Assessment {
+class Emergencial: Assessment {
     //MARK: - Activity
-    let activityType: ActivityType = .Dor
+    let activityType: ActivityType = .Emergencial
     
     func carePlanActivity() -> OCKCarePlanActivity {
         //Create a weekly schedule
@@ -19,7 +19,7 @@ class Pain: Assessment {
         let schedule = OCKCareSchedule.weeklySchedule(withStartDate: startDate as DateComponents, occurrencesOnEachDay: [1, 1, 1, 1, 1, 1, 1])
         
         //Get the localized strings to use in the assessment
-        let title = NSLocalizedString("Dor", comment: "")
+        let title = NSLocalizedString("Emergencial", comment: "")
         let summary = NSLocalizedString("", comment: "")
         
         //Create the activity
@@ -37,3 +37,5 @@ class Pain: Assessment {
         return activity
     }
 }
+
+

@@ -16,7 +16,8 @@ class AssessmentsManager: NSObject {
     let assessments: [Assessment] = [
         Pain(),
         Bleeding(),
-        Bruising()
+        Bruising(),
+        Emergencial()
     ]
     
     //MARK: - Initialization

@@ -37,7 +37,6 @@ class AddUserViewController: UIViewController {
     }
     
     @IBAction func saveBtn(_ sender: UIButton) {
-        
         if (txtField.text?.isEmpty)! {
             
             let alertController = UIAlertController(title: "Atenção", message:

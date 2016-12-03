@@ -15,7 +15,7 @@ class SurveyController: UIViewController {
     var resultString = ""
     var resultArray: Array<String> = ["", "", "", "", ""]
     var index = 0
-    var sliderValue = 0
+    var sliderValue: Int = 0
     var esqArray: Array<UIButton> = []
     var dirArray: Array<UIButton> = []
     var activityType: ActivityType!
@@ -25,9 +25,9 @@ class SurveyController: UIViewController {
 //    var viewMenino: UIView!
 //    var viewMeninoSangue: MeninoSangramentoView
     
-    
     private var assessmentManager: AssessmentsManager? = nil
     private let symptomTrackerModel = SymptomTrackerModel.sharedSymptomTracker
+    private let calendarDAO = DAOCalendario.sharedDAOCalendario
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,27 +38,10 @@ class SurveyController: UIViewController {
         viewMenino.meninoDorViewDelegate = self
         
 //        print("\(width) - \(height)")
-        
-        
-        
+  
     }
     
-    @IBAction func save(_ sender: UIButton) {
-        
-        //Colocar a cada tap de botao
-
-    }
-    
-//    func chooseViewClass() {
-//        if activityType == .Pain {
-//            viewMenino = MeninoDorView(frame: CGRect(x: 0, y: 150, width: width, height: height / 0.7))
-//            viewMenino.meninoDorViewDelegate = self
-//        } else {
-//            
-//        }
-//    }
-    
-    func saveResult() {
+    func saveResult(level: Int, local: String) {
         let assessment = assessmentManager!.activityWithType(type: activityType!)
         var result: OCKCarePlanEventResult!
         
@@ -73,9 +56,12 @@ class SurveyController: UIViewController {
         result = assessment?.buildResultForCarePlanEvent(event: event, taskResult: resultString)
         symptomTrackerModel.completeEvent(event: event, withResult: result!)
         
+        print(resultArray[index])
+        let newEventString = "\(local) - \(level)"
+        let type = EventType(rawValue: activityType.rawValue)!
+        calendarDAO.append(newEvent: newEventString, withType: type)
+        
     }
-
-    
     
     func setArrayBtn(_ array: Array<UIButton>, bool: Bool) {
         for btn in array {
@@ -117,10 +103,10 @@ extension SurveyController: MeninoDorViewDelegate {
             
             let container = PopUpViewController.instance()
             container.closeHandler = { _ in
-                self.sliderValue = PopUpViewController.sliderValue
+                self.sliderValue = Int(PopUpViewController.sliderValue)
                 print(self.sliderValue)
                 popup.dismiss()
-                self.saveResult()
+                self.saveResult(level: self.sliderValue, local: botãoDesativado.accessibilityIdentifier!)
             }
             
             let _ = popup.show(container)
