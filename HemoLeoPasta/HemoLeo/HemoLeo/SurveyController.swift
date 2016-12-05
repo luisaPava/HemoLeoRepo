@@ -21,9 +21,8 @@ class SurveyController: UIViewController {
     var activityType: ActivityType!
     
     @IBOutlet weak var viewMenino: MeninoDorView!
-    
-//    var viewMenino: UIView!
-//    var viewMeninoSangue: MeninoSangramentoView
+    @IBOutlet weak var viewMeninoSangramento: MeninoSangramentoView!
+    @IBOutlet weak var viewMeninoHematoma: MeninoHematomasView!
     
     private var assessmentManager: AssessmentsManager? = nil
     private let symptomTrackerModel = SymptomTrackerModel.sharedSymptomTracker
@@ -39,6 +38,10 @@ class SurveyController: UIViewController {
         
 //        print("\(width) - \(height)")
   
+    }
+    
+    func setMeninoView() {
+        
     }
     
     func saveResult(level: Int, local: String) {
