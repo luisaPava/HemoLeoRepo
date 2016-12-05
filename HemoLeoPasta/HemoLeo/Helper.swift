@@ -20,6 +20,13 @@ let formatter: DateFormatter = {
     return formatter
 }()
 
+public func mensagem(titulo: String, desc: String, view: UIViewController) {
+    let alertController = UIAlertController(title: titulo, message: desc, preferredStyle: UIAlertControllerStyle.alert)
+    alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default,handler: nil))
+    
+    view.present(alertController, animated: true, completion: nil)
+}
+
 extension Array where Element: Equatable {
     func allElementsAreEqual(to i: Element) -> Bool {
         for j in self {
@@ -67,7 +74,6 @@ extension FileManager {
         do {
             let filePaths = try fileManager.contentsOfDirectory(atPath: (persistenceDirectoryURL?.path)!)
             for filePath in filePaths {
-                print(filePath)
                 try fileManager.removeItem(atPath: (persistenceDirectoryURL?.appendingPathComponent(filePath).path)!)
             }
         } catch let error as NSError {
@@ -91,7 +97,6 @@ extension UIColor {
 }
 
 public extension UIDevice {
-    
     var modelName: String {
         var systemInfo = utsname()
         uname(&systemInfo)
@@ -150,19 +155,12 @@ extension String {
 
 
 extension UITextView {
-    
     func showInstructions(_ time: Double) {
-        
         let _ = Timer.scheduledTimer(withTimeInterval: time, repeats: false, block: { _ in
-            
             self.runAnimation(UIAnimation.fadeAlphaTo(1, duration: 2))
         
         })
-        
-        
     }
-    
-
 }
 
 extension Float {
@@ -171,7 +169,6 @@ extension Float {
             return Float(Int(10.0  * self)/10)
         }
     }
-    
 }
 
 

@@ -56,7 +56,6 @@ class SurveyController: UIViewController {
         result = assessment?.buildResultForCarePlanEvent(event: event, taskResult: resultString)
         symptomTrackerModel.completeEvent(event: event, withResult: result!)
         
-        print(resultArray[index])
         let newEventString = "\(local) - \(level)"
         let type = EventType(rawValue: activityType.rawValue)!
         calendarDAO.append(newEvent: newEventString, withType: type)
@@ -104,7 +103,7 @@ extension SurveyController: MeninoDorViewDelegate {
             let container = PopUpViewController.instance()
             container.closeHandler = { _ in
                 self.sliderValue = Int(PopUpViewController.sliderValue)
-                print(self.sliderValue)
+
                 popup.dismiss()
                 self.saveResult(level: self.sliderValue, local: botãoDesativado.accessibilityIdentifier!)
             }

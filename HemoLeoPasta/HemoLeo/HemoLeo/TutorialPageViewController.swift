@@ -35,9 +35,6 @@ class TutorialPageViewController: UIPageViewController {
                                animated: true,
                                completion: nil)
         }
-        
-        print(orderedViewControllers.count)
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -111,8 +108,6 @@ extension TutorialPageViewController: UIPageViewControllerDataSource {
         guard viewControllersCount > nextIndex else {
             return nil
         }
-        
-        print(nextIndex)
         
         return orderedViewControllers[nextIndex]
         

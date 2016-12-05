@@ -94,7 +94,6 @@ extension AddContactViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == self.nome {
             let _ = self.relacao.becomeFirstResponder()
-            print(#function)
         }
         
         if textField == self.relacao   {

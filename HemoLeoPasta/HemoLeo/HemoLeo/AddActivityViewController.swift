@@ -54,7 +54,6 @@ class AddActivityViewController: UIViewController {
 
 //MARK: - Extension
 extension AddActivityViewController {
-    
     @IBAction func addActivityAction(sender: UIButton) {
         let key = sender.tag
         selectedButton = sender
@@ -91,6 +90,9 @@ extension AddActivityViewController {
     //MARK: - Other methods
     func setButtons() {
         for i in 0..<activities.count {
+            print("i - \(i)")
+            print("activities - \(activities.count)")
+            print("buttons \(buttons.count)")
             buttons[i].isSelected = activities[i]
         }
     }

@@ -37,9 +37,6 @@ class CarePlanStoreManager: NSObject, NSCoding {
             try! FileManager.default.createDirectory(at: persistenceDirectoryURL! as URL, withIntermediateDirectories: true, attributes: nil)
         }
         
-        print(persistenceDirectoryURL!)
-        
-        
         // Create the store.
         store = OCKCarePlanStore(persistenceDirectoryURL: persistenceDirectoryURL! as URL)
         

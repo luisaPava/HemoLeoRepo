@@ -19,8 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
         let defaults = UserDefaults.standard
         
-        print(defaults.bool(forKey: "firstLaunch"))
-        
         if !defaults.bool(forKey: "firstLaunch") {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let initialViewController: UIViewController!

@@ -11,6 +11,8 @@ import Foundation
 class DAOCalendario: Observer {
     static var sharedDAOCalendario = DAOCalendario()
     
+    var lastDate: Date!
+    
     private var dic: [String : [String : [String]]] = [:]
     private var leo: Leo!
     private let codingManager = NSCodingManager.sharedNSCodingManager
@@ -33,10 +35,12 @@ class DAOCalendario: Observer {
     // Update the user
     override func update() {
         self.leo = subject.getLeo()
+//        print(path)
         
     }
     
     private func populateArray(WithPath path: String) {
+        print(path)
         guard let testArray = codingManager.getAnyWithPath(path: path) else {
             dic = [:]
             
@@ -68,7 +72,7 @@ class DAOCalendario: Observer {
     
     func append(newEvent event: String, withType type: EventType) {
         let day = formatter.string(from: Date())
-//
+
         if dic[day] == nil {
             dic[day] = [type.rawValue : [event]]
             
@@ -77,14 +81,12 @@ class DAOCalendario: Observer {
         
         } else {
             dic[day]?[type.rawValue]?.append(event)
-//
+
         }
-//
+        
         if !codingManager.saveAnyWithPath(path: path, object: dic) {
             print("Erro ao salvar")
         }
-//        
-//        print(dic[day]?.count)
     }
     
     func reloadData() {

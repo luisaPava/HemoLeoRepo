@@ -33,7 +33,17 @@ class InsightsViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         calendar.reloadData()
-        tableViewSetup(Date())
+        
+        if let date = calendarDAO.lastDate {
+            tableViewSetup(date)
+            
+        } else {
+            tableViewSetup(Date())
+            
+        }
+        
+        
+        
         calendarDAO.reloadData()
     }
 
@@ -85,7 +95,7 @@ extension InsightsViewController: UITableViewDataSource {
 
 extension InsightsViewController: FSCalendarDelegate {
     func calendar(_ calendar: FSCalendar, didSelect date: Date) {
-        print("\(calendarDAO.getCount(withDay: date)) Numeros de ocorrencias")
+        calendarDAO.lastDate = date
         tableViewSetup(date)
         tableView.reloadData()
     }

@@ -66,7 +66,7 @@ class MainViewController: UIViewController {
         
         //Button to InsightCard
         insightCardButton = mainModel.createButton(view: self.view, x: width / 1.395, y: height / 25.6, image: #imageLiteral(resourceName: "Insight"))
-        insightCardButton.addTarget(self, action: #selector(insightCardButtonAction), for: .touchUpInside)
+//        insightCardButton.addTarget(self, action: #selector(insightCardButtonAction), for: .touchUpInside)
         
         self.view.addSubview(insightCardButton)
         
@@ -154,21 +154,21 @@ class MainViewController: UIViewController {
     }
     
     //Insight Card button action
-    func insightCardButtonAction() {
-        let popoverViewController = self.storyboard?.instantiateViewController(withIdentifier: "InsightCard") as! InsightViewController
-        popoverViewController.modalPresentationStyle = .popover
-        
-        let popoverPresentationViewController = popoverViewController.popoverPresentationController
-        
-        popoverPresentationViewController?.permittedArrowDirections = UIPopoverArrowDirection.up
-        popoverPresentationViewController?.delegate = self
-        popoverPresentationViewController?.sourceView = self.insightCardButton
-        popoverPresentationViewController?.sourceRect = CGRect(x: insightCardButton.frame.width / 2, y: insightCardButton.frame.height, width: 0, height: 0)
-        
-        ButtonAnimation.addButtonPressAnimationToView(viewToAnimate: insightCardButton)
-        
-        present(popoverViewController, animated: true, completion: nil)
-    }
+//    func insightCardButtonAction() {
+//        let popoverViewController = self.storyboard?.instantiateViewController(withIdentifier: "InsightCard") as! InsightViewController
+//        popoverViewController.modalPresentationStyle = .popover
+//        
+//        let popoverPresentationViewController = popoverViewController.popoverPresentationController
+//        
+//        popoverPresentationViewController?.permittedArrowDirections = UIPopoverArrowDirection.up
+//        popoverPresentationViewController?.delegate = self
+//        popoverPresentationViewController?.sourceView = self.insightCardButton
+//        popoverPresentationViewController?.sourceRect = CGRect(x: insightCardButton.frame.width / 2, y: insightCardButton.frame.height, width: 0, height: 0)
+//        
+//        ButtonAnimation.addButtonPressAnimationToView(viewToAnimate: insightCardButton)
+//        
+//        present(popoverViewController, animated: true, completion: nil)
+//    }
     
     //Canvas button action
     func canvasButtonAction() {

@@ -70,7 +70,6 @@ extension AddUserViewController: UICollectionViewDelegate {
 
 extension AddUserViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print(arraySkins.count)
         return arraySkins.count
     }
     

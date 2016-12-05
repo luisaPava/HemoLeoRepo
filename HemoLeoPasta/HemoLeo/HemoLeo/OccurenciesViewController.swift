@@ -88,8 +88,6 @@ extension OccurenciesViewController: UITableViewDelegate {
         if id == "Shot" {
             let notId = "\(leo.getId())\(indexPath.row + 1))"
             
-            print(notId)
-            
             if occurencies[indexPath.row] == 1 {
                 notificationsModel.createNotification(title: leo.nome,
                                                       body: "Não esqueça da sua profilaxia",

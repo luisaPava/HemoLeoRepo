@@ -12,6 +12,7 @@ import CareKit
 class MotivoEmergenciaViewController: UIViewController {
     @IBOutlet weak var labelMotivo: UILabel!
     @IBOutlet weak var textViewMotivo: UITextView!
+    @IBOutlet weak var salvarBtn: CustomView!
     
     var event: OCKCarePlanEvent! = nil
     var activityType: ActivityType!
@@ -30,6 +31,7 @@ class MotivoEmergenciaViewController: UIViewController {
         
         labelMotivo.alpha = 0
         textViewMotivo.alpha = 0
+        salvarBtn.alpha = 0
         
         assessmentManager = symptomTrackerModel.getAssessmentManager()
         activityType = ActivityType(rawValue: event.activity.identifier)
@@ -46,43 +48,51 @@ class MotivoEmergenciaViewController: UIViewController {
         if flag {
             labelMotivo.runAnimation(UIAnimation.fadeAlphaTo(0, duration: 0.5))
             textViewMotivo.runAnimation(UIAnimation.fadeAlphaTo(0, duration: 0.5))
+            salvarBtn.runAnimation(UIAnimation.fadeAlphaTo(0, duration: 0.5))
             
             sender.isSelected = false
             
         } else {
             labelMotivo.runAnimation(UIAnimation.fadeAlphaTo(1, duration: 0.5))
             textViewMotivo.runAnimation(UIAnimation.fadeAlphaTo(1, duration: 0.5))
+            salvarBtn.runAnimation(UIAnimation.fadeAlphaTo(1, duration: 0.5))
             
             sender.isSelected = true
 
         }
     }
+    
+    @IBAction func salvarAction(_ sender: Any) {
+        if !textViewMotivo.text.isEmpty {
+            calendarDAO.append(newEvent: textViewMotivo.text, withType: .Emergencial)
+        } else {
+            mensagem(titulo: "Atenção", desc: "Escreva o motivo da aplicação", view: self)
+        }
+    }
 }
 
-extension MotivoEmergenciaViewController: UITextViewDelegate {
-    func textViewDidBeginEditing(_ textView: UITextView) {
-        animateViewMoving(true, moveValue: 250)
-    }
-    
-    func textViewDidEndEditing(_ textView: UITextView) {
-        animateViewMoving(false, moveValue: 250)
-        
-        calendarDAO.append(newEvent: textView.text, withType: .Emergencial)
-        
-        print(#function)
-    }
-    
-    func animateViewMoving(_ up:Bool, moveValue :CGFloat){
-        let movementDuration:TimeInterval = 0.3
-        let movement:CGFloat = ( up ? -moveValue : moveValue)
-        UIView.beginAnimations("animateView", context: nil)
-        UIView.setAnimationBeginsFromCurrentState(true)
-        UIView.setAnimationDuration(movementDuration )
-        self.view.frame = self.view.frame.offsetBy(dx: 0,  dy: movement)
-        UIView.commitAnimations()
-    }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
-    }
-}
+//extension MotivoEmergenciaViewController: UITextViewDelegate {
+//    func textViewDidBeginEditing(_ textView: UITextView) {
+//        animateViewMoving(true, moveValue: 250)
+//    }
+//    
+//    func textViewDidEndEditing(_ textView: UITextView) {
+//        animateViewMoving(false, moveValue: 250)
+//        
+//        
+//    }
+//    
+//    func animateViewMoving(_ up:Bool, moveValue :CGFloat){
+//        let movementDuration:TimeInterval = 0.3
+//        let movement:CGFloat = ( up ? -moveValue : moveValue)
+//        UIView.beginAnimations("animateView", context: nil)
+//        UIView.setAnimationBeginsFromCurrentState(true)
+//        UIView.setAnimationDuration(movementDuration )
+//        self.view.frame = self.view.frame.offsetBy(dx: 0,  dy: movement)
+//        UIView.commitAnimations()
+//    }
+//    
+//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        self.view.endEditing(true)
+//    }
+//}

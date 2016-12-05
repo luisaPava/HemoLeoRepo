@@ -1077,13 +1077,22 @@
                                 <color key="textColor" red="0.18039215689999999" green="0.80000000000000004" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Vi-GO-aET">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3Vi-GO-aET">
                                 <rect key="frame" x="28" y="284" width="358" height="372"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a03-D0-1ls" customClass="CustomView" customModule="HemoLeo" customModuleProvider="target">
+                                <rect key="frame" x="40" y="676" width="334" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4AO-B0-obS"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="salvarAction:" destination="LWh-zj-xp3" eventType="touchUpInside" id="dzo-iZ-OcQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1097,6 +1106,9 @@
                             <constraint firstItem="1vx-x1-w4g" firstAttribute="top" secondItem="nMN-fl-dcO" secondAttribute="bottom" constant="50" id="ZgC-Yr-Bfd"/>
                             <constraint firstItem="3Vi-GO-aET" firstAttribute="leading" secondItem="2XB-rk-hnH" secondAttribute="leading" id="Zl3-uV-Fwt"/>
                             <constraint firstItem="3w8-H8-65J" firstAttribute="top" secondItem="2XB-rk-hnH" secondAttribute="bottom" constant="80" id="cSB-vQ-41Q"/>
+                            <constraint firstItem="a03-D0-1ls" firstAttribute="leading" secondItem="gl2-7o-2hm" secondAttribute="leadingMargin" constant="20" id="dbB-rh-6iQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="a03-D0-1ls" secondAttribute="trailing" constant="20" id="dz3-fW-z5e"/>
+                            <constraint firstItem="Tgu-AQ-G1E" firstAttribute="top" secondItem="a03-D0-1ls" secondAttribute="bottom" constant="30" id="hg6-di-tu0"/>
                             <constraint firstItem="1vx-x1-w4g" firstAttribute="centerX" secondItem="gl2-7o-2hm" secondAttribute="centerX" id="j1e-C5-mTo"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1vx-x1-w4g" secondAttribute="trailing" constant="7" id="kIs-DL-G5a"/>
                             <constraint firstItem="Tgu-AQ-G1E" firstAttribute="top" secondItem="3Vi-GO-aET" secondAttribute="bottom" constant="80" id="tAG-cJ-UGf"/>
@@ -1107,6 +1119,7 @@
                     <size key="freeformSize" width="414" height="736"/>
                     <connections>
                         <outlet property="labelMotivo" destination="2XB-rk-hnH" id="tWB-za-ZP7"/>
+                        <outlet property="salvarBtn" destination="a03-D0-1ls" id="dSS-im-h80"/>
                         <outlet property="textViewMotivo" destination="3Vi-GO-aET" id="ygN-ex-hQu"/>
                     </connections>
                 </viewController>
@@ -1126,17 +1139,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="qtA-I9-Eb0" customClass="MeninoSangramentoView" customModule="HemoLeo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="414" height="552"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="khj-05-o25" customClass="MeninoHematomasView" customModule="HemoLeo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="414" height="552"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="8fR-za-0jq" customClass="MeninoDorView" customModule="HemoLeo" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="20" width="414" height="552"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4k-0h-0pH" customClass="CustomView" customModule="HemoLeo" customModuleProvider="target">
+                                <rect key="frame" x="40" y="676" width="334" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="tjH-xy-1h2"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="khj-05-o25" firstAttribute="height" secondItem="8fR-za-0jq" secondAttribute="height" id="1ka-bj-jkY"/>
                             <constraint firstItem="8fR-za-0jq" firstAttribute="leading" secondItem="lje-8y-B1b" secondAttribute="leading" id="6xc-fu-gHK"/>
+                            <constraint firstItem="qtA-I9-Eb0" firstAttribute="top" secondItem="8fR-za-0jq" secondAttribute="top" id="8ms-cp-LKn"/>
                             <constraint firstItem="8fR-za-0jq" firstAttribute="height" secondItem="lje-8y-B1b" secondAttribute="height" multiplier="0.75" id="CvB-6D-q6W"/>
+                            <constraint firstItem="qtA-I9-Eb0" firstAttribute="width" secondItem="8fR-za-0jq" secondAttribute="width" id="HAS-eT-8kU"/>
+                            <constraint firstItem="khj-05-o25" firstAttribute="top" secondItem="8fR-za-0jq" secondAttribute="top" id="NUb-6L-ZRh"/>
+                            <constraint firstItem="qtA-I9-Eb0" firstAttribute="height" secondItem="8fR-za-0jq" secondAttribute="height" id="Nvg-so-D3k"/>
+                            <constraint firstItem="3jY-vQ-ZQg" firstAttribute="top" secondItem="M4k-0h-0pH" secondAttribute="bottom" constant="30" id="Zb7-3M-2L6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="M4k-0h-0pH" secondAttribute="trailing" constant="20" id="csw-vD-xu4"/>
+                            <constraint firstItem="khj-05-o25" firstAttribute="centerX" secondItem="lje-8y-B1b" secondAttribute="centerX" id="drb-R6-G87"/>
                             <constraint firstItem="8fR-za-0jq" firstAttribute="top" secondItem="CJK-3Z-Bi8" secondAttribute="bottom" constant="20" id="hnC-B4-Ss6"/>
+                            <constraint firstItem="qtA-I9-Eb0" firstAttribute="centerX" secondItem="lje-8y-B1b" secondAttribute="centerX" id="lvZ-Mq-zCx"/>
                             <constraint firstAttribute="trailing" secondItem="8fR-za-0jq" secondAttribute="trailing" id="q54-1Z-Lzj"/>
+                            <constraint firstItem="khj-05-o25" firstAttribute="width" secondItem="8fR-za-0jq" secondAttribute="width" id="rry-SY-Xdn"/>
+                            <constraint firstItem="M4k-0h-0pH" firstAttribute="leading" secondItem="lje-8y-B1b" secondAttribute="leadingMargin" constant="20" id="teK-bf-cwB"/>
                         </constraints>
                     </view>
                     <value key="contentSizeForViewInPopover" type="size" width="414" height="736"/>
@@ -1150,7 +1189,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OsO-MD-YHf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="889" y="1841"/>
+            <point key="canvasLocation" x="888.86718749999989" y="1840.625"/>
         </scene>
         <!--Symptom Card View Controller-->
         <scene sceneID="Hiw-WY-5q9">
