@@ -8,7 +8,7 @@ import Foundation
 import UIKit
 
 protocol MeninoDorViewDelegate: class {
-	func botãoDesativadoDor(botãoDesativado: UIButton)
+	func botãoDesativado(botãoDesativado: UIButton)
 
 }
 
@@ -118,7 +118,7 @@ class MeninoDorView : UIView, CAAnimationDelegate {
 		if imgBotãoDesativadoDor == nil {
 			print("** Warning: Could not create image from 'BotãoDesativadoDor.png'")
 		}
-        botãoDesativadoDorOD.accessibilityIdentifier = "Ombro"
+        botãoDesativadoDorOD.accessibilityIdentifier = "Ombro Direito"
         botãoDesativadoDorOD.tag = 0
 		botãoDesativadoDorOD.setBackgroundImage(imgBotãoDesativadoDor, for:.normal)
         botãoDesativadoDorOD.setBackgroundImage(imgAtivado, for:.selected)
@@ -144,8 +144,8 @@ class MeninoDorView : UIView, CAAnimationDelegate {
 		let botãoDesativadoDorJD__yScale = MeninoDorPassthroughView()
 		let botãoDesativadoDorJD = UIButton(type: .custom)
         
-        botãoDesativadoDorJD.accessibilityIdentifier = "Joelho"
-        botãoDesativadoDorJD.tag = 3
+        botãoDesativadoDorJD.accessibilityIdentifier = "Joelho Direito"
+        botãoDesativadoDorJD.tag = 1
 		botãoDesativadoDorJD.setBackgroundImage(imgBotãoDesativadoDor, for:.normal)
         botãoDesativadoDorJD.setBackgroundImage(imgAtivado, for:.selected)
 		botãoDesativadoDorJD.contentMode = .center
@@ -170,8 +170,8 @@ class MeninoDorView : UIView, CAAnimationDelegate {
 		let botãoDesativadoDorTD__yScale = MeninoDorPassthroughView()
 		let botãoDesativadoDorTD = UIButton(type: .custom)
         
-        botãoDesativadoDorTD.accessibilityIdentifier = "Tornozelo"
-        botãoDesativadoDorTD.tag = 4
+        botãoDesativadoDorTD.accessibilityIdentifier = "Tornozelo Direito"
+        botãoDesativadoDorTD.tag = 2
 		botãoDesativadoDorTD.setBackgroundImage(imgBotãoDesativadoDor, for:.normal)
         botãoDesativadoDorTD.setBackgroundImage(imgAtivado, for:.selected)
 		botãoDesativadoDorTD.contentMode = .center
@@ -196,8 +196,8 @@ class MeninoDorView : UIView, CAAnimationDelegate {
 		let botãoDesativadoDorTE__yScale = MeninoDorPassthroughView()
 		let botãoDesativadoDorTE = UIButton(type: .custom)
         
-        botãoDesativadoDorTE.accessibilityIdentifier = "Tornozelo"
-        botãoDesativadoDorTE.tag = 4
+        botãoDesativadoDorTE.accessibilityIdentifier = "Tornozelo Esquerdo"
+        botãoDesativadoDorTE.tag = 3
 		botãoDesativadoDorTE.setBackgroundImage(imgBotãoDesativadoDor, for:.normal)
         botãoDesativadoDorTE.setBackgroundImage(imgAtivado, for:.selected)
 		botãoDesativadoDorTE.contentMode = .center
@@ -222,8 +222,8 @@ class MeninoDorView : UIView, CAAnimationDelegate {
 		let botãoDesativadoDorJE__yScale = MeninoDorPassthroughView()
 		let botãoDesativadoDorJE = UIButton(type: .custom)
         
-        botãoDesativadoDorJE.accessibilityIdentifier = "Joelho"
-        botãoDesativadoDorJE.tag = 3
+        botãoDesativadoDorJE.accessibilityIdentifier = "Joelho Esquerdo"
+        botãoDesativadoDorJE.tag = 4
 		botãoDesativadoDorJE.setBackgroundImage(imgBotãoDesativadoDor, for:.normal)
         botãoDesativadoDorJE.setBackgroundImage(imgAtivado, for:.selected)
 		botãoDesativadoDorJE.contentMode = .center
@@ -248,8 +248,8 @@ class MeninoDorView : UIView, CAAnimationDelegate {
 		let botãoDesativadoDorQD__yScale = MeninoDorPassthroughView()
 		let botãoDesativadoDorQD = UIButton(type: .custom)
         
-        botãoDesativadoDorQD.accessibilityIdentifier = "Quadril"
-        botãoDesativadoDorQD.tag = 2
+        botãoDesativadoDorQD.accessibilityIdentifier = "Quadril Direito"
+        botãoDesativadoDorQD.tag = 5
 		botãoDesativadoDorQD.setBackgroundImage(imgBotãoDesativadoDor, for:.normal)
         botãoDesativadoDorQD.setBackgroundImage(imgAtivado, for:.selected)
 		botãoDesativadoDorQD.contentMode = .center
@@ -274,8 +274,8 @@ class MeninoDorView : UIView, CAAnimationDelegate {
 		let botãoDesativadoDorQE__yScale = MeninoDorPassthroughView()
 		let botãoDesativadoDorQE = UIButton(type: .custom)
         
-        botãoDesativadoDorQE.accessibilityIdentifier = "Quadril"
-        botãoDesativadoDorQE.tag = 2
+        botãoDesativadoDorQE.accessibilityIdentifier = "Quadril Esquerdo"
+        botãoDesativadoDorQE.tag = 6
 		botãoDesativadoDorQE.setBackgroundImage(imgBotãoDesativadoDor, for:.normal)
         botãoDesativadoDorQE.setBackgroundImage(imgAtivado, for:.selected)
 		botãoDesativadoDorQE.contentMode = .center
@@ -300,8 +300,8 @@ class MeninoDorView : UIView, CAAnimationDelegate {
 		let botãoDesativadoDorCD__yScale = MeninoDorPassthroughView()
 		let botãoDesativadoDorCD = UIButton(type: .custom)
         
-        botãoDesativadoDorCD.accessibilityIdentifier = "Cotovelo"
-        botãoDesativadoDorCD.tag = 1
+        botãoDesativadoDorCD.accessibilityIdentifier = "Cotovelo Direito"
+        botãoDesativadoDorCD.tag = 7
 		botãoDesativadoDorCD.setBackgroundImage(imgBotãoDesativadoDor, for:.normal)
         botãoDesativadoDorCD.setBackgroundImage(imgAtivado, for:.selected)
 		botãoDesativadoDorCD.contentMode = .center
@@ -326,8 +326,8 @@ class MeninoDorView : UIView, CAAnimationDelegate {
 		let botãoDesativadoDorCE__yScale = MeninoDorPassthroughView()
 		let botãoDesativadoDorCE = UIButton(type: .custom)
         
-        botãoDesativadoDorCE.accessibilityIdentifier = "Cotovelo"
-        botãoDesativadoDorCE.tag = 1
+        botãoDesativadoDorCE.accessibilityIdentifier = "Cotovelo Esquerdo"
+        botãoDesativadoDorCE.tag = 8
 		botãoDesativadoDorCE.setBackgroundImage(imgBotãoDesativadoDor, for:.normal)
         botãoDesativadoDorCE.setBackgroundImage(imgAtivado, for:.selected)
 		botãoDesativadoDorCE.contentMode = .center
@@ -352,8 +352,8 @@ class MeninoDorView : UIView, CAAnimationDelegate {
 		let botãoDesativadoDorOE__yScale = MeninoDorPassthroughView()
 		let botãoDesativadoDorOE = UIButton(type: .custom)
         
-        botãoDesativadoDorOE.accessibilityIdentifier = "Ombro"
-        botãoDesativadoDorOE.tag = 0
+        botãoDesativadoDorOE.accessibilityIdentifier = "Ombro Esquerdo"
+        botãoDesativadoDorOE.tag = 9
 		botãoDesativadoDorOE.setBackgroundImage(imgBotãoDesativadoDor, for:.normal)
         botãoDesativadoDorOE.setBackgroundImage(imgAtivado, for:.selected)
 		botãoDesativadoDorOE.contentMode = .center
@@ -477,42 +477,42 @@ class MeninoDorView : UIView, CAAnimationDelegate {
 //	}
 
     func actionBotãoDesativadoDorODPressed(botãoDesativadoDorOD: UIButton) {
-        meninoDorViewDelegate?.botãoDesativadoDor(botãoDesativado: botãoDesativadoDorOD)
+        meninoDorViewDelegate?.botãoDesativado(botãoDesativado: botãoDesativadoDorOD)
     }
     
     func actionBotãoDesativadoDorJDPressed(botãoDesativadoDorJD: UIButton) {
-        meninoDorViewDelegate?.botãoDesativadoDor(botãoDesativado: botãoDesativadoDorJD)
+        meninoDorViewDelegate?.botãoDesativado(botãoDesativado: botãoDesativadoDorJD)
     }
     
     func actionBotãoDesativadoDorTDPressed(botãoDesativadoDorTD: UIButton) {
-        meninoDorViewDelegate?.botãoDesativadoDor(botãoDesativado: botãoDesativadoDorTD)
+        meninoDorViewDelegate?.botãoDesativado(botãoDesativado: botãoDesativadoDorTD)
     }
     
     func actionBotãoDesativadoDorTEPressed(botãoDesativadoDorTE: UIButton) {
-        meninoDorViewDelegate?.botãoDesativadoDor(botãoDesativado: botãoDesativadoDorTE)
+        meninoDorViewDelegate?.botãoDesativado(botãoDesativado: botãoDesativadoDorTE)
     }
     
     func actionBotãoDesativadoDorJEPressed(botãoDesativadoDorJE: UIButton) {
-        meninoDorViewDelegate?.botãoDesativadoDor(botãoDesativado: botãoDesativadoDorJE)
+        meninoDorViewDelegate?.botãoDesativado(botãoDesativado: botãoDesativadoDorJE)
     }
     
     func actionBotãoDesativadoDorQDPressed(botãoDesativadoDorQD: UIButton) {
-        meninoDorViewDelegate?.botãoDesativadoDor(botãoDesativado: botãoDesativadoDorQD)
+        meninoDorViewDelegate?.botãoDesativado(botãoDesativado: botãoDesativadoDorQD)
     }
     
     func actionBotãoDesativadoDorQEPressed(botãoDesativadoDorQE: UIButton) {
-        meninoDorViewDelegate?.botãoDesativadoDor(botãoDesativado: botãoDesativadoDorQE)
+        meninoDorViewDelegate?.botãoDesativado(botãoDesativado: botãoDesativadoDorQE)
     }
     
     func actionBotãoDesativadoDorCDPressed(botãoDesativadoDorCD: UIButton) {
-        meninoDorViewDelegate?.botãoDesativadoDor(botãoDesativado: botãoDesativadoDorCD)
+        meninoDorViewDelegate?.botãoDesativado(botãoDesativado: botãoDesativadoDorCD)
     }
     
     func actionBotãoDesativadoDorCEPressed(botãoDesativadoDorCE: UIButton) {
-        meninoDorViewDelegate?.botãoDesativadoDor(botãoDesativado: botãoDesativadoDorCE)
+        meninoDorViewDelegate?.botãoDesativado(botãoDesativado: botãoDesativadoDorCE)
     }
     
     func actionBotãoDesativadoDorOEPressed(botãoDesativadoDorOE: UIButton) {
-        meninoDorViewDelegate?.botãoDesativadoDor(botãoDesativado: botãoDesativadoDorOE)
+        meninoDorViewDelegate?.botãoDesativado(botãoDesativado: botãoDesativadoDorOE)
     }
 }

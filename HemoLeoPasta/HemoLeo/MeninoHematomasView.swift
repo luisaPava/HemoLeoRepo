@@ -8,20 +8,7 @@
 import UIKit
 
 protocol MeninoHematomasViewDelegate: class {
-	func botãoDesativadoHematomaPressed(botãoDesativadoHematoma: UIButton)
-//	func botãoDesativadoHematomaCEPressed(botãoDesativadoHematomaCE: UIButton)
-//	func botãoDesativadoHematomaJDPressed(botãoDesativadoHematomaJD: UIButton)
-//	func botãoDesativadoHematomaAEPressed(botãoDesativadoHematomaAE: UIButton)
-//	func botãoDesativadoHematomaDDPressed(botãoDesativadoHematomaDD: UIButton)
-//	func botãoDesativadoHematomaCDPressed(botãoDesativadoHematomaCD: UIButton)
-//	func botãoDesativadoHematomaTEPressed(botãoDesativadoHematomaTE: UIButton)
-//	func botãoDesativadoHematomaADPressed(botãoDesativadoHematomaAD: UIButton)
-//	func botãoDesativadoHematomaCTEPressed(botãoDesativadoHematomaCTE: UIButton)
-//	func botãoDesativadoHematomaPEPressed(botãoDesativadoHematomaPE: UIButton)
-//	func botãoDesativadoHematomaTDPressed(botãoDesativadoHematomaTD: UIButton)
-//	func botãoDesativadoHematomaJEPressed(botãoDesativadoHematomaJE: UIButton)
-//	func botãoDesativadoHematomaPDPressed(botãoDesativadoHematomaPD: UIButton)
-//	func botãoDesativadoHematomaCTDPressed(botãoDesativadoHematomaCTD: UIButton)
+	func botãoDesativado(botãoDesativado: UIButton)
 }
 
 private class MeninoHematomasPassthroughView: UIView {
@@ -128,7 +115,11 @@ class MeninoHematomasView : UIView, CAAnimationDelegate {
 		if imgBotãoDesativadoHematoma == nil {
 			print("** Warning: Could not create image from 'BotãoDesativadoHematoma.png'")
 		}
+        
+        botãoDesativadoHematomaAE.accessibilityIdentifier = "Ante-braço Esquerdo"
+        botãoDesativadoHematomaAE.tag = 0
 		botãoDesativadoHematomaAE.setBackgroundImage(imgBotãoDesativadoHematoma, for:.normal)
+        botãoDesativadoHematomaAE.setBackgroundImage(imgAtivado, for:.selected)
 		botãoDesativadoHematomaAE.contentMode = .center
 		botãoDesativadoHematomaAE.bounds = CGRect(x:0, y:0, width:44.0, height:44.0)
 		botãoDesativadoHematomaAE__root.layer.position = CGPoint(x:127.662, y:358.316)
@@ -150,7 +141,11 @@ class MeninoHematomasView : UIView, CAAnimationDelegate {
 		let botãoDesativadoHematomaDE__xScale = MeninoHematomasPassthroughView()
 		let botãoDesativadoHematomaDE__yScale = MeninoHematomasPassthroughView()
 		let botãoDesativadoHematomaDE = UIButton(type: .custom)
+        
+        botãoDesativadoHematomaDE.accessibilityIdentifier = "Deltóide Esquerdo"
+        botãoDesativadoHematomaDE.tag = 1
 		botãoDesativadoHematomaDE.setBackgroundImage(imgBotãoDesativadoHematoma, for:.normal)
+        botãoDesativadoHematomaDE.setBackgroundImage(imgAtivado, for:.selected)
 		botãoDesativadoHematomaDE.contentMode = .center
 		botãoDesativadoHematomaDE.bounds = CGRect(x:0, y:0, width:44.0, height:44.0)
 		botãoDesativadoHematomaDE__root.layer.position = CGPoint(x:162.090, y:175.371)
@@ -172,7 +167,11 @@ class MeninoHematomasView : UIView, CAAnimationDelegate {
 		let botãoDesativadoHematomaCTD__xScale = MeninoHematomasPassthroughView()
 		let botãoDesativadoHematomaCTD__yScale = MeninoHematomasPassthroughView()
 		let botãoDesativadoHematomaCTD = UIButton(type: .custom)
+        
+        botãoDesativadoHematomaCTD.accessibilityIdentifier = "Cotovelo Direito"
+        botãoDesativadoHematomaCTD.tag = 2
 		botãoDesativadoHematomaCTD.setBackgroundImage(imgBotãoDesativadoHematoma, for:.normal)
+        botãoDesativadoHematomaCTD.setBackgroundImage(imgAtivado, for:.selected)
 		botãoDesativadoHematomaCTD.contentMode = .center
 		botãoDesativadoHematomaCTD.bounds = CGRect(x:0, y:0, width:44.0, height:44.0)
 		botãoDesativadoHematomaCTD__root.layer.position = CGPoint(x:280.318, y:305.000)
@@ -194,7 +193,11 @@ class MeninoHematomasView : UIView, CAAnimationDelegate {
 		let botãoDesativadoHematomaCTE__xScale = MeninoHematomasPassthroughView()
 		let botãoDesativadoHematomaCTE__yScale = MeninoHematomasPassthroughView()
 		let botãoDesativadoHematomaCTE = UIButton(type: .custom)
+        
+        botãoDesativadoHematomaCTE.accessibilityIdentifier = "Cotovelo Esquerdo"
+        botãoDesativadoHematomaCTE.tag = 3
 		botãoDesativadoHematomaCTE.setBackgroundImage(imgBotãoDesativadoHematoma, for:.normal)
+        botãoDesativadoHematomaCTE.setBackgroundImage(imgAtivado, for:.selected)
 		botãoDesativadoHematomaCTE.contentMode = .center
 		botãoDesativadoHematomaCTE.bounds = CGRect(x:0, y:0, width:44.0, height:44.0)
 		botãoDesativadoHematomaCTE__root.layer.position = CGPoint(x:131.077, y:305.066)
@@ -216,7 +219,11 @@ class MeninoHematomasView : UIView, CAAnimationDelegate {
 		let botãoDesativadoHematomaAD__xScale = MeninoHematomasPassthroughView()
 		let botãoDesativadoHematomaAD__yScale = MeninoHematomasPassthroughView()
 		let botãoDesativadoHematomaAD = UIButton(type: .custom)
+        
+        botãoDesativadoHematomaAD.accessibilityIdentifier = "Ante-braço Direito"
+        botãoDesativadoHematomaAD.tag = 4
 		botãoDesativadoHematomaAD.setBackgroundImage(imgBotãoDesativadoHematoma, for:.normal)
+        botãoDesativadoHematomaAD.setBackgroundImage(imgAtivado, for:.selected)
 		botãoDesativadoHematomaAD.contentMode = .center
 		botãoDesativadoHematomaAD.bounds = CGRect(x:0, y:0, width:44.0, height:44.0)
 		botãoDesativadoHematomaAD__root.layer.position = CGPoint(x:287.094, y:358.000)
@@ -238,7 +245,11 @@ class MeninoHematomasView : UIView, CAAnimationDelegate {
 		let botãoDesativadoHematomaCE__xScale = MeninoHematomasPassthroughView()
 		let botãoDesativadoHematomaCE__yScale = MeninoHematomasPassthroughView()
 		let botãoDesativadoHematomaCE = UIButton(type: .custom)
+        
+        botãoDesativadoHematomaCE.accessibilityIdentifier = "Coxa Esquerda"
+        botãoDesativadoHematomaCE.tag = 5
 		botãoDesativadoHematomaCE.setBackgroundImage(imgBotãoDesativadoHematoma, for:.normal)
+        botãoDesativadoHematomaCE.setBackgroundImage(imgAtivado, for:.selected)
 		botãoDesativadoHematomaCE.contentMode = .center
 		botãoDesativadoHematomaCE.bounds = CGRect(x:0, y:0, width:44.0, height:44.0)
 		botãoDesativadoHematomaCE__root.layer.position = CGPoint(x:172.538, y:480.000)
@@ -260,7 +271,11 @@ class MeninoHematomasView : UIView, CAAnimationDelegate {
 		let botãoDesativadoHematomaJE__xScale = MeninoHematomasPassthroughView()
 		let botãoDesativadoHematomaJE__yScale = MeninoHematomasPassthroughView()
 		let botãoDesativadoHematomaJE = UIButton(type: .custom)
+        
+        botãoDesativadoHematomaJE.accessibilityIdentifier = "Joelho Esquerdo"
+        botãoDesativadoHematomaJE.tag = 6
 		botãoDesativadoHematomaJE.setBackgroundImage(imgBotãoDesativadoHematoma, for:.normal)
+        botãoDesativadoHematomaJE.setBackgroundImage(imgAtivado, for:.selected)
 		botãoDesativadoHematomaJE.contentMode = .center
 		botãoDesativadoHematomaJE.bounds = CGRect(x:0, y:0, width:44.0, height:44.0)
 		botãoDesativadoHematomaJE__root.layer.position = CGPoint(x:171.522, y:536.459)
@@ -282,7 +297,11 @@ class MeninoHematomasView : UIView, CAAnimationDelegate {
 		let botãoDesativadoHematomaCD__xScale = MeninoHematomasPassthroughView()
 		let botãoDesativadoHematomaCD__yScale = MeninoHematomasPassthroughView()
 		let botãoDesativadoHematomaCD = UIButton(type: .custom)
+        
+        botãoDesativadoHematomaCD.accessibilityIdentifier = "Coxa Esquerda"
+        botãoDesativadoHematomaCD.tag = 7
 		botãoDesativadoHematomaCD.setBackgroundImage(imgBotãoDesativadoHematoma, for:.normal)
+        botãoDesativadoHematomaCD.setBackgroundImage(imgAtivado, for:.selected)
 		botãoDesativadoHematomaCD.contentMode = .center
 		botãoDesativadoHematomaCD.bounds = CGRect(x:0, y:0, width:44.0, height:44.0)
 		botãoDesativadoHematomaCD__root.layer.position = CGPoint(x:240.375, y:480.000)
@@ -304,7 +323,11 @@ class MeninoHematomasView : UIView, CAAnimationDelegate {
 		let botãoDesativadoHematomaJD__xScale = MeninoHematomasPassthroughView()
 		let botãoDesativadoHematomaJD__yScale = MeninoHematomasPassthroughView()
 		let botãoDesativadoHematomaJD = UIButton(type: .custom)
+        
+        botãoDesativadoHematomaJD.accessibilityIdentifier = "Joelho Direito"
+        botãoDesativadoHematomaJD.tag = 8
 		botãoDesativadoHematomaJD.setBackgroundImage(imgBotãoDesativadoHematoma, for:.normal)
+        botãoDesativadoHematomaJD.setBackgroundImage(imgAtivado, for:.selected)
 		botãoDesativadoHematomaJD.contentMode = .center
 		botãoDesativadoHematomaJD.bounds = CGRect(x:0, y:0, width:44.0, height:44.0)
 		botãoDesativadoHematomaJD__root.layer.position = CGPoint(x:242.569, y:536.000)
@@ -326,7 +349,11 @@ class MeninoHematomasView : UIView, CAAnimationDelegate {
 		let botãoDesativadoHematomaPE__xScale = MeninoHematomasPassthroughView()
 		let botãoDesativadoHematomaPE__yScale = MeninoHematomasPassthroughView()
 		let botãoDesativadoHematomaPE = UIButton(type: .custom)
+        
+        botãoDesativadoHematomaPE.accessibilityIdentifier = "Panturrilha Esquerda"
+        botãoDesativadoHematomaPE.tag = 9
 		botãoDesativadoHematomaPE.setBackgroundImage(imgBotãoDesativadoHematoma, for:.normal)
+        botãoDesativadoHematomaPE.setBackgroundImage(imgAtivado, for:.selected)
 		botãoDesativadoHematomaPE.contentMode = .center
 		botãoDesativadoHematomaPE.bounds = CGRect(x:0, y:0, width:44.0, height:44.0)
 		botãoDesativadoHematomaPE__root.layer.position = CGPoint(x:150.231, y:600.000)
@@ -348,7 +375,11 @@ class MeninoHematomasView : UIView, CAAnimationDelegate {
 		let botãoDesativadoHematomaTE__xScale = MeninoHematomasPassthroughView()
 		let botãoDesativadoHematomaTE__yScale = MeninoHematomasPassthroughView()
 		let botãoDesativadoHematomaTE = UIButton(type: .custom)
+        
+        botãoDesativadoHematomaTE.accessibilityIdentifier = "Tornozelo Esquerdo"
+        botãoDesativadoHematomaTE.tag = 10
 		botãoDesativadoHematomaTE.setBackgroundImage(imgBotãoDesativadoHematoma, for:.normal)
+        botãoDesativadoHematomaTE.setBackgroundImage(imgAtivado, for:.selected)
 		botãoDesativadoHematomaTE.contentMode = .center
 		botãoDesativadoHematomaTE.bounds = CGRect(x:0, y:0, width:44.0, height:44.0)
 		botãoDesativadoHematomaTE__root.layer.position = CGPoint(x:171.012, y:669.078)
@@ -370,7 +401,11 @@ class MeninoHematomasView : UIView, CAAnimationDelegate {
 		let botãoDesativadoHematomaTD__xScale = MeninoHematomasPassthroughView()
 		let botãoDesativadoHematomaTD__yScale = MeninoHematomasPassthroughView()
 		let botãoDesativadoHematomaTD = UIButton(type: .custom)
+        
+        botãoDesativadoHematomaTD.accessibilityIdentifier = "Tornozelo Direito"
+        botãoDesativadoHematomaTD.tag = 11
 		botãoDesativadoHematomaTD.setBackgroundImage(imgBotãoDesativadoHematoma, for:.normal)
+        botãoDesativadoHematomaTD.setBackgroundImage(imgAtivado, for:.selected)
 		botãoDesativadoHematomaTD.contentMode = .center
 		botãoDesativadoHematomaTD.bounds = CGRect(x:0, y:0, width:44.0, height:44.0)
 		botãoDesativadoHematomaTD__root.layer.position = CGPoint(x:244.025, y:669.000)
@@ -392,7 +427,11 @@ class MeninoHematomasView : UIView, CAAnimationDelegate {
 		let botãoDesativadoHematomaPD__xScale = MeninoHematomasPassthroughView()
 		let botãoDesativadoHematomaPD__yScale = MeninoHematomasPassthroughView()
 		let botãoDesativadoHematomaPD = UIButton(type: .custom)
+        
+        botãoDesativadoHematomaPD.accessibilityIdentifier = "Panturrilha Direita"
+        botãoDesativadoHematomaPD.tag = 12
 		botãoDesativadoHematomaPD.setBackgroundImage(imgBotãoDesativadoHematoma, for:.normal)
+        botãoDesativadoHematomaPD.setBackgroundImage(imgAtivado, for:.selected)
 		botãoDesativadoHematomaPD.contentMode = .center
 		botãoDesativadoHematomaPD.bounds = CGRect(x:0, y:0, width:44.0, height:44.0)
 		botãoDesativadoHematomaPD__root.layer.position = CGPoint(x:264.966, y:600.000)
@@ -414,7 +453,11 @@ class MeninoHematomasView : UIView, CAAnimationDelegate {
 		let botãoDesativadoHematomaDD__xScale = MeninoHematomasPassthroughView()
 		let botãoDesativadoHematomaDD__yScale = MeninoHematomasPassthroughView()
 		let botãoDesativadoHematomaDD = UIButton(type: .custom)
+        
+        botãoDesativadoHematomaDD.accessibilityIdentifier = "Deltóide Direito"
+        botãoDesativadoHematomaDD.tag = 13
 		botãoDesativadoHematomaDD.setBackgroundImage(imgBotãoDesativadoHematoma, for:.normal)
+        botãoDesativadoHematomaDD.setBackgroundImage(imgAtivado, for:.selected)
 		botãoDesativadoHematomaDD.contentMode = .center
 		botãoDesativadoHematomaDD.bounds = CGRect(x:0, y:0, width:44.0, height:44.0)
 		botãoDesativadoHematomaDD__root.layer.position = CGPoint(x:256.656, y:176.504)
@@ -436,58 +479,58 @@ class MeninoHematomasView : UIView, CAAnimationDelegate {
 	}
 
 	func actionBotãoDesativadoHematomaAEPressed(botãoDesativadoHematomaAE: UIButton) {
-		meninoHematomasViewDelegate?.botãoDesativadoHematomaPressed(botãoDesativadoHematoma: botãoDesativadoHematomaAE)
+		meninoHematomasViewDelegate?.botãoDesativado(botãoDesativado: botãoDesativadoHematomaAE)
 	}
 
 	func actionBotãoDesativadoHematomaDEPressed(botãoDesativadoHematomaDE: UIButton) {
-		meninoHematomasViewDelegate?.botãoDesativadoHematomaPressed(botãoDesativadoHematoma: botãoDesativadoHematomaDE)
+		meninoHematomasViewDelegate?.botãoDesativado(botãoDesativado: botãoDesativadoHematomaDE)
 	}
 
 	func actionBotãoDesativadoHematomaCTDPressed(botãoDesativadoHematomaCTD: UIButton) {
-		meninoHematomasViewDelegate?.botãoDesativadoHematomaPressed(botãoDesativadoHematoma: botãoDesativadoHematomaCTD)
+		meninoHematomasViewDelegate?.botãoDesativado(botãoDesativado: botãoDesativadoHematomaCTD)
 	}
 
 	func actionBotãoDesativadoHematomaCTEPressed(botãoDesativadoHematomaCTE: UIButton) {
-		meninoHematomasViewDelegate?.botãoDesativadoHematomaPressed(botãoDesativadoHematoma: botãoDesativadoHematomaCTE)
+		meninoHematomasViewDelegate?.botãoDesativado(botãoDesativado: botãoDesativadoHematomaCTE)
 	}
 
 	func actionBotãoDesativadoHematomaADPressed(botãoDesativadoHematomaAD: UIButton) {
-		meninoHematomasViewDelegate?.botãoDesativadoHematomaPressed(botãoDesativadoHematoma: botãoDesativadoHematomaAD)
+		meninoHematomasViewDelegate?.botãoDesativado(botãoDesativado: botãoDesativadoHematomaAD)
 	}
 
 	func actionBotãoDesativadoHematomaCEPressed(botãoDesativadoHematomaCE: UIButton) {
-		meninoHematomasViewDelegate?.botãoDesativadoHematomaPressed(botãoDesativadoHematoma: botãoDesativadoHematomaCE)
+		meninoHematomasViewDelegate?.botãoDesativado(botãoDesativado: botãoDesativadoHematomaCE)
 	}
 
 	func actionBotãoDesativadoHematomaJEPressed(botãoDesativadoHematomaJE: UIButton) {
-		meninoHematomasViewDelegate?.botãoDesativadoHematomaPressed(botãoDesativadoHematoma: botãoDesativadoHematomaJE)
+		meninoHematomasViewDelegate?.botãoDesativado(botãoDesativado: botãoDesativadoHematomaJE)
 	}
 
 	func actionBotãoDesativadoHematomaCDPressed(botãoDesativadoHematomaCD: UIButton) {
-		meninoHematomasViewDelegate?.botãoDesativadoHematomaPressed(botãoDesativadoHematoma: botãoDesativadoHematomaCD)
+		meninoHematomasViewDelegate?.botãoDesativado(botãoDesativado: botãoDesativadoHematomaCD)
 	}
 
 	func actionBotãoDesativadoHematomaJDPressed(botãoDesativadoHematomaJD: UIButton) {
-		meninoHematomasViewDelegate?.botãoDesativadoHematomaPressed(botãoDesativadoHematoma: botãoDesativadoHematomaJD)
+		meninoHematomasViewDelegate?.botãoDesativado(botãoDesativado: botãoDesativadoHematomaJD)
 	}
 
 	func actionBotãoDesativadoHematomaPEPressed(botãoDesativadoHematomaPE: UIButton) {
-		meninoHematomasViewDelegate?.botãoDesativadoHematomaPressed(botãoDesativadoHematoma: botãoDesativadoHematomaPE)
+		meninoHematomasViewDelegate?.botãoDesativado(botãoDesativado: botãoDesativadoHematomaPE)
 	}
 
 	func actionBotãoDesativadoHematomaTEPressed(botãoDesativadoHematomaTE: UIButton) {
-		meninoHematomasViewDelegate?.botãoDesativadoHematomaPressed(botãoDesativadoHematoma: botãoDesativadoHematomaTE)
+		meninoHematomasViewDelegate?.botãoDesativado(botãoDesativado: botãoDesativadoHematomaTE)
 	}
 
 	func actionBotãoDesativadoHematomaTDPressed(botãoDesativadoHematomaTD: UIButton) {
-		meninoHematomasViewDelegate?.botãoDesativadoHematomaPressed(botãoDesativadoHematoma: botãoDesativadoHematomaTD)
+		meninoHematomasViewDelegate?.botãoDesativado(botãoDesativado: botãoDesativadoHematomaTD)
 	}
 
 	func actionBotãoDesativadoHematomaPDPressed(botãoDesativadoHematomaPD: UIButton) {
-		meninoHematomasViewDelegate?.botãoDesativadoHematomaPressed(botãoDesativadoHematoma: botãoDesativadoHematomaPD)
+		meninoHematomasViewDelegate?.botãoDesativado(botãoDesativado: botãoDesativadoHematomaPD)
 	}
 
 	func actionBotãoDesativadoHematomaDDPressed(botãoDesativadoHematomaDD: UIButton) {
-		meninoHematomasViewDelegate?.botãoDesativadoHematomaPressed(botãoDesativadoHematoma: botãoDesativadoHematomaDD)
+		meninoHematomasViewDelegate?.botãoDesativado(botãoDesativado: botãoDesativadoHematomaDD)
 	}
 }

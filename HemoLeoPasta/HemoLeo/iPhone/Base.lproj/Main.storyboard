@@ -565,16 +565,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O7y-1V-ZV6" customClass="MeninoSangramentoView" customModule="iPhone" customModuleProvider="target">
-                                <rect key="frame" x="16" y="40" width="288" height="414.5"/>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O7y-1V-ZV6" customClass="MeninoSangramentoView" customModule="iPhone" customModuleProvider="target">
+                                <rect key="frame" x="16" y="40" width="288" height="415"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fV8-Cn-llU" customClass="MeninoHematomasView" customModule="iPhone" customModuleProvider="target">
-                                <rect key="frame" x="16" y="40" width="288" height="414.5"/>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fV8-Cn-llU" customClass="MeninoHematomasView" customModule="iPhone" customModuleProvider="target">
+                                <rect key="frame" x="16" y="40" width="288" height="415"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="nzq-aQ-Zdw" customClass="MeninoDorView" customModule="iPhone" customModuleProvider="target">
-                                <rect key="frame" x="16" y="40" width="288" height="414.5"/>
+                            <view hidden="YES" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="nzq-aQ-Zdw" customClass="MeninoDorView" customModule="iPhone" customModuleProvider="target">
+                                <rect key="frame" x="16" y="40" width="288" height="415"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RqA-Nd-Bxe">
@@ -604,6 +604,8 @@
                     </view>
                     <connections>
                         <outlet property="viewMenino" destination="nzq-aQ-Zdw" id="RUg-yI-CMZ"/>
+                        <outlet property="viewMeninoHematoma" destination="fV8-Cn-llU" id="jfD-Kt-TL7"/>
+                        <outlet property="viewMeninoSangramento" destination="O7y-1V-ZV6" id="XPf-xz-Xae"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m9j-En-Uak" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -834,7 +836,7 @@
                                         <rect key="frame" x="0.0" y="28" width="252" height="39"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Aus-fB-k0x" id="GSI-qE-kWG">
-                                            <rect key="frame" x="0.0" y="0.0" width="252" height="38.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="252" height="38"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6o-OT-7Mh">
@@ -992,7 +994,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" reuseIdentifier="userCell" id="TFC-Pd-Btq" customClass="UserCollectionViewCell" customModule="iPhone" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="7.5" width="223" height="326"/>
+                                        <rect key="frame" x="0.0" y="8" width="223" height="326"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="223" height="326"/>

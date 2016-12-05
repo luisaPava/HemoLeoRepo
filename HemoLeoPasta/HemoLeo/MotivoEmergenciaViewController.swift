@@ -66,37 +66,40 @@ class MotivoEmergenciaViewController: UIViewController {
     }
     
     @IBAction func salvarAction(_ sender: UIButton) {
-        print("Ola")
         if !textViewMotivo.text.isEmpty {
             calendarDAO.append(newEvent: textViewMotivo.text, withType: .Emergencial)
+            let assessment = assessmentManager!.activityWithType(type: activityType!)
+            let result = assessment?.buildResultForCarePlanEvent(event: event, taskResult: textViewMotivo.text)
+            symptomTrackerModel.completeEvent(event: event, withResult: result!)
+            
         } else {
             mensagem(titulo: "Atenção", desc: "Escreva o motivo da aplicação", view: self)
         }
     }
 }
 
-//extension MotivoEmergenciaViewController: UITextViewDelegate {
-//    func textViewDidBeginEditing(_ textView: UITextView) {
-//        animateViewMoving(true, moveValue: 250)
-//    }
-//    
-//    func textViewDidEndEditing(_ textView: UITextView) {
-//        animateViewMoving(false, moveValue: 250)
-//        
-//        
-//    }
-//    
-//    func animateViewMoving(_ up:Bool, moveValue :CGFloat){
-//        let movementDuration:TimeInterval = 0.3
-//        let movement:CGFloat = ( up ? -moveValue : moveValue)
-//        UIView.beginAnimations("animateView", context: nil)
-//        UIView.setAnimationBeginsFromCurrentState(true)
-//        UIView.setAnimationDuration(movementDuration )
-//        self.view.frame = self.view.frame.offsetBy(dx: 0,  dy: movement)
-//        UIView.commitAnimations()
-//    }
-//    
-//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        self.view.endEditing(true)
-//    }
-//}
+extension MotivoEmergenciaViewController: UITextViewDelegate {
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        animateViewMoving(true, moveValue: 250)
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        animateViewMoving(false, moveValue: 250)
+        
+        
+    }
+    
+    func animateViewMoving(_ up:Bool, moveValue :CGFloat){
+        let movementDuration:TimeInterval = 0.3
+        let movement:CGFloat = ( up ? -moveValue : moveValue)
+        UIView.beginAnimations("animateView", context: nil)
+        UIView.setAnimationBeginsFromCurrentState(true)
+        UIView.setAnimationDuration(movementDuration )
+        self.view.frame = self.view.frame.offsetBy(dx: 0,  dy: movement)
+        UIView.commitAnimations()
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+}

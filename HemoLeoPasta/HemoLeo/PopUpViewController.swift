@@ -52,7 +52,7 @@ class PopUpViewController: UIViewController, PopupContentViewController {
     
     @IBAction func sliderChanged(_ sender: G8SliderStep) {
         PopUpViewController.sliderValue = Int(sender.value)
-        labelNivel.text = String(sender.value.roundTof)
+        labelNivel.text = "\(Int(sender.value))"
     }
     
     //Dismiss method

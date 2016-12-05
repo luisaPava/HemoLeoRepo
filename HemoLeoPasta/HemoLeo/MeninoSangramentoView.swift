@@ -8,14 +8,7 @@
 import UIKit
 
 protocol MeninoSangramentoViewDelegate: class {
-	func botãoDesativadoSangramentoDEPressed(botãoDesativadoSangramentoDE: UIButton)
-	func botãoDesativadoSangramentoCDPressed(botãoDesativadoSangramentoCD: UIButton)
-	func botãoDesativadoSangramentoPDPressed(botãoDesativadoSangramentoPD: UIButton)
-	func botãoDesativadoSangramentoAEPressed(botãoDesativadoSangramentoAE: UIButton)
-	func botãoDesativadoSangramentoADPressed(botãoDesativadoSangramentoAD: UIButton)
-	func botãoDesativadoSangramentoDDPressed(botãoDesativadoSangramentoDD: UIButton)
-	func botãoDesativadoSangramentoCEPressed(botãoDesativadoSangramentoCE: UIButton)
-	func botãoDesativadoSangramentoPEPressed(botãoDesativadoSangramentoPE: UIButton)
+	func botãoDesativado(botãoDesativado: UIButton)
 }
 
 private class MeninoSangramentoPassthroughView: UIView {
@@ -117,10 +110,16 @@ class MeninoSangramentoView : UIView, CAAnimationDelegate {
 		let botãoDesativadoSangramentoDE__yScale = MeninoSangramentoPassthroughView()
 		let botãoDesativadoSangramentoDE = UIButton(type: .custom)
 		let imgBotãoDesativadoSangramento = UIImage(named:"BotãoDesativadoSangramento.png", in: bundle, compatibleWith: nil)
+        let imgAtivado = #imageLiteral(resourceName: "BotãoAtivoSangramento")
+        
 		if imgBotãoDesativadoSangramento == nil {
 			print("** Warning: Could not create image from 'BotãoDesativadoSangramento.png'")
 		}
+        
+        botãoDesativadoSangramentoDE.accessibilityIdentifier = "Deltóide Esquerdo"
+        botãoDesativadoSangramentoDE.tag = 0
 		botãoDesativadoSangramentoDE.setBackgroundImage(imgBotãoDesativadoSangramento, for:.normal)
+        botãoDesativadoSangramentoDE.setBackgroundImage(imgAtivado, for:.selected)
 		botãoDesativadoSangramentoDE.contentMode = .center
 		botãoDesativadoSangramentoDE.bounds = CGRect(x:0, y:0, width:44.0, height:44.0)
 		botãoDesativadoSangramentoDE__root.layer.position = CGPoint(x:161.727, y:175.727)
@@ -142,7 +141,11 @@ class MeninoSangramentoView : UIView, CAAnimationDelegate {
 		let botãoDesativadoSangramentoAE__xScale = MeninoSangramentoPassthroughView()
 		let botãoDesativadoSangramentoAE__yScale = MeninoSangramentoPassthroughView()
 		let botãoDesativadoSangramentoAE = UIButton(type: .custom)
+        
+        botãoDesativadoSangramentoAE.accessibilityIdentifier = "Ante-braço Esquerdo"
+        botãoDesativadoSangramentoAE.tag = 1
 		botãoDesativadoSangramentoAE.setBackgroundImage(imgBotãoDesativadoSangramento, for:.normal)
+        botãoDesativadoSangramentoAE.setBackgroundImage(imgAtivado, for:.selected)
 		botãoDesativadoSangramentoAE.contentMode = .center
 		botãoDesativadoSangramentoAE.bounds = CGRect(x:0, y:0, width:44.0, height:44.0)
 		botãoDesativadoSangramentoAE__root.layer.position = CGPoint(x:127.964, y:346.000)
@@ -164,7 +167,11 @@ class MeninoSangramentoView : UIView, CAAnimationDelegate {
 		let botãoDesativadoSangramentoCE__xScale = MeninoSangramentoPassthroughView()
 		let botãoDesativadoSangramentoCE__yScale = MeninoSangramentoPassthroughView()
 		let botãoDesativadoSangramentoCE = UIButton(type: .custom)
+        
+        botãoDesativadoSangramentoCE.accessibilityIdentifier = "Coxa Esquerda"
+        botãoDesativadoSangramentoCE.tag = 2
 		botãoDesativadoSangramentoCE.setBackgroundImage(imgBotãoDesativadoSangramento, for:.normal)
+        botãoDesativadoSangramentoCE.setBackgroundImage(imgAtivado, for:.selected)
 		botãoDesativadoSangramentoCE.contentMode = .center
 		botãoDesativadoSangramentoCE.bounds = CGRect(x:0, y:0, width:44.0, height:44.0)
 		botãoDesativadoSangramentoCE__root.layer.position = CGPoint(x:172.901, y:478.456)
@@ -186,7 +193,11 @@ class MeninoSangramentoView : UIView, CAAnimationDelegate {
 		let botãoDesativadoSangramentoCD__xScale = MeninoSangramentoPassthroughView()
 		let botãoDesativadoSangramentoCD__yScale = MeninoSangramentoPassthroughView()
 		let botãoDesativadoSangramentoCD = UIButton(type: .custom)
+        
+        botãoDesativadoSangramentoCD.accessibilityIdentifier = "Coxa Direita"
+        botãoDesativadoSangramentoCD.tag = 3
 		botãoDesativadoSangramentoCD.setBackgroundImage(imgBotãoDesativadoSangramento, for:.normal)
+        botãoDesativadoSangramentoCD.setBackgroundImage(imgAtivado, for:.selected)
 		botãoDesativadoSangramentoCD.contentMode = .center
 		botãoDesativadoSangramentoCD.bounds = CGRect(x:0, y:0, width:44.0, height:44.0)
 		botãoDesativadoSangramentoCD__root.layer.position = CGPoint(x:240.193, y:478.456)
@@ -208,7 +219,11 @@ class MeninoSangramentoView : UIView, CAAnimationDelegate {
 		let botãoDesativadoSangramentoPD__xScale = MeninoSangramentoPassthroughView()
 		let botãoDesativadoSangramentoPD__yScale = MeninoSangramentoPassthroughView()
 		let botãoDesativadoSangramentoPD = UIButton(type: .custom)
+        
+        botãoDesativadoSangramentoPD.accessibilityIdentifier = "Panturrilha Direita"
+        botãoDesativadoSangramentoPD.tag = 4
 		botãoDesativadoSangramentoPD.setBackgroundImage(imgBotãoDesativadoSangramento, for:.normal)
+        botãoDesativadoSangramentoPD.setBackgroundImage(imgAtivado, for:.selected)
 		botãoDesativadoSangramentoPD.contentMode = .center
 		botãoDesativadoSangramentoPD.bounds = CGRect(x:0, y:0, width:44.0, height:44.0)
 		botãoDesativadoSangramentoPD__root.layer.position = CGPoint(x:265.000, y:585.708)
@@ -230,7 +245,11 @@ class MeninoSangramentoView : UIView, CAAnimationDelegate {
 		let botãoDesativadoSangramentoPE__xScale = MeninoSangramentoPassthroughView()
 		let botãoDesativadoSangramentoPE__yScale = MeninoSangramentoPassthroughView()
 		let botãoDesativadoSangramentoPE = UIButton(type: .custom)
+        
+        botãoDesativadoSangramentoPE.accessibilityIdentifier = "Panturrilha Esquerda"
+        botãoDesativadoSangramentoPE.tag = 5
 		botãoDesativadoSangramentoPE.setBackgroundImage(imgBotãoDesativadoSangramento, for:.normal)
+        botãoDesativadoSangramentoPE.setBackgroundImage(imgAtivado, for:.selected)
 		botãoDesativadoSangramentoPE.contentMode = .center
 		botãoDesativadoSangramentoPE.bounds = CGRect(x:0, y:0, width:44.0, height:44.0)
 		botãoDesativadoSangramentoPE__root.layer.position = CGPoint(x:147.880, y:585.497)
@@ -252,7 +271,11 @@ class MeninoSangramentoView : UIView, CAAnimationDelegate {
 		let botãoDesativadoSangramentoAD__xScale = MeninoSangramentoPassthroughView()
 		let botãoDesativadoSangramentoAD__yScale = MeninoSangramentoPassthroughView()
 		let botãoDesativadoSangramentoAD = UIButton(type: .custom)
+        
+        botãoDesativadoSangramentoAD.accessibilityIdentifier = "Ante-braço Direito"
+        botãoDesativadoSangramentoAD.tag = 6
 		botãoDesativadoSangramentoAD.setBackgroundImage(imgBotãoDesativadoSangramento, for:.normal)
+        botãoDesativadoSangramentoAD.setBackgroundImage(imgAtivado, for:.selected)
 		botãoDesativadoSangramentoAD.contentMode = .center
 		botãoDesativadoSangramentoAD.bounds = CGRect(x:0, y:0, width:44.0, height:44.0)
 		botãoDesativadoSangramentoAD__root.layer.position = CGPoint(x:284.721, y:346.000)
@@ -274,7 +297,11 @@ class MeninoSangramentoView : UIView, CAAnimationDelegate {
 		let botãoDesativadoSangramentoDD__xScale = MeninoSangramentoPassthroughView()
 		let botãoDesativadoSangramentoDD__yScale = MeninoSangramentoPassthroughView()
 		let botãoDesativadoSangramentoDD = UIButton(type: .custom)
+        
+        botãoDesativadoSangramentoDD.accessibilityIdentifier = "Deltóide Direito"
+        botãoDesativadoSangramentoDD.tag = 7
 		botãoDesativadoSangramentoDD.setBackgroundImage(imgBotãoDesativadoSangramento, for:.normal)
+        botãoDesativadoSangramentoDD.setBackgroundImage(imgAtivado, for:.selected)
 		botãoDesativadoSangramentoDD.contentMode = .center
 		botãoDesativadoSangramentoDD.bounds = CGRect(x:0, y:0, width:44.0, height:44.0)
 		botãoDesativadoSangramentoDD__root.layer.position = CGPoint(x:256.859, y:176.935)
@@ -296,34 +323,34 @@ class MeninoSangramentoView : UIView, CAAnimationDelegate {
 	}
 
 	func actionBotãoDesativadoSangramentoDEPressed(botãoDesativadoSangramentoDE: UIButton) {
-		meninoSangramentoViewDelegate?.botãoDesativadoSangramentoDEPressed(botãoDesativadoSangramentoDE: botãoDesativadoSangramentoDE)
+		meninoSangramentoViewDelegate?.botãoDesativado(botãoDesativado: botãoDesativadoSangramentoDE)
 	}
 
 	func actionBotãoDesativadoSangramentoAEPressed(botãoDesativadoSangramentoAE: UIButton) {
-		meninoSangramentoViewDelegate?.botãoDesativadoSangramentoAEPressed(botãoDesativadoSangramentoAE: botãoDesativadoSangramentoAE)
+		meninoSangramentoViewDelegate?.botãoDesativado(botãoDesativado: botãoDesativadoSangramentoAE)
 	}
 
 	func actionBotãoDesativadoSangramentoCEPressed(botãoDesativadoSangramentoCE: UIButton) {
-		meninoSangramentoViewDelegate?.botãoDesativadoSangramentoCEPressed(botãoDesativadoSangramentoCE: botãoDesativadoSangramentoCE)
+		meninoSangramentoViewDelegate?.botãoDesativado(botãoDesativado: botãoDesativadoSangramentoCE)
 	}
 
 	func actionBotãoDesativadoSangramentoCDPressed(botãoDesativadoSangramentoCD: UIButton) {
-		meninoSangramentoViewDelegate?.botãoDesativadoSangramentoCDPressed(botãoDesativadoSangramentoCD: botãoDesativadoSangramentoCD)
+		meninoSangramentoViewDelegate?.botãoDesativado(botãoDesativado: botãoDesativadoSangramentoCD)
 	}
 
 	func actionBotãoDesativadoSangramentoPDPressed(botãoDesativadoSangramentoPD: UIButton) {
-		meninoSangramentoViewDelegate?.botãoDesativadoSangramentoPDPressed(botãoDesativadoSangramentoPD: botãoDesativadoSangramentoPD)
+		meninoSangramentoViewDelegate?.botãoDesativado(botãoDesativado: botãoDesativadoSangramentoPD)
 	}
 
 	func actionBotãoDesativadoSangramentoPEPressed(botãoDesativadoSangramentoPE: UIButton) {
-		meninoSangramentoViewDelegate?.botãoDesativadoSangramentoPEPressed(botãoDesativadoSangramentoPE: botãoDesativadoSangramentoPE)
+		meninoSangramentoViewDelegate?.botãoDesativado(botãoDesativado: botãoDesativadoSangramentoPE)
 	}
 
 	func actionBotãoDesativadoSangramentoADPressed(botãoDesativadoSangramentoAD: UIButton) {
-		meninoSangramentoViewDelegate?.botãoDesativadoSangramentoADPressed(botãoDesativadoSangramentoAD: botãoDesativadoSangramentoAD)
+		meninoSangramentoViewDelegate?.botãoDesativado(botãoDesativado: botãoDesativadoSangramentoAD)
 	}
 
 	func actionBotãoDesativadoSangramentoDDPressed(botãoDesativadoSangramentoDD: UIButton) {
-		meninoSangramentoViewDelegate?.botãoDesativadoSangramentoDDPressed(botãoDesativadoSangramentoDD: botãoDesativadoSangramentoDD)
+		meninoSangramentoViewDelegate?.botãoDesativado(botãoDesativado: botãoDesativadoSangramentoDD)
 	}
 }

@@ -44,8 +44,6 @@ class InsightsViewController: UIViewController {
             
         }
         
-        
-        
         calendarDAO.reloadData()
     }
 

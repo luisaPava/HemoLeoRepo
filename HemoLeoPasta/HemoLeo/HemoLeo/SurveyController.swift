@@ -12,13 +12,13 @@ import CareKit
 class SurveyController: UIViewController {
     @IBOutlet weak var texxt: UITextField!
     var event: OCKCarePlanEvent! = nil
-    var resultString = ""
-    var resultArray: Array<String> = ["", "", "", "", ""]
-    var index = 0
-    var sliderValue: Int = 0
-    var esqArray: Array<UIButton> = []
-    var dirArray: Array<UIButton> = []
-    var activityType: ActivityType!
+    
+    fileprivate var resultString = ""
+    fileprivate var resultArray: Array<String>! = []
+    fileprivate var index = 0
+    fileprivate var sliderValue: Int = 0
+    fileprivate var activityType: ActivityType!
+    fileprivate var numBtn: Int!
     
     @IBOutlet weak var viewMenino: MeninoDorView!
     @IBOutlet weak var viewMeninoSangramento: MeninoSangramentoView!
@@ -35,6 +35,10 @@ class SurveyController: UIViewController {
         activityType = ActivityType(rawValue: event.activity.identifier)
         
         viewMenino.meninoDorViewDelegate = self
+        viewMeninoHematoma.meninoHematomasViewDelegate = self
+        viewMeninoSangramento.meninoSangramentoViewDelegate = self
+        
+        setNumBtn()
         
 //        print("\(width) - \(height)")
   
@@ -42,6 +46,29 @@ class SurveyController: UIViewController {
     
     func setMeninoView() {
         
+    }
+    
+    func setNumBtn() {
+        switch activityType.rawValue {
+            case "Dor":
+                numBtn = 10
+                viewMenino.isHidden = false
+            
+            case "Sangramento":
+                numBtn = 8
+                viewMeninoSangramento.isHidden = false
+            
+            case "Hematoma":
+                numBtn = 14
+                viewMeninoHematoma.isHidden = false
+            
+            default:
+                break
+        }
+        
+        for _ in 0..<numBtn {
+            resultArray.append("")
+        }
     }
     
     func saveResult(level: Int, local: String) {
@@ -63,12 +90,6 @@ class SurveyController: UIViewController {
         let type = EventType(rawValue: activityType.rawValue)!
         calendarDAO.append(newEvent: newEventString, withType: type)
         
-    }
-    
-    func setArrayBtn(_ array: Array<UIButton>, bool: Bool) {
-        for btn in array {
-            btn.isEnabled = bool
-        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -93,10 +114,11 @@ class SurveyController: UIViewController {
             
         return count
     }
+    
 }
 
-extension SurveyController: MeninoDorViewDelegate {
-    func botãoDesativadoDor(botãoDesativado: UIButton) {
+extension SurveyController: MeninoDorViewDelegate, MeninoHematomasViewDelegate, MeninoSangramentoViewDelegate {
+    func botãoDesativado(botãoDesativado: UIButton) {
         if botãoDesativado.isSelected == false {
             resultArray[botãoDesativado.tag] = botãoDesativado.accessibilityIdentifier!
             botãoDesativado.isSelected = true
