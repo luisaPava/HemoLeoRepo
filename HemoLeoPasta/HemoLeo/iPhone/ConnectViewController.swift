@@ -26,7 +26,8 @@ class ConnectViewController: UINavigationController {
     override func viewWillAppear(_ animated: Bool) {
         if self.viewControllers.isEmpty {
             viewController = contactModel.createConnectViewController()
-            viewController?.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Novo", style: .done, target: self, action: #selector(pushAddContactController))
+            viewController?.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Novo", style: .done, target: self, action: #selector(pushAddContactController))
+            viewController?.navigationItem.rightBarButtonItem?.tintColor = UIColor(netHex: 0x2ECC71)
             
             self.pushViewController(viewController!, animated: false)
         }

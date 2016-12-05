@@ -67,19 +67,27 @@
                                             <rect key="frame" x="0.0" y="0.0" width="292" height="319"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LeoSombra" translatesAutoresizingMaskIntoConstraints="NO" id="1vm-6S-vND">
+                                                    <rect key="frame" x="10" y="10" width="272" height="299"/>
+                                                </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MjD-l7-p0T">
                                                     <rect key="frame" x="10" y="10" width="272" height="299"/>
                                                 </imageView>
                                             </subviews>
                                         </view>
                                         <constraints>
+                                            <constraint firstItem="1vm-6S-vND" firstAttribute="leading" secondItem="MjD-l7-p0T" secondAttribute="leading" id="Atf-D6-8FL"/>
+                                            <constraint firstItem="1vm-6S-vND" firstAttribute="trailing" secondItem="MjD-l7-p0T" secondAttribute="trailing" id="Fu8-er-2WE"/>
                                             <constraint firstAttribute="bottom" secondItem="MjD-l7-p0T" secondAttribute="bottom" constant="10" id="HKG-QS-Hcm"/>
                                             <constraint firstAttribute="trailing" secondItem="MjD-l7-p0T" secondAttribute="trailing" constant="10" id="Mga-6q-WQO"/>
                                             <constraint firstItem="MjD-l7-p0T" firstAttribute="leading" secondItem="Cxl-ZO-LCc" secondAttribute="leading" constant="10" id="T9N-nN-gzc"/>
                                             <constraint firstItem="MjD-l7-p0T" firstAttribute="top" secondItem="Cxl-ZO-LCc" secondAttribute="top" constant="10" id="Xb3-CI-D3t"/>
+                                            <constraint firstItem="1vm-6S-vND" firstAttribute="bottom" secondItem="MjD-l7-p0T" secondAttribute="bottom" id="exO-FE-uNy"/>
+                                            <constraint firstItem="1vm-6S-vND" firstAttribute="top" secondItem="MjD-l7-p0T" secondAttribute="top" id="jTr-uN-xxt"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="imagem" destination="MjD-l7-p0T" id="tGG-Dv-7DF"/>
+                                            <outlet property="leoShadow" destination="1vm-6S-vND" id="GUe-sh-9k6"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -472,10 +480,18 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bM-yg-uU7" customClass="CustomView" customModule="iPhone" customModuleProvider="target">
                                 <rect key="frame" x="36" y="469" width="248" height="30"/>
+                                <color key="backgroundColor" red="0.18039215689999999" green="0.80000000000000004" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="aPB-c5-fwd"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Salvar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornurRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="salvarAction:" destination="Kze-ON-LCC" eventType="touchUpInside" id="0os-ht-JQg"/>
                                 </connections>
@@ -818,7 +834,7 @@
                                         <rect key="frame" x="0.0" y="28" width="252" height="39"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Aus-fB-k0x" id="GSI-qE-kWG">
-                                            <rect key="frame" x="0.0" y="0.0" width="252" height="38"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="252" height="38.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6o-OT-7Mh">
@@ -953,7 +969,7 @@
         <!--User View Controller-->
         <scene sceneID="sxT-Iz-GKr">
             <objects>
-                <viewController id="gVx-zF-NN8" customClass="UserViewController" customModule="iPhone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="uservc" id="gVx-zF-NN8" customClass="UserViewController" customModule="iPhone" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sMc-oo-tts"/>
                         <viewControllerLayoutGuide type="bottom" id="XsS-t6-2sp"/>
@@ -976,7 +992,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" reuseIdentifier="userCell" id="TFC-Pd-Btq" customClass="UserCollectionViewCell" customModule="iPhone" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="8" width="223" height="326"/>
+                                        <rect key="frame" x="0.0" y="7.5" width="223" height="326"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="223" height="326"/>
@@ -990,8 +1006,8 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="2rb-wQ-wXR"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -1627,6 +1643,7 @@
         <image name="Export" width="28" height="31"/>
         <image name="FruitsNotSelected" width="110" height="110"/>
         <image name="FrutasHIghlighted" width="110" height="110"/>
+        <image name="LeoSombra" width="700" height="680"/>
         <image name="Profilaxia hightlighted" width="110" height="110"/>
         <image name="ProfilaxiaNotSelected" width="110" height="110"/>
         <image name="ShotSelected" width="45" height="45"/>

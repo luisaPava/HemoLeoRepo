@@ -29,11 +29,11 @@ class CareCardViewController: UINavigationController {
     override func viewWillAppear(_ animated: Bool) {
         if self.viewControllers.isEmpty {
             viewController = careCardModel.createCareCard()
-            viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Logout", style: .done, target: self, action: #selector(logOutAction))
+            viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Sair", style: .done, target: self, action: #selector(logOutAction))
             viewController.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Nova", style: .plain, target: self, action: #selector(pushAddActivityController))
             
-            viewController.navigationItem.leftBarButtonItem?.tintColor = UIColor(netHex: 0xd53d55)
-            viewController.navigationItem.rightBarButtonItem?.tintColor = UIColor(netHex: 0xd53d55)
+            viewController.navigationItem.leftBarButtonItem?.tintColor = UIColor(netHex: 0x28B061)
+            viewController.navigationItem.rightBarButtonItem?.tintColor = UIColor(netHex: 0x2ECC71)
             
             viewController.delegate = self
             
@@ -56,7 +56,13 @@ class CareCardViewController: UINavigationController {
     }
     
     func logOutAction() {
-        self.performSegue(withIdentifier: "careToUser", sender: self)
+//        self.performSegue(withIdentifier: "careToUser", sender: self)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        self.view.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "uservc")
+        
+        self.view.window?.rootViewController?.dismiss(animated: false, completion: nil)
+
     }
 }
 
