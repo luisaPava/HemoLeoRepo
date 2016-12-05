@@ -52,7 +52,6 @@ extension UserViewController: UICollectionViewDataSource {
         let leo = userModel.getLeo(atIndex: indexPath.row)
         
         cell.imagem.image =  UIImage(named: leo.getImage())
-        cell.imagem.layer.borderWidth = 5
         cell.labelNome.text = leo.nome
         
         return cell

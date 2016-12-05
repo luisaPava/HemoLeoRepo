@@ -377,6 +377,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="223" height="267"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ncr-C5-gad">
+                                                    <rect key="frame" x="0.0" y="0.0" width="223" height="267"/>
+                                                </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kaV-Ut-9Dj">
                                                     <rect key="frame" x="0.0" y="0.0" width="223" height="267"/>
                                                 </imageView>
@@ -386,10 +389,15 @@
                                             <constraint firstItem="kaV-Ut-9Dj" firstAttribute="top" secondItem="E0l-1M-m1V" secondAttribute="top" id="2Pb-wU-f7N"/>
                                             <constraint firstAttribute="bottom" secondItem="kaV-Ut-9Dj" secondAttribute="bottom" id="BVc-xl-iza"/>
                                             <constraint firstItem="kaV-Ut-9Dj" firstAttribute="leading" secondItem="E0l-1M-m1V" secondAttribute="leading" id="J60-iy-De5"/>
+                                            <constraint firstItem="ncr-C5-gad" firstAttribute="leading" secondItem="kaV-Ut-9Dj" secondAttribute="leading" id="PdS-nd-Iff"/>
                                             <constraint firstAttribute="trailing" secondItem="kaV-Ut-9Dj" secondAttribute="trailing" id="WW2-up-sFb"/>
+                                            <constraint firstItem="ncr-C5-gad" firstAttribute="top" secondItem="kaV-Ut-9Dj" secondAttribute="top" id="XTT-my-Td7"/>
+                                            <constraint firstItem="ncr-C5-gad" firstAttribute="trailing" secondItem="kaV-Ut-9Dj" secondAttribute="trailing" id="kLw-jS-GTq"/>
+                                            <constraint firstItem="ncr-C5-gad" firstAttribute="bottom" secondItem="kaV-Ut-9Dj" secondAttribute="bottom" id="sm4-N4-xgC"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="imagem" destination="kaV-Ut-9Dj" id="bFh-g0-9g7"/>
+                                            <outlet property="leoShadow" destination="ncr-C5-gad" id="t02-a3-uJ8"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -442,7 +450,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tUn-7T-BuP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-131.25" y="-1437.5"/>
+            <point key="canvasLocation" x="-877" y="-1436"/>
         </scene>
         <!--Tutorial2 View Controller-->
         <scene sceneID="sH9-IK-trg">
@@ -594,7 +602,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PLl-GU-mRt" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="aYv-8n-8i5" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-1072" y="76"/>
+            <point key="canvasLocation" x="-1888" y="75"/>
         </scene>
         <!--Themes View Controller-->
         <scene sceneID="iL8-iK-G9W">
@@ -608,6 +616,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cnc-Lk-36K">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="oEv-MG-rK5">
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="n5b-az-IT4">
                                 <rect key="frame" x="12" y="-19" width="1000" height="806"/>
                                 <constraints>
@@ -674,8 +690,12 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Cnc-Lk-36K" firstAttribute="top" secondItem="dG8-Ix-E6C" secondAttribute="top" id="KMV-8p-Hlt"/>
+                            <constraint firstAttribute="trailing" secondItem="Cnc-Lk-36K" secondAttribute="trailing" id="ScV-8m-iwG"/>
                             <constraint firstItem="n5b-az-IT4" firstAttribute="centerX" secondItem="dG8-Ix-E6C" secondAttribute="centerX" id="TQm-ze-Frg"/>
                             <constraint firstItem="VV1-Si-1tF" firstAttribute="leading" secondItem="dG8-Ix-E6C" secondAttribute="leadingMargin" constant="5" id="UbI-yw-v4X"/>
+                            <constraint firstAttribute="bottom" secondItem="Cnc-Lk-36K" secondAttribute="bottom" id="VC8-hW-pzj"/>
+                            <constraint firstItem="Cnc-Lk-36K" firstAttribute="leading" secondItem="dG8-Ix-E6C" secondAttribute="leading" id="ZXn-ik-AjM"/>
                             <constraint firstItem="VV1-Si-1tF" firstAttribute="top" secondItem="caj-et-cNF" secondAttribute="bottom" id="f33-Qd-bl6"/>
                             <constraint firstItem="n5b-az-IT4" firstAttribute="centerY" secondItem="dG8-Ix-E6C" secondAttribute="centerY" id="xWD-g8-PCy"/>
                         </constraints>
@@ -687,7 +707,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q0w-ed-pn7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-237" y="76"/>
+            <point key="canvasLocation" x="-561" y="75"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="CBo-oo-oxk">
@@ -922,7 +942,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cTA-Ty-S8a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1634" y="76"/>
+            <point key="canvasLocation" x="2220" y="76"/>
         </scene>
         <!--Setting View Controller-->
         <scene sceneID="Jpy-51-xjQ">
@@ -944,7 +964,7 @@
                                 <items>
                                     <barButtonItem title="Ok" id="njJ-Qh-KcP">
                                         <connections>
-                                            <action selector="close:" destination="tSS-Hh-pms" id="VjX-4T-APT"/>
+                                            <action selector="closeWithSender:" destination="tSS-Hh-pms" id="Amr-UR-jWd"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="09x-g1-88C"/>
@@ -965,7 +985,7 @@
                                             <constraint firstAttribute="width" constant="261" id="DMF-1s-z4v"/>
                                         </constraints>
                                         <connections>
-                                            <action selector="sliderChanged:" destination="tSS-Hh-pms" eventType="valueChanged" id="tfr-h5-9Bw"/>
+                                            <action selector="sliderChangedWithSender:" destination="tSS-Hh-pms" eventType="valueChanged" id="8gB-CN-ct4"/>
                                         </connections>
                                     </slider>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="B35-gi-FHj">
@@ -995,7 +1015,7 @@
                                             <constraint firstAttribute="width" constant="261" id="uOO-nn-8VQ"/>
                                         </constraints>
                                         <connections>
-                                            <action selector="sliderChanged:" destination="tSS-Hh-pms" eventType="valueChanged" id="3P9-bY-tG5"/>
+                                            <action selector="sliderChangedWithSender:" destination="tSS-Hh-pms" eventType="valueChanged" id="nX5-pg-dOE"/>
                                         </connections>
                                     </slider>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f4C-7z-1Px">
@@ -1038,7 +1058,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZOd-Zn-YKI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2584" y="75"/>
+            <point key="canvasLocation" x="3007" y="75"/>
         </scene>
         <!--Motivo Emergencia View Controller-->
         <scene sceneID="Fjf-Uk-A97">
@@ -1058,12 +1078,13 @@
                                     <constraint firstAttribute="height" constant="313" id="1hU-4f-oxH"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1vx-x1-w4g">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1vx-x1-w4g">
                                 <rect key="frame" x="28" y="70" width="359" height="84"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="1vx-x1-w4g" secondAttribute="height" multiplier="359:84" id="Cot-IT-Y8Y"/>
                                 </constraints>
                                 <state key="normal" image="BotãoEmergencia"/>
+                                <state key="selected" image="BotãoEmergenciaAtivado"/>
                                 <connections>
                                     <action selector="hadEmergency:" destination="LWh-zj-xp3" eventType="touchUpInside" id="Lia-8r-6Oa"/>
                                 </connections>
@@ -1085,10 +1106,18 @@
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a03-D0-1ls" customClass="CustomView" customModule="HemoLeo" customModuleProvider="target">
                                 <rect key="frame" x="40" y="676" width="334" height="30"/>
+                                <color key="backgroundColor" red="0.18039215689999999" green="0.80000000000000004" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="4AO-B0-obS"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Salvar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornurRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="salvarAction:" destination="LWh-zj-xp3" eventType="touchUpInside" id="dzo-iZ-OcQ"/>
                                 </connections>
@@ -1125,7 +1154,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="239-8n-wjg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="515.625" y="1840.625"/>
+            <point key="canvasLocation" x="317" y="2216"/>
         </scene>
         <!--Survey Controller-->
         <scene sceneID="EWW-uz-Vfp">
@@ -1153,10 +1182,18 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4k-0h-0pH" customClass="CustomView" customModule="HemoLeo" customModuleProvider="target">
                                 <rect key="frame" x="40" y="676" width="334" height="30"/>
+                                <color key="backgroundColor" red="0.18039215689999999" green="0.80000000000000004" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="tjH-xy-1h2"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Sem sintomas">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornurRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1189,7 +1226,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OsO-MD-YHf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="888.86718749999989" y="1840.625"/>
+            <point key="canvasLocation" x="887" y="2216"/>
         </scene>
         <!--Symptom Card View Controller-->
         <scene sceneID="Hiw-WY-5q9">
@@ -1221,7 +1258,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZXp-0g-tKg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="668" y="909"/>
+            <point key="canvasLocation" x="506" y="909"/>
         </scene>
         <!--Insight View Controller-->
         <scene sceneID="bSM-cD-ayG">
@@ -1234,7 +1271,28 @@
                     <view key="view" contentMode="scaleToFill" id="WUS-pD-lbc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ucp-jY-YtW" customClass="FSCalendar">
+                                <rect key="frame" x="20" y="20" width="374" height="400"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="pAK-bk-HY9"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chart" translatesAutoresizingMaskIntoConstraints="NO" id="3yM-MV-ze2">
+                                <rect key="frame" x="20" y="420" width="374" height="316"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Ucp-jY-YtW" secondAttribute="trailing" constant="20" id="1CY-wQ-zLf"/>
+                            <constraint firstItem="3yM-MV-ze2" firstAttribute="leading" secondItem="WUS-pD-lbc" secondAttribute="leadingMargin" id="4Cb-oP-ori"/>
+                            <constraint firstItem="p70-aO-gBY" firstAttribute="top" secondItem="3yM-MV-ze2" secondAttribute="bottom" id="I7Q-cn-ctB"/>
+                            <constraint firstItem="Ucp-jY-YtW" firstAttribute="leading" secondItem="WUS-pD-lbc" secondAttribute="leading" constant="20" id="WmF-GY-WRq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3yM-MV-ze2" secondAttribute="trailing" id="a28-mh-h27"/>
+                            <constraint firstItem="Ucp-jY-YtW" firstAttribute="top" secondItem="WUS-pD-lbc" secondAttribute="top" constant="20" id="aZz-R9-oBW"/>
+                            <constraint firstItem="3yM-MV-ze2" firstAttribute="top" secondItem="Ucp-jY-YtW" secondAttribute="bottom" id="y2N-Bc-wdL"/>
+                        </constraints>
                     </view>
                     <value key="contentSizeForViewInPopover" type="size" width="414" height="736"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -1242,7 +1300,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9ap-QN-d4B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="221" y="909"/>
+            <point key="canvasLocation" x="52" y="909"/>
         </scene>
         <!--Care Card View Controller-->
         <scene sceneID="MxI-xp-R8I">
@@ -1281,7 +1339,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fod-Nj-ePL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1016" y="909"/>
+            <point key="canvasLocation" x="937" y="909"/>
         </scene>
         <!--Add Activity View Controller-->
         <scene sceneID="Fxj-Zd-2bx">
@@ -1983,7 +2041,9 @@
         <image name="Bebidahighlighted" width="111" height="111"/>
         <image name="Black" width="51" height="51"/>
         <image name="BotãoEmergencia" width="671" height="158"/>
+        <image name="BotãoEmergenciaAtivado" width="671" height="158"/>
         <image name="Brown" width="51" height="51"/>
+        <image name="Chart" width="670" height="582"/>
         <image name="Comida highlighted" width="110" height="110"/>
         <image name="ComidaNotSelected" width="110" height="110"/>
         <image name="DarkBlue" width="51" height="51"/>

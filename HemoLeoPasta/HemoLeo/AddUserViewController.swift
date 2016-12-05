@@ -14,8 +14,8 @@ class AddUserViewController: UIViewController {
     @IBOutlet weak var bgView: UIImageView!
     
     fileprivate let userModel = UserModel.sharedUserModel
-    fileprivate let arraySkins: Array<String> = ["Leo", "Leo", "Leo", "Leo"]
-    fileprivate var imagem: String = "Leo"
+    fileprivate let arraySkins: Array<String> = ["LeoOficial", "LeoM Oficial", "LeoB Oficial"]
+    fileprivate var imagem: String = "LeoOficial"
     fileprivate var selectedIndex: IndexPath? = nil
 
     override func viewDidLoad() {
@@ -56,15 +56,17 @@ class AddUserViewController: UIViewController {
 
 extension AddUserViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let selectedCell = collectionView.cellForItem(at: selectedIndex!) as! AddUserCollectionViewCell
+        let selectedCell = collectionView.cellForItem(at: indexPath) as! AddUserCollectionViewCell
+        
+        imagem = arraySkins[indexPath.row]
         
         if selectedIndex != nil {
             let cell = collectionView.cellForItem(at: selectedIndex!) as! AddUserCollectionViewCell
-//            cell.leoShadow.isHidden = true
+            cell.leoShadow.isHidden = true
         }
         
         selectedIndex = indexPath
-//        selectedCell.leoShadow.isHidden = false
+        selectedCell.leoShadow.isHidden = false
     }
 }
 
@@ -75,7 +77,7 @@ extension AddUserViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "addUserCell", for: indexPath as IndexPath) as! AddUserCollectionViewCell
-        
+        cell.leoShadow.isHidden = true
         cell.imagem.image =  UIImage(named: arraySkins[indexPath.row])
         
         return cell

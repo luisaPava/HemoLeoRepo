@@ -1151,7 +1151,7 @@
 				TargetAttributes = {
 					2BA1887B1D355A2C007F1CEB = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = BUK6UDW987;
+						DevelopmentTeam = AU45XX83RQ;
 						LastSwiftMigration = 0810;
 						SystemCapabilities = {
 							com.apple.Push = {
@@ -1164,7 +1164,7 @@
 					};
 					4EAFA1EB1DC7AAC2002BA048 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = BUK6UDW987;
+						DevelopmentTeam = AU45XX83RQ;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -1697,7 +1697,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = BUK6UDW987;
+				DEVELOPMENT_TEAM = AU45XX83RQ;
 				INFOPLIST_FILE = HemoLeo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1717,7 +1717,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = BUK6UDW987;
+				DEVELOPMENT_TEAM = AU45XX83RQ;
 				INFOPLIST_FILE = HemoLeo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1737,7 +1737,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				DEVELOPMENT_TEAM = BUK6UDW987;
+				DEVELOPMENT_TEAM = AU45XX83RQ;
 				INFOPLIST_FILE = iPhone/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1756,7 +1756,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				DEVELOPMENT_TEAM = BUK6UDW987;
+				DEVELOPMENT_TEAM = AU45XX83RQ;
 				INFOPLIST_FILE = iPhone/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
