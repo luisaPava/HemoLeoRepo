@@ -33,6 +33,9 @@ class MotivoEmergenciaViewController: UIViewController {
         textViewMotivo.alpha = 0
         salvarBtn.alpha = 0
         
+        labelMotivo.lineBreakMode = .byWordWrapping
+        labelMotivo.numberOfLines = 0
+        
         assessmentManager = symptomTrackerModel.getAssessmentManager()
         activityType = ActivityType(rawValue: event.activity.identifier)
     }
@@ -62,7 +65,8 @@ class MotivoEmergenciaViewController: UIViewController {
         }
     }
     
-    @IBAction func salvarAction(_ sender: Any) {
+    @IBAction func salvarAction(_ sender: UIButton) {
+        print("Ola")
         if !textViewMotivo.text.isEmpty {
             calendarDAO.append(newEvent: textViewMotivo.text, withType: .Emergencial)
         } else {

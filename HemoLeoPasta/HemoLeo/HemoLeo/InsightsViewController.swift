@@ -24,6 +24,8 @@ class InsightsViewController: UIViewController {
         titleLabel.text = ""
         
         self.tableView.dataSource = self
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 50
         
         self.calendar.delegate = self
         self.calendar.dataSource = self
@@ -88,6 +90,8 @@ extension InsightsViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "resumoCell", for: indexPath as IndexPath) as! ResumoTableViewCell
         
         cell.resumoLabel.text = arraySections[indexPath.section][indexPath.row]
+        cell.resumoLabel.lineBreakMode = .byWordWrapping
+        cell.resumoLabel.numberOfLines = 0
         
         return cell
     }
