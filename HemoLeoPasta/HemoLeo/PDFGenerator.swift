@@ -22,14 +22,14 @@ class PDFGenerator {
         let dataArray = generateArray()
         
         pdf.setFont(UIFont.systemFont(ofSize: 9.0))
-        pdf.addText("                              Profilaxia                 Dor            Sangramento      Hematomas      Emergencial")
+        pdf.addText("                                         Profilaxia                       Dor                     Sangramento            Hematomas                Emergencial")
         
         pdf.addTable(dataArray.count,
                      columnCount: (dataArray.first?.count)!,
-                     rowHeight: 25,
-                     columnWidth: 70,
+                     rowHeight: 26,
+                     columnWidth: 90,
                      tableLineWidth: 1,
-                     font: UIFont.systemFont(ofSize: 9.0),
+                     font: UIFont.systemFont(ofSize: 8.0),
                      dataArray: dataArray)
         
         let pdfData = pdf.generatePDFdata()
@@ -115,7 +115,11 @@ class PDFGenerator {
         var resString = ""
         
         for i in array {
-            resString += "\(i.getInitials()), "
+            resString += "\(i.getFirstWord())"
+            
+            if i != array.last {
+                resString += "\n"
+            }
         }
         
         return resString

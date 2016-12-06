@@ -150,6 +150,12 @@ extension String {
         
         return stringNeed
     }
+    
+    func getFirstWord() -> String {
+        let stringInputArr = self.components(separatedBy: "- ")
+        
+        return stringInputArr.first!
+    }
 }
 
 
