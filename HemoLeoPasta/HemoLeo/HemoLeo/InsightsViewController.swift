@@ -11,8 +11,8 @@ import FSCalendar
 
 class InsightsViewController: UIViewController {
     @IBOutlet weak var calendar: FSCalendar!
-    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var contraintsHeight: NSLayoutConstraint!
     
     fileprivate let calendarDAO = DAOCalendario.sharedDAOCalendario
     fileprivate var arraySectionsName: [String] = []
@@ -22,7 +22,6 @@ class InsightsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        titleLabel.text = ""
         
         
         self.tableView.dataSource = self
@@ -114,6 +113,11 @@ extension InsightsViewController: FSCalendarDelegate {
         calendarDAO.lastDate = date
         tableViewSetup(date)
         tableView.reloadData()
+    }
+    
+    func calendar(_ calendar: FSCalendar, boundingRectWillChange bounds: CGRect, animated: Bool) {
+        contraintsHeight.constant = bounds.height
+        view.layoutIfNeeded()
     }
 }
 

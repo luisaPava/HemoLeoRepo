@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,42 +16,40 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark" translatesAutoresizingMaskIntoConstraints="NO" id="pIC-wJ-LCq">
                         <rect key="frame" x="250" y="0.0" width="70" height="70"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="70" id="V3S-F6-6he"/>
-                            <constraint firstAttribute="width" constant="70" id="zDy-Jb-yDw"/>
+                            <constraint firstAttribute="width" secondItem="pIC-wJ-LCq" secondAttribute="height" multiplier="1:1" id="s5F-Mf-HXR"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    Segunda-feira" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ct-r5-Dbe">
-                        <rect key="frame" x="28" y="21.5" width="163" height="27"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="162.5" id="klV-kd-eKl"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0WP-MM-BDP">
                         <rect key="frame" x="0.0" y="0.0" width="10" height="70"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="10" id="kKB-jw-4BF"/>
+                            <constraint firstAttribute="width" constant="10" id="l8s-Qj-CFH"/>
                         </constraints>
                     </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    Segunda-feira" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ct-r5-Dbe">
+                        <rect key="frame" x="30" y="8" width="162.5" height="53.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="0WP-MM-BDP" secondAttribute="bottom" id="5wZ-zG-6v6"/>
-                    <constraint firstItem="0WP-MM-BDP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Ret-5D-Gxc"/>
-                    <constraint firstItem="0WP-MM-BDP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Td6-4Y-TJc"/>
-                    <constraint firstAttribute="trailing" secondItem="pIC-wJ-LCq" secondAttribute="trailing" id="Z5u-o3-cgt"/>
-                    <constraint firstItem="7Ct-r5-Dbe" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="apI-93-iOP"/>
-                    <constraint firstAttribute="bottom" secondItem="pIC-wJ-LCq" secondAttribute="bottom" id="buX-ea-Gjr"/>
-                    <constraint firstItem="7Ct-r5-Dbe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="egO-Pq-qpH"/>
-                    <constraint firstItem="pIC-wJ-LCq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="zPk-l5-iIc"/>
+                    <constraint firstItem="7Ct-r5-Dbe" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="3zP-5U-kPB"/>
+                    <constraint firstItem="pIC-wJ-LCq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Buo-pU-SNZ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="7Ct-r5-Dbe" secondAttribute="bottom" id="C1X-Tp-KGx"/>
+                    <constraint firstAttribute="bottom" secondItem="pIC-wJ-LCq" secondAttribute="bottom" id="CN4-c9-Wkn"/>
+                    <constraint firstItem="0WP-MM-BDP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="HRI-b4-Jim"/>
+                    <constraint firstAttribute="trailing" secondItem="pIC-wJ-LCq" secondAttribute="trailing" id="NA9-ID-kSa"/>
+                    <constraint firstItem="7Ct-r5-Dbe" firstAttribute="leading" secondItem="0WP-MM-BDP" secondAttribute="trailing" constant="20" id="X5b-GX-w4T"/>
+                    <constraint firstItem="0WP-MM-BDP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="dDJ-tv-MG3"/>
+                    <constraint firstAttribute="bottom" secondItem="0WP-MM-BDP" secondAttribute="bottom" id="kEY-ZG-7rX"/>
+                    <constraint firstItem="7Ct-r5-Dbe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="tmg-fZ-APX"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
