@@ -29,8 +29,10 @@ class OccurenciesViewController: UIViewController {
         id = careCardModel.getActivityID(withKey: activity)
         leo = careCardModel.getLeo()
         path = "\(leo.getId())/Occurencies\(id)"
+        
+        let tableWidth = (UIDevice.current.modelName.contains("iPad")) ? 414 : width / 1.034
        
-        tableView = UITableView(frame: CGRect(x: 0, y: 0, width: width / 1.034, height: height / 0.92), style: .plain)
+        tableView = UITableView(frame: CGRect(x: 0, y: 0, width: tableWidth, height: height / 0.92), style: .plain)
         tableView.delegate = self
         tableView.dataSource = self
         tableView.rowHeight = height / 8.4
