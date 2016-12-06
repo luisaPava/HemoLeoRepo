@@ -192,8 +192,6 @@
 		4EE05E6A1DE0F3AB0088CB99 /* UserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE05E681DE0F3AB0088CB99 /* UserCollectionViewCell.swift */; };
 		4EE05E6C1DE0FB570088CB99 /* AddUserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE05E6B1DE0FB570088CB99 /* AddUserCollectionViewCell.swift */; };
 		4EE05E6D1DE0FB570088CB99 /* AddUserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE05E6B1DE0FB570088CB99 /* AddUserCollectionViewCell.swift */; };
-		4EE05E6F1DE0FEDA0088CB99 /* carinho1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EE05E6E1DE0FEDA0088CB99 /* carinho1.png */; };
-		4EE05E701DE0FEDA0088CB99 /* carinho1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EE05E6E1DE0FEDA0088CB99 /* carinho1.png */; };
 		4EE05E7D1DE25DFB0088CB99 /* UIButtonIBDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE05E7C1DE25DFB0088CB99 /* UIButtonIBDesignable.swift */; };
 		4EE05E7E1DE25DFB0088CB99 /* UIButtonIBDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE05E7C1DE25DFB0088CB99 /* UIButtonIBDesignable.swift */; };
 		4EE05E841DE278D20088CB99 /* TutorialPasso2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9377701DE25E980075631B /* TutorialPasso2View.swift */; };
@@ -397,7 +395,6 @@
 		4ED0D2C71DDE8B0100BE15CE /* AddContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
 		4EE05E681DE0F3AB0088CB99 /* UserCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCollectionViewCell.swift; sourceTree = "<group>"; };
 		4EE05E6B1DE0FB570088CB99 /* AddUserCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddUserCollectionViewCell.swift; sourceTree = "<group>"; };
-		4EE05E6E1DE0FEDA0088CB99 /* carinho1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = carinho1.png; path = LeoImages.atlas/carinho1.png; sourceTree = "<group>"; };
 		4EE05E7C1DE25DFB0088CB99 /* UIButtonIBDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonIBDesignable.swift; sourceTree = "<group>"; };
 		4EE05E931DE32AD10088CB99 /* MeninoDor.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MeninoDor.xcassets; sourceTree = "<group>"; };
 		4EE05E941DE32AD10088CB99 /* MeninoDorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeninoDorView.swift; sourceTree = "<group>"; };
@@ -665,7 +662,6 @@
 		2BA188971D355BAA007F1CEB /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				4EE05E6E1DE0FEDA0088CB99 /* carinho1.png */,
 				7777110E1D3E9C110066A0E2 /* LeoImages.atlas */,
 				2BA1888A1D355A2C007F1CEB /* Assets.xcassets */,
 			);
@@ -1159,7 +1155,7 @@
 				TargetAttributes = {
 					2BA1887B1D355A2C007F1CEB = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = AU45XX83RQ;
+						DevelopmentTeam = 4Y7J65SVBF;
 						LastSwiftMigration = 0810;
 						SystemCapabilities = {
 							com.apple.Push = {
@@ -1233,7 +1229,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EE05E6F1DE0FEDA0088CB99 /* carinho1.png in Resources */,
 				EB69AB5C1DE24576003EAB99 /* Storytelling3.xcassets in Resources */,
 				2B9707231DDDF30600FE3A74 /* Storytelling5.xcassets in Resources */,
 				2B9080461DE603C300318DDB /* TutorialPasso1.xcassets in Resources */,
@@ -1268,7 +1263,6 @@
 				4EAFA1F91DC7AAC2002BA048 /* LaunchScreen.storyboard in Resources */,
 				4EB711661DE88878009D129C /* Media.xcassets in Resources */,
 				4EAFA1F61DC7AAC2002BA048 /* Assets.xcassets in Resources */,
-				4EE05E701DE0FEDA0088CB99 /* carinho1.png in Resources */,
 				4E5092DA1DF05B29001F2B7F /* MeninoSangramento.xcassets in Resources */,
 				4EAFA1F41DC7AAC2002BA048 /* Main.storyboard in Resources */,
 				4E32449F1DD3ECD400258CE1 /* CustomActivityCell.xib in Resources */,
@@ -1709,7 +1703,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = AU45XX83RQ;
+				DEVELOPMENT_TEAM = 4Y7J65SVBF;
 				INFOPLIST_FILE = HemoLeo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1729,7 +1723,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = AU45XX83RQ;
+				DEVELOPMENT_TEAM = 4Y7J65SVBF;
 				INFOPLIST_FILE = HemoLeo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

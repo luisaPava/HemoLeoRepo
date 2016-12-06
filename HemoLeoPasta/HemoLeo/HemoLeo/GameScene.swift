@@ -8,18 +8,19 @@
 
 import SpriteKit
 
-
-
 class GameScene: SKScene {
     
     var lion: SKSpriteNode!
     var lion2: SKSpriteNode!
+    var tail: SKSpriteNode!
     var lionMovingFrames: [SKTexture]!
+    var tailMovingFrames: [SKTexture]!
     var lionCuddlingFrames: [SKTexture]!
     let defaults = UserDefaults.standard
     var bgImage: SKSpriteNode!
     
-    var mytimer = Timer()
+    var timer1 = Timer()
+    var timer2 = Timer()
     
     override func didMove(to view: SKView) {
         /* Setup your scene here */
@@ -41,6 +42,8 @@ class GameScene: SKScene {
         let lionAnimatedAtlas = SKTextureAtlas(named: "LeoImages")
         var lionFrames = [SKTexture]()
         
+        var tailFrames = [SKTexture]()
+        
         //let numImages = lionAnimatedAtlas.textureNames.count
         for i in 1..<21 {
             let lionTextureName = "Leo\(i)"
@@ -52,6 +55,17 @@ class GameScene: SKScene {
             lionFrames.append(lionAnimatedAtlas.textureNamed(lionTextureName))
             i -= 1;
         }
+        
+        for i in 1..<20 {
+            let tailTextureName = "Tail\(i)"
+            tailFrames.append(lionAnimatedAtlas.textureNamed(tailTextureName))
+        }
+        i = 19;
+        while (i > 0) {
+            let tailTextureName = "Tail\(i)"
+            tailFrames.append(lionAnimatedAtlas.textureNamed(tailTextureName))
+            i -= 1;
+        }
         lionMovingFrames = lionFrames
         
         let firstFrame = lionMovingFrames[0]
@@ -60,14 +74,26 @@ class GameScene: SKScene {
         lion.size = CGSize(width: 400, height: 400)
         lion.isUserInteractionEnabled = false
         lion.position = CGPoint(x: self.size.width/2, y: self.size.height/3)
-        lion.zPosition = 1
+        lion.zPosition = 5
         addChild(lion)
+        
+        tailMovingFrames = tailFrames
+        
+        let secondFrame = tailMovingFrames[0]
+        tail = SKSpriteNode(texture: secondFrame)
+        tail.name = "tail"
+        tail.size = CGSize(width: 140, height: 152.5)
+        tail.position = CGPoint(x: 418, y: 215)
+        tail.zPosition = 1
+        addChild(tail)
         
         //moveLionLeo()
         
-        mytimer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(GameScene.moveLionLeo), userInfo: nil, repeats: true)
+        timer1 = Timer.scheduledTimer(timeInterval: 2.8, target: self, selector: #selector(GameScene.moveLionLeo), userInfo: nil, repeats: true)
+        timer2 = Timer.scheduledTimer(timeInterval: 3.1, target: self, selector: #selector(GameScene.moveTail), userInfo: nil, repeats: true)
         
-        mytimer.fire()
+        timer1.fire()
+        timer2.fire()
     }
     
     override func willMove(from view: SKView) {
@@ -84,25 +110,34 @@ class GameScene: SKScene {
         //This is our general runAction method to make our bear walk.
         lion.run(SKAction.repeat(
             SKAction.animate(with: lionMovingFrames,
-                timePerFrame: 0.016,
+                timePerFrame: 0.02,
                 resize: false,
                 restore: true), count: 1),
                        withKey:"LionMovingInScreen")
     }
     
+    func moveTail() {
+        tail.run(SKAction.repeat(SKAction.animate(with: tailMovingFrames,
+                                                  timePerFrame: 0.05,
+                                                  resize: false,
+                                                  restore: true), count: 1))
+    }
+    
     func cuddleLeo() {
-        lion.isHidden = true
+        //lion.isHidden = true
+        lion.removeFromParent()
         
         lion2.run(SKAction.repeat(SKAction.animate(with: lionCuddlingFrames,
-            timePerFrame: 0.03,
-            resize: false,
-            restore: true), count: 1)) {
-                print("Petting ended")
-                self.lion.isHidden = false
-                self.lion2.isHidden = true
-                
-                //sleep(2)
-        }
+                                                   timePerFrame: 0.03,
+                                                   resize: false,
+                                                   restore: true), count: 1), completion: {
+                                                    print("Petting ended")
+                                                    //lion.isHidden = false
+                                                    //lion2.isHidden = true
+                                                    self.lion2.removeFromParent()
+                                                    self.addChild(self.lion)
+                                                    
+        })
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -135,7 +170,7 @@ class GameScene: SKScene {
                 lion2 = SKSpriteNode(texture: firstFrame)
                 lion2.position = CGPoint(x: self.size.width/2, y: self.size.height/3)
                 lion2.size = CGSize(width: 400, height: 400)
-                lion2.zPosition = 1
+                lion2.zPosition = 5
                 addChild(lion2)
                 cuddleLeo()
             }
