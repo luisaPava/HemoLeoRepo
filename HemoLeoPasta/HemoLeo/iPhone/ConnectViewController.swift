@@ -24,12 +24,16 @@ class ConnectViewController: UINavigationController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        viewController = contactModel.createConnectViewController()
+        viewController?.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Novo", style: .done, target: self, action: #selector(pushAddContactController))
+        viewController?.navigationItem.rightBarButtonItem?.tintColor = UIColor(netHex: 0x2ECC71)
+        
         if self.viewControllers.isEmpty {
-            viewController = contactModel.createConnectViewController()
-            viewController?.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Novo", style: .done, target: self, action: #selector(pushAddContactController))
-            viewController?.navigationItem.rightBarButtonItem?.tintColor = UIColor(netHex: 0x2ECC71)
-            
             self.pushViewController(viewController!, animated: false)
+            
+        } else {
+            self.setViewControllers([viewController!], animated: false)
+            
         }
     }
     
