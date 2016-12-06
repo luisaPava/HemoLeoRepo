@@ -24,11 +24,13 @@ class InsightsViewController: UIViewController {
         
         titleLabel.text = ""
         
-        pdfGenerator.generatePDF()
         
         self.tableView.dataSource = self
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 50
+        
+//        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Exportar", style: .plain, target: self, action: #selector(exportPDF))
+//        self.navigationItem.rightBarButtonItem?.tintColor = UIColor(netHex: 0x2ECC71)
         
         self.calendar.delegate = self
         self.calendar.dataSource = self
@@ -53,6 +55,15 @@ class InsightsViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func exportPDF(sender: UIButton) {
+        let pdf = pdfGenerator.generatePDF()
+        
+        let activity = UIActivityViewController(activityItems: [pdf], applicationActivities: nil)
+        activity.popoverPresentationController?.sourceView = self.view
+        present(activity, animated: true, completion: nil)
+
     }
     
     //Populate arrays used on the table view

@@ -40,15 +40,7 @@ class SurveyController: UIViewController {
         
         setNumBtn()
         
-        print("\(width) - \(height)")
-  
-    }
-    
-    override func viewDidLayoutSubviews() {
-        if UIDevice.current.modelName.contains("iPad") {
-            print("iPad")
-            self.view.frame = CGRect(x: 0, y: 0, width: 414, height: 736)
-        }
+//        print("\(width) - \(height)")
     }
     
     func setNumBtn() {

@@ -16,7 +16,7 @@ class PDFGenerator {
     
     private init() { }
     
-    func generatePDF() {
+    func generatePDF() -> Data {
         let A4paperSize = CGSize(width: 595, height: 842)
         let pdf = SimplePDF(pageSize: A4paperSize)
         let dataArray = generateArray()
@@ -34,11 +34,13 @@ class PDFGenerator {
         
         let pdfData = pdf.generatePDFdata()
         
-        do {
-            try pdfData.write(to: URL(fileURLWithPath: "/Users/gabrieloliveira/Desktop/SimplePDF.pdf"), options: .atomic)
-        } catch let error as NSError{
-            print(error.localizedDescription)
-        }
+        return pdfData
+        
+//        do {
+//            try pdfData.write(to: URL(fileURLWithPath: "/Users/gabrieloliveira/Desktop/SimplePDF.pdf"), options: .atomic)
+//        } catch let error as NSError{
+//            print(error.localizedDescription)
+//        }
     }
     
     private func generateArray() -> Array<Array<String>> {
