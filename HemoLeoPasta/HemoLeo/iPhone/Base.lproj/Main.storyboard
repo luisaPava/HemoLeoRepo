@@ -577,9 +577,12 @@
                                 <rect key="frame" x="16" y="40" width="288" height="415"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RqA-Nd-Bxe">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RqA-Nd-Bxe" customClass="CustomView" customModule="iPhone" customModuleProvider="target">
                                 <rect key="frame" x="36" y="479" width="248" height="30"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="semSintomasAction:" destination="GgD-EG-mHu" eventType="touchUpInside" id="2Ei-Di-fnV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -603,6 +606,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="semSintomasBtn" destination="RqA-Nd-Bxe" id="hbM-wh-EDb"/>
                         <outlet property="viewMenino" destination="nzq-aQ-Zdw" id="RUg-yI-CMZ"/>
                         <outlet property="viewMeninoHematoma" destination="fV8-Cn-llU" id="jfD-Kt-TL7"/>
                         <outlet property="viewMeninoSangramento" destination="O7y-1V-ZV6" id="XPf-xz-Xae"/>
@@ -1008,7 +1012,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" reuseIdentifier="userCell" id="TFC-Pd-Btq" customClass="UserCollectionViewCell" customModule="iPhone" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="7.5" width="223" height="326"/>
+                                        <rect key="frame" x="0.0" y="8" width="223" height="326"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="223" height="326"/>

@@ -13,6 +13,7 @@ class AddUserViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var bgView: UIImageView!
     
+    fileprivate var moveValue: CGFloat!
     fileprivate let userModel = UserModel.sharedUserModel
     fileprivate let arraySkins: Array<String> = ["LeoOficial", "LeoM Oficial", "LeoB Oficial"]
     fileprivate var imagem: String = "LeoOficial"
@@ -23,12 +24,12 @@ class AddUserViewController: UIViewController {
         
         bgView.layer.zPosition = -1000
         
+        moveValue = device.contains("iPad") ? 375 : 250
+        
         collectionView.delegate = self
         collectionView.dataSource = self
         
         txtField.delegate = self
-
-//        self.hideKeyboardWhenTappedAround()
     }
 
     override func didReceiveMemoryWarning() {
@@ -86,11 +87,11 @@ extension AddUserViewController: UICollectionViewDataSource {
 
 extension AddUserViewController: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        animateViewMoving(true, moveValue: 250)
+        animateViewMoving(true, moveValue: moveValue)
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        animateViewMoving(false, moveValue: 250)
+        animateViewMoving(false, moveValue: moveValue)
     }
 
     

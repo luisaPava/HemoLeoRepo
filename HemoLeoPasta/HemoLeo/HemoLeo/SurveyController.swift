@@ -11,6 +11,8 @@ import CareKit
 
 class SurveyController: UIViewController {
     @IBOutlet weak var texxt: UITextField!
+    @IBOutlet weak var semSintomasBtn: CustomView!
+    
     var event: OCKCarePlanEvent! = nil
     
     fileprivate var resultString = ""
@@ -64,6 +66,16 @@ class SurveyController: UIViewController {
         for _ in 0..<numBtn {
             resultArray.append("")
         }
+    }
+    
+    @IBAction func semSintomasAction(_ sender: UIButton) {
+        let assessment = assessmentManager!.activityWithType(type: activityType!)
+        var result: OCKCarePlanEventResult!
+        
+        result = assessment?.buildResultForCarePlanEvent(event: event, taskResult: "Sem Sintomas")
+        symptomTrackerModel.completeEvent(event: event, withResult: result!)
+        
+        let _ = navigationController?.popViewController(animated: true)
     }
     
     func saveResult(level: Int, local: String) {
@@ -126,6 +138,7 @@ extension SurveyController: MeninoDorViewDelegate, MeninoHematomasViewDelegate, 
 
                 popup.dismiss()
                 self.saveResult(level: self.sliderValue, local: botãoDesativado.accessibilityIdentifier!)
+                self.semSintomasBtn.isEnabled = false
             }
             
             let _ = popup.show(container)
