@@ -832,15 +832,15 @@
                                 <rect key="frame" x="34" y="370" width="252" height="126"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="resumoCell" rowHeight="39" id="Aus-fB-k0x" customClass="ResumoTableViewCell" customModule="iPhone" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="resumoCell" id="Dha-Er-ilL" customClass="ResumoTableViewCell" customModule="iPhone" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="252" height="39"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Aus-fB-k0x" id="GSI-qE-kWG">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Dha-Er-ilL" id="oy2-KV-BbY">
                                             <rect key="frame" x="0.0" y="0.0" width="252" height="38"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6o-OT-7Mh">
-                                                    <rect key="frame" x="36" y="-1" width="179" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C1W-oM-DOh">
+                                                    <rect key="frame" x="14" y="9" width="209" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -849,7 +849,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="resumoLabel" destination="b6o-OT-7Mh" id="YGJ-ej-u02"/>
+                                            <outlet property="resumoLabel" destination="C1W-oM-DOh" id="J9H-5H-gGh"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -881,6 +881,7 @@
                     <tabBarItem key="tabBarItem" title="Resumo" image="Export" id="kD7-c5-FgY"/>
                     <connections>
                         <outlet property="calendar" destination="Vm9-va-dIf" id="ae0-77-Hgp"/>
+                        <outlet property="contraintsHeight" destination="SuL-lK-IoZ" id="tP4-i5-Yot"/>
                         <outlet property="tableView" destination="btn-Ys-cGr" id="C1c-uQ-ciK"/>
                         <outlet property="titleLabel" destination="ErU-KK-Ip3" id="uZl-pQ-KUt"/>
                     </connections>
@@ -1007,7 +1008,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" reuseIdentifier="userCell" id="TFC-Pd-Btq" customClass="UserCollectionViewCell" customModule="iPhone" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="8" width="223" height="326"/>
+                                        <rect key="frame" x="0.0" y="7.5" width="223" height="326"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="223" height="326"/>
