@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="gcC-vp-j20" customClass="G8SliderStep" customModule="HemoLeo" customModuleProvider="target">
-                                <rect key="frame" x="14" y="135" width="272" height="31"/>
+                                <rect key="frame" x="19" y="105" width="262" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="qA6-Nc-YKB"/>
                                 </constraints>
@@ -79,7 +79,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o0k-gs-0Bg">
-                                <rect key="frame" x="16" y="165" width="11" height="21"/>
+                                <rect key="frame" x="31" y="145" width="11" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="11" id="Cif-Xu-zHf"/>
                                     <constraint firstAttribute="height" constant="21" id="OTt-Bt-xrT"/>
@@ -110,7 +110,7 @@
                                         <color key="value" red="0.18039215689999999" green="0.80000000000000004" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="2"/>
+                                        <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornurRadius">
                                         <real key="value" value="10"/>
@@ -118,7 +118,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1oZ-MU-Bgl">
-                                <rect key="frame" x="261" y="168" width="23" height="24"/>
+                                <rect key="frame" x="246" y="145" width="23" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="23" id="cXK-Hz-0Uj"/>
                                     <constraint firstAttribute="height" constant="24" id="l5z-8i-V3h"/>
@@ -130,21 +130,21 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="gcC-vp-j20" firstAttribute="leading" secondItem="Mq4-kX-x2X" secondAttribute="leadingMargin" id="6W2-SK-giT"/>
+                            <constraint firstItem="gcC-vp-j20" firstAttribute="leading" secondItem="Mq4-kX-x2X" secondAttribute="leadingMargin" constant="5" id="6W2-SK-giT"/>
                             <constraint firstAttribute="trailing" secondItem="48r-Yr-Z96" secondAttribute="trailing" constant="-10" id="9GA-cX-qKc"/>
-                            <constraint firstItem="o0k-gs-0Bg" firstAttribute="leading" secondItem="Mq4-kX-x2X" secondAttribute="leadingMargin" id="9SI-EF-vLE"/>
+                            <constraint firstItem="o0k-gs-0Bg" firstAttribute="leading" secondItem="Mq4-kX-x2X" secondAttribute="leadingMargin" constant="15" id="9SI-EF-vLE"/>
                             <constraint firstItem="48r-Yr-Z96" firstAttribute="leading" secondItem="Mq4-kX-x2X" secondAttribute="leading" constant="-10" id="JPD-UZ-jF5"/>
-                            <constraint firstItem="1oZ-MU-Bgl" firstAttribute="trailing" secondItem="Mq4-kX-x2X" secondAttribute="trailingMargin" id="MyK-be-CVS"/>
+                            <constraint firstItem="1oZ-MU-Bgl" firstAttribute="trailing" secondItem="Mq4-kX-x2X" secondAttribute="trailingMargin" constant="-15" id="MyK-be-CVS"/>
                             <constraint firstItem="48r-Yr-Z96" firstAttribute="top" secondItem="NRs-1e-iPF" secondAttribute="bottom" constant="30" id="PEN-Qc-Oks"/>
                             <constraint firstItem="NRs-1e-iPF" firstAttribute="centerX" secondItem="Mq4-kX-x2X" secondAttribute="centerX" id="PhU-bz-9sj"/>
-                            <constraint firstItem="gcC-vp-j20" firstAttribute="centerY" secondItem="Mq4-kX-x2X" secondAttribute="centerY" id="WVY-0i-khL"/>
+                            <constraint firstItem="gcC-vp-j20" firstAttribute="centerY" secondItem="Mq4-kX-x2X" secondAttribute="centerY" constant="-30" id="WVY-0i-khL"/>
                             <constraint firstItem="gcC-vp-j20" firstAttribute="centerX" secondItem="Mq4-kX-x2X" secondAttribute="centerX" id="WeZ-Eb-cLa"/>
                             <constraint firstItem="biv-K6-4Lm" firstAttribute="top" secondItem="48r-Yr-Z96" secondAttribute="bottom" constant="-10" id="Ygw-zb-nrW"/>
                             <constraint firstItem="VQg-Gs-20Y" firstAttribute="leading" secondItem="Mq4-kX-x2X" secondAttribute="leadingMargin" id="eUu-Kj-QYG"/>
-                            <constraint firstItem="1oZ-MU-Bgl" firstAttribute="top" secondItem="gcC-vp-j20" secondAttribute="bottom" id="hyC-oX-RHZ"/>
+                            <constraint firstItem="1oZ-MU-Bgl" firstAttribute="top" secondItem="gcC-vp-j20" secondAttribute="bottom" constant="10" id="hyC-oX-RHZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="VQg-Gs-20Y" secondAttribute="trailing" id="i23-R3-8rn"/>
-                            <constraint firstItem="o0k-gs-0Bg" firstAttribute="top" secondItem="gcC-vp-j20" secondAttribute="bottom" id="oSp-nD-406"/>
-                            <constraint firstItem="gcC-vp-j20" firstAttribute="trailing" secondItem="Mq4-kX-x2X" secondAttribute="trailingMargin" id="tPQ-SD-xxC"/>
+                            <constraint firstItem="o0k-gs-0Bg" firstAttribute="top" secondItem="gcC-vp-j20" secondAttribute="bottom" constant="10" id="oSp-nD-406"/>
+                            <constraint firstItem="gcC-vp-j20" firstAttribute="trailing" secondItem="Mq4-kX-x2X" secondAttribute="trailingMargin" constant="-5" id="tPQ-SD-xxC"/>
                             <constraint firstItem="VQg-Gs-20Y" firstAttribute="top" secondItem="87G-wq-0PW" secondAttribute="bottom" constant="20" id="vTa-DS-Bzx"/>
                         </constraints>
                     </view>
