@@ -12,13 +12,13 @@ import UIKit
     
     //MARK: PROPERTIES
     
-    @IBInspectable var borderColor: UIColor = UIColor.white {
+    @IBInspectable var borderColor: UIColor = UIColor.clear {
         didSet {
             layer.borderColor = borderColor.cgColor
         }
     }
     
-    @IBInspectable var borderWidth: CGFloat = 1.0 {
+    @IBInspectable var borderWidth: CGFloat = 0.0 {
         didSet {
             layer.borderWidth = borderWidth
         }
@@ -64,8 +64,8 @@ import UIKit
     }
     
     func setup() {
-        layer.borderColor = UIColor.white.cgColor
-        layer.borderWidth = 1.0
+        layer.borderColor = UIColor.clear.cgColor
+        layer.borderWidth = 0.0
         layer.cornerRadius = 1.0
     }
     

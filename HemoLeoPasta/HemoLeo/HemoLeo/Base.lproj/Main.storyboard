@@ -377,7 +377,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="223" height="267"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ncr-C5-gad">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LeoSombra" translatesAutoresizingMaskIntoConstraints="NO" id="ncr-C5-gad">
                                                     <rect key="frame" x="0.0" y="0.0" width="223" height="267"/>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kaV-Ut-9Dj">
@@ -444,6 +444,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bgView" destination="co0-J1-24g" id="jJ9-fJ-Z5H"/>
                         <outlet property="collectionView" destination="7Jq-40-EX0" id="BJ1-AZ-dea"/>
                         <outlet property="txtField" destination="A3K-hB-eJE" id="YYX-Ex-IOf"/>
                     </connections>
@@ -480,9 +481,14 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <view alpha="0.55000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oc9-Wb-VPp">
+                            <view alpha="0.55000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oc9-Wb-VPp" customClass="ViewDesignable" customModule="HemoLeo" customModuleProvider="target">
                                 <rect key="frame" x="153" y="90" width="717" height="461"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornurRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="4WK-7z-hAI" customClass="TutorialPasso2View" customModule="HemoLeo" customModuleProvider="target">
                                 <rect key="frame" x="153" y="90" width="717" height="461"/>
@@ -1356,7 +1362,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="C5M-X6-YIy">
-                                <rect key="frame" x="62" y="110" width="290" height="110"/>
+                                <rect key="frame" x="62" y="80" width="290" height="110"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LG4-Lo-lzC">
                                         <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
@@ -1389,7 +1395,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="3R4-be-U7H">
-                                <rect key="frame" x="62" y="510" width="290" height="110"/>
+                                <rect key="frame" x="62" y="480" width="290" height="110"/>
                                 <subviews>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UtG-Cw-oKf">
                                         <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
@@ -1423,7 +1429,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="FKj-E2-LpM">
-                                <rect key="frame" x="62" y="310" width="290" height="110"/>
+                                <rect key="frame" x="62" y="280" width="290" height="110"/>
                                 <subviews>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvC-ZM-hs9">
                                         <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
@@ -1458,7 +1464,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="C5M-X6-YIy" firstAttribute="top" secondItem="pcU-9B-Hnw" secondAttribute="bottom" constant="90" id="7f1-ZB-gw7"/>
+                            <constraint firstItem="C5M-X6-YIy" firstAttribute="top" secondItem="pcU-9B-Hnw" secondAttribute="bottom" constant="60" id="7f1-ZB-gw7"/>
                             <constraint firstItem="3R4-be-U7H" firstAttribute="top" secondItem="FKj-E2-LpM" secondAttribute="bottom" constant="90" id="9M0-dL-THY"/>
                             <constraint firstItem="FKj-E2-LpM" firstAttribute="centerX" secondItem="vGK-f1-s8h" secondAttribute="centerX" id="Bp7-pz-T9s"/>
                             <constraint firstItem="C5M-X6-YIy" firstAttribute="centerX" secondItem="vGK-f1-s8h" secondAttribute="centerX" id="KfJ-pR-9KF"/>
@@ -1529,9 +1535,14 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <view alpha="0.55000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HVR-Nm-iLw">
+                            <view alpha="0.55000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HVR-Nm-iLw" customClass="ViewDesignable" customModule="HemoLeo" customModuleProvider="target">
                                 <rect key="frame" x="153" y="90" width="717" height="461"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornurRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="jqR-FJ-rHr" customClass="TutorialPasso1View" customModule="HemoLeo" customModuleProvider="target">
                                 <rect key="frame" x="153" y="90" width="717" height="461"/>
@@ -1604,9 +1615,14 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <view alpha="0.55000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="80I-mu-bpb">
+                            <view alpha="0.55000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="80I-mu-bpb" customClass="ViewDesignable" customModule="HemoLeo" customModuleProvider="target">
                                 <rect key="frame" x="153" y="90" width="717" height="461"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornurRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="zfm-vK-OrF" customClass="TutorialPasso3View" customModule="HemoLeo" customModuleProvider="target">
                                 <rect key="frame" x="153" y="90" width="717" height="461"/>
@@ -1679,9 +1695,14 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <view alpha="0.55000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yid-ag-Ecs">
+                            <view alpha="0.55000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yid-ag-Ecs" customClass="ViewDesignable" customModule="HemoLeo" customModuleProvider="target">
                                 <rect key="frame" x="153" y="90" width="717" height="461"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornurRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="zRw-92-KYO" customClass="TutorialPasso4View" customModule="HemoLeo" customModuleProvider="target">
                                 <rect key="frame" x="153" y="90" width="717" height="461"/>
@@ -1754,9 +1775,14 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <view alpha="0.55000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ywK-ua-Dfa">
+                            <view alpha="0.55000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ywK-ua-Dfa" customClass="ViewDesignable" customModule="HemoLeo" customModuleProvider="target">
                                 <rect key="frame" x="153" y="90" width="717" height="461"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornurRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="pov-R3-rQx" customClass="TutorialPasso5View" customModule="HemoLeo" customModuleProvider="target">
                                 <rect key="frame" x="153" y="90" width="717" height="461"/>
@@ -1829,9 +1855,14 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <view alpha="0.55000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KEu-im-8DX">
+                            <view alpha="0.55000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KEu-im-8DX" customClass="ViewDesignable" customModule="HemoLeo" customModuleProvider="target">
                                 <rect key="frame" x="153" y="90" width="717" height="461"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornurRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="zB5-sY-Yro" customClass="TutorialPasso6View" customModule="HemoLeo" customModuleProvider="target">
                                 <rect key="frame" x="153" y="90" width="717" height="461"/>
@@ -1903,9 +1934,14 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <view alpha="0.55000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3A6-2z-Bz4">
+                            <view alpha="0.55000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3A6-2z-Bz4" customClass="ViewDesignable" customModule="HemoLeo" customModuleProvider="target">
                                 <rect key="frame" x="153" y="90" width="717" height="461"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornurRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="0Bv-DJ-Mrk">
                                 <rect key="frame" x="153" y="90" width="717" height="461"/>
@@ -1984,9 +2020,14 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <view alpha="0.55000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W2K-ld-UF7">
+                            <view alpha="0.55000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W2K-ld-UF7" customClass="ViewDesignable" customModule="HemoLeo" customModuleProvider="target">
                                 <rect key="frame" x="153" y="90" width="717" height="461"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornurRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="veo-QM-79D" customClass="MateriaisView" customModule="HemoLeo" customModuleProvider="target">
                                 <rect key="frame" x="153" y="90" width="717" height="461"/>
@@ -2053,6 +2094,7 @@
         <image name="Default" width="1024" height="768"/>
         <image name="FruitsNotSelected" width="110" height="110"/>
         <image name="FrutasHIghlighted" width="110" height="110"/>
+        <image name="LeoSombra" width="700" height="680"/>
         <image name="LightBlue" width="51" height="51"/>
         <image name="LightGray" width="51" height="51"/>
         <image name="LightGreen" width="51" height="51"/>

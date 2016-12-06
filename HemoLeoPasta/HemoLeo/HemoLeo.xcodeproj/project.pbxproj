@@ -194,8 +194,8 @@
 		4EE05E6D1DE0FB570088CB99 /* AddUserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE05E6B1DE0FB570088CB99 /* AddUserCollectionViewCell.swift */; };
 		4EE05E6F1DE0FEDA0088CB99 /* carinho1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EE05E6E1DE0FEDA0088CB99 /* carinho1.png */; };
 		4EE05E701DE0FEDA0088CB99 /* carinho1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EE05E6E1DE0FEDA0088CB99 /* carinho1.png */; };
-		4EE05E7D1DE25DFB0088CB99 /* UIViewIBDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE05E7C1DE25DFB0088CB99 /* UIViewIBDesignable.swift */; };
-		4EE05E7E1DE25DFB0088CB99 /* UIViewIBDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE05E7C1DE25DFB0088CB99 /* UIViewIBDesignable.swift */; };
+		4EE05E7D1DE25DFB0088CB99 /* UIButtonIBDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE05E7C1DE25DFB0088CB99 /* UIButtonIBDesignable.swift */; };
+		4EE05E7E1DE25DFB0088CB99 /* UIButtonIBDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE05E7C1DE25DFB0088CB99 /* UIButtonIBDesignable.swift */; };
 		4EE05E841DE278D20088CB99 /* TutorialPasso2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9377701DE25E980075631B /* TutorialPasso2View.swift */; };
 		4EE05E851DE278D70088CB99 /* TutorialPasso 2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB93776F1DE25E980075631B /* TutorialPasso 2.xcassets */; };
 		4EE05E951DE32AD10088CB99 /* MeninoDor.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EE05E931DE32AD10088CB99 /* MeninoDor.xcassets */; };
@@ -218,6 +218,8 @@
 		EB69AB8B1DE255D6003EAB99 /* TutorialPasso6.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB69AB881DE255D6003EAB99 /* TutorialPasso6.xcassets */; };
 		EB69AB8C1DE255D6003EAB99 /* TutorialPasso6View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB69AB891DE255D6003EAB99 /* TutorialPasso6View.swift */; };
 		EB69AB8D1DE255D6003EAB99 /* TutorialPasso6View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB69AB891DE255D6003EAB99 /* TutorialPasso6View.swift */; };
+		EB8FF0FB1DF6F9D500E06B9F /* ViewIBDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8FF0FA1DF6F9D500E06B9F /* ViewIBDesignable.swift */; };
+		EB8FF0FC1DF6FCDB00E06B9F /* ViewIBDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8FF0FA1DF6F9D500E06B9F /* ViewIBDesignable.swift */; };
 		EB9377711DE25E980075631B /* TutorialPasso 2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB93776F1DE25E980075631B /* TutorialPasso 2.xcassets */; };
 		EB9377721DE25E980075631B /* TutorialPasso2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9377701DE25E980075631B /* TutorialPasso2View.swift */; };
 		EBBD25AE1D3731BE00786155 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBD25AD1D3731BE00786155 /* SettingViewController.swift */; };
@@ -396,7 +398,7 @@
 		4EE05E681DE0F3AB0088CB99 /* UserCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCollectionViewCell.swift; sourceTree = "<group>"; };
 		4EE05E6B1DE0FB570088CB99 /* AddUserCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddUserCollectionViewCell.swift; sourceTree = "<group>"; };
 		4EE05E6E1DE0FEDA0088CB99 /* carinho1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = carinho1.png; path = LeoImages.atlas/carinho1.png; sourceTree = "<group>"; };
-		4EE05E7C1DE25DFB0088CB99 /* UIViewIBDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewIBDesignable.swift; sourceTree = "<group>"; };
+		4EE05E7C1DE25DFB0088CB99 /* UIButtonIBDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonIBDesignable.swift; sourceTree = "<group>"; };
 		4EE05E931DE32AD10088CB99 /* MeninoDor.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MeninoDor.xcassets; sourceTree = "<group>"; };
 		4EE05E941DE32AD10088CB99 /* MeninoDorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeninoDorView.swift; sourceTree = "<group>"; };
 		614E74FB9878C77BC0228158 /* Pods-iPhone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPhone.release.xcconfig"; path = "Pods/Target Support Files/Pods-iPhone/Pods-iPhone.release.xcconfig"; sourceTree = "<group>"; };
@@ -414,6 +416,7 @@
 		EB69AB711DE24FC6003EAB99 /* TutorialPasso5View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialPasso5View.swift; sourceTree = "<group>"; };
 		EB69AB881DE255D6003EAB99 /* TutorialPasso6.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TutorialPasso6.xcassets; sourceTree = "<group>"; };
 		EB69AB891DE255D6003EAB99 /* TutorialPasso6View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialPasso6View.swift; sourceTree = "<group>"; };
+		EB8FF0FA1DF6F9D500E06B9F /* ViewIBDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewIBDesignable.swift; sourceTree = "<group>"; };
 		EB93776F1DE25E980075631B /* TutorialPasso 2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "TutorialPasso 2.xcassets"; sourceTree = "<group>"; };
 		EB9377701DE25E980075631B /* TutorialPasso2View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialPasso2View.swift; sourceTree = "<group>"; };
 		EBBD25AD1D3731BE00786155 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
@@ -933,7 +936,8 @@
 			isa = PBXGroup;
 			children = (
 				4E6796871DDD35C9000E0A5E /* ADVSegmentedControl.swift */,
-				4EE05E7C1DE25DFB0088CB99 /* UIViewIBDesignable.swift */,
+				4EE05E7C1DE25DFB0088CB99 /* UIButtonIBDesignable.swift */,
+				EB8FF0FA1DF6F9D500E06B9F /* ViewIBDesignable.swift */,
 			);
 			name = IBDesignables;
 			sourceTree = "<group>";
@@ -1155,7 +1159,7 @@
 				TargetAttributes = {
 					2BA1887B1D355A2C007F1CEB = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = BUK6UDW987;
+						DevelopmentTeam = AU45XX83RQ;
 						LastSwiftMigration = 0810;
 						SystemCapabilities = {
 							com.apple.Push = {
@@ -1168,7 +1172,7 @@
 					};
 					4EAFA1EB1DC7AAC2002BA048 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = BUK6UDW987;
+						DevelopmentTeam = AU45XX83RQ;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -1437,7 +1441,7 @@
 				4ED0D2981DDDDADD00BE15CE /* Tutorial1ViewController.swift in Sources */,
 				4EAFA20D1DC7B772002BA048 /* MainViewModel.swift in Sources */,
 				2B7997F21D37CD9F00D0996D /* Story2ViewController.swift in Sources */,
-				4EE05E7D1DE25DFB0088CB99 /* UIViewIBDesignable.swift in Sources */,
+				4EE05E7D1DE25DFB0088CB99 /* UIButtonIBDesignable.swift in Sources */,
 				4ED0D2A21DDDDB3B00BE15CE /* Tutorial6ViewController.swift in Sources */,
 				4E2B2DF31D3ABEEB00EED2B4 /* AssessmentsManager.swift in Sources */,
 				4E0364E61DD6B6D200C2793E /* PopupController.swift in Sources */,
@@ -1470,6 +1474,7 @@
 				4E5092EA1DF0EF39001F2B7F /* InsightsViewController.swift in Sources */,
 				2B87D5EB1D3825DB00F29678 /* AddedActivitiesData.swift in Sources */,
 				77E89D111D4252AA00FDA59B /* ThemesViewController.swift in Sources */,
+				EB8FF0FB1DF6F9D500E06B9F /* ViewIBDesignable.swift in Sources */,
 				4ED0D2B81DDDE47600BE15CE /* UIAnimation.swift in Sources */,
 				4EB573341DF3659600BD54B3 /* ResumoTableViewCell.swift in Sources */,
 			);
@@ -1512,7 +1517,7 @@
 				4E3244991DD3ECA900258CE1 /* SurveyController.swift in Sources */,
 				4EB573301DF343F000BD54B3 /* EventType.swift in Sources */,
 				4E5092DC1DF05B29001F2B7F /* MeninoSangramentoView.swift in Sources */,
-				4EE05E7E1DE25DFB0088CB99 /* UIViewIBDesignable.swift in Sources */,
+				4EE05E7E1DE25DFB0088CB99 /* UIButtonIBDesignable.swift in Sources */,
 				4EB5735D1DF6189400BD54B3 /* PDFGenerator.swift in Sources */,
 				4ED0D2B41DDDDEBD00BE15CE /* Tutorial9ViewController.swift in Sources */,
 				4E3244811DD3DE2D00258CE1 /* Exercise.swift in Sources */,
@@ -1540,6 +1545,7 @@
 				4ED0D2AF1DDDDEAB00BE15CE /* Tutorial4ViewController.swift in Sources */,
 				4EAFA1EF1DC7AAC2002BA048 /* AppDelegate.swift in Sources */,
 				4ED0D2AB1DDDDE9D00BE15CE /* TutorialPageViewController.swift in Sources */,
+				EB8FF0FC1DF6FCDB00E06B9F /* ViewIBDesignable.swift in Sources */,
 				4EE05E6D1DE0FB570088CB99 /* AddUserCollectionViewCell.swift in Sources */,
 				4E3244941DD3EB7800258CE1 /* NSCalendar+Dates.swift in Sources */,
 				4E3244841DD3DE2D00258CE1 /* Water.swift in Sources */,
@@ -1703,7 +1709,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = BUK6UDW987;
+				DEVELOPMENT_TEAM = AU45XX83RQ;
 				INFOPLIST_FILE = HemoLeo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1723,7 +1729,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = BUK6UDW987;
+				DEVELOPMENT_TEAM = AU45XX83RQ;
 				INFOPLIST_FILE = HemoLeo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1743,7 +1749,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				DEVELOPMENT_TEAM = BUK6UDW987;
+				DEVELOPMENT_TEAM = AU45XX83RQ;
 				INFOPLIST_FILE = iPhone/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1762,7 +1768,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				DEVELOPMENT_TEAM = BUK6UDW987;
+				DEVELOPMENT_TEAM = AU45XX83RQ;
 				INFOPLIST_FILE = iPhone/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
