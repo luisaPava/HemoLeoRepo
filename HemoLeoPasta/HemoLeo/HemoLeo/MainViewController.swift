@@ -16,6 +16,7 @@ class MainViewController: UIViewController {
     var canvasButton: UIButton!
     var themesButton: UIButton!
     var insightCardButton: UIButton!
+    var logOutButton: UIButton!
     
     let defaults = UserDefaults.standard
     
@@ -39,6 +40,11 @@ class MainViewController: UIViewController {
             return true
         }
         
+        //Button to logout
+        logOutButton = mainModel.createButton(view: self.view, x: width / 1.1, y: height / 1.15, image: #imageLiteral(resourceName: "LogOut"))
+        logOutButton.addTarget(self, action: #selector(logoutButtonAction), for: .touchUpInside)
+        
+        self.view.addSubview(logOutButton)
         
         //Button to CareCard
         careCardButton = mainModel.createButton(view: self.view, x: width / 1.1, y: height / 25.6, image: #imageLiteral(resourceName: "Health"))
@@ -117,6 +123,14 @@ class MainViewController: UIViewController {
 
     
     //MARK: - Buttons Actions and Popover
+    
+    //Logout button action
+    func logoutButtonAction() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        self.view.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "uservc")
+        self.view.window?.rootViewController?.dismiss(animated: false, completion: nil)
+    }
     
     //Care Card button action
     func careCardButtonAction() {
