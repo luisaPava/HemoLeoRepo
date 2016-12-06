@@ -156,9 +156,15 @@ extension String {
         
         return stringInputArr.first!
     }
+    
+    func getFirstWordAndLetter() -> String {
+        let stringInputArr = self.components(separatedBy: " ")
+        let stringNeed = stringInputArr.first! + " " + String(stringInputArr[1].characters.first!)
+        
+        return stringNeed
+        
+    }
 }
-
-
 
 extension UITextView {
     func showInstructions(_ time: Double) {
@@ -176,5 +182,3 @@ extension Float {
         }
     }
 }
-
-

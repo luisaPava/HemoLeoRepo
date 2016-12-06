@@ -28,7 +28,7 @@ class Emergencial: Assessment {
             groupIdentifier: nil,
             title: title,
             text: summary,
-            tintColor: UIColor(netHex: 0x2ecc71),
+            tintColor: UIColor.blue,
             resultResettable: true,
             schedule: schedule,
             userInfo: nil

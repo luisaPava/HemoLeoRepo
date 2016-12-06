@@ -40,12 +40,15 @@ class SurveyController: UIViewController {
         
         setNumBtn()
         
-//        print("\(width) - \(height)")
+        print("\(width) - \(height)")
   
     }
     
-    func setMeninoView() {
-        
+    override func viewDidLayoutSubviews() {
+        if UIDevice.current.modelName.contains("iPad") {
+            print("iPad")
+            self.view.frame = CGRect(x: 0, y: 0, width: 414, height: 736)
+        }
     }
     
     func setNumBtn() {
@@ -76,7 +79,7 @@ class SurveyController: UIViewController {
         var result: OCKCarePlanEventResult!
         
         if self.countNonEmptyElements() == 1 {
-            resultString = resultArray[index]
+            resultString = resultArray[index].getFirstWordAndLetter()
             
         } else {
             resultString = "\(self.countNonEmptyElements()) lugares"

@@ -35,7 +35,6 @@ class DAOCalendario: Observer {
     // Update the user
     override func update() {
         self.leo = subject.getLeo()
-//        print(path)
         
     }
     
@@ -83,14 +82,30 @@ class DAOCalendario: Observer {
         } else if dic[day]?[type.rawValue] == nil {
             dic[day]?[type.rawValue] = [event]
         
+        } else if contains(event, (dic[day]?[type.rawValue])!) != -1 {
+            let index = contains(event, (dic[day]?[type.rawValue])!)
+            
+            dic[day]?[type.rawValue]?[index] = event
+
         } else {
             dic[day]?[type.rawValue]?.append(event)
-
         }
         
         if !codingManager.saveAnyWithPath(path: path, object: dic) {
             print("Erro ao salvar")
         }
+    }
+    
+    private func contains(_ str1: String, _ str2: [String]) -> Int {
+        let string = str1.getFirstWord()
+        
+        for i in str2 {
+            if i.contains(string) {
+                return str2.index(of: i)!
+            }
+        }
+        
+        return -1
     }
     
     func reloadData() {

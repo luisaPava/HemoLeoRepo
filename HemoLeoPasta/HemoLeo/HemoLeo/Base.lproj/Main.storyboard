@@ -1168,15 +1168,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="qtA-I9-Eb0" customClass="MeninoSangramentoView" customModule="HemoLeo" customModuleProvider="target">
+                            <view hidden="YES" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="qtA-I9-Eb0" customClass="MeninoSangramentoView" customModule="HemoLeo" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="20" width="414" height="552"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="khj-05-o25" customClass="MeninoHematomasView" customModule="HemoLeo" customModuleProvider="target">
+                            <view hidden="YES" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="khj-05-o25" customClass="MeninoHematomasView" customModule="HemoLeo" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="20" width="414" height="552"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="8fR-za-0jq" customClass="MeninoDorView" customModule="HemoLeo" customModuleProvider="target">
+                            <view hidden="YES" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="8fR-za-0jq" customClass="MeninoDorView" customModule="HemoLeo" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="20" width="414" height="552"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
@@ -1222,6 +1222,8 @@
                     <size key="freeformSize" width="414" height="736"/>
                     <connections>
                         <outlet property="viewMenino" destination="8fR-za-0jq" id="O0A-hV-gJF"/>
+                        <outlet property="viewMeninoHematoma" destination="khj-05-o25" id="JLz-E4-F66"/>
+                        <outlet property="viewMeninoSangramento" destination="qtA-I9-Eb0" id="qhn-dR-2Tn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OsO-MD-YHf" userLabel="First Responder" sceneMemberID="firstResponder"/>

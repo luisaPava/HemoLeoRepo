@@ -29,6 +29,7 @@ class SymptomTrackerModel: Observer {
     // Update the user
     override func update() {
         self.leo = self.subject.getLeo()
+        self.storeManager = CarePlanStoreManager(path: leo.getId())
     }
     
     func createSymtomTracker() -> OCKSymptomTrackerViewController {
@@ -36,12 +37,13 @@ class SymptomTrackerModel: Observer {
         
         symptomCardViewController.showEdgeIndicators = true
         
+        symptomCardViewController.progressRingTintColor = UIColor(netHex: 0x2BC16B)
+        
         // Setup controller's title and tab bar icon
         symptomCardViewController.title = "Cuidados"
         symptomCardViewController.tabBarItem = UITabBarItem(title: "Sintomas", image: UIImage(named: "carecard"), selectedImage: UIImage(named: "carecard-fill"))
         
-        symptomCardViewController.navigationItem.leftBarButtonItem?.tintColor = UIColor.red
-        
+        symptomCardViewController.navigationItem.rightBarButtonItem?.tintColor = UIColor(netHex: 0x2BC16B)
         return symptomCardViewController
     }
     
