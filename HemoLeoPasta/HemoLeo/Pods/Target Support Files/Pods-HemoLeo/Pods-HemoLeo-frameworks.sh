@@ -85,9 +85,11 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/FSCalendar-iOS10.0/FSCalendar.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SimplePDF-iOS10.0/SimplePDF.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SkyFloatingLabelTextField-iOS10.0/SkyFloatingLabelTextField.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/FSCalendar-iOS10.0/FSCalendar.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SimplePDF-iOS10.0/SimplePDF.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SkyFloatingLabelTextField-iOS10.0/SkyFloatingLabelTextField.framework"
 fi

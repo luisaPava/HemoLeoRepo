@@ -57,6 +57,10 @@ class DAOCalendario: Observer {
         return dic[day]!.count
     }
     
+    func getEventsDictionary() -> [String : [String : [String]]] {
+        return dic
+    }
+    
     func getCount(withType type: EventType, day: Date) -> Int {
         let dayString = formatter.string(from: day)
         

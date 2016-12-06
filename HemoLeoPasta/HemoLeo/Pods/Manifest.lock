@@ -1,15 +1,18 @@
 PODS:
   - FSCalendar (2.5.1)
+  - SimplePDF (2.0.0)
   - SkyFloatingLabelTextField (1.2.1)
 
 DEPENDENCIES:
   - FSCalendar
+  - SimplePDF
   - SkyFloatingLabelTextField (~> 1.0)
 
 SPEC CHECKSUMS:
   FSCalendar: 8efeb4b92240937204165c7743f4375923112fb5
+  SimplePDF: 9004c9ad4aa30a9ccec6032f4f12b76bc053ec55
   SkyFloatingLabelTextField: 3f6610aded18e778df5cfab3b9e12a11b3e014e9
 
-PODFILE CHECKSUM: 1f8555de41ef5643350e88048ba6aa2334f7e159
+PODFILE CHECKSUM: afc10bfaa6365c27b396112e72899422bc7945ed
 
 COCOAPODS: 1.0.1

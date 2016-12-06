@@ -17,11 +17,14 @@ class InsightsViewController: UIViewController {
     fileprivate let calendarDAO = DAOCalendario.sharedDAOCalendario
     fileprivate var arraySectionsName: [String] = []
     fileprivate var arraySections: [[String]] = []
+    private let pdfGenerator = PDFGenerator.sharedPDFGenerator
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         titleLabel.text = ""
+        
+        pdfGenerator.generatePDF()
         
         self.tableView.dataSource = self
         tableView.rowHeight = UITableViewAutomaticDimension
