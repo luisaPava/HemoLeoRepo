@@ -200,9 +200,9 @@ class TutorialPasso6View : UIView, CAAnimationDelegate {
 		let liquido__xScale = TutorialPasso6PassthroughView()
 		let liquido__yScale = TutorialPasso6PassthroughView()
 		let liquido = UIImageView()
-		let imgLiquido = UIImage(named:"Liquido.png", in: bundle, compatibleWith: nil)
+		let imgLiquido = UIImage(named:"Liquido6.png", in: bundle, compatibleWith: nil)
 		if imgLiquido == nil {
-			print("** Warning: Could not create image from 'Liquido.png'")
+			print("** Warning: Could not create image from 'Liquido6.png'")
 		}
 		liquido.image = imgLiquido
 		liquido.contentMode = .center

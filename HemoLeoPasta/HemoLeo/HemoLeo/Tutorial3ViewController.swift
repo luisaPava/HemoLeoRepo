@@ -23,7 +23,7 @@ class Tutorial3ViewController: UIViewController {
         
         if flag {
             text.alpha = 0
-            text.showInstructions(10)
+            text.showInstructions(11)
             
             flag = false
         }
