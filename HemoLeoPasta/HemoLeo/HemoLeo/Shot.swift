@@ -25,15 +25,15 @@ class Shot: Activity {
         
         // Set information for the activity
         let title = NSLocalizedString("Profilaxia", comment: "")
-        let summary = NSLocalizedString("", comment: "")
-        let instructions = NSLocalizedString("", comment: "")
+//        let summary = NSLocalizedString("", comment: "")
+        let instructions = NSLocalizedString("Siga as orioentações do seu médico. Instruções detalhadas podem ser econtradas em \"tutorial\"", comment: "")
         
         // Setup the activity
         let activity = OCKCarePlanActivity.intervention(
             withIdentifier: activityType.rawValue,
             groupIdentifier: nil,
             title: title,
-            text: summary,
+            text: nil,
             tintColor: UIColor.lightGray,
             instructions: instructions,
             imageURL: nil,

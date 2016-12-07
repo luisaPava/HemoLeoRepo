@@ -35,7 +35,7 @@ class Fruits: Activity {
             text: summary,
             tintColor: UIColor.red,
             instructions: instructions,
-            imageURL: NSURL(string: "https://webappstatic.buzzfeed.com/static/images/public/verticals/food-title.png") as URL?,
+            imageURL: nil,
             schedule: schedule,
             userInfo: nil
         )

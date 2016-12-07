@@ -30,6 +30,8 @@ class SymptomTrackerModel: Observer {
     override func update() {
         self.leo = self.subject.getLeo()
         self.storeManager = CarePlanStoreManager(path: leo.getId())
+        
+        assessmentManager = AssessmentsManager(carePlanStore: storeManager.store)
     }
     
     func createSymtomTracker() -> OCKSymptomTrackerViewController {

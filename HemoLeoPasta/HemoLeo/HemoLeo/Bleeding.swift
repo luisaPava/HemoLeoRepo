@@ -19,7 +19,7 @@ class Bleeding: Assessment {
         let schedule = OCKCareSchedule.weeklySchedule(withStartDate: startDate as DateComponents, occurrencesOnEachDay: [1, 1, 1, 1, 1, 1, 1])
         
         //Get the localized strungs to use in the assessment
-        let title = NSLocalizedString("Sangramento", comment: "")
+        let title = NSLocalizedString("Dor Muscular", comment: "")
         let summary = NSLocalizedString("", comment: "")
         
         //Create the activity

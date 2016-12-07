@@ -19,7 +19,7 @@ class Pain: Assessment {
         let schedule = OCKCareSchedule.weeklySchedule(withStartDate: startDate as DateComponents, occurrencesOnEachDay: [1, 1, 1, 1, 1, 1, 1])
         
         //Get the localized strings to use in the assessment
-        let title = NSLocalizedString("Dor", comment: "")
+        let title = NSLocalizedString("Hemartrose", comment: "")
         let summary = NSLocalizedString("", comment: "")
         
         //Create the activity
