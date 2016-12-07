@@ -23,7 +23,7 @@ class Tutorial4ViewController: UIViewController {
         // Do any additional setup after loading the view.
         if flag {
             text.alpha = 0
-            text.showInstructions(10)
+            text.showInstructions(16)
             
             flag = false
         }

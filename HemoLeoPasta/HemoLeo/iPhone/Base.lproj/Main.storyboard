@@ -27,10 +27,10 @@
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG" translatesAutoresizingMaskIntoConstraints="NO" id="A4b-7i-CGv">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uEd-OP-Xsx">
-                                <rect key="frame" x="0.0" y="-6" width="320" height="574"/>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uEd-OP-Xsx">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="0zb-7N-0qt">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="574"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
                                 <blurEffect style="dark"/>
@@ -1687,7 +1687,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="b9f-Sf-VOo" customClass="TutorialPasso7View">
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="b9f-Sf-VOo" customClass="TutorialPasso7View" customModule="iPhone" customModuleProvider="target">
                                 <rect key="frame" x="46" y="70" width="228" height="313"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
@@ -1714,6 +1714,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="passo7" destination="b9f-Sf-VOo" id="7dI-3t-GCb"/>
                         <outlet property="text" destination="EY7-Uc-9Vi" id="zzz-aA-oMq"/>
                     </connections>
                 </viewController>

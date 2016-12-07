@@ -10,6 +10,7 @@ import UIKit
 
 class Tutorial7ViewController: UIViewController {
 
+    @IBOutlet weak var passo7: TutorialPasso7View!
     @IBOutlet weak var text: UITextView!
     var flag: Bool = true
     
@@ -20,7 +21,7 @@ class Tutorial7ViewController: UIViewController {
         
         if flag {
             text.alpha = 0
-            text.showInstructions(10)
+            text.showInstructions(2)
             
             flag = false
         }
@@ -34,16 +35,23 @@ class Tutorial7ViewController: UIViewController {
     }
     
     
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(_ animated: Bool) {
+        
+        passo7.addPasso7Animation()
+        
     }
-    */
-
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        passo7.removePasso7Animation()
+    }
+    
+    @IBAction func redo(_ sender: UIButton) {
+        passo7.removePasso7Animation()
+        passo7.addPasso7Animation()
+    }
+    
+    @IBAction func backButton(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+        
+    }
 }

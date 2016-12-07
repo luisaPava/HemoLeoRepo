@@ -216,6 +216,10 @@
 		EB69AB8B1DE255D6003EAB99 /* TutorialPasso6.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB69AB881DE255D6003EAB99 /* TutorialPasso6.xcassets */; };
 		EB69AB8C1DE255D6003EAB99 /* TutorialPasso6View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB69AB891DE255D6003EAB99 /* TutorialPasso6View.swift */; };
 		EB69AB8D1DE255D6003EAB99 /* TutorialPasso6View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB69AB891DE255D6003EAB99 /* TutorialPasso6View.swift */; };
+		EB7C93441DF8515400ED21DB /* TutorialPasso7.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB7C93421DF8515400ED21DB /* TutorialPasso7.xcassets */; };
+		EB7C93451DF8515400ED21DB /* TutorialPasso7.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB7C93421DF8515400ED21DB /* TutorialPasso7.xcassets */; };
+		EB7C93461DF8515400ED21DB /* TutorialPasso7View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7C93431DF8515400ED21DB /* TutorialPasso7View.swift */; };
+		EB7C93471DF8515400ED21DB /* TutorialPasso7View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7C93431DF8515400ED21DB /* TutorialPasso7View.swift */; };
 		EB8FF0FB1DF6F9D500E06B9F /* ViewIBDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8FF0FA1DF6F9D500E06B9F /* ViewIBDesignable.swift */; };
 		EB8FF0FC1DF6FCDB00E06B9F /* ViewIBDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8FF0FA1DF6F9D500E06B9F /* ViewIBDesignable.swift */; };
 		EB9377711DE25E980075631B /* TutorialPasso 2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB93776F1DE25E980075631B /* TutorialPasso 2.xcassets */; };
@@ -413,6 +417,8 @@
 		EB69AB711DE24FC6003EAB99 /* TutorialPasso5View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialPasso5View.swift; sourceTree = "<group>"; };
 		EB69AB881DE255D6003EAB99 /* TutorialPasso6.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TutorialPasso6.xcassets; sourceTree = "<group>"; };
 		EB69AB891DE255D6003EAB99 /* TutorialPasso6View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialPasso6View.swift; sourceTree = "<group>"; };
+		EB7C93421DF8515400ED21DB /* TutorialPasso7.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TutorialPasso7.xcassets; sourceTree = "<group>"; };
+		EB7C93431DF8515400ED21DB /* TutorialPasso7View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialPasso7View.swift; sourceTree = "<group>"; };
 		EB8FF0FA1DF6F9D500E06B9F /* ViewIBDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewIBDesignable.swift; sourceTree = "<group>"; };
 		EB93776F1DE25E980075631B /* TutorialPasso 2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "TutorialPasso 2.xcassets"; sourceTree = "<group>"; };
 		EB9377701DE25E980075631B /* TutorialPasso2View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialPasso2View.swift; sourceTree = "<group>"; };
@@ -471,7 +477,6 @@
 			children = (
 				4ED0D2B71DDDE47600BE15CE /* UIAnimation.swift */,
 				2B7099BB1DDF2179006C27F0 /* Passo0 */,
-				2B7099BA1DDF2170006C27F0 /* Passo8 */,
 				2B7099B91DDF2167006C27F0 /* Passo7 */,
 				2B7099B81DDF2161006C27F0 /* Passo6 */,
 				2B7099B71DDF215B006C27F0 /* Passo5 */,
@@ -540,15 +545,10 @@
 		2B7099B91DDF2167006C27F0 /* Passo7 */ = {
 			isa = PBXGroup;
 			children = (
+				EB7C93421DF8515400ED21DB /* TutorialPasso7.xcassets */,
+				EB7C93431DF8515400ED21DB /* TutorialPasso7View.swift */,
 			);
 			name = Passo7;
-			sourceTree = "<group>";
-		};
-		2B7099BA1DDF2170006C27F0 /* Passo8 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Passo8;
 			sourceTree = "<group>";
 		};
 		2B7099BB1DDF2179006C27F0 /* Passo0 */ = {
@@ -1251,6 +1251,7 @@
 				4E5092D31DF0584A001F2B7F /* MeninoHematomas.xcassets in Resources */,
 				2B5731101DDF808500F1A834 /* TutorialPasso3.xcassets in Resources */,
 				4E3244A81DD6A4B000258CE1 /* PopUp.storyboard in Resources */,
+				EB7C93441DF8515400ED21DB /* TutorialPasso7.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1268,6 +1269,7 @@
 				4E32449F1DD3ECD400258CE1 /* CustomActivityCell.xib in Resources */,
 				2B57311B1DDF809000F1A834 /* TutorialPasso4.xcassets in Resources */,
 				4EE05E851DE278D70088CB99 /* TutorialPasso 2.xcassets in Resources */,
+				EB7C93451DF8515400ED21DB /* TutorialPasso7.xcassets in Resources */,
 				EB69AB731DE24FC6003EAB99 /* TutorialPasso5.xcassets in Resources */,
 				EB69AB8B1DE255D6003EAB99 /* TutorialPasso6.xcassets in Resources */,
 				4E3A3CB41DEC963E0095C251 /* Materiais.xcassets in Resources */,
@@ -1450,6 +1452,7 @@
 				2BA188BC1D355D96007F1CEB /* Actitvity.swift in Sources */,
 				4ED0D2A81DDDDB6A00BE15CE /* Tutorial9ViewController.swift in Sources */,
 				4ED0D29C1DDDDB0500BE15CE /* Tutorial3ViewController.swift in Sources */,
+				EB7C93461DF8515400ED21DB /* TutorialPasso7View.swift in Sources */,
 				4EE05E971DE32AD10088CB99 /* MeninoDorView.swift in Sources */,
 				4E53BE411DE71DD800890968 /* NotificationsModel.swift in Sources */,
 				2B9707201DDDF2FD00FE3A74 /* Storytelling4View.swift in Sources */,
@@ -1513,6 +1516,7 @@
 				4E5092DC1DF05B29001F2B7F /* MeninoSangramentoView.swift in Sources */,
 				4EE05E7E1DE25DFB0088CB99 /* UIButtonIBDesignable.swift in Sources */,
 				4EB5735D1DF6189400BD54B3 /* PDFGenerator.swift in Sources */,
+				EB7C93471DF8515400ED21DB /* TutorialPasso7View.swift in Sources */,
 				4ED0D2B41DDDDEBD00BE15CE /* Tutorial9ViewController.swift in Sources */,
 				4E3244811DD3DE2D00258CE1 /* Exercise.swift in Sources */,
 				4ED0D2B21DDDDEB500BE15CE /* Tutorial7ViewController.swift in Sources */,

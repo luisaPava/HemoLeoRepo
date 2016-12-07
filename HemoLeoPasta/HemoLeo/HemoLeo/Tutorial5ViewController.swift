@@ -25,7 +25,7 @@ class Tutorial5ViewController: UIViewController {
         // Do any additional setup after loading the view.
         if flag {
             text.alpha = 0
-            text.showInstructions(10)
+            text.showInstructions(26)
             
             flag = false
         }

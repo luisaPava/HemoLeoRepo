@@ -1858,7 +1858,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o4e-hO-ilX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3083" y="-1644"/>
+            <point key="canvasLocation" x="3204" y="-1699"/>
         </scene>
         <!--Tutorial5 View Controller-->
         <scene sceneID="wxc-Ji-Qri">
@@ -2084,9 +2084,9 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="0Bv-DJ-Mrk">
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="0Bv-DJ-Mrk" customClass="TutorialPasso7View" customModule="HemoLeo" customModuleProvider="target">
                                 <rect key="frame" x="153" y="90" width="717" height="461"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbf-kd-myx">
                                 <rect key="frame" x="30" y="30" width="60" height="60"/>
@@ -2096,12 +2096,16 @@
                                 </constraints>
                                 <state key="normal" image="MainBotao"/>
                                 <connections>
+                                    <action selector="backButton:" destination="NdY-I2-uaF" eventType="touchUpInside" id="Nrm-rC-TFr"/>
                                     <action selector="backButton:" destination="4T0-Bi-dfW" eventType="touchUpInside" id="pmA-cC-pfk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJg-Ke-EHc">
                                 <rect key="frame" x="928" y="50" width="46" height="45"/>
                                 <state key="normal" image="reset"/>
+                                <connections>
+                                    <action selector="redo:" destination="NdY-I2-uaF" eventType="touchUpInside" id="usv-ZX-7jV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2129,6 +2133,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="passo7" destination="0Bv-DJ-Mrk" id="7f4-9c-cdi"/>
                         <outlet property="text" destination="3Wo-Yd-VFR" id="cYG-Bj-CDg"/>
                     </connections>
                 </viewController>
