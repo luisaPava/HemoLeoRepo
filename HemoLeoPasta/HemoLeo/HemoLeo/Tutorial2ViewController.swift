@@ -52,6 +52,10 @@ class Tutorial2ViewController: UIViewController {
         passo2.addPasso2Animation()
     }
     
+    @IBAction func backButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+
+    }
 
     /*
     // MARK: - Navigation

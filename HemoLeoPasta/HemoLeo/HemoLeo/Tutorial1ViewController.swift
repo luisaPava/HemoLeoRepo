@@ -53,5 +53,9 @@ class Tutorial1ViewController: UIViewController {
         passo1.addLavarMaoAnimation()
     }
     
+    @IBAction func backButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+
+    }
     
 }

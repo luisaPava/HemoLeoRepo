@@ -50,6 +50,10 @@ class Tutorial6ViewController: UIViewController {
         passo6.addPasso6Animation()
     }
     
+    @IBAction func backButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+
+    }
 
     /*
     // MARK: - Navigation

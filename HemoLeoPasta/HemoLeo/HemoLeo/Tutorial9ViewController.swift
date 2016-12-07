@@ -23,12 +23,12 @@ class Tutorial9ViewController: UIViewController {
         // Do any additional setup after loading the view.
         materiais.clipsToBounds = true
         
-        if flag {
-            text.alpha = 0
-            text.showInstructions(10)
-            
-            flag = false
-        }
+//        if flag {
+//            text.alpha = 0
+//            text.showInstructions(10)
+//            
+//            flag = false
+//        }
         
 
     }
@@ -37,21 +37,21 @@ class Tutorial9ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
 
         
-        materiais.addMateriaisAnimation()
+//        materiais.addMateriaisAnimation()
             
         
     }
     
     
     override func viewWillDisappear(_ animated: Bool) {
-        materiais.removeMateriaisAnimation()
+//        materiais.removeMateriaisAnimation()
     }
     
     
-    @IBAction func redo(_ sender: UIButton) {
-        materiais.removeMateriaisAnimation()
-        materiais.addMateriaisAnimation()
-    }
+//    @IBAction func redo(_ sender: UIButton) {
+//        materiais.removeMateriaisAnimation()
+//        materiais.addMateriaisAnimation()
+//    }
     
     
 

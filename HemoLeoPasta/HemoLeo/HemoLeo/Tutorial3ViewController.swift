@@ -50,6 +50,10 @@ class Tutorial3ViewController: UIViewController {
         passo3.addPasso3Animation()
     }
     
+    @IBAction func backButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+
+    }
     
     
 
