@@ -19,12 +19,22 @@ class GameScene: SKScene {
     let defaults = UserDefaults.standard
     var bgImage: SKSpriteNode!
     
+    var careCardModel = CareCardModel.sharedCareCardModel
+    
+    var leo: String!
+    var leoName: String!
+    var tailName: String!
+    var carinhoName: String!
+    
     var timer1 = Timer()
     var timer2 = Timer()
     
     override func didMove(to view: SKView) {
         /* Setup your scene here */
 //        backgroundColor = UIColor.clearColor()
+        
+        leo = careCardModel.getLeo().getImage()
+        getLeoName()
         
         if let image = defaults.string(forKey: "background") {
             bgImage = SKSpriteNode(imageNamed: image)
@@ -46,23 +56,23 @@ class GameScene: SKScene {
         
         //let numImages = lionAnimatedAtlas.textureNames.count
         for i in 1..<21 {
-            let lionTextureName = "Leo\(i)"
+            let lionTextureName = "\(leoName!)\(i)"
             lionFrames.append(lionAnimatedAtlas.textureNamed(lionTextureName))
         }
         var i = 20;
         while (i > 0) {
-            let lionTextureName = "Leo\(i)"
+            let lionTextureName = "\(leoName!)\(i)"
             lionFrames.append(lionAnimatedAtlas.textureNamed(lionTextureName))
             i -= 1;
         }
         
         for i in 1..<20 {
-            let tailTextureName = "Tail\(i)"
+            let tailTextureName = "\(tailName!)\(i)"
             tailFrames.append(lionAnimatedAtlas.textureNamed(tailTextureName))
         }
         i = 19;
         while (i > 0) {
-            let tailTextureName = "Tail\(i)"
+            let tailTextureName = "\(tailName!)\(i)"
             tailFrames.append(lionAnimatedAtlas.textureNamed(tailTextureName))
             i -= 1;
         }
@@ -94,6 +104,31 @@ class GameScene: SKScene {
         
         timer1.fire()
         timer2.fire()
+    }
+    
+    func getLeoName() {
+        switch leo {
+            case "LeoOficial":
+                print("Ola")
+                leoName = "Leo"
+                tailName = "Tail"
+                carinhoName = "carinho"
+            
+            case "LeoB Oficial":
+                print("Ola2")
+                leoName = "LeoB"
+                tailName = "TailB"
+                carinhoName = "carinhoB"
+            
+            case "LeoM Oficial":
+                print("Ola3")
+                leoName = "LeoM"
+                tailName = "TailM"
+                carinhoName = "carinhoM"
+            
+            default:
+                break
+        }
     }
     
     override func willMove(from view: SKView) {
@@ -155,12 +190,12 @@ class GameScene: SKScene {
                 var lionFrames2 = [SKTexture]()
                 
                 for i in 1..<20 {
-                    let lionTextureName = "carinho\(i)"
+                    let lionTextureName = "\(carinhoName!)\(i)"
                     lionFrames2.append(lionAnimatedAtlas.textureNamed(lionTextureName))
                 }
                 var i = 19;
                 while (i > 0) {
-                    let lionTextureName = "carinho\(i)"
+                    let lionTextureName = "\(carinhoName!)\(i)"
                     lionFrames2.append(lionAnimatedAtlas.textureNamed(lionTextureName))
                     i -= 1;
                 }
