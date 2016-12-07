@@ -372,7 +372,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="addUserCell" id="E0l-1M-m1V" customClass="AddUserCollectionViewCell" customModule="HemoLeo" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="31" width="378" height="419"/>
+                                        <rect key="frame" x="0.0" y="30.5" width="378" height="419"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="378" height="419"/>
@@ -1298,7 +1298,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ucp-jY-YtW" customClass="FSCalendar">
-                                <rect key="frame" x="20" y="20" width="374" height="350"/>
+                                <rect key="frame" x="20" y="69" width="374" height="350"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="350" id="pAK-bk-HY9"/>
@@ -1322,10 +1322,10 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chart" translatesAutoresizingMaskIntoConstraints="NO" id="3yM-MV-ze2">
-                                <rect key="frame" x="20" y="370" width="374" height="346"/>
+                                <rect key="frame" x="20" y="419" width="374" height="297"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KZd-Fm-mOF">
-                                <rect key="frame" x="45" y="472" width="325" height="218"/>
+                                <rect key="frame" x="45" y="511.5" width="325" height="188"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="resumoCell" id="KYo-r6-3Ky" customClass="ResumoTableViewCell" customModule="HemoLeo" customModuleProvider="target">
@@ -1350,6 +1350,19 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z7r-nz-Jmp">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="RkC-bQ-kra"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Resumo" id="QOd-4C-0k5">
+                                        <barButtonItem key="rightBarButtonItem" title="Exportar" id="A6H-r4-VoG">
+                                            <color key="tintColor" red="0.1895778477" green="0.82451111079999995" blue="0.5184326172" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -1359,11 +1372,14 @@
                             <constraint firstItem="KZd-Fm-mOF" firstAttribute="centerX" secondItem="3yM-MV-ze2" secondAttribute="centerX" id="93u-oF-yWc"/>
                             <constraint firstItem="KZd-Fm-mOF" firstAttribute="leading" secondItem="WUS-pD-lbc" secondAttribute="leadingMargin" constant="25" id="BOf-f0-Stl"/>
                             <constraint firstItem="p70-aO-gBY" firstAttribute="top" secondItem="3yM-MV-ze2" secondAttribute="bottom" constant="20" id="I7Q-cn-ctB"/>
+                            <constraint firstItem="Z7r-nz-Jmp" firstAttribute="top" secondItem="WUS-pD-lbc" secondAttribute="top" id="KcW-vf-lcf"/>
+                            <constraint firstItem="Ucp-jY-YtW" firstAttribute="top" secondItem="Z7r-nz-Jmp" secondAttribute="bottom" constant="5" id="O3w-YH-XpD"/>
                             <constraint firstItem="Ucp-jY-YtW" firstAttribute="leading" secondItem="WUS-pD-lbc" secondAttribute="leading" constant="20" id="WmF-GY-WRq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="KZd-Fm-mOF" secondAttribute="trailing" constant="24" id="Yk0-su-bha"/>
+                            <constraint firstItem="Z7r-nz-Jmp" firstAttribute="leading" secondItem="WUS-pD-lbc" secondAttribute="leading" id="ZsO-In-h0W"/>
                             <constraint firstAttribute="trailingMargin" secondItem="3yM-MV-ze2" secondAttribute="trailing" id="a28-mh-h27"/>
-                            <constraint firstItem="Ucp-jY-YtW" firstAttribute="top" secondItem="WUS-pD-lbc" secondAttribute="top" constant="20" id="aZz-R9-oBW"/>
                             <constraint firstItem="KZd-Fm-mOF" firstAttribute="height" secondItem="3yM-MV-ze2" secondAttribute="height" multiplier="0.63" id="clG-uX-iRb"/>
+                            <constraint firstAttribute="trailing" secondItem="Z7r-nz-Jmp" secondAttribute="trailing" id="vdR-of-1bY"/>
                             <constraint firstItem="3yM-MV-ze2" firstAttribute="top" secondItem="Ucp-jY-YtW" secondAttribute="bottom" id="y2N-Bc-wdL"/>
                         </constraints>
                     </view>

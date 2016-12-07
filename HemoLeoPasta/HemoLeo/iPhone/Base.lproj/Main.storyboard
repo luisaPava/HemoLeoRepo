@@ -865,7 +865,7 @@
                                         <rect key="frame" x="0.0" y="28" width="254" height="39"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Dha-Er-ilL" id="oy2-KV-BbY">
-                                            <rect key="frame" x="0.0" y="0.0" width="254" height="38"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="254" height="38.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C1W-oM-DOh">
@@ -888,14 +888,11 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="jT1-h0-u7P"/>
                                 </constraints>
-                                <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" red="0.1895778477" green="0.82451111079999995" blue="0.5184326172" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </textAttributes>
                                 <items>
-                                    <navigationItem title="Emegência" id="ntg-ar-nd9">
+                                    <navigationItem title="Resumo" id="ntg-ar-nd9">
                                         <barButtonItem key="backBarButtonItem" title="Sintomas" id="6gE-Ze-JHn"/>
                                         <barButtonItem key="rightBarButtonItem" title="Exportar" id="sh8-ND-Qkp">
-                                            <color key="tintColor" red="1" green="0.1436306446" blue="0.14918940789999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="tintColor" red="0.1895778477" green="0.82451111079999995" blue="0.5184326172" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
                                                 <action selector="exportToPDF:" destination="dTt-AE-tYi" id="hR7-ad-cuO"/>
                                             </connections>
@@ -1052,7 +1049,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" reuseIdentifier="userCell" id="TFC-Pd-Btq" customClass="UserCollectionViewCell" customModule="iPhone" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="8" width="223" height="326"/>
+                                        <rect key="frame" x="0.0" y="7.5" width="223" height="326"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="223" height="326"/>
