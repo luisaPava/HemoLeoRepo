@@ -42,7 +42,7 @@ class SymptomTrackerModel: Observer {
         symptomCardViewController.progressRingTintColor = UIColor(netHex: 0x2BC16B)
         
         // Setup controller's title and tab bar icon
-        symptomCardViewController.title = "Cuidados"
+        symptomCardViewController.title = "Sintomas"
         symptomCardViewController.tabBarItem = UITabBarItem(title: "Sintomas", image: UIImage(named: "carecard"), selectedImage: UIImage(named: "carecard-fill"))
         
         symptomCardViewController.navigationItem.rightBarButtonItem?.tintColor = UIColor(netHex: 0x2BC16B)
