@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         UITabBar.appearance().tintColor = UIColor(netHex: 0x2BC16B)
+        UINavigationBar.appearance().tintColor = UIColor(netHex: 0x2BC16B)
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let initialViewController: UIViewController!

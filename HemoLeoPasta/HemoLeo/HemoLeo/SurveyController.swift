@@ -47,11 +47,11 @@ class SurveyController: UIViewController {
     
     func setNumBtn() {
         switch activityType.rawValue {
-            case "Dor":
+            case "Hemartrose":
                 numBtn = 10
                 viewMenino.isHidden = false
             
-            case "Sangramento":
+            case "DorMuscular":
                 numBtn = 8
                 viewMeninoSangramento.isHidden = false
             
@@ -69,6 +69,8 @@ class SurveyController: UIViewController {
     }
     
     @IBAction func semSintomasAction(_ sender: UIButton) {
+        ButtonAnimation.addButtonPressAnimationToView(viewToAnimate: sender)
+        
         let assessment = assessmentManager!.activityWithType(type: activityType!)
         var result: OCKCarePlanEventResult!
         
@@ -126,6 +128,8 @@ class SurveyController: UIViewController {
 
 extension SurveyController: MeninoDorViewDelegate, MeninoHematomasViewDelegate, MeninoSangramentoViewDelegate {
     func botãoDesativado(botãoDesativado: UIButton) {
+        ButtonAnimation.addButtonPressAnimationToView(viewToAnimate: botãoDesativado)
+        
         if botãoDesativado.isSelected == false {
             resultArray[botãoDesativado.tag] = botãoDesativado.accessibilityIdentifier!
             botãoDesativado.isSelected = true

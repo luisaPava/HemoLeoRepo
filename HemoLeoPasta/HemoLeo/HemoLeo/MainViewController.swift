@@ -126,6 +126,8 @@ class MainViewController: UIViewController {
     
     //Logout button action
     func logoutButtonAction() {
+        ButtonAnimation.addButtonPressAnimationToView(viewToAnimate: logOutButton)
+        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         self.view.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "uservc")

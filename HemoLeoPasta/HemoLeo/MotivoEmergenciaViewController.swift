@@ -46,6 +46,8 @@ class MotivoEmergenciaViewController: UIViewController {
     }
     
     @IBAction func hadEmergency(_ sender: UIButton) {
+        ButtonAnimation.addButtonPressAnimationToView(viewToAnimate: sender)
+        
         let flag = sender.isSelected
         
         if flag {
@@ -66,6 +68,8 @@ class MotivoEmergenciaViewController: UIViewController {
     }
     
     @IBAction func salvarAction(_ sender: UIButton) {
+        ButtonAnimation.addButtonPressAnimationToView(viewToAnimate: sender)
+        
         if !textViewMotivo.text.isEmpty {
             calendarDAO.append(newEvent: textViewMotivo.text, withType: .Emergencial)
             let assessment = assessmentManager!.activityWithType(type: activityType!)

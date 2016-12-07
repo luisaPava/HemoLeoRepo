@@ -38,6 +38,8 @@ class AddUserViewController: UIViewController {
     }
     
     @IBAction func saveBtn(_ sender: UIButton) {
+        ButtonAnimation.addButtonPressAnimationToView(viewToAnimate: sender)
+        
         if (txtField.text?.isEmpty)! {
             
             let alertController = UIAlertController(title: "Atenção", message:

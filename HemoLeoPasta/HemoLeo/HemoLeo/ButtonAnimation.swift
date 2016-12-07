@@ -19,7 +19,6 @@ class ButtonAnimation {
         modeloBotaoScaleXAnimation.duration = 0.350
         modeloBotaoScaleXAnimation.values = [1.000 as Float, 0.800 as Float, 1.100 as Float, 1.000 as Float]
         modeloBotaoScaleXAnimation.keyTimes = [0.000 as NSNumber, 0.286 as NSNumber, 0.643 as NSNumber, 1.000 as NSNumber]
-//        modeloBotaoScaleXAnimation.keyTimes = [
         modeloBotaoScaleXAnimation.timingFunctions = [anticOverTiming, anticOverTiming, overshootTiming]
         viewToAnimate.layer.add(modeloBotaoScaleXAnimation, forKey:"ButtonPress_ScaleX")
         

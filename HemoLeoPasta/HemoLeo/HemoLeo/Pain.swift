@@ -11,7 +11,7 @@ import CareKit
 
 class Pain: Assessment {
     //MARK: - Activity
-    let activityType: ActivityType = .Dor
+    let activityType: ActivityType = .Hemartrose
     
     func carePlanActivity() -> OCKCarePlanActivity {
         //Create a weekly schedule

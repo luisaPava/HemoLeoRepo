@@ -29,8 +29,8 @@ enum ActivityType: String {
     // Symptoms
     
     //Criar na pasta de sintomas!!
-    case Sangramento
+    case DorMuscular
     case Hematoma
-    case Dor
+    case Hemartrose
     case Emergencial
 }

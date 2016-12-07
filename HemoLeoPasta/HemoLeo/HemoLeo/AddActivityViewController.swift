@@ -42,8 +42,6 @@ class AddActivityViewController: UIViewController {
         //Set the buttons state
         setButtons()
         
-
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -55,6 +53,8 @@ class AddActivityViewController: UIViewController {
 //MARK: - Extension
 extension AddActivityViewController {
     @IBAction func addActivityAction(sender: UIButton) {
+        ButtonAnimation.addButtonPressAnimationToView(viewToAnimate: sender)
+        
         let key = sender.tag
         selectedButton = sender
         

@@ -32,6 +32,10 @@ class UserViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func addBtn(_ sender: UIButton) {
+        ButtonAnimation.addButtonPressAnimationToView(viewToAnimate: sender)
+    }
 }
 
 extension UserViewController: UICollectionViewDelegate {

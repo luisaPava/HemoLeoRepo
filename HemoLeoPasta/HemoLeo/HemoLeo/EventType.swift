@@ -10,8 +10,8 @@ import Foundation
 
 enum EventType: String {
     case Emergencial
-    case Dor
-    case Sangramento
+    case Hemartrose
+    case DorMuscular
     case Profilaxia
     case Hematoma
 }

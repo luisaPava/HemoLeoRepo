@@ -1089,13 +1089,14 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mzb-wu-xVN">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mzb-wu-xVN">
                                 <rect key="frame" x="253" y="30" width="41" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Mzb-wu-xVN" secondAttribute="height" multiplier="1:1" id="G2y-Ip-EnH"/>
                                 </constraints>
                                 <state key="normal" image="Adicionar user"/>
                                 <connections>
+                                    <action selector="addBtn:" destination="gVx-zF-NN8" eventType="touchUpInside" id="mby-T1-x32"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="zGT-0c-zAg"/>
                                 </connections>
                             </button>

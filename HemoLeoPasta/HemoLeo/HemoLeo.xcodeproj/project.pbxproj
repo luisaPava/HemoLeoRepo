@@ -164,6 +164,7 @@
 		4EB573351DF3659600BD54B3 /* ResumoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB573331DF3659600BD54B3 /* ResumoTableViewCell.swift */; };
 		4EB5735C1DF6189400BD54B3 /* PDFGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB5735B1DF6189400BD54B3 /* PDFGenerator.swift */; };
 		4EB5735D1DF6189400BD54B3 /* PDFGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB5735B1DF6189400BD54B3 /* PDFGenerator.swift */; };
+		4EB573771DF8666700BD54B3 /* ButtonAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3CE03B1D400FFF00E4F422 /* ButtonAnimation.swift */; };
 		4EB711651DE88878009D129C /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EB711641DE88878009D129C /* Media.xcassets */; };
 		4EB711661DE88878009D129C /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EB711641DE88878009D129C /* Media.xcassets */; };
 		4ED0D2961DDDD90700BE15CE /* TutorialPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED0D2951DDDD90700BE15CE /* TutorialPageViewController.swift */; };
@@ -346,7 +347,7 @@
 		4E36E4691D45BA330005A1BE /* OCKInsightItem+EmptyMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OCKInsightItem+EmptyMessage.swift"; sourceTree = "<group>"; };
 		4E3A3CB11DEC963E0095C251 /* Materiais.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Materiais.xcassets; sourceTree = "<group>"; };
 		4E3A3CB21DEC963E0095C251 /* MateriaisView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MateriaisView.swift; sourceTree = "<group>"; };
-		4E3CE03B1D400FFF00E4F422 /* ButtonAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonAnimation.swift; sourceTree = "<group>"; };
+		4E3CE03B1D400FFF00E4F422 /* ButtonAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ButtonAnimation.swift; path = HemoLeo/ButtonAnimation.swift; sourceTree = "<group>"; };
 		4E4F03E91DCD8ABF00523507 /* SurveyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyController.swift; sourceTree = "<group>"; };
 		4E4F03EB1DD0B9EE00523507 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		4E5092D11DF0584A001F2B7F /* MeninoHematomas.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MeninoHematomas.xcassets; sourceTree = "<group>"; };
@@ -475,6 +476,7 @@
 		2B7099AE1DDF2133006C27F0 /* Animação */ = {
 			isa = PBXGroup;
 			children = (
+				4E3CE03B1D400FFF00E4F422 /* ButtonAnimation.swift */,
 				4ED0D2B71DDDE47600BE15CE /* UIAnimation.swift */,
 				2B7099BB1DDF2179006C27F0 /* Passo0 */,
 				2B7099B91DDF2167006C27F0 /* Passo7 */,
@@ -854,7 +856,6 @@
 			isa = PBXGroup;
 			children = (
 				EB6F10E21D41C4170056606B /* AnimaçõesStorytelling */,
-				4E3CE03B1D400FFF00E4F422 /* ButtonAnimation.swift */,
 			);
 			name = "Animação";
 			sourceTree = "<group>";
@@ -1155,7 +1156,7 @@
 				TargetAttributes = {
 					2BA1887B1D355A2C007F1CEB = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = AU45XX83RQ;
+						DevelopmentTeam = BUK6UDW987;
 						LastSwiftMigration = 0810;
 						SystemCapabilities = {
 							com.apple.Push = {
@@ -1168,7 +1169,7 @@
 					};
 					4EAFA1EB1DC7AAC2002BA048 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = AU45XX83RQ;
+						DevelopmentTeam = BUK6UDW987;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -1537,6 +1538,7 @@
 				4E3244831DD3DE2D00258CE1 /* Fisiotherapy.swift in Sources */,
 				4ED0D2AC1DDDDEA000BE15CE /* Tutorial1ViewController.swift in Sources */,
 				4E3244931DD3EB5F00258CE1 /* AssessmentsManager.swift in Sources */,
+				4EB573771DF8666700BD54B3 /* ButtonAnimation.swift in Sources */,
 				4ED0D2AE1DDDDEA700BE15CE /* Tutorial3ViewController.swift in Sources */,
 				4E5092D61DF0584A001F2B7F /* MeninoHematomasView.swift in Sources */,
 				4E0310301DD6AEC0002B8200 /* PopUpViewController.swift in Sources */,
@@ -1707,7 +1709,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = AU45XX83RQ;
+				DEVELOPMENT_TEAM = BUK6UDW987;
 				INFOPLIST_FILE = HemoLeo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1727,7 +1729,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = AU45XX83RQ;
+				DEVELOPMENT_TEAM = BUK6UDW987;
 				INFOPLIST_FILE = HemoLeo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1747,7 +1749,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				DEVELOPMENT_TEAM = AU45XX83RQ;
+				DEVELOPMENT_TEAM = BUK6UDW987;
 				INFOPLIST_FILE = iPhone/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1766,7 +1768,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				DEVELOPMENT_TEAM = AU45XX83RQ;
+				DEVELOPMENT_TEAM = BUK6UDW987;
 				INFOPLIST_FILE = iPhone/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

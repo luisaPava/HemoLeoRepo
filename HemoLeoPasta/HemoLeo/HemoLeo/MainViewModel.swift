@@ -34,6 +34,7 @@ class MainViewModel {
         button.layer.masksToBounds = true
         button.layer.zPosition = 1000
         button.showsTouchWhenHighlighted = false
+        button.adjustsImageWhenHighlighted = false
         button.reversesTitleShadowWhenHighlighted = false
         button.setImage(image, for: .normal)
         
