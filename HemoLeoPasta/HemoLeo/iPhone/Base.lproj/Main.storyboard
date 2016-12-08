@@ -579,13 +579,19 @@
                                 <rect key="frame" x="16" y="40" width="288" height="415"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RqA-Nd-Bxe" customClass="CustomView" customModule="iPhone" customModuleProvider="target">
-                                <rect key="frame" x="36" y="479" width="248" height="30"/>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RqA-Nd-Bxe" customClass="CustomView" customModule="iPhone" customModuleProvider="target">
+                                <rect key="frame" x="36" y="475" width="248" height="34"/>
                                 <color key="backgroundColor" red="0.1895778477" green="0.82451111079999995" blue="0.5184326172" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="FG7-dj-orM"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Sem Emergências">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="disabled" backgroundImage="DisabledRec"/>
+                                <state key="disabled" backgroundImage="DisabledRec">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornurRadius">
                                         <real key="value" value="15"/>
