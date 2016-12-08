@@ -33,6 +33,9 @@ class SurveyController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        semSintomasBtn.setTitleColor(UIColor.gray, for: .disabled)
+
+        
         assessmentManager = symptomTrackerModel.getAssessmentManager()
         activityType = ActivityType(rawValue: event.activity.identifier)
         

@@ -372,7 +372,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="addUserCell" id="E0l-1M-m1V" customClass="AddUserCollectionViewCell" customModule="HemoLeo" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="30.5" width="378" height="419"/>
+                                        <rect key="frame" x="0.0" y="31" width="378" height="419"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="378" height="419"/>
@@ -1199,17 +1199,23 @@
                                 <rect key="frame" x="0.0" y="20" width="414" height="552"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4k-0h-0pH" customClass="CustomView" customModule="HemoLeo" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4k-0h-0pH" customClass="CustomView" customModule="HemoLeo" customModuleProvider="target">
                                 <rect key="frame" x="40" y="676" width="334" height="30"/>
-                                <color key="backgroundColor" red="0.18039215689999999" green="0.80000000000000004" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.1895778477" green="0.82451111079999995" blue="0.5184326172" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="tjH-xy-1h2"/>
                                 </constraints>
                                 <state key="normal" title="Sem sintomas">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="disabled" backgroundImage="DisabledRec">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornurRadius">
                                         <real key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
@@ -1298,10 +1304,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ucp-jY-YtW" customClass="FSCalendar">
-                                <rect key="frame" x="20" y="69" width="374" height="350"/>
+                                <rect key="frame" x="20" y="69" width="374" height="300"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="350" id="pAK-bk-HY9"/>
+                                    <constraint firstAttribute="height" constant="300" id="pAK-bk-HY9"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="selectionColor">
@@ -1322,10 +1328,10 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chart" translatesAutoresizingMaskIntoConstraints="NO" id="3yM-MV-ze2">
-                                <rect key="frame" x="20" y="419" width="374" height="297"/>
+                                <rect key="frame" x="20" y="369" width="374" height="347"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KZd-Fm-mOF">
-                                <rect key="frame" x="45" y="511.5" width="325" height="188"/>
+                                <rect key="frame" x="45" y="478.5" width="325" height="204.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="resumoCell" id="KYo-r6-3Ky" customClass="ResumoTableViewCell" customModule="HemoLeo" customModuleProvider="target">
@@ -1378,7 +1384,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="KZd-Fm-mOF" secondAttribute="trailing" constant="24" id="Yk0-su-bha"/>
                             <constraint firstItem="Z7r-nz-Jmp" firstAttribute="leading" secondItem="WUS-pD-lbc" secondAttribute="leading" id="ZsO-In-h0W"/>
                             <constraint firstAttribute="trailingMargin" secondItem="3yM-MV-ze2" secondAttribute="trailing" id="a28-mh-h27"/>
-                            <constraint firstItem="KZd-Fm-mOF" firstAttribute="height" secondItem="3yM-MV-ze2" secondAttribute="height" multiplier="0.63" id="clG-uX-iRb"/>
+                            <constraint firstItem="KZd-Fm-mOF" firstAttribute="height" secondItem="3yM-MV-ze2" secondAttribute="height" multiplier="0.59" id="clG-uX-iRb"/>
                             <constraint firstAttribute="trailing" secondItem="Z7r-nz-Jmp" secondAttribute="trailing" id="vdR-of-1bY"/>
                             <constraint firstItem="3yM-MV-ze2" firstAttribute="top" secondItem="Ucp-jY-YtW" secondAttribute="bottom" id="y2N-Bc-wdL"/>
                         </constraints>
@@ -2259,6 +2265,7 @@
         <image name="DarkBlue" width="51" height="51"/>
         <image name="DarkGreen" width="51" height="51"/>
         <image name="Default" width="1024" height="768"/>
+        <image name="DisabledRec" width="668" height="60"/>
         <image name="FruitsNotSelected" width="110" height="110"/>
         <image name="FrutasHIghlighted" width="110" height="110"/>
         <image name="LeoSombra" width="700" height="680"/>

@@ -583,6 +583,7 @@
                                 <state key="normal" title="Sem sintomas">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="disabled" backgroundImage="DisabledRec"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornurRadius">
                                         <real key="value" value="15"/>
@@ -865,7 +866,7 @@
                                         <rect key="frame" x="0.0" y="28" width="254" height="39"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Dha-Er-ilL" id="oy2-KV-BbY">
-                                            <rect key="frame" x="0.0" y="0.0" width="254" height="38.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="254" height="38"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C1W-oM-DOh">
@@ -1049,7 +1050,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" reuseIdentifier="userCell" id="TFC-Pd-Btq" customClass="UserCollectionViewCell" customModule="iPhone" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="7.5" width="223" height="326"/>
+                                        <rect key="frame" x="0.0" y="8" width="223" height="326"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="223" height="326"/>
@@ -1734,6 +1735,7 @@
         <image name="Comida highlighted" width="110" height="110"/>
         <image name="ComidaNotSelected" width="110" height="110"/>
         <image name="Contacts" width="18" height="30"/>
+        <image name="DisabledRec" width="668" height="60"/>
         <image name="Export" width="28" height="31"/>
         <image name="FruitsNotSelected" width="110" height="110"/>
         <image name="FrutasHIghlighted" width="110" height="110"/>
