@@ -19,7 +19,7 @@ class AddContactViewController: UIViewController {
     @IBOutlet weak var segmentedTipo: ADVSegmentedControl!
     private var tipo: Int!
     
-    fileprivate let arrayValues: Array<CGFloat> = [0, 30, 80, 110, 150]
+    fileprivate let arrayValues: Array<CGFloat> = [0, 30, 80, 150]
 
     override func viewDidLoad() {
         super.viewDidLoad()

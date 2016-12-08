@@ -485,7 +485,7 @@
                                     <constraint firstAttribute="height" constant="30" id="aPB-c5-fwd"/>
                                 </constraints>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Sem Sintomas">
+                                <state key="normal" title="Sem Emergências">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="selected" title="Salvar"/>
@@ -586,7 +586,7 @@
                                     <constraint firstAttribute="height" constant="34" id="FG7-dj-orM"/>
                                 </constraints>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Sem Emergências">
+                                <state key="normal" title="Sem Sintomas">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="disabled" backgroundImage="DisabledRec">

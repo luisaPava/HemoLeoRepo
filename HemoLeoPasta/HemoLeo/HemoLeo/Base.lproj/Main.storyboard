@@ -511,7 +511,6 @@
                                 <state key="normal" image="MainBotao"/>
                                 <connections>
                                     <action selector="backButton:" destination="H79-R7-vqW" eventType="touchUpInside" id="lHV-xz-I2s"/>
-                                    <action selector="backButton:" destination="4T0-Bi-dfW" eventType="touchUpInside" id="yKJ-uL-vmc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1658,7 +1657,6 @@
                                 </constraints>
                                 <state key="normal" image="MainBotao"/>
                                 <connections>
-                                    <action selector="backButton:" destination="4T0-Bi-dfW" eventType="touchUpInside" id="jZM-XO-Gfq"/>
                                     <action selector="backButton:" destination="PLR-9L-0Zs" eventType="touchUpInside" id="yqe-r1-yaN"/>
                                 </connections>
                             </button>
@@ -1688,7 +1686,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="backButton" destination="9d2-4F-sTH" id="Vyq-X0-UML"/>
                         <outlet property="passo1" destination="jqR-FJ-rHr" id="dk3-lm-TuG"/>
                         <outlet property="text" destination="hoW-iQ-cS0" id="51N-nh-nee"/>
                     </connections>
@@ -1753,7 +1750,6 @@
                                 </constraints>
                                 <state key="normal" image="MainBotao"/>
                                 <connections>
-                                    <action selector="backButton:" destination="4T0-Bi-dfW" eventType="touchUpInside" id="H2B-15-zJu"/>
                                     <action selector="backButton:" destination="fUX-Az-RDC" eventType="touchUpInside" id="QZd-WG-c62"/>
                                 </connections>
                             </button>
@@ -1847,7 +1843,6 @@
                                 </constraints>
                                 <state key="normal" image="MainBotao"/>
                                 <connections>
-                                    <action selector="backButton:" destination="4T0-Bi-dfW" eventType="touchUpInside" id="3FF-Qk-7wr"/>
                                     <action selector="backButton:" destination="nmY-Zx-vKe" eventType="touchUpInside" id="HUa-Lu-lle"/>
                                 </connections>
                             </button>
@@ -1934,7 +1929,6 @@
                                 </constraints>
                                 <state key="normal" image="MainBotao"/>
                                 <connections>
-                                    <action selector="backButton:" destination="4T0-Bi-dfW" eventType="touchUpInside" id="RqB-vJ-jf4"/>
                                     <action selector="backButton:" destination="YtS-Wr-xwC" eventType="touchUpInside" id="yYx-iR-Pu6"/>
                                 </connections>
                             </button>
@@ -2029,7 +2023,6 @@
                                 <state key="normal" image="MainBotao"/>
                                 <connections>
                                     <action selector="backButton:" destination="p9I-6b-Hag" eventType="touchUpInside" id="9p2-y6-zOZ"/>
-                                    <action selector="backButton:" destination="4T0-Bi-dfW" eventType="touchUpInside" id="DEY-0O-Qcu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSd-lW-PES">
@@ -2122,7 +2115,6 @@
                                 <state key="normal" image="MainBotao"/>
                                 <connections>
                                     <action selector="backButton:" destination="NdY-I2-uaF" eventType="touchUpInside" id="Nrm-rC-TFr"/>
-                                    <action selector="backButton:" destination="4T0-Bi-dfW" eventType="touchUpInside" id="pmA-cC-pfk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJg-Ke-EHc">
