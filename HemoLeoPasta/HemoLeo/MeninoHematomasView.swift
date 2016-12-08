@@ -8,7 +8,7 @@
 import UIKit
 
 protocol MeninoHematomasViewDelegate: class {
-	func botãoDesativado(botãoDesativado: UIButton)
+	func botãoDesativadoHematoma(botãoDesativadoHematoma: UIButton)
 }
 
 private class MeninoHematomasPassthroughView: UIView {
@@ -479,58 +479,58 @@ class MeninoHematomasView : UIView, CAAnimationDelegate {
 	}
 
 	func actionBotãoDesativadoHematomaAEPressed(botãoDesativadoHematomaAE: UIButton) {
-		meninoHematomasViewDelegate?.botãoDesativado(botãoDesativado: botãoDesativadoHematomaAE)
+		meninoHematomasViewDelegate?.botãoDesativadoHematoma(botãoDesativadoHematoma: botãoDesativadoHematomaAE)
 	}
 
 	func actionBotãoDesativadoHematomaDEPressed(botãoDesativadoHematomaDE: UIButton) {
-		meninoHematomasViewDelegate?.botãoDesativado(botãoDesativado: botãoDesativadoHematomaDE)
+		meninoHematomasViewDelegate?.botãoDesativadoHematoma(botãoDesativadoHematoma: botãoDesativadoHematomaDE)
 	}
 
 	func actionBotãoDesativadoHematomaCTDPressed(botãoDesativadoHematomaCTD: UIButton) {
-		meninoHematomasViewDelegate?.botãoDesativado(botãoDesativado: botãoDesativadoHematomaCTD)
+		meninoHematomasViewDelegate?.botãoDesativadoHematoma(botãoDesativadoHematoma: botãoDesativadoHematomaCTD)
 	}
 
 	func actionBotãoDesativadoHematomaCTEPressed(botãoDesativadoHematomaCTE: UIButton) {
-		meninoHematomasViewDelegate?.botãoDesativado(botãoDesativado: botãoDesativadoHematomaCTE)
+		meninoHematomasViewDelegate?.botãoDesativadoHematoma(botãoDesativadoHematoma: botãoDesativadoHematomaCTE)
 	}
 
 	func actionBotãoDesativadoHematomaADPressed(botãoDesativadoHematomaAD: UIButton) {
-		meninoHematomasViewDelegate?.botãoDesativado(botãoDesativado: botãoDesativadoHematomaAD)
+		meninoHematomasViewDelegate?.botãoDesativadoHematoma(botãoDesativadoHematoma: botãoDesativadoHematomaAD)
 	}
 
 	func actionBotãoDesativadoHematomaCEPressed(botãoDesativadoHematomaCE: UIButton) {
-		meninoHematomasViewDelegate?.botãoDesativado(botãoDesativado: botãoDesativadoHematomaCE)
+		meninoHematomasViewDelegate?.botãoDesativadoHematoma(botãoDesativadoHematoma: botãoDesativadoHematomaCE)
 	}
 
 	func actionBotãoDesativadoHematomaJEPressed(botãoDesativadoHematomaJE: UIButton) {
-		meninoHematomasViewDelegate?.botãoDesativado(botãoDesativado: botãoDesativadoHematomaJE)
+		meninoHematomasViewDelegate?.botãoDesativadoHematoma(botãoDesativadoHematoma: botãoDesativadoHematomaJE)
 	}
 
 	func actionBotãoDesativadoHematomaCDPressed(botãoDesativadoHematomaCD: UIButton) {
-		meninoHematomasViewDelegate?.botãoDesativado(botãoDesativado: botãoDesativadoHematomaCD)
+		meninoHematomasViewDelegate?.botãoDesativadoHematoma(botãoDesativadoHematoma: botãoDesativadoHematomaCD)
 	}
 
 	func actionBotãoDesativadoHematomaJDPressed(botãoDesativadoHematomaJD: UIButton) {
-		meninoHematomasViewDelegate?.botãoDesativado(botãoDesativado: botãoDesativadoHematomaJD)
+		meninoHematomasViewDelegate?.botãoDesativadoHematoma(botãoDesativadoHematoma: botãoDesativadoHematomaJD)
 	}
 
 	func actionBotãoDesativadoHematomaPEPressed(botãoDesativadoHematomaPE: UIButton) {
-		meninoHematomasViewDelegate?.botãoDesativado(botãoDesativado: botãoDesativadoHematomaPE)
+		meninoHematomasViewDelegate?.botãoDesativadoHematoma(botãoDesativadoHematoma: botãoDesativadoHematomaPE)
 	}
 
 	func actionBotãoDesativadoHematomaTEPressed(botãoDesativadoHematomaTE: UIButton) {
-		meninoHematomasViewDelegate?.botãoDesativado(botãoDesativado: botãoDesativadoHematomaTE)
+		meninoHematomasViewDelegate?.botãoDesativadoHematoma(botãoDesativadoHematoma: botãoDesativadoHematomaTE)
 	}
 
 	func actionBotãoDesativadoHematomaTDPressed(botãoDesativadoHematomaTD: UIButton) {
-		meninoHematomasViewDelegate?.botãoDesativado(botãoDesativado: botãoDesativadoHematomaTD)
+		meninoHematomasViewDelegate?.botãoDesativadoHematoma(botãoDesativadoHematoma: botãoDesativadoHematomaTD)
 	}
 
 	func actionBotãoDesativadoHematomaPDPressed(botãoDesativadoHematomaPD: UIButton) {
-		meninoHematomasViewDelegate?.botãoDesativado(botãoDesativado: botãoDesativadoHematomaPD)
+		meninoHematomasViewDelegate?.botãoDesativadoHematoma(botãoDesativadoHematoma: botãoDesativadoHematomaPD)
 	}
 
 	func actionBotãoDesativadoHematomaDDPressed(botãoDesativadoHematomaDD: UIButton) {
-		meninoHematomasViewDelegate?.botãoDesativado(botãoDesativado: botãoDesativadoHematomaDD)
+		meninoHematomasViewDelegate?.botãoDesativadoHematoma(botãoDesativadoHematoma: botãoDesativadoHematomaDD)
 	}
 }

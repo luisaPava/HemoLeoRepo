@@ -165,6 +165,10 @@
 		4EB5735C1DF6189400BD54B3 /* PDFGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB5735B1DF6189400BD54B3 /* PDFGenerator.swift */; };
 		4EB5735D1DF6189400BD54B3 /* PDFGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB5735B1DF6189400BD54B3 /* PDFGenerator.swift */; };
 		4EB573771DF8666700BD54B3 /* ButtonAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3CE03B1D400FFF00E4F422 /* ButtonAnimation.swift */; };
+		4EB573851DFA026100BD54B3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B29BF1D36CD0E00EED2B4 /* MainViewController.swift */; };
+		4EB573861DFA0D8800BD54B3 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAFA20C1DC7B772002BA048 /* MainViewModel.swift */; };
+		4EB573871DFA0D8E00BD54B3 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7777110C1D3E9BD00066A0E2 /* GameScene.swift */; };
+		4EB573881DFA0DBA00BD54B3 /* BGEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAFA20E1DC7BF39002BA048 /* BGEnum.swift */; };
 		4EB711651DE88878009D129C /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EB711641DE88878009D129C /* Media.xcassets */; };
 		4EB711661DE88878009D129C /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EB711641DE88878009D129C /* Media.xcassets */; };
 		4ED0D2961DDDD90700BE15CE /* TutorialPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED0D2951DDDD90700BE15CE /* TutorialPageViewController.swift */; };
@@ -1156,7 +1160,7 @@
 				TargetAttributes = {
 					2BA1887B1D355A2C007F1CEB = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = AU45XX83RQ;
+						DevelopmentTeam = BUK6UDW987;
 						LastSwiftMigration = 0810;
 						SystemCapabilities = {
 							com.apple.Push = {
@@ -1169,7 +1173,7 @@
 					};
 					4EAFA1EB1DC7AAC2002BA048 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = AU45XX83RQ;
+						DevelopmentTeam = BUK6UDW987;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -1509,6 +1513,7 @@
 				4E5092E51DF0D3FB001F2B7F /* DAOCalendario.swift in Sources */,
 				4E3244871DD3DE3200258CE1 /* Assessment.swift in Sources */,
 				2B9080491DE603C300318DDB /* TutorialPasso1View.swift in Sources */,
+				4EB573851DFA026100BD54B3 /* MainViewController.swift in Sources */,
 				4E973BB71DD9115F00D4CD8B /* Subject.swift in Sources */,
 				4E3244861DD3DE2D00258CE1 /* ToAddedActivitiesData.swift in Sources */,
 				4E5092EF1DF3328A001F2B7F /* Emergencial.swift in Sources */,
@@ -1531,6 +1536,7 @@
 				4E973BB21DD8FECB00D4CD8B /* UserModel.swift in Sources */,
 				4E3244951DD3EB7800258CE1 /* OCKInsightItem+EmptyMessage.swift in Sources */,
 				4E32449A1DD3ECAF00258CE1 /* CustomActivityCell.swift in Sources */,
+				4EB573871DFA0D8E00BD54B3 /* GameScene.swift in Sources */,
 				4E32449D1DD3ECAF00258CE1 /* CareCardViewController.swift in Sources */,
 				4E32447A1DD3DE2700258CE1 /* Leo.swift in Sources */,
 				4ED0D2B01DDDDEAF00BE15CE /* Tutorial5ViewController.swift in Sources */,
@@ -1541,6 +1547,7 @@
 				4EB573771DF8666700BD54B3 /* ButtonAnimation.swift in Sources */,
 				4ED0D2AE1DDDDEA700BE15CE /* Tutorial3ViewController.swift in Sources */,
 				4E5092D61DF0584A001F2B7F /* MeninoHematomasView.swift in Sources */,
+				4EB573881DFA0DBA00BD54B3 /* BGEnum.swift in Sources */,
 				4E0310301DD6AEC0002B8200 /* PopUpViewController.swift in Sources */,
 				4ED0D2AF1DDDDEAB00BE15CE /* Tutorial4ViewController.swift in Sources */,
 				4EAFA1EF1DC7AAC2002BA048 /* AppDelegate.swift in Sources */,
@@ -1548,6 +1555,7 @@
 				EB8FF0FC1DF6FCDB00E06B9F /* ViewIBDesignable.swift in Sources */,
 				4EE05E6D1DE0FB570088CB99 /* AddUserCollectionViewCell.swift in Sources */,
 				4E3244941DD3EB7800258CE1 /* NSCalendar+Dates.swift in Sources */,
+				4EB573861DFA0D8800BD54B3 /* MainViewModel.swift in Sources */,
 				4E3244841DD3DE2D00258CE1 /* Water.swift in Sources */,
 				4ED0D2C61DDE869300BE15CE /* ConnectViewController.swift in Sources */,
 				EB69AB751DE24FC6003EAB99 /* TutorialPasso5View.swift in Sources */,
@@ -1709,10 +1717,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = AU45XX83RQ;
+				DEVELOPMENT_TEAM = BUK6UDW987;
 				INFOPLIST_FILE = HemoLeo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" \"-DIPAD\"";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Luisa.HemoLeo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1729,10 +1738,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = AU45XX83RQ;
+				DEVELOPMENT_TEAM = BUK6UDW987;
 				INFOPLIST_FILE = HemoLeo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" \"-DIPAD\"";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Luisa.HemoLeo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1749,7 +1759,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				DEVELOPMENT_TEAM = AU45XX83RQ;
+				DEVELOPMENT_TEAM = BUK6UDW987;
 				INFOPLIST_FILE = iPhone/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1768,7 +1778,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				DEVELOPMENT_TEAM = AU45XX83RQ;
+				DEVELOPMENT_TEAM = BUK6UDW987;
 				INFOPLIST_FILE = iPhone/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

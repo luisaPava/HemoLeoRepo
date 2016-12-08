@@ -15,6 +15,7 @@ class SymptomCardViewController: UINavigationController {
     let symptomTrackerModel = SymptomTrackerModel.sharedSymptomTracker
     var viewController: OCKSymptomTrackerViewController!
     var event: OCKCarePlanEvent!
+    var main: MainViewController! = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +45,7 @@ class SymptomCardViewController: UINavigationController {
         } else if segue.identifier == "emergencialToMotivo" {
             let vc = segue.destination as! MotivoEmergenciaViewController
             vc.event = self.event
+            vc.main = main
         }
     }
 }
@@ -57,6 +59,7 @@ extension SymptomCardViewController: OCKSymptomTrackerViewControllerDelegate {
             
             if event.activity.identifier == "Emergencial" {
                 let taskViewController = self.storyboard?.instantiateViewController(withIdentifier: "emergencial") as! MotivoEmergenciaViewController
+                
                 taskViewController.popoverPresentationController?.delegate = self
             
                 performSegue(withIdentifier: "emergencialToMotivo", sender: self)

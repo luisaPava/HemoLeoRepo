@@ -9,6 +9,12 @@
 import UIKit
 import CareKit
 
+//#if IPAD
+//    let main = UIViewController() as! MainViewController
+//#else
+//    let main = ""
+//#endif
+
 class MotivoEmergenciaViewController: UIViewController {
     @IBOutlet weak var labelMotivo: UILabel!
     @IBOutlet weak var textViewMotivo: UITextView!
@@ -16,7 +22,9 @@ class MotivoEmergenciaViewController: UIViewController {
     
     var event: OCKCarePlanEvent! = nil
     var activityType: ActivityType!
+    var main: MainViewController! = nil
     
+    fileprivate var moveValue: CGFloat = 0
     fileprivate let calendarDAO = DAOCalendario.sharedDAOCalendario
     private var assessmentManager: AssessmentsManager? = nil
     private let symptomTrackerModel = SymptomTrackerModel.sharedSymptomTracker
@@ -28,6 +36,14 @@ class MotivoEmergenciaViewController: UIViewController {
         textViewMotivo.layer.cornerRadius = 20
         textViewMotivo.layer.borderWidth = 1
         textViewMotivo.layer.borderColor = UIColor(netHex: 0x2DC66D).cgColor
+        textViewMotivo.delegate = self
+        
+        if device == "iPad" {
+            moveValue = 320
+            
+        } else {
+            moveValue = 100
+        }
         
         labelMotivo.alpha = 0
         textViewMotivo.alpha = 0
@@ -92,13 +108,19 @@ class MotivoEmergenciaViewController: UIViewController {
 
 extension MotivoEmergenciaViewController: UITextViewDelegate {
     func textViewDidBeginEditing(_ textView: UITextView) {
-        animateViewMoving(true, moveValue: 250)
+        animateViewMoving(true, moveValue: moveValue)
+        
+        if device.contains("iPad") && main != nil {
+            main.animateViewMoving(true, moveValue: moveValue)
+        }
     }
     
     func textViewDidEndEditing(_ textView: UITextView) {
-        animateViewMoving(false, moveValue: 250)
+        animateViewMoving(false, moveValue: moveValue)
         
-        
+        if device.contains("iPad") && main != nil {
+            main.animateViewMoving(false, moveValue: moveValue)
+        }
     }
     
     func animateViewMoving(_ up:Bool, moveValue :CGFloat){

@@ -52,7 +52,7 @@ class InsightsViewController: UIViewController {
     }
     
 
-    @IBAction func exportToPDF(_ sender: Any) {
+    @IBAction func exportToPDF(_ sender: UIBarButtonItem) {
         let pdf = pdfGenerator.generatePDF()
         
         let activity = UIActivityViewController(activityItems: [pdf], applicationActivities: nil)

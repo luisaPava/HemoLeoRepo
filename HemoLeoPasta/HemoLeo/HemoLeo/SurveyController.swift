@@ -83,9 +83,10 @@ class SurveyController: UIViewController {
         let _ = navigationController?.popViewController(animated: true)
     }
     
-    func saveResult(level: Int, local: String) {
+    func saveResult(level: Int?, local: String?) {
         let assessment = assessmentManager!.activityWithType(type: activityType!)
         var result: OCKCarePlanEventResult!
+        let newEventString: String
         
         if self.countNonEmptyElements() == 1 {
             resultString = resultArray[index].getFirstWordAndLetter()
@@ -98,7 +99,14 @@ class SurveyController: UIViewController {
         result = assessment?.buildResultForCarePlanEvent(event: event, taskResult: resultString)
         symptomTrackerModel.completeEvent(event: event, withResult: result!)
         
-        let newEventString = "\(local) - \(level)"
+        if activityType.rawValue != "Hematoma" {
+            newEventString = "\(local!) - \(level!)"
+            
+        } else {
+            newEventString = local!
+            
+        }
+        
         let type = EventType(rawValue: activityType.rawValue)!
         calendarDAO.append(newEvent: newEventString, withType: type)
         
@@ -129,7 +137,7 @@ class SurveyController: UIViewController {
     
 }
 
-extension SurveyController: MeninoDorViewDelegate, MeninoHematomasViewDelegate, MeninoSangramentoViewDelegate {
+extension SurveyController: MeninoDorViewDelegate, MeninoSangramentoViewDelegate {
     func botãoDesativado(botãoDesativado: UIButton) {
         ButtonAnimation.addButtonPressAnimationToView(viewToAnimate: botãoDesativado)
         
@@ -153,6 +161,23 @@ extension SurveyController: MeninoDorViewDelegate, MeninoHematomasViewDelegate, 
         } else {
             resultArray[botãoDesativado.tag] = ""
             botãoDesativado.isSelected = false
+        }
+    }
+}
+
+extension SurveyController: MeninoHematomasViewDelegate {
+    func botãoDesativadoHematoma(botãoDesativadoHematoma: UIButton) {
+        ButtonAnimation.addButtonPressAnimationToView(viewToAnimate: botãoDesativadoHematoma)
+        
+        if botãoDesativadoHematoma.isSelected == false {
+            resultArray[botãoDesativadoHematoma.tag] = botãoDesativadoHematoma.accessibilityIdentifier!
+            botãoDesativadoHematoma.isSelected = true
+            
+            saveResult(level: nil, local: botãoDesativadoHematoma.accessibilityIdentifier!)
+            semSintomasBtn.isEnabled = false
+        } else {
+            resultArray[botãoDesativadoHematoma.tag] = ""
+            botãoDesativadoHematoma.isSelected = false
         }
     }
 }

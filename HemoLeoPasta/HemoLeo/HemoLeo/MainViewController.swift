@@ -156,9 +156,13 @@ class MainViewController: UIViewController {
     func symptomCardButtonAction() {
         let popoverViewController = self.storyboard?.instantiateViewController(withIdentifier: "SymptomCard") as! SymptomCardViewController
         popoverViewController.modalPresentationStyle = .popover
+        popoverViewController.main = self
+        
+        popoverViewController.preferredContentSize = CGSize(width: 414, height: 736)
         
         let popoverPresentationViewController = popoverViewController.popoverPresentationController
         
+        popoverPresentationViewController?.canOverlapSourceViewRect = false
         popoverPresentationViewController?.permittedArrowDirections = UIPopoverArrowDirection.up
         popoverPresentationViewController?.delegate = self
         popoverPresentationViewController?.sourceView = self.symptomCardButton
@@ -178,6 +182,7 @@ class MainViewController: UIViewController {
         
         popoverPresentationViewController?.permittedArrowDirections = UIPopoverArrowDirection.up
         popoverPresentationViewController?.delegate = self
+        popoverViewController.preferredContentSize = CGSize(width: 414, height: 736)
         popoverPresentationViewController?.sourceView = self.insightCardButton
         popoverPresentationViewController?.sourceRect = CGRect(x: insightCardButton.frame.width / 2, y: insightCardButton.frame.height, width: 0, height: 0)
         
@@ -204,11 +209,21 @@ class MainViewController: UIViewController {
         performSegue(withIdentifier: "mainToTutorial", sender: self)
     }
     
+    func animateViewMoving(_ up:Bool, moveValue :CGFloat){
+        let movementDuration:TimeInterval = 0.3
+        let movement:CGFloat = ( up ? -moveValue : moveValue)
+        UIView.beginAnimations("animateView", context: nil)
+        UIView.setAnimationBeginsFromCurrentState(true)
+        UIView.setAnimationDuration(movementDuration )
+        self.view.frame = self.view.frame.offsetBy(dx: 0,  dy: movement)
+        UIView.commitAnimations()
+    }
+    
 }
 
 //MARK: - UIPopoverPresentationControllerDelegate
 extension MainViewController: UIPopoverPresentationControllerDelegate {
-    func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle {
-        return UIModalPresentationStyle.none
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        return .none
     }
 }

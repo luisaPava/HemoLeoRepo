@@ -1164,6 +1164,7 @@
                             <constraint firstItem="3Vi-GO-aET" firstAttribute="top" secondItem="2XB-rk-hnH" secondAttribute="bottom" constant="50" id="wnN-lp-qJ3"/>
                         </constraints>
                     </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="414" height="736"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="414" height="736"/>
                     <connections>
@@ -1263,7 +1264,7 @@
         <!--Symptom Card View Controller-->
         <scene sceneID="Hiw-WY-5q9">
             <objects>
-                <viewController storyboardIdentifier="SymptomCard" modalPresentationStyle="overCurrentContext" id="xtU-Y7-TNH" customClass="SymptomCardViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SymptomCard" autoresizesArchivedViewToFullSize="NO" automaticallyAdjustsScrollViewInsets="NO" definesPresentationContext="YES" providesPresentationContextTransitionStyle="YES" modalPresentationStyle="pageSheet" id="xtU-Y7-TNH" customClass="SymptomCardViewController" customModule="HemoLeo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jgy-Oy-viq"/>
                         <viewControllerLayoutGuide type="bottom" id="IX9-7b-p5e"/>
@@ -1366,6 +1367,9 @@
                                     <navigationItem title="Resumo" id="QOd-4C-0k5">
                                         <barButtonItem key="rightBarButtonItem" title="Exportar" id="A6H-r4-VoG">
                                             <color key="tintColor" red="0.1895778477" green="0.82451111079999995" blue="0.5184326172" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="exportToPDF:" destination="p2Z-BE-5dI" id="au1-ge-QJ3"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
