@@ -19,10 +19,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
         let defaults = UserDefaults.standard
         
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let initialViewController: UIViewController!
+        
         if !defaults.bool(forKey: "firstLaunch") {
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let initialViewController: UIViewController!
+            initialViewController = storyboard.instantiateViewController(withIdentifier: "pageViewController") as! PageViewCcontroller
             
+            defaults.set(true, forKey: "firstLaunch")
+
+        } else {
             if userModel.getUsersCount() == 1 {
                 userModel.setUser(index: 0)
                 
@@ -31,28 +36,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 initialViewController = storyboard.instantiateViewController(withIdentifier: "uservc") as! UserViewController
                 
             }
-            
-            let frame = UIScreen.main.bounds
-            window = UIWindow(frame: frame)
-        
-            self.window?.rootViewController = initialViewController
-            self.window?.makeKeyAndVisible()
-
-            
-        } else {
-            defaults.set(false, forKey: "firstLaunch")
-            
         }
+        
+        let frame = UIScreen.main.bounds
+        window = UIWindow(frame: frame)
+        
+        self.window?.rootViewController = initialViewController
+        self.window?.makeKeyAndVisible()
         
 //        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor(netHex: 0x2ECC71)]
         UINavigationBar.appearance().tintColor = UIColor(netHex: 0x2ECC71)
-
-
         
         return true
-        
-        
-
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

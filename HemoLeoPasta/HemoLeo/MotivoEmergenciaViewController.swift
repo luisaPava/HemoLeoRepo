@@ -31,7 +31,6 @@ class MotivoEmergenciaViewController: UIViewController {
         
         labelMotivo.alpha = 0
         textViewMotivo.alpha = 0
-        salvarBtn.alpha = 0
         
         labelMotivo.lineBreakMode = .byWordWrapping
         labelMotivo.numberOfLines = 0
@@ -53,14 +52,14 @@ class MotivoEmergenciaViewController: UIViewController {
         if flag {
             labelMotivo.runAnimation(UIAnimation.fadeAlphaTo(0, duration: 0.5))
             textViewMotivo.runAnimation(UIAnimation.fadeAlphaTo(0, duration: 0.5))
-            salvarBtn.runAnimation(UIAnimation.fadeAlphaTo(0, duration: 0.5))
+            salvarBtn.isSelected = false
             
             sender.isSelected = false
             
         } else {
             labelMotivo.runAnimation(UIAnimation.fadeAlphaTo(1, duration: 0.5))
             textViewMotivo.runAnimation(UIAnimation.fadeAlphaTo(1, duration: 0.5))
-            salvarBtn.runAnimation(UIAnimation.fadeAlphaTo(1, duration: 0.5))
+            salvarBtn.isSelected = true
             
             sender.isSelected = true
 
@@ -70,15 +69,24 @@ class MotivoEmergenciaViewController: UIViewController {
     @IBAction func salvarAction(_ sender: UIButton) {
         ButtonAnimation.addButtonPressAnimationToView(viewToAnimate: sender)
         
-        if !textViewMotivo.text.isEmpty {
-            calendarDAO.append(newEvent: textViewMotivo.text, withType: .Emergencial)
-            let assessment = assessmentManager!.activityWithType(type: activityType!)
-            let result = assessment?.buildResultForCarePlanEvent(event: event, taskResult: textViewMotivo.text)
-            symptomTrackerModel.completeEvent(event: event, withResult: result!)
-            
+        if sender.isSelected {
+            if !textViewMotivo.text.isEmpty {
+                calendarDAO.append(newEvent: textViewMotivo.text, withType: .Emergencial)
+                let assessment = assessmentManager!.activityWithType(type: activityType!)
+                let result = assessment?.buildResultForCarePlanEvent(event: event, taskResult: textViewMotivo.text)
+                symptomTrackerModel.completeEvent(event: event, withResult: result!)
+                
+            } else {
+                mensagem(titulo: "Atenção", desc: "Escreva o motivo da aplicação", view: self)
+                
+            }
         } else {
-            mensagem(titulo: "Atenção", desc: "Escreva o motivo da aplicação", view: self)
+            let assessment = assessmentManager!.activityWithType(type: activityType!)
+            let result = assessment?.buildResultForCarePlanEvent(event: event, taskResult: "Sem emergência")
+            symptomTrackerModel.completeEvent(event: event, withResult: result!)
         }
+        
+        let _ = navigationController?.popViewController(animated: true)
     }
 }
 
