@@ -32,6 +32,8 @@ class ContactModel: Observer {
     override func update() {
         self.leo = subject.getLeo()
         self.path = "\(leo.getId())/Contacts"
+        
+        self.getContacts()
     }
     
     func createConnectViewController() -> OCKConnectViewController {
@@ -53,6 +55,8 @@ class ContactModel: Observer {
                                     emailAddress: email,
                                     monogram: nome.getInitials(),
                                     image: nil)
+        
+        getContacts()
         
         contactsArray.append(newContact)
         

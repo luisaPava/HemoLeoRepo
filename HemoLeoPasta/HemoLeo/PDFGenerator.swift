@@ -22,7 +22,7 @@ class PDFGenerator {
         let dataArray = generateArray()
         
         pdf.setFont(UIFont.systemFont(ofSize: 9.0))
-        pdf.addText("                                         Profilaxia                       Dor                     Sangramento            Hematomas                Emergencial")
+        pdf.addText("                                         Profilaxia                  Hemartrose             Dor Muscular            Hematomas               Emergencial")
         
         pdf.addTable(dataArray.count,
                      columnCount: (dataArray.first?.count)!,
@@ -35,12 +35,6 @@ class PDFGenerator {
         let pdfData = pdf.generatePDFdata()
         
         return pdfData
-        
-//        do {
-//            try pdfData.write(to: URL(fileURLWithPath: "/Users/gabrieloliveira/Desktop/SimplePDF.pdf"), options: .atomic)
-//        } catch let error as NSError{
-//            print(error.localizedDescription)
-//        }
     }
     
     private func generateArray() -> Array<Array<String>> {
@@ -93,10 +87,10 @@ class PDFGenerator {
                 case "Profilaxia":
                     resArray[1] = "X"
                 
-                case "Dor":
+                case "Hemartrose":
                     resArray[2] = getStringFromArray(i.value)
                 
-                case "Sangramento":
+                case "DorMuscular":
                     resArray[3] = getStringFromArray(i.value)
                 
                 case "Hematoma":

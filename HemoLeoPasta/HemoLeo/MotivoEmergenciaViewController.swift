@@ -38,12 +38,16 @@ class MotivoEmergenciaViewController: UIViewController {
         textViewMotivo.layer.borderColor = UIColor(netHex: 0x2DC66D).cgColor
         textViewMotivo.delegate = self
         
-        if device == "iPad" {
+        print(device)
+        
+        if device.contains("iPad") {
             moveValue = 320
             
         } else {
             moveValue = 100
         }
+        
+//        moveValue = 320
         
         labelMotivo.alpha = 0
         textViewMotivo.alpha = 0
