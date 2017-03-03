@@ -14,6 +14,7 @@ let screenRect = UIScreen.main.bounds
 let width = screenRect.size.width
 let height = screenRect.size.height
 let device = UIDevice.current.modelName
+let language = Locale.current.languageCode
 
 let formatter: DateFormatter = {
     let formatter = DateFormatter()

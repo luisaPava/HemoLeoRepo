@@ -44,6 +44,7 @@ class NSCodingManager: NSObject {
     
     func getAnyWithPath(path: String) -> Any? {
         let archiveURL = documentsDirectory.appendingPathComponent(path)
+        print(archiveURL)
         
         return NSKeyedUnarchiver.unarchiveObject(withFile: archiveURL.path)
     }
