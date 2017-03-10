@@ -49,14 +49,9 @@ class PDFGenerator {
         for i in 1...numDias {
             var stringDay = ""
             
-            if i < 10 {
-                stringDay = "0\(i)/"
-                
-            } else {
-                stringDay = "\(i)/"
-            }
+            stringDay = (i < 10) ? "0\(i)/" : "\(i)/"
+            stringDay += (mes < 10) ? "0\(mes)/\(ano)" : "\(mes)/\(ano)"
             
-            stringDay += "\(mes)/\(ano)"
             let arrayDia = arrayCalendario[stringDay]
             
             if arrayDia == nil {
@@ -71,7 +66,6 @@ class PDFGenerator {
                 
             }
             
-            
             array = ["", "", "", "", "", ""]
             
         }
@@ -84,23 +78,23 @@ class PDFGenerator {
         
         for i in array {
             switch i.key {
-                case "Profilaxia":
-                    resArray[1] = "X"
+            case "Profilaxia":
+                resArray[1] = "X"
                 
-                case "Hemartrose":
-                    resArray[2] = getStringFromArray(i.value)
+            case "Hemartrose":
+                resArray[2] = getStringFromArray(i.value)
                 
-                case "DorMuscular":
-                    resArray[3] = getStringFromArray(i.value)
+            case "DorMuscular":
+                resArray[3] = getStringFromArray(i.value)
                 
-                case "Hematoma":
-                    resArray[4] = getStringFromArray(i.value)
+            case "Hematoma":
+                resArray[4] = getStringFromArray(i.value)
                 
-                case "Emergencial":
-                    resArray[5] = i.value.first!
+            case "Emergencial":
+                resArray[5] = i.value.first!
                 
-                default:
-                    break
+            default:
+                break
             }
         }
         
@@ -126,7 +120,7 @@ class PDFGenerator {
         let calendar = Calendar.current
         let month = calendar.component(.month, from: date)
         let year = calendar.component(.year, from: date)
-
+        
         if month == 2 {
             return [28, month, year]
             
