@@ -89,7 +89,8 @@ extension AddActivityViewController {
     
     //MARK: - Other methods
     func setButtons() {
-        for i in 0..<activities.count {
+        //TODO - FIX THIS SHIT
+        for i in 0..<6 {
             print("i - \(i)")
             print("activities - \(activities.count)")
             print("buttons \(buttons.count)")

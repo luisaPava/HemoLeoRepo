@@ -112,6 +112,7 @@ extension InsightsViewController: FSCalendarDelegate {
     
     func calendar(_ calendar: FSCalendar, boundingRectWillChange bounds: CGRect, animated: Bool) {
         contraintsHeight.constant = bounds.height
+        print(bounds.height)
         view.layoutIfNeeded()
     }
 }
