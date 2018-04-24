@@ -138,7 +138,6 @@ public extension UIDevice {
         default:                                        return identifier
         }
     }
-    
 }
 
 extension String {
